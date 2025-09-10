@@ -1,10 +1,6 @@
 .homepage {
   min-height: 100vh;
-<<<<<<< HEAD
   background: url('../images/home.jpeg') center/cover no-repeat fixed;
-=======
-  background: url('../images/home.jpg') center/cover no-repeat fixed;
->>>>>>> 873c89020f52fab02b22db252ad49f2071759501
   position: relative;
   overflow: hidden;
 }
