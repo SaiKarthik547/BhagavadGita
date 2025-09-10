@@ -1,0 +1,283 @@
+/* Navigation Styles - Updated to remove full header */
+/* Hamburger Menu Button */
+.hamburger-menu-btn {
+  position: fixed;
+  top: 1px;
+  left: 1px;
+  background: rgba(22, 0, 192, 0.493);
+  border: none;
+  color: #44ff00;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  width: 40px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.978);
+  transition: all 0.3s ease;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.hamburger-menu-btn:hover {
+  background: rgba(16, 1, 182, 0.581);
+  transform: scale(1.1);
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 210px;
+  height: 100vh;
+  background: rgba(255, 243, 224, 0.159);
+  z-index: 1001;
+  transition: left 0.3s ease;
+  overflow-y: auto;
+  box-shadow: 5px 0 15px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  /* Fix for double scrollbar - prevent scroll on body when nav is open */
+  -webkit-overflow-scrolling: touch;
+}
+
+.mobile-nav.open {
+  left: 0;
+}
+
+.mobile-nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(216, 27, 96, 0.615);
+  color: #D81B60;
+  background: rgba(216, 27, 96, 0.1);
+}
+
+.close-mobile-nav {
+  background: transparent;
+  border: none;
+  color: #000000;
+  font-size: 2.2rem;
+  cursor: pointer;
+  padding: 0.2rem;
+}
+
+.mobile-nav-content {
+  padding: 1rem;
+}
+
+.mobile-nav-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-nav-content li {
+  margin-bottom: 0.5rem;
+}
+
+.mobile-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  color: #000000;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(216, 27, 96, 0.1);
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.mobile-nav-link:hover,
+.mobile-nav-link.active {
+  background: rgba(216, 27, 96, 0.1);
+  color: #D81B60;
+  transform: translateX(5px);
+}
+
+.nav-icon {
+  width: 70px; /* Increased size */
+  height: 70px; /* Increased size */
+  fill: #D81B60;
+  filter: brightness(1.2) saturate(2) drop-shadow(0 0 10px rgba(0, 0, 0, 0.8)); /* Rich colors */
+  opacity: 1; /* Fully opaque */
+  z-index: 1000; /* Ensure icons float in UI section */
+}
+
+.icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensure icons float in UI section */
+  opacity: 1; /* Fully opaque */
+}
+
+.icon-wrapper .icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: transparent !important;
+  filter: brightness(0.5) saturate(0.5) drop-shadow(0 0 10px rgba(0, 0, 0, 0.8)); /* Rich colors */
+  opacity: 1; /* Fully opaque */
+  z-index: 1000; /* Ensure icons float in UI section */
+}
+
+.icon-fallback {
+  font-size: 3.5em; /* Increased size */
+  filter: brightnss(0.5) saturate(0.5) drop-shadow(0 0 10px rgba(0, 0, 0, 0.8)); /* Rich colors */
+  opacity: 1; /* Fully opaque */
+  z-index: 1000; /* Ensure icons float in UI section */
+}
+
+.mobile-controls {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(216, 27, 96, 0.2);
+}
+
+.mobile-language-control {
+  margin-bottom: 1rem;
+}
+
+.mobile-language-control h3 {
+  color: #D81B60;
+  margin-bottom: 0.5rem;
+}
+
+.language-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.lang-btn {
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid #D81B60;
+  border-radius: 5px;
+  color: #D81B60;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+  text-align: center;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.lang-btn.active {
+  background: #D81B60;
+  color: white;
+}
+
+.lang-btn:hover {
+  background: #FFD700;
+  transform: translateY(-2px);
+}
+
+.mobile-music-control .music-btn {
+  width: 5%;
+  justify-content: flex-start;
+  padding: 0.75rem;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  background: rgba(255, 61, 2, 0.429);
+  border: 1px solid #D81B60;
+  color: #D81B60;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.mobile-music-control .music-btn:hover {
+  background: #1eff00;
+  transform: translateY(-2px);
+}
+
+.mobile-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: none;
+}
+
+.mobile-overlay.active {
+  display: block;
+}
+
+/* Keyframe Animations */
+@keyframes float {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(10px, 15px) rotate(5deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .nav-links {
+    gap: 0.5rem;
+  }
+  
+  .nav-link {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .desktop-nav,
+  .desktop-only {
+    display: none;
+  }
+  
+  .mobile-menu-btn {
+    display: block;
+  }
+  
+  .nav-container {
+    padding: 0 0.75rem;
+  }
+  
+  .nav-logo {
+    font-size: 1.3rem;
+  }
+  
+  .logo-icon {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-container {
+    padding: 0 0.5rem;
+  }
+  
+  .nav-logo {
+    font-size: 1.2rem;
+  }
+  
+  .logo-icon {
+    font-size: 1.4rem;
+  }
+}

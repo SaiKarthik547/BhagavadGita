@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6528c406.css",
+    "main.js": "/static/js/main.701f2854.js",
+    "static/media/home.jpeg": "/static/media/home.9ab9b75d2adad24b0bde.jpeg",
+    "static/media/vishwaroopam.png": "/static/media/vishwaroopam.abf1145172a09a6f087f.png",
+    "static/media/meditation.png": "/static/media/meditation.4489944adecca54c0971.png",
+    "static/media/background.png": "/static/media/background.1bb48231db61ca6541a4.png",
+    "static/media/chapters.png": "/static/media/chapters.4e6971afe63b06917223.png",
+    "static/media/host.png": "/static/media/host.a8f891f0d34c5da8aeae.png",
+    "static/media/dritharastra.png": "/static/media/dritharastra.3fa3806a3d7bb56e1717.png",
+    "static/media/sanjaya.png": "/static/media/sanjaya.b2c884b6c021f9cb7ee1.png",
+    "static/media/chants.jpg": "/static/media/chants.eebcbe8b968773fc3893.jpg",
+    "static/media/arjuna.png": "/static/media/arjuna.64678a081651a450dc22.png",
+    "static/media/duryodhana.png": "/static/media/duryodhana.3e643557c25e3b1d33c1.png",
+    "static/media/about.jpg": "/static/media/about.6f7eb85893c51a103251.jpg",
+    "static/media/krishna.png": "/static/media/krishna.fa1afe9fbc033db70894.png",
+    "index.html": "/index.html",
+    "main.6528c406.css.map": "/static/css/main.6528c406.css.map",
+    "main.701f2854.js.map": "/static/js/main.701f2854.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6528c406.css",
+    "static/js/main.701f2854.js"
+  ]
+}

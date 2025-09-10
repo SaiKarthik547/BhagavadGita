@@ -1,0 +1,97 @@
+.chapter-details {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.icon-container .chakra-icon {
+  width: 40px;
+  height: 40px;
+  animation: spin 30s linear infinite;
+}
+
+.icon-container .dhanush-icon {
+  width: 40px;
+  height: 40px;
+  animation: float 6s ease-in-out infinite;
+}
+
+.icon-container .shank-icon {
+  width: 40px;
+  height: 40px;
+  animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.icon-container .trishul-icon {
+  width: 40px;
+  height: 40px;
+  animation: rotate 8s linear infinite;
+}
+
+/* New icon styles */
+.audio-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.interactive-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.navigation-icons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+}
+
+.nav-icon {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.nav-icon:hover {
+  transform: scale(1.2) rotate(15deg);
+}
+
+.nav-icon.horizontal {
+  transform: rotate(90deg);
+}
+
+.nav-icon.rotating {
+  animation: spin 15s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

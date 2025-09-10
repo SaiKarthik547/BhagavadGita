@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1e3a8a" />
+    <meta
+      name="description"
+      content="Interactive Bhagavad Gita Learning Application with Audio, Meditation, and Comprehensive Teachings in Hindi and English"
+    />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cinzel:wght@400;500;600;700&family=Dancing+Script:wght@400;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Meta tags for SEO -->
+    <meta name="keywords" content="Bhagavad Gita, Krishna, Arjuna, Hindu scripture, meditation, spiritual wisdom, dharma, yoga, philosophy">
+    <meta name="author" content="Bhagavad Gita App">
+    <meta property="og:title" content="Bhagavad Gita - Interactive Learning Application">
+    <meta property="og:description" content="Experience the divine teachings of Lord Krishna with audio, meditation, and comprehensive content in Hindi and English.">
+    <meta property="og:type" content="website">
+    
+    <title>श्रीमद्भगवद्गीता - Bhagavad Gita</title>
+    
+    <style>
+      /* Loading styles */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+        background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #3b82f6 100%);
+      }
+      
+      .loading-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        z-index: 9999;
+      }
+      
+      .loading-symbol {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+        filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.7));
+        animation: gentleGlow 3s ease-in-out infinite;
+      }
+      
+      .loading-text {
+        font-size: 1.2rem;
+        opacity: 0.9;
+        margin-bottom: 2rem;
+        font-weight: 500;
+      }
+      
+      .loading-animation {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .loading-dot {
+        width: 12px;
+        height: 12px;
+        background: linear-gradient(45deg, #ffd700, #ff6b35);
+        border-radius: 50%;
+        animation: loadingPulse 1.4s ease-in-out infinite both;
+      }
+      
+      .loading-dot:nth-child(1) { animation-delay: -0.32s; }
+      .loading-dot:nth-child(2) { animation-delay: -0.16s; }
+      .loading-dot:nth-child(3) { animation-delay: 0s; }
+      
+      .loading-progress {
+        margin-top: 1.5rem;
+        text-align: center;
+      }
+      
+      .progress-bar {
+        width: 200px;
+        height: 4px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 2px;
+        overflow: hidden;
+        margin: 1rem auto;
+      }
+      
+      .progress-fill {
+        height: 100%;
+        background: linear-gradient(90deg, #ffd700, #ff6b35);
+        width: 0%;
+        animation: progressFill 2s ease-in-out infinite;
+        border-radius: 2px;
+      }
+      
+      @keyframes gentleGlow {
+        0%, 100% { 
+          filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.7));
+          transform: scale(1);
+        }
+        50% { 
+          filter: drop-shadow(0 0 30px rgba(255, 215, 0, 0.9));
+          transform: scale(1.05);
+        }
+      }
+      
+      @keyframes loadingPulse {
+        0%, 80%, 100% {
+          transform: scale(0.8);
+          opacity: 0.5;
+        }
+        40% {
+          transform: scale(1.2);
+          opacity: 1;
+        }
+      }
+      
+      @keyframes progressFill {
+        0% { width: 0%; }
+        50% { width: 70%; }
+        100% { width: 100%; }
+      }
+      
+      .skip-link {
+        position: absolute;
+        top: -40px;
+        left: 6px;
+        background: #000;
+        color: #fff;
+        padding: 8px;
+        text-decoration: none;
+        z-index: 10000;
+      }
+      
+      .skip-link:focus {
+        top: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    
+    <!-- Global Background Music - Removed autoplay and added muted -->
+    <audio id="bgMusic" src="/audio/flute music.mp3" preload="none" muted></audio>
+    
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+      <div class="loading-symbol">🕉️</div>
+      <div class="loading-text">Loading Divine Wisdom...</div>
+      <div class="loading-animation">
+        <div class="loading-dot"></div>
+        <div class="loading-dot"></div>
+        <div class="loading-dot"></div>
+      </div>
+      <div class="loading-progress">
+        <div class="progress-bar">
+          <div class="progress-fill"></div>
+        </div>
+        <div style="font-size: 0.9rem; opacity: 0.7; margin-top: 0.5rem;">
+          Preparing your spiritual journey...
+        </div>
+      </div>
+    </div>
+    
+    <!-- Skip to main content for accessibility -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+    
+    <div id="root"></div>
+    
+    <script>
+      // Hide loading screen when React app loads
+      window.addEventListener('load', function() {
+        // Ensure background music is paused on load
+        const bgMusic = document.getElementById('bgMusic');
+        if (bgMusic) {
+          bgMusic.pause();
+          bgMusic.muted = true;
+          bgMusic.currentTime = 0; // Reset to beginning
+        }
+        
+        setTimeout(function() {
+          const loadingScreen = document.getElementById('loading-screen');
+          if (loadingScreen) {
+            loadingScreen.style.opacity = '0';
+            loadingScreen.style.transition = 'opacity 0.5s ease';
+            setTimeout(() => loadingScreen.remove(), 500);
+          }
+        }, 1000);
+      });
+      
+      // Also hide loading screen when DOM is ready
+      document.addEventListener('DOMContentLoaded', function() {
+        // Ensure background music is paused on DOM ready
+        const bgMusic = document.getElementById('bgMusic');
+        if (bgMusic) {
+          bgMusic.pause();
+          bgMusic.muted = true;
+          bgMusic.currentTime = 0; // Reset to beginning
+        }
+        
+        setTimeout(function() {
+          const loadingScreen = document.getElementById('loading-screen');
+          if (loadingScreen) {
+            loadingScreen.style.opacity = '0';
+            loadingScreen.style.transition = 'opacity 0.5s ease';
+            setTimeout(() => loadingScreen.remove(), 500);
+          }
+        }, 500);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,354 @@
+.chapters-page {
+  position: relative;
+  overflow-x: hidden;
+  padding-top: 0;
+  background: transparent;
+  min-height: 100vh; /* Ensure full height */
+}
+
+/* Page-specific background image - full screen with proper sizing */
+.chapters-page::before {
+  content: '';
+  position: fixed; /* Changed from absolute to fixed */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../images/chapters.png') center/cover no-repeat fixed;
+  background-size: cover;
+  z-index: 0;
+  opacity: 1;
+}
+
+/* Animated gradient blend fallback for gaps */
+.chapters-page::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #FFF3E0, #FFE082, #FFF3E0);
+  background-size: 200% 200%;
+  animation: gradientBlend 10s ease infinite;
+  z-index: -1;
+}
+
+.chapters-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chapters-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+.chapters-title {
+  font-size: 3rem;
+  color: #e1ff00;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.336);
+}
+
+.chapters-subtitle {
+  font-size: 1.2rem;
+  color: #333;
+  opacity: 0.9;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.278);
+}
+
+.floating-petal {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(135deg, #98fa05, #5eff00);
+  border-radius: 100% 0;
+  opacity: 0.9;
+  animation: float-petal 3s infinite linear;
+}
+
+.petal-1 {
+  top: 10%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.petal-2 {
+  top: 20%;
+  right: 15%;
+  animation-delay: 0s;
+}
+
+.petal-3 {
+  bottom: 30%;
+  left: 20%;
+  animation-delay: 2s;
+}
+
+.petal-4 {
+  bottom: 15%;
+  right: 10%;
+  animation-delay: 2s;
+}
+
+.petal-5 {
+  top: 15%;
+  right: 25%;
+  animation-delay: 3s;
+}
+
+.petal-6 {
+  bottom: 25%;
+  left: 15%;
+  animation-delay: 3s;
+}
+
+@keyframes float-petal {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+  }
+}
+
+
+.chapters-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+.language-selector {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.lang-btn {
+  padding: 0.5rem 1rem;
+  background: rgba(40, 190, 235, 0.449);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  color: #000000;
+  z-index: 1;
+}
+
+.lang-btn.active {
+  background: #D81B60;
+  color: white;
+}
+
+.lang-btn:hover {
+  background: #FFD700;
+  transform: translateY(-2px);
+}
+
+.search-container {
+  flex: 1;
+  min-width: 250px;
+  max-width: 400px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  border: none;
+  background: rgba(255, 243, 224, 0.1);
+  color: #333;
+  font-size: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.search-input::placeholder {
+  color: #666;
+}
+
+.chapters-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 2rem;
+}
+
+.chapter-item {
+  text-decoration: none;
+  transition: all 0.3s ease;
+  z-index: 1;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.chapter-card {
+  background: rgba(164, 227, 252, 0.437);
+  border-radius: 8px;
+  padding: 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(216, 27, 96, 0.3);
+  transition: all 0.3s ease;
+  z-index: 1;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.chapter-item:hover .chapter-card {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.chapter-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #D81B60;
+  margin-bottom: 1rem;
+}
+
+.chapter-info {
+  flex: 1;
+}
+
+.chapter-title {
+  font-size: 1.5rem;
+  color: #ff0000;
+  margin-bottom: 0.5rem;
+}
+
+.chapter-subtitle {
+  font-size: 1rem;
+  color: #0b0b0b;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.chapter-meta {
+  margin-top: auto;
+}
+
+.conversation-count {
+  font-size: 0.9rem;
+  color: #000000;
+  font-weight: 500;
+}
+
+.no-chapters {
+  text-align: center;
+  color: #333;
+  font-size: 1.2rem;
+  padding: 2rem;
+}
+
+/* Keyframe Animations */
+@keyframes gradientBlend {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .chapters-container {
+    padding: 1rem 0.75rem;
+  }
+  
+  .chapters-title {
+    font-size: 2.2rem;
+  }
+  
+  .chapters-subtitle {
+    font-size: 1.4rem;
+    color: #fc0404;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgb(255, 0, 0);
+  }
+  
+  .chapters-controls {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .search-container {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .chapters-list {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .chapter-card {
+    padding: 1.25rem;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .chapter-number {
+    font-size: 1.5rem;
+  }
+  
+  .chapter-title {
+    font-size: 1.3rem;
+  }
+  
+  .chapter-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .chapters-page::before,
+  .chapters-page::after {
+    top: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .chapters-title {
+    font-size: 1.8rem;
+  }
+  
+  .chapter-card {
+    padding: 1rem;
+  }
+  
+  .chapter-title {
+    font-size: 1.2rem;
+  }
+  
+  .chapter-subtitle {
+    font-size: 0.9rem;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .chapter-item:hover,
+  .lang-btn:hover {
+    transform: none;
+  }
+}

@@ -1,0 +1,3315 @@
+.podcast-details {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: visible;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: url('../images/background.png') center/cover no-repeat fixed;
+  background-size: cover;
+}
+
+/* Set z-index of floating icons to -1 for podcast details page */
+.podcast-details ~ .floating-icons .floating-icon {
+  z-index: -1 !important;
+}
+
+.podcast-details-minimal {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: visible;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+/* Full-screen Character Images */
+.character-fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 5;
+  overflow: hidden;
+}
+
+.character-fullscreen.arjuna {
+  background: rgba(227, 242, 253, 0.1);
+}
+
+.character-fullscreen.krishna {
+  background: rgba(255, 243, 224, 0.1);
+}
+
+.character-fullscreen.sanjaya {
+  background: rgba(243, 229, 245, 0.1);
+}
+
+.character-fullscreen.dhritarashtra {
+  background: rgba(230, 238, 255, 0.1);
+}
+
+.character-fullscreen.duryodhana {
+  background: rgba(255, 235, 235, 0.1);
+}
+
+.character-fullscreen.vishwaroopam {
+  background: rgba(255, 243, 224, 0.1);
+}
+
+.character-image-full {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  animation: fadeIn 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  z-index: 6;
+  will-change: filter; /* Add this to enable hardware acceleration for filter animations */
+}
+
+/* Emotion-based glowing effects - Simplified to match ChapterDetailsPage.css */
+.character-image-full.anger,
+.character-image-full.anguished,
+.character-image-full.terrified {
+  filter: drop-shadow(0 0 20px #ff0000);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.calm,
+.character-image-full.reassuring,
+.character-image-full.understanding,
+.character-image-full.affirming,
+.character-image-full.resolved {
+  filter: drop-shadow(0 0 20px #00ff00);
+  animation: glow-green 2s infinite alternate;
+}
+
+.character-image-full.despondent,
+.character-image-full.distraught,
+.character-image-full.lamenting,
+.character-image-full.pained,
+.character-image-full.worried,
+.character-image-full.fearful {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+
+.character-image-full.chiding,
+.character-image-full.commanding,
+.character-image-full.firm,
+.character-image-full.revealing {
+  filter: drop-shadow(0 0 20px #ff4500);
+  animation: glow-orangered 2s infinite alternate;
+}
+
+.character-image-full.conflicted,
+.character-image-full.curious,
+.character-image-full.questioning,
+.character-image-full.inquisitive {
+  filter: drop-shadow(0 0 20px #ffa500);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.patient,
+.character-image-full.serene,
+.character-image-full.compassionate,
+.character-image-full.hopeful {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.observant,
+.character-image-full.seeking,
+.character-image-full.explanatory {
+  filter: drop-shadow(0 0 20px #1e90ff);
+  animation: glow-dodgerblue 2s infinite alternate;
+}
+
+.character-image-full.guiding,
+.character-image-full.instructive,
+.character-image-full.clarifying,
+.character-image-full.listing_virtues,
+.character-image-full.exemplary {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.wise,
+.character-image-full.practical,
+.character-image-full.praising,
+.character-image-full.describing {
+  filter: drop-shadow(0 0 20px #4b0082);
+  animation: glow-indigo 2s infinite alternate;
+}
+
+.character-image-full.resolute,
+.character-image-full.foundational,
+.character-image-full.defining {
+  filter: drop-shadow(0 0 20px #000080);
+  animation: glow-navy 2s infinite alternate;
+}
+
+.character-image-full.enlightening,
+.character-image-full.promising,
+.character-image-full.metaphorical,
+.character-image-full.enlightened {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.profound,
+.character-image-full.omniscient,
+.character-image-full.conclusive {
+  filter: drop-shadow(0 0 20px #483d8b);
+  animation: glow-darkslateblue 2s infinite alternate;
+}
+
+.character-image-full.illustrative,
+.character-image-full.devotional,
+.character-image-full.surrendered,
+.character-image-full.merciful,
+.character-image-full.detached {
+  filter: drop-shadow(0 0 20px #9932cc);
+  animation: glow-darkorchid 2s infinite alternate;
+}
+
+.character-image-full.overwhelmed,
+.character-image-full.sustaining,
+.character-image-full.confirming {
+  filter: drop-shadow(0 0 20px #2e8b57);
+  animation: glow-seagreen 2s infinite alternate;
+}
+
+/* Remove duplicated emotion classes - they are defined later in the file */
+/* ADD UNIQUE COLORS FOR PODCAST EMOTIONS - Adding missing emotions */
+/* All emotion classes are now defined in the later section of the file */
+
+/* Function to convert emotion names to CSS class names */
+/* We need to add classes for all the emotions used in the podcast data */
+/* English Emotions - Capitalized versions */
+
+.character-image-full.Narrative {
+  filter: drop-shadow(0 0 20px #6495ed);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.Arrogance {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+
+.character-image-full.Analytical {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.Confidence {
+  filter: drop-shadow(0 0 20px #00ff00);
+  animation: glow-green 2s infinite alternate;
+}
+
+.character-image-full.Insecurity {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.Commanding {
+  filter: drop-shadow(0 0 20px #ff8c00);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.Determination {
+  filter: drop-shadow(0 0 20px #000080);
+  animation: glow-navy 2s infinite alternate;
+}
+
+.character-image-full.Anger {
+  filter: drop-shadow(0 0 20px #ff0000);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.Sorrow {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.Helplessness {
+  filter: drop-shadow(0 0 20px #a9a9a9);
+  animation: glow-darkslateblue 2s infinite alternate;
+}
+
+.character-image-full.Despair {
+  filter: drop-shadow(0 0 20px #2f4f4f);
+  animation: glow-darkslateblue 2s infinite alternate;
+}
+
+.character-image-full.Detachment {
+  filter: drop-shadow(0 0 20px #d3d3d3);
+  animation: glow-white 2s infinite alternate;
+}
+
+.character-image-full.Compassion {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.Mercy {
+  filter: drop-shadow(0 0 20px #ffb6c1);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.Fear {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.Regret {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+
+.character-image-full.Doubt {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.Uncertainty {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.Surrender {
+  filter: drop-shadow(0 0 20px #dda0dd);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.Encouraging {
+  filter: drop-shadow(0 0 20px #00ff7f);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.Questioning {
+  filter: drop-shadow(0 0 20px #ffa500);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.Instructional {
+  filter: drop-shadow(0 0 20px #1e90ff);
+  animation: glow-dodgerblue 2s infinite alternate;
+}
+
+.character-image-full.\Revealing\ Truth {
+  filter: drop-shadow(0 0 20px #ff8c00);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.Granting\ a\ boon {
+  filter: drop-shadow(0 0 20px #ff8c00);
+  animation: glow-orange 2s infinite alternate;
+}
+
+/* Hindi Emotions */
+/* ADD MISSING HINDI EMOTION CLASSES */
+
+.character-image-full.दृढ़ {
+  filter: drop-shadow(0 0 20px #000080);
+  animation: glow-navy 2s infinite alternate;
+}
+
+.character-image-full.शांत {
+  filter: drop-shadow(0 0 20px #00ff00);
+  animation: glow-green 2s infinite alternate;
+}
+
+.character-image-full.विषादग्रस्त {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+
+.character-image-full.अवलोकनशील {
+  filter: drop-shadow(0 0 20px #1e90ff);
+  animation: glow-dodgerblue 2s infinite alternate;
+}
+
+.character-image-full.व्यथित {
+  filter: drop-shadow(0 0 20px #ff0000);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.झिड़कते-हुए {
+  filter: drop-shadow(0 0 20px #ff4500);
+  animation: glow-orangered 2s infinite alternate;
+}
+
+.character-image-full.संघर्षरत {
+  filter: drop-shadow(0 0 20px #ffa500);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.धैर्यवान {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.भयभीत {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.स्थिर {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.व्याकुल {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+
+.character-image-full.मार्गदर्शक {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.विलाप-करते-हुए {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+
+.character-image-full.करुणामय {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.समर्पित {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.दृढ़ {
+  filter: drop-shadow(0 0 20px #000080);
+  animation: glow-navy 2s infinite alternate;
+}
+
+.character-image-full.संकल्पित {
+  filter: drop-shadow(0 0 20px #00ff00);
+  animation: glow-green 2s infinite alternate;
+}
+
+.character-image-full.ज्ञानी {
+  filter: drop-shadow(0 0 20px #4b0082);
+  animation: glow-indigo 2s infinite alternate;
+}
+
+.character-image-full.अभिभूत {
+  filter: drop-shadow(0 0 20px #2e8b57);
+  animation: glow-seagreen 2s infinite alternate;
+}
+
+.character-image-full.आदेशात्मक {
+  filter: drop-shadow(0 0 20px #ff4500);
+  animation: glow-orangered 2s infinite alternate;
+}
+
+.character-image-full.प्रबुद्ध {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.उत्सुक {
+  filter: drop-shadow(0 0 20px #ffd700);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.शिक्षाप्रद {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.दुखी {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+
+.character-image-full.अन्वेषी {
+  filter: drop-shadow(0 0 20px #1e90ff);
+  animation: glow-dodgerblue 2s infinite alternate;
+}
+
+.character-image-full.आश्वस्त {
+  filter: drop-shadow(0 0 20px #00ff00);
+  animation: glow-green 2s infinite alternate;
+}
+
+.character-image-full.जिज्ञासु {
+  filter: drop-shadow(0 0 20px #ffa500);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.दृष्टांतात्मक {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.प्रश्नवाचक {
+  filter: drop-shadow(0 0 20px #ffa500);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.चिंतित {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.गहन {
+  filter: drop-shadow(0 0 20px #483d8b);
+  animation: glow-darkslateblue 2s infinite alternate;
+}
+
+.character-image-full.वर्णनात्मक {
+  filter: drop-shadow(0 0 20px #6495ed);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.प्रेरित {
+  filter: drop-shadow(0 0 20px #00ff7f);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.निर्णायक {
+  filter: drop-shadow(0 0 20px #483d8b);
+  animation: glow-darkslateblue 2s infinite alternate;
+}
+
+.character-image-full.भ्रमित {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.स्पष्ट-करते-हुए {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.व्यावहारिक {
+  filter: drop-shadow(0 0 20px #4b0082);
+  animation: glow-indigo 2s infinite alternate;
+}
+
+.character-image-full.उदाहरणात्मक {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.रणनीतिक {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.समझ {
+  filter: drop-shadow(0 0 20px #00ff00);
+  animation: glow-green 2s infinite alternate;
+}
+
+.character-image-full.पदानुक्रमित {
+  filter: drop-shadow(0 0 20px #4b0082);
+  animation: glow-indigo 2s infinite alternate;
+}
+
+.character-image-full.प्रकट-करते-हुए {
+  filter: drop-shadow(0 0 20px #9932cc);
+  animation: glow-darkorchid 2s infinite alternate;
+}
+
+.character-image-full.उलझन-में {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.आधिकारिक {
+  filter: drop-shadow(0 0 20px #4b0082);
+  animation: glow-indigo 2s infinite alternate;
+}
+
+.character-image-full.वचन-देते-हुए {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.सर्व-व्यापी {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.आधारभूत {
+  filter: drop-shadow(0 0 20px #000080);
+  animation: glow-navy 2s infinite alternate;
+}
+
+.character-image-full.वर्गीकृत-करते-हुए {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.प्रेममय {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.पूछताछ {
+  filter: drop-shadow(0 0 20px #ffa500);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.विवेकपूर्ण {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.रहस्यमय {
+  filter: drop-shadow(0 0 20px #483d8b);
+  animation: glow-darkslateblue 2s infinite alternate;
+}
+
+.character-image-full.आशावान {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.स्नेही {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.भक्तिमय {
+  filter: drop-shadow(0 0 20px #9932cc);
+  animation: glow-darkorchid 2s infinite alternate;
+}
+
+.character-image-full.ध्यान-से {
+  filter: drop-shadow(0 0 20px #1e90ff);
+  animation: glow-dodgerblue 2s infinite alternate;
+}
+
+.character-image-full.अंतर्निहित {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.शानदार {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.खोज {
+  filter: drop-shadow(0 0 20px #1e90ff);
+  animation: glow-dodgerblue 2s infinite alternate;
+}
+
+.character-image-full.आवश्यक {
+  filter: drop-shadow(0 0 20px #000080);
+  animation: glow-navy 2s infinite alternate;
+}
+
+.character-image-full.चकित {
+  filter: drop-shadow(0 0 20px #ff1493);
+  animation: glow-deeppink 2s infinite alternate;
+}
+
+.character-image-full.राजसी {
+  filter: drop-shadow(0 0 20px #4b0082);
+  animation: glow-indigo 2s infinite alternate;
+}
+
+.character-image-full.विश्लेषणात्मक {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.सर्वोपरि {
+  filter: drop-shadow(0 0 20px #4b0082);
+  animation: glow-indigo 2s infinite alternate;
+}
+
+.character-image-full.सर्वोच्च {
+  filter: drop-shadow(0 0 20px #4b0082);
+  animation: glow-indigo 2s infinite alternate;
+}
+
+.character-image-full.आश्चर्य {
+  filter: drop-shadow(0 0 20px #dda0dd);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.सर्वव्यापी {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.अभिभूत {
+  filter: drop-shadow(0 0 20px #2e8b57);
+  animation: glow-seagreen 2s infinite alternate;
+}
+
+.character-image-full.श्रद्धावान {
+  filter: drop-shadow(0 0 20px #1e90ff);
+  animation: glow-dodgerblue 2s infinite alternate;
+}
+
+.character-image-full.प्रदान-करते-हुए {
+  filter: drop-shadow(0 0 20px #ff8c00);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.चकाचौंध {
+  filter: drop-shadow(0 0 20px #ff1493);
+  animation: glow-deeppink 2s infinite alternate;
+}
+
+.character-image-full.भयभीत {
+  filter: drop-shadow(0 0 20px #ff0000);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.याचना {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.क्षमाप्रार्थी {
+  filter: drop-shadow(0 0 20px #00ff7f);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.राहत {
+  filter: drop-shadow(0 0 20px #00ff7f);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.प्रतीक्षारत {
+  filter: drop-shadow(0 0 20px #ffd700);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.परम {
+  filter: drop-shadow(0 0 20px #4b0082);
+  animation: glow-indigo 2s infinite alternate;
+}
+
+.character-image-full.कृपालु {
+  filter: drop-shadow(0 0 20px #ffb6c1);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.ग्रहणशील {
+  filter: drop-shadow(0 0 20px #1e90ff);
+  animation: glow-dodgerblue 2s infinite alternate;
+}
+
+.character-image-full.जोरदार {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.प्रशंसा-करते-हुए {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.स्वीकार-करते-हुए {
+  filter: drop-shadow(0 0 20px #00ff00);
+  animation: glow-green 2s infinite alternate;
+}
+
+.character-image-full.निष्पक्ष {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.अंतर {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.मूल्यांकन {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.पवित्र {
+  filter: drop-shadow(0 0 20px #dda0dd);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.निश्चित {
+  filter: drop-shadow(0 0 20px #000080);
+  animation: glow-navy 2s infinite alternate;
+}
+
+.character-image-full.व्यवहारिक {
+  filter: drop-shadow(0 0 20px #4b0082);
+  animation: glow-indigo 2s infinite alternate;
+}
+
+.character-image-full.परिणामी {
+  filter: drop-shadow(0 0 20px #483d8b);
+  animation: glow-darkslateblue 2s infinite alternate;
+}
+
+.character-image-full.विवेकी {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.वर्णन-करते-हुए {
+  filter: drop-shadow(0 0 20px #4b0082);
+  animation: glow-indigo 2s infinite alternate;
+}
+
+.character-image-full.समभाव {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.विनम्र {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.संतुलित {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.निराश {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+
+.character-image-full.चिंतित {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+/* Telugu Emotions */
+.character-image-full.నిశ్చయం {
+  filter: drop-shadow(0 0 20px #000080);
+  animation: glow-navy 2s infinite alternate;
+}
+
+.character-image-full.శాంతం {
+  filter: drop-shadow(0 0 20px #00ff00);
+  animation: glow-green 2s infinite alternate;
+}
+
+.character-image-full.విషాదంలో {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+
+.character-image-full.గమనిస్తున్న {
+  filter: drop-shadow(0 0 20px #1e90ff);
+  animation: glow-dodgerblue 2s infinite alternate;
+}
+
+.character-image-full.వేదన {
+  filter: drop-shadow(0 0 20px #ff0000);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.గద్దిస్తున్న {
+  filter: drop-shadow(0 0 20px #ff4500);
+  animation: glow-orangered 2s infinite alternate;
+}
+
+.character-image-full.సంఘర్షణ {
+  filter: drop-shadow(0 0 20px #ffa500);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.ఓపిక {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.భయంతో {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.ప్రశాంతం {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.వ్యాకులం {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+
+.character-image-full.మార్గదర్శనం {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.విలపిస్తున్న {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+
+.character-image-full.కరుణ {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.శరణాగతి {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.దృఢంగా {
+  filter: drop-shadow(0 0 20px #000080);
+  animation: glow-navy 2s infinite alternate;
+}
+
+.character-image-full.నిర్ణయించుకున్న {
+  filter: drop-shadow(0 0 20px #00ff00);
+  animation: glow-green 2s infinite alternate;
+}
+
+.character-image-full.జ్ఞాని {
+  filter: drop-shadow(0 0 20px #4b0082);
+  animation: glow-indigo 2s infinite alternate;
+}
+
+.character-image-full.నిండిపోయిన {
+  filter: drop-shadow(0 0 20px #2e8b57);
+  animation: glow-seagreen 2s infinite alternate;
+}
+
+.character-image-full.ఆదేశిస్తున్న {
+  filter: drop-shadow(0 0 20px #ff4500);
+  animation: glow-orangered 2s infinite alternate;
+}
+
+.character-image-full.ప్రకాశిస్తున్న {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.ఆసక్తిగల {
+  filter: drop-shadow(0 0 20px #ffd700);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.బోధనాత్మక {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.బాధతో {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+
+.character-image-full.అన్వేషిస్తున్న {
+  filter: drop-shadow(0 0 20px #1e90ff);
+  animation: glow-dodgerblue 2s infinite alternate;
+}
+
+.character-image-full.భరోసా {
+  filter: drop-shadow(0 0 20px #00ff00);
+  animation: glow-green 2s infinite alternate;
+}
+
+.character-image-full.జిజ్ఞాస {
+  filter: drop-shadow(0 0 20px #ffa500);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.ఉదాహరణ {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.ప్రశ్నిస్తున్న {
+  filter: drop-shadow(0 0 20px #ffa500);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.ఆందోళన {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.గంభీరమైన {
+  filter: drop-shadow(0 0 20px #483d8b);
+  animation: glow-darkslateblue 2s infinite alternate;
+}
+
+.character-image-full.వివరణ {
+  filter: drop-shadow(0 0 20px #6495ed);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.ప్రేరణ {
+  filter: drop-shadow(0 0 20px #00ff7f);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.నిర్ణయాత్మక {
+  filter: drop-shadow(0 0 20px #483d8b);
+  animation: glow-darkslateblue 2s infinite alternate;
+}
+
+.character-image-full.గందరగోళం {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.వివరిస్తున్న {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.ఆచరణాత్మక {
+  filter: drop-shadow(0 0 20px #4b0082);
+  animation: glow-indigo 2s infinite alternate;
+}
+
+.character-image-full.ఉదాహరణ {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.వ్యూహాత్మక {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.అర్థం-చేసుకున్న {
+  filter: drop-shadow(0 0 20px #00ff00);
+  animation: glow-green 2s infinite alternate;
+}
+
+.character-image-full.ప్రాధాన్యత {
+  filter: drop-shadow(0 0 20px #4b0082);
+  animation: glow-indigo 2s infinite alternate;
+}
+.character-image-full.జ్ఞానోదయం {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+.character-image-full.వెల్లడిస్తున్న {
+  filter: drop-shadow(0 0 20px #9932cc);
+  animation: glow-darkorchid 2s infinite alternate;
+}
+.character-image-full.అధికారిక {
+  filter: drop-shadow(0 0 20px #4b0082);
+  animation: glow-indigo 2s infinite alternate;
+}
+.character-image-full.వాగ్దానం {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+.character-image-full.సర్వవ్యాపి {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+.character-image-full.పునాది {
+  filter: drop-shadow(0 0 20px #000080);
+  animation: glow-navy 2s infinite alternate;
+}
+.character-image-full.వర్గీకరిస్తున్న {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+.character-image-full.ప్రేమ {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+.character-image-full.విచారిస్తున్న {
+  filter: drop-shadow(0 0 20px #ffa500);
+  animation: glow-orange 2s infinite alternate;
+}
+.character-image-full.వివేచన {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+.character-image-full.రహస్యమైన {
+  filter: drop-shadow(0 0 20px #483d8b);
+  animation: glow-darkslateblue 2s infinite alternate;
+}
+.character-image-full.ఆశావాది {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+.character-image-full.ఆప్యాయత {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+.character-image-full.భక్తి {
+  filter: drop-shadow(0 0 20px #9932cc);
+  animation: glow-darkorchid 2s infinite alternate;
+}
+.character-image-full.ఆసక్తి {
+  filter: drop-shadow(0 0 20px #1e90ff);
+  animation: glow-dodgerblue 2s infinite alternate;
+}
+.character-image-full.శ్రద్ధ {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+.character-image-full.అంతర్లీనం {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+.character-image-full.ప్రసిద్ధం {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+.character-image-full.విశ్లేషణాత్మక {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+.character-image-full.అవసరం {
+  filter: drop-shadow(0 0 20px #000080);
+  animation: glow-navy 2s infinite alternate;
+}
+.character-image-full.ఆశ్చర్యం {
+  filter: drop-shadow(0 0 20px #dda0dd);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+.character-image-full.గంభీరం {
+  filter: drop-shadow(0 0 20px #483d8b);
+  animation: glow-darkslateblue 2s infinite alternate;
+}
+.character-image-full.అగ్రగామి {
+  filter: drop-shadow(0 0 20px #4b0082);
+  animation: glow-indigo 2s infinite alternate;
+}
+.character-image-full.సర్వోన్నతం {
+  filter: drop-shadow(0 0 20px #4b0082);
+  animation: glow-indigo 2s infinite alternate;
+}
+.character-image-full.ఆశ్చర్యపోతున్న {
+  filter: drop-shadow(0 0 20px #dda0dd);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+.character-image-full.అభిభూతం {
+  filter: drop-shadow(0 0 20px #2e8b57);
+  animation: glow-seagreen 2s infinite alternate;
+}
+.character-image-full.భక్తి {
+  filter: drop-shadow(0 0 20px #1e90ff);
+  animation: glow-dodgerblue 2s infinite alternate;
+}
+.character-image-full.ప్రసాదిస్తున్న {
+  filter: drop-shadow(0 0 20px #ff8c00);
+  animation: glow-orange 2s infinite alternate;
+}
+.character-image-full.అద్భుతం {
+  filter: drop-shadow(0 0 20px #ff69b4);
+  animation: glow-red 2s infinite alternate;
+}
+.character-image-full.చకితుడైన {
+  filter: drop-shadow(0 0 20px #ff1493);
+  animation: glow-deeppink 2s infinite alternate;
+}
+.character-image-full.భయభీతుడైన {
+  filter: drop-shadow(0 0 20px #ff0000);
+  animation: glow-red 2s infinite alternate;
+}
+.character-image-full.క్షమాపణ {
+  filter: drop-shadow(0 0 20px #00ff7f);
+  animation: glow-limegreen 2s infinite alternate;
+}
+.character-image-full.ప్రార్థన {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+.character-image-full.ఉపశమనం {
+  filter: drop-shadow(0 0 20px #00ff7f);
+  animation: glow-limegreen 2s infinite alternate;
+}
+.character-image-full.నిరీక్షిస్తున్న {
+  filter: drop-shadow(0 0 20px #ffd700);
+  animation: glow-orange 2s infinite alternate;
+}
+.character-image-full.అంతిమ {
+  filter: drop-shadow(0 0 20px #4b0082);
+  animation: glow-indigo 2s infinite alternate;
+}
+.character-image-full.స్వీకారం {
+  filter: drop-shadow(0 0 20px #00ff00);
+  animation: glow-green 2s infinite alternate;
+}
+.character-image-full.నొక్కిచెప్పడం {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+.character-image-full.ప్రశంసిస్తున్న {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+.character-image-full.స్వీకరిస్తున్న {
+  filter: drop-shadow(0 0 20px #00ff00);
+  animation: glow-green 2s infinite alternate;
+}
+.character-image-full.నిష్పక్షపాతం {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+.character-image-full.అనాసక్తి {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+.character-image-full.సమచిత్తం {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+.character-image-full.వినయం {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+.character-image-full.సమతుల్యం {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+.character-image-full.నిరాశ {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+.character-image-full.ఉదాహరణాత్మక {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+.character-image-full.వ్యాకులత {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+.character-image-full.ఉన్మాదం {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+.character-image-full.విలపిస్తున్న {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+.character-image-full.తాత్విక {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+.character-image-full.వివరణాత్మక {
+  filter: drop-shadow(0 0 20px #6495ed);
+  animation: glow-blue 2s infinite alternate;
+}
+.character-image-full.ఊహాజనితం {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+.character-image-full.సమగ్ర {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+.character-image-full.దార్శనిక {
+  filter: drop-shadow(0 0 20px #4b0082);
+  animation: glow-indigo 2s infinite alternate;
+}
+.character-image-full.ధృవీకరిస్తున్న {
+  filter: drop-shadow(0 0 20px #2e8b57);
+  animation: glow-seagreen 2s infinite alternate;
+}
+.character-image-full.పర్యవసానం {
+  filter: drop-shadow(0 0 20px #483d8b);
+  animation: glow-darkslateblue 2s infinite alternate;
+}
+.character-image-full.విముక్తి {
+  filter: drop-shadow(0 0 20px #00ff7f);
+  animation: glow-limegreen 2s infinite alternate;
+}
+.character-image-full.వివేచన {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+.character-image-full.వర్ణిస్తున్న {
+  filter: drop-shadow(0 0 20px #4b0082);
+  animation: glow-indigo 2s infinite alternate;
+}
+.character-image-full.ప్రవర్తనా {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+.character-image-full.మూల్యాంకనం {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+.character-image-full.నిర్వచిస్తున్న {
+  filter: drop-shadow(0 0 20px #000080);
+  animation: glow-navy 2s infinite alternate;
+}
+.character-image-full.పవిత్రమైన {
+  filter: drop-shadow(0 0 20px #dda0dd);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+.character-image-full.నిశ్చయాత్మక {
+  filter: drop-shadow(0 0 20px #000080);
+  animation: glow-navy 2s infinite alternate;
+}
+.character-image-full.తీవ్ర.హెచ్చరిక {
+  filter: drop-shadow(0 0 20px #ff4500);
+  animation: glow-orangered 2s infinite alternate;
+}
+.character-image-full.మార్గదర్శనం {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+.character-image-full.వ్యాకులత {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+.character-image-full.ఉన్మాదం {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+.character-image-full.ఉదాహరణాత్మక {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+.character-image-full.వ్యతిరేకం {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+.character-image-full.జాగ్రత్త {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+.character-image-full.న్యాయం {
+  filter: drop-shadow(0 0 20px #4169e1);
+  animation: glow-blue 2s infinite alternate;
+}
+
+/* ADD MISSING KEYFRAME ANIMATIONS FROM CHAPTERDETAILSPAGE.CSS */
+
+@keyframes glow-red {
+  from { filter: drop-shadow(0 0 10px #ff0000); }
+  to { filter: drop-shadow(0 0 30px #ff0000); }
+}
+
+@keyframes glow-green {
+  from { filter: drop-shadow(0 0 10px #00ff00); }
+  to { filter: drop-shadow(0 0 30px #00ff00); }
+}
+
+@keyframes glow-darkred {
+  from { filter: drop-shadow(0 0 10px #8b0000); }
+  to { filter: drop-shadow(0 0 30px #8b0000); }
+}
+
+@keyframes glow-orangered {
+  from { filter: drop-shadow(0 0 10px #ff4500); }
+  to { filter: drop-shadow(0 0 30px #ff4500); }
+}
+
+@keyframes glow-orange {
+  from { filter: drop-shadow(0 0 10px #ffa500); }
+  to { filter: drop-shadow(0 0 30px #ffa500); }
+}
+
+@keyframes glow-blue {
+  from { filter: drop-shadow(0 0 10px #4682b4); }
+  to { filter: drop-shadow(0 0 30px #4682b4); }
+}
+
+@keyframes glow-dodgerblue {
+  from { filter: drop-shadow(0 0 10px #1e90ff); }
+  to { filter: drop-shadow(0 0 30px #1e90ff); }
+}
+
+@keyframes glow-limegreen {
+  from { filter: drop-shadow(0 0 10px #32cd32); }
+  to { filter: drop-shadow(0 0 30px #32cd32); }
+}
+
+@keyframes glow-indigo {
+  from { filter: drop-shadow(0 0 10px #4b0082); }
+  to { filter: drop-shadow(0 0 30px #4b0082); }
+}
+
+@keyframes glow-navy {
+  from { filter: drop-shadow(0 0 10px #000080); }
+  to { filter: drop-shadow(0 0 30px #000080); }
+}
+
+@keyframes glow-goldenrod {
+  from { filter: drop-shadow(0 0 10px #daa520); }
+  to { filter: drop-shadow(0 0 30px #daa520); }
+}
+
+@keyframes glow-darkslateblue {
+  from { filter: drop-shadow(0 0 10px #483d8b); }
+  to { filter: drop-shadow(0 0 30px #483d8b); }
+}
+
+@keyframes glow-darkorchid {
+  from { filter: drop-shadow(0 0 10px #9932cc); }
+  to { filter: drop-shadow(0 0 30px #9932cc); }
+}
+
+@keyframes glow-mediumpurple {
+  from { filter: drop-shadow(0 0 10px #9370db); }
+  to { filter: drop-shadow(0 0 30px #9370db); }
+}
+
+@keyframes glow-seagreen {
+  from { filter: drop-shadow(0 0 10px #2e8b57); }
+  to { filter: drop-shadow(0 0 30px #2e8b57); }
+}
+
+@keyframes glow-white {
+  from { filter: drop-shadow(0 0 10px #bdfaa5); }
+  to { filter: drop-shadow(0 0 30px #25a009); }
+}
+
+@keyframes glow-deeppink {
+  from { filter: drop-shadow(0 0 10px #ff1493); }
+  to { filter: drop-shadow(0 0 30px #ff1493); }
+}
+
+@keyframes glow-crimson {
+  from { filter: drop-shadow(0 0 10px #dc143c); }
+  to { filter: drop-shadow(0 0 30px #dc143c); }
+}
+
+@keyframes glow-firebrick {
+  from { filter: drop-shadow(0 0 10px #b22222); }
+  to { filter: drop-shadow(0 0 30px #b22222); }
+}
+
+@keyframes glow-olive {
+  from { filter: drop-shadow(0 0 10px #808000); }
+  to { filter: drop-shadow(0 0 30px #808000); }
+}
+
+@keyframes glow-teal {
+  from { filter: drop-shadow(0 0 10px #008080); }
+  to { filter: drop-shadow(0 0 30px #008080); }
+}
+
+@keyframes glow-slateblue {
+  from { filter: drop-shadow(0 0 10px #6a5acd); }
+  to { filter: drop-shadow(0 0 30px #6a5acd); }
+}
+
+@keyframes glow-rosybrown {
+  from { filter: drop-shadow(0 0 10px #bc8f8f); }
+  to { filter: drop-shadow(0 0 30px #bc8f8f); }
+}
+
+@keyframes glow-mediumvioletred {
+  from { filter: drop-shadow(0 0 10px #c71585); }
+  to { filter: drop-shadow(0 0 30px #c71585); }
+}
+
+@keyframes glow-darkorange {
+  from { filter: drop-shadow(0 0 10px #ff8c00); }
+  to { filter: drop-shadow(0 0 30px #ff8c00); }
+}
+
+@keyframes glow-dodgerblue2 {
+  from { filter: drop-shadow(0 0 10px #1e90ff); }
+  to { filter: drop-shadow(0 0 30px #1e90ff); }
+}
+
+@keyframes glow-mediumseagreen {
+  from { filter: drop-shadow(0 0 10px #3cb371); }
+  to { filter: drop-shadow(0 0 30px #3cb371); }
+}
+
+@keyframes glow-steelblue {
+  from { filter: drop-shadow(0 0 10px #4682b4); }
+  to { filter: drop-shadow(0 0 30px #4682b4); }
+}
+
+/* Mobile-specific improvements */
+@media (max-width: 768px) {
+  .character-image-full {
+    max-width: 95%;
+    max-height: 95%;
+}
+
+    /* Faster animations on mobile */
+  
+  /* Faster glow animations on mobile */
+  @keyframes glow-red {
+    from { filter: drop-shadow(0 0 8px #ff0000); }
+    to { filter: drop-shadow(0 0 25px #ff0000); }
+  }
+  
+  @keyframes glow-green {
+    from { filter: drop-shadow(0 0 8px #00ff00); }
+    to { filter: drop-shadow(0 0 25px #00ff00); }
+  }
+  
+  @keyframes glow-darkred {
+    from { filter: drop-shadow(0 0 8px #8b0000); }
+    to { filter: drop-shadow(0 0 25px #8b0000); }
+  }
+
+  @keyframes glow-orangered {
+    from { filter: drop-shadow(0 0 8px #ff4500); }
+    to { filter: drop-shadow(0 0 25px #ff4500); }
+  }
+  
+  @keyframes glow-orange {
+    from { filter: drop-shadow(0 0 8px #ffa500); }
+    to { filter: drop-shadow(0 0 25px #ffa500); }
+  }
+  
+  @keyframes glow-blue {
+    from { filter: drop-shadow(0 0 8px #4682b4); }
+    to { filter: drop-shadow(0 0 25px #4682b4); }
+  }
+  
+  @keyframes glow-dodgerblue {
+    from { filter: drop-shadow(0 0 8px #1e90ff); }
+    to { filter: drop-shadow(0 0 25px #1e90ff); }
+  }
+  
+  @keyframes glow-limegreen {
+    from { filter: drop-shadow(0 0 8px #32cd32); }
+    to { filter: drop-shadow(0 0 25px #32cd32); }
+  }
+  
+  @keyframes glow-indigo {
+    from { filter: drop-shadow(0 0 8px #4b0082); }
+    to { filter: drop-shadow(0 0 25px #4b0082); }
+  }
+  
+  @keyframes glow-navy {
+    from { filter: drop-shadow(0 0 8px #000080); }
+    to { filter: drop-shadow(0 0 25px #000080); }
+  }
+  
+  @keyframes glow-goldenrod {
+    from { filter: drop-shadow(0 0 8px #daa520); }
+    to { filter: drop-shadow(0 0 25px #daa520); }
+  }
+  
+  @keyframes glow-darkslateblue {
+    from { filter: drop-shadow(0 0 8px #483d8b); }
+    to { filter: drop-shadow(0 0 25px #483d8b); }
+  }
+  
+  @keyframes glow-darkorchid {
+    from { filter: drop-shadow(0 0 8px #9932cc); }
+    to { filter: drop-shadow(0 0 25px #9932cc); }
+  }
+  
+  @keyframes glow-seagreen {
+    from { filter: drop-shadow(0 0 8px #2e8b57); }
+    to { filter: drop-shadow(0 0 25px #2e8b57); }
+  }
+
+  @keyframes glow-white {
+    from { filter: drop-shadow(0 0 8px #aef73a); }
+    to { filter: drop-shadow(0 0 25px #349f02); }
+  }
+  
+  @keyframes glow-mediumpurple {
+    from { filter: drop-shadow(0 0 8px #9370db); }
+    to { filter: drop-shadow(0 0 25px #9370db); }
+  }
+  
+  @keyframes glow-deeppink {
+    from { filter: drop-shadow(0 0 8px #ff1493); }
+    to { filter: drop-shadow(0 0 25px #ff1493); }
+  }
+  
+  @keyframes glow-crimson {
+    from { filter: drop-shadow(0 0 8px #dc143c); }
+    to { filter: drop-shadow(0 0 25px #dc143c); }
+  }
+  
+  @keyframes glow-firebrick {
+    from { filter: drop-shadow(0 0 8px #b22222); }
+    to { filter: drop-shadow(0 0 25px #b22222); }
+  }
+  
+  @keyframes glow-olive {
+    from { filter: drop-shadow(0 0 8px #808000); }
+    to { filter: drop-shadow(0 0 25px #808000); }
+  }
+  
+  @keyframes glow-teal {
+    from { filter: drop-shadow(0 0 8px #008080); }
+    to { filter: drop-shadow(0 0 25px #008080); }
+  }
+  
+  @keyframes glow-slateblue {
+    from { filter: drop-shadow(0 0 8px #6a5acd); }
+    to { filter: drop-shadow(0 0 25px #6a5acd); }
+  }
+  
+  @keyframes glow-rosybrown {
+    from { filter: drop-shadow(0 0 8px #bc8f8f); }
+    to { filter: drop-shadow(0 0 25px #bc8f8f); }
+  }
+  
+  @keyframes glow-mediumvioletred {
+    from { filter: drop-shadow(0 0 8px #c71585); }
+    to { filter: drop-shadow(0 0 25px #c71585); }
+  }
+  
+  @keyframes glow-darkorange {
+    from { filter: drop-shadow(0 0 8px #ff8c00); }
+    to { filter: drop-shadow(0 0 25px #ff8c00); }
+  }
+  
+  @keyframes glow-dodgerblue2 {
+    from { filter: drop-shadow(0 0 8px #1e90ff); }
+    to { filter: drop-shadow(0 0 25px #1e90ff); }
+  }
+  
+  @keyframes glow-mediumseagreen {
+    from { filter: drop-shadow(0 0 8px #3cb371); }
+    to { filter: drop-shadow(0 0 25px #3cb371); }
+  }
+  
+  @keyframes glow-steelblue {
+    from { filter: drop-shadow(0 0 8px #4682b4); }
+    to { filter: drop-shadow(0 0 25px #4682b4); }
+  }
+}
+
+/* Improved fadeIn animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Podcast Navigation Controls */
+.podcast-navigation-controls {
+  position: fixed;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  z-index: 1000;
+  padding: 0 20px;
+}
+
+.podcast-nav-btn {
+  padding: 14px 26px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #000000;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  will-change: transform;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.podcast-nav-btn:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 1);
+}
+
+.podcast-nav-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.podcast-prev-btn {
+  background: rgba(33, 150, 243, 0.9);
+  color: white;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.podcast-next-btn {
+  background: rgba(216, 27, 96, 0.9);
+  color: white;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.podcast-prev-btn:hover:not(:disabled) {
+  background: rgb(25, 247, 99);
+}
+
+.podcast-next-btn:hover:not(:disabled) {
+  background: rgba(216, 27, 96, 1);
+}
+
+/* Progress Indicator */
+.podcast-progress-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+/* Navigation Controls */
+.podcast-navigation-controls {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+  z-index: 150;
+}
+
+.podcast-nav-btn {
+  padding: 12px 25px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 2px solid #1E88E5;
+  border-radius: 50px;
+  color: #1E88E5;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  min-width: 150px;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .podcast-nav-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    min-width: 120px;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .podcast-prev-btn, .podcast-next-btn {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@media (max-width: 480px) {
+  .podcast-nav-btn {
+    padding: 8px 16px;
+    font-size: 0.8rem;
+    min-width: 100px;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .podcast-prev-btn, .podcast-next-btn {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Cloud Container */
+.cloud-container {
+  position: fixed;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  max-width: 90%;
+  width: 70%;
+  max-width: 600px;
+}
+
+.cloud-bubble {
+  background: rgba(255, 255, 255, 0.501);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1px);
+  position: relative;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.cloud-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0);
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.cloud-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000000;
+  text-align: center;
+  font-weight: 500;
+  padding: 15px;
+}
+
+.emotion-display-inside {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  font-style: italic;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Summary Modal */
+.summary-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  backdrop-filter: blur(5px);
+}
+
+.summary-content {
+  background: rgba(254, 241, 147, 0.95);
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  position: relative;
+  margin: 20px;
+}
+
+.summary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid rgba(216, 27, 96, 0.2);
+}
+
+.summary-header h2 {
+  color: #D81B60;
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #333;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.close-btn:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.summary-text h3 {
+  color: #1E88E5;
+  font-size: 1.3rem;
+  margin: 20px 0 10px;
+}
+
+.summary-text p {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.modal-actions {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Dialogue container styles */
+.dialogue-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.speaker-name {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #0d0098;
+  border-bottom: 1px solid #1E88E5;
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+}
+
+.dialogue-text {
+  font-size: 1em;
+  line-height: 1.4;
+  color: #000000;
+}
+
+.emotion-display-inside {
+  font-style: italic;
+  color: #000000;
+  font-size: 0.85em;
+  text-align: right;
+  margin-top: 8px;
+  padding-top: 4px;
+  border-top: 1px dashed #ccc;
+}
+
+/* Cloud bubble text styles */
+.cloud-text {
+  padding: 20px;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .podcast-navigation-controls {
+    bottom: 20px;
+    gap: 15px;
+  }
+  
+  .podcast-nav-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  
+  .cloud-container {
+    bottom: 100px;
+    width: 95%;
+    max-width: 95%;
+  }
+  
+  .cloud-bubble {
+    padding: 15px;
+    border-radius: 20px;
+  }
+  
+  .cloud-text {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+  
+  .podcast-progress-container {
+    top: 15px;
+    right: 15px;
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+  
+  .summary-content {
+    padding: 20px;
+    margin: 15px;
+  }
+  
+  .summary-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  /* Mobile dialogue styles */
+  .speaker-name {
+    font-size: 1rem;
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+  }
+  
+  .dialogue-text {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  .emotion-display-inside {
+    font-size: 0.8rem;
+    margin-top: 5px;
+    padding-top: 3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .podcast-navigation-controls {
+    flex-direction: column;
+    align-items: center;
+    bottom: 10px;
+    gap: 10px;
+  }
+  
+  .podcast-nav-btn {
+    width: 80%;
+    max-width: 250px;
+  }
+  
+  .cloud-container {
+    bottom: 90px;
+  }
+  
+  .cloud-bubble {
+    padding: 14px;
+    border-radius: 14px;
+  }
+  
+  .cloud-text {
+    font-size: 0.8rem;
+    line-height: 1.3;
+  }
+
+  .summary-content {
+    padding: 15px;
+    margin: 10px;
+  }
+  
+  .summary-header h2 {
+    font-size: 1.3rem;
+  }
+  
+  /* Smaller mobile dialogue styles */
+  .speaker-name {
+    font-size: 0.9rem;
+  }
+  
+  .dialogue-text {
+    font-size: 0.8rem;
+  }
+  
+  .emotion-display-inside {
+    font-size: 0.7rem;
+  }
+}
+
+  .summary-content {
+    padding: 15px;
+    margin: 10px;
+  }
+  
+  .summary-header h2 {
+    font-size: 1.3rem;
+  }
+
+
+/* Additional emotion classes for missing emotions with unique colors */
+.character-image-full.granting-a-boon {
+  filter: drop-shadow(0 0 20px #ff8c00);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.revealing-truth {
+  filter: drop-shadow(0 0 20px #ff8c00);
+  animation: glow-orange 2s infinite alternate;
+}
+
+/* Add all unique emotions with distinct colors */
+.character-image-full.adoration {
+  filter: drop-shadow(0 0 20px #ff69b4);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.affection {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.analytical {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.anger {
+  filter: drop-shadow(0 0 20px #ff0000);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.anxiety {
+  filter: drop-shadow(0 0 20px #ff4500);
+  animation: glow-orangered 2s infinite alternate;
+}
+
+.character-image-full.arrogance {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+
+.character-image-full.awe {
+  filter: drop-shadow(0 0 20px #dda0dd);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.belief {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.comforting {
+  filter: drop-shadow(0 0 20px #ffb6c1);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.commanding {
+  filter: drop-shadow(0 0 20px #ff8c00);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.compassion {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.confidence {
+  filter: drop-shadow(0 0 20px #00ff00);
+  animation: glow-green 2s infinite alternate;
+}
+
+.character-image-full.confusion {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.conviction {
+  filter: drop-shadow(0 0 20px #4169e1);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.critical {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+
+.character-image-full.despair {
+  filter: drop-shadow(0 0 20px #2f4f4f);
+  animation: glow-darkslateblue 2s infinite alternate;
+}
+
+.character-image-full.detachment {
+  filter: drop-shadow(0 0 20px #d3d3d3);
+  animation: glow-white 2s infinite alternate;
+}
+
+.character-image-full.determination {
+  filter: drop-shadow(0 0 20px #000080);
+  animation: glow-navy 2s infinite alternate;
+}
+
+.character-image-full.doubt {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.eagerness {
+  filter: drop-shadow(0 0 20px #ffd700);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.encouraging {
+  filter: drop-shadow(0 0 20px #00ff7f);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.explanatory {
+  filter: drop-shadow(0 0 20px #1e90ff);
+  animation: glow-dodgerblue 2s infinite alternate;
+}
+
+.character-image-full.fear {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.gratitude {
+  filter: drop-shadow(0 0 20px #ffd700);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.helplessness {
+  filter: drop-shadow(0 0 20px #a9a9a9);
+  animation: glow-darkslateblue 2s infinite alternate;
+}
+
+.character-image-full.inquisitive {
+  filter: drop-shadow(0 0 20px #ffa500);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.insecurity {
+  filter: drop-shadow(0 0 20px #ff6347);
+  animation: glow-orangered 2s infinite alternate;
+}
+
+.character-image-full.instructional {
+  filter: drop-shadow(0 0 20px #1e90ff);
+  animation: glow-dodgerblue 2s infinite alternate;
+}
+
+.character-image-full.joy {
+  filter: drop-shadow(0 0 20px #ffff00);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.mercy {
+  filter: drop-shadow(0 0 20px #ffb6c1);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.narrative {
+  filter: drop-shadow(0 0 20px #6495ed);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.observational {
+  filter: drop-shadow(0 0 20px #20b2aa);
+  animation: glow-seagreen 2s infinite alternate;
+}
+
+.character-image-full.pleading {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.questioning {
+  filter: drop-shadow(0 0 20px #ffa500);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.reassurance {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.regret {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+
+.character-image-full.relief {
+  filter: drop-shadow(0 0 20px #00ff7f);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.resolution {
+  filter: drop-shadow(0 0 20px #2e8b57);
+  animation: glow-seagreen 2s infinite alternate;
+}
+
+.character-image-full.sorrow {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.sorrowful {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.surrender {
+  filter: drop-shadow(0 0 20px #dda0dd);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.uncertainty {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.warning {
+  filter: drop-shadow(0 0 20px #ff4500);
+  animation: glow-orangered 2s infinite alternate;
+}
+
+/* Hindi Emotions - Using transliterated versions */
+.character-image-full.anishchitata {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.anugrah {
+  filter: drop-shadow(0 0 20px #ffb6c1);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.asuraksha {
+  filter: drop-shadow(0 0 20px #ff6347);
+  animation: glow-orangered 2s infinite alternate;
+}
+
+.character-image-full.ahankar {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+
+.character-image-full.aatmavishwas {
+  filter: drop-shadow(0 0 20px #00ff00);
+  animation: glow-green 2s infinite alternate;
+}
+
+.character-image-full.aadesh {
+  filter: drop-shadow(0 0 20px #ff8c00);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.aanand {
+  filter: drop-shadow(0 0 20px #ffff00);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.aradhana {
+  filter: drop-shadow(0 0 20px #ff69b4);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.alochana {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+
+.character-image-full.ashcharya {
+  filter: drop-shadow(0 0 20px #dda0dd);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.aasakti {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.utsukata {
+  filter: drop-shadow(0 0 20px #ffd700);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.upadesh {
+  filter: drop-shadow(0 0 20px #1e90ff);
+  animation: glow-dodgerblue 2s infinite alternate;
+}
+
+.character-image-full.karuna {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.kritajnata {
+  filter: drop-shadow(0 0 20px #ffd700);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.krodh {
+  filter: drop-shadow(0 0 20px #ff0000);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.chinta {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.chetavani {
+  filter: drop-shadow(0 0 20px #ff4500);
+  animation: glow-orangered 2s infinite alternate;
+}
+
+.character-image-full.jijnasa {
+  filter: drop-shadow(0 0 20px #ffa500);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.gyanopadesh {
+  filter: drop-shadow(0 0 20px #ff8c00);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.daya {
+  filter: drop-shadow(0 0 20px #ffb6c1);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.nirasha {
+  filter: drop-shadow(0 0 20px #2f4f4f);
+  animation: glow-darkslateblue 2s infinite alternate;
+}
+
+.character-image-full.nishchay {
+  filter: drop-shadow(0 0 20px #000080);
+  animation: glow-navy 2s infinite alternate;
+}
+
+.character-image-full.pashchatap {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+
+.character-image-full.prashn {
+  filter: drop-shadow(0 0 20px #ffa500);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.prem {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.prerana {
+  filter: drop-shadow(0 0 20px #00ff7f);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.bhay {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.bharosa {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.vinati {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.vivaran {
+  filter: drop-shadow(0 0 20px #6495ed);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.vivashata {
+  filter: drop-shadow(0 0 20px #a9a9a9);
+  animation: glow-darkslateblue 2s infinite alternate;
+}
+
+.character-image-full.vishleshan {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.vishwas {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.vishad {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.vairagya {
+  filter: drop-shadow(0 0 20px #d3d3d3);
+  animation: glow-white 2s infinite alternate;
+}
+
+.character-image-full.sharanagati {
+  filter: drop-shadow(0 0 20px #dda0dd);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.shanti {
+  filter: drop-shadow(0 0 20px #00ff00);
+  animation: glow-green 2s infinite alternate;
+}
+
+.character-image-full.sandeh {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.santvana {
+  filter: drop-shadow(0 0 20px #00ff7f);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+/* Telugu Emotions - Using transliterated versions */
+/* English Emotions */
+.character-image-full.Adoration {
+  filter: drop-shadow(0 0 20px #ff69b4);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.Affection {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.Analytical {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.Anger {
+  filter: drop-shadow(0 0 20px #ff0000);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.Anxiety {
+  filter: drop-shadow(0 0 20px #ff4500);
+  animation: glow-orangered 2s infinite alternate;
+}
+
+.character-image-full.Arrogance {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+
+.character-image-full.Awe {
+  filter: drop-shadow(0 0 20px #dda0dd);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.Belief {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.Comforting {
+  filter: drop-shadow(0 0 20px #ffb6c1);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.Commanding {
+  filter: drop-shadow(0 0 20px #ff8c00);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.Compassion {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.Confidence {
+  filter: drop-shadow(0 0 20px #00ff00);
+  animation: glow-green 2s infinite alternate;
+}
+
+.character-image-full.Confusion {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.Conviction {
+  filter: drop-shadow(0 0 20px #4169e1);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.Critical {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+
+.character-image-full.Despair {
+  filter: drop-shadow(0 0 20px #2f4f4f);
+  animation: glow-darkslateblue 2s infinite alternate;
+}
+
+.character-image-full.Detachment {
+  filter: drop-shadow(0 0 20px #d3d3d3);
+  animation: glow-white 2s infinite alternate;
+}
+
+.character-image-full.Determination {
+  filter: drop-shadow(0 0 20px #000080);
+  animation: glow-navy 2s infinite alternate;
+}
+
+.character-image-full.Doubt {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.Eagerness {
+  filter: drop-shadow(0 0 20px #ffd700);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.Encouraging {
+  filter: drop-shadow(0 0 20px #00ff7f);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.Explanatory {
+  filter: drop-shadow(0 0 20px #1e90ff);
+  animation: glow-dodgerblue 2s infinite alternate;
+}
+
+.character-image-full.Fear {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.Granting\ a\ boon {
+  filter: drop-shadow(0 0 20px #ff8c00);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.Gratitude {
+  filter: drop-shadow(0 0 20px #ffd700);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.Helplessness {
+  filter: drop-shadow(0 0 20px #a9a9a9);
+  animation: glow-darkslateblue 2s infinite alternate;
+}
+
+.character-image-full.Inquisitive {
+  filter: drop-shadow(0 0 20px #ffa500);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.Insecurity {
+  filter: drop-shadow(0 0 20px #ff6347);
+  animation: glow-orangered 2s infinite alternate;
+}
+
+.character-image-full.Instructional {
+  filter: drop-shadow(0 0 20px #1e90ff);
+  animation: glow-dodgerblue 2s infinite alternate;
+}
+
+.character-image-full.Joy {
+  filter: drop-shadow(0 0 20px #ffff00);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.Mercy {
+  filter: drop-shadow(0 0 20px #ffb6c1);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.Narrative {
+  filter: drop-shadow(0 0 20px #6495ed);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.Observational {
+  filter: drop-shadow(0 0 20px #20b2aa);
+  animation: glow-seagreen 2s infinite alternate;
+}
+
+.character-image-full.Pleading {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.Questioning {
+  filter: drop-shadow(0 0 20px #ffa500);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.Reassurance {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.Regret {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+
+.character-image-full.Relief {
+  filter: drop-shadow(0 0 20px #00ff7f);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.Resolution {
+  filter: drop-shadow(0 0 20px #2e8b57);
+  animation: glow-seagreen 2s infinite alternate;
+}
+
+.character-image-full.Revealing\ Truth {
+  filter: drop-shadow(0 0 20px #ff8c00);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.Sorrow {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.Sorrowful {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.Surrender {
+  filter: drop-shadow(0 0 20px #dda0dd);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.Uncertainty {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.Warning {
+  filter: drop-shadow(0 0 20px #ff4500);
+  animation: glow-orangered 2s infinite alternate;
+}
+
+/* Hindi Emotions */
+.character-image-full.अनिश्चितता {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.अनुग्रह {
+  filter: drop-shadow(0 0 20px #ffb6c1);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.असुरक्षा {
+  filter: drop-shadow(0 0 20px #ff6347);
+  animation: glow-orangered 2s infinite alternate;
+}
+
+.character-image-full.अहंकार {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+
+.character-image-full.आत्मविश्वास {
+  filter: drop-shadow(0 0 20px #00ff00);
+  animation: glow-green 2s infinite alternate;
+}
+
+.character-image-full.आदेश {
+  filter: drop-shadow(0 0 20px #ff8c00);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.आनंद {
+  filter: drop-shadow(0 0 20px #ffff00);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.आराधना {
+  filter: drop-shadow(0 0 20px #ff69b4);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.आलोचना {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+
+.character-image-full.आश्चर्य {
+  filter: drop-shadow(0 0 20px #dda0dd);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.आसक्ति {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.उत्सुकता {
+  filter: drop-shadow(0 0 20px #ffd700);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.उपदेश {
+  filter: drop-shadow(0 0 20px #1e90ff);
+  animation: glow-dodgerblue 2s infinite alternate;
+}
+
+.character-image-full.करुणा {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.कृतज्ञता {
+  filter: drop-shadow(0 0 20px #ffd700);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.क्रोध {
+  filter: drop-shadow(0 0 20px #ff0000);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.चिंता {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.चेतावनी {
+  filter: drop-shadow(0 0 20px #ff4500);
+  animation: glow-orangered 2s infinite alternate;
+}
+
+.character-image-full.जिज्ञासा {
+  filter: drop-shadow(0 0 20px #ffa500);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.ज्ञानोपदेश {
+  filter: drop-shadow(0 0 20px #ff8c00);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.दया {
+  filter: drop-shadow(0 0 20px #ffb6c1);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.निराशा {
+  filter: drop-shadow(0 0 20px #2f4f4f);
+  animation: glow-darkslateblue 2s infinite alternate;
+}
+
+.character-image-full.निश्चय {
+  filter: drop-shadow(0 0 20px #000080);
+  animation: glow-navy 2s infinite alternate;
+}
+
+.character-image-full.पश्चाताप {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+
+.character-image-full.प्रश्न {
+  filter: drop-shadow(0 0 20px #ffa500);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.प्रेम {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.प्रेरणा {
+  filter: drop-shadow(0 0 20px #00ff7f);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.भय {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.भरोसा {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.विनती {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.विवरण {
+  filter: drop-shadow(0 0 20px #6495ed);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.विवशता {
+  filter: drop-shadow(0 0 20px #a9a9a9);
+  animation: glow-darkslateblue 2s infinite alternate;
+}
+
+.character-image-full.विश्लेषण {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.विश्वास {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.विषाद {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.वैराग्य {
+  filter: drop-shadow(0 0 20px #d3d3d3);
+  animation: glow-white 2s infinite alternate;
+}
+
+.character-image-full.शरणागति {
+  filter: drop-shadow(0 0 20px #dda0dd);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.शांति {
+  filter: drop-shadow(0 0 20px #00ff00);
+  animation: glow-green 2s infinite alternate;
+}
+
+.character-image-full.संदेह {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.सांत्वना {
+  filter: drop-shadow(0 0 20px #00ff7f);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+/* Telugu Emotions */
+.character-image-full.ఆసక్తి {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.అనిశ్చితి {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.అనుగ్రహం {
+  filter: drop-shadow(0 0 20px #ffb6c1);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.అభద్రతా\ భావం {
+  filter: drop-shadow(0 0 20px #ff6347);
+  animation: glow-orangered 2s infinite alternate;
+}
+
+.character-image-full.అహంకారం {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+
+.character-image-full.ఆందోళన {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.ఆత్రుత {
+  filter: drop-shadow(0 0 20px #ffd700);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.ఆదేశం {
+  filter: drop-shadow(0 0 20px #ff8c00);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.ఆనందం {
+  filter: drop-shadow(0 0 20px #ffff00);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.ఆరాధన {
+  filter: drop-shadow(0 0 20px #ff69b4);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.ఆశ్చర్యం {
+  filter: drop-shadow(0 0 20px #dda0dd);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.ఆసక్తి {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.ఉపశమనం {
+  filter: drop-shadow(0 0 20px #00ff00);
+  animation: glow-green 2s infinite alternate;
+}
+
+.character-image-full.కరుణ {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.కృతజ్ఞత {
+  filter: drop-shadow(0 0 20px #ffd700);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.కోపం {
+  filter: drop-shadow(0 0 20px #ff0000);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.జిజ్ఞాస {
+  filter: drop-shadow(0 0 20px #ffa500);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.జ్ఞానోపదేశం {
+  filter: drop-shadow(0 0 20px #ff8c00);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.దయ {
+  filter: drop-shadow(0 0 20px #ffb6c1);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.ధైర్యం {
+  filter: drop-shadow(0 0 20px #00ff00);
+  animation: glow-green 2s infinite alternate;
+}
+
+.character-image-full.నమ్మకం {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.నిరాశ {
+  filter: drop-shadow(0 0 20px #2f4f4f);
+  animation: glow-darkslateblue 2s infinite alternate;
+}
+
+.character-image-full.నిశ్చయం {
+  filter: drop-shadow(0 0 20px #000080);
+  animation: glow-navy 2s infinite alternate;
+}
+
+.character-image-full.నిస్సహాయత {
+  filter: drop-shadow(0 0 20px #a9a9a9);
+  animation: glow-darkslateblue 2s infinite alternate;
+}
+
+.character-image-full.పశ్చాత్తాపం {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+
+.character-image-full.ప్రశ్న {
+  filter: drop-shadow(0 0 20px #ffa500);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.ప్రేమ {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.ప్రేరణ {
+  filter: drop-shadow(0 0 20px #00ff7f);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.బోధన {
+  filter: drop-shadow(0 0 20px #1e90ff);
+  animation: glow-dodgerblue 2s infinite alternate;
+}
+
+.character-image-full.భయం {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.భరోసా {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.విచారం {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.విన్నపం {
+  filter: drop-shadow(0 0 20px #00ff7f);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.విమర్శ {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+
+.character-image-full.వివరణ {
+  filter: drop-shadow(0 0 20px #6495ed);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.విశ్లేషణ {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.వైరాగ్యం {
+  filter: drop-shadow(0 0 20px #d3d3d3);
+  animation: glow-white 2s infinite alternate;
+}
+
+.character-image-full.శరణాగతి {
+  filter: drop-shadow(0 0 20px #dda0dd);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.సందిగ్ధత {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.సందేహం {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.సంశయం {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.సానుభూతి {
+  filter: drop-shadow(0 0 20px #00ff7f);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.హెచ్చరిక {
+  filter: drop-shadow(0 0 20px #ff4500);
+  animation: glow-orangered 2s infinite alternate;
+}
+
+.character-image-full.anugraham {
+  filter: drop-shadow(0 0 20px #ffb6c1);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.abhdratha-bhavam {
+  filter: drop-shadow(0 0 20px #ff6347);
+  animation: glow-orangered 2s infinite alternate;
+}
+
+.character-image-full.ahankaram {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+
+.character-image-full.aandolanam {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.aatruta {
+  filter: drop-shadow(0 0 20px #ffd700);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.aadeshm {
+  filter: drop-shadow(0 0 20px #ff8c00);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.aanandm {
+  filter: drop-shadow(0 0 20px #ffff00);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.aradhnam {
+  filter: drop-shadow(0 0 20px #ff69b4);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.ashcharym {
+  filter: drop-shadow(0 0 20px #dda0dd);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.aasakti {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.upashamanam {
+  filter: drop-shadow(0 0 20px #00ff00);
+  animation: glow-green 2s infinite alternate;
+}
+
+.character-image-full.karuna {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.kritajnatham {
+  filter: drop-shadow(0 0 20px #ffd700);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.kopam {
+  filter: drop-shadow(0 0 20px #ff0000);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.jijnasa {
+  filter: drop-shadow(0 0 20px #ffa500);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.gyanopadeshm {
+  filter: drop-shadow(0 0 20px #ff8c00);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.dayam {
+  filter: drop-shadow(0 0 20px #ffb6c1);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.dhairym {
+  filter: drop-shadow(0 0 20px #00ff00);
+  animation: glow-green 2s infinite alternate;
+}
+
+.character-image-full.nammakam {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.nirasha {
+  filter: drop-shadow(0 0 20px #2f4f4f);
+  animation: glow-darkslateblue 2s infinite alternate;
+}
+
+.character-image-full.nishchayam {
+  filter: drop-shadow(0 0 20px #000080);
+  animation: glow-navy 2s infinite alternate;
+}
+
+.character-image-full.nissahayatham {
+  filter: drop-shadow(0 0 20px #a9a9a9);
+  animation: glow-darkslateblue 2s infinite alternate;
+}
+
+.character-image-full.pashchattapam {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+
+.character-image-full.prashnm {
+  filter: drop-shadow(0 0 20px #ffa500);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.premm {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.preranam {
+  filter: drop-shadow(0 0 20px #00ff7f);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.bodhanam {
+  filter: drop-shadow(0 0 20px #1e90ff);
+  animation: glow-dodgerblue 2s infinite alternate;
+}
+
+.character-image-full.bhaym {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.bharosam {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.vicharam {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.vinnapam {
+  filter: drop-shadow(0 0 20px #00ff7f);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.vimarsam {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+
+.character-image-full.vivaranam {
+  filter: drop-shadow(0 0 20px #6495ed);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.vishleshnam {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.vairagyam {
+  filter: drop-shadow(0 0 20px #d3d3d3);
+  animation: glow-white 2s infinite alternate;
+}
+
+.character-image-full.sharanagati {
+  filter: drop-shadow(0 0 20px #dda0dd);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.sandigdhatam {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.sandeham {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.sanshayam {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.saanubhuti {
+  filter: drop-shadow(0 0 20px #00ff7f);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.hechcharikam {
+  filter: drop-shadow(0 0 20px #ff4500);
+  animation: glow-orangered 2s infinite alternate;
+}

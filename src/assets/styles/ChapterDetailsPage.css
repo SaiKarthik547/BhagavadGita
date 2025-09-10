@@ -1,0 +1,1713 @@
+.chapter-details {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  min-height: 100vh;
+  border-radius: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  z-index: 0; /* Ensure background is behind other elements */
+  background: url('../images/background.png') center/cover no-repeat fixed;
+  background-size: cover;
+}
+
+.chapter-details-minimal {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: visible; /* Allow scrolling */
+}
+
+/* Start Button */
+.start-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.start-btn {
+  padding: 20px 40px;
+  font-size: 1.5rem;
+  background: linear-gradient(135deg, #FF9800, #FF5722);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.start-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+  .start-btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .back-button, .next-button, .prev-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@media (max-width: 480px) {
+  .start-btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .back-button, .next-button, .prev-button {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Full-screen Character Images */
+.character-fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease;
+  z-index: 5; /* Above background but below UI elements */
+  overflow: hidden;
+}
+
+.character-fullscreen.arjuna {
+  background: rgba(227, 242, 253, 0.3);
+}
+
+.character-fullscreen.krishna {
+  background: rgba(255, 243, 224, 0.3);
+}
+
+.character-image-full {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  animation: fadeIn 0.5s ease-out;
+  position: relative;
+  z-index: 6;
+}
+
+/* Emotion-based glowing effects */
+.character-image-full.anger,
+.character-image-full.anguished,
+.character-image-full.warning,
+.character-image-full.critical,
+.character-image-full.terrified {
+  filter: drop-shadow(0 0 20px #ff0000);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.calm,
+.character-image-full.reassuring,
+.character-image-full.understanding,
+.character-image-full.affirming,
+.character-image-full.resolved {
+  filter: drop-shadow(0 0 20px #00ff00);
+  animation: glow-green 2s infinite alternate;
+}
+
+.character-image-full.despondent,
+.character-image-full.distraught,
+.character-image-full.lamenting,
+.character-image-full.pained,
+.character-image-full.worried,
+.character-image-full.fearful {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+
+.character-image-full.chiding,
+.character-image-full.commanding,
+.character-image-full.firm,
+.character-image-full.revealing {
+  filter: drop-shadow(0 0 20px #ff4500);
+  animation: glow-orangered 2s infinite alternate;
+}
+
+.character-image-full.conflicted,
+.character-image-full.curious,
+.character-image-full.questioning,
+.character-image-full.inquisitive {
+  filter: drop-shadow(0 0 20px #ffa500);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.patient,
+.character-image-full.serene,
+.character-image-full.compassionate,
+.character-image-full.hopeful {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.observant,
+.character-image-full.seeking,
+.character-image-full.explanatory {
+  filter: drop-shadow(0 0 20px #1e90ff);
+  animation: glow-dodgerblue 2s infinite alternate;
+}
+
+.character-image-full.guiding,
+.character-image-full.instructive,
+.character-image-full.clarifying,
+.character-image-full.listing_virtues,
+.character-image-full.exemplary {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.wise,
+.character-image-full.practical,
+.character-image-full.praising,
+.character-image-full.describing {
+  filter: drop-shadow(0 0 20px #4b0082);
+  animation: glow-indigo 2s infinite alternate;
+}
+
+.character-image-full.resolute,
+.character-image-full.foundational,
+.character-image-full.defining {
+  filter: drop-shadow(0 0 20px #000080);
+  animation: glow-navy 2s infinite alternate;
+}
+
+.character-image-full.enlightening,
+.character-image-full.promising,
+.character-image-full.metaphorical,
+.character-image-full.enlightened {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.profound,
+.character-image-full.omniscient,
+.character-image-full.conclusive {
+  filter: drop-shadow(0 0 20px #483d8b);
+  animation: glow-darkslateblue 2s infinite alternate;
+}
+
+.character-image-full.illustrative,
+.character-image-full.revealing,
+.character-image-full.devotional {
+  filter: drop-shadow(0 0 20px #9932cc);
+  animation: glow-darkorchid 2s infinite alternate;
+}
+
+.character-image-full.surrendered,
+.character-image-full.merciful,
+.character-image-full.detached {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.overwhelmed,
+.character-image-full.sustaining,
+.character-image-full.confirming {
+  filter: drop-shadow(0 0 20px #2e8b57);
+  animation: glow-seagreen 2s infinite alternate;
+}
+
+/* ADD MISSING EMOTION CLASSES FOR ENGLISH EMOTIONS */
+
+/* Add all the English emotions that were not previously defined */
+.character-image-full.resolute {
+  filter: drop-shadow(0 0 20px #000080);
+  animation: glow-navy 2s infinite alternate;
+}
+
+.character-image-full.calm {
+  filter: drop-shadow(0 0 20px #00ff00);
+  animation: glow-green 2s infinite alternate;
+}
+
+.character-image-full.despondent {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+
+.character-image-full.observant {
+  filter: drop-shadow(0 0 20px #1e90ff);
+  animation: glow-dodgerblue 2s infinite alternate;
+}
+
+.character-image-full.anguished {
+  filter: drop-shadow(0 0 20px #ff0000);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.chiding {
+  filter: drop-shadow(0 0 20px #ff4500);
+  animation: glow-orangered 2s infinite alternate;
+}
+
+.character-image-full.conflicted {
+  filter: drop-shadow(0 0 20px #ffa500);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.patient {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.fearful {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.serene {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.distraught {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+
+.character-image-full.guiding {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.lamenting {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+
+.character-image-full.compassionate {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.surrendered {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.firm {
+  filter: drop-shadow(0 0 20px #ff4500);
+  animation: glow-orangered 2s infinite alternate;
+}
+
+.character-image-full.resolved {
+  filter: drop-shadow(0 0 20px #00ff00);
+  animation: glow-green 2s infinite alternate;
+}
+
+.character-image-full.wise {
+  filter: drop-shadow(0 0 20px #4b0082);
+  animation: glow-indigo 2s infinite alternate;
+}
+
+.character-image-full.overwhelmed {
+  filter: drop-shadow(0 0 20px #2e8b57);
+  animation: glow-seagreen 2s infinite alternate;
+}
+
+.character-image-full.commanding {
+  filter: drop-shadow(0 0 20px #ff4500);
+  animation: glow-orangered 2s infinite alternate;
+}
+
+.character-image-full.surrendering {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.enlightening {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.curious {
+  filter: drop-shadow(0 0 20px #ffa500);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.instructive {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.pained {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+
+.character-image-full.seeking {
+  filter: drop-shadow(0 0 20px #1e90ff);
+  animation: glow-dodgerblue 2s infinite alternate;
+}
+
+.character-image-full.reassuring {
+  filter: drop-shadow(0 0 20px #00ff00);
+  animation: glow-green 2s infinite alternate;
+}
+
+.character-image-full.inquisitive {
+  filter: drop-shadow(0 0 20px #ffa500);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.illustrative {
+  filter: drop-shadow(0 0 20px #9932cc);
+  animation: glow-darkorchid 2s infinite alternate;
+}
+
+.character-image-full.questioning {
+  filter: drop-shadow(0 0 20px #ffa500);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.worried {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.profound {
+  filter: drop-shadow(0 0 20px #483d8b);
+  animation: glow-darkslateblue 2s infinite alternate;
+}
+
+.character-image-full.descriptive {
+  filter: drop-shadow(0 0 20px #6495ed);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.inspired {
+  filter: drop-shadow(0 0 20px #00ff7f);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.conclusive {
+  filter: drop-shadow(0 0 20px #483d8b);
+  animation: glow-darkslateblue 2s infinite alternate;
+}
+
+.character-image-full.confused {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.clarifying {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.practical {
+  filter: drop-shadow(0 0 20px #4b0082);
+  animation: glow-indigo 2s infinite alternate;
+}
+
+.character-image-full.exemplary {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.concerned {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.warning {
+  filter: drop-shadow(0 0 20px #ff4500);
+  animation: glow-orangered 2s infinite alternate;
+}
+
+.character-image-full.determined {
+  filter: drop-shadow(0 0 20px #000080);
+  animation: glow-navy 2s infinite alternate;
+}
+
+.character-image-full.strategic {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.understanding {
+  filter: drop-shadow(0 0 20px #00ff00);
+  animation: glow-green 2s infinite alternate;
+}
+
+.character-image-full.hierarchical {
+  filter: drop-shadow(0 0 20px #4b0082);
+  animation: glow-indigo 2s infinite alternate;
+}
+
+.character-image-full.enlightened {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.revealing {
+  filter: drop-shadow(0 0 20px #9932cc);
+  animation: glow-darkorchid 2s infinite alternate;
+}
+
+.character-image-full.puzzled {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.authoritative {
+  filter: drop-shadow(0 0 20px #4b0082);
+  animation: glow-indigo 2s infinite alternate;
+}
+
+.character-image-full.promising {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.all-encompassing {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.all-pervading {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.foundational {
+  filter: drop-shadow(0 0 20px #000080);
+  animation: glow-navy 2s infinite alternate;
+}
+
+.character-image-full.categorizing {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.loving {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.inquiring {
+  filter: drop-shadow(0 0 20px #ffa500);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.discerning {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.mysterious {
+  filter: drop-shadow(0 0 20px #483d8b);
+  animation: glow-darkslateblue 2s infinite alternate;
+}
+
+.character-image-full.hopeful {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.affectionate {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.devotional {
+  filter: drop-shadow(0 0 20px #9932cc);
+  animation: glow-darkorchid 2s infinite alternate;
+}
+
+.character-image-full.eager {
+  filter: drop-shadow(0 0 20px #ffd700);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.attentive {
+  filter: drop-shadow(0 0 20px #1e90ff);
+  animation: glow-dodgerblue 2s infinite alternate;
+}
+
+.character-image-full.immanent {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.illustrious {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.exploring {
+  filter: drop-shadow(0 0 20px #1e90ff);
+  animation: glow-dodgerblue 2s infinite alternate;
+}
+
+.character-image-full.essential {
+  filter: drop-shadow(0 0 20px #000080);
+  animation: glow-navy 2s infinite alternate;
+}
+
+.character-image-full.majestic {
+  filter: drop-shadow(0 0 20px #4b0082);
+  animation: glow-indigo 2s infinite alternate;
+}
+
+.character-image-full.analytical {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.preeminent {
+  filter: drop-shadow(0 0 20px #4b0082);
+  animation: glow-indigo 2s infinite alternate;
+}
+
+.character-image-full.supreme {
+  filter: drop-shadow(0 0 20px #4b0082);
+  animation: glow-indigo 2s infinite alternate;
+}
+
+.character-image-full.wondering {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.omnipresent {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.reverent {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.granting {
+  filter: drop-shadow(0 0 20px #ff8c00);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.awestruck {
+  filter: drop-shadow(0 0 20px #dda0dd);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.magnificent {
+  filter: drop-shadow(0 0 20px #ff69b4);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.dazzled {
+  filter: drop-shadow(0 0 20px #ff1493);
+  animation: glow-deeppink 2s infinite alternate;
+}
+
+.character-image-full.terrified {
+  filter: drop-shadow(0 0 20px #ff0000);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.reveling {
+  filter: drop-shadow(0 0 20px #00ff7f);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.pleading {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.relieved {
+  filter: drop-shadow(0 0 20px #00ff7f);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.unifying {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.accommodating {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.desperate {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+
+.character-image-full.merciful {
+  filter: drop-shadow(0 0 20px #ffb6c1);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.detached {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.equanimous {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.humbled {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.inclusive {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.speculative {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.visionary {
+  filter: drop-shadow(0 0 20px #4b0082);
+  animation: glow-indigo 2s infinite alternate;
+}
+
+.character-image-full.explanatory {
+  filter: drop-shadow(0 0 20px #1e90ff);
+  animation: glow-dodgerblue 2s infinite alternate;
+}
+
+.character-image-full.confirming {
+  filter: drop-shadow(0 0 20px #2e8b57);
+  animation: glow-seagreen 2s infinite alternate;
+}
+
+.character-image-full.consequential {
+  filter: drop-shadow(0 0 20px #483d8b);
+  animation: glow-darkslateblue 2s infinite alternate;
+}
+
+.character-image-full.liberating {
+  filter: drop-shadow(0 0 20px #00ff7f);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.describing {
+  filter: drop-shadow(0 0 20px #4b0082);
+  animation: glow-indigo 2s infinite alternate;
+}
+
+.character-image-full.behavioral {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.evaluating {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.sacred {
+  filter: drop-shadow(0 0 20px #dda0dd);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.definitive {
+  filter: drop-shadow(0 0 20px #000080);
+  animation: glow-navy 2s infinite alternate;
+}
+
+.character-image-full.anticipating {
+  filter: drop-shadow(0 0 20px #ffd700);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.ultimate {
+  filter: drop-shadow(0 0 20px #4b0082);
+  animation: glow-indigo 2s infinite alternate;
+}
+
+.character-image-full.gracious {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.receptive {
+  filter: drop-shadow(0 0 20px #1e90ff);
+  animation: glow-dodgerblue 2s infinite alternate;
+}
+
+.character-image-full.emphatic {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.praising {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.accepting {
+  filter: drop-shadow(0 0 20px #00ff00);
+  animation: glow-green 2s infinite alternate;
+}
+
+.character-image-full.impartial {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.blessing {
+  filter: drop-shadow(0 0 20px #dda0dd);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.just {
+  filter: drop-shadow(0 0 20px #4169e1);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.cautious {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.warning_seriously {
+  filter: drop-shadow(0 0 20px #ff4500);
+  animation: glow-orangered 2s infinite alternate;
+}
+
+/* Hindi Emotions */
+.character-image-full.दृढ़ {
+  filter: drop-shadow(0 0 20px #000080);
+  animation: glow-navy 2s infinite alternate;
+}
+
+.character-image-full.शांत {
+  filter: drop-shadow(0 0 20px #00ff00);
+  animation: glow-green 2s infinite alternate;
+}
+
+.character-image-full.विषादग्रस्त {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+
+.character-image-full.अवलोकनशील {
+  filter: drop-shadow(0 0 20px #1e90ff);
+  animation: glow-dodgerblue 2s infinite alternate;
+}
+
+.character-image-full.व्यथित {
+  filter: drop-shadow(0 0 20px #ff0000);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.झिड़कते-हुए {
+  filter: drop-shadow(0 0 20px #ff4500);
+  animation: glow-orangered 2s infinite alternate;
+}
+
+.character-image-full.संघर्षरत {
+  filter: drop-shadow(0 0 20px #ffa500);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.धैर्यवान {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.भयभीत {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.स्थिर {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.व्याकुल {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+
+.character-image-full.मार्गदर्शक {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.विलाप-करते-हुए {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+
+.character-image-full.करुणामय {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.समर्पित {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.दृढ़ {
+  filter: drop-shadow(0 0 20px #000080);
+  animation: glow-navy 2s infinite alternate;
+}
+
+.character-image-full.संकल्पित {
+  filter: drop-shadow(0 0 20px #00ff00);
+  animation: glow-green 2s infinite alternate;
+}
+
+.character-image-full.ज्ञानी {
+  filter: drop-shadow(0 0 20px #4b0082);
+  animation: glow-indigo 2s infinite alternate;
+}
+
+.character-image-full.अभिभूत {
+  filter: drop-shadow(0 0 20px #2e8b57);
+  animation: glow-seagreen 2s infinite alternate;
+}
+
+.character-image-full.आदेशात्मक {
+  filter: drop-shadow(0 0 20px #ff4500);
+  animation: glow-orangered 2s infinite alternate;
+}
+
+.character-image-full.प्रबुद्ध {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.उत्सुक {
+  filter: drop-shadow(0 0 20px #ffd700);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.शिक्षाप्रद {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.दुखी {
+  filter: drop-shadow(0 0 20px #8b0000);
+  animation: glow-darkred 2s infinite alternate;
+}
+
+.character-image-full.अन्वेषी {
+  filter: drop-shadow(0 0 20px #1e90ff);
+  animation: glow-dodgerblue 2s infinite alternate;
+}
+
+.character-image-full.आश्वस्त {
+  filter: drop-shadow(0 0 20px #00ff00);
+  animation: glow-green 2s infinite alternate;
+}
+
+.character-image-full.जिज्ञासु {
+  filter: drop-shadow(0 0 20px #ffa500);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.दृष्टांतात्मक {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.प्रश्नवाचक {
+  filter: drop-shadow(0 0 20px #ffa500);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.चिंतित {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.गहन {
+  filter: drop-shadow(0 0 20px #483d8b);
+  animation: glow-darkslateblue 2s infinite alternate;
+}
+
+.character-image-full.वर्णनात्मक {
+  filter: drop-shadow(0 0 20px #6495ed);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.प्रेरित {
+  filter: drop-shadow(0 0 20px #00ff7f);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.निर्णायक {
+  filter: drop-shadow(0 0 20px #483d8b);
+  animation: glow-darkslateblue 2s infinite alternate;
+}
+
+.character-image-full.भ्रमित {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.स्पष्ट-करते-हुए {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.व्यावहारिक {
+  filter: drop-shadow(0 0 20px #4b0082);
+  animation: glow-indigo 2s infinite alternate;
+}
+
+.character-image-full.उदाहरणात्मक {
+  filter: drop-shadow(0 0 20px #32cd32);
+  animation: glow-limegreen 2s infinite alternate;
+}
+
+.character-image-full.रणनीतिक {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.समझ {
+  filter: drop-shadow(0 0 20px #00ff00);
+  animation: glow-green 2s infinite alternate;
+}
+
+.character-image-full.पदानुक्रमित {
+  filter: drop-shadow(0 0 20px #4b0082);
+  animation: glow-indigo 2s infinite alternate;
+}
+
+.character-image-full.प्रकट-करते-हुए {
+  filter: drop-shadow(0 0 20px #9932cc);
+  animation: glow-darkorchid 2s infinite alternate;
+}
+
+.character-image-full.उलझन-में {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.आधिकारिक {
+  filter: drop-shadow(0 0 20px #4b0082);
+  animation: glow-indigo 2s infinite alternate;
+}
+
+.character-image-full.वचन-देते-हुए {
+  filter: drop-shadow(0 0 20px #daa520);
+  animation: glow-goldenrod 2s infinite alternate;
+}
+
+.character-image-full.सर्व-व्यापी {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.आधारभूत {
+  filter: drop-shadow(0 0 20px #000080);
+  animation: glow-navy 2s infinite alternate;
+}
+
+.character-image-full.वर्गीकृत-करते-हुए {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.प्रेममय {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.पूछताछ {
+  filter: drop-shadow(0 0 20px #ffa500);
+  animation: glow-orange 2s infinite alternate;
+}
+
+.character-image-full.विवेकपूर्ण {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.रहस्यमय {
+  filter: drop-shadow(0 0 20px #483d8b);
+  animation: glow-darkslateblue 2s infinite alternate;
+}
+
+.character-image-full.आशावान {
+  filter: drop-shadow(0 0 20px #4682b4);
+  animation: glow-blue 2s infinite alternate;
+}
+
+.character-image-full.स्नेही {
+  filter: drop-shadow(0 0 20px #ff6961);
+  animation: glow-red 2s infinite alternate;
+}
+
+.character-image-full.भक्तिमय {
+  filter: drop-shadow(0 0 20px #9932cc);
+  animation: glow-darkorchid 2s infinite alternate;
+}
+
+.character-image-full.ध्यान-से {
+  filter: drop-shadow(0 0 20px #1e90ff);
+  animation: glow-dodgerblue 2s infinite alternate;
+}
+
+.character-image-full.अंतर्निहित {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.शानदार {
+  filter: drop-shadow(0 0 20px #daa520);
+}
+
+/* Add back the removed emotion class */
+.character-image-full.వివేచన {
+  filter: drop-shadow(0 0 20px #9370db);
+  animation: glow-mediumpurple 2s infinite alternate;
+}
+
+.character-image-full.భక్తి {
+  filter: drop-shadow(0 0 20px #9932cc);
+  animation: glow-darkorchid 2s infinite alternate;
+}
+
+.character-image-full.neutral {
+  filter: drop-shadow(0 0 20px #f10e0e);
+  animation: glow-white 2s infinite alternate;
+}
+
+.character-image-full.neutral {
+  filter: drop-shadow(0 0 20px #5ddfee);
+}
+
+/* Glow Animations */
+@keyframes glow-red {
+  from { filter: drop-shadow(0 0 10px #ff0000); }
+  to { filter: drop-shadow(0 0 30px #ff0000); }
+}
+
+@keyframes glow-green {
+  from { filter: drop-shadow(0 0 10px #00ff00); }
+  to { filter: drop-shadow(0 0 30px #00ff00); }
+}
+
+@keyframes glow-darkred {
+  from { filter: drop-shadow(0 0 10px #8b0000); }
+  to { filter: drop-shadow(0 0 30px #8b0000); }
+}
+
+@keyframes glow-orangered {
+  from { filter: drop-shadow(0 0 10px #ff4500); }
+  to { filter: drop-shadow(0 0 30px #ff4500); }
+}
+
+@keyframes glow-orange {
+  from { filter: drop-shadow(0 0 10px #ffa500); }
+  to { filter: drop-shadow(0 0 30px #ffa500); }
+}
+
+@keyframes glow-blue {
+  from { filter: drop-shadow(0 0 10px #4682b4); }
+  to { filter: drop-shadow(0 0 30px #4682b4); }
+}
+
+@keyframes glow-dodgerblue {
+  from { filter: drop-shadow(0 0 10px #1e90ff); }
+  to { filter: drop-shadow(0 0 30px #1e90ff); }
+}
+
+@keyframes glow-limegreen {
+  from { filter: drop-shadow(0 0 10px #32cd32); }
+  to { filter: drop-shadow(0 0 30px #32cd32); }
+}
+
+@keyframes glow-indigo {
+  from { filter: drop-shadow(0 0 10px #4b0082); }
+  to { filter: drop-shadow(0 0 30px #4b0082); }
+}
+
+@keyframes glow-navy {
+  from { filter: drop-shadow(0 0 10px #000080); }
+  to { filter: drop-shadow(0 0 30px #000080); }
+}
+
+@keyframes glow-goldenrod {
+  from { filter: drop-shadow(0 0 10px #daa520); }
+  to { filter: drop-shadow(0 0 30px #daa520); }
+}
+
+@keyframes glow-darkslateblue {
+  from { filter: drop-shadow(0 0 10px #483d8b); }
+  to { filter: drop-shadow(0 0 30px #483d8b); }
+}
+
+@keyframes glow-darkorchid {
+  from { filter: drop-shadow(0 0 10px #9932cc); }
+  to { filter: drop-shadow(0 0 30px #9932cc); }
+}
+
+@keyframes glow-mediumpurple {
+  from { filter: drop-shadow(0 0 10px #9370db); }
+  to { filter: drop-shadow(0 0 30px #9370db); }
+}
+
+@keyframes glow-seagreen {
+  from { filter: drop-shadow(0 0 10px #2e8b57); }
+  to { filter: drop-shadow(0 0 30px #2e8b57); }
+}
+
+/* Additional glow animation for white/default glow */
+@keyframes glow-white {
+  from { filter: drop-shadow(0 0 10px #ff5a5a); }
+  to { filter: drop-shadow(0 0 30px #fb0202); }
+}
+
+/* Additional keyframe animations */
+@keyframes glow-deeppink {
+  from { filter: drop-shadow(0 0 10px #ff1493); }
+  to { filter: drop-shadow(0 0 30px #ff1493); }
+}
+
+/* Emotion Display */
+.emotion-display {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(253, 77, 236, 0.7);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  z-index: 10;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  min-width: 200px;
+}
+
+/* Cloud-shaped Text Container */
+.cloud-container {
+  position: fixed;
+  bottom: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  width: 70%;
+  max-width: 600px;
+  pointer-events: none; /* Prevent container from blocking interactions */
+}
+
+.cloud-bubble {
+  position: relative;
+  background: linear-gradient(135deg, #ffffff, #f0f8ff);
+  border-radius: 30px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.005);
+  animation: fadeIn 0.3s ease-out;
+  border: 0px solid rgba(255, 255, 255, 0);
+  pointer-events: auto; /* Allow interactions within the bubble */
+}
+
+
+
+.cloud-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 20px;
+  background: linear-gradient(135deg, #ffffff, #f0f8ff);
+  border-radius: 50%;
+  filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.1));
+}
+
+.cloud-text {
+  padding: 15px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Emotion Display inside text box */
+.emotion-display-inside {
+  font-style: italic;
+  color: #666;
+  font-size: 0.9em;
+  text-align: right;
+  margin-top: 10px;
+  padding-top: 5px;
+  border-top: 1px dashed #ccc;
+}
+
+.cloud-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #777;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.cloud-close-btn:hover {
+  background: rgba(0, 0, 0, 0.1);
+  color: #333;
+  transform: rotate(90deg);
+}
+
+/* Interactive Controls */
+.interactive-controls-minimal {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+  z-index: 30;
+  pointer-events: none; /* Ensure container doesn't block clicks */
+}
+
+.interactive-btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  min-width: 150px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  pointer-events: auto; /* Ensure buttons receive clicks */
+  position: relative; /* Ensure proper z-index stacking */
+  z-index: 31; /* Higher than container */
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.ask-btn {
+  background: linear-gradient(135deg, #2196F3, #21CBF3);
+  color: white;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.answer-btn {
+  background: linear-gradient(135deg, #FF9800, #FF5722);
+  color: white;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.interactive-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Highlighted buttons */
+.interactive-btn.highlighted {
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(255, 215, 0, 1);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+  }
+}
+
+/* Action Popup */
+.action-popup {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 0, 0, 0.9);
+  color: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  z-index: 1000;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  animation: fadeInOut 3s forwards;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; top: 0; }
+  10% { opacity: 1; top: 20px; }
+  90% { opacity: 1; top: 20px; }
+  100% { opacity: 0; top: 0; }
+}
+
+
+
+/* Summary Modal */
+.summary-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+}
+
+.summary-content {
+  background: rgba(255, 243, 224, 0.95);
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  position: relative;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.summary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid rgba(216, 27, 96, 0.2);
+}
+
+.summary-header h2 {
+  margin: 0;
+  color: #D81B60;
+  font-size: 2rem;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #777;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.close-btn:hover {
+  background: rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.summary-text h3 {
+  color: #D81B60;
+  font-size: 1.5rem;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.summary-text ul {
+  padding-left: 20px;
+}
+
+.summary-text li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.summary-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 15px;
+  border-radius: 10px;
+  border-left: 4px solid #D81B60;
+}
+
+.modal-actions {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.back-link {
+  display: inline-block;
+  padding: 12px 30px;
+  background: linear-gradient(135deg, #4CAF50, #2E7D32);
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.back-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Error Message */
+.error-message {
+  text-align: center;
+  padding: 50px 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  margin: 50px auto;
+  max-width: 600px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.error-message h2 {
+  color: #D81B60;
+  margin-bottom: 20px;
+}
+
+.error-message p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(10px, 15px) rotate(5deg);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cloud-container {
+    width: 95%;
+    bottom: 110px;
+    max-width: 95%;
+  }
+  
+  .cloud-bubble {
+    padding: 15px;
+    border-radius: 20px;
+  }
+  
+  .cloud-text {
+    font-size: 0.9rem;
+    padding: 10px;
+    line-height: 1.4;
+  }
+  
+  .interactive-controls-minimal {
+    flex-direction: column;
+    gap: 10px;
+    bottom: 10px;
+    z-index: 30;
+  }
+  
+  .interactive-btn {
+    min-width: 200px;
+    padding: 12px;
+    font-size: 0.9rem;
+    z-index: 31;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .summary-content {
+    width: 95%;
+    padding: 15px;
+  }
+  
+  .summary-header h2 {
+    font-size: 1.2rem;
+  }
+  
+  /* Mobile-specific glow animations */
+  @keyframes glow-deeppink {
+    from { filter: drop-shadow(0 0 8px #ff1493); }
+    to { filter: drop-shadow(0 0 25px #ff1493); }
+  }
+  
+  /* Mobile dialogue styles */
+  .speaker-name {
+    font-size: 1rem;
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+  }
+  
+  .dialogue-text {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  .emotion-display-inside {
+    font-size: 0.8rem;
+    margin-top: 5px;
+    padding-top: 3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cloud-container {
+    width: 95%;
+    bottom: 100px;
+  }
+  
+  .cloud-bubble {
+    padding: 12px;
+    border-radius: 15px;
+  }
+  
+  .cloud-text {
+    font-size: 0.8rem;
+    line-height: 1.3;
+  }
+  
+  .interactive-controls-minimal {
+    bottom: 10px;
+  }
+  
+  .interactive-btn {
+    min-width: 180px;
+    font-size: 0.8rem;
+    padding: 10px;
+    z-index: 31;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .start-btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+  
+  .action-popup {
+    width: 90%;
+    font-size: 0.8rem;
+    padding: 8px 12px;
+  }
+  
+  /* Smaller mobile dialogue styles */
+  .speaker-name {
+    font-size: 0.9rem;
+  }
+  
+  .dialogue-text {
+    font-size: 0.8rem;
+  }
+  
+  .emotion-display-inside {
+    font-size: 0.7rem;
+  }
+}
+
+/* Dialogue container styles */
+.dialogue-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.speaker-name {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #0012af;
+  border-bottom: 1px solid #1E88E5;
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+}
+
+.dialogue-text {
+  font-size: 1em;
+  line-height: 1.4;
+  color: #000000;
+}
+
+.emotion-display-inside {
+  font-style: italic;
+  color: #000000;
+  font-size: 0.85em;
+  text-align: right;
+  margin-top: 8px;
+  padding-top: 4px;
+  border-top: 1px dashed #ccc;
+}
+
+/* Cloud bubble text styles */
+.cloud-text {
+  padding: 20px;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
