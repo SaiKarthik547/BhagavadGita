@@ -486,7 +486,7 @@ const translations = {
     ],
     contactUs: "Contact Us",
     contactUsText: "For feedback, suggestions, or spiritual guidance, please reach out to us at karthiksai5421@gmail.com",
-<<<<<<< HEAD
+
     
     // New AboutPage translations
     additionalFunctions: "Additional Functions and Uses",
@@ -539,8 +539,7 @@ const translations = {
     frontendDevelopers: "Frontend Developers with experience in interactive learning platforms",
     audioEngineers: "Audio Engineers creating immersive sound experiences",
     contentSpecialists: "Content Specialists ensuring accuracy and accessibility",
-=======
->>>>>>> 873c89020f52fab02b22db252ad49f2071759501
+
     
     // ChapterDetailsPage translations
     chapterNotFound: "Chapter not found",
@@ -642,7 +641,6 @@ const translations = {
     ],
     contactUs: "संपर्क करें",
     contactUsText: "प्रतिक्रिया, सुझाव या आध्यात्मिक मार्गदर्शन के लिए, कृपया हमसे संपर्क करें karthiksai5421@gmail.com पर",
-<<<<<<< HEAD
     
     // New AboutPage translations
     additionalFunctions: "अतिरिक्त कार्य और उपयोग",
@@ -695,8 +693,6 @@ const translations = {
     frontendDevelopers: "इंटरैक्टिव लर्निंग प्लेटफॉर्म में अनुभव रखने वाले फ्रंटएंड डेवलपर्स",
     audioEngineers: "आकर्षक ध्वनि अनुभव पैदा करने वाले ऑडियो इंजीनियर",
     contentSpecialists: "सटीकता और पहुँच को सुनिश्चित करने वाले सामग्री विशेषज्ञ",
-=======
->>>>>>> 873c89020f52fab02b22db252ad49f2071759501
     
     // ChapterDetailsPage translations
     chapterNotFound: "अध्याय नहीं मिला",
@@ -800,8 +796,6 @@ const translations = {
     ],
     contactUs: "సంప్రదించండి",
     contactUsText: "ప్రతిస్పందన, సూచనలు లేదా ఆధ్యాత్మిక మార్గదర్శనం కోసం, దయచేసి మమ్మల్ని సంప్రదించండి karthiksai5421@gmail.com",
-<<<<<<< HEAD
-    
     // New AboutPage translations
     additionalFunctions: "అదనపు ఫంక్షన్లు మరియు ఉపయోగాలు",
     interactiveLearning: "ఇంటరాక్టివ్ లర్నింగ్",
@@ -852,8 +846,6 @@ const translations = {
     frontendDevelopers: "ఇంటరాక్టివ్ లర్నింగ్ ప్లాట్‌ఫారమ్‌లలో అనుభవం ఉన్న ఫ్రంటెండ్ డెవలపర్లు",
     audioEngineers: "ఆకర్షకమైన ధ్వని అనుభవాలను సృష్టిస్తున్న ఆడియో ఇంజనీర్లు",
     contentSpecialists: "ఖచ్చితత్వం మరియు ప్రాప్తతను ఖాయం చేసే కంటెంట్ ప్రత్యేక నిపుణులు",
-=======
->>>>>>> 873c89020f52fab02b22db252ad49f2071759501
     
     // ChapterDetailsPage translations
     chapterNotFound: "అధ్యాయం కనబడలేదు",
