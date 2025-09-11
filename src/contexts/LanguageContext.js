@@ -481,7 +481,6 @@ const translations = {
       "Guided meditation sessions",
       "Sacred chants and mantras",
       "Kid-friendly explanations",
-      "Audio narration with divine voices",
       "Beautiful visual design inspired by Indian spirituality"
     ],
     contactUs: "Contact Us",
@@ -636,7 +635,6 @@ const translations = {
       "मार्गदर्शित ध्यान सत्र",
       "पवित्र जप और मंत्र",
       "बच्चों के अनुकूल व्याख्याएँ",
-      "दिव्य स्वरों के साथ ऑडियो वर्णन",
       "भारतीय आध्यात्मिकता से प्रेरित सुंदर दृश्य डिज़ाइन"
     ],
     contactUs: "संपर्क करें",
@@ -791,7 +789,6 @@ const translations = {
       "మార్గదర్శిత ధ్యాన సెషన్లు",
       "పవిత్ర జపాలు మరియు మంత్రాలు",
       "పిల్లల అనుకూల వివరణలు",
-      "దివ్య స్వరాలతో ఆడియో వర్ణన",
       "భారతీయ ఆధ్యాత్మికత నుండి ప్రేరితమైన అందమైన దృశ్య డిజైన్"
     ],
     contactUs: "సంప్రదించండి",
