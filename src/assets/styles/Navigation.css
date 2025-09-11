@@ -56,7 +56,15 @@
   padding: 0.5rem;
   border-bottom: 1px solid rgba(216, 27, 96, 0.596);
   color: #eb0a5c;
-  background: rgba(89, 207, 246, 0.452);
+  background: rgba(137, 222, 250, 0.427);
+  text-align: center;
+}
+
+.mobile-nav-header h2 {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .close-mobile-nav {
