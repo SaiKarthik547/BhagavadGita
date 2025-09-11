@@ -36,25 +36,40 @@ const HomePage = () => {
         {/* Feature Buttons - Show popups when clicked */}
         <div className="features-buttons-section">
           <div className="features-buttons-grid">
-            <button className="feature-button" onClick={() => openPopup('ekashloki')}>
-              <div className="feature-icon">
-                <Icon name="flute" className="svg-icon" />
+            <div className="left-buttons">
+              <div className="feature-button-container">
+                <button className="feature-button" onClick={() => openPopup('ekashloki')}>
+                  <div className="feature-icon">
+                    <Icon name="flute" className="svg-icon" />
+                  </div>
+                </button>
+                <span className="feature-button-text">{ekashlokiData.name || t('exploreTeachings')}</span>
               </div>
-              <span className="feature-button-text">{ekashlokiData.name || t('exploreTeachings')}</span>
-            </button>
+              
+              <div className="feature-button-container">
+                <button className="feature-button" onClick={() => openPopup('history')}>
+                  <span className="feature-icon">📜</span>
+                </button>
+                <span className="feature-button-text">{t('historyOfBhagavadGita')}</span>
+              </div>
+            </div>
             
-            <button className="feature-button" onClick={() => openPopup('history')}>
-              <span className="feature-icon">📜</span>
-              <span className="feature-button-text">{t('historyOfBhagavadGita')}</span>
-            </button>
-            <button className="feature-button" onClick={() => openPopup('meditation')}>
-              <span className="feature-icon">🧘‍♀️</span>
-              <span className="feature-button-text">{t('meditationFeature')}</span>
-            </button>
-            <button className="feature-button" onClick={() => openPopup('kids')}>
-              <span className="feature-icon">👶</span>
-              <span className="feature-button-text">{t('kidsVersion')}</span>
-            </button>
+            <div className="center-space"></div>
+            
+            <div className="right-buttons">
+              <div className="feature-button-container">
+                <button className="feature-button" onClick={() => openPopup('meditation')}>
+                  <span className="feature-icon">🧘‍♀️</span>
+                </button>
+                <span className="feature-button-text">{t('meditationFeature')}</span>
+              </div>
+              <div className="feature-button-container">
+                <button className="feature-button" onClick={() => openPopup('kids')}>
+                  <span className="feature-icon">👶</span>
+                </button>
+                <span className="feature-button-text">{t('kidsVersion')}</span>
+              </div>
+            </div>
           </div>
         </div>
 
