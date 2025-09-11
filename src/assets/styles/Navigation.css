@@ -53,10 +53,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  border-bottom: 1px solid rgba(216, 27, 96, 0.615);
-  color: #D81B60;
-  background: rgba(216, 27, 96, 0.1);
+  padding: 0.5rem;
+  border-bottom: 1px solid rgba(216, 27, 96, 0.596);
+  color: #eb0a5c;
+  background: rgba(89, 207, 246, 0.452);
 }
 
 .close-mobile-nav {
