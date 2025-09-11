@@ -28,9 +28,9 @@
 
 .hero-title {
   font-size: 3rem;
-  color: #00eeff;
+  color: #15008a;
   margin-bottom: 20px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  text-shadow: 2px 2px 4px rgba(0, 0, 170, 0.788);
   font-weight: 700;
 }
 
@@ -423,9 +423,9 @@
 
 .cta-section h2 {
   font-size: 2.5rem;
-  color: #00dcf0;
+  color: #ff0606;
   margin-bottom: 30px;
-  text-shadow: 5px 5px 200px rgb(0, 49, 163);
+  text-shadow: 5px 5px 200px rgb(215, 33, 5);
 }
 
 .cta-buttons {
