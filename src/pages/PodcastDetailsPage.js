@@ -9,6 +9,7 @@ import sanjayaImage from '../assets/images/sanjaya.png';
 import dritarashtraImage from '../assets/images/dritharastra.png';
 import duryodhanaImage from '../assets/images/duryodhana.png';
 import vishwaroopamImage from '../assets/images/vishwaroopam.png';
+import sharadaMataImage from '../assets/images/sharada mata.png';
 
 import '../assets/styles/PodcastDetailsPage.css';
 
@@ -233,6 +234,17 @@ const PodcastDetailsPage = () => {
 
   return (
     <div className="podcast-details">
+      {/* Sharada Mata image - display at top center when speaker is Krishna or Arjuna, except in Chapter 11 */}
+      {chapterId !== '11' && (isKrishnaSpeaker(currentDialogue.speaker) || isArjunaSpeaker(currentDialogue.speaker)) && (
+        <div className="sharada-mata-container">
+          <img 
+            src={sharadaMataImage} 
+            alt="Sharada Mata" 
+            className="sharada-mata-image"
+          />
+        </div>
+      )}
+      
       {/* Character Images - Full screen */}
       <div className={`character-fullscreen ${characterType}`}>
         <img 
