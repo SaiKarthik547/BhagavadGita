@@ -5,7 +5,7 @@ import arjunaImage from '../assets/images/arjuna.png';
 import krishnaImage from '../assets/images/krishna.png';
 import hostImage from '../assets/images/host.png';
 import vishwaroopamImage from '../assets/images/vishwaroopam.png';
-
+import sharadaMataImage from '../assets/images/sharada mata.png';
 
 import bhagavadGitaData from '../data/bhagavadGitaData.js';
 import '../assets/styles/ChapterDetailsPage.css';
@@ -332,6 +332,8 @@ const ChapterDetailsPage = () => {
         return hostImage;
       case 'vishwaroopam':
         return vishwaroopamImage;
+      case 'sharadaMata':
+        return sharadaMataImage;
       default:
         return krishnaImage;
     }
@@ -348,6 +350,8 @@ const ChapterDetailsPage = () => {
         return 'Host';
       case 'vishwaroopam':
         return 'Vishwaroopam';
+      case 'sharadaMata':
+        return 'Sharada Mata';
       default:
         return 'Krishna';
     }
@@ -554,6 +558,17 @@ const ChapterDetailsPage = () => {
       {showPopup && (
         <div className="action-popup">
           Please select the opposite button or continue with current text
+        </div>
+      )}
+      
+      {/* Sharada Mata image - display at top center when speaker is Krishna or Arjuna, except in Chapter 11 */}
+      {chapterId !== '11' && (isKrishnaSpeaker(currentConversation.speaker) || isArjunaSpeaker(currentConversation.speaker)) && (
+        <div className="sharada-mata-container">
+          <img 
+            src={sharadaMataImage} 
+            alt="Sharada Mata" 
+            className="sharada-mata-image"
+          />
         </div>
       )}
       
