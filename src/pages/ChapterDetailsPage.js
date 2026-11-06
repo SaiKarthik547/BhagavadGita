@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useLanguage } from '../contexts/LanguageContext';
 import arjunaImage from '../assets/images/arjuna.png';
@@ -314,6 +314,23 @@ const ChapterDetailsPage = () => {
   const [isChapterCompleted, setIsChapterCompleted] = useState(false);
   const [lastAction, setLastAction] = useState(''); // Track last action ('ask' or 'answer')
   const [showPopup, setShowPopup] = useState(false); // For popup message
+  const [isTransitioning, setIsTransitioning] = useState(false);
+
+  // Preload character images for seamless transitions
+  useEffect(() => {
+    [arjunaImage, krishnaImage, hostImage, vishwaroopamImage, sharadaMataImage].forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, []);
+
+  const finishTransitionSmoothly = () => {
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        setIsTransitioning(false);
+      });
+    });
+  };
   
   // Get current chapter
   const languageKey = language === 'hi' ? 'hi' : language === 'te' ? 'te' : 'en';
@@ -425,6 +442,7 @@ const ChapterDetailsPage = () => {
   };
 
   const handleAskQuestion = () => {
+    if (isTransitioning) return;
     // Check if last action was also 'ask'
     if (lastAction === 'ask') {
       setShowPopup(true);
@@ -454,34 +472,39 @@ const ChapterDetailsPage = () => {
     }
     
     if (nextQuestionIndex !== -1) {
-      // Update the conversation index
-      setCurrentConversationIndex(nextQuestionIndex);
-      
-      // Show character and his text
-      const conversation = conversations[nextQuestionIndex];
-      setCurrentText(conversation.text);
-      
-      // Determine character type based on speaker
-      const speaker = conversation.speaker;
-      if (isArjunaSpeaker(speaker)) {
-        setCharacterType('arjuna');
-      } else if (isHostSpeaker(speaker)) {
-        setCharacterType('host');
-      } else {
-        // Default to host for any other speaker that's not recognized
-        setCharacterType('host');
-      }
-      
-      setShowCharacter(true);
-      setShowText(true);
-      setLastAction('ask'); // Set last action to 'ask'
-      
-      // Play character's question audio
-      handlePlayAudio(conversation.text, conversation.speaker);
+      setIsTransitioning(true);
+      setTimeout(() => {
+        // Update the conversation index
+        setCurrentConversationIndex(nextQuestionIndex);
+        
+        // Show character and his text
+        const conversation = conversations[nextQuestionIndex];
+        setCurrentText(conversation.text);
+        
+        // Determine character type based on speaker
+        const speaker = conversation.speaker;
+        if (isArjunaSpeaker(speaker)) {
+          setCharacterType('arjuna');
+        } else if (isHostSpeaker(speaker)) {
+          setCharacterType('host');
+        } else {
+          // Default to host for any other speaker that's not recognized
+          setCharacterType('host');
+        }
+        
+        setShowCharacter(true);
+        setShowText(true);
+        setLastAction('ask'); // Set last action to 'ask'
+        finishTransitionSmoothly();
+        
+        // Play character's question audio
+        handlePlayAudio(conversation.text, conversation.speaker);
+      }, 320);
     }
   };
 
   const handleDivineAnswer = () => {
+    if (isTransitioning) return;
     // Check if last action was also 'answer'
     if (lastAction === 'answer') {
       setShowPopup(true);
@@ -511,12 +534,11 @@ const ChapterDetailsPage = () => {
     }
     
     if (nextAnswerIndex !== -1) {
-      // Update the conversation index
-      setCurrentConversationIndex(nextAnswerIndex);
-      
-      // Hide current character and show Krishna or Vishwaroopam
-      setShowCharacter(false);
+      setIsTransitioning(true);
       setTimeout(() => {
+        // Update the conversation index
+        setCurrentConversationIndex(nextAnswerIndex);
+        
         const krishnaResponse = conversations[nextAnswerIndex];
         setCurrentText(krishnaResponse.text);
         // Special case for Chapter 11 - show Vishwaroopam for Krishna except for the last two conversations
@@ -540,12 +562,54 @@ const ChapterDetailsPage = () => {
         setShowCharacter(true);
         setShowText(true);
         setLastAction('answer'); // Set last action to 'answer'
-      }, 300); // Delay to allow fade out animation
-      
-      // Play Krishna's response audio
-      const krishnaResponse = conversations[nextAnswerIndex];
-      handlePlayAudio(krishnaResponse.text, krishnaResponse.speaker);
+        finishTransitionSmoothly();
+        
+        // Play Krishna's response audio
+        handlePlayAudio(krishnaResponse.text, krishnaResponse.speaker);
+      }, 320); // Smooth fade out/in transition
     }
+  };
+
+  const handlePreviousDialogue = () => {
+    if (isTransitioning || !showCharacter || currentConversationIndex <= 0) return;
+    const prevIndex = currentConversationIndex - 1;
+    const prevConversation = conversations[prevIndex];
+    if (!prevConversation) return;
+
+    setIsTransitioning(true);
+    setTimeout(() => {
+      setCurrentConversationIndex(prevIndex);
+      setCurrentText(prevConversation.text);
+      const speaker = prevConversation.speaker;
+
+      if (isArjunaSpeaker(speaker)) {
+        setCharacterType('arjuna');
+        setLastAction('ask');
+      } else if (isKrishnaSpeaker(speaker)) {
+        if (chapterId === '11') {
+          const totalKrishnaDialogues = conversations.filter(conv => isKrishnaSpeaker(conv.speaker)).length;
+          const currentKrishnaDialogueIndex = conversations
+            .slice(0, prevIndex + 1)
+            .filter(conv => isKrishnaSpeaker(conv.speaker)).length;
+          if (currentKrishnaDialogueIndex > totalKrishnaDialogues - 2) {
+            setCharacterType('krishna');
+          } else {
+            setCharacterType('vishwaroopam');
+          }
+        } else {
+          setCharacterType('krishna');
+        }
+        setLastAction('answer');
+      } else {
+        setCharacterType('host');
+        setLastAction('ask');
+      }
+
+      setShowCharacter(true);
+      setShowText(true);
+      finishTransitionSmoothly();
+      handlePlayAudio(prevConversation.text, prevConversation.speaker);
+    }, 320);
   };
 
   // Get current conversation for emotion display
@@ -586,7 +650,7 @@ const ChapterDetailsPage = () => {
       
       {/* Character Images - Full screen */}
       {showCharacter && (
-        <div className={`character-fullscreen ${characterType}`}>
+        <div className={`character-fullscreen ${characterType} ${isTransitioning ? 'dialogue-fade-out' : 'dialogue-fade-in'}`}>
           <img 
             src={getCharacterImage()} 
             alt={getCharacterAltText()} 
@@ -597,7 +661,7 @@ const ChapterDetailsPage = () => {
       
       {/* Cloud-shaped text container */}
       {showText && (
-        <div className={`cloud-container ${characterType}`}>
+        <div className={`cloud-container ${characterType} ${isTransitioning ? 'dialogue-fade-out' : 'dialogue-fade-in'}`}>
           <div className="cloud-bubble">
             <div className="cloud-text">
               {/* Display speaker name, text, and emotion in the requested format */}
@@ -619,19 +683,30 @@ const ChapterDetailsPage = () => {
         </div>
       )}
       
-      {/* Interactive Question Section - Always visible */}
+      {/* Interactive Controls - Circular Left and Right Arrow Buttons */}
       <div className="interactive-controls-minimal">
         <button 
-          className={`interactive-btn ask-btn ${lastAction === 'ask' ? 'highlighted' : ''}`}
-          onClick={handleAskQuestion}
+          className="interactive-btn prev-dialogue-btn circle-arrow-btn left-arrow-btn"
+          onClick={handlePreviousDialogue}
+          disabled={!showCharacter || currentConversationIndex === 0}
+          aria-label="Previous Dialogue"
+          title="Previous Dialogue"
         >
-          {t('askQuestion')}
+          <svg className="arrow-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12" />
+            <polyline points="12 19 5 12 12 5" />
+          </svg>
         </button>
         <button 
-          className={`interactive-btn answer-btn ${lastAction === 'answer' ? 'highlighted' : ''}`}
-          onClick={handleDivineAnswer}
+          className={`interactive-btn ${lastAction === 'ask' ? 'answer-btn' : 'ask-btn'} circle-arrow-btn right-arrow-btn`}
+          onClick={!showCharacter ? handleStartChapter : (lastAction === 'ask' ? handleDivineAnswer : handleAskQuestion)}
+          aria-label={!showCharacter ? 'Start Chapter' : (lastAction === 'ask' ? t('divineAnswer') : t('askQuestion'))}
+          title={!showCharacter ? 'Start Chapter' : (lastAction === 'ask' ? t('divineAnswer') : t('askQuestion'))}
         >
-          {t('divineAnswer')}
+          <svg className="arrow-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
         </button>
       </div>
       

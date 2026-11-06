@@ -89,9 +89,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: opacity 0.5s ease;
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  transition: opacity 0.42s cubic-bezier(0.22, 1, 0.36, 1), transform 0.42s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.42s ease;
+  will-change: opacity, transform;
   z-index: 5; /* Above background but below UI elements */
   overflow: hidden;
+}
+
+.character-fullscreen.dialogue-fade-out {
+  opacity: 0;
+  transform: scale(0.97) translateY(4px);
+}
+
+.character-fullscreen.dialogue-fade-in {
+  opacity: 1;
+  transform: scale(1) translateY(0);
 }
 
 .character-fullscreen.arjuna {
@@ -1217,34 +1230,49 @@
   min-width: 200px;
 }
 
-/* Cloud-shaped Text Container */
+/* Cloud-shaped Text Container - Dynamically sized for all mobile devices */
 .cloud-container {
   position: fixed;
-  bottom: 120px;
+  bottom: clamp(18px, 3vh, 32px);
   left: 50%;
   transform: translateX(-50%);
   z-index: 20;
-  width: 70%;
-  max-width: 600px;
+  width: clamp(280px, 92vw, 560px);
+  max-width: 92vw;
+  box-sizing: border-box;
   pointer-events: none; /* Prevent container from blocking interactions */
-  /* Add margin-top to avoid overlap with Sharada Mata image */
   margin-top: 40px;
 }
 
 .cloud-bubble {
   position: relative;
-  background: linear-gradient(135deg, #ffffff, #f0f8ff);
-  border-radius: 30px;
-  padding: 20px;
+  background: rgba(255, 255, 255, 0.45);
+  border-radius: clamp(18px, 4vw, 26px);
+  padding: clamp(14px, 3.5vw, 20px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.005);
-  animation: fadeIn 0.3s ease-out;
-  border: 0px solid rgba(255, 255, 255, 0);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
   pointer-events: auto; /* Allow interactions within the bubble */
+  max-height: clamp(160px, 28vh, 250px);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  box-sizing: border-box;
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition: opacity 0.42s cubic-bezier(0.22, 1, 0.36, 1), transform 0.42s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
 }
 
+.cloud-container.dialogue-fade-out .cloud-bubble {
+  opacity: 0;
+  transform: translateY(6px) scale(0.98);
+}
 
+.cloud-container.dialogue-fade-in .cloud-bubble {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
 
 .cloud-bubble::after {
   content: '';
@@ -1254,101 +1282,151 @@
   transform: translateX(-50%);
   width: 40px;
   height: 20px;
-  background: linear-gradient(135deg, #ffffff, #f0f8ff);
+  background: rgba(255, 255, 255, 0);
   border-radius: 50%;
-  filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.1));
 }
 
 .cloud-text {
-  padding: 15px;
-  font-size: 1rem;
+  padding: clamp(6px, 2vw, 14px);
+  font-size: clamp(0.92rem, 3.4vw, 1.05rem);
   line-height: 1.5;
+}
+
+/* Dialogue container styles */
+.dialogue-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.speaker-name {
+  font-weight: bold;
+  font-size: clamp(1rem, 3.8vw, 1.15rem);
+  color: #0012af;
+  border-bottom: 1px solid #1E88E5;
+  padding-bottom: 4px;
+  margin-bottom: 4px;
+  padding-right: 28px;
+}
+
+.dialogue-text {
+  font-size: clamp(0.92rem, 3.4vw, 1.05rem);
+  line-height: 1.45;
+  color: #000000;
+  word-break: break-word;
 }
 
 /* Emotion Display inside text box */
 .emotion-display-inside {
   font-style: italic;
-  color: #666;
-  font-size: 0.9em;
+  color: #000000;
+  font-size: clamp(0.78rem, 2.8vw, 0.88rem);
   text-align: right;
-  margin-top: 10px;
-  padding-top: 5px;
+  margin-top: 6px;
+  padding-top: 4px;
   border-top: 1px dashed #ccc;
 }
 
 .cloud-close-btn {
   position: absolute;
-  top: 15px;
-  right: 20px;
+  top: 10px;
+  right: 12px;
   background: transparent;
   border: none;
-  font-size: 2.5rem;
+  font-size: 2rem;
   cursor: pointer;
-  color: #777;
-  width: 40px;
-  height: 40px;
+  color: #444;
+  width: 36px;
+  height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   transition: all 0.3s ease;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .cloud-close-btn:hover {
   background: rgba(0, 0, 0, 0.1);
-  color: #333;
+  color: #111;
   transform: rotate(90deg);
 }
 
-/* Interactive Controls */
+/* Interactive Controls - Middle Left & Right Circular Arrow Buttons Either Side of Image */
 .interactive-controls-minimal {
   position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 50%;
+  bottom: auto;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  width: 100%;
   display: flex;
-  gap: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 clamp(10px, 3vw, 24px);
+  box-sizing: border-box;
   z-index: 30;
-  pointer-events: none; /* Ensure container doesn't block clicks */
+  pointer-events: none; /* Ensure container doesn't block clicks in center */
 }
 
 .interactive-btn {
-  padding: 12px 25px;
-  border: none;
-  border-radius: 50px;
-  font-weight: 600;
-  font-size: 1rem;
+  width: clamp(62px, 16vw, 72px);
+  height: clamp(62px, 16vw, 72px);
+  min-width: unset;
+  padding: 0;
+  border: 2px solid rgba(255, 255, 255, 0.65);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s ease, background 0.25s ease, opacity 0.25s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), inset 0 1px 3px rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(10px);
-  min-width: 150px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  -webkit-backdrop-filter: blur(10px);
   pointer-events: auto; /* Ensure buttons receive clicks */
-  position: relative; /* Ensure proper z-index stacking */
-  z-index: 31; /* Higher than container */
+  position: relative;
+  z-index: 31;
   touch-action: manipulation;
   -webkit-tap-highlight-color: transparent;
+  user-select: none;
 }
 
+.interactive-btn .arrow-svg-icon {
+  width: clamp(28px, 7.5vw, 34px);
+  height: clamp(28px, 7.5vw, 34px);
+  stroke: currentColor;
+  transition: transform 0.2s ease;
+}
+
+.prev-dialogue-btn,
 .ask-btn {
-  background: linear-gradient(135deg, #2196F3, #21CBF3);
-  color: white;
-  touch-action: manipulation;
-  -webkit-tap-highlight-color: transparent;
+  background: linear-gradient(135deg, #2196F3, #00BCD4);
+  color: #ffffff;
 }
 
 .answer-btn {
   background: linear-gradient(135deg, #FF9800, #FF5722);
-  color: white;
-  touch-action: manipulation;
-  -webkit-tap-highlight-color: transparent;
+  color: #ffffff;
 }
 
-.interactive-btn:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+.interactive-btn:hover:not(:disabled) {
+  transform: scale(1.08);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+.interactive-btn:active:not(:disabled) {
+  transform: scale(0.92);
+}
+
+.interactive-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* Highlighted buttons */
@@ -1555,33 +1633,32 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .cloud-container {
-    width: 95%;
-    bottom: 110px;
-    max-width: 95%;
+    width: 92vw;
+    max-width: 92vw;
+    bottom: clamp(16px, 2.5vh, 26px);
   }
   
   .cloud-bubble {
-    padding: 15px;
+    padding: clamp(12px, 3.5vw, 16px);
     border-radius: 20px;
   }
   
-  .cloud-text {
-    font-size: 0.9rem;
-    padding: 10px;
-    line-height: 1.4;
-  }
-  
   .interactive-controls-minimal {
-    flex-direction: column;
-    gap: 10px;
-    bottom: 10px;
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 clamp(10px, 3vw, 20px);
     z-index: 30;
   }
   
   .interactive-btn {
-    min-width: 200px;
-    padding: 12px;
-    font-size: 0.9rem;
+    width: clamp(60px, 16vw, 68px);
+    height: clamp(60px, 16vw, 68px);
+    min-width: unset;
+    padding: 0;
+    border-radius: 50%;
     z-index: 31;
     touch-action: manipulation;
     -webkit-tap-highlight-color: transparent;
@@ -1601,50 +1678,35 @@
     from { filter: drop-shadow(0 0 8px #ff1493); }
     to { filter: drop-shadow(0 0 25px #ff1493); }
   }
-  
-  /* Mobile dialogue styles */
-  .speaker-name {
-    font-size: 1rem;
-    padding-bottom: 3px;
-    margin-bottom: 5px;
-  }
-  
-  .dialogue-text {
-    font-size: 0.9rem;
-    line-height: 1.4;
-  }
-  
-  .emotion-display-inside {
-    font-size: 0.8rem;
-    margin-top: 5px;
-    padding-top: 3px;
-  }
 }
 
 @media (max-width: 480px) {
   .cloud-container {
-    width: 95%;
-    bottom: 100px;
+    width: 94vw;
+    max-width: 94vw;
+    bottom: clamp(14px, 2vh, 22px);
   }
   
   .cloud-bubble {
-    padding: 12px;
-    border-radius: 15px;
-  }
-  
-  .cloud-text {
-    font-size: 0.8rem;
-    line-height: 1.3;
+    padding: clamp(10px, 3vw, 14px);
+    border-radius: 16px;
   }
   
   .interactive-controls-minimal {
-    bottom: 10px;
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 clamp(8px, 2.5vw, 16px);
   }
   
   .interactive-btn {
-    min-width: 180px;
-    font-size: 0.8rem;
-    padding: 10px;
+    width: clamp(58px, 15.5vw, 64px);
+    height: clamp(58px, 15.5vw, 64px);
+    min-width: unset;
+    padding: 0;
+    border-radius: 50%;
     z-index: 31;
     touch-action: manipulation;
     -webkit-tap-highlight-color: transparent;
@@ -1660,58 +1722,6 @@
     font-size: 0.8rem;
     padding: 8px 12px;
   }
-  
-  /* Smaller mobile dialogue styles */
-  .speaker-name {
-    font-size: 0.9rem;
-  }
-  
-  .dialogue-text {
-    font-size: 0.8rem;
-  }
-  
-  .emotion-display-inside {
-    font-size: 0.7rem;
-  }
-}
-
-/* Dialogue container styles */
-.dialogue-container {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.speaker-name {
-  font-weight: bold;
-  font-size: 1.1em;
-  color: #0012af;
-  border-bottom: 1px solid #1E88E5;
-  padding-bottom: 4px;
-  margin-bottom: 8px;
-}
-
-.dialogue-text {
-  font-size: 1em;
-  line-height: 1.4;
-  color: #000000;
-}
-
-.emotion-display-inside {
-  font-style: italic;
-  color: #000000;
-  font-size: 0.85em;
-  text-align: right;
-  margin-top: 8px;
-  padding-top: 4px;
-  border-top: 1px dashed #ccc;
-}
-
-/* Cloud bubble text styles */
-.cloud-text {
-  padding: 20px;
-  font-size: 1.1em;
-  line-height: 1.6;
 }
 
 /* Sharada Mata image container - positioned at top center */
@@ -1743,18 +1753,4 @@
 @keyframes glow-golden {
   from { filter: drop-shadow(0 0 10px #FFD700); }
   to { filter: drop-shadow(0 0 25px #FFD700); }
-}
-
-/* Cloud-shaped Text Container */
-.cloud-container {
-  position: fixed;
-  bottom: 120px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 20;
-  width: 70%;
-  max-width: 600px;
-  pointer-events: none; /* Prevent container from blocking interactions */
-  /* Add margin-top to avoid overlap with Sharada Mata image */
-  margin-top: 40px;
 }

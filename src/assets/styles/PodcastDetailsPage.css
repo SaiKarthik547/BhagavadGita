@@ -35,9 +35,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  transition: opacity 0.42s cubic-bezier(0.22, 1, 0.36, 1), transform 0.42s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.42s ease;
+  will-change: opacity, transform;
   z-index: 5;
   overflow: hidden;
+}
+
+.character-fullscreen.dialogue-fade-out {
+  opacity: 0;
+  transform: scale(0.97) translateY(4px);
+}
+
+.character-fullscreen.dialogue-fade-in {
+  opacity: 1;
+  transform: scale(1) translateY(0);
 }
 
 .character-fullscreen.arjuna {
@@ -1601,68 +1614,90 @@
   }
 }
 
-/* Podcast Navigation Controls */
+/* Podcast Navigation Controls - Middle Left & Right Circular Arrow Buttons Either Side of Image */
 .podcast-navigation-controls {
   position: fixed;
-  bottom: 30px;
+  top: 50%;
+  bottom: auto;
   left: 0;
   right: 0;
+  transform: translateY(-50%);
+  width: 100%;
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  z-index: 1000;
-  padding: 0 20px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 clamp(10px, 3vw, 24px);
+  box-sizing: border-box;
+  z-index: 150;
+  pointer-events: none;
 }
 
 .podcast-nav-btn {
-  padding: 14px 26px;
-  background: rgba(255, 255, 255, 0.9);
-  color: #000000;
-  border: none;
-  border-radius: 50px;
-  font-size: 1rem;
-  font-weight: 600;
+  width: clamp(62px, 16vw, 72px);
+  height: clamp(62px, 16vw, 72px);
+  min-width: unset;
+  padding: 0;
+  border: 2px solid rgba(255, 255, 255, 0.65);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s ease, background 0.25s ease, opacity 0.25s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), inset 0 1px 3px rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   will-change: transform;
+  pointer-events: auto;
   touch-action: manipulation;
   -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+.podcast-nav-btn .arrow-svg-icon {
+  width: clamp(28px, 7.5vw, 34px);
+  height: clamp(28px, 7.5vw, 34px);
+  stroke: currentColor;
+  transition: transform 0.2s ease;
 }
 
 .podcast-nav-btn:hover:not(:disabled) {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-  background: rgba(255, 255, 255, 1);
+  transform: scale(1.08);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+.podcast-nav-btn:active:not(:disabled) {
+  transform: scale(0.92);
 }
 
 .podcast-nav-btn:disabled {
-  opacity: 0.5;
+  opacity: 0.4;
   cursor: not-allowed;
   transform: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .podcast-prev-btn {
-  background: rgba(33, 150, 243, 0.9);
-  color: white;
+  background: linear-gradient(135deg, #2196F3, #00BCD4);
+  color: #ffffff;
   touch-action: manipulation;
   -webkit-tap-highlight-color: transparent;
 }
 
 .podcast-next-btn {
-  background: rgba(216, 27, 96, 0.9);
-  color: white;
+  background: linear-gradient(135deg, #D81B60, #FF5722);
+  color: #ffffff;
   touch-action: manipulation;
   -webkit-tap-highlight-color: transparent;
 }
 
 .podcast-prev-btn:hover:not(:disabled) {
-  background: rgb(25, 247, 99);
+  background: linear-gradient(135deg, #1E88E5, #00ACC1);
 }
 
 .podcast-next-btn:hover:not(:disabled) {
-  background: rgba(216, 27, 96, 1);
+  background: linear-gradient(135deg, #C2185B, #F4511E);
 }
 
 /* Progress Indicator */
@@ -1681,88 +1716,51 @@
   z-index: 1000;
 }
 
-/* Navigation Controls */
-.podcast-navigation-controls {
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 20px;
-  z-index: 150;
-}
-
-.podcast-nav-btn {
-  padding: 12px 25px;
-  background: rgba(255, 255, 255, 0.7);
-  border: 2px solid #1E88E5;
-  border-radius: 50px;
-  color: #1E88E5;
-  font-weight: 600;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  min-width: 150px;
-  touch-action: manipulation;
-  -webkit-tap-highlight-color: transparent;
-}
-
-@media (max-width: 768px) {
-  .podcast-nav-btn {
-    padding: 10px 20px;
-    font-size: 0.9rem;
-    min-width: 120px;
-    touch-action: manipulation;
-    -webkit-tap-highlight-color: transparent;
-  }
-  
-  .podcast-prev-btn, .podcast-next-btn {
-    touch-action: manipulation;
-    -webkit-tap-highlight-color: transparent;
-  }
-}
-
-@media (max-width: 480px) {
-  .podcast-nav-btn {
-    padding: 8px 16px;
-    font-size: 0.8rem;
-    min-width: 100px;
-    touch-action: manipulation;
-    -webkit-tap-highlight-color: transparent;
-  }
-  
-  .podcast-prev-btn, .podcast-next-btn {
-    touch-action: manipulation;
-    -webkit-tap-highlight-color: transparent;
-  }
-}
-
-/* Cloud Container */
+/* Cloud Container - Dynamically sized for all mobile devices */
 .cloud-container {
   position: fixed;
-  bottom: 100px;
+  bottom: clamp(18px, 3vh, 32px);
   left: 50%;
   transform: translateX(-50%);
   z-index: 20;
-  max-width: 90%;
-  width: 70%;
-  max-width: 600px;
+  width: clamp(280px, 92vw, 560px);
+  max-width: 92vw;
+  box-sizing: border-box;
   pointer-events: none; /* Prevent container from blocking interactions */
-  /* Add margin-top to avoid overlap with Sharada Mata image */
   margin-top: 40px;
 }
 
 .cloud-bubble {
   background: rgba(255, 255, 255, 0.501);
-  border-radius: 20px;
-  padding: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(1px);
+  border-radius: clamp(18px, 4vw, 24px);
+  padding: clamp(14px, 3.5vw, 20px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
   position: relative;
   margin: 0 auto;
+  width: 100%;
   max-width: 600px;
+  max-height: clamp(160px, 28vh, 250px);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  box-sizing: border-box;
+  pointer-events: auto;
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition: opacity 0.42s cubic-bezier(0.22, 1, 0.36, 1), transform 0.42s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.cloud-container.dialogue-fade-out .cloud-bubble {
+  opacity: 0;
+  transform: translateY(6px) scale(0.98);
+}
+
+.cloud-container.dialogue-fade-in .cloud-bubble {
+  opacity: 1;
+  transform: translateY(0) scale(1);
 }
 
 .cloud-bubble::after {
@@ -1806,32 +1804,6 @@
 @keyframes glow-golden {
   from { filter: drop-shadow(0 0 10px #FFD700); }
   to { filter: drop-shadow(0 0 25px #FFD700); }
-
-
-  height: 30px;
-  background: rgba(255, 255, 255, 0);
-  clip-path: polygon(0 0, 100% 0, 100% 100%);
-
-
-  transform: translateX(-50%) rotate(45deg);
-}
-
-.cloud-text {
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #000000;
-  text-align: center;
-  font-weight: 500;
-  padding: 15px;
-}
-
-.emotion-display-inside {
-  margin-top: 15px;
-  padding-top: 15px;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  font-style: italic;
-  color: #666;
-  font-size: 0.9rem;
 }
 
 /* Summary Modal */
@@ -1920,67 +1892,73 @@
 .dialogue-container {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
 }
 
 .speaker-name {
   font-weight: bold;
-  font-size: 1.1em;
+  font-size: clamp(1rem, 3.8vw, 1.15rem);
   color: #0d0098;
   border-bottom: 1px solid #1E88E5;
   padding-bottom: 4px;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .dialogue-text {
-  font-size: 1em;
-  line-height: 1.4;
+  font-size: clamp(0.92rem, 3.4vw, 1.05rem);
+  line-height: 1.45;
   color: #000000;
+  word-break: break-word;
 }
 
 .emotion-display-inside {
   font-style: italic;
   color: #000000;
-  font-size: 0.85em;
+  font-size: clamp(0.78rem, 2.8vw, 0.88rem);
   text-align: right;
-  margin-top: 8px;
+  margin-top: 6px;
   padding-top: 4px;
   border-top: 1px dashed #ccc;
 }
 
 /* Cloud bubble text styles */
 .cloud-text {
-  padding: 20px;
-  font-size: 1.1em;
-  line-height: 1.6;
+  padding: clamp(6px, 2vw, 14px);
+  font-size: clamp(0.92rem, 3.4vw, 1.05rem);
+  line-height: 1.5;
+  color: #000000;
+  text-align: center;
+  font-weight: 500;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .podcast-navigation-controls {
-    bottom: 20px;
-    gap: 15px;
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 clamp(10px, 3vw, 20px);
   }
   
   .podcast-nav-btn {
-    padding: 10px 20px;
-    font-size: 0.9rem;
+    width: clamp(60px, 16vw, 68px);
+    height: clamp(60px, 16vw, 68px);
+    min-width: unset;
+    padding: 0;
+    border-radius: 50%;
   }
   
   .cloud-container {
-    bottom: 100px;
-    width: 95%;
-    max-width: 95%;
+    bottom: clamp(16px, 2.5vh, 26px);
+    width: 92vw;
+    max-width: 92vw;
   }
   
   .cloud-bubble {
-    padding: 15px;
+    padding: clamp(12px, 3.5vw, 16px);
     border-radius: 20px;
-  }
-  
-  .cloud-text {
-    font-size: 0.9rem;
-    padding: 10px;
   }
   
   .podcast-progress-container {
@@ -1998,51 +1976,37 @@
   .summary-header h2 {
     font-size: 1.5rem;
   }
-  
-  /* Mobile dialogue styles */
-  .speaker-name {
-    font-size: 1rem;
-    padding-bottom: 3px;
-    margin-bottom: 5px;
-  }
-  
-  .dialogue-text {
-    font-size: 0.9rem;
-    line-height: 1.4;
-  }
-  
-  .emotion-display-inside {
-    font-size: 0.8rem;
-    margin-top: 5px;
-    padding-top: 3px;
-  }
 }
 
 @media (max-width: 480px) {
   .podcast-navigation-controls {
-    flex-direction: column;
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    bottom: 10px;
-    gap: 10px;
+    padding: 0 clamp(8px, 2.5vw, 16px);
   }
   
   .podcast-nav-btn {
-    width: 80%;
-    max-width: 250px;
+    width: clamp(58px, 15.5vw, 64px);
+    height: clamp(58px, 15.5vw, 64px);
+    min-width: unset;
+    max-width: none;
+    padding: 0;
+    border-radius: 50%;
   }
   
   .cloud-container {
-    bottom: 90px;
+    bottom: clamp(14px, 2vh, 22px);
+    width: 94vw;
+    max-width: 94vw;
   }
   
   .cloud-bubble {
-    padding: 20px;
-    border-radius: 14px;
-  }
-  
-  .cloud-text {
-    font-size: 1rem;
-    line-height: 1.3;
+    padding: clamp(10px, 3vw, 14px);
+    border-radius: 16px;
   }
 
   .summary-content {
@@ -2052,30 +2016,8 @@
   
   .summary-header h2 {
     font-size: 1.3rem;
-  }
-  
-  /* Smaller mobile dialogue styles */
-  .speaker-name {
-    font-size: 0.9rem;
-  }
-  
-  .dialogue-text {
-    font-size: 1rem;
-  }
-  
-  .emotion-display-inside {
-    font-size: 0.7rem;
   }
 }
-
-  .summary-content {
-    padding: 15px;
-    margin: 10px;
-  }
-  
-  .summary-header h2 {
-    font-size: 1.3rem;
-  }
 
 
 /* Additional emotion classes for missing emotions with unique colors */

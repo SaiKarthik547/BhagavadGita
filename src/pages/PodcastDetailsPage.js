@@ -31,6 +31,23 @@ const PodcastDetailsPage = () => {
   const [characterType, setCharacterType] = useState(''); 
   const [currentText, setCurrentText] = useState('');
   const [showSummary, setShowSummary] = useState(false);
+  const [isTransitioning, setIsTransitioning] = useState(false);
+
+  // Preload character images for seamless transitions
+  useEffect(() => {
+    [arjunaImage, krishnaImage, sanjayaImage, dritarashtraImage, duryodhanaImage, vishwaroopamImage, sharadaMataImage].forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, []);
+
+  const finishTransitionSmoothly = () => {
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        setIsTransitioning(false);
+      });
+    });
+  };
   
   // Get dialogues
   const dialogues = useMemo(() => chapter?.dialogue || [], [chapter]);
@@ -186,16 +203,21 @@ const PodcastDetailsPage = () => {
 
   // Handle next dialogue
   const handleNext = () => {
+    if (isTransitioning) return;
     if (currentDialogueIndex < dialogues.length - 1) {
       const nextIndex = currentDialogueIndex + 1;
       const nextDialogue = dialogues[nextIndex];
-      setCurrentText(nextDialogue.text);
-      
-      // Determine character type based on speaker
-      const speaker = nextDialogue.speaker;
-      updateCharacterType(speaker, nextIndex);
-      
-      setCurrentDialogueIndex(nextIndex);
+      setIsTransitioning(true);
+      setTimeout(() => {
+        setCurrentText(nextDialogue.text);
+        
+        // Determine character type based on speaker
+        const speaker = nextDialogue.speaker;
+        updateCharacterType(speaker, nextIndex);
+        
+        setCurrentDialogueIndex(nextIndex);
+        finishTransitionSmoothly();
+      }, 320);
     } else {
       // Show summary when chapter is completed
       setShowSummary(true);
@@ -204,16 +226,21 @@ const PodcastDetailsPage = () => {
 
   // Handle previous dialogue
   const handlePrevious = () => {
+    if (isTransitioning) return;
     if (currentDialogueIndex > 0) {
       const prevIndex = currentDialogueIndex - 1;
       const prevDialogue = dialogues[prevIndex];
-      setCurrentText(prevDialogue.text);
-      
-      // Determine character type based on speaker
-      const speaker = prevDialogue.speaker;
-      updateCharacterType(speaker, prevIndex);
-      
-      setCurrentDialogueIndex(prevIndex);
+      setIsTransitioning(true);
+      setTimeout(() => {
+        setCurrentText(prevDialogue.text);
+        
+        // Determine character type based on speaker
+        const speaker = prevDialogue.speaker;
+        updateCharacterType(speaker, prevIndex);
+        
+        setCurrentDialogueIndex(prevIndex);
+        finishTransitionSmoothly();
+      }, 320);
     }
   };
 
@@ -246,7 +273,7 @@ const PodcastDetailsPage = () => {
       )}
       
       {/* Character Images - Full screen */}
-      <div className={`character-fullscreen ${characterType}`}>
+      <div className={`character-fullscreen ${characterType} ${isTransitioning ? 'dialogue-fade-out' : 'dialogue-fade-in'}`}>
         <img 
           src={getCharacterImage()} 
           alt={getCharacterAltText()} 
@@ -255,7 +282,7 @@ const PodcastDetailsPage = () => {
       </div>
       
       {/* Cloud-shaped text container */}
-      <div className={`cloud-container ${characterType}`}>
+      <div className={`cloud-container ${characterType} ${isTransitioning ? 'dialogue-fade-out' : 'dialogue-fade-in'}`}>
         <div className="cloud-bubble">
           <div className="cloud-text">
             {/* Display speaker name, text, and emotion in the requested format */}
@@ -270,20 +297,30 @@ const PodcastDetailsPage = () => {
         </div>
       </div>
       
-      {/* Navigation Controls */}
+      {/* Navigation Controls - Circular Left and Right Arrow Buttons */}
       <div className="podcast-navigation-controls">
         <button 
-          className="podcast-nav-btn podcast-prev-btn"
+          className="podcast-nav-btn podcast-prev-btn circle-arrow-btn left-arrow-btn"
           onClick={handlePrevious}
           disabled={currentDialogueIndex === 0}
+          aria-label={uiTexts.prevBtn || 'Previous'}
+          title={uiTexts.prevBtn || 'Previous'}
         >
-          {uiTexts.prevBtn}
+          <svg className="arrow-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12" />
+            <polyline points="12 19 5 12 12 5" />
+          </svg>
         </button>
         <button 
-          className="podcast-nav-btn podcast-next-btn"
+          className="podcast-nav-btn podcast-next-btn circle-arrow-btn right-arrow-btn"
           onClick={handleNext}
+          aria-label={currentDialogueIndex === dialogues.length - 1 ? (uiTexts.showSummary || 'Show Summary') : (uiTexts.nextBtn || 'Next')}
+          title={currentDialogueIndex === dialogues.length - 1 ? (uiTexts.showSummary || 'Show Summary') : (uiTexts.nextBtn || 'Next')}
         >
-          {currentDialogueIndex === dialogues.length - 1 ? (uiTexts.showSummary || 'Show Summary') : uiTexts.nextBtn}
+          <svg className="arrow-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
         </button>
       </div>
       
