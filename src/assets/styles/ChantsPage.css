@@ -26,34 +26,37 @@
 
 .chants-container {
   position: relative;
-  z-index: 2;
+  z-index: auto;
   width: 100%;
-  padding: 2rem 1rem;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 0.75rem 1rem 1.1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end; /* Align to bottom */
+  justify-content: flex-start;
 }
 
 .chants-header {
+  position: relative;
+  z-index: 0;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 0.35rem;
   width: 100%;
   max-width: 800px;
 }
 
 .chants-title {
-  font-size: 3rem;
-  color: #FF9800;
-  margin-bottom: 1rem;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  font-size: 2.3rem;
+  color: #ffd700;
+  margin-bottom: 0.15rem;
+  text-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.85),
+    0 0 14px rgba(255, 160, 0, 0.55);
 }
 
 .chants-subtitle {
-  font-size: 1.2rem;
-  color: #ffffff;
-  opacity: 0;
-  text-shadow: 0 2px 4px rgb(255, 255, 255);
+  display: none;
 }
 
 /* Floating Orbs */
@@ -153,124 +156,328 @@
     transform: translateY(100vh) rotate(360deg);
   }
 }
-/* Stotra Selector */
+/* Stotra Selector - Top Canopy */
 .stotra-selector-section {
+  position: relative;
+  z-index: 0;
   text-align: center;
-  margin: 2rem 0;
-  padding: 1rem;
-  background: rgba(252, 185, 109, 0.559);
-  border-radius: 15px;
-  box-shadow: 0 8px 32px rgba(30, 136, 229, 0.2);
-  border: 1px solid rgba(30, 136, 229, 0.3);
+  margin: 0.2rem 0 0.5rem;
+  padding: 0.55rem 0.9rem 0.65rem;
+  width: 100%;
+  max-width: 440px;
+  background: rgba(28, 12, 0, 0.52);
+  border-radius: 14px;
+  box-shadow:
+    0 6px 20px rgba(0, 0, 0, 0.45),
+    0 0 14px rgba(255, 193, 7, 0.22);
+  border: 1px solid rgba(255, 215, 0, 0.62);
   backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .stotra-selector-section h3 {
-  color: #11007e;
-  margin-bottom: 1rem;
-  font-size: 1.3rem;
+  color: #fff8dc;
+  margin: 0 0 0.4rem;
+  font-size: 0.98rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.85);
 }
 
 .stotra-dropdown {
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  border: 2px solid #1E88E5;
+  padding: 0.48rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: 1.5px solid rgba(255, 215, 0, 0.85);
   border-radius: 50px;
-  background: rgba(255, 238, 109, 0.534);
-  color: #000000;
+  background: rgba(255, 243, 196, 0.92);
+  color: #2b1200;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.25s ease;
   outline: none;
-  width: 80%;
-  max-width: 400px;
+  width: 92%;
+  max-width: 360px;
   touch-action: manipulation;
   -webkit-tap-highlight-color: transparent;
 }
 
 .stotra-dropdown:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(30, 136, 229, 0.3);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 193, 7, 0.35);
 }
 
 .stotra-dropdown:disabled {
-  opacity: 0.6;
+  opacity: 0.65;
   cursor: not-allowed;
   transform: none;
   box-shadow: none;
 }
 
 .stotra-dropdown:focus {
-  border-color: #0D47A1;
-  box-shadow: 0 0 0 3px rgba(30, 136, 229, 0.3);
+  border-color: #ffd700;
+  box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.35);
+}
+
+/* Bottom Dock: keeps Radha & Krishna completely uncovered in the middle */
+.chants-bottom-dock {
+  margin-top: auto;
+  width: 100%;
+  max-width: 680px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  z-index: 2;
 }
 
 /* Scrollable container for stotras */
 .stotra-scroll-container {
-  max-height: 300px;
+  max-height: clamp(82px, 14vh, 130px);
   overflow-y: auto;
-  padding: 15px;
-  border: 1px solid rgba(30, 136, 229, 0.684);
-  border-radius: 8px;
-  background: rgba(240, 248, 6, 0.551);
-  margin: 15px 0;
+  padding: 10px 12px;
+  border: 1px solid rgba(255, 215, 0, 0.45);
+  border-radius: 10px;
+  background: rgba(18, 7, 0, 0.52);
+  margin: 0;
 }
 
-.stotra-scroll-container p {
+.stotra-scroll-container p,
+.stotra-verse-text {
   margin: 0;
   text-align: center;
+  white-space: pre-line;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: #fff8dc !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9);
 }
 
 /* Custom scrollbar for stotra container */
 .stotra-scroll-container::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 .stotra-scroll-container::-webkit-scrollbar-track {
-  background: rgba(227, 242, 253, 0.922);
+  background: rgba(255, 248, 220, 0.12);
   border-radius: 4px;
 }
 
 .stotra-scroll-container::-webkit-scrollbar-thumb {
-  background: #1E88E5;
+  background: rgba(255, 215, 0, 0.7);
   border-radius: 4px;
 }
 
 .stotra-scroll-container::-webkit-scrollbar-thumb:hover {
-  background: #0D47A1;
+  background: #ffd700;
 }
 
-/* Chant Card */
+/* Chant Card - Compact Bottom Shrine Plaque */
 .chant-card {
-  background: rgba(237, 183, 96, 0.762); /* 80% transparent */
-  border-radius: 15px;
-  padding: 2rem;
-  max-width: 800px;
+  background: rgba(28, 11, 0, 0.58);
+  border-radius: 16px;
+  padding: 0.75rem 0.95rem;
+  max-width: 680px;
   width: 100%;
   z-index: 2;
-  backdrop-filter: blur(50px); /* 20% blur */
-  box-shadow: 0 8px 32px rgba(255, 153, 0, 0.771);
-  border: 1px solid rgba(255, 153, 0, 0.666);
-  margin-bottom: 2rem;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow:
+    0 8px 28px rgba(0, 0, 0, 0.55),
+    0 0 16px rgba(255, 165, 0, 0.25);
+  border: 1.5px solid rgba(255, 215, 0, 0.7);
+  margin-bottom: 0;
+}
+
+.chant-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 0.45rem;
+  padding: 0 2.2rem;
 }
 
 .chant-text h3 {
-  color: #ff0000dd;
-  margin-bottom: 1.5rem;
-  font-size: 1.8rem;
+  color: #ffd700;
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
   text-align: center;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
 }
 
-.chant-text p {
-  color: #0707ff;
-  line-height: 1.7;
-  margin-bottom: 1rem;
+/* Circular 'i' Meaning Info Button */
+.stotra-info-btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  min-width: 0;
+  aspect-ratio: 1 / 1;
+  padding: 0;
+  border-radius: 50%;
+  border: 1.5px solid #ffd700;
+  background: radial-gradient(circle at 35% 30%, #ffe57f, #d48800 75%, #8c5000 100%);
+  color: #260e00;
+  font-family: Georgia, serif;
+  font-size: 0.98rem;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow:
+    0 0 10px rgba(255, 215, 0, 0.6),
+    inset 0 1px 2px rgba(255, 255, 255, 0.7);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.stotra-info-btn:hover,
+.stotra-info-btn:active {
+  transform: translateY(-50%) scale(1.08);
+  box-shadow:
+    0 0 16px rgba(255, 215, 0, 0.9),
+    inset 0 1px 3px rgba(255, 255, 255, 0.85);
+}
+
+/* Spiritual Meaning Popup Modal */
+.stotra-meaning-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2500;
+  background: rgba(12, 4, 0, 0.72);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  animation: stotraModalFadeIn 0.25s ease-out;
+}
+
+.stotra-meaning-modal {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  background: linear-gradient(165deg, #fff6db 0%, #f5deb3 50%, #ebd09a 100%);
+  border: 2.5px solid #d49b27;
+  border-radius: 18px;
+  padding: 1.4rem 1.25rem 1.35rem;
+  box-shadow:
+    0 16px 40px rgba(0, 0, 0, 0.65),
+    0 0 24px rgba(255, 200, 60, 0.45),
+    inset 0 0 0 1.5px rgba(139, 69, 19, 0.28);
+  color: #3b1900;
   text-align: center;
+  animation: stotraModalPopIn 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.stotra-meaning-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 32px;
+  height: 32px;
+  min-width: 0;
+  aspect-ratio: 1 / 1;
+  padding: 0;
+  border-radius: 50%;
+  border: 1.5px solid rgba(139, 69, 19, 0.55);
+  background: rgba(92, 40, 4, 0.12);
+  color: #4a1f00;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.stotra-meaning-close-btn:hover {
+  background: rgba(92, 40, 4, 0.24);
+  transform: scale(1.06);
+}
+
+.stotra-meaning-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  margin-bottom: 0.85rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid rgba(139, 69, 19, 0.28);
+}
+
+.stotra-meaning-om {
+  font-size: 1rem;
+  color: #9c4a00;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.stotra-meaning-header h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #5a2100;
+  font-weight: 700;
+}
+
+.stotra-meaning-badge {
+  display: inline-block;
+  margin-top: 0.15rem;
+  padding: 0.15rem 0.7rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #7a3300;
+  background: rgba(212, 155, 39, 0.25);
+  border: 1px solid rgba(180, 115, 18, 0.45);
+  border-radius: 999px;
+}
+
+.stotra-meaning-body {
+  max-height: 52vh;
+  overflow-y: auto;
+  padding: 0.2rem 0.25rem;
+}
+
+.stotra-meaning-body p {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.65;
+  color: #2f1400;
+  font-weight: 500;
+}
+
+@keyframes stotraModalFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes stotraModalPopIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92) translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
 }
 
 /* Chant Controls */
 .chant-controls {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
@@ -279,19 +486,20 @@
 }
 
 .chant-btn {
-  padding: 1rem 2rem;
-  border: none;
+  padding: 0.55rem 1.5rem;
+  border: 1.5px solid rgba(255, 235, 160, 0.75);
   border-radius: 50px;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   font-weight: 600;
   cursor: pointer;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
   transition: all 0.3s ease;
-  min-width: 150px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  min-width: 140px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
   touch-action: manipulation;
   -webkit-tap-highlight-color: transparent;
 }
@@ -328,7 +536,7 @@
 }
 
 .btn-icon {
-  font-size: 2rem;
+  font-size: 1.05rem;
 }
 
 /* Keyframe Animations */
@@ -350,45 +558,65 @@
 /* Mobile Styles */
 @media (max-width: 768px) {
   .chants-container {
-    padding: 1rem 0.75rem;
+    padding: 0.65rem 0.65rem 0.95rem;
   }
   
   .chants-title {
-    font-size: 2.2rem;
+    font-size: 1.85rem;
   }
-  
-  .chants-subtitle {
-    font-size: 1rem;
+
+  .stotra-selector-section {
+    padding: 0.45rem 0.75rem 0.55rem;
+    margin: 0.1rem 0 0.4rem;
+    max-width: 360px;
+  }
+
+  .stotra-selector-section h3 {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .stotra-dropdown {
+    padding: 0.42rem 0.85rem;
+    font-size: 0.88rem;
   }
   
   .chant-card {
-    padding: 1.5rem;
-    background: rgba(184, 203, 97, 0.573); /* 90% transparent on mobile */
-    backdrop-filter: blur(3px); /* Less blur on mobile */
+    padding: 0.65rem 0.8rem;
+    background: rgba(24, 10, 0, 0.58);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
   }
   
   .chant-text h3 {
-    font-size: 1.5rem;
+    font-size: 1.05rem;
   }
   
-  .chant-text p {
-    font-size: 1rem;
+  .stotra-scroll-container {
+    max-height: clamp(74px, 12.5vh, 110px);
+    padding: 8px 10px;
+  }
+
+  .stotra-scroll-container p,
+  .stotra-verse-text {
+    font-size: 0.92rem;
+    line-height: 1.48;
   }
   
   .chant-controls {
-    gap: 1rem;
+    gap: 0.75rem;
   }
   
   .chant-btn {
-    padding: 0.875rem 1.5rem;
+    padding: 0.5rem 1.25rem;
     min-width: 130px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     touch-action: manipulation;
     -webkit-tap-highlight-color: transparent;
   }
   
   .btn-icon {
-    font-size: 1.5rem;
+    font-size: 0.95rem;
   }
   
   .chants-page::before,
@@ -418,31 +646,43 @@
 
 @media (max-width: 480px) {
   .chants-title {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   
   .chant-card {
-    padding: 1.25rem;
+    padding: 0.55rem 0.7rem;
   }
   
   .chant-text h3 {
-    font-size: 1.3rem;
+    font-size: 0.98rem;
   }
   
-  .chant-text p {
-    font-size: 0.9rem;
+  .stotra-scroll-container {
+    max-height: clamp(68px, 11.5vh, 96px);
+    padding: 7px 9px;
+  }
+
+  .stotra-scroll-container p,
+  .stotra-verse-text {
+    font-size: 0.86rem;
+  }
+
+  .stotra-info-btn {
+    width: 27px;
+    height: 27px;
+    font-size: 0.88rem;
   }
   
   .chant-btn {
-    padding: 0.75rem 1.25rem;
+    padding: 0.45rem 1.15rem;
     min-width: 120px;
-    font-size: 0.9rem;
+    font-size: 0.86rem;
     touch-action: manipulation;
     -webkit-tap-highlight-color: transparent;
   }
   
   .btn-icon {
-    font-size: 1.3rem;
+    font-size: 0.9rem;
   }
   
   .orb-1 {

@@ -485,21 +485,21 @@ const translations = {
     stopChanting: "Stop Chanting",
     
     // AboutPage translations
-    aboutMission: "Our Mission",
-    aboutMissionText: "To make the profound teachings of the Bhagavad Gita accessible to everyone through interactive technology and multilingual support.",
-    developmentTeam: "Development Team",
-    developmentTeamText: "A dedicated team of developers, spiritual scholars, and designers working together to create an immersive experience.",
+    aboutMission: "Mission",
+    aboutMissionText: "To make the profound teachings of the Bhagavad Gita accessible to everyone through interactive technology, devotional audio, and 100% offline multilingual support.",
+    developmentTeam: "About the Developer",
+    developmentTeamText: "This application is independently designed, developed, and crafted by a single developer (Karthik Sai) with devotion to bring the eternal wisdom, shlokas, meditation, and sacred chants of the Bhagavad Gita into an interactive, completely offline experience.",
     appFeatures: "App Features",
     appFeaturesList: [
-      "Interactive dialogue between Arjuna and Lord Krishna",
+      "Interactive dialogue and shlokas between Arjuna and Lord Krishna across all 18 chapters",
       "Multilingual support (English, Hindi, Telugu)",
-      "Guided meditation sessions",
-      "Sacred chants and mantras",
-      "Kid-friendly explanations",
-      "Beautiful visual design inspired by Indian spirituality"
+      "Guided meditation sessions with customizable duration timer",
+      "Sacred chants and devotional stotras with audio",
+      "Kids-friendly explanations and History of the Bhagavad Gita",
+      "100% offline-ready spiritual design inspired by Indian heritage"
     ],
-    contactUs: "Contact Us",
-    contactUsText: "For feedback, suggestions, or spiritual guidance, please reach out to us at karthiksai5421@gmail.com",
+    contactUs: "Contact",
+    contactUsText: "For feedback, suggestions, or inquiries, please reach out directly at karthiksai5421@gmail.com",
 
     
     // New AboutPage translations
@@ -519,9 +519,9 @@ const translations = {
     emotionalConnection: "Emotional Connection",
     emotionalConnectionDesc: "Visual elements and animations that respond to the emotional context of the dialogue",
     offlineAccess: "Offline Access",
-    offlineAccessDesc: "Download and access teachings without an internet connection",
+    offlineAccessDesc: "Access all 18 chapters, shlokas, stotras, and meditation audio completely offline without an internet connection",
     personalReflection: "Personal Reflection",
-    personalReflectionDesc: "Tools for journaling and personal reflection on the teachings",
+    personalReflectionDesc: "Contemplate and reflect deeply on the sacred verses, meanings, and dialogues at your own pace",
     
     howToUseApp: "How to Use This App",
     exploreChaptersStep: "1. Explore the Chapters",
@@ -639,21 +639,21 @@ const translations = {
     stopChanting: "जप रोकें",
     
     // AboutPage translations
-    aboutMission: "हमारा उद्देश्य",
-    aboutMissionText: "भगवद्गीता के गहरे उपदेशों को इंटरैक्टिव तकनीक और बहुभाषी समर्थन के माध्यम से हर किसी के लिए सुलभ बनाना।",
-    developmentTeam: "विकास टीम",
-    developmentTeamText: "विकासकर्ताओं, आध्यात्मिक विद्वानों और डिजाइनरों की एक समर्पित टीम जो एक आकर्षक अनुभव पैदा करने के लिए मिलकर काम कर रही है।",
+    aboutMission: "उद्देश्य",
+    aboutMissionText: "भगवद्गीता के गहरे उपदेशों को इंटरैक्टिव तकनीक, भक्ति ऑडियो और 100% ऑफ़लाइन बहुभाषी समर्थन के माध्यम से हर किसी के लिए सुलभ बनाना।",
+    developmentTeam: "डेवलपर के बारे में",
+    developmentTeamText: "यह एप्लिकेशन एकल डेवलपर (कार्तिक साई) द्वारा भक्ति के साथ स्वतंत्र रूप से डिज़ाइन और विकसित किया गया है, ताकि भगवद्गीता के शाश्वत ज्ञान, श्लोकों, ध्यान और पवित्र मंत्रों को पूरी तरह से ऑफ़लाइन अनुभव के रूप में प्रस्तुत किया जा सके।",
     appFeatures: "ऐप की विशेषताएँ",
     appFeaturesList: [
-      "अर्जुन और भगवान कृष्ण के बीच इंटरैक्टिव संवाद",
+      "सभी 18 अध्यायों में अर्जुन और भगवान कृष्ण के बीच इंटरैक्टिव संवाद और श्लोक",
       "बहुभाषी समर्थन (अंग्रेजी, हिंदी, तेलुगु)",
-      "मार्गदर्शित ध्यान सत्र",
-      "पवित्र जप और मंत्र",
-      "बच्चों के अनुकूल व्याख्याएँ",
-      "भारतीय आध्यात्मिकता से प्रेरित सुंदर दृश्य डिज़ाइन"
+      "कस्टमाइज़ करने योग्य टाइमर के साथ मार्गदर्शित ध्यान सत्र",
+      "ऑडियो के साथ पवित्र जप और भक्तिपूर्ण स्तोत्र",
+      "बच्चों के अनुकूल व्याख्याएँ और भगवद्गीता का इतिहास",
+      "भारतीय आध्यात्मिकता से प्रेरित 100% ऑफ़लाइन दृश्य डिज़ाइन"
     ],
-    contactUs: "संपर्क करें",
-    contactUsText: "प्रतिक्रिया, सुझाव या आध्यात्मिक मार्गदर्शन के लिए, कृपया हमसे संपर्क करें karthiksai5421@gmail.com पर",
+    contactUs: "संपर्क",
+    contactUsText: "प्रतिक्रिया, सुझाव या किसी भी जानकारी के लिए कृपया सीधे karthiksai5421@gmail.com पर संपर्क करें",
     
     // New AboutPage translations
     additionalFunctions: "अतिरिक्त कार्य और उपयोग",
@@ -672,9 +672,9 @@ const translations = {
     emotionalConnection: "भावनात्मक संबंध",
     emotionalConnectionDesc: "दृश्य तत्व और एनीमेशन जो संवाद के भावनात्मक संदर्भ के अनुसार प्रतिक्रिया करते हैं",
     offlineAccess: "ऑफ़लाइन पहुँच",
-    offlineAccessDesc: "इंटरनेट कनेक्शन के बिना उपदेशों को डाउनलोड और एक्सेस करें",
+    offlineAccessDesc: "इंटरनेट कनेक्शन के बिना सभी 18 अध्यायों, श्लोकों, स्तोत्रों और ध्यान ऑडियो तक पूरी तरह ऑफ़लाइन पहुँचें",
     personalReflection: "व्यक्तिगत प्रतिबिंब",
-    personalReflectionDesc: "उपदेशों पर नियमित लेखन और व्यक्तिगत प्रतिबिंब के लिए उपकरण",
+    personalReflectionDesc: "अपनी गति से पवित्र श्लोकों, अर्थों और संवादों पर गहराई से चिंतन और मनन करें",
     
     howToUseApp: "इस ऐप का उपयोग कैसे करें",
     exploreChaptersStep: "1. अध्यायों का अन्वेषण करें",
@@ -793,21 +793,21 @@ const translations = {
     stopChanting: "జపం ఆపండి",
     
     // AboutPage translations
-    aboutMission: "మా మిషన్",
-    aboutMissionText: "ఇంటరాక్టివ్ టెక్నాలజీ మరియు బహుభాషా మద్దతు ద్వారా భగవద్గీత యొక్క లోతైన ఉపదేశాలను ప్రతి ఒక్కరికీ సులభంగా చేయడం.",
-    developmentTeam: "వికాస జట్టు",
-    developmentTeamText: "ఒక అంకిత జట్టు అభివృద్ధికారులు, ఆధ్యాత్మిక పండితులు మరియు డిజైనర్లు కలిసి ఒక ఆకర్షకమైన అనుభవాన్ని సృష్టించడానికి పనిచేస్తున్నారు.",
+    aboutMission: "లక్ష్యం",
+    aboutMissionText: "ఇంటరాక్టివ్ టెక్నాలజీ, భక్తి ఆడియో మరియు 100% ఆఫ్‌లైన్ బహుభాషా మద్దతు ద్వారా భగవద్గీత యొక్క లోతైన ఉపదేశాలను ప్రతి ఒక్కరికీ సులభంగా అందించడం.",
+    developmentTeam: "డెవలపర్ గురించి",
+    developmentTeamText: "భగవద్గీత యొక్క శాశ్వత జ్ఞానం, శ్లోకాలు, ధ్యానం మరియు పవిత్ర స్తోత్రాలను పూర్తి ఆఫ్‌లైన్ అనుభవంగా అందించాలనే భక్తితో ఈ యాప్ ఒకే డెవలపర్ (కార్తీక్ సాయి) చే స్వతంత్రంగా రూపొందించబడింది మరియు అభివృద్ధి చేయబడింది.",
     appFeatures: "యాప్ లక్షణాలు",
     appFeaturesList: [
-      "అర్జునుడికి మరియు  కృష్ణునికి మధ్య ఇంటరాక్టివ్ సంభాషణ",
+      "మొత్తం 18 అధ్యాయాలలో అర్జునుడు మరియు శ్రీకృష్ణుని మధ్య ఇంటరాక్టివ్ సంభాషణ మరియు శ్లోకాలు",
       "బహుభాషా మద్దతు (ఆంగ్లం, హిందీ, తెలుగు)",
-      "మార్గదర్శిత ధ్యాన సెషన్లు",
-      "పవిత్ర జపాలు మరియు మంత్రాలు",
-      "పిల్లల అనుకూల వివరణలు",
-      "భారతీయ ఆధ్యాత్మికత నుండి ప్రేరితమైన అందమైన దృశ్య డిజైన్"
+      "అనుకూల సమయ టైమర్‌తో మార్గదర్శిత ధ్యాన సెషన్లు",
+      "ఆడియోతో పవిత్ర జపాలు మరియు భక్తి స్తోత్రాలు",
+      "పిల్లల అనుకూల వివరణలు మరియు భగవద్గీత చరిత్ర",
+      "భారతీయ ఆధ్యాత్మికత నుండి ప్రేరణ పొందిన 100% ఆఫ్‌లైన్ దృశ్య డిజైన్"
     ],
     contactUs: "సంప్రదించండి",
-    contactUsText: "ప్రతిస్పందన, సూచనలు లేదా ఆధ్యాత్మిక మార్గదర్శనం కోసం, దయచేసి మమ్మల్ని సంప్రదించండి karthiksai5421@gmail.com",
+    contactUsText: "అభిప్రాయాలు, సూచనలు లేదా వివరాల కోసం దయచేసి నేరుగా karthiksai5421@gmail.com ద్వారా సంప్రదించండి",
     // New AboutPage translations
     additionalFunctions: "అదనపు ఫంక్షన్లు మరియు ఉపయోగాలు",
     interactiveLearning: "ఇంటరాక్టివ్ లర్నింగ్",
@@ -824,9 +824,9 @@ const translations = {
     emotionalConnection: "భావోద్వేగ సంబంధం",
     emotionalConnectionDesc: "సంభాషణ యొక్క భావోద్వేగ సందర్భానికి ప్రతిస్పందిస్తాయి దృశ్య అంశాలు మరియు యానిమేషన్లు",
     offlineAccess: "ఆఫ్‌లైన్ యాక్సెస్",
-    offlineAccessDesc: "ఇంటర్నెట్ కనెక్షన్ లేకుండా ఉపదేశాలను డౌన్‌లోడ్ చేసి యాక్సెస్ చేయండి",
+    offlineAccessDesc: "ఇంటర్నెట్ కనెక్షన్ లేకుండా మొత్తం 18 అధ్యాయాలు, శ్లోకాలు, స్తోత్రాలు మరియు ధ్యాన ఆడియోను పూర్తిగా ఆఫ్‌లైన్‌లో పొందండి",
     personalReflection: "వ్యక్తిగత ప్రతిబింబనం",
-    personalReflectionDesc: "ఉపదేశాలపై జర్నలింగ్ మరియు వ్యక్తిగత ప్రతిబింబన కోసం సాధనాలు",
+    personalReflectionDesc: "మీ వేగంతో పవిత్ర శ్లోకాలు, అర్థాలు మరియు సంభాషణలపై లోతుగా చింతన చేయండి",
     
     howToUseApp: "ఈ యాప్‌ను ఎలా ఉపయోగించాలి",
     exploreChaptersStep: "1. అధ్యాయాలను అన్వేషించండి",

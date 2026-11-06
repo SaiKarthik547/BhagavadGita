@@ -13,6 +13,7 @@ const ChantsPage = () => {
   
   const { language, radhaKrishnaMantras, t } = useLanguage();
   const [selectedStotra, setSelectedStotra] = useState(0);
+  const [showMeaningPopup, setShowMeaningPopup] = useState(false);
 
   // Stop background music when component mounts
   useEffect(() => {
@@ -107,9 +108,15 @@ const ChantsPage = () => {
           <p className="chants-subtitle">{t('chantsSubtitle')}</p>
         </div>
 
-        {/* Stotra Selector Dropdown */}
+        {/* Stotra Selector Dropdown - Top */}
         <div className="stotra-selector-section">
-          <h3>Select Stotra / स्तोत्र चुनें / స్తోత్రం ఎంచుకోండి</h3>
+          <h3>
+            {language === 'en'
+              ? 'Select Stotra'
+              : language === 'hi'
+              ? 'स्तोत्र चुनें'
+              : 'స్తోత్రం ఎంచుకోండి'}
+          </h3>
           <select 
             className="stotra-dropdown"
             value={selectedStotra}
@@ -124,30 +131,89 @@ const ChantsPage = () => {
           </select>
         </div>
 
-        <div className="chant-card">
-          <div className="chant-text">
-            <h3>{currentStotra.name}</h3>
-            <div className="stotra-scroll-container">
-              <p style={{ whiteSpace: 'pre-line', fontSize: '1.1rem', lineHeight: '1.6' }}>
-                {currentStotra.text}
-              </p>
+        {/* Bottom Dock: Stotra Display Box + Chanting Button */}
+        <div className="chants-bottom-dock">
+          <div className="chant-card">
+            <div className="chant-text">
+              <div className="chant-card-header">
+                <h3>{currentStotra.name}</h3>
+                <button
+                  type="button"
+                  className="stotra-info-btn"
+                  onClick={() => setShowMeaningPopup(true)}
+                  aria-label={
+                    language === 'en'
+                      ? 'Meaning'
+                      : language === 'hi'
+                      ? 'अर्थ'
+                      : 'అర్థం'
+                  }
+                  title={
+                    language === 'en'
+                      ? 'Meaning'
+                      : language === 'hi'
+                      ? 'अर्थ'
+                      : 'అర్థం'
+                  }
+                >
+                  i
+                </button>
+              </div>
+              <div className="stotra-scroll-container">
+                <p className="stotra-verse-text">
+                  {currentStotra.text}
+                </p>
+              </div>
             </div>
-            <p style={{ fontStyle: 'italic', marginTop: '15px', fontSize: '0.9rem' }}>
-              {currentStotra.meaning}
-            </p>
+          </div>
+
+          <div className="chant-controls">
+            <button
+              className={`chant-btn ${isChantsPlaying ? 'stop' : 'start'}`}
+              onClick={handleToggleChanting}
+            >
+              {/* Using ternary with object mapping for button content */}
+              {isChantsPlaying ? buttonTextMap.playing.icon : buttonTextMap.stopped.icon}
+              {isChantsPlaying ? buttonTextMap.playing.text : buttonTextMap.stopped.text}
+            </button>
           </div>
         </div>
 
-        <div className="chant-controls">
-          <button
-            className={`chant-btn ${isChantsPlaying ? 'stop' : 'start'}`}
-            onClick={handleToggleChanting}
+        {/* Spiritual Meaning Popup Modal */}
+        {showMeaningPopup && (
+          <div
+            className="stotra-meaning-modal-overlay"
+            onClick={() => setShowMeaningPopup(false)}
           >
-            {/* Using ternary with object mapping for button content */}
-            {isChantsPlaying ? buttonTextMap.playing.icon : buttonTextMap.stopped.icon}
-            {isChantsPlaying ? buttonTextMap.playing.text : buttonTextMap.stopped.text}
-          </button>
-        </div>
+            <div
+              className="stotra-meaning-modal"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                type="button"
+                className="stotra-meaning-close-btn"
+                onClick={() => setShowMeaningPopup(false)}
+                aria-label="Close"
+              >
+                ×
+              </button>
+              <div className="stotra-meaning-header">
+                <span className="stotra-meaning-om">॥ ॐ ॥</span>
+                <h4>{currentStotra.name}</h4>
+                <span className="stotra-meaning-badge">
+                  {language === 'en'
+                    ? 'Sacred Meaning'
+                    : language === 'hi'
+                    ? 'पवित्र अर्थ'
+                    : 'పవిత్ర అర్థం'}
+                </span>
+              </div>
+              <div className="stotra-meaning-body">
+                <p>{currentStotra.meaning}</p>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

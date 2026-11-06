@@ -84,23 +84,6 @@ const AboutPage = () => {
             <p>
               {t('developmentTeamText')}
             </p>
-            
-            <div className="team-members">
-              <h3>{t('spiritualAdvisors')}</h3>
-              <ul>
-                <li>{t('vedicScholars')}</li>
-                <li>{t('yogaMasters')}</li>
-                <li>{t('devotionalPractitioners')}</li>
-              </ul>
-              
-              <h3>{t('technicalTeam')}</h3>
-              <ul>
-                <li>{t('uiUxDesigners')}</li>
-                <li>{t('frontendDevelopers')}</li>
-                <li>{t('audioEngineers')}</li>
-                <li>{t('contentSpecialists')}</li>
-              </ul>
-            </div>
           </div>
           
           <div className="contact-section">

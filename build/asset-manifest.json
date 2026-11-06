@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.22416750.css",
-    "main.js": "/static/js/main.fa4325a9.js",
+    "main.css": "/static/css/main.d8d698c5.css",
+    "main.js": "/static/js/main.e2a98945.js",
     "static/media/home.jpeg": "/static/media/home.9ab9b75d2adad24b0bde.jpeg",
     "static/media/vishwaroopam.png": "/static/media/vishwaroopam.abf1145172a09a6f087f.png",
     "static/media/meditation.png": "/static/media/meditation.4489944adecca54c0971.png",
@@ -16,12 +16,16 @@
     "static/media/duryodhana.png": "/static/media/duryodhana.3e643557c25e3b1d33c1.png",
     "static/media/about.jpg": "/static/media/about.6f7eb85893c51a103251.jpg",
     "static/media/krishna.png": "/static/media/krishna.fa1afe9fbc033db70894.png",
+    "static/media/noto-sans-telugu-telugu-wght-normal.woff2": "/static/media/noto-sans-telugu-telugu-wght-normal.7fd97b37de9903fd2014.woff2",
+    "static/media/noto-sans-devanagari-devanagari-wght-normal.woff2": "/static/media/noto-sans-devanagari-devanagari-wght-normal.e47cabbdab41b2ea5f6b.woff2",
+    "static/media/inter-latin-ext-wght-normal.woff2": "/static/media/inter-latin-ext-wght-normal.8bff79fbfaa8b8167a0b.woff2",
+    "static/media/inter-latin-wght-normal.woff2": "/static/media/inter-latin-wght-normal.4f2981d82860061bca3e.woff2",
     "index.html": "/index.html",
-    "main.22416750.css.map": "/static/css/main.22416750.css.map",
-    "main.fa4325a9.js.map": "/static/js/main.fa4325a9.js.map"
+    "main.d8d698c5.css.map": "/static/css/main.d8d698c5.css.map",
+    "main.e2a98945.js.map": "/static/js/main.e2a98945.js.map"
   },
   "entrypoints": [
-    "static/css/main.22416750.css",
-    "static/js/main.fa4325a9.js"
+    "static/css/main.d8d698c5.css",
+    "static/js/main.e2a98945.js"
   ]
 }

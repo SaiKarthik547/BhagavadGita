@@ -5,12 +5,6 @@ import App from './App';
 import { AudioProvider } from './contexts/AudioContext';
 import './assets/styles/index.css';
 
-// Add font loading for better performance
-const link = document.createElement('link');
-link.href = 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap';
-link.rel = 'stylesheet';
-document.head.appendChild(link);
-
 const container = document.getElementById('root');
 const root = createRoot(container);
 

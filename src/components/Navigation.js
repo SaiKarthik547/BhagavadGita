@@ -102,7 +102,13 @@ const Navigation = () => {
             </svg>
 
             <div className="mobile-nav-header">
-              <span className="scroll-invocation">॥ श्री भगवद्गीता ॥</span>
+              <span className="scroll-invocation">
+                {language === 'en'
+                  ? '॥ Sri Bhagavad Gita ॥'
+                  : language === 'hi'
+                  ? '॥ श्री भगवद्गीता ॥'
+                  : '॥ శ్రీ భగవద్గీత ॥'}
+              </span>
               <button className="close-mobile-nav" onClick={closeNav} aria-label="Close Menu">×</button>
             </div>
 
