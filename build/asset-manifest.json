@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.d8d698c5.css",
+    "main.css": "/static/css/main.c9b33fee.css",
     "main.js": "/static/js/main.e2a98945.js",
     "static/media/home.jpeg": "/static/media/home.9ab9b75d2adad24b0bde.jpeg",
     "static/media/vishwaroopam.png": "/static/media/vishwaroopam.abf1145172a09a6f087f.png",
@@ -21,11 +21,11 @@
     "static/media/inter-latin-ext-wght-normal.woff2": "/static/media/inter-latin-ext-wght-normal.8bff79fbfaa8b8167a0b.woff2",
     "static/media/inter-latin-wght-normal.woff2": "/static/media/inter-latin-wght-normal.4f2981d82860061bca3e.woff2",
     "index.html": "/index.html",
-    "main.d8d698c5.css.map": "/static/css/main.d8d698c5.css.map",
+    "main.c9b33fee.css.map": "/static/css/main.c9b33fee.css.map",
     "main.e2a98945.js.map": "/static/js/main.e2a98945.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8d698c5.css",
+    "static/css/main.c9b33fee.css",
     "static/js/main.e2a98945.js"
   ]
 }
