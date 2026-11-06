@@ -12,6 +12,8 @@
   z-index: 2;
   /* Allow content to expand and scroll within app-content container */
   min-height: calc(100vh - 0px);
+  display: flex;
+  flex-direction: column;
 }
 
 /* Hero Section */
@@ -418,58 +420,73 @@
 /* CTA Section */
 .cta-section {
   text-align: center;
-  margin-bottom: 40px;
+  margin-top: auto;
+  margin-bottom: 0;
+  padding: 0 16px clamp(16px, 3vh, 28px);
 }
 
 .cta-section h2 {
-  font-size: 2.5rem;
-  color: #ff0606;
-  margin-bottom: 30px;
-  text-shadow: 5px 5px 200px rgb(215, 33, 5);
+  font-size: clamp(1.25rem, 3.8vw, 2rem);
+  color: #fff3c4;
+  margin-bottom: 12px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9), 0 0 18px rgba(255, 111, 0, 0.75);
 }
 
 .cta-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 12px;
+  max-width: 520px;
+  margin: 0 auto;
 }
 
 .cta-button {
-  padding: 15px 30px;
-  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 14px;
+  border-radius: 30px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  font-size: clamp(0.84rem, 3.2vw, 1.02rem);
+  line-height: 1.25;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.28s ease, background 0.28s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.28), inset 0 1px 1px rgba(255, 255, 255, 0.35);
   touch-action: manipulation;
   -webkit-tap-highlight-color: transparent;
 }
 
 .cta-button.primary {
-  background: linear-gradient(135deg, #FF9800, #FF5722);
-  color: rgb(0, 0, 0);
+  background: linear-gradient(135deg, rgba(255, 152, 0, 0.34), rgba(255, 87, 34, 0.34));
+  border: 1px solid rgba(255, 183, 77, 0.65);
 }
 
 .cta-button.primary1 {
-  background: linear-gradient(135deg, #e3fe77, #fff700);
-  color: rgb(0, 0, 0);
+  background: linear-gradient(135deg, rgba(255, 213, 79, 0.32), rgba(255, 179, 0, 0.32));
+  border: 1px solid rgba(255, 238, 88, 0.65);
 }
 
 .cta-button.secondary {
-  background: linear-gradient(135deg, #2196F3, #21CBF3);
-  color: rgb(0, 0, 0);
+  background: linear-gradient(135deg, rgba(14, 224, 247, 0.32), rgba(33, 150, 243, 0.34));
+  border: 1px solid rgba(128, 222, 234, 0.65);
 }
 
 .cta-button.tertiary {
-  background: linear-gradient(135deg, #4CAF50, #8BC34A);
-  color: rgb(0, 0, 0);
+  background: linear-gradient(135deg, rgba(76, 175, 80, 0.34), rgba(139, 195, 74, 0.32));
+  border: 1px solid rgba(165, 214, 167, 0.65);
 }
 
-.cta-button:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+.cta-button:hover,
+.cta-button:active {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4), 0 0 12px rgba(255, 255, 255, 0.25);
 }
 
 /* Responsive Design */
@@ -498,9 +515,13 @@
   .history-section h2,
   .team-section h2,
   .app-features-section h2,
-  .contact-section h2,
-  .cta-section h2 {
+  .contact-section h2 {
     font-size: 2rem;
+  }
+  
+  .cta-section h2 {
+    font-size: clamp(1.15rem, 4.4vw, 1.45rem);
+    margin-bottom: 10px;
   }
   
   .features-grid {
@@ -520,13 +541,17 @@
   }
   
   .cta-buttons {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 9px 10px;
+    width: 100%;
+    max-width: 420px;
   }
   
   .cta-button {
-    width: 80%;
-    margin-bottom: 15px;
+    width: 100%;
+    margin-bottom: 0;
+    padding: 10px 10px;
+    box-sizing: border-box;
     touch-action: manipulation;
     -webkit-tap-highlight-color: transparent;
   }
@@ -569,9 +594,13 @@
   .history-section h2,
   .team-section h2,
   .app-features-section h2,
-  .contact-section h2,
-  .cta-section h2 {
+  .contact-section h2 {
     font-size: 1.8rem;
+  }
+  
+  .cta-section h2 {
+    font-size: clamp(1.1rem, 4.2vw, 1.3rem);
+    margin-bottom: 8px;
   }
   
   .feature-title {
