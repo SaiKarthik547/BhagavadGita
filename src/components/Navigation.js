@@ -52,17 +52,17 @@ const Navigation = () => {
           {/* Glowing Golden Om Symbol Crest */}
           <text
             x="20"
-            y="22.5"
+            y="23.5"
             textAnchor="middle"
             fill="url(#sacredGoldBar)"
-            fontSize="18"
-            fontWeight="700"
+            fontSize="21.5"
+            fontWeight="800"
           >
             ॐ
           </text>
-          {/* Delicate 3-line menu motif beneath the Om crest */}
-          <rect x="12" y="27.2" width="16" height="1.5" rx="0.75" fill="url(#sacredGoldBar)" opacity="0.9" />
-          <rect x="14.5" y="30.2" width="11" height="1.5" rx="0.75" fill="url(#sacredGoldBar)" opacity="0.8" />
+          {/* Delicate menu motif beneath the Om crest */}
+          <rect x="11.5" y="28.2" width="17" height="1.6" rx="0.8" fill="url(#sacredGoldBar)" opacity="0.92" />
+          <rect x="14" y="31.2" width="12" height="1.6" rx="0.8" fill="url(#sacredGoldBar)" opacity="0.82" />
         </svg>
       </button>
 
