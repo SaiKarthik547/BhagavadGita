@@ -53,13 +53,18 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 0.38s cubic-bezier(0.22, 1, 0.36, 1), visibility 0.38s ease;
+  transition:
+    opacity 0.72s cubic-bezier(0.4, 0, 0.2, 1) 0.18s,
+    visibility 0s linear 0.9s;
 }
 
 .mobile-overlay.active {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  transition:
+    opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
+    visibility 0s linear 0s;
 }
 
 /* Centered Sacred Vedic Scroll Container */
@@ -72,15 +77,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  transform: translate3d(-50%, -50%, 0) scale(0.76);
+  transform: translate3d(-50%, -50%, 0) scale(0.78);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
   will-change: transform, opacity;
+  /* On close: wait for parchment to roll up first (0.52s), then gently fade out */
   transition:
-    transform 0.42s cubic-bezier(0.22, 1, 0.36, 1),
-    opacity 0.32s ease,
-    visibility 0.42s ease;
+    transform 0.46s cubic-bezier(0.4, 0, 0.2, 1) 0.52s,
+    opacity 0.42s ease 0.52s,
+    visibility 0s linear 0.95s;
 }
 
 .mobile-nav.open {
@@ -88,6 +94,11 @@
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  /* On open: summon closed scroll immediately in center */
+  transition:
+    transform 0.48s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.38s ease,
+    visibility 0s linear 0s;
 }
 
 /* Carved Teakwood & 24K Gold Scroll Rollers (Top & Bottom) */
@@ -195,9 +206,10 @@
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   will-change: max-height, opacity;
+  /* On close: smoothly and slowly roll the parchment back together */
   transition:
-    max-height 0.48s cubic-bezier(0.22, 1, 0.36, 1),
-    opacity 0.28s ease;
+    max-height 0.85s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.55s ease 0.22s;
 }
 
 .scroll-parchment::-webkit-scrollbar {
@@ -208,9 +220,10 @@
   max-height: min(78vh, 570px);
   opacity: 1;
   overflow-y: auto;
+  /* On open: pause briefly as closed scroll, then unroll slowly and smoothly */
   transition:
-    max-height 0.56s cubic-bezier(0.22, 1, 0.36, 1) 0.08s,
-    opacity 0.32s ease 0.06s;
+    max-height 1.05s cubic-bezier(0.22, 1, 0.36, 1) 0.16s,
+    opacity 0.55s ease 0.14s;
 }
 
 /* Sacred Double Temple Inner Frame */
@@ -327,21 +340,22 @@
   width: 92%;
   margin: 0;
   opacity: 0;
-  transform: translate3d(0, 8px, 0);
-  transition: opacity 0.28s ease, transform 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+  transform: translate3d(0, 10px, 0);
+  transition: opacity 0.35s ease, transform 0.38s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-nav.open .mobile-nav-content li {
   opacity: 1;
   transform: translate3d(0, 0, 0);
+  transition: opacity 0.48s ease, transform 0.52s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.mobile-nav.open .mobile-nav-content li:nth-child(1) { transition-delay: 0.14s; }
-.mobile-nav.open .mobile-nav-content li:nth-child(2) { transition-delay: 0.18s; }
-.mobile-nav.open .mobile-nav-content li:nth-child(3) { transition-delay: 0.22s; }
-.mobile-nav.open .mobile-nav-content li:nth-child(4) { transition-delay: 0.26s; }
-.mobile-nav.open .mobile-nav-content li:nth-child(5) { transition-delay: 0.30s; }
-.mobile-nav.open .mobile-nav-content li:nth-child(6) { transition-delay: 0.34s; }
+.mobile-nav.open .mobile-nav-content li:nth-child(1) { transition-delay: 0.24s; }
+.mobile-nav.open .mobile-nav-content li:nth-child(2) { transition-delay: 0.31s; }
+.mobile-nav.open .mobile-nav-content li:nth-child(3) { transition-delay: 0.38s; }
+.mobile-nav.open .mobile-nav-content li:nth-child(4) { transition-delay: 0.45s; }
+.mobile-nav.open .mobile-nav-content li:nth-child(5) { transition-delay: 0.52s; }
+.mobile-nav.open .mobile-nav-content li:nth-child(6) { transition-delay: 0.59s; }
 
 .mobile-nav-link {
   display: flex;
