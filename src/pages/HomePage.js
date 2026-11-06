@@ -30,7 +30,63 @@ const HomePage = () => {
       
       <div className="home-container">
         <div className="app-description-card">
-          <h1 className="hero-title">{t('heroTitle')}</h1>
+          <svg
+            className="hero-arc-svg"
+            viewBox="0 0 500 175"
+            aria-label={t('heroTitle')}
+            role="heading"
+            aria-level="1"
+          >
+            <defs>
+              <path
+                id="krishna-aura-arc"
+                d="M 38,152 A 222,142 0 0,1 462,152"
+              />
+              <path
+                id="krishna-aura-inner-ring"
+                d="M 56,158 A 204,130 0 0,1 444,158"
+              />
+              <linearGradient id="goldenAuraTextGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stopColor="#ffe57f" />
+                <stop offset="25%" stopColor="#fff9c4" />
+                <stop offset="50%" stopColor="#ffd700" />
+                <stop offset="75%" stopColor="#fff9c4" />
+                <stop offset="100%" stopColor="#ffb300" />
+              </linearGradient>
+              <linearGradient id="goldenAuraRingGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stopColor="rgba(255, 193, 7, 0)" />
+                <stop offset="20%" stopColor="rgba(255, 215, 0, 0.75)" />
+                <stop offset="50%" stopColor="rgba(255, 248, 225, 0.95)" />
+                <stop offset="80%" stopColor="rgba(255, 215, 0, 0.75)" />
+                <stop offset="100%" stopColor="rgba(255, 193, 7, 0)" />
+              </linearGradient>
+              <filter id="goldenAuraGlow" x="-20%" y="-30%" width="140%" height="160%">
+                <feDropShadow dx="0" dy="0" stdDeviation="5" floodColor="#ff8f00" floodOpacity="0.95" />
+                <feDropShadow dx="0" dy="0" stdDeviation="10" floodColor="#ffd54f" floodOpacity="0.7" />
+                <feDropShadow dx="0" dy="2" stdDeviation="1.5" floodColor="#2b0900" floodOpacity="0.9" />
+              </filter>
+            </defs>
+
+            {/* Subtle glowing inner halo arc around Lord Krishna */}
+            <use
+              href="#krishna-aura-inner-ring"
+              fill="none"
+              stroke="url(#goldenAuraRingGrad)"
+              strokeWidth="1.8"
+              filter="url(#goldenAuraGlow)"
+            />
+
+            {/* Curved Golden Glowing Title */}
+            <text className="hero-arc-text" filter="url(#goldenAuraGlow)">
+              <textPath
+                href="#krishna-aura-arc"
+                startOffset="50%"
+                textAnchor="middle"
+              >
+                {t('heroTitle')}
+              </textPath>
+            </text>
+          </svg>
         </div>
 
         {/* Feature Buttons - Show popups when clicked */}
