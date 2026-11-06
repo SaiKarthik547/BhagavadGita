@@ -30,6 +30,7 @@ const ChaptersPage = () => {
           <h1 className="chapters-title">
             {language === 'en' ? 'Chapters' : language === 'hi' ? 'अध्याय' : 'అధ్యాయాలు'}
           </h1>
+          <p className="chapters-subtitle">{t('chaptersSubtitle')}</p>
         </header>
 
         <div className="chapters-list">

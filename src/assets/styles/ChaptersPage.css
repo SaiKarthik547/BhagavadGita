@@ -53,16 +53,25 @@
 
 .chapters-title {
   font-size: 3rem;
-  color: #e1ff00;
-  margin-bottom: 1rem;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.336);
+  color: #FFD700;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.85), 0 0 18px rgba(255, 160, 0, 0.65);
 }
 
 .chapters-subtitle {
-  font-size: 1.2rem;
-  color: #333;
-  opacity: 0.9;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.278);
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff8dc;
+  opacity: 1;
+  padding: 8px 20px;
+  border-radius: 26px;
+  background: rgba(28, 10, 0, 0.48);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 215, 0, 0.55);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.95), 0 0 12px rgba(255, 179, 0, 0.55);
 }
 
 .floating-petal {
@@ -275,10 +284,11 @@
   }
   
   .chapters-subtitle {
-    font-size: 1.4rem;
-    color: #fc0404;
-    margin-bottom: 1rem;
-    text-shadow: 0 2px 4px rgb(255, 0, 0);
+    font-size: clamp(1rem, 3.8vw, 1.2rem);
+    color: #fff8dc;
+    margin-bottom: 0.75rem;
+    padding: 7px 16px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.95), 0 0 12px rgba(255, 179, 0, 0.55);
   }
   
   .chapters-controls {

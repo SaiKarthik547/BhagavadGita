@@ -40,104 +40,372 @@
   transform: scale(1.06);
 }
 
-/* Mobile Navigation */
+/* Sacred Backdrop Overlay */
+.mobile-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(28, 10, 0, 0.62), rgba(8, 2, 0, 0.82));
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.38s cubic-bezier(0.22, 1, 0.36, 1), visibility 0.38s ease;
+}
+
+.mobile-overlay.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* Centered Sacred Vedic Scroll Container */
 .mobile-nav {
   position: fixed;
-  top: 0;
-  left: -300px;
-  width: 210px;
-  height: 100vh;
-  background: rgba(255, 243, 224, 0.159);
+  top: 50%;
+  left: 50%;
+  width: min(90vw, 370px);
   z-index: 1001;
-  transition: left 0.3s ease;
-  overflow-y: auto;
-  box-shadow: 5px 0 15px rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(5px);
-  /* Fix for double scrollbar - prevent scroll on body when nav is open */
-  -webkit-overflow-scrolling: touch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translate3d(-50%, -50%, 0) scale(0.76);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  will-change: transform, opacity;
+  transition:
+    transform 0.42s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.32s ease,
+    visibility 0.42s ease;
 }
 
 .mobile-nav.open {
-  left: 0;
+  transform: translate3d(-50%, -50%, 0) scale(1);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
-.mobile-nav-header {
+/* Carved Teakwood & 24K Gold Scroll Rollers (Top & Bottom) */
+.scroll-roller {
+  position: relative;
+  width: calc(100% + 26px);
+  height: 22px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0.5rem;
-  border-bottom: 1px solid rgba(216, 27, 96, 0.596);
-  color: #eb0a5c;
-  background: rgba(137, 222, 250, 0.427);
-  text-align: center;
+  justify-content: center;
+  z-index: 3;
+  flex-shrink: 0;
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.65));
 }
 
-.mobile-nav-header h2 {
-  flex: 1;
-  text-align: center;
-  margin: 0;
-  padding: 0;
+.scroll-rod {
+  width: 100%;
+  height: 18px;
+  border-radius: 10px;
+  background: linear-gradient(
+    180deg,
+    #5c2406 0%,
+    #b86b14 22%,
+    #ffd700 48%,
+    #fff3b0 54%,
+    #c77d1a 78%,
+    #471a03 100%
+  );
+  border-top: 1px solid rgba(255, 248, 200, 0.85);
+  border-bottom: 1.5px solid #2d0e00;
+  box-shadow:
+    inset 0 2px 4px rgba(255, 255, 255, 0.45),
+    inset 0 -2px 4px rgba(0, 0, 0, 0.6),
+    0 3px 8px rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.scroll-rod::before,
+.scroll-rod::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  background: linear-gradient(180deg, #ffe57f, #ff8f00, #5c2406);
+  border-left: 1px solid rgba(255, 255, 255, 0.6);
+  border-right: 1px solid rgba(74, 23, 0, 0.7);
+}
+
+.scroll-rod::before {
+  left: 16px;
+}
+
+.scroll-rod::after {
+  right: 16px;
+}
+
+.scroll-rod-gem {
+  color: #7b1106;
+  font-size: 0.85rem;
+  text-shadow: 0 0 4px #fff8e1;
+  line-height: 1;
+}
+
+/* Ornate Golden Kalash Finials on Roller Ends */
+.scroll-finial {
+  width: 18px;
+  height: 24px;
+  background: radial-gradient(circle at 40% 35%, #fff9c4 0%, #ffd700 45%, #b26500 85%, #4a1c00 100%);
+  border: 1px solid #ffe57f;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.65);
+  flex-shrink: 0;
+}
+
+.finial-left {
+  border-radius: 50% 4px 4px 50%;
+  margin-right: -3px;
+}
+
+.finial-right {
+  border-radius: 4px 50% 50% 4px;
+  margin-left: -3px;
+}
+
+/* Opaque Ancient Vedic Parchment Body - Unrolls from Center */
+.scroll-parchment {
+  width: 100%;
+  max-height: 0;
+  opacity: 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(255, 249, 230, 0.96) 0%, rgba(246, 224, 175, 0.98) 68%, rgba(224, 184, 114, 1) 100%);
+  box-shadow:
+    inset 14px 0 22px -10px rgba(92, 42, 0, 0.45),
+    inset -14px 0 22px -10px rgba(92, 42, 0, 0.45),
+    inset 0 14px 18px -8px rgba(74, 28, 0, 0.55),
+    inset 0 -14px 18px -8px rgba(74, 28, 0, 0.55),
+    0 16px 38px rgba(0, 0, 0, 0.75);
+  border-left: 2.5px solid #9c5a14;
+  border-right: 2.5px solid #9c5a14;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  will-change: max-height, opacity;
+  transition:
+    max-height 0.48s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.28s ease;
+}
+
+.scroll-parchment::-webkit-scrollbar {
+  display: none;
+}
+
+.mobile-nav.open .scroll-parchment {
+  max-height: min(78vh, 570px);
+  opacity: 1;
+  overflow-y: auto;
+  transition:
+    max-height 0.56s cubic-bezier(0.22, 1, 0.36, 1) 0.08s,
+    opacity 0.32s ease 0.06s;
+}
+
+/* Sacred Double Temple Inner Frame */
+.scroll-inner-frame {
+  position: relative;
+  margin: 10px 12px;
+  padding: 10px 12px 14px;
+  border: 1.5px solid rgba(139, 30, 15, 0.65);
+  outline: 1px dashed rgba(184, 107, 20, 0.65);
+  outline-offset: -5px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* Corner Temple Flourishes */
+.scroll-corner {
+  position: absolute;
+  color: #8b1e0f;
+  font-size: 1.05rem;
+  line-height: 1;
+  opacity: 0.78;
+  pointer-events: none;
+}
+
+.corner-tl { top: 4px; left: 6px; }
+.corner-tr { top: 4px; right: 6px; transform: scaleX(-1); }
+.corner-bl { bottom: 4px; left: 6px; transform: scaleY(-1); }
+.corner-br { bottom: 4px; right: 6px; transform: scale(-1, -1); }
+
+/* Subtle Rotating Sudarshana Chakra Watermark */
+.scroll-chakra-watermark {
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  width: 210px;
+  height: 210px;
+  transform: translate(-50%, -50%);
+  opacity: 0.07;
+  pointer-events: none;
+  animation: scrollChakraSpin 36s linear infinite;
+}
+
+@keyframes scrollChakraSpin {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Header with Sanskrit Invocation & Close Button */
+.mobile-nav-header {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 28px 8px;
+  margin-bottom: 8px;
+  border-bottom: 1.5px solid rgba(139, 30, 15, 0.3);
+}
+
+.scroll-invocation {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #7b1106;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
 }
 
 .close-mobile-nav {
-  background: transparent;
-  border: none;
-  color: #000000;
-  font-size: 2.2rem;
+  position: absolute;
+  right: 2px;
+  top: -2px;
+  width: 28px;
+  height: 28px;
+  min-width: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle, #8b1e0f, #520c04);
+  border: 1px solid #ffd700;
+  color: #fff8e1;
+  font-size: 1.25rem;
+  line-height: 1;
   cursor: pointer;
-  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+  transition: transform 0.22s ease, background 0.22s ease;
 }
 
+.close-mobile-nav:hover,
+.close-mobile-nav:active {
+  transform: scale(1.08);
+  background: radial-gradient(circle, #b71c1c, #6b0f05);
+}
+
+/* Scroll Content & Centered Route Medallions */
 .mobile-nav-content {
-  padding: 1rem;
+  position: relative;
+  z-index: 2;
+  padding: 2px 4px 0;
 }
 
 .mobile-nav-content ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
 }
 
 .mobile-nav-content li {
-  margin-bottom: 0.5rem;
+  width: 92%;
+  margin: 0;
+  opacity: 0;
+  transform: translate3d(0, 8px, 0);
+  transition: opacity 0.28s ease, transform 0.28s cubic-bezier(0.22, 1, 0.36, 1);
 }
+
+.mobile-nav.open .mobile-nav-content li {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.mobile-nav.open .mobile-nav-content li:nth-child(1) { transition-delay: 0.14s; }
+.mobile-nav.open .mobile-nav-content li:nth-child(2) { transition-delay: 0.18s; }
+.mobile-nav.open .mobile-nav-content li:nth-child(3) { transition-delay: 0.22s; }
+.mobile-nav.open .mobile-nav-content li:nth-child(4) { transition-delay: 0.26s; }
+.mobile-nav.open .mobile-nav-content li:nth-child(5) { transition-delay: 0.30s; }
+.mobile-nav.open .mobile-nav-content li:nth-child(6) { transition-delay: 0.34s; }
 
 .mobile-nav-link {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  padding: 1rem;
-  color: #000000;
+  justify-content: space-between;
+  padding: 7px 12px;
+  color: #4a1205;
   text-decoration: none;
-  border-bottom: 1px solid rgba(216, 27, 96, 0.1);
-  transition: all 0.3s ease;
-  border-radius: 5px;
+  background: linear-gradient(90deg, rgba(255, 236, 179, 0.55) 0%, rgba(255, 248, 225, 0.9) 50%, rgba(255, 236, 179, 0.55) 100%);
+  border: 1px solid rgba(184, 107, 20, 0.55);
+  border-radius: 26px;
+  box-shadow: 0 2px 6px rgba(92, 42, 0, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.75);
+  transition: transform 0.22s cubic-bezier(0.22, 1, 0.36, 1), background 0.22s ease, box-shadow 0.22s ease;
   touch-action: manipulation;
   -webkit-tap-highlight-color: transparent;
 }
 
-.mobile-nav-link:hover,
-.mobile-nav-link.active {
-  background: rgba(216, 27, 96, 0.1);
-  color: #D81B60;
-  transform: translateX(5px);
+.nav-link-label {
+  flex: 1;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.02rem;
+  color: #4a1205;
+  letter-spacing: 0.3px;
 }
 
+.nav-link-ornament {
+  color: #b86b14;
+  font-size: 0.85rem;
+  width: 24px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.mobile-nav-link:hover,
+.mobile-nav-link:active,
+.mobile-nav-link.active {
+  background: linear-gradient(90deg, #ffe082 0%, #fff8e1 50%, #ffe082 100%);
+  border-color: #8b1e0f;
+  box-shadow: 0 4px 12px rgba(139, 30, 15, 0.25), 0 0 10px rgba(255, 193, 7, 0.45);
+  transform: scale(1.02);
+}
+
+.mobile-nav-link:hover .nav-link-label,
+.mobile-nav-link:active .nav-link-label {
+  color: #7b1106;
+}
+
+/* Vibrant Spiritual Icons inside the Scroll */
 .nav-icon {
-  width: 70px; /* Increased size */
-  height: 70px; /* Increased size */
-  fill: #D81B60;
-  filter: brightness(1.2) saturate(2) drop-shadow(0 0 10px rgba(0, 0, 0, 0.8)); /* Rich colors */
-  opacity: 1; /* Fully opaque */
-  z-index: 1000; /* Ensure icons float in UI section */
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  fill: #8b1e0f;
+  filter: drop-shadow(0 1px 3px rgba(74, 18, 5, 0.4));
+  opacity: 1;
 }
 
 .icon-wrapper {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  z-index: 1000; /* Ensure icons float in UI section */
-  opacity: 1; /* Fully opaque */
+  z-index: 1000;
+  opacity: 1;
 }
 
 .icon-wrapper .icon {
@@ -145,47 +413,70 @@
   height: 100%;
   object-fit: contain;
   background: transparent !important;
-  filter: brightness(0.5) saturate(0.5) drop-shadow(0 0 10px rgba(0, 0, 0, 0.8)); /* Rich colors */
-  opacity: 1; /* Fully opaque */
-  z-index: 1000; /* Ensure icons float in UI section */
+  filter: brightness(0.5) saturate(0.5) drop-shadow(0 0 10px rgba(0, 0, 0, 0.8));
+  opacity: 1;
+  z-index: 1000;
+}
+
+/* Override global darkened icon filter inside the Sacred Scroll so route icons glow richly */
+.mobile-nav .icon-wrapper .icon {
+  filter: brightness(1.08) saturate(1.3) drop-shadow(0 2px 3px rgba(74, 18, 5, 0.45));
 }
 
 .icon-fallback {
-  font-size: 3.5em; /* Increased size */
-  filter: brightnss(0.5) saturate(0.5) drop-shadow(0 0 10px rgba(0, 0, 0, 0.8)); /* Rich colors */
-  opacity: 1; /* Fully opaque */
-  z-index: 1000; /* Ensure icons float in UI section */
+  font-size: 1.8em;
+  opacity: 1;
+  z-index: 1000;
 }
 
+/* Sacred Lotus Divider */
+.scroll-divider {
+  text-align: center;
+  margin: 9px 0 7px;
+  color: #8b1e0f;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  opacity: 0.75;
+}
+
+/* Bottom Controls: Language & Sacred Music */
 .mobile-controls {
-  margin-top: 2rem;
-  padding-top: 1rem;
-  border-top: 1px solid rgba(216, 27, 96, 0.2);
+  padding-top: 2px;
+  text-align: center;
 }
 
 .mobile-language-control {
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
 }
 
 .mobile-language-control h3 {
-  color: #D81B60;
-  margin-bottom: 0.5rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #7b1106;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
 }
 
 .language-buttons {
   display: flex;
-  gap: 0.5rem;
+  justify-content: center;
+  gap: 7px;
+  width: 92%;
+  margin: 0 auto;
 }
 
 .lang-btn {
-  padding: 0.5rem;
-  background: rgba(255, 255, 255, 0.7);
-  border: 1px solid #D81B60;
-  border-radius: 5px;
-  color: #D81B60;
-  font-weight: 500;
+  padding: 6px 8px;
+  min-width: 0;
+  background: rgba(255, 248, 225, 0.85);
+  border: 1px solid #b86b14;
+  border-radius: 18px;
+  color: #5c2406;
+  font-weight: 700;
+  font-size: 0.86rem;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
   flex: 1;
   text-align: center;
   touch-action: manipulation;
@@ -193,51 +484,62 @@
 }
 
 .lang-btn.active {
-  background: #D81B60;
-  color: white;
+  background: linear-gradient(135deg, #8b1e0f, #b71c1c);
+  border-color: #ffd700;
+  color: #fff8e1;
+  box-shadow: 0 2px 8px rgba(139, 30, 15, 0.45), 0 0 8px rgba(255, 215, 0, 0.45);
 }
 
-.lang-btn:hover {
-  background: #FFD700;
-  transform: translateY(-2px);
+.lang-btn:hover,
+.lang-btn:active {
+  transform: translateY(-1px);
+}
+
+.mobile-music-control {
+  display: flex;
+  justify-content: center;
 }
 
 .mobile-music-control .music-btn {
-  width: 5%;
-  justify-content: flex-start;
-  padding: 0.75rem;
-  border-radius: 10px;
-  font-size: 1.5rem;
-  background: rgba(255, 61, 2, 0.429);
-  border: 1px solid #D81B60;
-  color: #D81B60;
+  width: 92%;
+  min-width: 0;
+  justify-content: center;
+  padding: 8px 14px;
+  border-radius: 24px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.35), rgba(255, 160, 0, 0.45));
+  border: 1.5px solid #9c5a14;
+  color: #4a1205;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: transform 0.22s ease, background 0.22s ease, box-shadow 0.22s ease;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 10px;
+  box-shadow: 0 2px 8px rgba(92, 42, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.7);
   touch-action: manipulation;
   -webkit-tap-highlight-color: transparent;
 }
 
-.mobile-music-control .music-btn:hover {
-  background: #1eff00;
-  transform: translateY(-2px);
+.mobile-music-control .music-btn.playing {
+  background: linear-gradient(135deg, #ffd54f, #ffb300);
+  border-color: #8b1e0f;
+  color: #4a1205;
+  box-shadow: 0 3px 12px rgba(255, 160, 0, 0.5), 0 0 14px rgba(255, 215, 0, 0.65);
 }
 
-.mobile-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 1000;
-  display: none;
+.mobile-music-control .music-btn:hover,
+.mobile-music-control .music-btn:active {
+  transform: scale(1.02);
 }
 
-.mobile-overlay.active {
-  display: block;
+.music-nav-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.music-btn-label {
+  letter-spacing: 0.3px;
 }
 
 /* Keyframe Animations */

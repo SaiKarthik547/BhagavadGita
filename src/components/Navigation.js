@@ -7,7 +7,7 @@ import '../assets/styles/Navigation.css';
 
 const Navigation = () => {
   const { language, switchLanguage } = useLanguage();
-  const { toggleBackgroundMusic } = useAudio();
+  const { toggleBackgroundMusic, isBackgroundPlaying } = useAudio();
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleNav = () => {
@@ -66,92 +66,162 @@ const Navigation = () => {
         </svg>
       </button>
 
-      {/* Overlay */}
-      {isOpen && <div className="mobile-overlay" onClick={closeNav}></div>}
+      {/* Sacred Dimmed Backdrop Overlay */}
+      <div
+        className={`mobile-overlay ${isOpen ? 'active' : ''}`}
+        onClick={closeNav}
+        aria-hidden={!isOpen}
+      ></div>
 
-      {/* Mobile Navigation */}
-      <nav className={`mobile-nav ${isOpen ? 'open' : ''}`}>
-        <div className="mobile-nav-header">
-          <h2>Menu</h2>
-          <button className="close-mobile-nav" onClick={closeNav}>×</button>
+      {/* Centered Sacred Vedic Scroll Navigation */}
+      <nav className={`mobile-nav ${isOpen ? 'open' : ''}`} aria-hidden={!isOpen}>
+        {/* Top Golden Carved Scroll Roller */}
+        <div className="scroll-roller roller-top">
+          <span className="scroll-finial finial-left"></span>
+          <div className="scroll-rod">
+            <span className="scroll-rod-gem">❈</span>
+          </div>
+          <span className="scroll-finial finial-right"></span>
         </div>
-        <div className="mobile-nav-content">
-          <ul>
-            <li>
-              <Link to="/" className="mobile-nav-link" onClick={closeNav}>
-                <Icon name="chakra" className="nav-icon" />
-                {language === 'en' ? 'Home' : language === 'hi' ? 'मुख्य पृष्ठ' : 'హోమ్'}
-              </Link>
-            </li>
-            <li>
-              <Link to="/chapters" className="mobile-nav-link" onClick={closeNav}>
-                <Icon name="shank" className="nav-icon" />
-                {language === 'en' ? 'Chapters' : language === 'hi' ? 'अध्याय' : 'అధ్యాయాలు'}
-              </Link>
-            </li>
-            <li>
-              <Link to="/podcast" className="mobile-nav-link" onClick={closeNav}>
-                <Icon name="om" className="nav-icon" />
-                {language === 'en' ? 'Shlokas' : language === 'hi' ? 'श्लोकाः' : 'శ్లోకాలు'}
-              </Link>
-            </li>
-            <li>
-              <Link to="/meditation" className="mobile-nav-link" onClick={closeNav}>
-                <Icon name="dhanush" className="nav-icon" />
-                {language === 'en' ? 'Meditation' : language === 'hi' ? 'ध्यान' : 'ధ్యానం'}
-              </Link>
-            </li>
-            <li>
-              <Link to="/chants" className="mobile-nav-link" onClick={closeNav}>
-                <Icon name="trishul" className="nav-icon" />
-                {language === 'en' ? 'Chants' : language === 'hi' ? 'मंत्र' : 'మంత్రాలు'}
-              </Link>
-            </li>
-            <li>
-              <Link to="/about" className="mobile-nav-link" onClick={closeNav}>
-                <Icon name="flute" className="nav-icon" />
-                {language === 'en' ? 'About' : language === 'hi' ? 'परिचय' : 'గురించి'}
-              </Link>
-            </li>
-          </ul>
-          
-          {/* Language Selector */}
-          <div className="mobile-controls">
-            <div className="mobile-language-control">
-              <h3>{language === 'en' ? 'Language' : language === 'hi' ? 'भाषा' : 'భాష'}</h3>
-              <div className="language-buttons">
-                <button 
-                  className={`lang-btn ${language === 'en' ? 'active' : ''}`}
-                  onClick={() => handleLanguageChange('en')}
-                >
-                  English
-                </button>
-                <button 
-                  className={`lang-btn ${language === 'hi' ? 'active' : ''}`}
-                  onClick={() => handleLanguageChange('hi')}
-                >
-                  हिंदी
-                </button>
-                <button 
-                  className={`lang-btn ${language === 'te' ? 'active' : ''}`}
-                  onClick={() => handleLanguageChange('te')}
-                >
-                  తెలుగు
-                </button>
+
+        {/* Unrolling Opaque Vedic Parchment Body */}
+        <div className="scroll-parchment">
+          <div className="scroll-inner-frame">
+            {/* Corner Temple Ornaments */}
+            <span className="scroll-corner corner-tl">❧</span>
+            <span className="scroll-corner corner-tr">❧</span>
+            <span className="scroll-corner corner-bl">❧</span>
+            <span className="scroll-corner corner-br">❧</span>
+
+            {/* Subtle Rotating Sudarshana Chakra Watermark in Center of Scroll */}
+            <svg className="scroll-chakra-watermark" viewBox="0 0 100 100" aria-hidden="true">
+              <circle cx="50" cy="50" r="44" fill="none" stroke="#8b4513" strokeWidth="1.5" strokeDasharray="4 3" />
+              <circle cx="50" cy="50" r="32" fill="none" stroke="#8b4513" strokeWidth="1.2" />
+              <circle cx="50" cy="50" r="14" fill="none" stroke="#8b4513" strokeWidth="1.5" />
+              <path d="M50 6 L50 94 M6 50 L94 50 M19 19 L81 81 M81 19 L19 81" stroke="#8b4513" strokeWidth="1" />
+            </svg>
+
+            <div className="mobile-nav-header">
+              <span className="scroll-invocation">॥ श्री भगवद्गीता ॥</span>
+              <button className="close-mobile-nav" onClick={closeNav} aria-label="Close Menu">×</button>
+            </div>
+
+            <div className="mobile-nav-content">
+              <ul>
+                <li>
+                  <Link to="/" className="mobile-nav-link" onClick={closeNav}>
+                    <Icon name="chakra" className="nav-icon" />
+                    <span className="nav-link-label">
+                      {language === 'en' ? 'Home' : language === 'hi' ? 'मुख्य पृष्ठ' : 'హోమ్'}
+                    </span>
+                    <span className="nav-link-ornament">❖</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/chapters" className="mobile-nav-link" onClick={closeNav}>
+                    <Icon name="shank" className="nav-icon" />
+                    <span className="nav-link-label">
+                      {language === 'en' ? 'Chapters' : language === 'hi' ? 'अध्याय' : 'అధ్యాయాలు'}
+                    </span>
+                    <span className="nav-link-ornament">❖</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/podcast" className="mobile-nav-link" onClick={closeNav}>
+                    <Icon name="om" className="nav-icon" />
+                    <span className="nav-link-label">
+                      {language === 'en' ? 'Shlokas' : language === 'hi' ? 'श्लोकाः' : 'శ్లోకాలు'}
+                    </span>
+                    <span className="nav-link-ornament">❖</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/meditation" className="mobile-nav-link" onClick={closeNav}>
+                    <Icon name="dhanush" className="nav-icon" />
+                    <span className="nav-link-label">
+                      {language === 'en' ? 'Meditation' : language === 'hi' ? 'ध्यान' : 'ధ్యానం'}
+                    </span>
+                    <span className="nav-link-ornament">❖</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/chants" className="mobile-nav-link" onClick={closeNav}>
+                    <Icon name="trishul" className="nav-icon" />
+                    <span className="nav-link-label">
+                      {language === 'en' ? 'Chants' : language === 'hi' ? 'मंत्र' : 'మంత్రాలు'}
+                    </span>
+                    <span className="nav-link-ornament">❖</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/about" className="mobile-nav-link" onClick={closeNav}>
+                    <Icon name="flute" className="nav-icon" />
+                    <span className="nav-link-label">
+                      {language === 'en' ? 'About' : language === 'hi' ? 'परिचय' : 'గురించి'}
+                    </span>
+                    <span className="nav-link-ornament">❖</span>
+                  </Link>
+                </li>
+              </ul>
+
+              <div className="scroll-divider">
+                <span>─── ❈ ───</span>
+              </div>
+
+              {/* Language & Music Controls */}
+              <div className="mobile-controls">
+                <div className="mobile-language-control">
+                  <h3>{language === 'en' ? 'Language' : language === 'hi' ? 'भाषा' : 'భాష'}</h3>
+                  <div className="language-buttons">
+                    <button
+                      className={`lang-btn ${language === 'en' ? 'active' : ''}`}
+                      onClick={() => handleLanguageChange('en')}
+                    >
+                      English
+                    </button>
+                    <button
+                      className={`lang-btn ${language === 'hi' ? 'active' : ''}`}
+                      onClick={() => handleLanguageChange('hi')}
+                    >
+                      हिंदी
+                    </button>
+                    <button
+                      className={`lang-btn ${language === 'te' ? 'active' : ''}`}
+                      onClick={() => handleLanguageChange('te')}
+                    >
+                      తెలుగు
+                    </button>
+                  </div>
+                </div>
+
+                {/* Volume Control */}
+                <div className="mobile-music-control">
+                  <button
+                    className={`music-btn ${isBackgroundPlaying ? 'playing' : ''}`}
+                    onClick={toggleBackgroundMusic}
+                  >
+                    <Icon name="volume" className="nav-icon music-nav-icon" />
+                    <span className="music-btn-label">
+                      {language === 'en'
+                        ? isBackgroundPlaying ? 'Sacred Music: ON' : 'Sacred Music: OFF'
+                        : language === 'hi'
+                        ? isBackgroundPlaying ? 'दिव्य संगीत: चालू' : 'दिव्य संगीत: बंद'
+                        : isBackgroundPlaying ? 'దివ్య సంగీతం: ఆన్' : 'దివ్య సంగీతం: ఆఫ్'}
+                    </span>
+                  </button>
+                </div>
               </div>
             </div>
-            
-            {/* Volume Control */}
-            <div className="mobile-music-control">
-              <button 
-                className="music-btn"
-                onClick={toggleBackgroundMusic}
-              >
-                <Icon name="volume" className="nav-icon" />
-                
-              </button>
-            </div>
           </div>
+        </div>
+
+        {/* Bottom Golden Carved Scroll Roller */}
+        <div className="scroll-roller roller-bottom">
+          <span className="scroll-finial finial-left"></span>
+          <div className="scroll-rod">
+            <span className="scroll-rod-gem">❈</span>
+          </div>
+          <span className="scroll-finial finial-right"></span>
         </div>
       </nav>
     </>
