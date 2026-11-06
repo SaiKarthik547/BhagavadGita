@@ -44,38 +44,63 @@
   margin: 0 auto;
 }
 
-/* Feature Buttons Section */
+/* Feature Buttons Section - Organic Non-Matrix Placement */
 .features-buttons-section {
-  margin-bottom: 90px;
+  position: static;
+  margin-bottom: 0;
 }
 
 .features-buttons-grid {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 40px;
-  padding: 0 50px;
-  height: 200px;
+  position: static;
+  margin: 0;
+  padding: 0;
+  height: 0;
 }
 
 .feature-button-container {
+  position: absolute;
+  z-index: 5;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
   touch-action: manipulation;
   -webkit-tap-highlight-color: transparent;
 }
 
+/* 1. Flute (Ekashloki) - Upper-right sky pocket below the Shankha */
+.feature-button-container.pos-ekashloki {
+  top: 22%;
+  right: 6%;
+}
+
+/* 2. Meditation (Yogi) - Mid-left golden sky below Krishna's blessing hand, above Sage Vyasa */
+.feature-button-container.pos-meditation {
+  top: 36%;
+  left: 6%;
+}
+
+/* 3. Kids Version (Bal Krishna) - Mid-right mountain valley below the cloud, above Lord Ganesha */
+.feature-button-container.pos-kids {
+  top: 41%;
+  right: 10%;
+}
+
+/* 4. History (Scroll) - Center river pocket between Sage Vyasa & Lord Ganesha, above the palm-leaf scrolls */
+.feature-button-container.pos-history {
+  top: 53%;
+  left: 43%;
+}
+
 .feature-button {
-  background: rgba(14, 224, 247, 0.311);
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.35), rgba(14, 224, 247, 0.24));
   border-radius: 50%;
-  width: 90px;
-  height: 90px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(2px);
-  transition: all 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 68px;
+  height: 68px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25), 0 0 14px rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  transition: transform 0.32s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.32s ease, background 0.32s ease;
+  border: 1.5px solid rgba(255, 255, 255, 0.55);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -86,14 +111,15 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-.feature-button:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-  background: rgba(227, 18, 18, 0.637);
+.feature-button:hover,
+.feature-button:active {
+  transform: scale(1.08) translateY(-3px);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35), 0 0 18px rgba(255, 215, 0, 0.55);
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.45), rgba(255, 193, 7, 0.38));
 }
 
 .feature-button .feature-icon {
-  font-size: 3rem;
+  font-size: 2.3rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -105,38 +131,14 @@
 }
 
 .feature-button .svg-icon {
-  width: 60px;
-  height: 60px;
-  filter: brightness(1.2) saturate(1.5);
+  width: 46px;
+  height: 46px;
+  filter: brightness(1.15) saturate(1.4) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.35));
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0;
   padding: 0;
-}
-
-.feature-button-text {
-  display: block;
-  text-align: center;
-  color: #000e8a;
-  font-weight: 500;
-  font-size: 1rem;
-  margin-top: 5px;
-  text-shadow: 1px 1px 2px rgb(18, 26, 251);
-  touch-action: manipulation;
-  -webkit-tap-highlight-color: transparent;
-}
-
-/* Positioning for the circular buttons */
-.left-buttons, .right-buttons {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 25px;
-}
-
-.center-space {
-  flex: 1;
 }
 
 /* Popup Styles */
@@ -557,27 +559,23 @@
   }
   
   .features-buttons-grid {
-    padding: 0 20px;
-    height: 150px;
+    padding: 0;
+    height: 0;
   }
   
   .feature-button {
-    width: 70px;
-    height: 70px;
-    margin: 10px 0;
+    width: 62px;
+    height: 62px;
+    margin: 0;
   }
   
   .feature-button .feature-icon {
-    font-size: 2.5rem;
+    font-size: 2.15rem;
   }
   
   .feature-button .svg-icon {
-    width: 50px;
-    height: 50px;
-  }
-  
-  .left-buttons, .right-buttons {
-    gap: 20px;
+    width: 42px;
+    height: 42px;
   }
   
   .ekashloki-card h3 {

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.460b1f92.css",
-    "main.js": "/static/js/main.a5dd2ab1.js",
+    "main.css": "/static/css/main.92cdfdb2.css",
+    "main.js": "/static/js/main.5f83129c.js",
     "static/media/home.jpeg": "/static/media/home.9ab9b75d2adad24b0bde.jpeg",
     "static/media/vishwaroopam.png": "/static/media/vishwaroopam.abf1145172a09a6f087f.png",
     "static/media/meditation.png": "/static/media/meditation.4489944adecca54c0971.png",
@@ -17,11 +17,11 @@
     "static/media/about.jpg": "/static/media/about.6f7eb85893c51a103251.jpg",
     "static/media/krishna.png": "/static/media/krishna.fa1afe9fbc033db70894.png",
     "index.html": "/index.html",
-    "main.460b1f92.css.map": "/static/css/main.460b1f92.css.map",
-    "main.a5dd2ab1.js.map": "/static/js/main.a5dd2ab1.js.map"
+    "main.92cdfdb2.css.map": "/static/css/main.92cdfdb2.css.map",
+    "main.5f83129c.js.map": "/static/js/main.5f83129c.js.map"
   },
   "entrypoints": [
-    "static/css/main.460b1f92.css",
-    "static/js/main.a5dd2ab1.js"
+    "static/css/main.92cdfdb2.css",
+    "static/js/main.5f83129c.js"
   ]
 }

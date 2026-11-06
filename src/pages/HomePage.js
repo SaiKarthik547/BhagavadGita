@@ -36,39 +36,50 @@ const HomePage = () => {
         {/* Feature Buttons - Show popups when clicked */}
         <div className="features-buttons-section">
           <div className="features-buttons-grid">
-            <div className="left-buttons">
-              <div className="feature-button-container">
-                <button className="feature-button" onClick={() => openPopup('ekashloki')}>
-                  <div className="feature-icon">
-                    <Icon name="flute" className="svg-icon" />
-                  </div>
-                </button>
-                <span className="feature-button-text">{ekashlokiData.name || t('exploreTeachings')}</span>
-              </div>
-              
-              <div className="feature-button-container">
-                <button className="feature-button" onClick={() => openPopup('history')}>
-                  <span className="feature-icon">📜</span>
-                </button>
-                <span className="feature-button-text">{t('historyOfBhagavadGita')}</span>
-              </div>
+            <div className="feature-button-container pos-ekashloki">
+              <button
+                className="feature-button"
+                onClick={() => openPopup('ekashloki')}
+                aria-label={ekashlokiData.name || t('exploreTeachings')}
+                title={ekashlokiData.name || t('exploreTeachings')}
+              >
+                <div className="feature-icon">
+                  <Icon name="flute" className="svg-icon" />
+                </div>
+              </button>
             </div>
-            
-            <div className="center-space"></div>
-            
-            <div className="right-buttons">
-              <div className="feature-button-container">
-                <button className="feature-button" onClick={() => openPopup('meditation')}>
-                  <span className="feature-icon">🧘‍♀️</span>
-                </button>
-                <span className="feature-button-text">{t('meditationFeature')}</span>
-              </div>
-              <div className="feature-button-container">
-                <button className="feature-button" onClick={() => openPopup('kids')}>
-                  <span className="feature-icon">👶</span>
-                </button>
-                <span className="feature-button-text">{t('kidsVersion')}</span>
-              </div>
+
+            <div className="feature-button-container pos-meditation">
+              <button
+                className="feature-button"
+                onClick={() => openPopup('meditation')}
+                aria-label={t('meditationFeature')}
+                title={t('meditationFeature')}
+              >
+                <span className="feature-icon">🧘‍♀️</span>
+              </button>
+            </div>
+
+            <div className="feature-button-container pos-kids">
+              <button
+                className="feature-button"
+                onClick={() => openPopup('kids')}
+                aria-label={t('kidsVersion')}
+                title={t('kidsVersion')}
+              >
+                <span className="feature-icon">👶</span>
+              </button>
+            </div>
+
+            <div className="feature-button-container pos-history">
+              <button
+                className="feature-button"
+                onClick={() => openPopup('history')}
+                aria-label={t('historyOfBhagavadGita')}
+                title={t('historyOfBhagavadGita')}
+              >
+                <span className="feature-icon">📜</span>
+              </button>
             </div>
           </div>
         </div>
