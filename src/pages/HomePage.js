@@ -24,18 +24,6 @@ const HomePage = () => {
     setShowPopup(null);
   };
 
-  // Split heroTitle into two parts so the Peacock Feather gap remains open
-  const [heroTitleLeft, heroTitleRight] = useMemo(() => {
-    const fullTitle = (t('heroTitle') || '').trim();
-    if (language === 'en' && fullTitle.toLowerCase().includes(' of ')) {
-      const idx = fullTitle.toLowerCase().indexOf(' of ');
-      return [fullTitle.slice(0, idx).trim(), fullTitle.slice(idx + 1).trim()];
-    }
-    const words = fullTitle.split(/\s+/);
-    const mid = Math.ceil(words.length / 2);
-    return [words.slice(0, mid).join(' '), words.slice(mid).join(' ')];
-  }, [t, language]);
-
   return (
     <div className="homepage">
       
@@ -44,21 +32,21 @@ const HomePage = () => {
         <div className="app-description-card">
           <svg
             className="hero-arc-svg"
-            viewBox="0 0 500 230"
+            viewBox="0 0 500 88"
             aria-label={t('heroTitle')}
             role="heading"
             aria-level="1"
           >
             <defs>
-              {/* Tight, steep halo arch around Lord Krishna (between Chakra & Shankha) */}
+              {/* Symmetrical high-sky circular arch crowning above Chakra, Peacock Feather, and Shankha */}
               <path
                 id="krishna-aura-arc"
-                d="M 126,214 A 112,158 0 0,1 350,214"
+                d="M 68,70 A 275,225 0 0,1 432,70"
               />
-              {/* Inner translucent divine light bridge connecting across the Peacock Feather */}
+              {/* Delicate concentric inner golden aura line */}
               <path
                 id="krishna-aura-inner-ring"
-                d="M 136,214 A 102,146 0 0,1 340,214"
+                d="M 86,77 A 258,212 0 0,1 414,77"
               />
               <linearGradient id="goldenAuraTextGrad" x1="0%" y1="0%" x2="100%" y2="0%">
                 <stop offset="0%" stopColor="#ffe57f" />
@@ -67,65 +55,37 @@ const HomePage = () => {
                 <stop offset="75%" stopColor="#fff9c4" />
                 <stop offset="100%" stopColor="#ffb300" />
               </linearGradient>
-              <linearGradient id="divineBridgeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stopColor="rgba(255, 215, 0, 0)" />
-                <stop offset="22%" stopColor="rgba(255, 224, 130, 0.45)" />
-                <stop offset="44%" stopColor="rgba(255, 248, 225, 0.22)" />
-                <stop offset="58%" stopColor="rgba(255, 248, 225, 0.55)" />
-                <stop offset="78%" stopColor="rgba(255, 224, 130, 0.45)" />
-                <stop offset="100%" stopColor="rgba(255, 215, 0, 0)" />
+              <linearGradient id="goldenAuraRingGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stopColor="rgba(255, 193, 7, 0)" />
+                <stop offset="18%" stopColor="rgba(255, 215, 0, 0.72)" />
+                <stop offset="50%" stopColor="rgba(255, 248, 225, 0.95)" />
+                <stop offset="82%" stopColor="rgba(255, 215, 0, 0.72)" />
+                <stop offset="100%" stopColor="rgba(255, 193, 7, 0)" />
               </linearGradient>
-              <filter id="goldenAuraGlow" x="-25%" y="-35%" width="150%" height="170%">
-                <feDropShadow dx="0" dy="0" stdDeviation="4" floodColor="#ff8f00" floodOpacity="0.9" />
-                <feDropShadow dx="0" dy="0" stdDeviation="8" floodColor="#ffd54f" floodOpacity="0.65" />
+              <filter id="goldenAuraGlow" x="-20%" y="-35%" width="140%" height="170%">
+                <feDropShadow dx="0" dy="0" stdDeviation="4" floodColor="#ff8f00" floodOpacity="0.95" />
+                <feDropShadow dx="0" dy="0" stdDeviation="8" floodColor="#ffd54f" floodOpacity="0.7" />
                 <feDropShadow dx="0" dy="1.5" stdDeviation="1.2" floodColor="#2b0900" floodOpacity="0.92" />
-              </filter>
-              <filter id="divineLightSoftGlow" x="-30%" y="-30%" width="160%" height="160%">
-                <feGaussianBlur stdDeviation="2.2" result="blur" />
-                <feMerge>
-                  <feMergeNode in="blur" />
-                  <feMergeNode in="SourceGraphic" />
-                </feMerge>
               </filter>
             </defs>
 
-            {/* Translucent divine light aura ring bridging the split over the Peacock Feather */}
+            {/* Concentric golden halo underline arch */}
             <use
               href="#krishna-aura-inner-ring"
               fill="none"
-              stroke="url(#divineBridgeGrad)"
+              stroke="url(#goldenAuraRingGrad)"
               strokeWidth="1.6"
-              strokeDasharray="6 3"
-              filter="url(#divineLightSoftGlow)"
-            />
-            <use
-              href="#krishna-aura-arc"
-              fill="none"
-              stroke="url(#divineBridgeGrad)"
-              strokeWidth="2.5"
-              opacity="0.42"
-              filter="url(#divineLightSoftGlow)"
+              filter="url(#goldenAuraGlow)"
             />
 
-            {/* Left Half of Curved Title (bends up the left aura before the Peacock Feather) */}
+            {/* Single Symmetrical Curved Golden Title */}
             <text className="hero-arc-text" filter="url(#goldenAuraGlow)">
               <textPath
                 href="#krishna-aura-arc"
-                startOffset="20%"
+                startOffset="50%"
                 textAnchor="middle"
               >
-                {heroTitleLeft}
-              </textPath>
-            </text>
-
-            {/* Right Half of Curved Title (bends from the crown down the right aura inside the Shankha) */}
-            <text className="hero-arc-text" filter="url(#goldenAuraGlow)">
-              <textPath
-                href="#krishna-aura-arc"
-                startOffset="76%"
-                textAnchor="middle"
-              >
-                {heroTitleRight}
+                {t('heroTitle')}
               </textPath>
             </text>
           </svg>
