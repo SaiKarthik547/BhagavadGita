@@ -16,11 +16,11 @@
   flex-direction: column;
 }
 
-/* Hero Section - Golden Aura Arc Around Lord Krishna */
+/* Hero Section - Split Golden Aura Arc Around Lord Krishna */
 .app-description-card {
   background: transparent;
   border-radius: 0;
-  padding: 20px 8px 0;
+  padding: 6px 0 0;
   text-align: center;
   box-shadow: none;
   backdrop-filter: none;
@@ -43,21 +43,21 @@
 .hero-arc-text {
   fill: url(#goldenAuraTextGrad);
   stroke: #4a1700;
-  stroke-width: 4.2px;
+  stroke-width: 3.8px;
   paint-order: stroke fill;
   stroke-linejoin: round;
   stroke-linecap: round;
-  font-size: 24.5px;
+  font-size: 19px;
   font-weight: 800;
-  letter-spacing: 0.9px;
+  letter-spacing: 0.7px;
 }
 
 @keyframes auraGlowPulse {
   0% {
-    filter: drop-shadow(0 0 6px rgba(255, 193, 7, 0.55));
+    filter: drop-shadow(0 0 5px rgba(255, 193, 7, 0.55));
   }
   100% {
-    filter: drop-shadow(0 0 14px rgba(255, 215, 0, 0.95));
+    filter: drop-shadow(0 0 13px rgba(255, 215, 0, 0.95));
   }
 }
 
@@ -117,30 +117,67 @@
 }
 
 .feature-button {
-  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.35), rgba(14, 224, 247, 0.24));
+  position: relative;
+  background: radial-gradient(circle at 35% 30%, rgba(255, 248, 225, 0.36), rgba(45, 18, 0, 0.42));
   border-radius: 50%;
   width: 68px;
   height: 68px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25), 0 0 14px rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45), 0 0 12px rgba(255, 193, 7, 0.65), inset 0 0 10px rgba(255, 215, 0, 0.35);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   transition: transform 0.32s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.32s ease, background 0.32s ease;
-  border: 1.5px solid rgba(255, 255, 255, 0.55);
+  border: 2px solid rgba(255, 215, 0, 0.88);
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0;
   padding: 0;
+  animation: sacredOrbBreath 3.2s ease-in-out infinite;
   touch-action: manipulation;
   -webkit-tap-highlight-color: transparent;
 }
 
+/* Inner golden yantra halo ring so the orb stands out clearly without hiding the painting */
+.feature-button::after {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  border-radius: 50%;
+  border: 1px dashed rgba(255, 238, 145, 0.72);
+  pointer-events: none;
+}
+
+.pos-meditation .feature-button {
+  animation-delay: 0.8s;
+}
+
+.pos-kids .feature-button {
+  animation-delay: 1.6s;
+}
+
+.pos-history .feature-button {
+  animation-delay: 2.4s;
+}
+
+@keyframes sacredOrbBreath {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.42), 0 0 10px rgba(255, 193, 7, 0.55), inset 0 0 8px rgba(255, 215, 0, 0.3);
+    border-color: rgba(255, 215, 0, 0.82);
+  }
+  50% {
+    transform: scale(1.045);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.52), 0 0 20px rgba(255, 215, 0, 0.92), 0 0 30px rgba(255, 143, 0, 0.55), inset 0 0 12px rgba(255, 235, 130, 0.5);
+    border-color: rgba(255, 248, 200, 0.98);
+  }
+}
+
 .feature-button:hover,
 .feature-button:active {
-  transform: scale(1.08) translateY(-3px);
-  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35), 0 0 18px rgba(255, 215, 0, 0.55);
-  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.45), rgba(255, 193, 7, 0.38));
+  transform: scale(1.09) translateY(-2px);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.55), 0 0 24px rgba(255, 215, 0, 0.95);
+  background: radial-gradient(circle at 35% 30%, rgba(255, 248, 225, 0.48), rgba(90, 36, 0, 0.52));
 }
 
 .feature-button .feature-icon {
@@ -153,12 +190,13 @@
   line-height: 1;
   margin: 0;
   padding: 0;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.65)) drop-shadow(0 0 6px rgba(255, 215, 0, 0.55));
 }
 
 .feature-button .svg-icon {
   width: 46px;
   height: 46px;
-  filter: brightness(1.15) saturate(1.4) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.35));
+  filter: brightness(1.2) saturate(1.45) drop-shadow(0 2px 5px rgba(0, 0, 0, 0.65)) drop-shadow(0 0 6px rgba(255, 215, 0, 0.55));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -527,7 +565,7 @@
   }
   
   .app-description-card {
-    padding: 18px 6px 0;
+    padding: 4px 0 0;
   }
   
   .app-description {

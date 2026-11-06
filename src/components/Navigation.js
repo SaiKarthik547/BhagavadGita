@@ -25,9 +25,45 @@ const Navigation = () => {
 
   return (
     <>
-      {/* Hamburger Icon */}
-      <button className="hamburger-menu-btn" onClick={toggleNav}>
-        ☰
+      {/* Hamburger Icon - Idea 2: Sacred Golden Om Crest with Subtle Menu Aura */}
+      <button
+        className={`hamburger-menu-btn ${isOpen ? 'active' : ''}`}
+        onClick={toggleNav}
+        aria-label="Menu"
+      >
+        <svg className="hamburger-svg" viewBox="0 0 40 40" aria-hidden="true">
+          <defs>
+            <linearGradient id="sacredGoldBar" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#fff9c4" />
+              <stop offset="50%" stopColor="#ffd700" />
+              <stop offset="100%" stopColor="#ff8f00" />
+            </linearGradient>
+          </defs>
+          {/* Sacred outer dashed halo ring */}
+          <circle
+            cx="20"
+            cy="20"
+            r="17"
+            fill="none"
+            stroke="rgba(255, 215, 0, 0.55)"
+            strokeWidth="1"
+            strokeDasharray="3 2"
+          />
+          {/* Glowing Golden Om Symbol Crest */}
+          <text
+            x="20"
+            y="22.5"
+            textAnchor="middle"
+            fill="url(#sacredGoldBar)"
+            fontSize="18"
+            fontWeight="700"
+          >
+            ॐ
+          </text>
+          {/* Delicate 3-line menu motif beneath the Om crest */}
+          <rect x="12" y="27.2" width="16" height="1.5" rx="0.75" fill="url(#sacredGoldBar)" opacity="0.9" />
+          <rect x="14.5" y="30.2" width="11" height="1.5" rx="0.75" fill="url(#sacredGoldBar)" opacity="0.8" />
+        </svg>
       </button>
 
       {/* Overlay */}
