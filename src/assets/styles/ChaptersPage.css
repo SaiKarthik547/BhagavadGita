@@ -20,7 +20,7 @@
   opacity: 1;
 }
 
-/* Animated gradient blend fallback for gaps */
+/* Static fallback background for gaps (animation removed for 60fps mobile performance) */
 .chapters-page::after {
   content: '';
   position: absolute;
@@ -30,7 +30,6 @@
   bottom: 0;
   background: linear-gradient(135deg, #FFF3E0, #FFE082, #FFF3E0);
   background-size: 200% 200%;
-  animation: gradientBlend 10s ease infinite;
   z-index: -1;
 }
 
@@ -44,36 +43,96 @@
   align-items: center;
 }
 
+/* Always-Open Semi-Transparent Ancient Talapatra Grandha Header Plaque */
 .chapters-header {
   position: relative;
   z-index: 0;
   text-align: center;
-  margin-bottom: 2rem;
-  width: 100%;
-  max-width: 800px;
+  margin-bottom: 1.85rem;
+  padding: 0.9rem 1.5rem 1rem;
+  width: 94%;
+  max-width: 680px;
+  border-radius: 6px 18px 6px 18px;
+  /* Semi-transparent ancient palm-leaf manuscript surface */
+  background:
+    repeating-linear-gradient(
+      0deg,
+      rgba(74, 28, 2, 0.08) 0px,
+      rgba(74, 28, 2, 0.08) 1px,
+      transparent 1px,
+      transparent 3px
+    ),
+    radial-gradient(
+      ellipse at 50% 50%,
+      rgba(242, 216, 158, 0.78) 0%,
+      rgba(214, 166, 92, 0.82) 64%,
+      rgba(166, 106, 38, 0.86) 100%
+    );
+  box-shadow:
+    inset 16px 0 22px -8px rgba(48, 16, 1, 0.72),
+    inset -16px 0 22px -8px rgba(48, 16, 1, 0.72),
+    inset 0 0 14px rgba(58, 20, 2, 0.55),
+    0 8px 24px rgba(0, 0, 0, 0.55);
+}
+
+/* Carved Scroll Rollers on Left & Right of Header Grandha */
+.chapters-header::before,
+.chapters-header::after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  bottom: -4px;
+  width: 10px;
+  border-radius: 6px;
+  background: linear-gradient(
+    90deg,
+    #2e0f01 0%,
+    #a86010 35%,
+    #ffd700 55%,
+    #5c2406 100%
+  );
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.65);
+  pointer-events: none;
+}
+
+.chapters-header::before {
+  left: -4px;
+}
+
+.chapters-header::after {
+  right: -4px;
 }
 
 .chapters-title {
-  font-size: 3rem;
-  color: #FFD700;
-  margin-bottom: 0.75rem;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.85), 0 0 18px rgba(255, 160, 0, 0.65);
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #4a0e02;
+  margin: 0 0 0.2rem;
+  text-shadow:
+    0 1px 0 rgba(255, 248, 215, 0.85),
+    0 2px 8px rgba(255, 193, 7, 0.35);
+}
+
+.talapatra-header-ornament {
+  color: #7a2605;
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0.15rem 0 0.35rem;
+  opacity: 0.88;
 }
 
 .chapters-subtitle {
-  display: inline-block;
-  font-size: 1.25rem;
+  display: block;
+  font-size: 1.12rem;
   font-weight: 600;
-  color: #fff8dc;
-  opacity: 1;
-  padding: 8px 20px;
-  border-radius: 26px;
-  background: rgba(28, 10, 0, 0.48);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 215, 0, 0.55);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
-  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.95), 0 0 12px rgba(255, 179, 0, 0.55);
+  color: #2f1002;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  text-shadow: 0 1px 0 rgba(255, 246, 210, 0.7);
 }
 
 .floating-petal {
@@ -193,8 +252,8 @@
 
 .chapters-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  gap: 1.35rem;
   width: 100%;
   max-width: 1200px;
   margin-bottom: 2rem;
@@ -202,63 +261,188 @@
 
 .chapter-item {
   text-decoration: none;
-  transition: all 0.3s ease;
+  display: block;
   z-index: 1;
   touch-action: manipulation;
   -webkit-tap-highlight-color: transparent;
 }
 
+.talapatra-scroll-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+}
+
+/* Carved Ancient Teak & Gold Scroll Rollers (Left Fixed + Right Unrolling) */
+.talapatra-roller {
+  position: absolute;
+  top: -4px;
+  bottom: -4px;
+  width: 11px;
+  border-radius: 6px;
+  background: linear-gradient(
+    90deg,
+    #2b0d01 0%,
+    #9e560c 32%,
+    #ffd700 54%,
+    #fff0a8 62%,
+    #451803 100%
+  );
+  border-top: 1.5px solid #ffe57f;
+  border-bottom: 1.5px solid #2b0d01;
+  box-shadow:
+    0 3px 8px rgba(0, 0, 0, 0.65),
+    0 0 10px rgba(255, 200, 45, 0.45);
+  z-index: 3;
+  pointer-events: none;
+}
+
+.talapatra-roller-left {
+  left: -4px;
+}
+
+/* Right Roller starts on the left next to the Left Roller, and rolls to the right edge */
+.talapatra-roller-right {
+  left: 8px;
+  transition: left 1.25s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: left;
+}
+
+.chapter-item.is-unrolled .talapatra-roller-right {
+  left: calc(100% - 7px);
+}
+
+/* Semi-Transparent Ancient Talapatra Grandha Scroll Button - Unfolds Left-to-Right */
 .chapter-card {
-  background: rgba(164, 227, 252, 0.437);
-  border-radius: 8px;
-  padding: 1.5rem;
+  position: relative;
+  border: none;
+  border-radius: 4px 14px 4px 14px;
+  padding: 1.15rem 1.45rem;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(216, 27, 96, 0.3);
-  transition: all 0.3s ease;
+  /* Semi-Transparent Ancient Palm-Leaf (Talapatra) Weathered Texture so Background is Observable */
+  background:
+    repeating-linear-gradient(
+      0deg,
+      rgba(78, 30, 3, 0.065) 0px,
+      rgba(78, 30, 3, 0.065) 1px,
+      transparent 1px,
+      transparent 3.5px
+    ),
+    radial-gradient(
+      ellipse at 50% 50%,
+      rgba(246, 222, 168, 0.68) 0%,
+      rgba(218, 170, 96, 0.73) 58%,
+      rgba(178, 118, 44, 0.78) 88%,
+      rgba(128, 70, 14, 0.82) 100%
+    );
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  box-shadow:
+    inset 18px 0 22px -10px rgba(48, 16, 1, 0.72),
+    inset -18px 0 22px -10px rgba(48, 16, 1, 0.72),
+    inset 0 12px 16px -8px rgba(44, 14, 1, 0.58),
+    inset 0 -12px 16px -8px rgba(44, 14, 1, 0.58),
+    0 8px 20px rgba(0, 0, 0, 0.48);
+  /* Initial Closed State on Left */
+  transform-origin: left center;
+  transform: translate3d(0, 0, 0) scaleX(0.02);
+  opacity: 0;
+  will-change: transform, opacity;
+  transition:
+    transform 1.25s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.38s ease,
+    box-shadow 0.25s ease;
   z-index: 1;
   touch-action: manipulation;
   -webkit-tap-highlight-color: transparent;
 }
 
-.chapter-item:hover .chapter-card {
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+/* Unfolded State Triggered One-by-One When Visible */
+.chapter-item.is-unrolled .chapter-card {
+  transform: translate3d(0, 0, 0) scaleX(1);
+  opacity: 1;
+}
+
+.chapter-item.is-unrolled:hover .chapter-card,
+.chapter-item.is-unrolled:active .chapter-card {
+  box-shadow:
+    inset 18px 0 22px -10px rgba(48, 16, 1, 0.72),
+    inset -18px 0 22px -10px rgba(48, 16, 1, 0.72),
+    inset 0 12px 16px -8px rgba(44, 14, 1, 0.58),
+    inset 0 -12px 16px -8px rgba(44, 14, 1, 0.58),
+    0 12px 26px rgba(0, 0, 0, 0.65),
+    0 0 18px rgba(255, 200, 50, 0.5);
+}
+
+.chapter-top-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.45rem;
+  text-align: center;
 }
 
 .chapter-number {
-  font-size: 2rem;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #5e1002;
+  margin: 0;
+  text-shadow: 0 1px 0 rgba(255, 248, 220, 0.85);
+}
+
+.chapter-title {
+  font-size: 1.32rem;
+  font-weight: 800;
+  color: #460b01;
+  margin: 0;
+  line-height: 1.35;
+  text-shadow: 0 1px 0 rgba(255, 248, 220, 0.85);
+}
+
+/* Ancient Vedic Ornamental Pattern Divider Between Title and Info */
+.talapatra-ornament-divider {
+  text-align: center;
+  margin: 0.4rem 0 0.5rem;
+  color: #6e2204;
+  font-size: 0.85rem;
   font-weight: 700;
-  color: #D81B60;
-  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  opacity: 0.9;
+  user-select: none;
+  text-shadow: 0 1px 0 rgba(255, 245, 210, 0.65);
 }
 
 .chapter-info {
   flex: 1;
-}
-
-.chapter-title {
-  font-size: 1.5rem;
-  color: #ff0000;
-  margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 .chapter-subtitle {
   font-size: 1rem;
-  color: #0b0b0b;
-  margin-bottom: 1rem;
-  line-height: 1.5;
+  font-weight: 600;
+  color: #240b01;
+  margin: 0 0 0.65rem;
+  line-height: 1.55;
+  text-shadow: 0 1px 0 rgba(255, 245, 210, 0.6);
 }
 
 .chapter-meta {
   margin-top: auto;
+  text-align: center;
 }
 
 .conversation-count {
-  font-size: 0.9rem;
-  color: #000000;
-  font-weight: 500;
+  display: inline-block;
+  font-size: 0.88rem;
+  color: #4a1502;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-shadow: 0 1px 0 rgba(255, 245, 210, 0.65);
 }
 
 .no-chapters {
@@ -278,19 +462,25 @@
 /* Mobile Styles */
 @media (max-width: 768px) {
   .chapters-container {
-    padding: 1rem 0.75rem;
+    padding: 1rem 0.85rem;
+  }
+
+  .chapters-header {
+    padding: 0.75rem 1.15rem 0.85rem;
+    margin-bottom: 1.35rem;
+    width: 94%;
   }
   
   .chapters-title {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   
   .chapters-subtitle {
-    font-size: clamp(1rem, 3.8vw, 1.2rem);
-    color: #fff8dc;
-    margin-bottom: 0.75rem;
-    padding: 7px 16px;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.95), 0 0 12px rgba(255, 179, 0, 0.55);
+    font-size: clamp(0.96rem, 3.6vw, 1.12rem);
+    color: #2f1002;
+    margin: 0;
+    padding: 0;
+    text-shadow: 0 1px 0 rgba(255, 246, 210, 0.7);
   }
   
   .chapters-controls {
@@ -306,25 +496,25 @@
   
   .chapters-list {
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 1.1rem;
   }
   
   .chapter-card {
-    padding: 1.25rem;
+    padding: 1.05rem 1.25rem;
     touch-action: manipulation;
     -webkit-tap-highlight-color: transparent;
   }
   
   .chapter-number {
-    font-size: 1.5rem;
+    font-size: 1.22rem;
   }
   
   .chapter-title {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   
   .chapter-subtitle {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
   
   .chapters-page::before,
@@ -335,32 +525,18 @@
 
 @media (max-width: 480px) {
   .chapters-title {
-    font-size: 1.8rem;
+    font-size: 1.75rem;
   }
   
   .chapter-card {
-    padding: 1rem;
+    padding: 0.95rem 1.15rem;
   }
   
   .chapter-title {
-    font-size: 1.2rem;
+    font-size: 1.14rem;
   }
   
   .chapter-subtitle {
-    font-size: 0.9rem;
-  }
-}
-
-/* Accessibility */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-  }
-  
-  .chapter-item:hover,
-  .lang-btn:hover {
-    transform: none;
+    font-size: 0.92rem;
   }
 }

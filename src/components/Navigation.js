@@ -84,7 +84,7 @@ const Navigation = () => {
           <span className="scroll-finial finial-right"></span>
         </div>
 
-        {/* Unrolling Opaque Vedic Parchment Body */}
+        {/* Unrolling Ancient Scripture Parchment */}
         <div className="scroll-parchment">
           <div className="scroll-inner-frame">
             {/* Corner Temple Ornaments */}

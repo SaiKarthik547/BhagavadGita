@@ -508,50 +508,116 @@
 }
 
 .cta-button {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 11px 14px;
-  border-radius: 30px;
+  padding: 12px 18px;
+  border-radius: 4px 12px 4px 12px;
   text-decoration: none;
-  font-weight: 600;
-  font-size: clamp(0.84rem, 3.2vw, 1.02rem);
+  font-weight: 700;
+  font-size: clamp(0.86rem, 3.2vw, 1.02rem);
   line-height: 1.25;
   text-align: center;
-  color: #ffffff;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.85);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.28s ease, background 0.28s ease;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.28), inset 0 1px 1px rgba(255, 255, 255, 0.35);
+  color: #3f0e02;
+  text-shadow: 0 1px 0 rgba(255, 248, 220, 0.85);
+  /* Opaque Ancient Talapatra Grandha (Palm-Leaf Manuscript) Surface */
+  background:
+    repeating-linear-gradient(
+      0deg,
+      rgba(86, 36, 4, 0.055) 0px,
+      rgba(86, 36, 4, 0.055) 1px,
+      transparent 1px,
+      transparent 3px
+    ),
+    radial-gradient(
+      ellipse at 50% 50%,
+      #f6e3b4 0%,
+      #e0b86e 60%,
+      #b98032 100%
+    );
+  border-top: 1.5px solid #e6b437;
+  border-bottom: 1.5px solid #9e5a10;
+  border-left: none;
+  border-right: none;
+  outline: 1px dashed rgba(112, 42, 6, 0.55);
+  outline-offset: -4px;
+  box-shadow:
+    inset 12px 0 16px -6px rgba(54, 18, 2, 0.68),
+    inset -12px 0 16px -6px rgba(54, 18, 2, 0.68),
+    inset 0 0 10px rgba(68, 24, 2, 0.45),
+    0 5px 14px rgba(0, 0, 0, 0.65),
+    0 0 12px rgba(255, 196, 45, 0.28);
+  transition: transform 0.24s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.24s ease;
   touch-action: manipulation;
   -webkit-tap-highlight-color: transparent;
 }
 
+/* Carved Ancient Teak & Gold Scroll Rollers on Left & Right Ends of Each Talapatra Button */
+.cta-button::before,
+.cta-button::after {
+  content: '';
+  position: absolute;
+  top: -3px;
+  bottom: -3px;
+  width: 7px;
+  border-radius: 4px;
+  background: linear-gradient(
+    90deg,
+    #2e0f01 0%,
+    #a86010 35%,
+    #ffd700 55%,
+    #4a1803 100%
+  );
+  border-top: 1px solid #ffe57f;
+  border-bottom: 1px solid #3b1201;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.65);
+  pointer-events: none;
+}
+
+.cta-button::before {
+  left: -3px;
+}
+
+.cta-button::after {
+  right: -3px;
+}
+
+/* Subtle Aged Tonal Variations of Opaque Ancient Talapatra Leaves */
 .cta-button.primary {
-  background: linear-gradient(135deg, rgba(255, 152, 0, 0.34), rgba(255, 87, 34, 0.34));
-  border: 1px solid rgba(255, 183, 77, 0.65);
+  background:
+    repeating-linear-gradient(0deg, rgba(86, 36, 4, 0.055) 0px, rgba(86, 36, 4, 0.055) 1px, transparent 1px, transparent 3px),
+    radial-gradient(ellipse at 50% 50%, #f7e4b6 0%, #e2ba70 60%, #bb8132 100%);
 }
 
 .cta-button.primary1 {
-  background: linear-gradient(135deg, rgba(255, 213, 79, 0.32), rgba(255, 179, 0, 0.32));
-  border: 1px solid rgba(255, 238, 88, 0.65);
+  background:
+    repeating-linear-gradient(0deg, rgba(86, 36, 4, 0.055) 0px, rgba(86, 36, 4, 0.055) 1px, transparent 1px, transparent 3px),
+    radial-gradient(ellipse at 50% 50%, #f5e0af 0%, #ddb468 60%, #b57b2e 100%);
 }
 
 .cta-button.secondary {
-  background: linear-gradient(135deg, rgba(14, 224, 247, 0.32), rgba(33, 150, 243, 0.34));
-  border: 1px solid rgba(128, 222, 234, 0.65);
+  background:
+    repeating-linear-gradient(0deg, rgba(86, 36, 4, 0.055) 0px, rgba(86, 36, 4, 0.055) 1px, transparent 1px, transparent 3px),
+    radial-gradient(ellipse at 50% 50%, #f4deac 0%, #dbb165 60%, #b2772b 100%);
 }
 
 .cta-button.tertiary {
-  background: linear-gradient(135deg, rgba(76, 175, 80, 0.34), rgba(139, 195, 74, 0.32));
-  border: 1px solid rgba(165, 214, 167, 0.65);
+  background:
+    repeating-linear-gradient(0deg, rgba(86, 36, 4, 0.055) 0px, rgba(86, 36, 4, 0.055) 1px, transparent 1px, transparent 3px),
+    radial-gradient(ellipse at 50% 50%, #f6e2b2 0%, #dfB66c 60%, #b77d30 100%);
 }
 
 .cta-button:hover,
 .cta-button:active {
   transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4), 0 0 12px rgba(255, 255, 255, 0.25);
+  color: #5c1104;
+  box-shadow:
+    inset 12px 0 16px -6px rgba(54, 18, 2, 0.68),
+    inset -12px 0 16px -6px rgba(54, 18, 2, 0.68),
+    inset 0 0 10px rgba(68, 24, 2, 0.45),
+    0 7px 18px rgba(0, 0, 0, 0.75),
+    0 0 16px rgba(255, 200, 50, 0.55);
 }
 
 /* Responsive Design */
@@ -611,7 +677,7 @@
   .cta-button {
     width: 100%;
     margin-bottom: 0;
-    padding: 10px 10px;
+    padding: 11px 18px;
     box-sizing: border-box;
     touch-action: manipulation;
     -webkit-tap-highlight-color: transparent;
