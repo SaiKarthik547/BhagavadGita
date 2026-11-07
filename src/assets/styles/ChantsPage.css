@@ -301,9 +301,10 @@
 }
 
 /* TOP ONLY Cylindrical Royal Scroll Roller */
-.royal-scroll-top-roller {
+.royal-stotra-scroll .royal-scroll-top-roller {
   position: relative;
-  width: 104%;
+  width: 100%;
+  margin: 0 auto;
   height: clamp(22px, 5.2vw, 26px);
   display: flex;
   align-items: center;
@@ -311,7 +312,7 @@
   z-index: 4;
 }
 
-.royal-roller-rod {
+.royal-stotra-scroll .royal-roller-rod {
   flex: 1;
   height: 100%;
   background: linear-gradient(
@@ -335,7 +336,7 @@
   box-sizing: border-box;
 }
 
-.royal-roller-ring {
+.royal-stotra-scroll .royal-roller-ring {
   width: 8px;
   height: 100%;
   background: linear-gradient(180deg, #5c3309 0%, #ffd978 50%, #4d2606 100%);
@@ -343,34 +344,38 @@
   border-right: 1px solid #3b1c04;
 }
 
-.royal-roller-crest {
+.royal-stotra-scroll .royal-roller-crest {
   color: #4a1502;
   font-size: 0.82rem;
   text-shadow: 0 1px 0 rgba(255, 245, 200, 0.85);
 }
 
-.royal-roller-cap {
-  width: clamp(16px, 4.2vw, 20px);
+.royal-stotra-scroll .royal-roller-cap {
+  width: 16px;
   height: clamp(28px, 6.4vw, 32px);
   background: radial-gradient(circle at 38% 35%, #fff2b2 0%, #e0a334 45%, #7c420c 82%, #3b1a02 100%);
   border: 1.5px solid #3b1a02;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.65);
+  flex-shrink: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.royal-roller-cap.cap-left {
+.royal-stotra-scroll .royal-roller-cap.cap-left {
   border-radius: 10px 4px 4px 10px;
-  margin-right: -2px;
+  margin: 0;
 }
 
-.royal-roller-cap.cap-right {
+.royal-stotra-scroll .royal-roller-cap.cap-right {
   border-radius: 4px 10px 10px 4px;
-  margin-left: -2px;
+  margin: 0;
 }
 
 /* Royal Scripture Body (Middle Parchment) */
-.royal-scroll-body {
+.royal-stotra-scroll .royal-scroll-body {
   position: relative;
-  width: 94%;
+  width: calc(100% - 32px);
+  margin: -6px auto 0;
   background-color: #dec089;
   background-image:
     radial-gradient(ellipse at 15% 15%, rgba(86, 40, 8, 0.22) 0%, transparent 48%),
@@ -538,17 +543,18 @@
 }
 
 /* BOTTOM Royal Triangular Pennant Border (King's Decree Style — NO Cylindrical Roller) */
-.royal-scroll-triangular-bottom {
+.royal-stotra-scroll .royal-scroll-triangular-bottom {
   position: relative;
-  width: 94%;
+  width: calc(100% - 32px);
   display: flex;
   flex-direction: column;
   align-items: center;
   z-index: 2;
-  margin-top: -1px;
+  margin: -1px auto 0;
+  box-sizing: border-box;
 }
 
-.royal-triangular-pennant {
+.royal-stotra-scroll .royal-triangular-pennant {
   position: relative;
   width: 100%;
   height: clamp(54px, 13vw, 68px);

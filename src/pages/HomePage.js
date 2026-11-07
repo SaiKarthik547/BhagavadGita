@@ -223,7 +223,7 @@ const HomePage = () => {
                         <span className="heading-ornament">✦</span>
                       </h3>
                       <div className="chants-ancient-divider section-mini-divider" aria-hidden="true">─── ❖ ───</div>
-                      <p className="home-section-para">
+                      <p className="home-section-para para-reading">
                         {ekashlokiData.meaning}
                       </p>
                     </div>
@@ -272,7 +272,7 @@ const HomePage = () => {
                       <span className="heading-ornament">✦</span>
                     </h3>
                     <div className="chants-ancient-divider section-mini-divider" aria-hidden="true">─── ❖ ───</div>
-                    <p className="home-section-para">
+                    <p className="home-section-para para-reading">
                       {t('historyOfBhagavadGitaText')}
                     </p>
                   </div>

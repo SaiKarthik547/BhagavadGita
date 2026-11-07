@@ -2027,12 +2027,13 @@
   align-items: center;
   justify-content: center;
   filter: drop-shadow(0 14px 28px rgba(0, 0, 0, 0.7));
+  box-sizing: border-box;
 }
 
 /* TOP Cylindrical Royal Scroll Roller */
 .royal-summary-scroll .royal-scroll-top-roller {
   position: relative;
-  width: 104%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -2064,13 +2065,24 @@
 }
 
 .royal-summary-scroll .royal-roller-cap {
-  width: clamp(14px, 3.2vw, 20px);
+  width: 16px;
   height: clamp(28px, 5.5vw, 36px);
   background: radial-gradient(circle at 35% 30%, #fff0a8, #d4941c 65%, #5c3104 100%);
   border: 1px solid #3d1d02;
-  border-radius: 4px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
   flex-shrink: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.royal-summary-scroll .royal-roller-cap.cap-left {
+  border-radius: 8px 3px 3px 8px;
+  margin: 0;
+}
+
+.royal-summary-scroll .royal-roller-cap.cap-right {
+  border-radius: 3px 8px 8px 3px;
+  margin: 0;
 }
 
 .royal-summary-scroll .royal-roller-crest {
@@ -2089,10 +2101,11 @@
 }
 
 /* Ancient Royal Scripture Parchment Body */
+.royal-summary-scroll .summary-scroll-body,
 .summary-scroll-body {
   position: relative;
-  width: 94%;
-  margin: 0 auto;
+  width: calc(100% - 32px);
+  margin: -6px auto 0;
   background-color: #f7e8c4;
   background-image:
     radial-gradient(ellipse at 15% 15%, rgba(120, 60, 10, 0.08) 0%, transparent 60%),
@@ -2270,7 +2283,7 @@
 /* Bottom Triangular Pennant Border (King's Decree Style) */
 .royal-summary-scroll .royal-scroll-triangular-bottom {
   position: relative;
-  width: 94%;
+  width: calc(100% - 32px);
   margin: -1px auto 0;
   display: flex;
   flex-direction: column;
