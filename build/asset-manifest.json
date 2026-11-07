@@ -1,14 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.c0f6281a.css",
-    "main.js": "/static/js/main.8f7a8ac7.js",
+    "main.css": "/static/css/main.48f79879.css",
+    "main.js": "/static/js/main.df5c4c0a.js",
     "static/media/home.jpeg": "/static/media/home.9ab9b75d2adad24b0bde.jpeg",
     "static/media/vishwaroopam.png": "/static/media/vishwaroopam.abf1145172a09a6f087f.png",
     "static/media/meditation.png": "/static/media/meditation.4489944adecca54c0971.png",
     "static/media/background.png": "/static/media/background.1bb48231db61ca6541a4.png",
     "static/media/chapters.png": "/static/media/chapters.4e6971afe63b06917223.png",
     "static/media/sharada mata.png": "/static/media/sharada mata.cdc409dd84275e82ccc7.png",
-    "static/media/host.png": "/static/media/host.a8f891f0d34c5da8aeae.png",
     "static/media/dritharastra.png": "/static/media/dritharastra.f9507941e33bb25fb422.png",
     "static/media/sanjaya.png": "/static/media/sanjaya.b2c884b6c021f9cb7ee1.png",
     "static/media/chants.jpg": "/static/media/chants.eebcbe8b968773fc3893.jpg",
@@ -21,11 +20,11 @@
     "static/media/inter-latin-ext-wght-normal.woff2": "/static/media/inter-latin-ext-wght-normal.8bff79fbfaa8b8167a0b.woff2",
     "static/media/inter-latin-wght-normal.woff2": "/static/media/inter-latin-wght-normal.4f2981d82860061bca3e.woff2",
     "index.html": "/index.html",
-    "main.c0f6281a.css.map": "/static/css/main.c0f6281a.css.map",
-    "main.8f7a8ac7.js.map": "/static/js/main.8f7a8ac7.js.map"
+    "main.48f79879.css.map": "/static/css/main.48f79879.css.map",
+    "main.df5c4c0a.js.map": "/static/js/main.df5c4c0a.js.map"
   },
   "entrypoints": [
-    "static/css/main.c0f6281a.css",
-    "static/js/main.8f7a8ac7.js"
+    "static/css/main.48f79879.css",
+    "static/js/main.df5c4c0a.js"
   ]
 }

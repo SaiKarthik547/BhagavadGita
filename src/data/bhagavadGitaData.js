@@ -20,99 +20,93 @@ const bhagavadGitaData = {
         chapters: {
             1: {
                 title: "Arjuna's Dilemma",
-                subtitle: "Observing the Armies",
-                description: "The opening chapter where Arjuna, standing on the battlefield of Kurukshetra, is overcome with despair upon seeing his relatives and teachers in the opposing army, leading to his moral crisis.",
+                subtitle: "Arjuna Vishada Yoga - Observing the Armies",
+                description: "The opening chapter where Arjuna, standing on the battlefield of Kurukshetra, is overcome with compassion and grief upon seeing his relatives and teachers arrayed for war.",
                 dialogue: [
-                    { speaker: 'Arjuna', text: 'O Krishna, please draw my chariot between the two armies so I may see those who stand here eager for war.', emotion: 'resolute' },
+                    { speaker: 'Dhritarashtra', text: 'O Sanjaya, assembled at the sacred field of Kurukshetra and eager for battle, what did my sons and the sons of Pandu do?', emotion: 'worried' },
+                    { speaker: 'Sanjaya', text: 'Seeing the army of the Pandavas arrayed in battle formation, King Duryodhana approached his teacher Dronacharya and spoke these words.', emotion: 'observant' },
+                    { speaker: 'Duryodhana', text: 'Behold, O Master, this mighty army of the sons of Pandu, arrayed by your intelligent disciple, the son of Drupada! Here are great archers equal in battle to Bhima and Arjuna—Yuyudhana, Virata, and Drupada. On our side stand Bhishma, Karna, Kripa, Ashwatthama, and Vikarna. Let all of you stand firm in your positions and protect Grandsire Bhishma!', emotion: 'proud' },
+                    { speaker: 'Sanjaya', text: 'Then Bhishma, the glorious grandsire of the Kurus, roared like a lion and blew his conch to cheer Duryodhana. Immediately, Lord Madhava and Arjuna, standing on their great chariot drawn by white horses, blew their divine conches Panchajanya and Devadatta. That tumultuous uproar echoed through heaven and earth, shattering the hearts of Dhritarashtra\'s sons.', emotion: 'descriptive' },
+                    { speaker: 'Arjuna', text: 'O Acyuta, please draw my chariot between the two armies so that I may behold those who stand here eager for war, and see with whom I must fight in this great struggle.', emotion: 'resolute' },
+                    { speaker: 'Sanjaya', text: 'Thus addressed by Arjuna, Lord Hrishikesha drew that finest of chariots into the midst of both armies, right in front of Bhishma, Drona, and all the rulers of the earth.', emotion: 'observant' },
                     { speaker: 'Krishna', text: 'Behold, O Partha, all the Kurus gathered here.', emotion: 'calm' },
-                    { speaker: 'Arjuna', text: 'I see my own kinsmen, my teachers, uncles, and brothers. My limbs grow weak, my mouth is dry, my body trembles.', emotion: 'despondent' },
-                    { speaker: 'Krishna', text: 'Observe them, Arjuna, for you must understand what you face.', emotion: 'observant' },
-                    { speaker: 'Arjuna', text: 'I do not desire victory, kingdom, or happiness, O Krishna! What use is a kingdom, or even life itself, when those for whom we desire them are gathered here for battle?', emotion: 'anguished' },
-                    { speaker: 'Krishna', text: 'This weakness of heart is unbecoming of a noble warrior like you, Arjuna.', emotion: 'chiding' },
-                    { speaker: 'Arjuna', text: 'How can I fight against Bhishma and Drona, who are worthy of my worship? It would be better to live by begging than to slay these great souls.', emotion: 'conflicted' },
-                    { speaker: 'Krishna', text: '(Silently listening, allowing Arjuna to express his turmoil)', emotion: 'patient' },
-                    { speaker: 'Arjuna', text: 'If we kill our own kinsmen, sin will overcome us. With the destruction of the family, ancient traditions will perish, and lawlessness will prevail.', emotion: 'fearful' },
-                    { speaker: 'Krishna', text: '(His expression remains calm, a silent anchor in Arjuna\'s storm of grief)', emotion: 'serene' },
-                    { speaker: 'Arjuna', text: 'When lawlessness is prominent, the women of the family become corrupted, and from this, unwanted progeny are born, leading the family and its destroyers to hell.', emotion: 'distraught' },
-                    { speaker: 'Krishna', text: 'Think beyond the immediate consequences, Arjuna. Consider the eternal law of Dharma.', emotion: 'guiding' },
-                    { speaker: 'Arjuna', text: 'Alas, how strange it is that we are preparing to commit a great sin, driven by the desire for royal enjoyment.', emotion: 'lamenting' },
-                    { speaker: 'Krishna', text: '(A compassionate gaze, understanding the depth of Arjuna\'s sorrow)', emotion: 'compassionate' },
-                    { speaker: 'Arjuna', text: 'It would be better for me if the sons of Dhritarashtra, with weapons in hand, were to slay me, unarmed and unresisting, on the battlefield.', emotion: 'surrendered' },
-                    { speaker: 'Krishna', text: 'Your grief clouds your judgment. This is not the path of a warrior.', emotion: 'firm' },
-                    { speaker: 'Arjuna', text: 'I see no good in killing my own kinsmen in battle. I shall not fight.', emotion: 'resolved' },
-                    { speaker: 'Krishna', text: 'Clarity will come. First, you must see the depth of your confusion.', emotion: 'wise' },
-                    { speaker: 'Host', text: '(Casting aside his bow and arrows, Arjuna sinks down on the seat of the chariot, his mind overwhelmed with grief)', emotion: 'overwhelmed' },
-                    { speaker: 'Krishna', text: 'Arise from this petty weakness of heart and stand up, O vanquisher of foes!', emotion: 'commanding' }
+                    { speaker: 'Sanjaya', text: 'There Arjuna saw standing within both armies fathers, grandfathers, teachers, maternal uncles, brothers, sons, grandsons, friends, fathers-in-law, and well-wishers. Seeing all his kinsmen arrayed for battle, he was overwhelmed with deep compassion and spoke in sorrow.', emotion: 'compassionate' },
+                    { speaker: 'Arjuna', text: 'O Krishna, seeing my own kinsmen gathered here eager to fight, my limbs give way and my mouth is parched. My body trembles, my hair stands on end, my bow Gandiva slips from my hand, and my skin burns. I am unable to stand any longer, and my mind is whirling.', emotion: 'despondent' },
+                    { speaker: 'Arjuna', text: 'I see only adverse omens, O Keshava, and I see no good in killing my own kinsmen in battle. I do not desire victory, O Krishna, nor kingdom, nor pleasures. Of what use to us is a kingdom, enjoyment, or even life itself?', emotion: 'anguished' },
+                    { speaker: 'Arjuna', text: 'Those very persons for whose sake we desire a kingdom, enjoyment, and pleasures—teachers, fathers, sons, grandfathers, maternal uncles, fathers-in-law, grandsons, and relatives—stand here in battle ready to give up their lives and wealth.', emotion: 'lamenting' },
+                    { speaker: 'Arjuna', text: 'O Madhusudana, I do not wish to kill them, even if they attack and slay me, not even for the sovereignty of the three worlds—what then to speak of this earth? Sin alone would overcome us if we slay these aggressors. How could we ever be happy by killing our own kinsmen, O Madhava?', emotion: 'compassionate' },
+                    { speaker: 'Arjuna', text: 'Even if they, with minds overtaken by greed, see no evil in destroying the family or in treachery to friends, why should we, who clearly perceive the crime in the destruction of a family, not turn away from this sin, O Janardana?', emotion: 'questioning' },
+                    { speaker: 'Arjuna', text: 'With the destruction of a dynasty, its eternal family traditions perish; when dharma is lost, unrighteousness overtakes the entire family, and those who destroy the family sink into grief.', emotion: 'distraught' },
+                    { speaker: 'Arjuna', text: 'Alas! How strange it is that we have resolved to commit a great sin out of greed for royal pleasures, prepared to slay our own kinsmen! It would be far better for me if the armed sons of Dhritarashtra were to slay me on the battlefield while I remain unarmed and unresisting.', emotion: 'surrendered' },
+                    { speaker: 'Sanjaya', text: 'Having spoken thus on the battlefield, Arjuna cast aside his bow and arrows and sank down onto the seat of his chariot, his mind overwhelmed with sorrow.', emotion: 'overwhelmed' }
                 ],
-                summary: "In this episode, Arjuna stands on the battlefield, overwhelmed with grief at the thought of fighting his own family. He expresses his profound moral dilemma to Krishna, who begins to teach him about the nature of the soul and the importance of duty.",
-                teachings: "The first chapter introduces the concepts of dharma (duty) and the eternal nature of the soul. Krishna urges Arjuna to overcome his emotional weakness and fulfill his duty as a warrior.",
-                moralLesson: "It is important to face our duties with courage, even when they are difficult. True wisdom lies in understanding the difference between the temporary body and the eternal soul.",
-                kidsVersion: "Imagine you have to play a game against your best friends. You feel sad and don't want to play. Krishna tells Arjuna that sometimes we have to do hard things because it's the right thing to do. He reminds Arjuna to be brave and strong."
+                summary: "On the sacred battlefield of Kurukshetra, King Dhritarashtra asks Sanjaya to describe the events unfolding between the Kauravas and Pandavas. After Duryodhana surveys the armies and the warriors blow their mighty conches, Arjuna asks Lord Krishna to place his chariot between the two forces. Seeing his revered teachers, grandfathers, uncles, brothers, and friends arrayed on both sides, Arjuna is overcome with deep compassion, grief, and moral anguish. Questioning the value of a victory won through the blood of his own family, he casts aside his bow Gandiva and sinks down in his chariot, setting the stage for the divine wisdom of the Bhagavad Gita.",
+                teachings: "Compassion without spiritual wisdom can lead to moral confusion and paralysis when facing life's greatest trials.\nGreed and attachment to power blind one to the consequences of destructive actions, while honest self-reflection awakens the search for higher truth.\nAcknowledging our inner vulnerability and ethical dilemmas in the presence of the Divine is the true beginning of spiritual inquiry.",
+                moralLesson: "Even the greatest and bravest heroes experience moments of profound doubt and sorrow when faced with painful choices. When our heart and mind are torn by conflict, the first step toward clarity is to pause, be honest about our grief, and turn toward higher wisdom rather than acting out of pride or impulse.",
+                kidsVersion: "When the big battle at Kurukshetra was about to start, Arjuna asked his best friend Krishna to drive his chariot into the middle of the field. When Arjuna looked around, he saw his own teachers, grandfathers, cousins, and friends on the other side! His heart felt super heavy and sad because he didn't want to hurt the people he loved just to win a kingdom. Feeling confused and heartbroken, Arjuna put down his bow and sat down in his chariot, ready to ask Krishna for help."
             },
             
             2: {
                 title: "The Eternal Soul",
                 subtitle: "Sankhya Yoga - The Yoga of Knowledge",
-                description: "Arjuna's surrender and Krishna's teachings on the immortal soul",
+                description: "Arjuna's surrender and Krishna's foundational teachings on the immortal soul and selfless duty",
                 dialogue: [
-                    { speaker: 'Krishna', text: 'Why has this despondency come upon you at this critical moment? It is not befitting a noble person. It leads not to heaven, but to infamy.', emotion: 'chiding' },
-                    { speaker: 'Arjuna', text: 'But how can I strike down Bhishma and Drona with arrows in battle? They are worthy of my worship!', emotion: 'conflicted' },
+                    { speaker: 'Sanjaya', text: 'Seeing Arjuna overwhelmed with compassion, his eyes filled with tears and his heart sinking in sorrow, Lord Madhusudana spoke these words.', emotion: 'compassionate' },
+                    { speaker: 'Krishna', text: 'Why has this delusion come upon you at this critical hour, O Arjuna? It is unbecoming of a noble person; it leads neither to heaven nor to honor. Do not yield to this degrading weakness of heart, O Partha! Give up such petty faintheartedness and arise, O vanquisher of foes!', emotion: 'chiding' },
+                    { speaker: 'Arjuna', text: 'O Madhusudana, how can I shoot arrows in battle against Bhishma and Drona, who are worthy of my worship? It would be better to live in this world by begging than to enjoy royal pleasures stained with the blood of my noble teachers.', emotion: 'conflicted' },
+                    { speaker: 'Arjuna', text: 'My nature is weighed down by pity and my mind is confused about my duty. I ask You to tell me decisively what is truly good for me. I am Your disciple and a soul surrendered unto You; please instruct me.', emotion: 'surrendering' },
+                    { speaker: 'Sanjaya', text: 'Having spoken thus to Hrishikesha, Arjuna declared, "I shall not fight," and fell silent. Then, in the midst of the two armies, Lord Hrishikesha, smiling gently, spoke these words to the grief-stricken Arjuna.', emotion: 'observant' },
                     { speaker: 'Krishna', text: 'You grieve for those who are not worthy of grief, yet you speak words of wisdom. The wise lament neither for the living nor for the dead.', emotion: 'wise' },
-                    { speaker: 'Arjuna', text: 'I am confused about my duty. I surrender to you as your disciple. Please instruct me on what is best for me.', emotion: 'surrendering' },
-                    { speaker: 'Krishna', text: 'There was never a time when I did not exist, nor you, nor all these kings; nor in the future shall any of us cease to be.', emotion: 'enlightening' },
-                    { speaker: 'Arjuna', text: 'How is that possible? Bodies are born and they die.', emotion: 'curious' },
-                    { speaker: 'Krishna', text: 'As the embodied soul continuously passes, in this body, from boyhood to youth to old age, the soul similarly passes into another body at death. A sober person is not bewildered by such a change.', emotion: 'instructive' },
-                    { speaker: 'Arjuna', text: 'But the feelings of happiness and distress are very real, Krishna.', emotion: 'pained' },
-                    { speaker: 'Krishna', text: 'These are temporary appearances, arising from sense perception. One must learn to tolerate them without being disturbed.', emotion: 'guiding' },
-                    { speaker: 'Arjuna', text: 'So, the soul itself is never harmed?', emotion: 'seeking' },
-                    { speaker: 'Krishna', text: 'The soul is never born nor dies. It is unborn, eternal, ever-existing, and primeval. It is not slain when the body is slain.', emotion: 'reassuring' },
-                    { speaker: 'Arjuna', text: 'Can you explain this further? How can I grasp this truth?', emotion: 'inquisitive' },
-                    { speaker: 'Krishna', text: 'As a person puts on new garments, giving up old ones, the soul similarly accepts new material bodies, giving up the old and useless ones.', emotion: 'illustrative' },
-                    { speaker: 'Arjuna', text: 'If the soul is eternal, why should I fight? What is the purpose of this action?', emotion: 'questioning' },
-                    { speaker: 'Krishna', text: 'Considering your specific duty as a kshatriya, you should know that there is no better engagement for you than fighting on religious principles. If you do not perform your religious duty of fighting, you will certainly incur sins for neglecting your duties and thus lose your reputation as a fighter.', emotion: 'commanding' },
-                    { speaker: 'Arjuna', text: 'But what about the outcome? The sin of killing?', emotion: 'worried' },
-                    { speaker: 'Krishna', text: 'You have a right to perform your prescribed duty, but you are not entitled to the fruits of action. Never consider yourself the cause of the results of your activities, and never be attached to not doing your duty.', emotion: 'profound' },
-                    { speaker: 'Arjuna', text: 'What is the nature of a person whose consciousness is thus merged in transcendence? How does he speak, and what is his language? How does he sit, and how does he walk?', emotion: 'curious' },
-                    { speaker: 'Krishna', text: 'He is one who has given up all desires for sense gratification, who is free from attachment, fear, and anger. His mind is steady and not agitated by the threefold miseries.', emotion: 'descriptive' },
-                    { speaker: 'Arjuna', text: 'This state seems so peaceful. How does one control the powerful senses?', emotion: 'inspired' },
-                    { speaker: 'Krishna', text: 'One who restrains his senses, keeping them under full control, and fixes his consciousness upon Me, is known as a man of steady intelligence.', emotion: 'conclusive' }
+                    { speaker: 'Krishna', text: 'Never was there a time when I did not exist, nor you, nor all these kings; nor in the future shall any of us cease to be.', emotion: 'enlightening' },
+                    { speaker: 'Arjuna', text: 'How does the soul pass through birth and death when bodies perish?', emotion: 'curious' },
+                    { speaker: 'Krishna', text: 'Just as the embodied soul continuously passes in this body from childhood to youth and to old age, so too does it pass into another body at death. The wise are not bewildered by such a change.', emotion: 'instructive' },
+                    { speaker: 'Arjuna', text: 'Yet the experiences of pleasure and pain feel overwhelming, O Krishna.', emotion: 'pained' },
+                    { speaker: 'Krishna', text: 'The contacts of the senses with their objects, O son of Kunti, give rise to cold and heat, pleasure and pain. They come and go and are impermanent; therefore, learn to endure them bravely, O Bharata.', emotion: 'guiding' },
+                    { speaker: 'Arjuna', text: 'Can the soul ever be slain or destroyed in battle?', emotion: 'seeking' },
+                    { speaker: 'Krishna', text: 'The soul is never born, nor does it ever die. Unborn, eternal, ever-existing, and primeval, it is not slain when the body is slain.', emotion: 'reassuring' },
+                    { speaker: 'Krishna', text: 'Just as a person casts off worn-out garments and puts on new ones, so too the embodied soul casts off worn-out bodies and enters into new ones. Weapons cannot cleave it, fire cannot burn it, water cannot wet it, and wind cannot dry it.', emotion: 'illustrative' },
+                    { speaker: 'Arjuna', text: 'How then should I view my duty as a warrior on this battlefield?', emotion: 'questioning' },
+                    { speaker: 'Krishna', text: 'Considering your own dharma as a warrior, you should not waver. Indeed, for a kshatriya there is no nobler engagement than a righteous war. Treating pleasure and pain, gain and loss, victory and defeat alike, engage in battle; thus you shall incur no sin.', emotion: 'commanding' },
+                    { speaker: 'Arjuna', text: 'How can one act without being bound by the results of action?', emotion: 'worried' },
+                    { speaker: 'Krishna', text: 'You have a right to perform your prescribed duty alone, but never to its fruits. Never let the fruits of action be your motive, nor let your attachment be to inaction. Established in yoga, O Dhananjaya, perform your duties abandoning attachment and remaining even-minded in success and failure; such equanimity is called yoga.', emotion: 'profound' },
+                    { speaker: 'Arjuna', text: 'O Keshava, what is the description of a person of steady wisdom who is established in divine consciousness? How does one of steady mind speak, how does he sit, and how does he walk?', emotion: 'curious' },
+                    { speaker: 'Krishna', text: 'When one completely casts away all selfish desires of the mind and is satisfied in the Self by the Self alone, then one is said to be a person of steady wisdom. Unshaken in adversity, free from craving for pleasures, and liberated from attachment, fear, and anger, such a sage is called steady in mind.', emotion: 'descriptive' },
+                    { speaker: 'Arjuna', text: 'Why is it so dangerous to let the mind dwell on sense objects?', emotion: 'inquisitive' },
+                    { speaker: 'Krishna', text: 'When a person dwells on sense objects, attachment to them arises; from attachment springs desire, and from desire arises anger. From anger comes delusion, from delusion loss of memory, from loss of memory the destruction of discrimination, and when discrimination is lost, one perishes.', emotion: 'warning' },
+                    { speaker: 'Krishna', text: 'Just as the ocean remains undisturbed and ever-full though waters flow into it from all sides, so the sage into whom all desires enter without disturbing his inner peace attains true tranquility—not the one who strives to satisfy desires. This is the divine state, O Partha; attaining it, one is never deluded.', emotion: 'conclusive' }
                 ],
-                summary: 'Arjuna surrenders to Krishna, who begins his teachings by explaining the fundamental difference between the temporary material body and the eternal spiritual soul.',
-                teachings: 'The soul is immortal, birthless, and deathless. We should perform our prescribed duties without attachment to the results, maintaining equanimity in both success and failure.',
-                moralLesson: 'Focus on doing your best in every situation without being overly attached to the outcome. True peace comes from performing your duty with a steady mind.',
-                kidsVersion: 'Krishna told Arjuna not to be sad because even though our bodies get old, our soul is like a superhero that lives forever! He said we should always do our best, like in a game, but not worry too much about winning or losing.'
+                summary: "Seeing Arjuna in tears, Arjuna surrenders to Lord Krishna as his disciple and asks for guidance. Krishna begins His timeless teachings by distinguishing between the temporary material body and the immortal spiritual soul (Atman), which is unborn, indestructible, and eternal. He then introduces Nishkama Karma Yoga—performing one's righteous duty with equanimity, free from attachment to success, failure, or personal reward—and concludes by describing the serene qualities of a Sthitaprajna, a person of steady wisdom.",
+                teachings: "The soul (Atman) is immortal, unborn, and deathless; weapons cannot cut it, fire cannot burn it, and death is merely the soul changing garments.\nYou have a right to perform your prescribed duty, but never to the fruits of your actions (Karmanye Vadhikaraste).\nEquanimity of mind in pleasure and pain, gain and loss, victory and defeat is the essence of Yoga.\nUnchecked attachment to sense objects leads to desire, anger, delusion, and ruin, while self-mastery leads to unshakeable inner peace.",
+                moralLesson: "Focus wholeheartedly on doing what is right without being anxious about the outcome. When you know your true inner self is strong and eternal, you can face life's toughest challenges with a calm, steady, and fearless mind.",
+                kidsVersion: "When Arjuna was crying and didn't know what to do, he asked Krishna to be his teacher. Krishna smiled and shared a wonderful truth: just like we take off old clothes and put on new ones, our soul inside is eternal and never gets hurt! Krishna also taught Arjuna a golden rule: always do your very best work with a calm heart, without worrying about winning prizes or being afraid of losing."
             },
             
             3: {
                 title: "The Path of Action",
                 subtitle: "Karma Yoga - Selfless Service",
-                description: "Krishna teaches about selfless action and controlling desire",
+                description: "Krishna teaches about selfless action, cosmic duty, and conquering desire",
                 dialogue: [
-                    { speaker: 'Arjuna', text: 'O Krishna, if you believe intelligence is better than fruitive action, then why do you urge me to engage in this ghastly warfare?', emotion: 'confused' },
-                    { speaker: 'Krishna', text: 'I have already explained two paths, Arjuna: the path of knowledge for the contemplative, and the path of action for the active.', emotion: 'clarifying' },
-                    { speaker: 'Arjuna', text: 'Your words seem contradictory. I am bewildered. Please tell me definitively which path is more beneficial.', emotion: 'seeking' },
-                    { speaker: 'Krishna', text: 'Not by merely abstaining from work can one achieve freedom from reaction, nor by renunciation alone can one attain perfection.', emotion: 'instructive' },
-                    { speaker: 'Arjuna', text: 'Is it even possible to remain completely inactive?', emotion: 'questioning' },
-                    { speaker: 'Krishna', text: 'Everyone is forced to act helplessly according to the qualities he has acquired from the modes of material nature; therefore no one can refrain from doing something, not even for a moment.', emotion: 'wise' },
-                    { speaker: 'Arjuna', text: 'So, one must act. But how should one act to avoid entanglement?', emotion: 'practical' },
-                    { speaker: 'Krishna', text: 'Perform your work as a sacrifice for the Supreme. Otherwise, work causes bondage in this material world. Therefore, perform your prescribed duties for His satisfaction, and in that way you will always remain free from bondage.', emotion: 'guiding' },
-                    { speaker: 'Arjuna', text: 'What is the cycle of sacrifice you speak of?', emotion: 'curious' },
-                    { speaker: 'Krishna', text: 'All living bodies subsist on food grains, which are produced from rains. Rains are produced by performance of yajña [sacrifice], and yajña is born of prescribed duties.', emotion: 'descriptive' },
-                    { speaker: 'Arjuna', text: 'Even the wise must act? I thought they were beyond all duties.', emotion: 'inquisitive' },
-                    { speaker: 'Krishna', text: 'Even a self-realized man, who has no personal gain to achieve, continues to perform his duties to set an example for the world and maintain social order.', emotion: 'exemplary' },
-                    { speaker: 'Arjuna', text: 'This makes sense. But what is it that impels one to sinful acts, even unwillingly, as if engaged by force?', emotion: 'concerned' },
-                    { speaker: 'Krishna', text: 'It is lust alone, Arjuna, which is born of contact with the material mode of passion and later transformed into wrath, and which is the all-devouring sinful enemy of this world.', emotion: 'warning' },
-                    { speaker: 'Arjuna', text: 'Where does this enemy reside? How can we conquer it?', emotion: 'determined' },
-                    { speaker: 'Krishna', text: 'The senses, the mind and the intelligence are its sitting places. By controlling the senses first, you can curb this great emblem of sin.', emotion: 'strategic' },
-                    { speaker: 'Arjuna', text: 'So, I must control my senses and then my mind?', emotion: 'understanding' },
-                    { speaker: 'Krishna', text: 'Yes. The senses are superior to dull matter; mind is higher than the senses; intelligence is still higher than the mind; and he [the soul] is even higher than the intelligence.', emotion: 'hierarchical' },
-                    { speaker: 'Arjuna', text: 'I see. I must use my intelligence to control my mind and senses.', emotion: 'enlightened' },
-                    { speaker: 'Krishna', text: 'Thus knowing oneself to be transcendental to the material senses, mind and intelligence, O mighty-armed Arjuna, one should steady the mind by deliberate spiritual intelligence and thus—by spiritual strength—conquer this insatiable enemy known as lust.', emotion: 'conclusive' }
+                    { speaker: 'Arjuna', text: 'O Janardana, if You consider knowledge superior to action, why then do You urge me to engage in this terrible warfare? My mind is bewildered by Your seemingly mixed words; please tell me decisively that one path by which I may attain the highest good.', emotion: 'confused' },
+                    { speaker: 'Krishna', text: 'O sinless Arjuna, in this world a twofold path was taught by Me in the beginning: the path of knowledge (Jnana Yoga) for the contemplative, and the path of selfless action (Karma Yoga) for the active.', emotion: 'clarifying' },
+                    { speaker: 'Krishna', text: 'A person does not attain freedom from reaction merely by abstaining from work, nor does one attain perfection by mere renunciation alone.', emotion: 'instructive' },
+                    { speaker: 'Arjuna', text: 'Is it even possible for anyone to remain completely inactive?', emotion: 'questioning' },
+                    { speaker: 'Krishna', text: 'Surely no one can remain without action even for a moment; everyone is helplessly driven to act by the qualities born of material nature. One who restrains the organs of action externally while sitting and dwelling mentally on sense objects is deluded and called a pretender; but one who regulates the senses by the mind and engages in Karma Yoga without attachment excels.', emotion: 'wise' },
+                    { speaker: 'Arjuna', text: 'How should one perform action so that it does not bind the soul?', emotion: 'practical' },
+                    { speaker: 'Krishna', text: 'Work must be done as a sacrifice (Yajna) for the Supreme; otherwise, work binds one to this material world. Therefore, O son of Kunti, perform your prescribed duties for that sake alone, free from attachment.', emotion: 'guiding' },
+                    { speaker: 'Arjuna', text: 'What is the cosmic wheel of sacrifice You speak of?', emotion: 'curious' },
+                    { speaker: 'Krishna', text: 'All living beings subsist on food, food is produced by rain, rain comes from sacrifice (Yajna), and sacrifice is born of selfless action. Whoever does not follow this wheel thus set in motion lives in vain for the senses alone.', emotion: 'descriptive' },
+                    { speaker: 'Arjuna', text: 'Why must even the wise and self-satisfied continue to act?', emotion: 'inquisitive' },
+                    { speaker: 'Krishna', text: 'King Janaka and others attained perfection through selfless action alone. You too should act for the welfare and upliftment of the world (Lokasangraha). Whatever a great person does, common people follow; whatever standard he sets by exemplary acts, all the world pursues. Therefore, dedicating all your actions to Me, with your mind fixed on the Self, free from selfish desire and possessiveness, fight without mental fever!', emotion: 'exemplary' },
+                    { speaker: 'Arjuna', text: 'O Varshneya, impelled by what does a person commit sin, even unwillingly, as though driven by force?', emotion: 'concerned' },
+                    { speaker: 'Krishna', text: 'It is selfish desire (Kama) and anger (Krodha), born of the mode of passion; know this all-devouring and most sinful force to be the great enemy here in this world. As fire is covered by smoke and a mirror by dust, so wisdom is covered by this insatiable fire of desire.', emotion: 'warning' },
+                    { speaker: 'Arjuna', text: 'Where does this enemy reside, and how can it be conquered?', emotion: 'determined' },
+                    { speaker: 'Krishna', text: 'The senses, the mind, and the intellect are said to be its seat; through them it deludes the embodied soul by veiling wisdom. Therefore, O best of the Bharatas, first mastering the senses, slay this sinful destroyer of knowledge and realization.', emotion: 'strategic' },
+                    { speaker: 'Krishna', text: 'The senses are said to be superior to the body; the mind is superior to the senses; the intellect is superior to the mind; and that which is beyond the intellect is the Self (Atman). Thus knowing the Self to be higher than the intellect, and steadying the mind by the Self, O mighty-armed Arjuna, conquer this formidable enemy in the form of desire!', emotion: 'conclusive' }
                 ],
-                summary: 'Krishna elaborates on karma-yoga, explaining how to control desire and anger while performing selfless duties for the welfare of all.',
-                teachings: 'Selfless action purifies the mind and leads to spiritual growth. We should offer all actions to God and work as His instruments without attachment. Lust and anger are the greatest enemies that cloud wisdom.',
-                moralLesson: 'Do your best work and help others without expecting anything in return. This makes you happy and peaceful. Control your anger and desires.',
-                kidsVersion: 'Krishna said we should do our work like helping others and studying without being greedy. When we help without wanting anything back, it makes us feel good inside.'
+                summary: 'Arjuna asks why he should engage in action if knowledge is superior. Lord Krishna explains that no one can remain inactive even for a moment, and that true spiritual freedom comes not from running away from responsibilities, but from Karma Yoga—performing one\'s duties selflessly as an offering to the Divine for the welfare of the world (Lokasangraha). Finally, in response to Arjuna\'s question about the root of wrongdoing, Krishna identifies selfish desire (Kama) and anger (Krodha) as the hidden enemies and reveals how to conquer them through self-mastery and higher spiritual wisdom.',
+                teachings: 'No one can remain inactive; performing one\'s duty without attachment is far superior to outer renunciation.\nActions performed as a selfless offering (Yajna) and for the welfare of the world (Lokasangraha) purify the heart and do not bind the soul.\nGreat leaders must set a righteous example because society naturally follows the standard they establish.\nSelfish desire (Kama) and anger (Krodha) veil wisdom; they are conquered by governing the senses and mind through higher spiritual intelligence and the Self.',
+                moralLesson: 'Do your work sincerely to help others and uplift the world without selfishness. Lead by good example, and guard your heart against greed and anger by letting your higher conscience guide your choices.',
+                kidsVersion: 'Arjuna wondered if he should just stop doing everything to be peaceful. Krishna explained that everyone has a job to do in the world—even the sun shines and the clouds bring rain! When we do our daily chores, study, and help others with a happy, unselfish heart instead of being greedy or angry, we make the whole world better and shine from the inside.'
             },
             
             4: {
@@ -142,78 +136,70 @@ const bhagavadGitaData = {
                     { speaker: 'Arjuna', 'text': 'So, I must cut down my doubts with this knowledge?', 'emotion': 'resolved' },
                     { speaker: 'Krishna', 'text': 'Therefore the doubts which have arisen in your heart out of ignorance should be slashed by the weapon of knowledge. Armed with yoga, O Bharata, stand and fight.', 'emotion': 'commanding' }
                 ],
-                summary: "In this chapter, Krishna reveals the profound history and purpose of His divine appearances. He explains that He descends to Earth to restore dharma (righteousness) whenever it declines. Krishna emphasizes that true liberation comes from understanding the transcendental nature of His birth and activities. The core of the chapter revolves around Jnana Yoga, the yoga of knowledge. Krishna explains that knowledge is the ultimate purifier, capable of burning away all karmic reactions. He instructs Arjuna on how to attain this knowledge through a bona fide spiritual master, submissive inquiry, and service. The chapter beautifully distinguishes between action and inaction, showing how one can act in the material world without being entangled by its results.",
-                teachings: "The Lord's divine mission is to protect the righteous and reestablish dharma. Understanding the Lord's transcendental nature leads to liberation from the cycle of birth and death. True knowledge is the most powerful purifier and is attained through a spiritual master. One can achieve freedom from karma by acting without attachment and dedicating the fruits of labor to the Divine.",
-                moralLesson: "The pursuit of genuine knowledge is the noblest path. Wisdom has the power to burn away our past mistakes and lead us to peace. Seek out a true teacher, ask questions with humility, and serve them with an open heart to find the ultimate truth.",
-                kidsVersion: "Krishna is like a superhero who comes to Earth to fix things when they go wrong. He told Arjuna that if we learn about God from a wise teacher, it's like having a super-powerful fire that can burn up all our mistakes. The best way to learn is to be a good student, listen carefully, and help your teacher. This makes you super smart and super peaceful!"
+                summary: "In this chapter, Krishna reveals the ancient lineage of Yoga and the divine purpose of His incarnations (Avatara)—descending age after age to protect the righteous, vanquish evil, and reestablish Dharma. He explains how one can act in the world without being bound by karma through the wisdom of Jnana Yoga and the spirit of Yajna (sacrifice). Krishna extols transcendental knowledge as the supreme purifier that burns all karmic reactions to ashes, and instructs Arjuna to acquire this wisdom through humility, sincere inquiry, and service to a self-realized teacher (Guru).",
+                teachings: "Whenever Dharma declines and unrighteousness rises, the Supreme Lord manifests Himself age after age to protect the virtuous and restore Dharma.\nOne who sees inaction in action and action in inaction is truly wise and free from karmic bondage.\nSpiritual knowledge (Jnana) is the purest force in existence, burning away all karmic reactions just as a blazing fire turns firewood to ashes.\nTrue wisdom is attained by approaching a self-realized Guru with humility, sincere inquiry, and selfless service.",
+                moralLesson: "The pursuit of genuine spiritual wisdom is the noblest path. Approach wise teachers with humility, dedicate your work as a sacred offering, and cut away doubt with the sword of knowledge.",
+                kidsVersion: "Krishna explains that whenever the world forgets how to be good and kind, He comes down to Earth to protect good people and set things right again! He also tells Arjuna that true wisdom is like a bright, warm fire that burns away all our doubts and mistakes—and the best way to gain wisdom is to learn with respect and a helpful heart from a wise teacher."
             },
             
             
             5: {
                 title: "Renunciation in Action",
                 subtitle: "Karma Sannyasa Yoga - True Freedom",
-                description: "Understanding the balance between action and renunciation",
+                description: "Understanding the harmony between renunciation and selfless action",
                 dialogue: [
-                    { speaker: 'Arjuna', text: 'O Krishna, first you ask me to renounce work, and then again you recommend work with devotion. Now will you please tell me definitely which of the two is more beneficial?', emotion: 'confused' },
-                    { speaker: 'Krishna', text: 'Renunciation of work and work in devotion are both good for liberation. But of the two, work in devotional service is better than the mere renunciation of work.', emotion: 'clarifying' },
-                    { speaker: 'Arjuna', text: 'How can that be? It seems renouncing all action would bring peace.', emotion: 'questioning' },
-                    { speaker: 'Krishna', text: 'Merely renouncing all activities yet not engaging in the devotional service of the Lord cannot make one happy. But a thoughtful person engaged in devotional service can achieve the Supreme without delay.', emotion: 'instructive' },
-                    { speaker: 'Arjuna', text: 'So, the key is to act without attachment?', emotion: 'understanding' },
-                    { speaker: 'Krishna', text: 'One who performs his duty without attachment, surrendering the results unto the Supreme Lord, is unaffected by sinful action, as the lotus leaf is untouched by water.', emotion: 'illustrative' },
-                    { speaker: 'Arjuna', text: 'How does such a person see the world?', emotion: 'curious' },
-                    { speaker: 'Krishna', text: 'The humble sages, by virtue of true knowledge, see with equal vision a learned and gentle brahmana, a cow, an elephant, a dog and a dog-eater [outcaste].', emotion: 'enlightening' },
-                    { speaker: 'Arjuna', text: 'They see the divine in everyone?', emotion: 'awestruck' },
-                    { speaker: 'Krishna', text: 'Those whose minds are established in sameness and equanimity have already conquered the conditions of birth and death. They are flawless like Brahman, and thus they are already situated in Brahman.', emotion: 'affirming' },
-                    { speaker: 'Arjuna', text: 'How do they experience happiness?', emotion: 'inquisitive' },
-                    { speaker: 'Krishna', text: 'Such a liberated person is not attracted to material sense pleasure but is always in trance, enjoying the pleasure within. In this way the self-realized person enjoys unlimited happiness, for he concentrates on the Supreme.', emotion: 'descriptive' },
-                    { speaker: 'Arjuna', text: 'So external pleasures eventually lead to misery?', emotion: 'realizing' },
-                    { speaker: 'Krishna', text: 'An intelligent person does not take part in the sources of misery, which are due to contact with the material senses. O son of Kunti, such pleasures have a beginning and an end, and so the wise man does not delight in them.', emotion: 'wise' },
-                    { speaker: 'Arjuna', text: 'What is the nature of the peace they attain?', emotion: 'seeking' },
-                    { speaker: 'Krishna', text: 'A person in full consciousness of Me, knowing Me to be the ultimate beneficiary of all sacrifices and austerities, the Supreme Lord of all planets and demigods, and the benefactor and well-wisher of all living entities, attains peace from the pangs of material miseries.', emotion: 'conclusive' },
-                    { speaker: 'Arjuna', text: 'Is it the mind or the self that is truly acting?', emotion: 'philosophical' },
-                    { speaker: 'Krishna', text: 'When the embodied living being controls his nature and mentally renounces all actions, he resides happily in the city of nine gates [the material body], neither working nor causing work to be done.', emotion: 'profound' },
-                    { speaker: 'Arjuna', text: 'So true renunciation is an internal state, not just an external show?', emotion: 'understanding' },
-                    { speaker: 'Krishna', text: 'Exactly. One who is wise understands that the soul is aloof from the activities of the senses. He dedicates his actions to the divine and finds peace.', emotion: 'confirming' },
-                    { speaker: 'Arjuna', text: 'This path of selfless action seems superior and more practical.', emotion: 'resolved' },
-                    { speaker: 'Krishna', text: 'Indeed, it is. Engage in action, Arjuna, but with your mind fixed on the Supreme. This is the secret of true renunciation and lasting peace.', emotion: 'encouraging' }
+                    { speaker: 'Arjuna', text: 'O Krishna, first You praise the renunciation of actions (Sannyasa), and then again You praise selfless action (Karma Yoga). Please tell me decisively which one of these two is more beneficial.', emotion: 'confused' },
+                    { speaker: 'Krishna', text: 'Both the renunciation of action and the yoga of selfless action lead to the highest bliss; yet of the two, Karma Yoga is superior to the mere renunciation of action.', emotion: 'clarifying' },
+                    { speaker: 'Arjuna', text: 'Why is selfless action easier and more effective than renouncing work?', emotion: 'questioning' },
+                    { speaker: 'Krishna', text: 'Know him to be a true renunciant (nitya-sannyasi) who neither hates nor craves; free from dualities, O mighty-armed one, he is easily liberated from bondage. Mere renunciation, O mighty-armed Arjuna, is difficult to attain without yoga, whereas the sage united in yoga quickly reaches Brahman.', emotion: 'instructive' },
+                    { speaker: 'Arjuna', text: 'How does one act in the world without being bound by karma?', emotion: 'understanding' },
+                    { speaker: 'Krishna', text: 'One who performs actions offering them to Brahman and abandoning attachment is untouched by sin, just as a lotus leaf is untouched by water. The yogis perform actions with body, mind, intellect, and senses, abandoning attachment, purely for self-purification.', emotion: 'illustrative' },
+                    { speaker: 'Arjuna', text: 'How does the self-controlled soul dwell within the body?', emotion: 'philosophical' },
+                    { speaker: 'Krishna', text: 'Mentally renouncing all actions and self-controlled, the embodied soul dwells happily in the city of nine gates (the body), neither acting nor causing action.', emotion: 'profound' },
+                    { speaker: 'Arjuna', text: 'How does an enlightened sage view all living beings?', emotion: 'curious' },
+                    { speaker: 'Krishna', text: 'The wise see with equal vision a learned and humble brahmana, a cow, an elephant, a dog, and an outcaste.', emotion: 'enlightening' },
+                    { speaker: 'Arjuna', text: 'They see the same Divine presence in everyone?', emotion: 'awestruck' },
+                    { speaker: 'Krishna', text: 'Even here on earth, rebirth is conquered by those whose minds rest in equality; for Brahman is flawless and equal everywhere, and therefore they abide in Brahman.', emotion: 'affirming' },
+                    { speaker: 'Arjuna', text: 'Where does such a sage find true happiness?', emotion: 'inquisitive' },
+                    { speaker: 'Krishna', text: 'With the heart unattached to external sense contacts, one realizes the joy that is within the Self; united with Brahman in yoga, one enjoys imperishable bliss.', emotion: 'descriptive' },
+                    { speaker: 'Arjuna', text: 'Why do external sense pleasures fail to bring lasting peace?', emotion: 'realizing' },
+                    { speaker: 'Krishna', text: 'Pleasures born of contact with sense objects are indeed sources of sorrow; they have a beginning and an end, O son of Kunti, and the wise do not delight in them. One who finds happiness within, rejoices within, and is illumined within attains liberation in Brahman (Brahma-nirvana).', emotion: 'wise' },
+                    { speaker: 'Arjuna', text: 'How does one finally attain supreme peace?', emotion: 'seeking' },
+                    { speaker: 'Krishna', text: 'Knowing Me as the enjoyer of all sacrifices and austerities, the Supreme Lord of all worlds, and the selfless friend of all living beings, one attains eternal peace.', emotion: 'conclusive' }
                 ],
-                summary: "In this chapter, Arjuna asks Krishna to clarify which path is superior: the renunciation of work (Sannyasa) or work in devotion (Karma Yoga). Krishna explains that while both paths lead to liberation, Karma Yoga is more practical and effective for most people. He reveals that true renunciation is not the cessation of action, but the renunciation of attachment to the fruits of action. A person who acts without selfish desire, offering the results to the Supreme, is untouched by karma, like a lotus leaf in water. Krishna emphasizes that a self-realized soul sees all beings with equal vision and, by controlling the mind and senses, finds true happiness within.",
-                teachings: "Work in devotional service (Karma Yoga) is superior to the mere renunciation of work. True renunciation means giving up attachment to the fruits of labor, not the labor itself. A person who acts for the Supreme is not entangled in karmic reactions. The wise see all beings with an equal eye, recognizing the divine presence in everyone. Lasting peace and happiness are found not in external sense pleasures, but in the inner joy of the Self.",
-                moralLesson: "The secret to a happy and meaningful life is not to run away from your responsibilities, but to perform them with a selfless spirit. When you dedicate your actions to a higher purpose, you find freedom and peace, no matter what you do. True wisdom lies in seeing the divine in all and treating everyone with kindness and respect.",
-                kidsVersion: "Krishna teaches us that being a true hero isn't about quitting the game, but about playing with a good heart. Instead of always thinking, 'What's in it for me?', we should think about how we can help others. When we do our work to make the world a better place, we feel happy inside, and we don't get upset if things don't go our way. It's like being a superhero who finds joy in helping, not just in winning prizes!"
+                summary: "In this chapter, Arjuna asks Krishna to clarify which path is superior: the renunciation of work (Sannyasa) or work in devotion (Karma Yoga). Krishna explains that while both paths lead to liberation, Karma Yoga is more practical and effective. He reveals that true renunciation is not the cessation of action, but the renunciation of attachment to the fruits of action. A person who acts without selfish desire, offering the results to the Supreme, is untouched by karma, like a lotus leaf in water. Krishna emphasizes that a self-realized soul sees all beings with equal vision and, by knowing the Lord as the true friend of all beings, attains lasting peace.",
+                teachings: "Work in devotional service (Karma Yoga) is superior to the mere renunciation of work.\nTrue renunciation means giving up attachment to the fruits of labor, remaining untouched by sin like a lotus leaf in water.\nThe wise see all beings with an equal eye, recognizing the same divine presence in everyone.\nLasting peace is attained by finding joy within the Self and knowing the Lord as the Supreme Sovereign and selfless friend of all beings.",
+                moralLesson: "The secret to a happy and meaningful life is not to run away from your responsibilities, but to perform them with a selfless spirit. Treat every living being with equal respect and kindness, and look within yourself for true happiness rather than chasing temporary outer pleasures.",
+                kidsVersion: "Krishna teaches us that being a true hero isn't about quitting the game, but about playing with a kind and unselfish heart. Just like a lotus flower stays clean even in muddy water, our heart stays pure when we help others without being greedy. And because God lives in everyone's heart as their best friend, a wise person treats everyone—big or small—with equal love and kindness!"
             },
             
             6: {
                 title: "The Science of Self-Realization",
                 subtitle: "Dhyana Yoga - The Yoga of Meditation",
-                description: "The process of meditation and the discipline of the mind",
+                description: "The process of meditation, mastering the mind, and equal vision",
                 dialogue: [
-                    { speaker: 'Krishna', text: 'One who is unattached to the fruits of his work and who works as he is obligated is in the renounced order of life, and he is the true mystic.', emotion: 'defining' },
-                    { speaker: 'Arjuna', text: 'How does one elevate oneself through the mind?', emotion: 'curious' },
-                    { speaker: 'Krishna', text: 'One must deliver himself with the help of his mind, and not degrade himself. The mind is the friend of the conditioned soul, and his enemy as well.', emotion: 'instructive' },
-                    { speaker: 'Arjuna', text: 'For whom is the mind a friend, and for whom is it an enemy?', emotion: 'questioning' },
-                    { speaker: 'Krishna', text: 'For him who has conquered the mind, the mind is the best of friends; but for one who has failed to do so, his mind will remain the greatest enemy.', emotion: 'clarifying' },
-                    { speaker: 'Arjuna', text: 'How does one practice yoga meditation?', emotion: 'practical' },
-                    { speaker: 'Krishna', text: 'To practice yoga, one should go to a secluded place, lay a seat of kusa grass, deerskin and a soft cloth, and then, with a tranquil mind, practice yoga to purify the heart.', emotion: 'guiding' },
-                    { speaker: 'Arjuna', text: 'This seems very difficult. What about eating and sleeping?', emotion: 'concerned' },
-                    { speaker: 'Krishna', text: 'He who is regulated in his habits of eating, sleeping, recreation and work can mitigate all material pains by practicing the yoga system.', emotion: 'balanced' },
-                    { speaker: 'Arjuna', text: 'O Krishna, the mind is restless, turbulent, obstinate and very strong. To subdue it, I think, is more difficult than controlling the wind.', emotion: 'frustrated' },
-                    { speaker: 'Krishna', text: 'O mighty-armed son of Kunti, it is undoubtedly very difficult to curb the restless mind, but it is possible by suitable practice and by detachment.', emotion: 'encouraging' },
-                    { speaker: 'Arjuna', text: 'What is the destination of the unsuccessful yogi who begins with faith but then desists due to worldly-mindedness?', emotion: 'worried' },
-                    { speaker: 'Krishna', text: 'A transcendentalist engaged in auspicious activities does not meet with destruction either in this world or in the spiritual world; one who does good, My friend, is never overcome by evil.', emotion: 'reassuring' },
-                    { speaker: 'Arjuna', text: 'Where does he go after death?', emotion: 'inquisitive' },
-                    { speaker: 'Krishna', text: 'The unsuccessful yogi, after many, many years of enjoyment on the planets of the pious, is born into a family of righteous people, or into a family of rich aristocracy. By virtue of the divine consciousness of his previous life, he again revives the consciousness of his past life and tries to make further progress.', emotion: 'descriptive' },
-                    { speaker: 'Arjuna', text: 'So, no spiritual effort is ever wasted?', emotion: 'hopeful' },
-                    { speaker: 'Krishna', text: 'Indeed. And when the yogi engages himself with sincere endeavor in making further progress, being washed of all contaminations, then ultimately, achieving perfection after many, many births of practice, he attains the supreme goal.', emotion: 'promising' },
-                    { speaker: 'Arjuna', text: 'Who is the highest among all yogis?', emotion: 'seeking' },
-                    { speaker: 'Krishna', text: 'And of all yogis, the one with great faith who always abides in Me, thinks of Me within himself, and renders transcendental loving service to Me—he is the most intimately united with Me in yoga and is the highest of all. That is My opinion.', emotion: 'conclusive' },
-                    { speaker: 'Arjuna', text: 'I understand. The path is difficult, but with practice, detachment, and devotion, it is possible.', emotion: 'resolved' },
-                    { speaker: 'Krishna', text: 'Yes, Arjuna. A true yogi sees Me in all beings and all beings in Me. For such a person, I am never lost, nor are they ever lost to Me.', emotion: 'unifying' }
+                    { speaker: 'Krishna', text: 'One who performs his bounden duty without depending on the fruits of action—he is a true sannyasi and a true yogi, not one who merely gives up sacred fire or ceases from action.', emotion: 'defining' },
+                    { speaker: 'Arjuna', text: 'What is the role of one\'s own mind in spiritual elevation?', emotion: 'curious' },
+                    { speaker: 'Krishna', text: 'One should uplift oneself by one\'s own mind and never degrade oneself; for the mind alone is the friend of the self, and the mind alone is the enemy of the self. For one who has conquered the mind, the mind is the best of friends; but for one who has failed to do so, the mind acts like an enemy.', emotion: 'instructive' },
+                    { speaker: 'Arjuna', text: 'How should a yogi practice meditation in daily life?', emotion: 'practical' },
+                    { speaker: 'Krishna', text: 'Abiding in a clean and secluded place, establishing a firm seat neither too high nor too low, holding the body, head, and neck erect and still, and fixing the mind on Me with serene and fearless heart, the yogi should meditate and attain supreme peace.', emotion: 'guiding' },
+                    { speaker: 'Arjuna', text: 'Can yoga be practiced by going to extremes in eating or sleeping?', emotion: 'concerned' },
+                    { speaker: 'Krishna', text: 'Yoga is not for one who eats too much, nor for one who fasts excessively, nor for one who sleeps too much or stays awake too long, O Arjuna. For one who is moderate in eating and recreation, balanced in work, and regulated in sleep and wakefulness, yoga destroys all sorrow. As a lamp in a windless place does not flicker, so is the disciplined mind of a yogi absorbed in meditation on the Self.', emotion: 'balanced' },
+                    { speaker: 'Arjuna', text: 'What is the vision of a yogi who has achieved this union?', emotion: 'seeking' },
+                    { speaker: 'Krishna', text: 'With the mind harmonized by yoga, the yogi sees the Self abiding in all beings and all beings in the Self; he sees the same Divine presence everywhere. For one who sees Me everywhere and sees everything in Me, I am never lost, nor is he ever lost to Me.', emotion: 'unifying' },
+                    { speaker: 'Arjuna', text: 'O Madhusudana, because the mind is so restless, I do not see how this yoga of equanimity can be steadily maintained. The mind is restless, turbulent, obstinate, and very strong, O Krishna; I consider it as difficult to control as the wind!', emotion: 'frustrated' },
+                    { speaker: 'Krishna', text: 'Undoubtedly, O mighty-armed one, the mind is restless and difficult to curb; but by steady practice (Abhyasa) and detachment (Vairagya), O son of Kunti, it can be mastered.', emotion: 'encouraging' },
+                    { speaker: 'Arjuna', text: 'O Krishna, what becomes of one who has faith, yet whose mind wanders from yoga without reaching perfection? Does he perish like a riven cloud, fallen from both paths?', emotion: 'worried' },
+                    { speaker: 'Krishna', text: 'O Partha, neither in this world nor in the next is there destruction for him; for no one who does good, My dear friend, ever comes to an evil end!', emotion: 'reassuring' },
+                    { speaker: 'Arjuna', text: 'How does such a seeker continue his journey?', emotion: 'inquisitive' },
+                    { speaker: 'Krishna', text: 'Having attained the worlds of the righteous and dwelt there for many years, the fallen yogi is reborn in a pure and prosperous home, or even in a family of wise yogis. There he regains the spiritual wisdom of his previous life and strives even harder toward perfection, until purified of all taints across many births, he reaches the supreme goal.', emotion: 'descriptive' },
+                    { speaker: 'Arjuna', text: 'Who then is considered the greatest of all yogis?', emotion: 'seeking' },
+                    { speaker: 'Krishna', text: 'The yogi is superior to ascetics, superior to empiricists, and superior to fruitive workers; therefore, O Arjuna, be a yogi! And of all yogis, the one who worships Me with great faith, with his inner self absorbed in Me—him I consider to be the most intimately united with Me in yoga.', emotion: 'conclusive' }
                 ],
-                summary: "In this chapter, Krishna teaches Arjuna about Dhyana Yoga, the yoga of meditation. He explains that controlling the restless mind is indeed challenging but achievable through consistent practice and detachment. Krishna describes the proper way to practice meditation, including the physical setup and mental discipline required. He reassures Arjuna that even an unsuccessful yogi does not face destruction but is reborn in favorable circumstances to continue their spiritual journey. The chapter emphasizes that true yoga is attained when the mind is completely restrained from material activities and focused on the Supreme. Krishna reveals that the greatest yogi is one who worships Him with loving devotion.",
-                teachings: "Meditation requires a disciplined approach with proper physical setup and mental focus. Consistency in practice and detachment from material desires are essential for success in yoga. Even unsuccessful attempts at yoga bear fruit in future lives. True yoga is achieved when the mind is completely focused on the Supreme and free from material distractions. The highest form of yoga is devotional service to the Supreme Lord.",
-                moralLesson: "Self-discipline and perseverance are key to achieving any goal, especially spiritual ones. Even if we don't succeed completely in this lifetime, our efforts are never wasted. The practice of meditation and mindfulness helps us develop inner strength and equanimity that benefits us in all aspects of life. True success comes from dedication to a higher purpose rather than personal gain.",
-                kidsVersion: "Krishna teaches us that controlling our mind is like training a puppy. It's hard at first, but with practice, it gets easier. Even if we don't become perfect meditators right away, we're still learning something valuable. The best way to meditate is to think about God and how we can help others. When our mind wanders away (like when we get distracted during class), we should gently bring it back to our practice. It's like exercising - the more we do it, the stronger our mind becomes!"
+                summary: "In this chapter, Krishna teaches Arjuna Dhyana Yoga, the yoga of meditation and self-mastery. He explains how the mind can be either our greatest friend or our worst enemy, and outlines the balanced lifestyle and posture needed for meditation. When Arjuna confesses that the mind is as hard to control as the wind, Krishna reassures him that it can be mastered through steady practice (Abhyasa) and detachment (Vairagya). He also comforts Arjuna that no spiritual effort is ever lost, even after death, and concludes that the highest yogi is one whose heart is absorbed in loving devotion to the Lord.",
+                teachings: "A disciplined mind is the greatest friend of the soul, while an undisciplined mind is its greatest enemy.\nSuccess in meditation requires moderation and balance in eating, sleeping, work, and rest.\nThe restless mind is gradually mastered through consistent practice (Abhyasa) and detachment (Vairagya).\nNo sincere spiritual effort is ever wasted; even an unfinished spiritual journey resumes in the next birth.\nThe highest yogi sees the Divine in all beings and worships the Supreme Lord with unwavering faith and love.",
+                moralLesson: "Self-discipline, balance, and perseverance are the keys to mastering your own mind. Never be discouraged if progress feels slow—every good effort counts, and with steady practice and a loving heart, you will reach your goal.",
+                kidsVersion: "Arjuna told Krishna that trying to keep his mind still was as hard as catching the wind! Krishna smiled and said that training the mind is like training a playful puppy—if you practice a little bit every day with patience, your mind becomes your best friend. Plus, if you eat healthy, sleep well, and always remember God with love, not a single bit of your good effort is ever wasted!"
             },
             
             7: {
@@ -243,10 +229,10 @@ const bhagavadGitaData = {
                     { speaker: 'Arjuna', text: 'How can one be freed from this delusion?', emotion: 'hopeful' },
                     { speaker: 'Krishna', text: 'Persons who have acted piously in previous lives and in this life and whose sinful actions are completely eradicated are freed from the dualities of delusion, and they engage themselves in My service with determination.', emotion: 'conclusive' }
                 ],
-                summary: "Krishna explains the nature of absolute truth, revealing Himself as the origin of both the material and spiritual energies. He describes how everything in existence is a manifestation of His energy. He details the four types of people who come to Him and the four who do not, emphasizing that the one who knows Him in truth and serves Him with pure devotion is the most dear to Him. The chapter highlights that true knowledge (jnana) combined with realized knowledge (vijnana) leads to complete understanding and surrender.",
-                teachings: "The Supreme Lord is the source of all material and spiritual existence. The material world operates under the three modes of nature, which create illusion (maya). Surrendering to the Supreme Lord is the only way to overcome maya. There are four types of pious people who worship God, but the one who worships out of pure knowledge and love is the highest. True wisdom lies in recognizing the divine in all of creation.",
-                moralLesson: "Look for the divine spark in everything and everyone. True knowledge isn't just about knowing facts; it's about realizing the deep connection between yourself, the world, and the divine source of all. When you act with this understanding, you find true purpose and a love that is unconditional.",
-                kidsVersion: "Krishna teaches Arjuna that He is the secret ingredient in everything! He's the yummy taste in water, the bright light of the sun, and the sweet smell of a flower. Some people get distracted by shiny toys and forget about Krishna, but others, like the curious explorers and those who need help, always look for Him. Krishna says the best explorers are the ones who not only look for Him but also understand that He is in everything and everyone. They become His best friends forever!"
+                summary: "Krishna reveals the complete knowledge of the Absolute (Jnana and Vijnana), explaining that He is the supreme origin and sustainer of both material nature (Prakriti) and living souls (Jiva), upon whom the entire universe rests like pearls strung on a thread. He explains how the three modes of nature (Maya) delude the world, and how only those who surrender to Him cross beyond this illusion. Finally, He describes the four kinds of virtuous people who worship Him, praising the wise devotee (Jnani) as His very own Self.",
+                teachings: "The Supreme Lord is the origin and dissolution of the entire cosmos; everything rests upon Him like pearls strung on a thread.\nThe divine illusion consisting of the three modes of nature (Maya) is difficult to overcome, but those who surrender to the Lord easily cross beyond it.\nFour kinds of virtuous people worship God—the distressed, the seeker of truth, the seeker of prosperity, and the wise (Jnani).\nAmong all devotees, the wise soul who worships the Lord with single-minded love is the highest, realizing that Vasudeva is all.",
+                moralLesson: "Look for the divine presence behind all of nature—in the taste of water, the light of the sun and moon, and the strength of the noble. Combine knowledge with loving devotion to rise above worldly illusions.",
+                kidsVersion: "Krishna tells Arjuna that He is the hidden magic in everything around us—like the fresh taste in water, the bright shine of the sun and moon, and the thread that holds a necklace of pearls together! While some people get distracted, wise explorers see Krishna in everyone and love Him with all their hearts."
             },
             
             8: {
@@ -280,9 +266,9 @@ const bhagavadGitaData = {
                     { speaker: 'Krishna', text: 'A person who accepts the path of devotional service is not bereft of any results. Simply by performing devotional service, he attains all these, and at the end he reaches the supreme eternal abode.', emotion: 'conclusive' }
                 ],
                 summary: "In this chapter, Arjuna asks Krishna a series of fundamental questions about the nature of reality: What is Brahman, karma, the self, and the divine? Krishna answers these, explaining the concepts of the imperishable soul (Akshara) and the Supreme Lord (Brahma). The core of the chapter focuses on the importance of the state of mind at the time of death. Krishna emphasizes that whatever one remembers at the end of life determines their next destination. Therefore, He advises Arjuna to practice constant remembrance of Him (Bhakti Yoga) even while performing worldly duties. This ensures that one will attain the supreme abode and be freed from the cycle of birth and death.",
-                teachings: "The consciousness at the time of death is critical in determining the soul's next journey. Consistent spiritual practice (sadhana) throughout life is the key to remembering the Divine at the final moment. Devotional service (Bhakti Yoga) is the most effective means to purify the consciousness and fix the mind on the Supreme. The material world is temporary and a place of suffering, while the spiritual world is eternal and blissful. A true devotee transcends the dualities of auspicious and inauspicious times, as their destination is assured by their devotion.",
-                moralLesson: "What you fill your mind with today determines who you become tomorrow, and ultimately, where you go in the great journey of life. Practice remembering what is truly important—love, truth, and the divine—so that in the final exam of life, you pass with flying colors and reach a state of eternal peace.",
-                kidsVersion: "Krishna tells Arjuna a secret: whatever you think about the most is what you'll remember when it's time to go on a big journey to the next life. So, if you think about your favorite toys, you might dream of toys. But if you think about God, you get to go to God's super-duper happy home! Krishna says the best way to remember God is to be like a superhero who always thinks about helping others and being good, even while playing and having fun. That way, you're always connected to the best and happiest place in the whole universe!"
+                teachings: "The state of consciousness at the hour of death determines the soul's next destination.\nConstant remembrance of the Lord throughout life while performing one's duties (Mam anusmara yudhya ca) ensures union with the Supreme.\nAll material realms up to the abode of Brahma are subject to rebirth, but one who reaches the Lord's supreme eternal abode never returns to sorrow.\nA steadfast yogi who practices unalloyed devotion transcends the paths of light and darkness and attains the supreme goal.",
+                moralLesson: "What you fill your mind and heart with every day shapes who you become. Cultivate constant remembrance of the Divine alongside your daily duties so that your heart remains anchored in eternal peace.",
+                kidsVersion: "Krishna shares a wonderful secret with Arjuna: whatever we practice thinking about with love every day stays in our heart forever! So Krishna tells Arjuna, 'Always remember Me in your heart while doing your good work.' When we keep God in our thoughts while studying, playing, and helping others, our heart is always connected to God's eternal, happy home!"
             },
             
             9: {
@@ -310,74 +296,75 @@ const bhagavadGitaData = {
                     { speaker: 'Arjuna', text: 'Do you favor some devotees over others?', emotion: 'inquiring' },
                     { speaker: 'Krishna', text: 'I envy no one, nor am I partial to anyone. I am equal to all. But whoever renders service unto Me in devotion is a friend, is in Me, and I am also a friend to him.', emotion: 'impartial' },
                     { speaker: 'Arjuna', text: 'What is your final instruction in this most confidential knowledge?', emotion: 'attentive' },
-                    { speaker: 'Krishna', text: 'Always think of Me, become My devotee, worship Me and offer your homage unto Me. Thus you will come to Me without fail. I promise you this because you are My very dear friend.', emotion: 'loving' }
+                    { speaker: 'Krishna', text: 'Engage your mind always in thinking of Me, become My devotee, worship Me, and offer your homage unto Me. Being completely absorbed in Me, with Me as your supreme goal, you will surely come to Me.', emotion: 'loving' }
                 ],
-                summary: "In this chapter, Krishna reveals the most confidential knowledge of pure devotional service (bhakti yoga). He explains that this knowledge is the king of all education and the most secret of all secrets. Krishna describes the different types of devotees and emphasizes that those who engage in pure devotional service with love and faith are most dear to Him. He explains that even simple offerings made with devotion are accepted by Him. The chapter highlights that this knowledge leads to liberation from the cycle of birth and death and enables one to attain Krishna's eternal abode.",
-                teachings: "Pure devotional service is the highest form of spiritual practice. Krishna accepts even simple offerings made with love and devotion. Those who engage in devotional service with faith and love are very dear to Krishna. This most confidential knowledge leads to liberation and the attainment of Krishna's eternal abode. Devotion is more important than the opulence of offerings.",
-                moralLesson: "True devotion is not about how much we give, but about the love and sincerity with which we give. Even the simplest offering made with a pure heart is more valuable than the most elaborate gift given without love. Developing a personal relationship with the divine through devotion brings the highest fulfillment.",
-                kidsVersion: "Krishna tells Arjuna that the best secret in the whole world is how to be His best friend forever! It's not about giving Him expensive gifts, but about loving Him with all your heart. Even if you give Him just a simple flower or a leaf, He's super happy if you give it with love. Krishna says that the most important thing is to think about Him, be His friend, and do everything for Him. That way, you become His very special friend and get to live with Him in the happiest place ever!"
+                summary: "In this chapter, Krishna reveals the most confidential knowledge (Raja Vidya, Raja Guhya) of pure devotional service (Bhakti Yoga). He explains how He pervades and sustains the entire universe while remaining transcendental to it. Krishna contrasts those deluded by material nature with great souls (Mahatmas) who worship Him with single-minded love. He declares that He accepts even the simplest offering—a leaf, a flower, a fruit, or water—when offered with a pure and loving heart, and promises that no devotee of His ever perishes, regardless of birth or background.",
+                teachings: "Pure devotional service (Bhakti Yoga) is the king of all knowledge, directly realizable and joyful to practice.\nThe Supreme Lord pervades and sustains the entire cosmos, yet remains independent and unattached.\nGod looks not at the material cost of an offering, but at the love and devotion behind a leaf, flower, fruit, or water.\nThe Lord is equal to all beings, yet whoever worships Him with devotion abides in Him, and His devotee never perishes.",
+                moralLesson: "True devotion is measured not by wealth or grand displays, but by the sincerity and love in your heart. Dedicate your daily actions as a humble offering to the Divine, knowing that everyone is equally welcome in God's grace.",
+                kidsVersion: "Krishna shares the greatest secret of all: how to be close to God forever! You don't need expensive gifts—even if you offer just one little leaf, a flower, a piece of fruit, or a cup of water with love in your heart, Krishna happily accepts it! He promises that He loves everyone equally and will always take care of His friends."
             },
             10: {
                 title: 'The Opulence of the Absolute',
                 subtitle: 'Vibhuti Yoga - The Divine Glories',
                 description: 'Krishna reveals His divine manifestations in the material and spiritual worlds',
                 dialogue: [
-                    { speaker: 'Krishna', text: 'Listen again, O mighty-armed Arjuna. Because you are My dear friend, for your benefit I shall speak to you further, giving knowledge that is better than what I have already explained.', emotion: 'affectionate' },
-                    { speaker: 'Arjuna', text: 'You are the Supreme Lord, the origin of all. Neither the hosts of demigods nor the great sages know Your origin. Please describe in detail Your divine opulences by which You pervade all these worlds.', emotion: 'devotional' },
-                    { speaker: 'Krishna', text: 'I am the source of all spiritual and material worlds. Everything emanates from Me. The wise who know this perfectly engage in My devotional service and worship Me with all their hearts.', emotion: 'foundational' },
-                    { speaker: 'Arjuna', text: 'How shall I constantly think of You and how shall I know You? In what various forms are You to be remembered, O Supreme Person?', emotion: 'inquisitive' },
-                    { speaker: 'Krishna', text: 'I will tell you of My splendorous manifestations, but only of those which are prominent, O Arjuna, for My opulence is limitless.', emotion: 'revealing' },
-                    { speaker: 'Arjuna', text: 'I am listening with rapt attention.', emotion: 'attentive' },
-                    { speaker: 'Krishna', text: 'I am the Self, O Gudakesha, seated in the hearts of all creatures. I am the beginning, the middle and the end of all beings.', emotion: 'immanent' },
-                    { speaker: 'Arjuna', text: 'And among the divine beings?', emotion: 'curious' },
-                    { speaker: 'Krishna', text: 'Of the Adityas I am Vishnu, of lights I am the radiant sun, of the Maruts I am Marici, and among the stars I am the moon.', emotion: 'illustrious' },
-                    { speaker: 'Arjuna', text: 'In the Vedas and senses?', emotion: 'exploring' },
-                    { speaker: 'Krishna', text: 'Of the Vedas I am the Sama Veda; of the demigods I am Indra, the king of heaven; of the senses I am the mind; and in living beings I am the living force [consciousness].', emotion: 'essential' },
-                    { speaker: 'Arjuna', text: 'Among the great forces and beings?', emotion: 'awestruck' },
-                    { speaker: 'Krishna', text: 'Of the Rudras I am Lord Shiva, of the Yaksas and Raksasas I am the Lord of wealth [Kuvera], of the Vasus I am fire [Agni], and of mountains I am Meru.', emotion: 'majestic' },
-                    { speaker: 'Arjuna', text: 'Among priests and generals?', emotion: 'analytical' },
-                    { speaker: 'Krishna', text: 'Of priests, O Arjuna, know Me to be the chief, Brhaspati. Of generals I am Kartikeya, and of bodies of water I am the ocean.', emotion: 'preeminent' },
-                    { speaker: 'Arjuna', text: 'Your manifestations are truly the best of everything.', emotion: 'understanding' },
-                    { speaker: 'Krishna', text: 'Among the great sages I am Bhrgu; among vibrations I am the transcendental om. Of sacrifices I am the chanting of the holy names [japa], and of immovable things I am the Himalayas.', emotion: 'supreme' },
-                    { speaker: 'Arjuna', text: 'Among all trees and celestial beings?', emotion: 'wondering' },
-                    { speaker: 'Krishna', text: 'Of all trees I am the banyan tree, and of the sages among the demigods I am Narada. Of the Gandharvas I am Citraratha, and among perfected beings I am the sage Kapila.', emotion: 'omnipresent' },
-                    { speaker: 'Arjuna', text: 'It is impossible to comprehend all your opulences.', emotion: 'overwhelmed' },
-                    { speaker: 'Krishna', text: 'Know that all opulent, beautiful and glorious creations spring from but a spark of My splendor. But what need is there, Arjuna, for all this detailed knowledge? With a single fragment of Myself I pervade and support this entire universe.', emotion: 'conclusive' }
+                    { speaker: 'Krishna', text: 'Listen again, O mighty-armed Arjuna. Because you are dear to Me, wishing your welfare, I shall speak to you further this supreme word. Neither the hosts of gods nor the great sages know My origin, for I am the source of all the gods and great sages in every way.', emotion: 'affectionate' },
+                    { speaker: 'Krishna', text: 'I am the origin of all; from Me everything evolves. Understanding this, the wise worship Me with hearts full of loving devotion. With their minds fixed on Me and their lives surrendered to Me, enlightening one another and speaking of Me always, they are ever content and rejoice in Me.', emotion: 'foundational' },
+                    { speaker: 'Arjuna', text: 'You are the Supreme Brahman, the ultimate abode, the purest of the pure, the Eternal Divine Person, the Primal God, unborn and all-pervading! All the sages—Narada, Asita, Devala, and Vyasa—declare this of You, and now You Yourself declare it to me.', emotion: 'devotional' },
+                    { speaker: 'Arjuna', text: 'Please tell me in full of Your divine glories (Vibhutis) by which You pervade and abide in all these worlds. How may I know You, O Yogin, by constant meditation, and in what various forms are You to be contemplated by me, O Blessed Lord?', emotion: 'inquisitive' },
+                    { speaker: 'Krishna', text: 'Indeed, I shall declare to you My divine manifestations, O best of the Kurus, but only those that are prominent, for there is no end to My vast expanse.', emotion: 'revealing' },
+                    { speaker: 'Arjuna', text: 'I am listening with rapt attention, O Janardana, for I am never satiated hearing Your nectar-like words.', emotion: 'attentive' },
+                    { speaker: 'Krishna', text: 'I am the Self, O Gudakesha, seated in the hearts of all beings. I am the beginning, the middle, and also the end of all beings.', emotion: 'immanent' },
+                    { speaker: 'Arjuna', text: 'And among the luminous and celestial beings?', emotion: 'curious' },
+                    { speaker: 'Krishna', text: 'Among the Adityas I am Vishnu; among lights I am the radiant sun; among the Maruts I am Marici; and among the stars I am the moon.', emotion: 'illustrious' },
+                    { speaker: 'Arjuna', text: 'In the Vedas, the gods, and the faculties of life?', emotion: 'exploring' },
+                    { speaker: 'Krishna', text: 'Of the Vedas I am the Sama Veda; of the gods I am Indra; of the senses I am the mind; and in living beings I am consciousness.', emotion: 'essential' },
+                    { speaker: 'Arjuna', text: 'Among the mighty forces of nature?', emotion: 'awestruck' },
+                    { speaker: 'Krishna', text: 'Among the Rudras I am Shankara (Lord Shiva); among Yakshas and Rakshasas I am Kubera, the lord of wealth; among the Vasus I am Agni (fire); and among mountain peaks I am Meru.', emotion: 'majestic' },
+                    { speaker: 'Arjuna', text: 'Among spiritual preceptors, commanders, and waters?', emotion: 'analytical' },
+                    { speaker: 'Krishna', text: 'Of priests, O Partha, know Me to be the chief, Brihaspati; of army commanders I am Skanda (Kartikeya); and of bodies of water I am the ocean.', emotion: 'preeminent' },
+                    { speaker: 'Arjuna', text: 'And among sages, sacred utterances, sacrifices, and mountains?', emotion: 'understanding' },
+                    { speaker: 'Krishna', text: 'Among the great sages I am Bhrigu; of utterances I am the single syllable Om; of sacrifices I am the silent chanting of holy names (Japa-yajna); and of immovable things I am the Himalaya.', emotion: 'supreme' },
+                    { speaker: 'Arjuna', text: 'Among trees, celestial sages, and perfected beings?', emotion: 'wondering' },
+                    { speaker: 'Krishna', text: 'Of all trees I am the sacred Ashvattha tree; of divine sages I am Narada; of Gandharvas I am Citraratha; and among perfected beings I am the sage Kapila. Among weapons I am the thunderbolt, among wielders of weapons I am Lord Rama, and among flowing rivers I am the sacred Ganga.', emotion: 'omnipresent' },
+                    { speaker: 'Arjuna', text: 'Truly Your divine glories are limitless!', emotion: 'overwhelmed' },
+                    { speaker: 'Krishna', text: 'Whatever being there is that is glorious, prosperous, or powerful—know that to have sprung from a spark of My splendor. But what need is there for all this detailed knowledge, O Arjuna? With a single fragment of Myself, I support and pervade this entire universe.', emotion: 'conclusive' }
                 ],
-                summary: "In this chapter, Krishna explains that He is the source of all creation and that all opulent, beautiful, and glorious things are but a spark of His divine splendor. He provides numerous examples of His manifestations in the world, encouraging Arjuna to see Him everywhere.",
-                teachings: "The entire universe is a manifestation of the Divine. We can connect with God by recognizing His presence in the excellence of the world around us. True wisdom lies in understanding that a single fragment of the Divine pervades and supports all of existence.",
-                moralLesson: "Look for the best in everything and everyone, and you will see a reflection of the Divine. Cultivating an awareness of God's presence in the world can transform our perception and fill our lives with reverence and wonder.",
-                kidsVersion: "Imagine the best of everything: the strongest lion, the brightest star, the tallest mountain. Krishna explains that He is the 'best' in every group. So, whenever you see something amazing, you're seeing a little piece of God's magic!"
+                summary: "In this chapter, Lord Krishna reveals that He is the unborn origin of all gods, sages, and worlds (the famous Chatur-shloki Gita, 10.8–11). Filled with awe, Arjuna asks Krishna to describe His divine glories (Vibhutis) so he may remember Him everywhere. Krishna names His prominent manifestations across creation—from the Self in every heart, the sun, moon, Sama Veda, Lord Shiva, and the syllable Om to the Himalayas, the Ganga, and Lord Rama—and concludes that the entire cosmos is sustained by just a single spark of His infinite splendor.",
+                teachings: "The Supreme Lord is the origin of all spiritual and material worlds; the wise worship Him with love and enlighten one another.\nOut of compassion, the Lord dwells within the heart and destroys the darkness of ignorance with the lamp of wisdom.\nEvery extraordinary, beautiful, and glorious manifestation in creation is a reflection of a spark of Divine splendor.\nThe entire universe is pervaded and supported by a single fraction of the Supreme Being.",
+                moralLesson: "Whenever you witness greatness, beauty, wisdom, or strength anywhere in nature or humanity, recognize it as a reflection of the Divine rather than a source of ego. Seeing God's presence in all excellence fills life with humility and wonder.",
+                kidsVersion: "Arjuna asked Krishna, 'How can I see You in the world around me?' Krishna explained that whenever you see the brightest, strongest, and most wonderful things—like the shining sun, the glowing moon, the mighty Himalaya mountains, the sacred river Ganga, or the bravest lion—you are seeing a little spark of God's amazing power!"
             },
             
             11: {
                 title: 'The Universal Form',
                 subtitle: 'Vishvarupa Darshana Yoga - The Cosmic Vision',
-                description: 'Krishna grants Arjuna divine vision and reveals His spectacular, terrifying universal form',
+                description: 'Krishna grants Arjuna divine vision and reveals His awe-inspiring Cosmic Form',
                 dialogue: [
-                    { speaker: 'Arjuna', text: 'My illusion is now gone. I have heard from You in detail about the appearance and disappearance of every living entity. O greatest of all personalities, O supreme form, though I see You here before me in Your actual position, as You have described Yourself, I wish to see how You have entered into this cosmic manifestation. I want to see that form of Yours.', emotion: 'reverent' },
-                    { speaker: 'Krishna', text: 'My dear Arjuna, you cannot see Me with your present eyes. Therefore I give you divine eyes. Behold My mystic opulence!', emotion: 'granting' },
-                    { speaker: 'Arjuna', text: 'O Lord of the universe, O universal form, I see in Your body many, many arms, bellies, mouths and eyes, expanded everywhere, without limit. I see in You no end, no middle and no beginning.', emotion: 'awestruck' },
-                    { speaker: 'Krishna', text: 'Behold My hundreds of thousands of varied divine and multicolored forms.', emotion: 'magnificent' },
-                    { speaker: 'Arjuna', text: 'I see all the demigods and various other living entities assembled in Your body. I see Lord Brahma sitting on the lotus flower, as well as Lord Shiva and all the sages and divine serpents.', emotion: 'overwhelmed' },
-                    { speaker: 'Krishna', text: 'Whatever you wish to see, behold at once in this body of Mine! You can see whatever you may wish to see in the future. Everything—moving and nonmoving—is here completely, in one place.', emotion: 'all-encompassing' },
-                    { speaker: 'Arjuna', text: 'O Lord, your form is difficult to see because of its glaring effulgence, spreading on all sides, like blazing fire or the immeasurable radiance of the sun. Yet I see this glowing form everywhere.', emotion: 'dazzled' },
-                    { speaker: 'Krishna', text: 'I am the original source, the inexhaustible, the oldest; I am the maintainer of eternal religion, the Personality of Godhead.', emotion: 'foundational' },
-                    { speaker: 'Arjuna', text: 'I see all the sons of Dhrtarastra, along with their allied kings, and Bhisma, Drona, Karna—and our chief soldiers as well—rushing into Your fearful mouths. And some I see trapped with heads smashed between Your teeth.', emotion: 'terrified' },
-                    { speaker: 'Krishna', text: 'Therefore get up. Prepare to fight and win glory. Conquer your enemies and enjoy a flourishing kingdom. They are already put to death by My arrangement, and you, O Savyasaci, can be but an instrument in the fight.', emotion: 'commanding' },
-                    { speaker: 'Arjuna', text: 'O Lord of lords, so fierce of form, please tell me who You are.', emotion: 'fearful' },
-                    { speaker: 'Krishna', text: 'I am the Supreme Personality of Godhead, the Absolute Truth, the source of all creation. I am the eternal, the imperishable, the beginning and the end of all beings. I am time, the great destroyer of worlds, and I have come here to destroy all people. With the exception of you [the Pandavas], all the soldiers here on both sides will be slain.', emotion: 'reveling' },
-                    { speaker: 'Arjuna', text: 'After seeing this universal form, which I have never seen before, I am gladdened, but at the same time my mind is disturbed with fear. Please bestow Your grace upon me and reveal again Your form as the Personality of Godhead.', emotion: 'pleading' },
-                    { speaker: 'Krishna', text: 'It is only by unalloyed devotional service that I can be understood as I am, standing before you, and can be seen directly.', emotion: 'instructive' },
-                    { speaker: 'Arjuna', text: 'O Krishna, seeing this beautiful human-like form of Yours, I am now pacified and have returned to my normal state of mind.', emotion: 'relieved' },
-                    { speaker: 'Krishna', text: 'My dear Arjuna, he who engages in My pure devotional service, free from the contaminations of fruitive activities and mental speculation, he who works for Me, who makes Me the supreme goal of his life, and who is friendly to every living being—he certainly comes to Me.', emotion: 'conclusive' },
-                    { speaker: 'Arjuna', text: 'My illusion is gone. I am now firm and free from doubt. I am prepared to act according to your instructions.', emotion: 'resolved' },
-                    { speaker: 'Krishna', text: 'Wherever there is Krishna, the master of all mystics, and wherever there is Arjuna, the supreme archer, there will also certainly be opulence, victory, extraordinary power, and morality.', emotion: 'promising' }
+                    { speaker: 'Arjuna', text: 'By this supreme secret concerning the Self, which You have spoken out of compassion for me, my delusion is dispelled. O Supreme Lord, just as You have described Yourself, I wish to behold Your divine cosmic form! If You think it can be seen by me, O Lord of Yoga, then reveal to me Your imperishable Self.', emotion: 'reverent' },
+                    { speaker: 'Krishna', text: 'Behold, O Partha, My forms by the hundreds and thousands—varied, divine, and of multifarious colors and shapes! Behold the Adityas, Vasus, Rudras, Ashvins, and Maruts, and many wonders never seen before. Behold today the entire universe, moving and unmoving, standing together in one place within My body!', emotion: 'magnificent' },
+                    { speaker: 'Krishna', text: 'But you cannot see Me with these physical eyes of yours; therefore I grant you divine vision. Behold My supreme mystic power!', emotion: 'granting' },
+                    { speaker: 'Sanjaya', text: 'O King, having spoken thus, Hari, the great Lord of Yoga, revealed to Partha His supreme cosmic form—with countless mouths and eyes, wondrous sights, divine ornaments, and uplifted celestial weapons. If the radiance of a thousand suns were to burst forth at once in the sky, that would be like the splendor of that Mighty One!', emotion: 'awestruck' },
+                    { speaker: 'Arjuna', text: 'O Lord, in Your body I behold all the gods and hosts of varied beings, Lord Brahma seated on the lotus, Lord Shiva, all the great sages, and celestial serpents! I see You with infinite arms, bellies, mouths, and eyes on every side; I see in You neither end, nor middle, nor beginning, O Lord of the universe, O Universal Form!', emotion: 'awestruck' },
+                    { speaker: 'Arjuna', text: 'I behold You wearing diadems, wielding maces and discs, a mass of radiance shining everywhere, blazing like fire and the sun, immeasurable and hard to look upon. You are the Imperishable, the Supreme to be known, the ultimate resting place of this universe, the undying guardian of eternal Dharma!', emotion: 'dazzled' },
+                    { speaker: 'Arjuna', text: 'Seeing Your mighty form with many mouths and eyes, many arms, thighs, and feet, and dreadful tusks blazing like the fires of cosmic dissolution, the three worlds are trembling with fear, and so am I! O Vishnu, seeing You touching the sky, radiant in many colors, with mouths wide open and fiery eyes, my heart is shaken and I find neither courage nor peace!', emotion: 'fearful' },
+                    { speaker: 'Arjuna', text: 'All these sons of Dhritarashtra, together with hosts of kings, Bhishma, Drona, and Karna, along with our own chief warriors, are rushing headlong into Your terrifying, fanged mouths! As the torrents of many rivers rush toward the ocean, or as moths fly swiftly into a blazing fire to perish, so do these warriors enter Your flaming mouths to their destruction.', emotion: 'terrified' },
+                    { speaker: 'Arjuna', text: 'Tell me who You are, so fierce of form! Salutations to You, O Supreme God; have mercy! I wish to know You, the Primal One, for I do not comprehend Your purpose.', emotion: 'pleading' },
+                    { speaker: 'Krishna', text: 'I am mighty Time (Kala), the great destroyer of worlds, engaged here in sweeping away the worlds. Even without you, none of the warriors arrayed in the opposing armies shall survive.', emotion: 'revealing' },
+                    { speaker: 'Krishna', text: 'Therefore arise and win glory! Conquer your enemies and enjoy a flourishing kingdom. By Me alone have they already been slain long ago; be merely an instrument, O Savyasachin! Slay Drona, Bhishma, Jayadratha, Karna, and the other heroic warriors who are already doomed by Me. Do not be distressed; fight, and you shall conquer your foes in battle!', emotion: 'commanding' },
+                    { speaker: 'Sanjaya', text: 'Hearing these words of Keshava, the crowned Arjuna, trembling and with joined palms, bowed down again and again and spoke to Krishna in a choked voice, overwhelmed with awe.', emotion: 'observant' },
+                    { speaker: 'Arjuna', text: 'Rightly O Hrishikesha does the world rejoice and delight in glorifying You! You are the Father of the moving and unmoving world, its venerable Teacher. Thinking of You merely as a friend, whatever I said rashly out of carelessness or affection—"O Krishna, O Yadava, O friend!"—not knowing Your greatness, I implore You, the Immeasurable One, to forgive me, as a father forgives a son!', emotion: 'apologetic' },
+                    { speaker: 'Arjuna', text: 'Having seen what was never seen before, I am thrilled with joy, yet my mind trembles with fear. Please show me again that gentle form of Yours, O Lord of gods, O abode of the universe!', emotion: 'pleading' },
+                    { speaker: 'Krishna', text: 'By My grace, O Arjuna, this supreme, radiant, universal, and infinite form has been shown to you—a form never seen by anyone before you. Be neither afraid nor bewildered at seeing this terrible form of Mine; free from fear and with a gladdened heart, behold once again My gentle form!', emotion: 'compassionate' },
+                    { speaker: 'Sanjaya', text: 'Having spoken thus to Arjuna, Vasudeva revealed again His own four-armed and then gentle human-like form, consoling the terrified Pandava.', emotion: 'serene' },
+                    { speaker: 'Arjuna', text: 'O Janardana, beholding again this gentle human form of Yours, my mind is now composed and I am restored to my natural state.', emotion: 'relieved' },
+                    { speaker: 'Krishna', text: 'This form of Mine which you have seen is very difficult to behold; even the gods ever long to see it. Neither by the Vedas, nor by austerity, nor by charity, nor by ritual sacrifice can I be seen as you have seen Me. Only by single-minded devotion (Ananya-bhakti), O Arjuna, can I be known, truly seen, and entered into.', emotion: 'instructive' },
+                    { speaker: 'Krishna', text: 'One who performs actions for Me, regards Me as the supreme goal, is devoted to Me, is free from attachment, and bears no malice toward any creature—such a person comes to Me, O Pandava!', emotion: 'conclusive' }
                 ],
-                summary: "Arjuna asks to see Krishna's universal form. Krishna grants him divine vision and reveals a terrifying, all-encompassing cosmic manifestation. This vision shows Krishna as Time, the destroyer of all, confirming that the outcome of the war is already determined by divine will.",
-                teachings: "The universal form reveals the absolute power and all-encompassing nature of the Divine. It teaches that we are all instruments in a larger cosmic plan. True understanding of God comes not from intellectual study but from pure devotion.",
-                moralLesson: "Sometimes, facing the raw power of reality can be terrifying, but it helps us understand our place in the universe. True strength comes from surrendering to a higher purpose and acting as an instrument for good.",
-                kidsVersion: "Arjuna asked Krishna to show him his super-duper, all-powerful form. Krishna showed him a giant vision with everything in the universe inside it! It was a bit scary, like a big thunderstorm, but it showed Arjuna that Krishna was in charge of everything and that he shouldn't be afraid to do the right thing."
+                summary: "At Arjuna's earnest request, Lord Krishna bestows divine vision upon him and reveals His awe-inspiring Universal Form (Vishvarupa), containing the entire cosmos, all gods, sages, and beings within One infinite body. Overwhelmed by both wonder and terror as he sees the warriors of both armies rushing into the blazing mouths of Cosmic Time (Kala), Arjuna asks who this fierce form is. Krishna declares that He is Time, the destroyer of worlds, and urges Arjuna to become His instrument (Nimitta-matram). Humbled, Arjuna begs forgiveness for treating Krishna casually as a mere friend and asks to see His gentle form again. Returning to His graceful form, Krishna concludes that only through pure, single-minded devotion and compassion toward all beings can He be truly known and attained.",
+                teachings: "The entire universe—past, present, and future—exists within the one infinite Universal Form of the Supreme Lord.\nAs Mighty Time (Kala), the Divine governs cosmic destiny; human beings are called to act selflessly as instruments of Dharma (Nimitta-matram).\nNot by Vedic study, penance, or charity alone, but only through unalloyed loving devotion (Ananya-bhakti) can the Lord be directly experienced.\nOne who works for the Lord, makes Him the supreme goal, is free from selfish attachment, and is friendly toward all living beings attains Him.",
+                moralLesson: "Realizing the vastness of the universe and the supreme power of the Divine humbles our ego and frees us from fear. Act as a dedicated instrument for righteousness, remain humble, and hold no hatred toward any living being.",
+                kidsVersion: "Arjuna asked to see Krishna's cosmic form, so Krishna gave him special divine eyes! Suddenly, Arjuna saw the whole universe—stars, planets, mountains, gods, and time itself—shining inside Krishna like a thousand suns! It was so huge and powerful that Arjuna asked Krishna to turn back into his gentle, smiling friend. Krishna did, and taught Arjuna that the best way to know God is through pure love and by being kind to every living creature."
             },
             
             12: {
@@ -410,10 +397,10 @@ const bhagavadGitaData = {
                     { speaker: 'Arjuna', text: 'It is a high standard to achieve.', emotion: 'humbled' },
                     { speaker: 'Krishna', text: 'Those who follow this imperishable path of devotional service and who completely engage themselves with faith, making Me the supreme goal, are very, very dear to Me.', emotion: 'conclusive' }
                 ],
-                summary: "Arjuna asks whether it is better to worship God in a personal form or as the formless Absolute. Krishna declares that while both paths lead to Him, the path of loving devotion (Bhakti Yoga) to His personal form is the most direct and suitable for most people. He then describes the wonderful qualities of a true devotee.",
-                teachings: "Devotion to a personal form of God is the easiest and most effective path for spiritual realization. God is accessible to all, and we can start our journey from wherever we are. Cultivating qualities like kindness, tolerance, and equanimity is a key part of spiritual life.",
-                moralLesson: "It's easier to love a person than an idea. Connecting with God through a personal relationship, filled with love and service, can make the spiritual journey joyful and fulfilling. The goal is not just to know about God, but to love God.",
-                kidsVersion: "Arjuna asked, 'What's the best way to love God?' Krishna said, 'Imagine God is your best friend. It's easier to love a friend you can picture and talk to, right?' He also said that the best devotees are kind to everyone, don't get upset easily, and are happy to share."
+                summary: "Arjuna asks whether it is better to worship the Supreme Lord in His personal form or as the unmanifest, imperishable Brahman. Krishna declares that while both paths reach Him, worshiping His personal form with steadfast faith and loving devotion (Bhakti Yoga) is the most direct and accessible path for embodied souls. He then outlines progressive steps of spiritual practice and describes the thirty-five endearing virtues of a true devotee—such as non-enviousness, universal friendship, compassion, humility, and equanimity—who is supremely dear to Him.",
+                teachings: "Those who fix their minds on the personal form of the Lord and worship Him with supreme faith are considered the highest yogis.\nIf one cannot fix the mind steadily on God, one should practice regulated devotion, dedicate one's work to Him, or renounce attachment to the fruits of action.\nA true devotee bears malice toward none, is friendly and compassionate to all beings, and is free from possessiveness and ego.\nRemaining balanced in joy and sorrow, praise and blame, heat and cold, such a faithful devotee is exceedingly dear to the Lord.",
+                moralLesson: "True devotion shines through how we treat others—with kindness, forgiveness, humility, and calm steadiness in both praise and criticism. Love God wholeheartedly and be a gentle friend to every living being.",
+                kidsVersion: "Arjuna asked, 'What is the best way to worship God?' Krishna explained that loving God with all your heart is the sweetest and easiest path! He also shared what makes someone God's dearest friend: never hurting anyone, being kind and forgiving to all, staying calm when things are tough, and always being cheerful and content."
             },
             
             13: {
@@ -448,10 +435,10 @@ const bhagavadGitaData = {
                     { speaker: 'Arjuna', text: 'This knowledge seems to be the key to freedom.', emotion: 'resolved' },
                     { speaker: 'Krishna', text: 'Those who see with eyes of knowledge the difference between the body and the knower of the body, and can also understand the process of liberation from bondage in material nature, attain to the supreme goal.', emotion: 'conclusive' }
                 ],
-                summary: 'Krishna explains the distinction between matter and spirit, the field of activities and its knower, and how knowledge leads to liberation.',
-                teachings: 'The body is the field of activities, and the soul is the knower. The Supersoul is present in every heart. By understanding this knowledge and serving the Divine, one transcends material conditioning.',
-                moralLesson: 'We are not our bodies but eternal souls. Understanding this helps us treat everyone equally and not be too attached to temporary things.',
-                kidsVersion: 'Krishna taught that we are not our body but the soul inside. Just like we are not our clothes, we are not our body. God lives in everyone\'s heart as a friend.'
+                summary: 'In response to Arjuna\'s inquiry about Prakriti (nature), Purusha (the soul), Kshetra (the field), Kshetrajna (the knower of the field), Jnana (knowledge), and Jneya (the object of knowledge), Lord Krishna explains that the physical and subtle body is the field, while the soul—and ultimately the Supreme Lord (Paramatma) dwelling in every heart—is the Knower of the field. He defines true knowledge through twenty virtues beginning with humility and nonviolence, and teaches that one who perceives the imperishable Supersoul abiding equally in all perishable bodies attains liberation.',
+                teachings: 'The body and mind constitute the Field (Kshetra), while the conscious soul and the Supreme Lord within are the Knower of the Field (Kshetrajna).\nTrue knowledge (Jnana) consists of humility, non-pretentiousness, nonviolence, forgiveness, uprightness, service to the Guru, purity, and self-control.\nMaterial nature (Prakriti) performs all physical actions, while the soul experiences pleasure and pain due to attachment to the Gunas.\nOne who sees the Supreme Lord abiding equally in all beings never harms the Self by the self, and attains the supreme goal.',
+                moralLesson: 'Recognize that beyond the changing physical body, both the eternal soul and the Supreme Lord dwell within every living being. Walk with humility, purity, and equal respect for all creatures.',
+                kidsVersion: 'Krishna explains that our body is like a garden (the Field), and our soul inside is the gardener who knows and watches over it! Even better, God Himself lives right beside our soul in every single heart as a loving witness and guide. Knowing that God lives in everyone helps us stay humble and treat everyone with respect.'
             },
             
             
@@ -482,10 +469,10 @@ const bhagavadGitaData = {
                     { speaker: 'Arjuna', text: 'What is the means to achieve this transcendental state?', emotion: 'practical' },
                     { speaker: 'Krishna', text: 'One who engages in full devotional service, unfailing in all circumstances, at once transcends the modes of material nature and thus comes to the level of Brahman.', emotion: 'conclusive' }
                 ],
-                summary: 'Krishna explains the three modes of material nature—goodness, passion, and ignorance—that influence all living beings. He describes how these modes bind the soul and how one can transcend them through devotional service.',
-                teachings: 'The three modes of nature condition our existence. Goodness leads to happiness and knowledge, passion to intense activity and desire, and ignorance to delusion. By engaging in devotional service, we can rise above these modes and achieve spiritual realization.',
-                moralLesson: 'Our actions and attitudes are influenced by the modes of nature. By striving for goodness and engaging in spiritual practices, we can overcome the lower modes and move towards a life of purpose and clarity.',
-                kidsVersion: 'Imagine you have three types of glasses. One makes everything look happy and bright (goodness), one makes you want to run around and do a million things (passion), and one makes you feel sleepy and confused (ignorance). Krishna teaches us how to take off all these glasses and see things as they really are.'
+                summary: 'Krishna explains how the three modes of material nature (Gunas)—Sattva (goodness), Rajas (passion), and Tamas (ignorance)—bind the imperishable soul to the body. He details the symptoms, actions, and destinations associated with each mode, and then answers Arjuna\'s question on how to transcend them all (Gunatita)—remaining serene in pleasure and pain, equal toward gold and stone, and engaged in unfailing devotional service to the Lord.',
+                teachings: 'Material nature consists of three Gunas: Sattva (purity, light, and knowledge), Rajas (passion, craving, and restless activity), and Tamas (ignorance, inertia, and delusion).\nSattva elevates the soul upward, Rajas keeps one in the middle, and Tamas drags consciousness downward.\nA person who has transcended the three Gunas (Gunatita) remains unagitated by their play, equal in pleasure and pain, praise and blame, and regards a clod of earth, a stone, and gold alike.\nUnwavering devotional service (Bhakti Yoga) empowers one to cross beyond all three modes and attain the state of Brahman.',
+                moralLesson: 'Observe your thoughts and habits: overcome laziness and confusion (Tamas) and restless greed (Rajas) by cultivating clarity, purity, and goodness (Sattva), while anchoring your heart in devotion to rise above all ups and downs.',
+                kidsVersion: 'Krishna explains that nature has three moods, like three colored glasses: Sattva is bright and peaceful, helping us learn and be kind; Rajas makes us restless and greedy for more; and Tamas makes us lazy, sleepy, and confused. By choosing bright, good habits and loving God, we can rise above all three moods and stay happy and peaceful inside!'
             },
             
             
@@ -516,10 +503,10 @@ const bhagavadGitaData = {
                     { speaker: 'Arjuna', text: 'And that Supreme Person is you?', emotion: 'realizing' },
                     { speaker: 'Krishna', text: 'Because I am transcendental, beyond both the fallible and the infallible, and because I am the greatest, I am celebrated both in the world and in the Vedas as that Supreme Person.', emotion: 'conclusive' }
                 ],
-                summary: 'Krishna uses the metaphor of an upside-down banyan tree to describe the material world and explains that He is the Supreme Person, Purushottama, who is beyond the fallible and infallible.',
-                teachings: 'The material world is a temporary and illusory reality. By cultivating detachment and surrendering to the Supreme Person, one can attain liberation. Krishna is the ultimate reality, the source and sustainer of everything.',
-                moralLesson: 'We should not get too attached to the things of this world, as they are temporary. By focusing on our spiritual growth and connection to the Supreme, we can find true and lasting happiness.',
-                kidsVersion: 'Krishna says the world is like a giant, upside-down tree. We can get tangled in its branches, but if we have a map (spiritual knowledge) and a sharp axe (detachment), we can find our way out and back to the real world of light and happiness with Him.'
+                summary: 'Krishna describes the material world as an inverted Ashvattha tree with its roots above in the Supreme and its branches spreading below through the modes of nature. He instructs Arjuna to sever attachment to this tree with the axe of detachment and surrender to the Primal Person. Revealing how He sustains the cosmos—illuminating the sun and moon, nourishing plants, digesting food as Vaishvanara, and dwelling in every heart as the source of memory and wisdom—Krishna declares Himself to be Purushottama, the Supreme Person beyond both the perishable world (Kshara) and the imperishable soul (Akshara).',
+                teachings: 'The material world is like an upside-down Ashvattha tree rooted above; one must cut down attachment to it with the firm weapon of detachment.\nAll living beings are eternal sparks of the Supreme Lord, carrying their mind and senses from body to body just as the wind carries fragrance from flowers.\nThe Lord is the light in the sun and moon, the life-giving sap in plants, the digestive fire in all bodies, and the source of memory, knowledge, and their removal in every heart.\nTranscending both the fallible world (Kshara) and the infallible soul (Akshara), Lord Krishna is celebrated in the Vedas as Purushottama, the Supreme Person.',
+                moralLesson: 'Do not get entangled in temporary worldly attachments. Remember that your soul is an eternal spark of the Divine, and see God\'s sustaining grace in the light of the sun, the food you eat, and the wisdom in your heart.',
+                kidsVersion: 'Krishna compares the material world to a giant upside-down tree whose roots are high up in the spiritual sky! Using the sharp axe of detachment—not being greedy or clingy—we can find our way back to God\'s eternal home. Krishna also reminds us that He is the light in the sun and moon, the warmth that helps us digest our food, and the Supreme Friend in every heart!'
             },
             
             
@@ -550,14 +537,12 @@ const bhagavadGitaData = {
                     { speaker: 'Arjuna', text: 'How should one know what to do and what not to do?', emotion: 'practical' },
                     { speaker: 'Krishna', text: 'He who discards scriptural injunctions and acts according to his own whims attains neither perfection, nor happiness, nor the supreme destination. One should therefore understand what is duty and what is not duty by the regulations of the scriptures.', emotion: 'guiding' },
                     { speaker: 'Arjuna', text: 'So the scriptures must be my guide in all actions?', emotion: 'understanding' },
-                    { speaker: 'Krishna', text: 'Yes, knowing the scriptural rules, you should act so that you may gradually be elevated.', emotion: 'conclusive' },
-                    { speaker: 'Arjuna', text: 'Your words have given me clarity on the path of righteousness.', emotion: 'enlightened' },
-                    { speaker: 'Krishna', text: 'Follow the path of the divine, Arjuna, for it leads to me. Shun the demonic, for it leads only to bondage and suffering.', emotion: 'blessing' }
+                    { speaker: 'Krishna', text: 'Therefore, let the scripture (Shastra) be your authority in determining what ought to be done and what ought not to be done. Having understood the injunctions of the scriptures, you should perform your duty here in this world.', emotion: 'conclusive' }
                 ],
-                summary: 'Krishna describes divine and demonic qualities, their consequences, and emphasizes following scriptural guidance for spiritual development.',
-                teachings: 'Divine qualities like fearlessness, purity, and honesty lead to liberation. Demonic qualities like pride, anger, and greed lead to bondage. Scriptures provide guidance for proper conduct.',
-                moralLesson: 'We should develop good qualities like kindness, honesty, and self-control, and avoid bad qualities like anger, greed, and pride.',
-                kidsVersion: 'Krishna taught about good and bad qualities. Good people are kind, honest, and helpful. Bad people are angry, greedy, and mean. We should always try to be good.'
+                summary: 'Krishna describes the twenty-six divine qualities (Daivi Sampad) that lead to liberation and contrasts them with the demonic tendencies (Asuri Sampad) rooted in arrogance, greed, and delusion that lead to bondage. He warns that lust (Kama), anger (Krodha), and greed (Lobha) are the three gates to self-destruction, and concludes that wise seekers should abandon them and let sacred scripture guide their actions.',
+                teachings: 'Divine virtues such as fearlessness, purity of heart, nonviolence, truthfulness, compassion, humility, and forgiveness lead to liberation.\nDemonic traits such as hypocrisy, arrogance, conceit, harshness, and insatiable greed bind the soul to suffering.\nLust, anger, and greed are the three gates to hell and self-destruction; every wise person must renounce them.\nSacred scripture (Shastra), rather than impulsive whim, should serve as the standard for determining right and wrong action.',
+                moralLesson: 'Cultivate noble virtues like honesty, humility, kindness, and self-control every day, and guard yourself against the three traps of selfish desire, anger, and greed.',
+                kidsVersion: 'Krishna explains that there are two kinds of habits we can grow in our hearts: divine habits and selfish habits. Divine habits—like being fearless, truthful, gentle, kind, and sharing—fill our lives with light and freedom. Selfish habits—like anger, greed, and bragging—only make us unhappy. By choosing good habits and following wise rules, we always walk on the bright path!'
             },
             
             
@@ -589,10 +574,10 @@ const bhagavadGitaData = {
                     { speaker: 'Arjuna', text: 'So faith is the most essential ingredient?', emotion: 'understanding' },
                     { speaker: 'Krishna', text: 'Yes, Arjuna. Faith, when situated in the mode of goodness and guided by scripture, elevates one to the highest perfection.', emotion: 'conclusive' }
                 ],
-                summary: 'Krishna explains that faith can be in one of three modes: goodness, passion, or ignorance. This influences one’s worship, food, austerities, and charity. He emphasizes that any spiritual practice performed without faith is ultimately useless.',
-                teachings: 'Align your faith with the mode of goodness by choosing wholesome food, worshiping respectably, and giving charity without expectation. The phrase “Om Tat Sat” signifies the Absolute Truth. Faith is the essential ingredient in all spiritual practices.',
-                moralLesson: 'The quality of your faith determines the quality of your life. Strive to act in goodness, with pure intentions and without selfish desires. This will lead to spiritual growth and happiness.',
-                kidsVersion: 'Imagine you have three types of glasses: clear, red, and gray. When you wear the clear glasses (goodness), you see everything nicely. When you wear the red glasses (passion), everything looks fiery and you want more. When you wear the gray glasses (ignorance), everything is dark and confusing. Krishna teaches us to always use the clear glasses by believing in good things, eating healthy food, and being kind to others.'
+                summary: 'In answer to Arjuna\'s question about those who worship with faith but disregard scriptural injunctions, Lord Krishna explains how faith (Shraddha), food (Ahara), sacrifice (Yajna), austerity (Tapas), and charity (Dana) are each divided into the three modes of nature—Sattva, Rajas, and Tamas. He describes the threefold discipline of body, speech, and mind, and concludes with the sacred invocation "Om Tat Sat," teaching that any act performed without genuine faith is fruitless (Asat).',
+                teachings: 'A person is shaped by the nature of their faith (Shraddha); according to one\'s inner disposition, faith is Sattvika, Rajasika, or Tamasika.\nSattvika food promotes longevity, purity, strength, health, and joy, whereas overly pungent or stale foods bring disease and dullness.\nTrue austerity (Tapas) is threefold: purity and nonviolence of body; truthful, gentle, and beneficial speech; and serenity and purity of mind.\nSattvika charity is given out of duty to a worthy person at the right time and place without expecting anything in return.\n"Om Tat Sat" designates the Supreme Brahman, and all sacred acts must be performed with sincere faith.',
+                moralLesson: 'The quality of your faith, food, words, and generosity shapes your character. Choose wholesome food, speak words that are truthful and kind, and give selflessly with sincere faith.',
+                kidsVersion: 'Krishna shows Arjuna how our everyday choices show what is in our heart! Eating fresh, healthy food makes us strong and cheerful; speaking words that are true, kind, and helpful is a gift to everyone; and sharing with others without expecting a reward back is the purest kindness. When we do everything with faith and a pure heart ("Om Tat Sat"), our whole life becomes sacred!'
             },
             
             
@@ -620,13 +605,14 @@ const bhagavadGitaData = {
                     { speaker: 'Arjuna', text: 'I am ready to hear, Krishna.', emotion: 'attentive' },
                     { speaker: 'Krishna', text: 'Always think of Me, become My devotee, worship Me and offer your homage unto Me. Thus you will come to Me without fail. I promise you this because you are My very dear friend.', emotion: 'promising' },
                     { speaker: 'Arjuna', text: 'And the ultimate instruction?', emotion: 'anticipating' },
-                    { speaker: 'Krishna', text: 'Abandon all varieties of religion and just surrender unto Me. I shall deliver you from all sinful reactions. Do not fear.', emotion: 'ultimate' },
-                    { speaker: 'Arjuna', text: 'My dear Krishna, O infallible one, my illusion is now gone. I have regained my memory by Your mercy. I am now firm and free from doubt and am prepared to act according to Your instructions.', emotion: 'resolved' }
+                    { speaker: 'Krishna', text: 'Abandon all varieties of dharma and simply surrender unto Me alone. I shall liberate you from all sins; do not grieve! Have you heard this with an attentive mind, O Partha? Has your delusion born of ignorance now been destroyed, O Dhananjaya?', emotion: 'ultimate' },
+                    { speaker: 'Arjuna', text: 'O Acyuta, my delusion is destroyed, and by Your grace I have regained my memory! I stand firm, free from all doubt, and I shall act according to Your word.', emotion: 'resolved' },
+                    { speaker: 'Sanjaya', text: 'Thus have I heard this wondrous and thrilling dialogue between Vasudeva and the great-souled Partha. Wherever there is Krishna, the Lord of all Yoga, and wherever there is Arjuna, the supreme archer, there will surely be enduring fortune, victory, prosperity, and righteousness—such is my firm conviction!', emotion: 'victorious' }
                 ],
-                summary: 'In this final chapter, Krishna teaches that true renunciation is performing one’s duties without attachment to the results. The ultimate path to liberation is to surrender completely to God, who promises to free His devotees from all sins and fears.',
-                teachings: 'Perform your duties without attachment. The highest spiritual practice is to think of God always, become His devotee, and surrender to Him. This path leads to ultimate freedom and peace.',
-                moralLesson: 'The greatest act of courage and wisdom is to trust in a higher power and surrender your life to it. When you let go of control, you find true freedom and purpose.',
-                kidsVersion: 'Imagine you are on a big ship, and the captain is God. The best thing to do is to trust the captain and follow his instructions. Krishna told Arjuna to trust Him completely, and He would take care of everything. When we trust God, we don’t have to worry about anything.'
+                summary: 'In the culminating chapter of the Bhagavad Gita, Lord Krishna explains the true meaning of Sannyasa and Tyaga, analyzing action, knowledge, determination, and happiness across the three modes of nature. He teaches how everyone can attain spiritual perfection by offering their natural duties in worship to the all-pervading Lord. Finally, Krishna reveals the supreme secret of total surrender (Sharanagati)—promising to free His devotee from all sins and sorrow. With his delusion dispelled, Arjuna rises ready to fulfill his duty, and Sanjaya concludes with the timeless proclamation that wherever Lord Krishna and Arjuna stand together, victory and righteousness are assured.',
+                teachings: 'True renunciation (Sattvika Tyaga) is performing one\'s prescribed duty without selfish attachment or craving for results.\nActs of sacrifice, charity, and austerity should never be abandoned, for they purify even the wise.\nBy dedicating one\'s natural work as worship to the Supreme Lord who pervades all beings, a person attains perfection.\nComplete, loving surrender to the Supreme Lord (Sarva-dharman parityajya mam ekam sharanam vraja) liberates the soul from all sin and sorrow.\nWherever there is the divine guidance of Lord Krishna and the dedicated action of Arjuna, fortune, victory, and righteousness prevail.',
+                moralLesson: 'Perform your duties with sincerity and offer the results to the Divine. When you combine wholehearted effort with complete trust and surrender to God, fear vanishes and true victory and inner peace are assured.',
+                kidsVersion: 'In the final chapter, Krishna sums up all His wisdom and gives Arjuna the greatest promise: "Just trust Me with all your heart and do what is right—I will take care of you, so never be afraid!" Arjuna\'s sadness and confusion vanished completely, and he picked up his bow with a brave smile. Sanjaya ended the story by saying that wherever Krishna\'s wisdom and Arjuna\'s courage are together, goodness and victory will always win!'
             },
         }
     },
@@ -651,1590 +637,965 @@ const bhagavadGitaData = {
             1: {
                 title: 'अर्जुन विषाद योग',
                 subtitle: 'सेनाओं का निरीक्षण',
-                description: 'पहला अध्याय जहाँ अर्जुन, कुरुक्षेत्र के युद्ध के मैदान में खड़ा है, विरोधी सेना में अपने रिश्तेदारों और शिक्षकों को देखकर निराशा से भर जाता है, जो उसके नैतिक संकट का कारण बनता है।',
+                description: 'पहला अध्याय जहाँ कुरुक्षेत्र के युद्ध के मैदान में खड़ा अर्जुन दोनों सेनाओं में अपने ही परिजनों, गुरुओं और मित्रों को देखकर करुणा और नैतिक संदेह से अभिभूत हो जाता है, और युद्ध करने से मना कर देता है।',
                 dialogue: [
-                    { speaker: 'अर्जुन', text: 'हे कृष्ण, कृपया मेरा रथ दोनों सेनाओं के बीच में ले चलिए ताकि मैं उन लोगों को देख सकूँ जो यहाँ युद्ध के लिए उत्सुक खड़े हैं।', emotion: 'दृढ़' },
-                    { speaker: 'कृष्ण', text: 'देखो, हे पार्थ, यहाँ एकत्रित सभी कुरुओं को।', emotion: 'शांत' },
-                    { speaker: 'अर्जुन', text: 'मैं अपने ही परिजनों, गुरुओं, चाचाओं और भाइयों को देख रहा हूँ। मेरे अंग शिथिल हो रहे हैं, मेरा मुँह सूख रहा है, मेरा शरीर कांप रहा है।', emotion: 'विषादग्रस्त' },
-                    { speaker: 'कृष्ण', text: 'उन्हें देखो, अर्जुन, क्योंकि तुम्हें यह समझना होगा कि तुम किसका सामना कर रहे हो।', emotion: 'अवलोकनशील' },
-                    { speaker: 'अर्जुन', text: 'हे कृष्ण! मैं विजय, राज्य या सुख नहीं चाहता! राज्य का, या जीवन का भी क्या उपयोग है, जब वे लोग जिनके लिए हम यह सब चाहते हैं, वे ही यहाँ युद्ध के लिए एकत्रित हुए हैं?', emotion: 'व्यथित' },
-                    { speaker: 'कृष्ण', text: 'हृदय की यह दुर्बलता तुम जैसे श्रेष्ठ योद्धा के लिए अशोभनीय है, अर्जुन।', emotion: 'झिड़कते हुए' },
-                    { speaker: 'अर्जुन', text: 'मैं भीष्म और द्रोण के विरुद्ध कैसे लड़ सकता हूँ, जो मेरी पूजा के योग्य हैं? इन महान आत्माओं का वध करने से तो भीख मांगकर जीना बेहतर है।', emotion: 'संघर्षरत' },
-                    { speaker: 'होस्ट', text: '(चुपचाप सुनते हुए, अर्जुन को अपनी उथल-पुथल व्यक्त करने दे रहे हैं)', emotion: 'धैर्यवान' },
-                    { speaker: 'अर्जुन', text: 'यदि हम अपने ही परिजनों का वध करेंगे, तो हम पर पाप चढ़ेगा। कुल के नाश से सनातन कुल-धर्म नष्ट हो जाएंगे, और अधर्म फैल जाएगा।', emotion: 'भयभीत' },
-                    { speaker: 'कृष्ण', text: '(उनकी अभिव्यक्ति शांत बनी हुई है, अर्जुन के दुःख के तूफान में एक मूक लंगर)', emotion: 'स्थिर' },
-                    { speaker: 'अर्जुन', text: 'जब अधर्म प्रमुख हो जाता है, तो कुल की स्त्रियाँ दूषित हो जाती हैं, और इससे अवांछित संतानें उत्पन्न होती हैं, जो कुल और उसके नाश करने वालों को नरक की ओर ले जाती हैं।', emotion: 'व्याकुल' },
-                    { speaker: 'कृष्ण', text: 'तत्काल परिणामों से परे सोचो, अर्जुन। धर्म के शाश्वत नियम पर विचार करो।', emotion: 'मार्गदर्शक' },
-                    { speaker: 'अर्जुन', text: 'हाय, यह कितनी अजीब बात है कि हम राजकीय सुख की इच्छा से प्रेरित होकर एक बड़ा पाप करने की तैयारी कर रहे हैं।', emotion: 'विलाप करते हुए' },
-                    { speaker: 'होस्ट', text: '(एक करुणामयी दृष्टि, अर्जुन के दुःख की गहराई को समझते हुए)', emotion: 'करुणामय' },
-                    { speaker: 'अर्जुन', text: 'मेरे लिए यह बेहतर होगा यदि धृतराष्ट्र के पुत्र, हाथों में हथियार लिए, मुझे युद्ध के मैदान में निहत्थे और अप्रतिरोधी का वध कर दें।', emotion: 'समर्पित' },
-                    { speaker: 'कृष्ण', text: 'तुम्हारा दुःख तुम्हारे विवेक पर पर्दा डाल रहा है। यह एक योद्धा का मार्ग नहीं है।', emotion: 'दृढ़' },
-                    { speaker: 'अर्जुन', text: 'मुझे युद्ध में अपने ही परिजनों का वध करने में कोई भलाई नहीं दिखती। मैं युद्ध नहीं करूँगा।', emotion: 'संकल्पित' },
-                    { speaker: 'कृष्ण', text: 'स्पष्टता आएगी। पहले, तुम्हें अपने भ्रम की गहराई को देखना होगा।', emotion: 'ज्ञानी' },
-                    { speaker: 'अर्जुन', text: '(अपना धनुष-बाण एक ओर रखकर, अर्जुन रथ के आसन पर बैठ जाता है, उसका मन दुःख से अभिभूत है)', emotion: 'अभिभूत' },
-                    { speaker: 'कृष्ण', text: 'हृदय की इस तुच्छ दुर्बलता को त्याग कर उठो, हे शत्रुओं के विजेता!', emotion: 'आदेशात्मक' }
+                    { speaker: 'धृतराष्ट्र', text: 'हे संजय, धर्मभूमि कुरुक्षेत्र में युद्ध की इच्छा से एकत्रित हुए मेरे पुत्रों और पांडु के पुत्रों ने क्या किया?', emotion: 'उत्सुक' },
+                    { speaker: 'संजय', text: 'हे राजन्! पांडवों की सेना की व्यूह-रचना को देखकर, राजा दुर्योधन अपने गुरु द्रोणाचार्य के पास गया और ये शब्द कहे।', emotion: 'वर्णनात्मक' },
+                    { speaker: 'दुर्योधन', text: 'हे आचार्य! पांडुपुत्रों की इस विशाल सेना को देखिए, जिसे आपके ही बुद्धिमान शिष्य द्रुपदपुत्र धृष्टद्युम्न ने इतनी कुशलता से व्यवस्थित किया है। यहाँ भीम और अर्जुन के समान अनेक शूरवीर धनुर्धर हैं, और हमारी सेना में भी आप, भीष्म, कर्ण और कृपाचार्य जैसे महान योद्धा हैं। भीष्म द्वारा रक्षित हमारी शक्ति अपरिमित है; इसलिए आप सभी मोर्चों पर खड़े रहकर भीष्म पितामह की सब ओर से रक्षा करें।', emotion: 'अभिमानी' },
+                    { speaker: 'संजय', text: 'तब दुर्योधन को हर्षित करते हुए कुरुवृद्ध भीष्म पितामह ने सिंह के समान गरजकर उच्च स्वर में अपना शंख बजाया। इसके पश्चात शंख, नगाड़े, बिगुल और तुरही एक साथ बज उठे। तब श्वेत अश्वों से युक्त भव्य रथ में बैठे भगवान श्रीकृष्ण और अर्जुन ने भी अपने दिव्य शंख—पांचजन्य और देवदत्त—बजाए, जिनकी तुमुल ध्वनि ने आकाश और पृथ्वी को गुंजा दिया तथा धृतराष्ट्र के पुत्रों के हृदयों को विदीर्ण कर दिया।', emotion: 'ओजस्वी' },
+                    { speaker: 'अर्जुन', text: 'हे अच्युत! कृपया मेरा रथ दोनों सेनाओं के बीच में ले चलिए, ताकि मैं युद्ध की इच्छा रखने वाले इन लोगों को देख सकूँ कि इस महान रणभूमि में मुझे किनके साथ युद्ध करना है।', emotion: 'दृढ़' },
+                    { speaker: 'संजय', text: 'हे भरतवंशी राजन्! अर्जुन द्वारा इस प्रकार प्रार्थना किए जाने पर, भगवान श्रीकृष्ण ने भीष्म, द्रोण और विश्व के समस्त राजाओं के सामने दोनों सेनाओं के बीच उस उत्तम रथ को खड़ा कर दिया।', emotion: 'अवलोकनशील' },
+                    { speaker: 'कृष्ण', text: 'हे पार्थ! यहाँ एकत्रित हुए इन समस्त कुरुवंशियों को देखो।', emotion: 'शांत' },
+                    { speaker: 'संजय', text: 'तब अर्जुन ने दोनों सेनाओं में खड़े हुए अपने ताऊ-चाचाओं, पितामहों, गुरुओं, मामाओं, भाइयों, पुत्रों, पौत्रों, मित्रों, ससुरों और शुभचिंतकों को देखा। उन सभी बंधु-बांधवों को उपस्थित देखकर, कुंतीपुत्र अर्जुन अत्यंत करुणा से भर गया और विशाल दुख के साथ यह बोला।', emotion: 'करुणामय' },
+                    { speaker: 'अर्जुन', text: 'हे कृष्ण! युद्ध की इच्छा से यहाँ एकत्रित अपने ही स्वजनों को देखकर मेरे अंग शिथिल हो रहे हैं और मेरा मुख सूखा जा रहा है। मेरे शरीर में कंपन हो रहा है और मेरे रोंगटे खड़े हो रहे हैं। मेरे हाथ से गांडीव धनुष छूट रहा है और मेरी त्वचा जल रही है। मैं खड़ा रहने में भी असमर्थ हूँ और मेरा मन भ्रमित हो रहा है।', emotion: 'विषादग्रस्त' },
+                    { speaker: 'अर्जुन', text: 'हे गोविंद! मैं न तो विजय चाहता हूँ, न राज्य और न ही सुख। हे कृष्ण, हमें राज्य से, भोगों से या जीवन से भी क्या लाभ, जब जिन गुरुजनों, पिताओं, पुत्रों और पितामहों के लिए हम राज्य और सुख चाहते हैं, वे ही अपने प्राण और धन की आशा त्यागकर इस युद्धभूमि में खड़े हैं?', emotion: 'व्यथित' },
+                    { speaker: 'अर्जुन', text: 'हे मधुसूदन! भले ही वे मुझे मार डालें, फिर भी मैं तीन लोकों के राज्य के लिए भी उन्हें मारना नहीं चाहता, फिर इस पृथ्वी के लिए तो कहना ही क्या! धृतराष्ट्र के पुत्रों को मारकर हमें क्या प्रसन्नता होगी? इन आततायियों का वध करने से भी हमें केवल पाप ही लगेगा।', emotion: 'संघर्षरत' },
+                    { speaker: 'अर्जुन', text: 'कुल के नाश से सनातन कुल-धर्म नष्ट हो जाते हैं, और धर्म के नाश होने पर संपूर्ण कुल में अधर्म फैल जाता है। हे वार्ष्णेय! अधर्म के बढ़ने से कुल की स्त्रियाँ दूषित हो जाती हैं और वर्णसंकर उत्पन्न होता है, जो कुलघातियों और कुल को नरक में ले जाता है तथा पितरों का पतन हो जाता है।', emotion: 'भयभीत' },
+                    { speaker: 'अर्जुन', text: 'हाय! हम कितना बड़ा पाप करने को तैयार हो गए हैं, जो राज्य और सुख के लोभ से अपने ही स्वजनों को मारने के लिए उद्यत हैं! यदि शस्त्रधारी धृतराष्ट्र के पुत्र रणभूमि में शस्त्ररहित और सामना न करने वाले मुझको मार डालें, तो वह मेरे लिए अधिक कल्याणकारी होगा।', emotion: 'विलाप करते हुए' },
+                    { speaker: 'संजय', text: 'रणभूमि में इस प्रकार कहकर, शोक से उद्विग्न मन वाला अर्जुन बाणों सहित अपना धनुष त्यागकर रथ के पिछले भाग में बैठ गया।', emotion: 'अभिभूत' }
                 ],
-                summary: 'अर्जुन अपने रिश्तेदारों और गुरुओं को युद्ध के लिए तैयार देखकर नैतिक भ्रम में पड़ जाता है।',
-                teachings: 'कृष्ण धर्म की अवधारणा और आत्मा की अमरता का परिचय देते हैं।',
-                moralLesson: 'कभी-कभी जीवन में कठिन निर्णय लेने पड़ते हैं। भ्रम में पड़ने पर हमें बुद्धिमान गुरुओं से मार्गदर्शन लेना चाहिए।',
-                kidsVersion: 'अर्जुन को अपने परिवार को युद्ध में देखकर दुख हुआ। कृष्ण ने कहा कि कभी-कभी सही काम करना कठिन होता है।'
+                summary: 'अर्जुन विषाद योग में, धृतराष्ट्र संजय से कुरुक्षेत्र की रणभूमि का हाल पूछते हैं। जब श्रीकृष्ण दोनों सेनाओं के बीच रथ खड़ा करते हैं और केवल एक वाक्य कहते हैं—"हे पार्थ, यहाँ एकत्रित कुरुओं को देखो" (1.25)—तब अर्जुन अपने पितामह भीष्म, गुरु द्रोण और सगे-संबंधियों को देखकर करुणा, शोक और मोह से भर जाता है। कुल-नाश और पाप के भय से वह अपना गांडीव धनुष रखकर युद्ध न करने का निश्चय कर लेता है।',
+                teachings: 'मोह और सांसारिक आसक्ति व्यक्ति के विवेक को ढक सकती है और उसे अपने कर्तव्य (धर्म) से विचलित कर सकती है।\nइस अध्याय में श्रीकृष्ण शांत साक्षी और सारथी बने रहते हैं, और अर्जुन को अपने भीतर के शोक व उथल-पुथल को पूरी तरह व्यक्त करने देते हैं।\nसच्चे आध्यात्मिक ज्ञान का उदय तब होता है जब मनुष्य अपनी असहायता और नैतिक संकट को ईमानदारी से स्वीकार करता है।',
+                moralLesson: 'जब जीवन में भावनाएं और मोह हमारे कर्तव्य के मार्ग को धुंधला कर दें, तब हमें आवेश में आकर पलायन नहीं करना चाहिए, बल्कि शांत रहकर उच्च विवेक और ईश्वर के मार्गदर्शन की शरण लेनी चाहिए।',
+                kidsVersion: 'महाभारत के युद्ध के मैदान में जब अर्जुन ने देखा कि सामने उसके अपने ही दादाजी (भीष्म), गुरुजी (द्रोणाचार्य) और चचेरे भाई खड़े हैं, तो वह बहुत दुखी हो गया। उसका दिल भर आया और उसने अपना धनुष नीचे रखकर कहा कि वह अपनों से नहीं लड़ेगा। उसके सारथी बने श्रीकृष्ण ने बड़े प्यार और धैर्य से अर्जुन की पूरी बात सुनी।'
             },
             2: {
                 title: 'सांख्य योग',
                 subtitle: 'ज्ञान का योग',
-                description: 'अर्जुन का समर्पण और कृष्ण द्वारा अमर आत्मा पर उपदेश',
+                description: 'अर्जुन का शिष्य रूप में समर्पण और श्रीकृष्ण द्वारा अमर आत्मा, स्वधर्म तथा निष्काम कर्म योग का दिव्य उपदेश।',
                 dialogue: [
-                    { speaker: 'कृष्ण', text: 'इस संकट की घड़ी में यह निराशा तुम्हारे मन में क्यों आई? यह एक श्रेष्ठ व्यक्ति के लिए उचित नहीं है। यह स्वर्ग की ओर नहीं, बल्कि अपयश की ओर ले जाती है।', emotion: 'झिड़कते हुए' },
-                    { speaker: 'अर्जुन', text: 'परन्तु मैं युद्ध में भीष्म और द्रोण पर बाणों से कैसे प्रहार कर सकता हूँ? वे तो मेरी पूजा के योग्य हैं!', emotion: 'संघर्षरत' },
-                    { speaker: 'कृष्ण', text: 'तुम उनके लिए शोक कर रहे हो जो शोक के योग्य नहीं हैं, फिर भी ज्ञान की बातें कर रहे हो। ज्ञानी न तो जीवितों के लिए शोक करते हैं और न ही मृतकों के लिए।', emotion: 'ज्ञानी' },
-                    { speaker: 'अर्जुन', text: 'मैं अपने कर्तव्य के बारे में भ्रमित हूँ। मैं आपके शिष्य के रूप में आत्मसमर्पण करता हूँ। कृपया मुझे बताएं कि मेरे लिए सबसे अच्छा क्या है।', emotion: 'समर्पित' },
-                    { speaker: 'कृष्ण', text: 'ऐसा कोई समय नहीं था जब मैं नहीं था, न तुम, न ये सभी राजा; और न ही भविष्य में हममें से कोई भी अस्तित्व में नहीं रहेगा।', emotion: 'प्रबुद्ध' },
-                    { speaker: 'अर्जुन', text: 'यह कैसे संभव है? शरीर जन्म लेते हैं और मर जाते हैं।', emotion: 'उत्सुक' },
-                    { speaker: 'कृष्ण', text: 'जैसे देहधारी आत्मा इस शरीर में बाल्यावस्था से युवावस्था और वृद्धावस्था में निरंतर गुजरती है, वैसे ही मृत्यु पर आत्मा दूसरे शरीर में चली जाती है। एक धीर व्यक्ति ऐसे परिवर्तन से मोहित नहीं होता।', emotion: 'शिक्षाप्रद' },
-                    { speaker: 'अर्जुन', text: 'लेकिन सुख और दुःख की भावनाएँ बहुत वास्तविक हैं, कृष्ण।', emotion: 'दुखी' },
-                    { speaker: 'कृष्ण', text: 'ये अस्थायी अभिव्यक्तियाँ हैं, जो इन्द्रिय बोध से उत्पन्न होती हैं। व्यक्ति को विचलित हुए बिना उन्हें सहन करना सीखना चाहिए।', emotion: 'मार्गदर्शक' },
-                    { speaker: 'अर्जुन', text: 'तो, आत्मा को कभी कोई हानि नहीं होती?', emotion: 'अन्वेषी' },
-                    { speaker: 'कृष्ण', text: 'आत्मा न कभी जन्म लेती है और न कभी मरती है। यह अजन्मा, शाश्वत, सदा-विद्यमान और सनातन है। शरीर के मारे जाने पर यह मारी नहीं जाती।', emotion: 'आश्वस्त' },
-                    { speaker: 'अर्जुन', text: 'क्या आप इसे और समझा सकते हैं? मैं इस सत्य को कैसे समझ सकता हूँ?', emotion: 'जिज्ञासु' },
-                    { speaker: 'कृष्ण', text: 'जैसे कोई व्यक्ति पुराने वस्त्रों को त्यागकर नए वस्त्र धारण करता है, उसी प्रकार आत्मा पुराने और अनुपयोगी शरीरों को त्यागकर नए भौतिक शरीर धारण करती है।', emotion: 'दृष्टांतात्मक' },
-                    { speaker: 'अर्जुन', text: 'यदि आत्मा शाश्वत है, तो मुझे क्यों लड़ना चाहिए? इस कर्म का उद्देश्य क्या है?', emotion: 'प्रश्नवाचक' },
-                    { speaker: 'कृष्ण', text: 'एक क्षत्रिय के रूप में अपने विशिष्ट कर्तव्य को ध्यान में रखते हुए, तुम्हें जानना चाहिए कि धार्मिक सिद्धांतों पर लड़ने से बेहतर कोई कार्य नहीं है। यदि तुम लड़ने का अपना धार्मिक कर्तव्य नहीं निभाते हो, तो तुम निश्चित रूप से अपने कर्तव्यों की उपेक्षा करने के पाप में पड़ोगे और इस प्रकार एक योद्धा के रूप में अपनी प्रतिष्ठा खो दोगे।', emotion: 'आदेशात्मक' },
-                    { speaker: 'अर्जुन', text: 'लेकिन परिणाम के बारे में क्या? हत्या का पाप?', emotion: 'चिंतित' },
-                    { speaker: 'कृष्ण', text: 'तुम्हें अपने निर्धारित कर्तव्य का पालन करने का अधिकार है, लेकिन तुम कर्म के फलों के हकदार नहीं हो। अपने आपको अपनी गतिविधियों के परिणामों का कारण कभी मत समझो, और न ही अपने कर्तव्य को न करने में आसक्त हो।', emotion: 'गहन' },
-                    { speaker: 'अर्जुन', text: 'उस व्यक्ति की प्रकृति क्या है जिसकी चेतना इस प्रकार पारलौकिकता में विलीन हो जाती है? वह कैसे बोलता है, और उसकी भाषा क्या है? वह कैसे बैठता है, और कैसे चलता है?', emotion: 'उत्सुक' },
-                    { speaker: 'कृष्ण', text: 'वह वह है जिसने इन्द्रिय सुख की सभी इच्छाओं को त्याग दिया है, जो आसक्ति, भय और क्रोध से मुक्त है। उसका मन स्थिर है और त्रिविध दुखों से विचलित नहीं होता।', emotion: 'वर्णनात्मक' },
-                    { speaker: 'अर्जुन', text: 'यह अवस्था बहुत शांतिपूर्ण लगती है। शक्तिशाली इंद्रियों को कैसे नियंत्रित किया जा सकता है?', emotion: 'प्रेरित' },
-                    { speaker: 'कृष्ण', text: 'जो अपनी इंद्रियों को संयमित रखता है, उन्हें पूर्ण नियंत्रण में रखता है, और अपनी चेतना को मुझ पर स्थिर करता है, उसे स्थिर बुद्धि वाला व्यक्ति कहा जाता है।', emotion: 'निर्णायक' }
+                    { speaker: 'संजय', text: 'उस प्रकार करुणा से व्याप्त, आँसुओं से भरी और व्याकुल नेत्रों वाले शोकयुक्त अर्जुन से भगवान मधुसूदन ने ये वचन कहे।', emotion: 'वर्णनात्मक' },
+                    { speaker: 'कृष्ण', text: 'हे अर्जुन! इस विषम समय में यह मोह तुम्हें कहाँ से प्राप्त हुआ? यह न तो श्रेष्ठ पुरुषों द्वारा आचरित है, न स्वर्ग देने वाला है और न ही कीर्ति कारक है। हे पार्थ! नपुंसकता को मत प्राप्त हो, यह तुम्हारे योग्य नहीं है। हे परंतप! हृदय की इस तुच्छ दुर्बलता को त्यागकर युद्ध के लिए खड़े हो जाओ!', emotion: 'झिड़कते हुए' },
+                    { speaker: 'अर्जुन', text: 'हे मधुसूदन! मैं रणभूमि में भीष्म पितामह और द्रोणाचार्य के विरुद्ध बाणों से कैसे युद्ध करूँ, जो दोनों ही मेरी पूजा के योग्य हैं? इन महानुभाव गुरुजनों को न मारकर इस लोक में भिक्षा का अन्न खाना भी श्रेष्ठ है, क्योंकि उन्हें मारकर तो हम रक्त से सने हुए भोगों को ही भोगेंगे।', emotion: 'संघर्षरत' },
+                    { speaker: 'अर्जुन', text: 'कायरता रूपी दोष से मेरा स्वभाव दब गया है और धर्म के विषय में मेरा मन मोहित हो गया है। इसलिए मैं आपसे पूछता हूँ कि जो मेरे लिए निश्चित रूप से कल्याणकारी हो, वह मुझे बताइए। मैं आपका शिष्य हूँ और आपकी शरण में आया हूँ, मुझे उपदेश दीजिए।', emotion: 'समर्पित' },
+                    { speaker: 'संजय', text: 'हे राजन्! इंद्रियों के स्वामी हृषीकेश से इस प्रकार कहकर, "मैं युद्ध नहीं करूँगा" यह स्पष्ट कहकर परंतप अर्जुन चुप हो गया। तब दोनों सेनाओं के बीच शोक करते हुए अर्जुन से श्रीकृष्ण ने मुस्कुराते हुए ये वचन कहे।', emotion: 'शांत' },
+                    { speaker: 'कृष्ण', text: 'तुम उन लोगों के लिए शोक करते हो जो शोक करने योग्य नहीं हैं, और फिर भी ज्ञानियों जैसी बातें करते हो! पंडितजन (ज्ञानी) न तो जीवितों के लिए और न ही मृतकों के लिए शोक करते हैं।', emotion: 'ज्ञानी' },
+                    { speaker: 'कृष्ण', text: 'ऐसा कोई समय नहीं था जब मैं नहीं था, या तुम नहीं थे, या ये समस्त राजा नहीं थे; और न ही भविष्य में कभी हम सबका अस्तित्व समाप्त होगा।', emotion: 'प्रबुद्ध' },
+                    { speaker: 'अर्जुन', text: 'यह कैसे संभव है? शरीर तो जन्म लेते हैं और मर जाते हैं।', emotion: 'उत्सुक' },
+                    { speaker: 'कृष्ण', text: 'जैसे जीवात्मा इस शरीर में बाल्यावस्था, युवावस्था और वृद्धावस्था को प्राप्त होती है, वैसे ही मृत्यु होने पर वह दूसरे शरीर को प्राप्त होती है। धीर पुरुष इस परिवर्तन से मोहित नहीं होता।', emotion: 'शिक्षाप्रद' },
+                    { speaker: 'अर्जुन', text: 'परन्तु सुख और दुःख, सर्दी और गर्मी के अनुभव तो बहुत वास्तविक लगते हैं, केशव।', emotion: 'दुखी' },
+                    { speaker: 'कृष्ण', text: 'हे कुंतीपुत्र! इंद्रियों और विषयों के संयोग से उत्पन्न होने वाले सुख-दुःख तो अनित्य हैं, वे आते और जाते रहते हैं। इसलिए हे भारत, उन्हें सहन करना सीखो।', emotion: 'मार्गदर्शक' },
+                    { speaker: 'अर्जुन', text: 'तो क्या आत्मा को कभी कोई हानि या विनाश नहीं होता?', emotion: 'अन्वेषी' },
+                    { speaker: 'कृष्ण', text: 'आत्मा न कभी जन्म लेती है और न कभी मरती है। यह अजन्मा, नित्य, शाश्वत और पुरातन है; शरीर के मारे जाने पर भी यह मारी नहीं जाती।', emotion: 'आश्वस्त' },
+                    { speaker: 'अर्जुन', text: 'क्या आप इसे और स्पष्ट कर सकते हैं कि आत्मा नया शरीर कैसे ग्रहण करती है?', emotion: 'जिज्ञासु' },
+                    { speaker: 'कृष्ण', text: 'जैसे मनुष्य पुराने वस्त्रों को त्यागकर नए वस्त्र धारण करता है, वैसे ही देही (जीवात्मा) पुराने शरीरों को त्यागकर नए शरीरों को प्राप्त होता है। इसे शस्त्र काट नहीं सकते, अग्नि जला नहीं सकती, जल गला नहीं सकता और वायु सुखा नहीं सकती।', emotion: 'दृष्टांतात्मक' },
+                    { speaker: 'अर्जुन', text: 'यदि आत्मा अविनाशी है, तो मुझे युद्ध क्यों करना चाहिए? मेरे कर्तव्य का आधार क्या है?', emotion: 'प्रश्नवाचक' },
+                    { speaker: 'कृष्ण', text: 'अपने स्वधर्म को देखकर भी तुम्हें भयभीत नहीं होना चाहिए, क्योंकि क्षत्रिय के लिए धर्मयुक्त युद्ध से बढ़कर दूसरा कोई कल्याणकारी कार्य नहीं है। यदि तुम इस धर्मयुक्त युद्ध को नहीं करोगे, तो स्वधर्म और कीर्ति को खोकर पाप को प्राप्त होगे। सुख-दुःख, लाभ-हानि और जय-पराजय को समान समझकर युद्ध के लिए तैयार हो जाओ; इस प्रकार कर्म करने से तुम्हें पाप नहीं लगेगा।', emotion: 'आदेशात्मक' },
+                    { speaker: 'अर्जुन', text: 'कर्म करते हुए मैं पाप और बंधन से कैसे मुक्त रह सकता हूँ?', emotion: 'चिंतित' },
+                    { speaker: 'कृष्ण', text: 'तेरा केवल कर्म करने में ही अधिकार है, उसके फलों में कभी नहीं। इसलिए तू कर्मों के फल का हेतु मत बन और तेरी कर्म न करने में भी आसक्ति न हो। हे धनंजय! आसक्ति को त्यागकर तथा सिद्धि और असिद्धि में समान बुद्धिवाला होकर योग में स्थित हुआ कर्तव्य कर्म कर; समत्व को ही योग कहते हैं।', emotion: 'गहन' },
+                    { speaker: 'अर्जुन', text: 'हे केशव! समाधि में स्थित स्थिर प्रज्ञा वाले (स्थितप्रज्ञ) मनुष्य का क्या लक्षण है? वह कैसे बोलता है, कैसे बैठता है और कैसे चलता है?', emotion: 'उत्सुक' },
+                    { speaker: 'कृष्ण', text: 'हे पार्थ! जब मनुष्य मन में स्थित संपूर्ण कामनाओं को भलीभांति त्याग देता है और आत्मा से आत्मा में ही संतुष्ट रहता है, तब वह स्थितप्रज्ञ कहा जाता है। दुःखों की प्राप्ति होने पर जिसका मन उद्विग्न नहीं होता, सुखों की प्राप्ति में जो सर्वथा निःस्पृह है तथा जिसके राग, भय और क्रोध नष्ट हो गए हैं, वह मुनि स्थिरबुद्धि कहा जाता है।', emotion: 'वर्णनात्मक' },
+                    { speaker: 'अर्जुन', text: 'इंद्रियों के विषय मन को किस प्रकार विचलित कर देते हैं, और उन्हें कैसे वश में किया जाए?', emotion: 'प्रेरित' },
+                    { speaker: 'कृष्ण', text: 'विषयों का चिंतन करने वाले मनुष्य की उन विषयों में आसक्ति हो जाती है, आसक्ति से कामना उत्पन्न होती है और कामना में विघ्न पड़ने से क्रोध उत्पन्न होता है। क्रोध से मूढ़ता (मोह), मोह से स्मृति का भ्रम, स्मृति-भ्रंश से बुद्धि का नाश होता है, और बुद्धि का नाश होने से मनुष्य का पतन हो जाता है।', emotion: 'चेतावनी' },
+                    { speaker: 'कृष्ण', text: 'जैसे चारों ओर से जल से परिपूर्ण समुद्र में नदियों का जल प्रवेश करने पर भी समुद्र अचल प्रतिष्ठित रहता है, वैसे ही जिस संयमी पुरुष में संपूर्ण भोग विकार उत्पन्न किए बिना ही समा जाते हैं, वही पुरुष परम शांति को प्राप्त होता है, भोगों को चाहने वाला नहीं। यह ब्राह्मी स्थिति है; इसे प्राप्त कर मनुष्य कभी मोहित नहीं होता और अंतकाल में भी इसमें स्थित होकर ब्रह्म-निर्वाण (परम शांति) को प्राप्त होता है।', emotion: 'निर्णायक' }
                 ],
-                summary: 'कृष्ण आत्मा की अमरता और निष्काम कर्म की शिक्षा देते हैं।',
-                teachings: 'आत्मा अमर है। निष्काम कर्म करना ही सच्चा ज्ञान है।',
-                moralLesson: 'हम केवल शरीर नहीं बल्कि अमर आत्मा हैं।',
-                kidsVersion: 'कृष्ण ने सिखाया कि हमारी आत्मा कभी नहीं मरती, जैसे हम पुराने कपड़े बदलते हैं।'
+                summary: 'अर्जुन शिष्य भाव से श्रीकृष्ण की शरण लेता है। श्रीकृष्ण नश्वर शरीर और अविनाशी आत्मा (सांख्य) के भेद से उपदेश प्रारंभ करते हैं, क्षत्रिय के रूप में अर्जुन को उसके स्वधर्म का स्मरण कराते हैं, निष्काम कर्म योग (फल की आसक्ति के बिना कर्तव्य पालन) का सिद्धांत प्रकट करते हैं, और अंत में स्थितप्रज्ञ (स्थिर प्रज्ञा वाले महापुरुष) के लक्षणों का वर्णन करते हैं।',
+                teachings: 'आत्मा अजन्मा, नित्य, शाश्वत और अविनाशी है; जैसे मनुष्य पुराने वस्त्र बदलता है, वैसे ही आत्मा शरीर बदलती है (2.20–22)।\nकर्मण्येवाधिकारस्ते: तुम्हारा अधिकार केवल कर्तव्य पालन में है, उसके फलों पर नहीं (2.47)।\nसिद्धि और असिद्धि, सुख और दुःख में समभाव रखना ही सच्चा योग है (समत्वं योग उच्यते, 2.48)।\nस्थितप्रज्ञ वह है जिसने इंद्रियों को वश में कर लिया है, जो राग, भय और क्रोध से मुक्त है, और अपने भीतर ही संतुष्ट रहता है (2.55–72)।',
+                moralLesson: 'अपने कर्तव्य का पालन पूरे समर्पण से करें, पर परिणाम की चिंता या अहंकार से मुक्त रहें। जब मन सुख और दुःख दोनों में शांत और संतुलित रहता है, तभी सच्ची शांति प्राप्त होती है।',
+                kidsVersion: 'श्रीकृष्ण ने अर्जुन को समझाया कि जैसे हम फटे-पुराने कपड़े उतारकर नए कपड़े पहनते हैं, वैसे ही हमारे अंदर की आत्मा पुराने शरीर को छोड़कर नया शरीर लेती है—आत्मा कभी नहीं मरती! उन्होंने यह भी सिखाया कि हमें अपना काम पूरी मेहनत से करना चाहिए, लेकिन हार-जीत या इनाम की चिंता नहीं करनी चाहिए।'
             },
             3: {
                 title: 'कर्म योग',
                 subtitle: 'निःस्वार्थ सेवा',
-                description: 'कृष्ण निःस्वार्थ कर्म और इच्छा पर नियंत्रण के बारे में सिखाते हैं',
+                description: 'श्रीकृष्ण यज्ञ के रूप में निःस्वार्थ कर्म करने, लोकसंग्रह के लिए आदर्श प्रस्तुत करने और काम-क्रोध पर विजय पाने की शिक्षा देते हैं।',
                 dialogue: [
-                    { speaker: 'अर्जुन', text: 'हे कृष्ण, यदि आप मानते हैं कि बुद्धि फलदायी कर्म से बेहतर है, तो आप मुझे इस भयंकर युद्ध में क्यों धकेल रहे हैं?', emotion: 'भ्रमित' },
-                    { speaker: 'कृष्ण', text: 'मैंने पहले ही दो मार्ग बताए हैं, अर्जुन: चिंतनशील के लिए ज्ञान का मार्ग, और सक्रिय के लिए कर्म का मार्ग।', emotion: 'स्पष्ट करते हुए' },
-                    { speaker: 'अर्जुन', text: 'आपके शब्द विरोधाभासी लगते हैं। मैं भ्रमित हूँ। कृपया मुझे निश्चित रूप से बताएं कि कौन सा मार्ग अधिक लाभकारी है।', emotion: 'अन्वेषी' },
-                    { speaker: 'कृष्ण', text: 'केवल कर्म से विरत रहने से कोई प्रतिक्रिया से मुक्ति प्राप्त नहीं कर सकता, न ही केवल त्याग से कोई पूर्णता प्राप्त कर सकता है।', emotion: 'शिक्षाप्रद' },
-                    { speaker: 'अर्जुन', text: 'क्या पूरी तरह से निष्क्रिय रहना भी संभव है?', emotion: 'प्रश्नवाचक' },
-                    { speaker: 'कृष्ण', text: 'प्रत्येक व्यक्ति भौतिक प्रकृति के गुणों के अनुसार असहाय रूप से कार्य करने के लिए मजबूर है; इसलिए कोई भी एक क्षण के लिए भी कुछ करने से বিরত नहीं रह सकता।', emotion: 'ज्ञानी' },
-                    { speaker: 'अर्जुन', text: 'तो, व्यक्ति को कार्य करना ही होगा। लेकिन उलझन से बचने के लिए व्यक्ति को कैसे कार्य करना चाहिए?', emotion: 'व्यावहारिक' },
-                    { speaker: 'कृष्ण', text: 'अपना कार्य परमात्मा के लिए यज्ञ के रूप में करो। अन्यथा, कर्म इस भौतिक संसार में बंधन का कारण बनता है। इसलिए, अपने निर्धारित कर्तव्यों को उसकी संतुष्टि के लिए करो, और इस तरह तुम हमेशा बंधन से मुक्त रहोगे।', emotion: 'मार्गदर्शक' },
-                    { speaker: 'अर्जुन', text: 'आप जिस यज्ञ चक्र की बात करते हैं, वह क्या है?', emotion: 'उत्सुक' },
-                    { speaker: 'कृष्ण', text: 'सभी जीवित शरीर अन्न पर निर्भर हैं, जो वर्षा से उत्पन्न होते हैं। वर्षा यज्ञ के अनुष्ठान से उत्पन्न होती है, और यज्ञ निर्धारित कर्तव्यों से उत्पन्न होता है।', emotion: 'वर्णनात्मक' },
-                    { speaker: 'अर्जुन', text: 'क्या ज्ञानियों को भी कार्य करना पड़ता है? मैंने सोचा था कि वे सभी कर्तव्यों से परे हैं।', emotion: 'जिज्ञासु' },
-                    { speaker: 'कृष्ण', text: 'एक आत्म-साक्षात्कारी व्यक्ति भी, जिसका कोई व्यक्तिगत लाभ प्राप्त करने का नहीं होता, दुनिया के लिए एक उदाहरण स्थापित करने और सामाजिक व्यवस्था बनाए रखने के लिए अपने कर्तव्यों का पालन करता रहता है।', emotion: 'उदाहरणात्मक' },
-                    { speaker: 'अर्जुन', text: 'यह समझ में आता है। लेकिन वह क्या है जो व्यक्ति को अनिच्छा से भी पापी कार्यों के लिए प्रेरित करता है, जैसे कि बल द्वारा लगाया गया हो?', emotion: 'चिंतित' },
-                    { speaker: 'कृष्ण', text: 'यह केवल काम है, अर्जुन, जो भौतिक रजोगुण के संपर्क से पैदा होता है और बाद में क्रोध में बदल जाता है, और जो इस दुनिया का सर्व-भक्षी पापी शत्रु है।', emotion: 'चेतावनी' },
-                    { speaker: 'अर्जुन', text: 'यह शत्रु कहाँ रहता है? हम इसे कैसे जीत सकते हैं?', emotion: 'दृढ़' },
-                    { speaker: 'कृष्ण', text: 'इंद्रियाँ, मन और बुद्धि इसके बैठने के स्थान हैं। पहले इंद्रियों को नियंत्रित करके, तुम इस पाप के महान प्रतीक को रोक सकते हो।', emotion: 'रणनीतिक' },
-                    { speaker: 'अर्जुन', text: 'तो, मुझे अपनी इंद्रियों और फिर अपने मन को नियंत्रित करना होगा?', emotion: 'समझ' },
-                    { speaker: 'कृष्ण', text: 'हाँ। इंद्रियाँ जड़ पदार्थ से श्रेष्ठ हैं; मन इंद्रियों से ऊँचा है; बुद्धि मन से भी ऊँची है; और वह [आत्मा] बुद्धि से भी ऊँचा है।', emotion: 'पदानुक्रमित' },
-                    { speaker: 'अर्जुन', text: 'मैं समझ गया। मुझे अपने मन और इंद्रियों को नियंत्रित करने के लिए अपनी बुद्धि का उपयोग करना चाहिए।', emotion: 'प्रबुद्ध' },
-                    { speaker: 'कृष्ण', text: 'इस प्रकार अपने आपको भौतिक इंद्रियों, मन और बुद्धि से पार जानकर, हे महाबाहु अर्जुन, व्यक्ति को सचेत आध्यात्मिक बुद्धि से मन को स्थिर करना चाहिए और इस प्रकार - आध्यात्मिक शक्ति से - काम के रूप में जाने जाने वाले इस अतृप्त शत्रु को जीतना चाहिए।', emotion: 'निर्णायक' }
+                    { speaker: 'अर्जुन', text: 'हे जनार्दन! यदि आप सकाम कर्म की अपेक्षा ज्ञान (बुद्धि) को श्रेष्ठ मानते हैं, तो फिर हे केशव, मुझे इस भयंकर युद्ध-कर्म में क्यों लगाते हैं? आपके मिले-जुले से वचनों से मेरी बुद्धि मोहित हो रही है; अतः एक बात निश्चित करके बताइए जिससे मैं कल्याण को प्राप्त हो सकूँ।', emotion: 'भ्रमित' },
+                    { speaker: 'कृष्ण', text: 'हे निष्पाप अर्जुन! इस लोक में दो प्रकार की निष्ठा मेरे द्वारा पहले कही गई है—सांख्ययोगियों की ज्ञानयोग से और कर्मयोगियों की निष्काम कर्मयोग से। मनुष्य न तो कर्मों का आरंभ किए बिना निष्कर्मता को प्राप्त होता है, और न ही केवल कर्मों के त्याग मात्र से सिद्धि को प्राप्त होता है।', emotion: 'स्पष्ट करते हुए' },
+                    { speaker: 'अर्जुन', text: 'क्या कोई मनुष्य पूरी तरह से कर्म किए बिना रह सकता है?', emotion: 'प्रश्नवाचक' },
+                    { speaker: 'कृष्ण', text: 'कोई भी मनुष्य किसी भी काल में क्षणमात्र भी बिना कर्म किए नहीं रह सकता, क्योंकि सारा मनुष्य समुदाय प्रकृतिजनित गुणों द्वारा परवश हुआ कर्म करने के लिए बाध्य किया जाता है। जो मूढ़बुद्धि मनुष्य समस्त इंद्रियों को हठपूर्वक ऊपर से रोककर मन से उन इंद्रियों के विषयों का चिंतन करता रहता है, वह मिथ्याचारी (दंभी) कहा जाता है।', emotion: 'ज्ञानी' },
+                    { speaker: 'अर्जुन', text: 'तो व्यक्ति को कर्म करना ही होगा। पर कर्म के बंधन से बचने के लिए कैसे कर्म करना चाहिए?', emotion: 'व्यावहारिक' },
+                    { speaker: 'कृष्ण', text: 'यज्ञ के निमित्त किए जाने वाले कर्मों के अतिरिक्त अन्य कर्मों में लगा हुआ यह मनुष्य समुदाय कर्मों से बंधता है। इसलिए हे कुंतीपुत्र, तुम आसक्ति से रहित होकर उस यज्ञ के निमित्त ही भलीभांति कर्तव्य कर्म करो।', emotion: 'मार्गदर्शक' },
+                    { speaker: 'अर्जुन', text: 'आप जिस यज्ञ-चक्र की बात कर रहे हैं, वह क्या है?', emotion: 'उत्सुक' },
+                    { speaker: 'कृष्ण', text: 'संपूर्ण प्राणी अन्न से उत्पन्न होते हैं, अन्न की उत्पत्ति वर्षा से होती है, वर्षा यज्ञ से होती है, और यज्ञ विहित कर्मों से उत्पन्न होता है। जो मनुष्य इस लोक में इस प्रकार चलाए हुए सृष्टि-चक्र के अनुसार नहीं बरतता और केवल इंद्रियों के भोग में रमण करता है, वह व्यर्थ ही जीता है।', emotion: 'वर्णनात्मक' },
+                    { speaker: 'अर्जुन', text: 'क्या आत्मज्ञानी महापुरुषों को भी कर्म करना पड़ता है?', emotion: 'जिज्ञासु' },
+                    { speaker: 'कृष्ण', text: 'जो मनुष्य आत्मा में ही रमण करने वाला और आत्मा में ही तृप्त तथा संतुष्ट है, उसके लिए कोई कर्तव्य शेष नहीं रहता। फिर भी, लोकसंग्रह (संसार के मार्गदर्शन और कल्याण) को देखते हुए भी तुम कर्म करने के ही योग्य हो, क्योंकि श्रेष्ठ पुरुष जो-जो आचरण करता है, अन्य लोग भी वैसा ही आचरण करते हैं।', emotion: 'उदाहरणात्मक' },
+                    { speaker: 'अर्जुन', text: 'हे वार्ष्णेय! फिर यह मनुष्य स्वयं न चाहते हुए भी किससे प्रेरित होकर पापकर्म का आचरण करता है, मानो बलपूर्वक उससे करवाया जा रहा हो?', emotion: 'चिंतित' },
+                    { speaker: 'कृष्ण', text: 'रजोगुण से उत्पन्न हुआ यह काम और यह क्रोध ही है, जो बहुत खाने वाला (अतृप्त) और महापापी है; तू इसी को इस विषय में अपना वैरी जान। जैसे धुएं से अग्नि और मैल से दर्पण ढक जाता है, वैसे ही इस काम के द्वारा ज्ञान ढका हुआ है।', emotion: 'चेतावनी' },
+                    { speaker: 'अर्जुन', text: 'यह शत्रु कहाँ निवास करता है और हम इसे कैसे जीत सकते हैं?', emotion: 'दृढ़' },
+                    { speaker: 'कृष्ण', text: 'इंद्रियाँ, मन और बुद्धि—ये सब इस काम के निवास-स्थान कहे जाते हैं। यह काम इन मन, बुद्धि और इंद्रियों के द्वारा ही ज्ञान को आच्छादित करके जीवात्मा को मोहित करता है। इसलिए हे भरतवंशियों में श्रेष्ठ अर्जुन, तू पहले इंद्रियों को वश में करके ज्ञान और विज्ञान का नाश करने वाले इस पापी काम को अवश्य ही मार डाल।', emotion: 'रणनीतिक' },
+                    { speaker: 'अर्जुन', text: 'इंद्रियों और मन से श्रेष्ठ कौन है जिसके सहारे मैं इसे वश में करूँ?', emotion: 'समझ' },
+                    { speaker: 'कृष्ण', text: 'इंद्रियों को स्थूल शरीर से पर (श्रेष्ठ) कहते हैं; इंद्रियों से पर मन है, मन से भी पर बुद्धि है, और जो बुद्धि से भी अत्यंत पर है, वह आत्मा है। इस प्रकार बुद्धि से पर अर्थात सूक्ष्म, बलवान और अत्यंत श्रेष्ठ आत्मा को जानकर और बुद्धि के द्वारा मन को वश में करके, हे महाबाहु! तू इस कामरूप दुर्जय शत्रु को मार डाल।', emotion: 'निर्णायक' }
                 ],
-                summary: 'कृष्ण कर्म योग की विस्तृत व्याख्या करते हैं।',
-                teachings: 'निःस्वार्थ कर्म मन को शुद्ध करता है।',
-                moralLesson: 'बिना फल की इच्छा के अच्छे काम करने चाहिए।',
-                kidsVersion: 'कृष्ण ने कहा कि बिना लालच के अच्छे काम करने से मन खुश रहता है।'
+                summary: 'श्रीकृष्ण स्पष्ट करते हैं कि कर्तव्य से पलायन करने से सिद्धि नहीं मिलती। वे यज्ञ की भावना से निष्काम कर्म करने, लोकसंग्रह (समाज के सामने श्रेष्ठ उदाहरण रखने) के लिए कर्तव्य निभाने, और आध्यात्मिक बुद्धि के बल से काम व क्रोध रूपी शत्रु को जीतने का मार्ग बताते हैं।',
+                teachings: 'कोई भी प्राणी एक क्षण के लिए भी कर्म किए बिना नहीं रह सकता, क्योंकि प्रकृति के गुण सबको कर्म करने के लिए विवश करते हैं (3.5)।\nईश्वर और समाज के कल्याण के लिए यज्ञ भाव से किया गया कर्म बंधन नहीं, मुक्ति का कारण बनता है (3.9)।\nश्रेष्ठ मनुष्य जो आचरण करता है, सामान्य लोग उसी का अनुसरण करते हैं; अतः ज्ञानियों को भी लोकसंग्रह के लिए कर्तव्य करना चाहिए (3.20–21)।\nरजोगुण से उत्पन्न काम और क्रोध ही मनुष्य के सबसे बड़े शत्रु हैं; इन्हें आत्म-ज्ञान और बुद्धि द्वारा इंद्रियों व मन को वश में करके जीता जा सकता है (3.37–43)।',
+                moralLesson: 'सच्ची आध्यात्मिकता जिम्मेदारियों से भागने में नहीं, बल्कि निःस्वार्थ भाव से समाज के कल्याण के लिए अपना कर्तव्य निभाने और स्वार्थी इच्छाओं पर नियंत्रण रखने में है।',
+                kidsVersion: 'श्रीकृष्ण ने अर्जुन को समझाया कि बिना काम किए कोई भी नहीं रह सकता। जैसे बादल बारिश देते हैं और पेड़ फल देते हैं, वैसे ही हमें भी बिना लालच के दूसरों की भलाई के लिए अपना काम करना चाहिए। जब हम लालच और गुस्से को हराकर अच्छे मन से काम करते हैं, तो हम सबके लिए एक अच्छी मिसाल बनते हैं।'
             },
             4: {
                 title: 'ज्ञान कर्म संन्यास योग',
                 subtitle: 'दिव्य ज्ञान',
-                description: 'कृष्ण अपनी दिव्य प्रकृति और प्राचीन ज्ञान परंपरा का खुलासा करते हैं',
+                description: 'श्रीकृष्ण अपने दिव्य अवतारों का रहस्य, कर्म में अकर्म का दर्शन, और आध्यात्मिक ज्ञान की महिमा प्रकट करते हैं।',
                 dialogue: [
-                    { speaker: 'कृष्ण', text: 'मैंने इस अविनाशी योग विज्ञान का उपदेश सूर्य-देव विवस्वान को दिया, और विवस्वान ने इसे मनु को सिखाया, और मनु ने इसे इक्ष्वाकु को सिखाया।', emotion: 'प्रकट करते हुए' },
-                    { speaker: 'अर्जुन', text: 'सूर्य-देव विवस्वान जन्म से आपसे बड़े हैं। मैं यह कैसे समझूँ कि आपने आरंभ में उन्हें यह विज्ञान सिखाया?', emotion: 'उलझन में' },
-                    { speaker: 'कृष्ण', text: 'तुम और मैं दोनों ने कई-कई जन्म लिए हैं। मुझे वे सब याद हैं, लेकिन तुम्हें नहीं, हे शत्रु-विजेता!', emotion: 'ज्ञानी' },
-                    { speaker: 'अर्जुन', text: 'हे प्रभु, आप इस संसार में क्यों प्रकट होते हैं?', emotion: 'जिज्ञासु' },
-                    { speaker: 'कृष्ण', text: 'साधुओं का उद्धार करने, दुष्टों का विनाश करने और धर्म के सिद्धांतों को फिर से स्थापित करने के लिए, मैं हर युग में स्वयं प्रकट होता हूँ।', emotion: 'आधिकारिक' },
-                    { speaker: 'अर्जुन', text: 'आपके प्राकट्य का सत्य जानने से किसी को कैसे मदद मिलती है?', emotion: 'अन्वेषी' },
-                    { speaker: 'कृष्ण', text: 'जो मेरे प्राकट्य और कर्मों की दिव्य प्रकृति को जानता है, वह शरीर छोड़ने पर इस भौतिक संसार में फिर से जन्म नहीं लेता, बल्कि मेरे शाश्वत धाम को प्राप्त करता है, हे अर्जुन।', emotion: 'वचन देते हुए' },
-                    { speaker: 'अर्जुन', text: 'लोग आपकी अलग-अलग तरीकों से पूजा करते हैं। आप उन्हें कैसे प्रतिसाद देते हैं?', emotion: 'उत्सुक' },
-                    { speaker: 'कृष्ण', text: 'जैसे सभी मेरे प्रति समर्पण करते हैं, मैं उन्हें उसी के अनुसार पुरस्कृत करता हूँ। हे पृथापुत्र, सभी हर तरह से मेरे मार्ग का अनुसरण करते हैं।', emotion: 'सर्व-व्यापी' },
-                    { speaker: 'अर्जुन', text: 'आपने समाज के चार वर्ण बनाए। क्या यह जन्म पर आधारित है?', emotion: 'प्रश्नवाचक' },
-                    { speaker: 'कृष्ण', text: 'मानव समाज के चार वर्ण मेरे द्वारा भौतिक प्रकृति के तीन गुणों और उनसे जुड़े कार्यों के अनुसार बनाए गए थे। यद्यपि मैं इस प्रणाली का निर्माता हूँ, तुम्हें जानना चाहिए कि मैं फिर भी अकर्ता हूँ, अपरिवर्तनीय हूँ।', emotion: 'स्पष्ट करते हुए' },
-                    { speaker: 'अर्जुन', text: 'कर्म में उलझे बिना कोई कैसे कर्म कर सकता है?', emotion: 'व्यावहारिक' },
-                    { speaker: 'कृष्ण', text: 'जो कर्म में अकर्म और अकर्म में कर्म देखता है, वह मनुष्यों में बुद्धिमान है, और वह सभी प्रकार के कार्यों में लगे रहने पर भी दिव्य स्थिति में है।', emotion: 'गहन' },
-                    { speaker: 'अर्जुन', text: 'तो, सच्चा कर्म वह है जो उसके फलों की आसक्ति के बिना किया जाता है?', emotion: 'समझ' },
-                    { speaker: 'कृष्ण', text: 'हाँ। अपने कर्मों के फलों की सभी आसक्ति को त्यागकर, सदा संतुष्ट और स्वतंत्र रहकर, वह सभी प्रकार के उपक्रमों में लगे रहने पर भी कोई फलदायी कर्म नहीं करता।', emotion: 'प्रबुद्ध' },
-                    { speaker: 'अर्जुन', text: 'यह दिव्य ज्ञान कैसे प्राप्त होता है?', emotion: 'अन्वेषी' },
-                    { speaker: 'कृष्ण', text: 'एक आध्यात्मिक गुरु के पास जाकर सत्य जानने का प्रयास करो। उनसे विनम्रतापूर्वक पूछो और उनकी सेवा करो। आत्म-साक्षात्कारी आत्माएं तुम्हें ज्ञान प्रदान कर सकती हैं क्योंकि उन्होंने सत्य को देखा है।', emotion: 'मार्गदर्शक' },
-                    { speaker: 'अर्जुन', text: 'इस ज्ञान की शक्ति क्या है?', emotion: 'चकित' },
-                    { speaker: 'कृष्ण', text: 'जैसे धधकती आग लकड़ी को राख कर देती है, हे अर्जुन, वैसे ही ज्ञान की अग्नि भौतिक गतिविधियों की सभी प्रतिक्रियाओं को भस्म कर देती है।', emotion: 'शक्तिशाली' },
-                    { speaker: 'अर्जुन', text: 'तो, मुझे इस ज्ञान से अपने संदेहों को काटना होगा?', emotion: 'संकल्पित' },
-                    { speaker: 'कृष्ण', text: 'इसलिए अज्ञानता से तुम्हारे हृदय में उत्पन्न हुए संदेहों को ज्ञान के हथियार से काट देना चाहिए। योग से सुसज्जित होकर, हे भरत, उठो और लड़ो।', emotion: 'आदेशात्मक' }
+                    { speaker: 'कृष्ण', text: 'मैंने इस अविनाशी योग को सूर्यदेव विवस्वान से कहा था, विवस्वान ने अपने पुत्र वैवस्वत मनु से कहा और मनु ने अपने पुत्र राजा इक्ष्वाकु से कहा।', emotion: 'प्रकट करते हुए' },
+                    { speaker: 'अर्जुन', text: 'आपका जन्म तो अभी का है और सूर्यदेव विवस्वान का जन्म बहुत पुराना है; तब मैं यह कैसे समझूँ कि कल्प के आदि में आपने ही उन्हें यह योग सिखाया था?', emotion: 'उलझन में' },
+                    { speaker: 'कृष्ण', text: 'हे परंतप अर्जुन! मेरे और तुम्हारे बहुत से जन्म हो चुके हैं। उन सबको मैं जानता हूँ, किंतु तुम नहीं जानते। यद्यपि मैं अजन्मा और अविनाशी स्वरूप होते हुए भी समस्त प्राणियों का ईश्वर हूँ, फिर भी अपनी प्रकृति को अधीन करके अपनी योगमाया से प्रकट होता हूँ।', emotion: 'ज्ञानी' },
+                    { speaker: 'अर्जुन', text: 'हे प्रभु, आप इस संसार में कब और क्यों प्रकट होते हैं?', emotion: 'जिज्ञासु' },
+                    { speaker: 'कृष्ण', text: 'हे भारत! जब-जब धर्म की हानि और अधर्म की वृद्धि होती है, तब-तब मैं अपने रूप को रचता हूँ (प्रकट होता हूँ)। साधु पुरुषों का उद्धार करने के लिए, पाप कर्म करने वालों का विनाश करने के लिए और धर्म की भलीभांति स्थापना करने के लिए मैं युग-युग में प्रकट होता हूँ।', emotion: 'आधिकारिक' },
+                    { speaker: 'अर्जुन', text: 'आपके इस दिव्य जन्म और कर्म के सत्य को जानने का क्या फल है?', emotion: 'अन्वेषी' },
+                    { speaker: 'कृष्ण', text: 'हे अर्जुन! मेरे जन्म और कर्म दिव्य (अलौकिक) हैं—इस प्रकार जो मनुष्य तत्त्व से जान लेता है, वह शरीर को त्यागकर फिर जन्म को प्राप्त नहीं होता, किंतु मुझे ही प्राप्त होता है।', emotion: 'वचन देते हुए' },
+                    { speaker: 'अर्जुन', text: 'लोग अलग-अलग भावों से आपकी उपासना करते हैं। आप उन्हें कैसे स्वीकार करते हैं?', emotion: 'उत्सुक' },
+                    { speaker: 'कृष्ण', text: 'हे पार्थ! जो भक्त मुझे जिस प्रकार भजते हैं, मैं भी उन्हें उसी प्रकार भजता हूँ (अनुग्रह करता हूँ); क्योंकि सभी मनुष्य सब प्रकार से मेरे ही मार्ग का अनुसरण करते हैं।', emotion: 'सर्व-व्यापी' },
+                    { speaker: 'अर्जुन', text: 'आपने समाज के चार वर्णों की रचना किस आधार पर की है?', emotion: 'प्रश्नवाचक' },
+                    { speaker: 'कृष्ण', text: 'गुणों और कर्मों के विभागपूर्वक चारों वर्णों की रचना मेरे द्वारा की गई है। यद्यपि मैं उसका कर्ता हूँ, तथापि तुम मुझे अविनाशी परमेश्वर को वास्तव में अकर्ता ही जानो।', emotion: 'स्पष्ट करते हुए' },
+                    { speaker: 'अर्जुन', text: 'कर्म करते हुए भी कोई कर्म के बंधन से अछूता कैसे रह सकता है?', emotion: 'व्यावहारिक' },
+                    { speaker: 'कृष्ण', text: 'जो मनुष्य कर्म में अकर्म देखता है और अकर्म में कर्म देखता है, वह मनुष्यों में बुद्धिमान है और वह योगी समस्त कर्मों को करने वाला है।', emotion: 'गहन' },
+                    { speaker: 'अर्जुन', text: 'तो सच्चा कर्म वही है जो फल की इच्छा और कर्तापन के अभिमान के बिना किया जाए?', emotion: 'समझ' },
+                    { speaker: 'कृष्ण', text: 'हाँ। जो पुरुष समस्त कर्मों में और उनके फल में आसक्ति का सर्वथा त्याग कर चुका है, जो नित्य तृप्त है और किसी पर आश्रित नहीं है, वह कर्म में भलीभांति बरतता हुआ भी वास्तव में कुछ भी नहीं करता।', emotion: 'प्रबुद्ध' },
+                    { speaker: 'अर्जुन', text: 'यह दिव्य तत्त्वज्ञान कैसे प्राप्त होता है?', emotion: 'अन्वेषी' },
+                    { speaker: 'कृष्ण', text: 'तत्त्वदर्शी ज्ञानियों के पास जाकर, उन्हें दंडवत प्रणाम करने से, उनकी सेवा करने से और कपट छोड़कर सरलतापूर्वक प्रश्न पूछने से वे परमात्म-तत्त्व को भलीभांति जानने वाले ज्ञानी महात्मा तुम्हें उस तत्त्वज्ञान का उपदेश करेंगे।', emotion: 'मार्गदर्शक' },
+                    { speaker: 'अर्जुन', text: 'इस ज्ञान की महिमा क्या है?', emotion: 'चकित' },
+                    { speaker: 'कृष्ण', text: 'जैसे प्रज्वलित अग्नि ईंधन को भस्मसात कर देती है, हे अर्जुन, वैसे ही ज्ञानरूपी अग्नि संपूर्ण कर्मों को भस्मसात कर देती है। इस संसार में ज्ञान के समान पवित्र करने वाला निःसंदेह कुछ भी नहीं है।', emotion: 'शक्तिशाली' },
+                    { speaker: 'अर्जुन', text: 'और यह ज्ञान किसे प्राप्त होता है?', emotion: 'संकल्पित' },
+                    { speaker: 'कृष्ण', text: 'श्रद्धावान, तत्पर और जितेंद्रिय मनुष्य यह ज्ञान प्राप्त करता है, और ज्ञान प्राप्त करके वह तत्काल परम शांति को प्राप्त हो जाता है। इसलिए हे भरतवंशी अर्जुन! हृदय में स्थित इस अज्ञानजनित संशय को ज्ञानरूपी तलवार से काटकर, समत्वरूप कर्मयोग में स्थित हो जा और युद्ध के लिए खड़ा हो जा।', emotion: 'आदेशात्मक' }
                 ],
-                summary: 'कृष्ण धर्म की पुनर्स्थापना के लिए अपने दिव्य अवतारों का रहस्य बताते हैं और ज्ञान की अग्नि से कर्म के बंधनों को काटने का मार्ग दिखाते हैं।',
-                teachings: 'सच्चा ज्ञान आध्यात्मिक गुरु की सेवा और विनम्र पूछताछ से प्राप्त होता है। ज्ञान सभी कर्म फलों को भस्म कर देता है।',
-                moralLesson: 'वास्तविक ज्ञान की खोज जीवन का सर्वोच्च लक्ष्य है। विनम्रता और सेवा भाव से ही इसे प्राप्त किया जा सकता है।',
-                kidsVersion: 'कृष्ण ने बताया कि वह एक सुपरहीरो की तरह हैं जो धर्म की रक्षा के लिए आते हैं। उन्होंने कहा कि सच्चा ज्ञान एक जादुई आग की तरह है जो हमारी सारी गलतियों को जला देता है।'
+                summary: 'श्रीकृष्ण सनातन योग की प्राचीन परंपरा और धर्म की रक्षा के लिए अपने दिव्य अवतारों (यदा यदा हि धर्मस्य...) का रहस्य प्रकट करते हैं। वे समझाते हैं कि जो कर्म में अकर्म को देखता है और यज्ञ भाव से कर्म करता है, वह बंधन में नहीं पड़ता, तथा तत्त्वदर्शी गुरु से प्राप्त ज्ञान-अग्नि सारे कर्म-बंधनों को भस्म कर देती है।',
+                teachings: 'जब-जब धर्म की हानि और अधर्म की वृद्धि होती है, तब-तब भगवान साधुओं की रक्षा और धर्म की स्थापना के लिए अवतरित होते हैं (4.7–8)।\nचारों वर्णों की व्यवस्था जन्म से नहीं, बल्कि गुण और कर्म के विभाग के अनुसार रची गई है (4.13)।\nजो कर्म में अकर्म और अकर्म में कर्म देखता है, वही वास्तव में बुद्धिमान और योगी है (4.18)।\nविनम्रता, सेवा और जिज्ञासा से तत्त्वदर्शी गुरु के माध्यम से दिव्य ज्ञान प्राप्त होता है, और श्रद्धावान व्यक्ति ही इस ज्ञान से परम शांति पाता है (4.34–39)।',
+                moralLesson: 'आध्यात्मिक ज्ञान संसार में सबसे पवित्र है। श्रद्धा, इंद्रिय-संयम और विनम्रता के साथ सत्य को जानकर हम अपने हृदय के सभी संदेहों को मिटा सकते हैं।',
+                kidsVersion: 'श्रीकृष्ण ने अर्जुन को बताया कि जब भी दुनिया में बुराई बढ़ती है और अच्छाई कम होने लगती है, तब भगवान अच्छे लोगों की रक्षा करने और सच्चाई को फिर से स्थापित करने के लिए स्वयं आते हैं। उन्होंने यह भी सिखाया कि सच्चे गुरु से आदर और विनम्रता से सीखा गया ज्ञान एक चमकती हुई आग की तरह होता है जो हमारे मन के सारे डर और संदेह मिटा देता है।'
             },
             5: {
                 title: 'कर्म संन्यास योग',
                 subtitle: 'कर्म में त्याग',
-                description: 'कर्म और त्याग के बीच संतुलन को समझना',
+                description: 'संन्यास और निष्काम कर्मयोग का समन्वय तथा समदर्शी ब्रह्मज्ञानी की आंतरिक शांति।',
                 dialogue: [
-                    { speaker: 'अर्जुन', text: 'हे कृष्ण, पहले आप मुझसे कर्म का त्याग करने को कहते हैं, और फिर भक्ति के साथ कर्म करने की सलाह देते हैं। अब कृपया मुझे निश्चित रूप से बताएं कि दोनों में से कौन अधिक लाभकारी है?', emotion: 'भ्रमित' },
-                    { speaker: 'कृष्ण', text: 'कर्म का त्याग और भक्ति में कर्म दोनों ही मुक्ति के लिए अच्छे हैं। लेकिन दोनों में से, भक्ति सेवा में कर्म केवल कर्म के त्याग से बेहतर है।', emotion: 'स्पष्ट करते हुए' },
-                    { speaker: 'अर्जुन', text: 'यह कैसे हो सकता है? ऐसा लगता है कि सभी कर्मों का त्याग करने से शांति मिलेगी।', emotion: 'प्रश्नवाचक' },
-                    { speaker: 'कृष्ण', text: 'केवल सभी गतिविधियों का त्याग करके और भगवान की भक्ति सेवा में संलग्न न होकर कोई सुखी नहीं हो सकता। लेकिन भक्ति सेवा में लगा एक विचारशील व्यक्ति बिना देर किए परमात्मा को प्राप्त कर सकता है।', emotion: 'शिक्षाप्रद' },
-                    { speaker: 'अर्जुन', text: 'तो, कुंजी आसक्ति के बिना कार्य करना है?', emotion: 'समझ' },
-                    { speaker: 'कृष्ण', text: 'जो व्यक्ति आसक्ति के बिना अपना कर्तव्य निभाता है, परिणामों को परमात्मा को समर्पित करता है, वह पाप कर्म से अप्रभावित रहता है, जैसे कमल का पत्ता पानी से अछूता रहता है।', emotion: 'दृष्टांतात्मक' },
-                    { speaker: 'अर्जुन', text: 'ऐसा व्यक्ति दुनिया को कैसे देखता है?', emotion: 'उत्सुक' },
-                    { speaker: 'कृष्ण', text: 'विनम्र संत, सच्चे ज्ञान के आधार पर, एक विद्वान और सौम्य ब्राह्मण, एक गाय, एक हाथी, एक कुत्ता और एक चांडाल को समान दृष्टि से देखते हैं।', emotion: 'प्रबुद्ध' },
-                    { speaker: 'अर्जुन', text: 'वे सब में दिव्यता देखते हैं?', emotion: 'चकित' },
-                    { speaker: 'कृष्ण', text: 'जिनके मन समानता और समभाव में स्थापित हैं, उन्होंने जन्म और मृत्यु की स्थितियों को पहले ही जीत लिया है। वे ब्रह्म की तरह निर्दोष हैं, और इस प्रकार वे पहले से ही ब्रह्म में स्थित हैं।', emotion: 'पुष्टि करते हुए' },
-                    { speaker: 'अर्जुन', text: 'वे सुख का अनुभव कैसे करते हैं?', emotion: 'जिज्ञासु' },
-                    { speaker: 'कृष्ण', text: 'ऐसा मुक्त व्यक्ति भौतिक इंद्रिय सुख के प्रति आकर्षित नहीं होता, बल्कि हमेशा समाधि में रहकर भीतर के सुख का आनंद लेता है। इस तरह आत्म-साक्षात्कारी व्यक्ति असीम सुख का आनंद लेता है, क्योंकि वह परमात्मा पर ध्यान केंद्रित करता है।', emotion: 'वर्णनात्मक' },
-                    { speaker: 'अर्जुन', text: 'तो बाहरी सुख अंततः दुख का कारण बनते हैं?', emotion: 'समझ रहा है' },
-                    { speaker: 'कृष्ण', text: 'एक बुद्धिमान व्यक्ति दुख के स्रोतों में भाग नहीं लेता, जो भौतिक इंद्रियों के संपर्क के कारण होते हैं। हे कुंतीपुत्र, ऐसे सुखों का एक आरंभ और एक अंत होता है, और इसलिए ज्ञानी व्यक्ति उनमें आनंद नहीं लेता।', emotion: 'ज्ञानी' },
-                    { speaker: 'अर्जुन', text: 'वे जो शांति प्राप्त करते हैं, उसकी प्रकृति क्या है?', emotion: 'अन्वेषी' },
-                    { speaker: 'कृष्ण', text: 'जो व्यक्ति मेरी पूर्ण चेतना में है, मुझे सभी यज्ञों और तपस्याओं का अंतिम लाभार्थी, सभी ग्रहों और देवताओं का परम स्वामी, और सभी जीवित प्राणियों का हितैषी और शुभचिंतक जानता है, वह भौतिक दुखों की पीड़ा से शांति प्राप्त करता है।', emotion: 'निर्णायक' },
-                    { speaker: 'अर्जुन', text: 'वास्तव में मन या आत्मा कार्य कर रही है?', emotion: 'दार्शनिक' },
-                    { speaker: 'कृष्ण', text: 'जब देहधारी जीव अपनी प्रकृति को नियंत्रित करता है और मानसिक रूप से सभी कर्मों का त्याग करता है, तो वह नौ द्वारों वाले नगर [भौतिक शरीर] में सुखपूर्वक रहता है, न तो काम करता है और न ही काम करवाता है।', emotion: 'गहन' },
-                    { speaker: 'अर्जुन', text: 'तो सच्चा त्याग एक आंतरिक अवस्था है, न कि केवल एक बाहरी दिखावा?', emotion: 'समझ' },
-                    { speaker: 'कृष्ण', text: 'बिल्कुल। जो ज्ञानी है वह समझता है कि आत्मा इंद्रियों की गतिविधियों से अलग है। वह अपने कर्मों को दिव्य को समर्पित करता है और शांति पाता है।', emotion: 'पुष्टि करते हुए' },
-                    { speaker: 'अर्जुन', text: 'निःस्वार्थ कर्म का यह मार्ग श्रेष्ठ और अधिक व्यावहारिक लगता है।', emotion: 'संकल्पित' },
-                    { speaker: 'कृष्ण', text: 'वास्तव में, यह है। कर्म में संलग्न हो, अर्जुन, लेकिन अपने मन को परमात्मा में स्थिर करके। यही सच्चे त्याग और स्थायी शांति का रहस्य है।', emotion: 'प्रोत्साहित करते हुए' }
+                    { speaker: 'अर्जुन', text: 'हे कृष्ण! आप कर्मों के संन्यास की और फिर निष्काम कर्मयोग की भी प्रशंसा करते हैं। इसलिए इन दोनों में से जो एक मेरे लिए परम कल्याणकारी हो, उसे निश्चित करके बताइए।', emotion: 'भ्रमित' },
+                    { speaker: 'कृष्ण', text: 'कर्मों का संन्यास और निष्काम कर्मयोग—ये दोनों ही परम कल्याण के करने वाले हैं; परंतु उन दोनों में भी कर्मों के संन्यास से निष्काम कर्मयोग साधन में सुगम होने से श्रेष्ठ है।', emotion: 'स्पष्ट करते हुए' },
+                    { speaker: 'अर्जुन', text: 'ये दोनों मार्ग एक ही लक्ष्य तक कैसे ले जाते हैं?', emotion: 'प्रश्नवाचक' },
+                    { speaker: 'कृष्ण', text: 'जो न किसी से द्वेष करता है और न किसी वस्तु की आकांक्षा करता है, वह कर्मयोगी सदा संन्यासी ही समझने योग्य है। अज्ञानीजन ही सांख्य (संन्यास) और कर्मयोग को अलग-अलग फल देने वाले कहते हैं, पंडितजन नहीं; क्योंकि दोनों में से एक में भी सम्यक प्रकार से स्थित पुरुष दोनों के फलरूप परमात्मा को ही प्राप्त होता है।', emotion: 'शिक्षाप्रद' },
+                    { speaker: 'अर्जुन', text: 'कर्म करते हुए भी योगी पाप से अछूता कैसे रहता है?', emotion: 'समझ' },
+                    { speaker: 'कृष्ण', text: 'जो पुरुष सब कर्मों को परमात्मा में अर्पण करके और आसक्ति को त्यागकर कर्म करता है, वह पुरुष जल से कमल के पत्ते की भांति पाप से लिप्त नहीं होता।', emotion: 'दृष्टांतात्मक' },
+                    { speaker: 'अर्जुन', text: 'तब शरीर और मन के कार्य करते रहने पर भी आत्मा कैसे रहती है?', emotion: 'दार्शनिक' },
+                    { speaker: 'कृष्ण', text: 'अंतःकरण जिसके वश में है, ऐसा सांख्ययोग का आचरण करने वाला पुरुष न करता हुआ और न करवाता हुआ ही नौ द्वारों वाले शरीररूपी पुर में सब कर्मों को मन से त्यागकर आनंदपूर्वक सच्चिदानंदघन परमात्मा के स्वरूप में स्थित रहता है।', emotion: 'गहन' },
+                    { speaker: 'अर्जुन', text: 'ऐसा ज्ञानी पुरुष संसार के प्राणियों को किस दृष्टि से देखता है?', emotion: 'उत्सुक' },
+                    { speaker: 'कृष्ण', text: 'वे ज्ञानी महापुरुष विद्या और विनययुक्त ब्राह्मण में तथा गौ, हाथी, कुत्ते और चांडाल में भी समदर्शी ही होते हैं।', emotion: 'प्रबुद्ध' },
+                    { speaker: 'अर्जुन', text: 'वे सब में एक ही परमात्मा को देखते हैं?', emotion: 'चकित' },
+                    { speaker: 'कृष्ण', text: 'जिनका मन समभाव में स्थित है, उनके द्वारा इस जीवित अवस्था में ही संपूर्ण संसार जीत लिया गया है; क्योंकि सच्चिदानंदघन परमात्मा निर्दोष और सम है, इससे वे सच्चिदानंदघन परमात्मा में ही स्थित हैं।', emotion: 'पुष्टि करते हुए' },
+                    { speaker: 'अर्जुन', text: 'वे बाहरी और आंतरिक सुख का अनुभव कैसे करते हैं?', emotion: 'जिज्ञासु' },
+                    { speaker: 'कृष्ण', text: 'बाहर के विषयों में आसक्तिरहित अंतःकरण वाला साधक आत्मा में स्थित जो ध्यानजनित सात्त्विक आनंद है, उसको प्राप्त होता है; तदनंतर वह सच्चिदानंदघन परमात्मा के ध्यानरूपी योग में अभिन्न भाव से स्थित पुरुष अक्षय आनंद का अनुभव करता है।', emotion: 'वर्णनात्मक' },
+                    { speaker: 'अर्जुन', text: 'और इंद्रियों के विषयों से मिलने वाले सुखों का क्या स्वभाव है?', emotion: 'समझ रहा है' },
+                    { speaker: 'कृष्ण', text: 'जो ये इंद्रिय तथा विषयों के संयोग से उत्पन्न होने वाले सब भोग हैं, वे यद्यपि विषयी पुरुषों को सुखरूप भासते हैं, तो भी निःसंदेह दुःख के ही हेतु हैं और आदि-अंत वाले (अनित्य) हैं। हे कुंतीपुत्र! बुद्धिमान विवेकी पुरुष उनमें रमण नहीं करता।', emotion: 'ज्ञानी' },
+                    { speaker: 'अर्जुन', text: 'परम शांति को प्राप्त करने का अंतिम रहस्य क्या है?', emotion: 'अन्वेषी' },
+                    { speaker: 'कृष्ण', text: 'मेरा भक्त मुझे संपूर्ण यज्ञों और तपों का भोक्ता, संपूर्ण लोकों के ईश्वरों का भी महेश्वर तथा संपूर्ण भूत-प्राणियों का सुहृद (निःस्वार्थ प्रेमी और हितैषी) तत्त्व से जानकर शांति को प्राप्त होता है।', emotion: 'निर्णायक' }
                 ],
-                summary: 'कृष्ण बताते हैं कि कर्मयोग (निःस्वार्थ कर्म) कर्म संन्यास (कर्मों का त्याग) से श्रेष्ठ है। सच्चा त्यागी वह है जो कर्म के फल का त्याग करता है, न कि कर्म का।',
-                teachings: 'फल की आसक्ति के बिना अपने कर्तव्यों का पालन करना ही सच्चा त्याग है। ज्ञानी व्यक्ति सभी प्राणियों में एक ही दिव्यता को देखता है।',
-                moralLesson: 'सच्ची शांति जिम्मेदारियों से भागने में नहीं, बल्कि उन्हें निःस्वार्थ भाव से निभाने में है।',
-                kidsVersion: 'कृष्ण ने सिखाया कि असली हीरो काम छोड़ने वाला नहीं, बल्कि अच्छे दिल से काम करने वाला होता है। जब हम बदले में कुछ चाहे बिना मदद करते हैं, तो हमें असली खुशी मिलती है।'
+                summary: 'श्रीकृष्ण स्पष्ट करते हैं कि कर्म-संन्यास और निष्काम कर्मयोग दोनों एक ही लक्ष्य तक पहुँचाते हैं, किंतु कर्मयोग अधिक सुगम और श्रेष्ठ है। जो अपने कर्म ईश्वर को अर्पित करता है वह कमल के पत्ते की तरह पाप से अछूता रहता है, सभी प्राणियों में समदर्शी होता है, और भगवान को सब प्राणियों का सच्चा सुहृद जानकर परम शांति पाता है।',
+                teachings: 'निष्काम कर्मयोग केवल बाहरी कर्म-त्याग की अपेक्षा अधिक सुगम और श्रेष्ठ है; सच्चा संन्यासी वही है जो राग और द्वेष से मुक्त है (5.2–3)।\nईश्वर को कर्म समर्पित करने वाला व्यक्ति जल में कमल के पत्ते की तरह पाप से अछूता रहता है (5.10)।\nसच्चा ज्ञानी विद्वान ब्राह्मण, गाय, हाथी, कुत्ते और चांडाल सभी में एक ही परमात्मा को समान भाव से देखता है (5.18)।\nभगवान को समस्त यज्ञों का भोक्ता, सर्वलोकमहेश्वर और सब प्राणियों का सच्चा मित्र (सुहृद) जानने से परम शांति मिलती है (5.29)।',
+                moralLesson: 'सच्ची शांति जिम्मेदारियों को छोड़ने से नहीं, बल्कि अहंकार और राग-द्वेष को छोड़कर सेवा करने तथा सभी प्राणियों में एक ही ईश्वर का दर्शन करने से मिलती है।',
+                kidsVersion: 'श्रीकृष्ण ने बताया कि जैसे कीचड़ और पानी में रहने पर भी कमल के पत्ते पर पानी की एक बूंद नहीं ठहरती, वैसे ही जो अच्छे मन से भगवान के लिए काम करता है उसे कोई बुराई नहीं छू सकती। सच्चा समझदार इंसान हर प्राणी—चाहे वह बड़ा विद्वान हो, गाय हो, हाथी हो या छोटा कुत्ता—सबके अंदर भगवान की ज्योति देखकर सबका सम्मान करता है।'
             },
             6: {
                 title: 'ध्यान योग',
                 subtitle: 'आत्म-संयम का विज्ञान',
-                description: 'ध्यान की प्रक्रिया और मन का अनुशासन',
+                description: 'अष्टांग ध्यान की विधि, अभ्यास व वैराग्य द्वारा चंचल मन का संयम, और योगभ्रष्ट साधक की गति।',
                 dialogue: [
-                    { speaker: 'कृष्ण', text: 'जो अपने कर्म के फलों से अनासक्त है और जो अपने कर्तव्य के अनुसार कर्म करता है, वह संन्यासी और सच्चा योगी है।', emotion: 'परिभाषित करते हुए' },
-                    { speaker: 'अर्जुन', text: 'मन के द्वारा स्वयं को कैसे उन्नत किया जा सकता है?', emotion: 'उत्सुक' },
-                    { speaker: 'कृष्ण', text: 'मनुष्य को अपने मन की सहायता से अपना उद्धार करना चाहिए, और अपने को नीचे नहीं गिराना चाहिए। मन बद्ध जीव का मित्र भी है और शत्रु भी।', emotion: 'शिक्षाप्रद' },
+                    { speaker: 'कृष्ण', text: 'जो पुरुष कर्मफल का आश्रय न लेकर करने योग्य कर्म करता है, वही संन्यासी तथा योगी है; केवल अग्नि का त्याग करने वाला संन्यासी नहीं है और केवल क्रियाओं का त्याग करने वाला योगी नहीं है।', emotion: 'परिभाषित करते हुए' },
+                    { speaker: 'अर्जुन', text: 'मन के द्वारा स्वयं का उद्धार कैसे किया जा सकता है?', emotion: 'उत्सुक' },
+                    { speaker: 'कृष्ण', text: 'मनुष्य को चाहिए कि अपने द्वारा अपने मन से अपना उद्धार करे और अपने को अधोगति में न डाले; क्योंकि यह मन ही जीवात्मा का मित्र है और यही इसका शत्रु भी है।', emotion: 'शिक्षाप्रद' },
                     { speaker: 'अर्जुन', text: 'किसके लिए मन मित्र है, और किसके लिए शत्रु?', emotion: 'प्रश्नवाचक' },
-                    { speaker: 'कृष्ण', text: 'जिसने मन को जीत लिया है, उसके लिए मन सबसे अच्छा मित्र है; लेकिन जो ऐसा करने में असफल रहा है, उसके लिए उसका मन सबसे बड़ा शत्रु बना रहेगा।', emotion: 'स्पष्ट करते हुए' },
-                    { speaker: 'अर्जुन', text: 'योग ध्यान का अभ्यास कैसे किया जाता है?', emotion: 'व्यावहारिक' },
-                    { speaker: 'कृष्ण', text: 'योग का अभ्यास करने के लिए, व्यक्ति को एक एकांत स्थान पर जाना चाहिए, कुश घास, मृगचर्म और एक मुलायम कपड़े का आसन बिछाना चाहिए, और फिर, शांत मन से, हृदय को शुद्ध करने के लिए योग का अभ्यास करना चाहिए।', emotion: 'मार्गदर्शक' },
-                    { speaker: 'अर्जुन', text: 'यह बहुत कठिन लगता है। खाने और सोने के बारे में क्या?', emotion: 'चिंतित' },
-                    { speaker: 'कृष्ण', text: 'जो अपने खाने, सोने, मनोरंजन और काम की आदतों में नियमित है, वह योग प्रणाली का अभ्यास करके सभी भौतिक पीड़ाओं को कम कर सकता है।', emotion: 'संतुलित' },
-                    { speaker: 'अर्जुन', text: 'हे कृष्ण, मन चंचल, उपद्रवी, हठी और बहुत बलवान है। इसे वश में करना, मुझे लगता है, हवा को नियंत्रित करने से भी अधिक कठिन है।', emotion: 'निराश' },
-                    { speaker: 'कृष्ण', text: 'हे महाबाहु कुंतीपुत्र, निःसंदेह चंचल मन को वश में करना बहुत कठिन है, लेकिन उपयुक्त अभ्यास और वैराग्य से यह संभव है।', emotion: 'प्रोत्साहित करते हुए' },
-                    { speaker: 'अर्जुन', text: 'उस असफल योगी का गंतव्य क्या है जो श्रद्धा से शुरू करता है लेकिन फिर सांसारिक मन के कारण रुक जाता है?', emotion: 'चिंतित' },
-                    { speaker: 'कृष्ण', text: 'शुभ कार्यों में लगा एक योगी न तो इस लोक में और न ही आध्यात्मिक लोक में विनाश को प्राप्त होता है; जो अच्छा करता है, मेरे मित्र, वह कभी बुराई से पराजित नहीं होता।', emotion: 'आश्वस्त' },
-                    { speaker: 'अर्जुन', text: 'मृत्यु के बाद वह कहाँ जाता है?', emotion: 'जिज्ञासु' },
-                    { speaker: 'कृष्ण', text: 'असफल योगी, पुण्यवानों के लोकों पर कई-कई वर्षों तक आनंद लेने के बाद, धर्मी लोगों के परिवार में, या अमीर अभिजात वर्ग के परिवार में जन्म लेता है। अपने पिछले जीवन की दिव्य चेतना के आधार पर, वह फिर से अपने पिछले जीवन की चेतना को पुनर्जीवित करता है और आगे की प्रगति करने का प्रयास करता है।', emotion: 'वर्णनात्मक' },
-                    { speaker: 'अर्जुन', text: 'तो, कोई भी आध्यात्मिक प्रयास कभी व्यर्थ नहीं जाता?', emotion: 'आशावान' },
-                    { speaker: 'कृष्ण', text: 'निश्चित रूप से। और जब योगी आगे की प्रगति करने में ईमानदारी से प्रयास करता है, सभी अशुद्धियों से धुल जाता है, तो अंततः, कई-कई जन्मों के अभ्यास के बाद पूर्णता प्राप्त करके, वह परम लक्ष्य को प्राप्त करता है।', emotion: 'वचन देते हुए' },
-                    { speaker: 'अर्जुन', text: 'सभी योगियों में सर्वोच्च कौन है?', emotion: 'अन्वेषी' },
-                    { speaker: 'कृष्ण', text: 'और सभी योगियों में, जो बड़ी श्रद्धा के साथ हमेशा मुझमें रहता है, अपने भीतर मेरे बारे में सोचता है, और मुझे दिव्य प्रेममयी सेवा प्रदान करता है - वह योग में मुझसे सबसे अधिक घनिष्ठ रूप से जुड़ा हुआ है और सभी में सर्वोच्च है। यह मेरा मत है।', emotion: 'निर्णायक' },
-                    { speaker: 'अर्जुन', text: 'मैं समझ गया। मार्ग कठिन है, लेकिन अभ्यास, वैराग्य और भक्ति से यह संभव है।', emotion: 'संकल्पित' },
-                    { speaker: 'कृष्ण', text: 'हाँ, अर्जुन। एक सच्चा योगी मुझे सभी प्राणियों में और सभी प्राणियों को मुझमें देखता है। ऐसे व्यक्ति के लिए, मैं कभी खोता नहीं, न ही वे कभी मुझसे खोते हैं।', emotion: 'एकीकृत' }
+                    { speaker: 'कृष्ण', text: 'जिस जीवात्मा द्वारा मन और इंद्रियों सहित शरीर जीता हुआ है, उसके लिए तो उसका मन मित्र है; और जिसके द्वारा मन नहीं जीता गया है, उसके लिए वह मन परम शत्रु के समान शत्रुता में बरतता है।', emotion: 'स्पष्ट करते हुए' },
+                    { speaker: 'अर्जुन', text: 'ध्यान योग का अभ्यास किस प्रकार करना चाहिए?', emotion: 'व्यावहारिक' },
+                    { speaker: 'कृष्ण', text: 'योगी पवित्र भूमि में कुश, मृगछाला और वस्त्र से युक्त न बहुत ऊँचा और न बहुत नीचा आसन स्थापित करे। वहाँ एकाग्र मन से चित्त और इंद्रियों की क्रियाओं को वश में रखते हुए, शरीर, सिर और गले को सीधा और अचल रखकर आत्म-शुद्धि के लिए योग का अभ्यास करे।', emotion: 'मार्गदर्शक' },
+                    { speaker: 'अर्जुन', text: 'इस योग में आहार और विहार का क्या नियम है?', emotion: 'चिंतित' },
+                    { speaker: 'कृष्ण', text: 'हे अर्जुन! यह योग न तो बहुत अधिक खाने वाले का और न बिल्कुल न खाने वाले का, तथा न बहुत अधिक सोने वाले का और न सदा जागने वाले का ही सिद्ध होता है। दुःखों का नाश करने वाला तो यथायोग्य आहार-विहार करने वाले, कर्मों में यथायोग्य चेष्टा करने वाले और यथायोग्य सोने तथा जागने वाले का ही सिद्ध होता है।', emotion: 'संतुलित' },
+                    { speaker: 'अर्जुन', text: 'पूर्ण ध्यान में स्थित योगी की दृष्टि कैसी होती है?', emotion: 'जिज्ञासु' },
+                    { speaker: 'कृष्ण', text: 'सर्वव्यापी अनंत चेतना में एकीभाव से स्थित रूप योग से युक्त आत्मा वाला तथा सबमें समभाव से देखने वाला योगी आत्मा को संपूर्ण भूतों में स्थित और संपूर्ण भूतों को आत्मा में कल्पित देखता है। जो पुरुष संपूर्ण भूतों में सबके आत्मरूप मुझ वासुदेव को ही देखता है और संपूर्ण भूतों को मुझमें देखता है, उसके लिए मैं अदृश्य नहीं होता और वह मेरे लिए अदृश्य नहीं होता।', emotion: 'एकीकृत' },
+                    { speaker: 'अर्जुन', text: 'हे मधुसूदन! आपने समत्व भाव से जिस योग को कहा है, मन के चंचल होने के कारण मैं इसकी नित्य स्थिति को नहीं देखता। हे कृष्ण! यह मन बड़ा चंचल, प्रमथन स्वभाव वाला (मथ डालने वाला), बड़ा दृढ़ और बलवान है; उसका निग्रह करना मैं वायु को रोकने की भांति अत्यंत दुष्कर मानता हूँ।', emotion: 'निराश' },
+                    { speaker: 'कृष्ण', text: 'हे महाबाहु कुंतीपुत्र! निःसंदेह मन चंचल और कठिनता से वश में होने वाला है; परंतु हे कौन्तेय, अभ्यास और वैराग्य के द्वारा इसे वश में किया जा सकता है।', emotion: 'प्रोत्साहित करते हुए' },
+                    { speaker: 'अर्जुन', text: 'हे कृष्ण! जो योग में श्रद्धा रखने वाला है, किंतु संयमी न होने के कारण जिसका मन अंतकाल में योग से विचलित हो गया है, ऐसा साधक योग की सिद्धि को न पाकर किस गति को प्राप्त होता है? क्या वह दोनों ओर से भ्रष्ट होकर छिन्न-भिन्न बादल की भांति नष्ट तो नहीं हो जाता?', emotion: 'चिंतित' },
+                    { speaker: 'कृष्ण', text: 'हे पार्थ! उस पुरुष का न तो इस लोक में नाश होता है और न परलोक में ही; क्योंकि हे प्यारे! आत्मोद्धार के लिए अर्थात भगवत्प्राप्ति के लिए कर्म करने वाला कोई भी मनुष्य दुर्गति को प्राप्त नहीं होता।', emotion: 'आश्वस्त' },
+                    { speaker: 'अर्जुन', text: 'मृत्यु के पश्चात उस योगभ्रष्ट साधक का क्या होता है?', emotion: 'जिज्ञासु' },
+                    { speaker: 'कृष्ण', text: 'योगभ्रष्ट पुरुष पुण्यवानों के लोकों को प्राप्त होकर, वहाँ बहुत वर्षों तक निवास करके फिर शुद्ध आचरण वाले श्रीमान पुरुषों के घर में जन्म लेता है; अथवा ज्ञानवान योगियों के ही कुल में जन्म लेता है। वहाँ उसे अपने पूर्वजन्म के साधन-संस्कार अनायास ही पुनः प्राप्त हो जाते हैं और वह फिर से सिद्धि के लिए और अधिक प्रयत्न करता है।', emotion: 'वर्णनात्मक' },
+                    { speaker: 'अर्जुन', text: 'तो आध्यात्मिक मार्ग पर किया गया कोई भी प्रयास कभी व्यर्थ नहीं जाता?', emotion: 'आशावान' },
+                    { speaker: 'कृष्ण', text: 'निःसंदेह। वह अनेक जन्मों से संसिद्ध होकर, संपूर्ण पापों से रहित हो, फिर परम गति को प्राप्त होता है। योगी तपस्वियों से श्रेष्ठ है, शास्त्रज्ञानियों से भी श्रेष्ठ माना गया है और सकाम कर्म करने वालों से भी योगी श्रेष्ठ है; इससे हे अर्जुन, तू योगी हो!', emotion: 'वचन देते हुए' },
+                    { speaker: 'अर्जुन', text: 'और समस्त योगियों में भी सर्वोच्च योगी कौन है?', emotion: 'अन्वेषी' },
+                    { speaker: 'कृष्ण', text: 'संपूर्ण योगियों में भी जो श्रद्धावान योगी मुझमें लगे हुए अंतरात्मा से मुझको ही निरंतर भजता है, वह योगी मुझे परम श्रेष्ठ मान्य है।', emotion: 'निर्णायक' }
                 ],
-                summary: 'कृष्ण ध्यान के अभ्यास और मन को नियंत्रित करने की विधि बताते हैं। वह आश्वासन देते हैं कि आध्यात्मिक मार्ग पर किया गया कोई भी प्रयास व्यर्थ नहीं जाता।',
-                teachings: 'मनुष्य का मन ही उसका मित्र और शत्रु है। अभ्यास और वैराग्य से मन को वश में किया जा सकता है। सभी योगियों में, भक्तियोगी श्रेष्ठ है।',
-                moralLesson: 'आत्म-नियंत्रण और निरंतर अभ्यास से किसी भी लक्ष्य को प्राप्त किया जा सकता है। आध्यात्मिक प्रयास कभी निष्फल नहीं होते।',
-                kidsVersion: 'कृष्ण ने कहा कि हमारे मन को नियंत्रित करना एक शरारती बंदर को प्रशिक्षित करने जैसा है। यह मुश्किल है, लेकिन अभ्यास से हम इसे अपना सबसे अच्छा दोस्त बना सकते हैं।'
+                summary: 'श्रीकृष्ण ध्यान योग की विधि और संतुलित जीवनशैली (युक्ताहारविहार) का वर्णन करते हैं। जब अर्जुन कहता है कि चंचल मन को वश में करना वायु को बांधने से भी कठिन है, तब श्रीकृष्ण अभ्यास और वैराग्य का उपाय बताते हैं और आश्वासन देते हैं कि आध्यात्मिक पथ पर चला कोई भी साधक कभी नष्ट नहीं होता, तथा श्रद्धा और प्रेम से भजन करने वाला योगी सर्वश्रेष्ठ है।',
+                teachings: 'मनुष्य को अपने मन से अपना उद्धार करना चाहिए; संयत मन सबसे अच्छा मित्र है और असंयत मन सबसे बड़ा शत्रु (6.5–6)।\nध्यान में सफलता के लिए आहार, निद्रा, कर्म और विश्राम में संतुलन (युक्ताहारविहार) आवश्यक है (6.16–17)।\nचंचल मन को निरंतर अभ्यास और वैराग्य के द्वारा वश में किया जा सकता है (6.35)।\nकल्याण के मार्ग पर चलने वाले का कभी नाश नहीं होता; और जो श्रद्धा से भगवान को भजता है वह सभी योगियों में सर्वश्रेष्ठ है (6.40, 6.47)।',
+                moralLesson: 'आत्म-संयम, संतुलित जीवन और निरंतर अभ्यास से मन को अपना सच्चा मित्र बनाया जा सकता है। अच्छाई और आध्यात्मिकता की ओर उठाया गया एक भी कदम कभी व्यर्थ नहीं जाता।',
+                kidsVersion: 'अर्जुन ने श्रीकृष्ण से कहा कि हमारा मन तो हवा से भी तेज़ भागता है, इसे शांत कैसे करें? श्रीकृष्ण ने मुस्कुराकर बताया कि सही समय पर खाने, सोने और रोज़ थोड़ा-थोड़ा अभ्यास (प्रैक्टिस) करने से हम अपने चंचल मन को अपना सबसे अच्छा दोस्त बना सकते हैं। और अच्छी बात यह है कि अच्छा बनने की हमारी कोशिश कभी बेकार नहीं जाती!'
             },
             7: {
                 title: 'ज्ञान विज्ञान योग',
                 subtitle: 'परम सत्य का ज्ञान',
-                description: 'कृष्ण अपनी सर्वोच्च प्रकृति और विभिन्न प्रकार के भक्तों का खुलासा करते हैं',
+                description: 'श्रीकृष्ण अपनी अपरा व परा प्रकृति, त्रिगुणात्मिका माया से पार होने का उपाय और चार प्रकार के भक्तों का वर्णन करते हैं।',
                 dialogue: [
-                    { speaker: 'कृष्ण', text: 'अब सुनो, हे पृथापुत्र, कैसे मेरी पूर्ण चेतना में योग का अभ्यास करके, अपने मन को मुझसे जोड़कर, तुम मुझे पूर्ण रूप से, संदेह से मुक्त होकर जान सकते हो।', emotion: 'वचन देते हुए' },
-                    { speaker: 'अर्जुन', text: 'कृपया मुझे यह ज्ञान पूर्ण रूप से बताएं। इसे जानने के बाद, और क्या जानने को शेष रहता है?', emotion: 'उत्सुक' },
-                    { speaker: 'कृष्ण', text: 'मनुष्यों में हजारों में से कोई एक पूर्णता के लिए प्रयास कर सकता है, और जिन्होंने पूर्णता प्राप्त कर ली है, उनमें से शायद ही कोई मुझे वास्तव में जानता है।', emotion: 'प्रकट करते हुए' },
-                    { speaker: 'अर्जुन', text: 'आपकी शक्तियों की प्रकृति क्या है?', emotion: 'जिज्ञासु' },
-                    { speaker: 'कृष्ण', text: 'पृथ्वी, जल, अग्नि, वायु, आकाश, मन, बुद्धि और मिथ्या अहंकार—ये आठ मिलकर मेरी पृथक भौतिक शक्तियाँ हैं। इसके अलावा, मेरी एक और, श्रेष्ठ शक्ति है, जिसमें जीव शामिल हैं।', emotion: 'वर्णनात्मक' },
-                    { speaker: 'अर्जुन', text: 'तो जो कुछ भी मौजूद है वह आपसे ही उत्पन्न होता है?', emotion: 'समझ' },
-                    { speaker: 'कृष्ण', text: 'इस संसार में जो कुछ भी भौतिक और जो कुछ भी आध्यात्मिक है, निश्चित रूप से जान लो कि मैं ही उत्पत्ति और प्रलय दोनों हूँ। मुझसे श्रेष्ठ कोई सत्य नहीं है। सब कुछ मुझ पर टिका है, जैसे मोती धागे पर पिरोए जाते हैं।', emotion: 'आधारभूत' },
-                    { speaker: 'अर्जुन', text: 'मैं आपको अपने दैनिक जीवन में कैसे देख सकता हूँ?', emotion: 'व्यावहारिक' },
-                    { speaker: 'कृष्ण', text: 'मैं जल का स्वाद हूँ, सूर्य और चंद्रमा का प्रकाश हूँ, आकाश में ध्वनि और मनुष्य में क्षमता हूँ।', emotion: 'सर्व-व्यापी' },
-                    { speaker: 'अर्जुन', text: 'तो फिर अधिकांश लोग आपको क्यों नहीं देख पाते?', emotion: 'प्रश्नवाचक' },
-                    { speaker: 'कृष्ण', text: 'प्रकृति के तीन गुणों से मोहित होकर, सारा संसार मुझे नहीं जानता। मेरी यह दिव्य शक्ति, तीन गुणों से युक्त, पार करना कठिन है। लेकिन जिन्होंने मेरे प्रति आत्मसमर्पण कर दिया है, वे इसे आसानी से पार कर सकते हैं।', emotion: 'ज्ञानी' },
-                    { speaker: 'अर्जुन', text: 'आपकी पूजा करने वाले पुण्यात्मा कौन हैं?', emotion: 'उत्सुक' },
-                    { speaker: 'कृष्ण', text: 'चार प्रकार के पुण्यात्मा मेरी भक्ति सेवा करना शुरू करते हैं—दुखी, धन की इच्छा रखने वाला, जिज्ञासु, और जो परम सत्य का ज्ञान खोज रहा है।', emotion: 'वर्गीकृत करते हुए' },
-                    { speaker: 'अर्जुन', text: 'इनमें से सबसे अच्छा कौन है?', emotion: 'अन्वेषी' },
-                    { speaker: 'कृष्ण', text: 'इनमें से, जो पूर्ण ज्ञान में है और जो हमेशा शुद्ध भक्ति सेवा में लगा रहता है, वह सबसे अच्छा है। क्योंकि मैं उसे बहुत प्रिय हूँ, और वह मुझे प्रिय है।', emotion: 'प्रेममय' },
-                    { speaker: 'अर्जुन', text: 'देवताओं की पूजा करने वालों के बारे में क्या?', emotion: 'पूछताछ' },
-                    { speaker: 'कृष्ण', text: 'कम बुद्धि वाले लोग देवताओं की पूजा करते हैं, और उनके फल सीमित और अस्थायी होते हैं। लेकिन मेरे भक्त अंततः मेरे परम लोक को प्राप्त करते हैं।', emotion: 'विवेकपूर्ण' },
-                    { speaker: 'अर्जुन', text: 'बुद्धिहीन लोग आपकी सर्वोच्च प्रकृति को क्यों नहीं समझ सकते?', emotion: 'उलझन में' },
-                    { speaker: 'कृष्ण', text: 'मैं मूर्खों और बुद्धिहीनों के लिए कभी प्रकट नहीं होता। उनके लिए मैं अपनी आंतरिक शक्ति से ढका रहता हूँ, और इसलिए वे नहीं जानते कि मैं अजन्मा और अच्युत हूँ।', emotion: 'रहस्यमय' },
-                    { speaker: 'अर्जुन', text: 'इस भ्रम से कैसे मुक्त हुआ जा सकता है?', emotion: 'आशावान' },
-                    { speaker: 'कृष्ण', text: 'जिन व्यक्तियों ने पिछले जन्मों में और इस जीवन में पुण्य कर्म किए हैं और जिनके पाप कर्म पूरी तरह से समाप्त हो गए हैं, वे भ्रम के द्वंद्वों से मुक्त हो जाते हैं, और वे दृढ़ संकल्प के साथ मेरी सेवा में लग जाते हैं।', emotion: 'निर्णायक' }
+                    { speaker: 'कृष्ण', text: 'हे पार्थ! मुझमें अनन्य प्रेम से मन लगाने वाला और मेरे ही आश्रित रहकर योग का अभ्यास करने वाला तू जिस प्रकार से संपूर्ण विभूति, बल और ऐश्वर्यादि गुणों से युक्त मुझको संशयरहित जानेगा, उसको सुन।', emotion: 'वचन देते हुए' },
+                    { speaker: 'अर्जुन', text: 'कृपया मुझे यह ज्ञान और विज्ञान पूर्ण रूप से बताइए, जिसे जानने के बाद और कुछ भी जानना शेष नहीं रहता।', emotion: 'उत्सुक' },
+                    { speaker: 'कृष्ण', text: 'हजारों मनुष्यों में कोई एक मेरी प्राप्ति के लिए यत्न करता है, और उन यत्न करने वाले योगियों में भी कोई एक मुझ परायण होकर मुझको तत्त्व से अर्थात यथार्थ रूप से जानता है।', emotion: 'प्रकट करते हुए' },
+                    { speaker: 'अर्जुन', text: 'आपकी प्रकृति (शक्तियों) का स्वरूप क्या है?', emotion: 'जिज्ञासु' },
+                    { speaker: 'कृष्ण', text: 'पृथ्वी, जल, अग्नि, वायु, आकाश, मन, बुद्धि और अहंकार—यह आठ प्रकार से विभाजित मेरी अपरा (जड़) प्रकृति है। हे महाबाहु! इससे दूसरी को, जिससे यह संपूर्ण जगत धारण किया जाता है, मेरी जीवरूपा परा (चेतन) प्रकृति जान।', emotion: 'वर्णनात्मक' },
+                    { speaker: 'अर्जुन', text: 'तो क्या संपूर्ण जगत की उत्पत्ति और आधार आप ही हैं?', emotion: 'समझ' },
+                    { speaker: 'कृष्ण', text: 'मैं संपूर्ण जगत का प्रभव (उत्पत्ति) तथा प्रलय हूँ। हे धनंजय! मुझसे भिन्न दूसरा कोई भी परम कारण नहीं है; यह संपूर्ण जगत सूत्र में मणियों के सदृश मुझमें गुँथा हुआ है।', emotion: 'आधारभूत' },
+                    { speaker: 'अर्जुन', text: 'मैं प्रकृति और जीवन में आपकी उपस्थिति को कैसे अनुभव कर सकता हूँ?', emotion: 'व्यावहारिक' },
+                    { speaker: 'कृष्ण', text: 'हे कौन्तेय! मैं जल में रस हूँ, चंद्रमा और सूर्य में प्रकाश हूँ, संपूर्ण वेदों में ओंकार हूँ, आकाश में शब्द और पुरुषों में पुरुषत्व हूँ। मैं पृथ्वी में पवित्र गंध और अग्नि में तेज हूँ, तथा संपूर्ण भूतों में उनका जीवन और तपस्वियों में तप हूँ।', emotion: 'सर्व-व्यापी' },
+                    { speaker: 'अर्जुन', text: 'फिर संसार के लोग आपको क्यों नहीं पहचान पाते?', emotion: 'प्रश्नवाचक' },
+                    { speaker: 'कृष्ण', text: 'तीनों गुणों के भावों से यह सारा संसार मोहित हो रहा है, इसलिए इन तीनों गुणों से परे मुझ अविनाशी को नहीं जानता। दैवी और त्रिगुणमयी मेरी यह माया बड़ी दुस्तर है; परंतु जो केवल मेरी ही शरण हो जाते हैं, वे इस माया को उल्लंघन कर जाते हैं (तर जाते हैं)।', emotion: 'ज्ञानी' },
+                    { speaker: 'अर्जुन', text: 'आपका भजन करने वाले पुण्यात्मा भक्त कौन हैं?', emotion: 'उत्सुक' },
+                    { speaker: 'कृष्ण', text: 'हे भरतश्रेष्ठ अर्जुन! उत्तम कर्म करने वाले अर्थार्थी (धन-संपत्ति चाहने वाले), आर्त (संकट निवारण चाहने वाले), जिज्ञासु (सत्य को जानने की इच्छा वाले) और ज्ञानी—ये चार प्रकार के भक्त मेरा भजन करते हैं।', emotion: 'वर्गीकृत करते हुए' },
+                    { speaker: 'अर्जुन', text: 'इन चारों में आपको सबसे प्रिय कौन है?', emotion: 'अन्वेषी' },
+                    { speaker: 'कृष्ण', text: 'उनमें नित्य मुझमें एकीभाव से स्थित और अनन्य भक्ति वाला ज्ञानी भक्त अति उत्तम है; क्योंकि मुझको तत्त्व से जानने वाले ज्ञानी को मैं अत्यंत प्रिय हूँ और वह ज्ञानी मुझे अत्यंत प्रिय है।', emotion: 'प्रेममय' },
+                    { speaker: 'अर्जुन', text: 'और जो अन्य देवताओं की उपासना करते हैं, उनका क्या होता है?', emotion: 'पूछताछ' },
+                    { speaker: 'कृष्ण', text: 'जो भक्त जिस-जिस देवता के स्वरूप को श्रद्धा से पूजना चाहता है, उस-उस भक्त की श्रद्धा को मैं उसी देवता के प्रति स्थिर करता हूँ। परंतु उन अल्पबुद्धि वालों का वह फल नाशवान है; देवताओं को पूजने वाले देवताओं को प्राप्त होते हैं और मेरे भक्त मुझको ही प्राप्त होते हैं।', emotion: 'विवेकपूर्ण' },
+                    { speaker: 'अर्जुन', text: 'अज्ञानी लोग आपके परम स्वरूप को क्यों नहीं समझ पाते?', emotion: 'उलझन में' },
+                    { speaker: 'कृष्ण', text: 'अपनी योगमाया से छिपा हुआ मैं सबके प्रत्यक्ष नहीं होता, इसलिए यह अज्ञानी जनसमुदाय मुझ जन्मरहित और अविनाशी परमेश्वर को तत्त्व से नहीं जानता। हे भारत! इच्छा और द्वेष से उत्पन्न सुख-दुःखादि द्वंद्वों के मोह से संपूर्ण प्राणी संसार में भुलभुलैया में पड़ रहे हैं।', emotion: 'रहस्यमय' },
+                    { speaker: 'अर्जुन', text: 'इस द्वंद्व-मोह से कौन मुक्त होकर आपका भजन करते हैं?', emotion: 'आशावान' },
+                    { speaker: 'कृष्ण', text: 'परंतु निष्काम भाव से श्रेष्ठ कर्मों का आचरण करने वाले जिन पुरुषों का पाप अंत को प्राप्त हो गया है, वे राग-द्वेषजनित द्वंद्व रूप मोह से मुक्त एवं दृढ़ निश्चय वाले भक्त मुझको सब प्रकार से भजते हैं।', emotion: 'निर्णायक' }
                 ],
-                summary: 'कृष्ण स्वयं को सभी भौतिक और आध्यात्मिक जगत का स्रोत बताते हैं। वह बताते हैं कि कैसे उनकी माया को पार करना कठिन है, लेकिन जो उनकी शरण लेते हैं वे इसे पार कर जाते हैं।',
-                teachings: 'भगवान ही सब कुछ का मूल हैं। शुद्ध भक्ति से ही उन्हें जाना जा सकता है। चार प्रकार के लोग उनकी पूजा करते हैं।',
-                moralLesson: 'हर चीज में दिव्यता को देखने का प्रयास करें। सच्चा ज्ञान ईश्वर के प्रति समर्पण से आता है।',
-                kidsVersion: 'कृष्ण ने बताया कि वह हर चीज में मौजूद हैं - पानी के स्वाद में, सूरज की रोशनी में। जो लोग उन्हें सच्चे दिल से याद करते हैं, वे उनके सबसे अच्छे दोस्त बन जाते हैं।'
+                summary: 'श्रीकृष्ण अपने समग्र स्वरूप (ज्ञान और विज्ञान) को प्रकट करते हुए अपनी अपरा (जड़) और परा (जीवरूपा चेतन) प्रकृतियों का वर्णन करते हैं। वे बताते हैं कि जैसे धागे में मोती पिरोए होते हैं, वैसे ही सारा ब्रह्मांड उन पर आश्रित है। त्रिगुणमयी माया को केवल उनकी शरण से ही पार किया जा सकता है, और चार प्रकार के भक्तों में से अनन्य प्रेमी ज्ञानी भक्त उन्हें सर्वाधिक प्रिय है।',
+                teachings: 'भगवान की दो प्रकृतियाँ हैं: अष्टधा अपरा प्रकृति (पंचमहाभूत, मन, बुद्धि, अहंकार) और चेतन जीवरूपा परा प्रकृति (7.4–5)।\nजैसे धागे में मणियाँ पिरोई रहती हैं, वैसे ही संपूर्ण जगत भगवान में गुँथा हुआ है (7.7)।\nआर्त, जिज्ञासु, अर्थार्थी और ज्ञानी—इन चार प्रकार के भक्तों में अनन्य भक्ति वाला ज्ञानी भक्त भगवान की ही आत्मा स्वरूप है (7.16–18)।\nभगवान की त्रिगुणमयी दैवी माया को केवल उन्हीं की शरण में जाकर पार किया जा सकता है (7.14)।',
+                moralLesson: 'प्रकृति की सुंदरता और सामर्थ्य में ईश्वर की उपस्थिति का अनुभव करें। जब हम निश्चल श्रद्धा और प्रेम से ईश्वर की शरण लेते हैं, तो संसार के भ्रम और द्वंद्व स्वतः शांत हो जाते हैं।',
+                kidsVersion: 'श्रीकृष्ण ने अर्जुन को बताया कि पूरी दुनिया एक सुंदर मोतियों की माला जैसी है और श्रीकृष्ण वह अदृश्य धागा हैं जिसने सारे मोतियों को जोड़ रखा है। पानी की मिठास, सूरज और चाँद की रोशनी, और फूलों की खुशबू—सब उन्हीं से आती है। जो लोग सच्चे प्यार और समझदारी से भगवान को याद करते हैं, वे भगवान के सबसे प्यारे दोस्त होते हैं।'
             },
             8: {
                 title: 'अक्षर ब्रह्म योग',
                 subtitle: 'परम की प्राप्ति',
-                description: 'कृष्ण अर्जुन के परम वास्तविकता और मृत्यु के बारे में प्रश्नों का उत्तर देते हैं',
+                description: 'श्रीकृष्ण ब्रह्म, अध्यात्म और कर्म से जुड़े सात प्रश्नों का उत्तर देते हैं और अंतकाल में स्मरण तथा उत्तरायण-दक्षिणायन मार्गों का वर्णन करते हैं।',
                 dialogue: [
-                    { speaker: 'अर्जुन', text: 'हे मेरे प्रभु, ब्रह्म क्या है? आत्मा क्या है? सकाम कर्म क्या हैं? यह भौतिक अभिव्यक्ति क्या है? और मृत्यु के समय मैं आपको कैसे जान सकता हूँ?', emotion: 'जिज्ञासु' },
-                    { speaker: 'कृष्ण', text: 'अविनाशी, दिव्य जीव को ब्रह्म कहा जाता है। भौतिक शरीरों के विकास से संबंधित कर्म को कर्म कहा जाता है।', emotion: 'परिभाषित करते हुए' },
-                    { speaker: 'अर्जुन', text: 'मृत्यु के क्षण में आपको याद रखना कैसे संभव है?', emotion: 'चिंतित' },
-                    { speaker: 'कृष्ण', text: 'जो कोई भी, अपने जीवन के अंत में, केवल मुझे याद करते हुए अपना शरीर छोड़ता है, वह तुरंत मेरी प्रकृति को प्राप्त करता है। इसमें कोई संदेह नहीं है।', emotion: 'आश्वस्त' },
-                    { speaker: 'अर्जुन', text: 'मृत्यु के समय हमारी स्थिति क्या निर्धारित करती है?', emotion: 'प्रश्नवाचक' },
-                    { speaker: 'कृष्ण', text: 'जब कोई अपना शरीर छोड़ता है तो वह जिस भी अवस्था को याद करता है, हे कुंतीपुत्र, वह उस अवस्था को बिना चूके प्राप्त करेगा।', emotion: 'शिक्षाप्रद' },
-                    { speaker: 'अर्जुन', text: 'तो मुझे हमेशा आपके बारे में सोचना चाहिए?', emotion: 'समझ' },
-                    { speaker: 'कृष्ण', text: 'इसलिए, अर्जुन, तुम्हें हमेशा मेरे बारे में सोचना चाहिए और साथ ही लड़ने का अपना निर्धारित कर्तव्य पूरा करना चाहिए। अपनी गतिविधियों को मुझे समर्पित करके, तुम मुझे बिना किसी संदेह के प्राप्त करोगे।', emotion: 'मार्गदर्शक' },
-                    { speaker: 'अर्जुन', text: 'आप तक पहुँचने के लिए कैसे ध्यान करना चाहिए?', emotion: 'व्यावहारिक' },
-                    { speaker: 'कृष्ण', text: 'जो मुझ पर परम पुरुष के रूप में ध्यान करता है, उसका मन लगातार मुझे याद करने में लगा रहता है, पथ से विचलित नहीं होता, वह निश्चित रूप से मुझ तक पहुँचता है।', emotion: 'वचन देते हुए' },
-                    { speaker: 'अर्जुन', text: 'आपके परम धाम की प्रकृति क्या है?', emotion: 'उत्सुक' },
-                    { speaker: 'कृष्ण', text: 'भौतिक संसार में उच्चतम ग्रह से लेकर निम्नतम तक, सभी दुख के स्थान हैं जहाँ बार-बार जन्म और मृत्यु होती है। लेकिन जो मेरे धाम को प्राप्त करता है वह फिर कभी जन्म नहीं लेता।', emotion: 'मुक्तिदायक' },
-                    { speaker: 'अर्जुन', text: 'क्या इस भौतिक संसार से परे कोई दुनिया है?', emotion: 'चकित' },
-                    { speaker: 'कृष्ण', text: 'फिर भी एक और अव्यक्त प्रकृति है, जो शाश्वत है और इस व्यक्त और अव्यक्त पदार्थ से परे है। यह सर्वोच्च है और कभी नष्ट नहीं होती। वह मेरा परम धाम है।', emotion: 'प्रकट करते हुए' },
-                    { speaker: 'अर्जुन', text: 'उस धाम तक कैसे पहुँचा जा सकता है?', emotion: 'अन्वेषी' },
-                    { speaker: 'कृष्ण', text: 'परम पुरुषोत्तम भगवान, जो सबसे महान हैं, को अनन्य भक्ति द्वारा प्राप्त किया जा सकता है। यद्यपि वह अपने धाम में मौजूद हैं, वह सर्वव्यापी हैं, और सब कुछ उनके भीतर स्थित है।', emotion: 'भक्तिमय' },
-                    { speaker: 'अर्जुन', text: 'क्या शरीर छोड़ने के लिए शुभ समय होते हैं?', emotion: 'विश्लेषणात्मक' },
-                    { speaker: 'कृष्ण', text: 'जो परम ब्रह्म को जानते हैं, वे अग्नि देव के प्रभाव में, प्रकाश में, दिन के एक शुभ क्षण में, शुक्ल पक्ष के पखवाड़े के दौरान, या जब सूर्य उत्तर में यात्रा करता है, उन छह महीनों के दौरान दुनिया से गुजरकर उस परम को प्राप्त करते हैं।', emotion: 'वर्णनात्मक' },
-                    { speaker: 'अर्जुन', text: 'और अशुभ समय?', emotion: 'विपरीत' },
-                    { speaker: 'कृष्ण', text: 'जो योगी धुएं, रात, कृष्ण पक्ष के पखवाड़े, या जब सूर्य दक्षिण की ओर जाता है, उन छह महीनों के दौरान इस दुनिया से गुजरता है, वह चंद्र लोक तक पहुँचता है लेकिन फिर वापस आ जाता है।', emotion: 'चेतावनी' },
-                    { speaker: 'अर्जुन', text: 'क्या एक भक्त को इन गणनाओं के बारे में चिंता करनी चाहिए?', emotion: 'चिंतित' },
-                    { speaker: 'कृष्ण', text: 'यद्यपि भक्त इन दो मार्गों को जानते हैं, वे कभी भ्रमित नहीं होते। इसलिए हमेशा भक्ति में स्थिर रहो।', emotion: 'आश्वस्त' },
-                    { speaker: 'अर्जुन', text: 'तो, भक्ति ही वह कुंजी है जो सभी दरवाजे खोलती है?', emotion: 'प्रबुद्ध' },
-                    { speaker: 'कृष्ण', text: 'जो व्यक्ति भक्ति सेवा का मार्ग स्वीकार करता है, वह किसी भी परिणाम से वंचित नहीं रहता। केवल भक्ति सेवा करने से, वह यह सब प्राप्त करता है, और अंत में वह परम शाश्वत धाम पहुँचता है।', emotion: 'निर्णायक' }
+                    { speaker: 'अर्जुन', text: 'हे पुरुषोत्तम! वह ब्रह्म क्या है? अध्यात्म क्या है? कर्म क्या है? अधिभूत और अधिदैव किसे कहते हैं? इस शरीर में अधियज्ञ कौन है और वह कैसे है? तथा नियत चित्त वाले पुरुषों द्वारा अंतकाल में आप किस प्रकार जाने जाते हैं?', emotion: 'जिज्ञासु' },
+                    { speaker: 'कृष्ण', text: 'परम अक्षर ब्रह्म है; अपना स्वरूप अर्थात जीवात्मा अध्यात्म नाम से कहा जाता है; तथा भूतों के भाव को उत्पन्न करने वाला जो त्याग (संकल्प/यज्ञ) है, वह कर्म नाम से कहा गया है। क्षर भाव अधिभूत है, पुरुष (हिरण्यगर्भ) अधिदैव है, और हे देहधारियों में श्रेष्ठ अर्जुन, इस शरीर में मैं वासुदेव ही अंतर्यामी रूप से अधियज्ञ हूँ।', emotion: 'परिभाषित करते हुए' },
+                    { speaker: 'अर्जुन', text: 'मृत्यु के समय आपको स्मरण करने का क्या फल है?', emotion: 'चिंतित' },
+                    { speaker: 'कृष्ण', text: 'जो पुरुष अंतकाल में भी मुझको ही स्मरण करता हुआ शरीर को त्याग कर जाता है, वह मेरे साक्षात स्वरूप को प्राप्त होता है—इसमें कुछ भी संशय नहीं है।', emotion: 'आश्वस्त' },
+                    { speaker: 'अर्जुन', text: 'अंत समय में मनुष्य की गति किस नियम से तय होती है?', emotion: 'प्रश्नवाचक' },
+                    { speaker: 'कृष्ण', text: 'हे कुंतीपुत्र अर्जुन! यह मनुष्य अंतकाल में जिस-जिस भी भाव को स्मरण करता हुआ शरीर का त्याग करता है, उस-उस को ही प्राप्त होता है, क्योंकि वह सदा उसी भाव से भावित रहा है।', emotion: 'शिक्षाप्रद' },
+                    { speaker: 'अर्जुन', text: 'तो अंतकाल में आपका स्मरण बना रहे, इसके लिए मुझे अभी क्या करना चाहिए?', emotion: 'समझ' },
+                    { speaker: 'कृष्ण', text: 'इसलिए हे अर्जुन! तू सब समय में निरंतर मेरा स्मरण कर और युद्ध भी कर। इस प्रकार मुझमें अर्पण किए हुए मन-बुद्धि से युक्त होकर तू निःसंदेह मुझको ही प्राप्त होगा।', emotion: 'मार्गदर्शक' },
+                    { speaker: 'अर्जुन', text: 'योगी प्राण-त्याग के समय परमात्मा का ध्यान किस प्रकार करता है?', emotion: 'व्यावहारिक' },
+                    { speaker: 'कृष्ण', text: 'संपूर्ण इंद्रियों के द्वारों को रोककर, मन को हृदयाकाश में स्थिर करके और प्राण को मस्तक में स्थापित करके, योगधारणा में स्थित होकर जो पुरुष "ॐ" इस एक अक्षर रूप ब्रह्म का उच्चारण और मेरा स्मरण करता हुआ शरीर का त्याग करता है, वह परम गति को प्राप्त होता है।', emotion: 'वचन देते हुए' },
+                    { speaker: 'अर्जुन', text: 'ब्रह्मा के लोक से लेकर इस भौतिक जगत तक का क्या स्वभाव है?', emotion: 'उत्सुक' },
+                    { speaker: 'कृष्ण', text: 'हे अर्जुन! ब्रह्मलोक पर्यंत सब लोक पुनरावर्ती हैं (जहाँ जाने पर पुनः जन्म होता है); परंतु हे कौन्तेय, मुझको प्राप्त होकर पुनर्जन्म नहीं होता। क्योंकि मैं कालातीत हूँ और ये सब ब्रह्मादि के लोक काल के द्वारा सीमित होने से अनित्य हैं।', emotion: 'मुक्तिदायक' },
+                    { speaker: 'अर्जुन', text: 'क्या इस व्यक्त और अव्यक्त प्रकृति से भी परे कोई सनातन धाम है?', emotion: 'चकित' },
+                    { speaker: 'कृष्ण', text: 'उस अव्यक्त से भी अति पर दूसरा अर्थात विलक्षण जो सनातन अव्यक्त भाव है, वह परम दिव्य पुरुष सब भूतों के नष्ट होने पर भी नष्ट नहीं होता। उसी को अक्षर कहा गया है और वही मेरा परम धाम है, जिसे प्राप्त होकर जीव फिर इस संसार में नहीं लौटते।', emotion: 'प्रकट करते हुए' },
+                    { speaker: 'अर्जुन', text: 'उस परम पुरुष को किस उपाय से प्राप्त किया जा सकता है?', emotion: 'अन्वेषी' },
+                    { speaker: 'कृष्ण', text: 'हे पार्थ! जिस परमात्मा के अंतर्गत सर्वभूत हैं और जिस सच्चिदानंदघन परमात्मा से यह समस्त जगत परिपूर्ण है, वह सनातन अव्यक्त परम पुरुष तो अनन्य भक्ति से ही प्राप्त होने योग्य है।', emotion: 'भक्तिमय' },
+                    { speaker: 'अर्जुन', text: 'किस मार्ग से जाने वाले योगी लौटते नहीं और किस मार्ग से जाने वाले लौट आते हैं?', emotion: 'विश्लेषणात्मक' },
+                    { speaker: 'कृष्ण', text: 'अग्नि, ज्योति, दिन, शुक्लपक्ष और उत्तरायण के छह महीनों के मार्ग से शरीर त्याग कर जाने वाले ब्रह्मवेत्ता पुरुष ब्रह्म को प्राप्त होते हैं। वहीं धूम, रात्रि, कृष्णपक्ष और दक्षिणायन के छह महीनों के मार्ग से जाने वाला सकाम योगी चंद्रलोक की ज्योति को प्राप्त होकर पुनः लौट आता है।', emotion: 'वर्णनात्मक' },
+                    { speaker: 'अर्जुन', text: 'क्या भक्त को इन कालों और मार्गों की चिंता करनी चाहिए?', emotion: 'चिंतित' },
+                    { speaker: 'कृष्ण', text: 'जगत के ये दो प्रकार के—शुक्ल और कृष्ण—अर्थात देवयान और पितृयान मार्ग सनातन माने गए हैं। इन दोनों मार्गों को जानने वाला कोई भी योगी मोहित नहीं होता; इस कारण हे अर्जुन, तू सब काल में समबुद्धि रूप योग से युक्त हो (निरंतर भक्ति में स्थित रह)। योगी इस रहस्य को जानकर वेदों के पढ़ने में तथा यज्ञ, तप और दानादि के करने में जो पुण्यफल कहा है, उन सबको निःसंदेह उल्लंघन कर जाता है और सनातन परम पद को प्राप्त होता है।', emotion: 'निर्णायक' }
                 ],
-                summary: 'कृष्ण बताते हैं कि मृत्यु के समय व्यक्ति की चेतना उसके अगले गंतव्य को निर्धारित करती है। जीवन भर ईश्वर का स्मरण करने से अंत समय में भी उनकी याद बनी रहती है।',
-                teachings: 'मृत्यु के समय की चेतना महत्वपूर्ण है। जीवन भर भक्ति का अभ्यास करने से अंत समय में भगवान की प्राप्ति होती है।',
-                moralLesson: 'हम आज अपने मन को जिससे भरते हैं, वही हमारा भविष्य और अंतिम गति निर्धारित करता है।',
-                kidsVersion: 'कृष्ण ने बताया कि हम जीवन के अंत में जिसके बारे में सोचते हैं, हम वहीं जाते हैं। इसलिए हमें हमेशा अच्छी और भगवान की बातें सोचनी चाहिए ताकि हम उनके पास जा सकें।'
+                summary: 'श्रीकृष्ण अर्जुन के सात प्रश्नों (ब्रह्म, अध्यात्म, कर्म, अधिभूत, अधिदैव, अधियज्ञ और अंतकाल में स्मरण) का उत्तर देते हैं। वे बताते हैं कि मनुष्य अंत समय में जिस भाव का स्मरण करते हुए देह त्यागता है, उसी को प्राप्त होता है। अतः सब समय भगवान का स्मरण करते हुए कर्तव्य पालन करना चाहिए, जिससे भक्त जन्म-मृत्यु के चक्र से मुक्त होकर सनातन परम धाम को प्राप्त होता है।',
+                teachings: 'अक्षर परब्रह्म है, जीवात्मा का स्वभाव अध्यात्म है, और प्राणियों की उत्पत्ति का कारण बनने वाला विसर्ग (यज्ञीय त्याग) कर्म है (8.3)।\nमनुष्य अंतकाल में जिस भाव का स्मरण करते हुए शरीर छोड़ता है, सदा उसी भाव से भावित रहने के कारण वह उसी को प्राप्त होता है (8.5–6)।\nतस्मात्सर्वेषु कालेषु मामनुस्मर युध्य च: सब समय भगवान का स्मरण करो और अपना कर्तव्य भी निभाओ (8.7)।\nब्रह्मलोक तक सभी लोक पुनरावर्ती हैं, किंतु भगवान के सनातन परम धाम को प्राप्त करने पर पुनर्जन्म नहीं होता (8.16, 8.21)।',
+                moralLesson: 'हम जीवन भर अपने मन को जिन विचारों और संस्कारों से भरते हैं, अंत समय में वही हमारे साथ रहते हैं। इसलिए हर दिन ईश्वर का स्मरण करते हुए अपने कर्तव्यों को ईमानदारी से निभाना चाहिए।',
+                kidsVersion: 'श्रीकृष्ण ने अर्जुन को एक बड़ा रहस्य बताया: जिस तरह हम साल भर पढ़ाई करते हैं तभी परीक्षा के समय हमें सब याद रहता है, उसी तरह अगर हम हर रोज़ अपना काम करते हुए भगवान को प्यार से याद रखेंगे, तो जीवन के अंत में भी भगवान हमारे मन में रहेंगे और हम उनके सुंदर, कभी न मिटने वाले धाम में पहुँच जाएंगे!'
             },
             9: {
                 title: 'राज विद्या राज गुह्य योग',
                 subtitle: 'सबसे गोपनीय ज्ञान',
-                description: 'कृष्ण भक्ति सेवा के सबसे गोपनीय ज्ञान का खुलासा करते हैं',
+                description: 'श्रीकृष्ण राजविद्या और राजगुह्य का उद्घाटन करते हैं, अपनी सर्वव्यापकता बताते हैं और पत्र-पुष्प से प्रेमपूर्वक अर्पण तथा अनन्य भक्ति की महिमा गाते हैं।',
                 dialogue: [
-                    { speaker: 'कृष्ण', text: 'मेरे प्रिय अर्जुन, क्योंकि तुम मुझसे कभी ईर्ष्या नहीं करते, मैं तुम्हें यह सबसे गोपनीय ज्ञान और अनुभूति प्रदान करूँगा, जिसे जानकर तुम भौतिक अस्तित्व के दुखों से मुक्त हो जाओगे।', emotion: 'कृपालु' },
-                    { speaker: 'अर्जुन', text: 'हे प्रभु, मैं इस सर्वोच्च ज्ञान को सुनने के लिए उत्सुक हूँ।', emotion: 'ग्रहणशील' },
-                    { speaker: 'कृष्ण', text: 'यह ज्ञान शिक्षा का राजा, सभी रहस्यों में सबसे गुप्त है। यह सबसे शुद्ध ज्ञान है, और क्योंकि यह अनुभूति द्वारा आत्मा का प्रत्यक्ष बोध कराता है, यह धर्म की पूर्णता है।', emotion: 'जोरदार' },
-                    { speaker: 'अर्जुन', text: 'श्रद्धाहीन लोग आपको क्यों नहीं प्राप्त कर पाते?', emotion: 'प्रश्नवाचक' },
-                    { speaker: 'कृष्ण', text: 'जो इस भक्ति सेवा में श्रद्धा नहीं रखते, वे मुझे प्राप्त नहीं कर सकते, हे शत्रुओं के विजेता। इसलिए वे इस भौतिक संसार में जन्म और मृत्यु के मार्ग पर लौट आते हैं।', emotion: 'स्पष्ट करते हुए' },
-                    { speaker: 'अर्जुन', text: 'आप इस ब्रह्मांड में कैसे व्याप्त हैं?', emotion: 'जिज्ञासु' },
-                    { speaker: 'कृष्ण', text: 'मेरे द्वारा, मेरे अव्यक्त रूप में, यह संपूर्ण ब्रह्मांड व्याप्त है। सभी प्राणी मुझमें हैं, लेकिन मैं उनमें नहीं हूँ।', emotion: 'रहस्यमय' },
-                    { speaker: 'अर्जुन', text: 'यह एक विरोधाभास है। सब कुछ आप में कैसे हो सकता है, लेकिन आप उनमें नहीं हैं?', emotion: 'उलझन में' },
-                    { speaker: 'कृष्ण', text: 'और फिर भी जो कुछ भी बनाया गया है वह मुझमें नहीं रहता। मेरे रहस्यमय ऐश्वर्य को देखो! यद्यपि मैं सभी जीवित प्राणियों का पालक हूँ और यद्यपि मैं हर जगह हूँ, मैं इस ब्रह्मांडीय अभिव्यक्ति का हिस्सा नहीं हूँ, क्योंकि मेरी आत्मा ही सृष्टि का स्रोत है।', emotion: 'गहन' },
-                    { speaker: 'अर्जुन', text: 'आपकी दिव्य प्रकृति को पहचानने वाले कौन हैं?', emotion: 'उत्सुक' },
-                    { speaker: 'कृष्ण', text: 'महान आत्माएं, महात्मा, भ्रमित नहीं होते। वे दिव्य प्रकृति की सुरक्षा में हैं और पूरी तरह से भक्ति सेवा में लगे हुए हैं क्योंकि वे मुझे परम पुरुष, मूल और अविनाशी के रूप में जानते हैं।', emotion: 'प्रशंसा करते हुए' },
-                    { speaker: 'अर्जुन', text: 'इस अवस्था को प्राप्त करने के लिए मुझे आपकी पूजा कैसे करनी चाहिए?', emotion: 'अन्वेषी' },
-                    { speaker: 'कृष्ण', text: 'यदि कोई मुझे प्रेम और भक्ति के साथ एक पत्ता, एक फूल, फल या जल अर्पित करता है, तो मैं उसे स्वीकार करूँगा।', emotion: 'स्वीकार करते हुए' },
-                    { speaker: 'अर्जुन', text: 'अर्पण स्वयं महत्वपूर्ण है, या उसके पीछे की भक्ति?', emotion: 'समझ' },
-                    { speaker: 'कृष्ण', text: 'भक्ति ही मायने रखती है। तुम जो कुछ भी करते हो, जो कुछ भी खाते हो, जो कुछ भी अर्पित करते हो या देते हो, और जो भी तपस्या करते हो—उसे मुझे एक अर्पण के रूप में करो।', emotion: 'मार्गदर्शक' },
-                    { speaker: 'अर्जुन', text: 'ऐसे अर्पण का परिणाम क्या होता है?', emotion: 'आशावान' },
-                    { speaker: 'कृष्ण', text: 'इस तरह तुम कर्म के बंधन और उसके शुभ और अशुभ परिणामों से मुक्त हो जाओगे। अपने मन को त्याग के इस सिद्धांत में मुझ पर स्थिर करके, तुम मुक्त हो जाओगे और मेरे पास आओगे।', emotion: 'वचन देते हुए' },
-                    { speaker: 'अर्जुन', text: 'क्या आप कुछ भक्तों का दूसरों पर पक्षपात करते हैं?', emotion: 'पूछताछ' },
-                    { speaker: 'कृष्ण', text: 'मैं किसी से ईर्ष्या नहीं करता, न ही मैं किसी के प्रति पक्षपाती हूँ। मैं सभी के लिए समान हूँ। लेकिन जो कोई भी भक्ति में मेरी सेवा करता है वह एक मित्र है, मुझमें है, और मैं भी उसका मित्र हूँ।', emotion: 'निष्पक्ष' },
-                    { speaker: 'अर्जुन', text: 'इस सबसे गोपनीय ज्ञान में आपका अंतिम निर्देश क्या है?', emotion: 'ध्यान से' },
-                    { speaker: 'कृष्ण', text: 'हमेशा मेरे बारे में सोचो, मेरे भक्त बनो, मेरी पूजा करो और मुझे अपना प्रणाम अर्पित करो। इस प्रकार तुम बिना चूके मेरे पास आओगे। मैं तुम्हें यह वचन देता हूँ क्योंकि तुम मेरे बहुत प्रिय मित्र हो।', emotion: 'प्रेममय' }
+                    { speaker: 'कृष्ण', text: 'तुझ दोषदृष्टि रहित भक्त के लिए मैं इस परम गोपनीय विज्ञान सहित ज्ञान को पुनः भलीभांति कहूँगा, जिसको जानकर तू दुःख रूप संसार से मुक्त हो जाएगा।', emotion: 'कृपालु' },
+                    { speaker: 'अर्जुन', text: 'हे प्रभु, इस परम रहस्यमय ज्ञान की क्या विशेषता है?', emotion: 'ग्रहणशील' },
+                    { speaker: 'कृष्ण', text: 'यह विज्ञान सहित ज्ञान सब विद्याओं का राजा, सब गोपनीयों का राजा, अति पवित्र, अति उत्तम, प्रत्यक्ष फल वाला, धर्मयुक्त, साधन करने में बड़ा सुगम और अविनाशी है।', emotion: 'जोरदार' },
+                    { speaker: 'अर्जुन', text: 'अश्रद्धालु लोग आपको क्यों नहीं प्राप्त कर पाते?', emotion: 'प्रश्नवाचक' },
+                    { speaker: 'कृष्ण', text: 'हे परंतप! इस उपर्युक्त धर्म में श्रद्धा रहित पुरुष मुझको न प्राप्त होकर मृत्यु रूप संसार के चक्र में भ्रमण करते रहते हैं।', emotion: 'स्पष्ट करते हुए' },
+                    { speaker: 'अर्जुन', text: 'आप इस संपूर्ण ब्रह्मांड में किस प्रकार स्थित हैं?', emotion: 'जिज्ञासु' },
+                    { speaker: 'कृष्ण', text: 'मुझ निराकार परमात्मा से यह सब जगत जल से बर्फ के सदृश परिपूर्ण है; और सब भूत मेरे अंतर्गत संकल्प के आधार स्थित हैं, किंतु वास्तव में मैं उनमें स्थित नहीं हूँ।', emotion: 'रहस्यमय' },
+                    { speaker: 'अर्जुन', text: 'यह तो एक अलौकिक रहस्य है! सब भूत आपमें कैसे हैं और फिर भी आप उनसे असंग कैसे रहते हैं?', emotion: 'उलझन में' },
+                    { speaker: 'कृष्ण', text: 'और वे सब भूत मुझमें स्थित नहीं हैं—मेरी इस ईश्वरीय योगशक्ति को देख! भूतों को धारण-पोषण करने वाला और भूतों को उत्पन्न करने वाला भी मेरा आत्मा वास्तव में भूतों में स्थित नहीं है। जैसे आकाश से उत्पन्न सर्वत्र विचरने वाला महान वायु सदा आकाश में ही स्थित है, वैसे ही संपूर्ण भूत मेरे संकल्प द्वारा उत्पन्न होने से मुझमें ही स्थित हैं, ऐसा जान।', emotion: 'गहन' },
+                    { speaker: 'अर्जुन', text: 'आपके इस दिव्य स्वरूप को कौन पहचानते हैं और वे आपका भजन कैसे करते हैं?', emotion: 'उत्सुक' },
+                    { speaker: 'कृष्ण', text: 'हे पार्थ! दैवी प्रकृति के आश्रित महात्माजन मुझको सब भूतों का सनातन कारण और नाशरहित अक्षरस्वरूप जानकर अनन्य मन से युक्त होकर निरंतर भजते हैं। वे दृढ़ निश्चय वाले भक्त निरंतर मेरे नाम और गुणों का कीर्तन करते हुए और मुझे बार-बार प्रणाम करते हुए सदा मेरे ध्यान में युक्त होकर अनन्य प्रेम से मेरी उपासना करते हैं।', emotion: 'प्रशंसा करते हुए' },
+                    { speaker: 'अर्जुन', text: 'और जो अनन्य भाव से आपका ही चिंतन करते हैं, उनका योगक्षेम कैसे चलता है?', emotion: 'अन्वेषी' },
+                    { speaker: 'कृष्ण', text: 'जो अनन्य प्रेमी भक्तजन मुझ परमेश्वर को ही निरंतर चिंतन करते हुए निष्काम भाव से भजते हैं, उन नित्य-निरंतर मेरा चिंतन करने वाले पुरुषों का योगक्षेम (अप्राप्त की प्राप्ति और प्राप्त की रक्षा) मैं स्वयं वहन करता हूँ।', emotion: 'आश्वस्त' },
+                    { speaker: 'अर्जुन', text: 'आपको प्रसन्न करने के लिए भक्त को क्या अर्पित करना चाहिए?', emotion: 'समझ' },
+                    { speaker: 'कृष्ण', text: 'जो कोई भक्त मेरे लिए प्रेम से पत्र, पुष्प, फल, जल आदि अर्पण करता है, उस शुद्धबुद्धि निष्काम प्रेमी भक्त का प्रेमपूर्वक अर्पण किया हुआ वह पत्र-पुष्पादि मैं सगुण रूप से प्रकट होकर प्रीतिसहित खाता हूँ (स्वीकार करता हूँ)।', emotion: 'स्वीकार करते हुए' },
+                    { speaker: 'अर्जुन', text: 'तो हम अपने दैनिक जीवन के हर कार्य को आपकी पूजा कैसे बना सकते हैं?', emotion: 'व्यावहारिक' },
+                    { speaker: 'कृष्ण', text: 'हे अर्जुन! तू जो कुछ कर्म करता है, जो कुछ खाता है, जो कुछ हवन करता है, जो कुछ दान देता है और जो कुछ तप करता है, वह सब मेरे अर्पण कर। इस प्रकार जिसमें समस्त कर्म मुझ भगवान के अर्पण होते हैं, ऐसे संन्यासयोग से युक्त चित्त वाला तू शुभाशुभ फल रूप कर्मबंधन से मुक्त हो जाएगा और मुझे ही प्राप्त होगा।', emotion: 'मार्गदर्शक' },
+                    { speaker: 'अर्जुन', text: 'क्या आप किसी के प्रति पक्षपात या भेदभाव करते हैं?', emotion: 'पूछताछ' },
+                    { speaker: 'कृष्ण', text: 'मैं सब भूतों में समभाव से व्यापक हूँ; न कोई मेरा अप्रिय है और न प्रिय है। परंतु जो भक्त मुझको प्रेम से भजते हैं, वे मुझमें हैं और मैं भी उनमें प्रत्यक्ष प्रकट हूँ। यदि कोई अतिशय दुराचारी भी अनन्य भाव से मेरा भक्त होकर मुझको भजता है, तो वह साधु ही मानने योग्य है; वह शीघ्र ही धर्मात्मा हो जाता है और सदा रहने वाली शांति को प्राप्त होता है। हे कौन्तेय! तू निश्चयपूर्वक सत्य जान कि मेरा भक्त कभी नष्ट नहीं होता।', emotion: 'निष्पक्ष' },
+                    { speaker: 'अर्जुन', text: 'इस राजविद्या और राजगुह्य का सार-उपदेश क्या है?', emotion: 'ध्यान से' },
+                    { speaker: 'कृष्ण', text: 'मुझमें मन वाला हो, मेरा भक्त बन, मेरा पूजन करने वाला हो और मुझको प्रणाम कर। इस प्रकार आत्मा को मुझमें नियुक्त करके मेरे परायण हुआ तू मुझको ही प्राप्त होगा।', emotion: 'प्रेममय' }
                 ],
-                summary: 'कृष्ण भक्ति के गोपनीय ज्ञान को प्रकट करते हैं। वह बताते हैं कि प्रेम और श्रद्धा से की गई छोटी से छोटी भेंट भी उन्हें स्वीकार्य है।',
-                teachings: 'शुद्ध भक्ति ही सर्वोच्च ज्ञान है। ईश्वर के प्रति पूर्ण समर्पण से ही उन्हें प्राप्त किया जा सकता है।',
-                moralLesson: 'महत्वपूर्ण यह नहीं है कि हम क्या देते हैं, बल्कि यह है कि हम किस भाव से देते हैं। प्रेम से की गई सेवा ही सच्ची भक्ति है।',
-                kidsVersion: 'कृष्ण ने बताया कि उनका सबसे अच्छा दोस्त कैसे बनें। इसके लिए महंगे तोहफे नहीं, बल्कि सच्चा प्यार चाहिए। अगर तुम उन्हें प्यार से एक फूल भी दोगे, तो वह बहुत खुश होंगे।'
+                summary: 'श्रीकृष्ण राजविद्या (विद्याओं का राजा) और राजगुह्य (रहस्यों का राजा) प्रकट करते हैं। वे बताते हैं कि वे संपूर्ण जगत को धारण करते हुए भी उससे असंग हैं। जो भक्त अनन्य भाव से उनका चिंतन करते हैं, उनका योगक्षेम वे स्वयं वहन करते हैं, प्रेम से अर्पित एक पत्ता, फूल, फल या जल भी स्वीकार करते हैं, और जाति, कुल या पूर्व पापकर्म के भेद के बिना शरण में आए हर प्राणी को परम गति प्रदान करते हैं।',
+                teachings: 'राजविद्या अत्यंत पवित्र, प्रत्यक्ष फल देने वाली, धर्मयुक्त और आचरण करने में अत्यंत सुगम है (9.2)।\nअनन्यश्चिन्तयन्तो माम्: जो भक्त अनन्य भाव से भगवान का चिंतन करते हैं, उनका योगक्षेम भगवान स्वयं वहन करते हैं (9.22)।\nपत्रं पुष्पं फलं तोयम्: प्रेम और भक्ति से अर्पित पत्ता, फूल, फल या जल भी भगवान सहर्ष स्वीकार करते हैं; अतः अपने समस्त कर्म भगवान को अर्पित करो (9.26–27)।\nभगवान सब प्राणियों में सम हैं, और उनका भक्त कभी नष्ट नहीं होता (न मे भक्तः प्रणश्यति, 9.29–34)।',
+                moralLesson: 'ईश्वर हमारी भेंट का मूल्य नहीं, बल्कि हमारे हृदय का प्रेम और निष्कपट भाव देखते हैं। जब हम अपने हर कार्य को ईश्वर की सेवा मानकर करते हैं, तो पूरा जीवन ही पूजा बन जाता है।',
+                kidsVersion: 'श्रीकृष्ण ने बताया कि भगवान को खुश करने के लिए महंगे तोहफों की ज़रूरत नहीं होती। अगर हम सच्चे प्यार से उन्हें एक छोटा सा पत्ता, एक फूल, थोड़ा सा फल या एक घूँट पानी भी चढ़ाते हैं, तो वे बड़ी खुशी से उसे स्वीकार करते हैं। और जो बच्चे हमेशा भगवान को अपना सबसे प्यारा दोस्त मानकर याद रखते हैं, भगवान खुद उनका पूरा ध्यान रखते हैं!'
             },
             10: {
                 title: 'विभूति योग',
                 subtitle: 'भगवान का ऐश्वर्य',
-                description: 'कृष्ण भौतिक और आध्यात्मिक जगत में अपने दिव्य स्वरूपों को प्रकट करते हैं',
+                description: 'कृष्ण भौतिक और आध्यात्मिक जगत में अपने दिव्य स्वरूपों और असीम ऐश्वर्य को प्रकट करते हैं',
                 dialogue: [
-                    { speaker: 'कृष्ण', text: 'फिर से सुनो, हे महाबाहु अर्जुन। क्योंकि तुम मेरे प्रिय मित्र हो, तुम्हारे लाभ के लिए मैं आगे बोलूँगा, जो ज्ञान मैंने पहले ही समझाया है उससे बेहतर ज्ञान दूँगा।', emotion: 'स्नेही' },
-                    { speaker: 'अर्जुन', text: 'आप परम भगवान हैं, सभी के मूल हैं। न तो देवताओं के समूह और न ही महान संत आपके मूल को जानते हैं। कृपया अपने दिव्य ऐश्वर्यों का विस्तार से वर्णन करें जिनके द्वारा आप इन सभी लोकों में व्याप्त हैं।', emotion: 'भक्तिमय' },
-                    { speaker: 'कृष्ण', text: 'मैं सभी आध्यात्मिक और भौतिक जगत का स्रोत हूँ। सब कुछ मुझसे ही निकलता है। जो बुद्धिमान इसे पूरी तरह से जानते हैं, वे मेरी भक्ति सेवा में लगते हैं और पूरे हृदय से मेरी पूजा करते हैं।', emotion: 'आधारभूत' },
-                    { speaker: 'अर्जुन', text: 'मैं लगातार आपके बारे में कैसे सोचूँ और आपको कैसे जानूँ? हे परम पुरुष, आपको किन विभिन्न रूपों में याद किया जाना चाहिए?', emotion: 'जिज्ञासु' },
-                    { speaker: 'कृष्ण', text: 'मैं तुम्हें अपनी शानदार अभिव्यक्तियों के बारे में बताऊँगा, लेकिन केवल उन्हीं के बारे में जो प्रमुख हैं, हे अर्जुन, क्योंकि मेरा ऐश्वर्य असीम है।', emotion: 'प्रकट करते हुए' },
-                    { speaker: 'अर्जुन', text: 'मैं ध्यान से सुन रहा हूँ।', emotion: 'ध्यान से' },
-                    { speaker: 'कृष्ण', text: 'मैं आत्मा हूँ, हे गुडाकेश, सभी प्राणियों के हृदय में विराजमान हूँ। मैं सभी प्राणियों का आदि, मध्य और अंत हूँ।', emotion: 'अंतर्निहित' },
-                    { speaker: 'अर्जुन', text: 'और दिव्य प्राणियों में?', emotion: 'उत्सुक' },
-                    { speaker: 'कृष्ण', text: 'आदित्यों में मैं विष्णु हूँ, प्रकाशों में मैं दीप्तिमान सूर्य हूँ, मरुतों में मैं मरीचि हूँ, और तारों में मैं चंद्रमा हूँ।', emotion: 'शानदार' },
-                    { speaker: 'अर्जुन', text: 'वेदों और इंद्रियों में?', emotion: 'खोज' },
-                    { speaker: 'कृष्ण', text: 'वेदों में मैं सामवेद हूँ; देवताओं में मैं इंद्र, स्वर्ग का राजा हूँ; इंद्रियों में मैं मन हूँ; और जीवित प्राणियों में मैं जीवन शक्ति [चेतना] हूँ।', emotion: 'आवश्यक' },
-                    { speaker: 'अर्जुन', text: 'महान शक्तियों और प्राणियों में?', emotion: 'चकित' },
-                    { speaker: 'कृष्ण', text: 'रुद्रों में मैं भगवान शिव हूँ, यक्षों और राक्षसों में मैं धन का स्वामी [कुबेर] हूँ, वसुओं में मैं अग्नि हूँ, और पर्वतों में मैं मेरु हूँ।', emotion: 'राजसी' },
-                    { speaker: 'अर्जुन', text: 'पुरोहितों और सेनापतियों में?', emotion: 'विश्लेषणात्मक' },
-                    { speaker: 'कृष्ण', text: 'पुरोहितों में, हे अर्जुन, मुझे मुख्य, बृहस्पति जानो। सेनापतियों में मैं कार्तिकेय हूँ, और जल निकायों में मैं समुद्र हूँ।', emotion: 'सर्वोपरि' },
-                    { speaker: 'अर्जुन', text: 'आपकी अभिव्यक्तियाँ वास्तव में हर चीज में सर्वश्रेष्ठ हैं।', emotion: 'समझ' },
-                    { speaker: 'कृष्ण', text: 'महान संतों में मैं भृगु हूँ; कंपनों में मैं दिव्य ॐ हूँ। यज्ञों में मैं पवित्र नामों का जप [जप] हूँ, और अचल चीजों में मैं हिमालय हूँ।', emotion: 'सर्वोच्च' },
-                    { speaker: 'अर्जुन', text: 'सभी पेड़ों और दिव्य प्राणियों में?', emotion: 'आश्चर्य' },
-                    { speaker: 'कृष्ण', text: 'सभी पेड़ों में मैं बरगद का पेड़ हूँ, और देवताओं के बीच संतों में मैं नारद हूँ। गंधर्वों में मैं चित्ररथ हूँ, और सिद्ध प्राणियों में मैं ऋषि कपिल हूँ।', emotion: 'सर्वव्यापी' },
-                    { speaker: 'अर्जुन', text: 'आपके सभी ऐश्वर्यों को समझना असंभव है।', emotion: 'अभिभूत' },
-                    { speaker: 'कृष्ण', text: 'जान लो कि सभी ऐश्वर्यशाली, सुंदर और गौरवशाली सृष्टियाँ मेरे तेज की एक चिंगारी से ही निकलती हैं। लेकिन इस सब विस्तृत ज्ञान की क्या आवश्यकता है, अर्जुन? मेरे एक ही अंश से मैं इस पूरे ब्रह्मांड में व्याप्त हूँ और इसका समर्थन करता हूँ।', emotion: 'निर्णायक' }
+                    { speaker: 'कृष्ण', text: 'फिर से सुनो, हे महाबाहु अर्जुन! क्योंकि तुम मेरे प्रिय मित्र हो, तुम्हारे परम कल्याण के लिए मैं वह सर्वोच्च ज्ञान कहूँगा जो तुमने पहले सुना है।', emotion: 'स्नेही' },
+                    { speaker: 'कृष्ण', text: 'न देवता और न ही महान महर्षि मेरे उद्भव को जानते हैं, क्योंकि मैं सब प्रकार से देवताओं और महर्षियों का भी आदि स्रोत हूँ। जो मुझे अजन्मा, अनादि और सब लोकों का महान ईश्वर जानता है, वह मनुष्यों में मोह से मुक्त होकर सब पापों से छूट जाता है।', emotion: 'गंभीर' },
+                    { speaker: 'कृष्ण', text: 'मैं ही समस्त आध्यात्मिक और भौतिक जगत की उत्पत्ति का मूल कारण हूँ। सब कुछ मुझसे ही प्रवर्तित होता है। ऐसा जानकर बुद्धिमान भक्त भावयुक्त होकर मेरा ही भजन करते हैं। वे अपना चित्त मुझमें लगाकर, अपने प्राण मुझे अर्पित करके, आपस में मेरी ही चर्चा करते हुए सदा संतुष्ट और आनंदित रहते हैं।', emotion: 'आधारभूत' },
+                    { speaker: 'कृष्ण', text: 'सदा मुझसे जुड़े हुए और प्रेमपूर्वक मेरी भक्ति करने वाले भक्तों को मैं वह बुद्धियोग (दिव्य समझ) प्रदान करता हूँ जिससे वे मुझको ही प्राप्त होते हैं। उन पर कृपा करने के लिए, उनके हृदय में स्थित होकर, मैं ज्ञान रूपी प्रज्वलित दीपक द्वारा उनके अज्ञानजनित अंधकार का नाश कर देता हूँ।', emotion: 'दयालु' },
+                    { speaker: 'अर्जुन', text: 'आप परम ब्रह्म, परम धाम और परम पवित्र हैं। सभी ऋषि, देवर्षि नारद, असित, देवल और व्यास आपको शाश्वत, दिव्य पुरुष और आदि देव कहते हैं, और अब आप स्वयं भी मुझसे यही कह रहे हैं। हे केशव! जो कुछ आपने मुझसे कहा है, उसे मैं पूर्णतः सत्य मानता हूँ।', emotion: 'भक्तिमय' },
+                    { speaker: 'अर्जुन', text: 'हे भगवान! मैं निरंतर चिंतन करते हुए आपको कैसे जानूँ? और किन-किन भावों व रूपों में मुझे आपका ध्यान करना चाहिए? कृपया अपने दिव्य योग और ऐश्वर्य का विस्तार से पुनः वर्णन करें, क्योंकि आपके अमृतमयी वचनों को सुनते हुए मेरी तृप्ति नहीं हो रही है।', emotion: 'जिज्ञासु' },
+                    { speaker: 'कृष्ण', text: 'हाँ, हे कुरुश्रेष्ठ! मैं तुम्हें अपनी प्रधान दिव्य विभूतियों का वर्णन करूँगा, क्योंकि मेरे विस्तार का कोई अंत नहीं है।', emotion: 'प्रसन्न' },
+                    { speaker: 'कृष्ण', text: 'हे गुडाकेश अर्जुन! मैं समस्त प्राणियों के हृदय में स्थित अंतरात्मा हूँ। मैं ही समस्त जीवों का आदि, मध्य और अंत भी हूँ।', emotion: 'अंतर्निहित' },
+                    { speaker: 'कृष्ण', text: 'आदित्यों में मैं विष्णु हूँ; ज्योतियों में तेजस्वी सूर्य हूँ; मरुतों में मरीचि और नक्षत्रों में चंद्रमा हूँ। वेदों में मैं सामवेद हूँ; देवों में इंद्र हूँ; इंद्रियों में मन हूँ और प्राणियों में चेतना हूँ।', emotion: 'शानदार' },
+                    { speaker: 'कृष्ण', text: 'रुद्रों में मैं शंकर हूँ; यक्ष-राक्षसों में कुबेर हूँ; वसुओं में पावक (अग्नि) और पर्वतों में सुमेरु हूँ। पुरोहितों में मुझे मुख्य बृहस्पति जानो; सेनापतियों में स्कंद (कार्तिकेय) और जलाशयों में मैं समुद्र हूँ।', emotion: 'राजसी' },
+                    { speaker: 'कृष्ण', text: 'महर्षियों में मैं भृगु हूँ; शब्दों में एकाक्षर ॐकार हूँ; यज्ञों में जपयज्ञ हूँ और स्थिर रहने वालों में हिमालय हूँ। सब वृक्षों में मैं अश्वत्थ (पीपल) हूँ; देवर्षियों में नारद हूँ; गंधर्वों में चित्ररथ और सिद्धों में कपिल मुनि हूँ।', emotion: 'सर्वोच्च' },
+                    { speaker: 'कृष्ण', text: 'शस्त्रधारियों में मैं परशुराम हूँ; नदियों में मैं गंगा हूँ; विद्याओं में अध्यात्मविद्या और वाद-विवाद करने वालों का यथार्थ निर्णय (तत्व-निर्णय) मैं ही हूँ। अक्षरों में मैं आकार हूँ और समासों में द्वंद्व समास हूँ। मैं ही अक्षय काल और सर्वतोमुख धाता (विधाता) हूँ।', emotion: 'असीम' },
+                    { speaker: 'कृष्ण', text: 'सृष्टियों का आदि, अंत और मध्य भी मैं ही हूँ। हे अर्जुन! वृष्णिवंशियों में मैं वासुदेव (कृष्ण) हूँ और पांडवों में धनंजय (तुम) हूँ; मुनियों में व्यास और कवियों में शुक्राचार्य हूँ।', emotion: 'प्रकट करते हुए' },
+                    { speaker: 'कृष्ण', text: 'संसार में जो कुछ भी ऐश्वर्ययुक्त, कांतियुक्त या बलवान वस्तु है, उसे तुम मेरे ही तेज के एक अंश से उत्पन्न जानो। अथवा हे अर्जुन! इस बहुत जानने से तुम्हारा क्या प्रयोजन? मैं अपने केवल एक अंश मात्र से इस संपूर्ण ब्रह्मांड को धारण करके स्थित हूँ।', emotion: 'निर्णायक' }
                 ],
-                summary: 'कृष्ण बताते हैं कि वे ही समस्त सृष्टि के स्रोत हैं और सभी ऐश्वर्यशाली, सुंदर और गौरवशाली वस्तुएं उनके दिव्य तेज की एक चिंगारी मात्र हैं। वे अर्जुन को हर जगह उन्हें देखने के लिए प्रोत्साहित करते हैं।',
-                teachings: 'संपूर्ण ब्रह्मांड परमात्मा की एक अभिव्यक्ति है। हम अपने आस-पास की दुनिया की उत्कृष्टता में उनकी उपस्थिति को पहचानकर ईश्वर से जुड़ सकते हैं। सच्चा ज्ञान यह समझने में निहित है कि परमात्मा का एक ही अंश संपूर्ण अस्तित्व में व्याप्त है और उसका समर्थन करता है।',
-                moralLesson: 'हर चीज और हर किसी में सर्वश्रेष्ठ की तलाश करें, और आप परमात्मा का प्रतिबिंब देखेंगे। दुनिया में ईश्वर की उपस्थिति के प्रति जागरूकता पैदा करने से हमारी धारणा बदल सकती है और हमारे जीवन को श्रद्धा और आश्चर्य से भर सकती है।',
-                kidsVersion: 'कल्पना कीजिए कि हर चीज में सबसे अच्छा: सबसे मजबूत शेर, सबसे चमकीला तारा, सबसे ऊँचा पहाड़। कृष्ण बताते हैं कि वे हर समूह में "सर्वश्रेष्ठ" हैं। इसलिए, जब भी आप कुछ अद्भुत देखते हैं, तो आप ईश्वर के जादू का एक छोटा सा टुकड़ा देख रहे होते हैं!'
+                summary: 'इस अध्याय में श्रीकृष्ण अपने असीम दिव्य ऐश्वर्य (विभूतियों) का उद्घाटन करते हैं। वे बताते हैं कि वे ही समस्त चराचर जगत के आदि, मध्य और अंत हैं। चतुरश्लोकी गीता (10.8-11) के माध्यम से वे स्पष्ट करते हैं कि जो ज्ञानी भक्त उन्हें सब कुछ का उद्गम समझकर अनन्य भक्ति से भजते हैं, उन्हें वे अंतःकरण में ज्ञान का दीपक जलाकर भवसागर से तार देते हैं। संसार की प्रत्येक सुंदर, शक्तिशाली और भव्य वस्तु परमात्मा के तेज का केवल एक अंश मात्र है।',
+                teachings: '• परमात्मा ही समस्त आध्यात्मिक और भौतिक जगत के आदि स्रोत और धारक हैं (अहं सर्वस्य प्रभवः)।\n• सच्चा भक्त अपने चित्त और प्राणों को ईश्वर में लगाकर सदा उन्हीं के चिंतन में संतुष्ट और आनंदित रहता है।\n• प्रेमपूर्वक भजने वाले साधकों को ईश्वर स्वयं वह बुद्धियोग और अंतःज्ञान प्रदान करते हैं जिससे अज्ञान का नाश होता है।\n• संसार में जो भी श्रेष्ठता, शक्ति, कांति और ऐश्वर्य दृष्टिगोचर होता है, वह भगवान के अनंत सामर्थ्य का एक अंश मात्र है।',
+                moralLesson: 'संसार के हर कण और हर प्राणी में परमात्मा की उपस्थिति और उत्कृष्टता का दर्शन करें। जब हम यह समझ जाते हैं कि प्रत्येक गुण और सामर्थ्य ईश्वर का ही अंश है, तो मिथ्या अहंकार समाप्त हो जाता है और जीवन में सच्ची विनम्रता तथा अटूट भक्ति जाग्रत होती है।',
+                kidsVersion: 'श्रीकृष्ण ने अर्जुन को बताया कि दुनिया में जितनी भी सबसे अद्भुत और सुंदर चीजें हैं—जैसे सबसे चमकीला सूरज, सबसे ऊँचा हिमालय का पहाड़, सबसे पवित्र पीपल का पेड़ और सबसे मीठी गंगा नदी—उन सब की शक्ति और सुंदरता वास्तव में भगवान से ही आती है! इसलिए जब भी आप प्रकृति में कुछ सुंदर या अनोखा देखें, तो समझें कि यह भगवान की ही एक प्यारी सी झलक है।'
             },
             11: {
                 title: 'विश्वरूप दर्शन योग',
-                subtitle: 'ब्रह्मांडीय दृष्टि',
-                description: 'कृष्ण अर्जुन को दिव्य दृष्टि प्रदान करते हैं और अपने शानदार, भयानक सार्वभौमिक रूप को प्रकट करते हैं',
+                subtitle: 'ब्रह्मांडीय विराट रूप का दर्शन',
+                description: 'कृष्ण अर्जुन को दिव्य दृष्टि प्रदान करते हैं और अपना आश्चर्यजनक व भयानक विराट रूप प्रकट करते हैं',
                 dialogue: [
-                    { speaker: 'अर्जुन', text: 'मेरा भ्रम अब दूर हो गया है। मैंने आपसे प्रत्येक जीव के प्रकट होने और गायब होने के बारे में विस्तार से सुना है। हे सभी व्यक्तित्वों में सबसे महान, हे सर्वोच्च रूप, यद्यपि मैं आपको यहाँ अपने सामने आपकी वास्तविक स्थिति में देख रहा हूँ, जैसा कि आपने स्वयं का वर्णन किया है, मैं यह देखना चाहता हूँ कि आप इस ब्रह्मांडीय अभिव्यक्ति में कैसे प्रवेश कर चुके हैं। मैं आपके उस रूप को देखना चाहता हूँ।', emotion: 'श्रद्धावान' },
-                    { speaker: 'कृष्ण', text: 'मेरे प्रिय अर्जुन, तुम मुझे अपनी वर्तमान आँखों से नहीं देख सकते। इसलिए मैं तुम्हें दिव्य आँखें देता हूँ। मेरे रहस्यमय ऐश्वर्य को देखो!', emotion: 'प्रदान करते हुए' },
-                    { speaker: 'अर्जुन', text: 'हे ब्रह्मांड के स्वामी, हे सार्वभौमिक रूप, मैं आपके शरीर में कई-कई भुजाएं, पेट, मुँह और आँखें देख रहा हूँ, जो हर जगह बिना किसी सीमा के फैली हुई हैं। मैं आप में कोई अंत, कोई मध्य और कोई शुरुआत नहीं देख रहा हूँ।', emotion: 'चकित' },
-                    { speaker: 'कृष्ण', text: 'मेरे सैकड़ों-हजारों विविध दिव्य और बहुरंगी रूपों को देखो।', emotion: 'शानदार' },
-                    { speaker: 'अर्जुन', text: 'मैं सभी देवताओं और विभिन्न अन्य जीवित प्राणियों को आपके शरीर में एकत्रित देख रहा हूँ। मैं भगवान ब्रह्मा को कमल के फूल पर बैठे हुए देख रहा हूँ, साथ ही भगवान शिव और सभी संतों और दिव्य नागों को भी।', emotion: 'अभिभूत' },
-                    { speaker: 'कृष्ण', text: 'तुम जो कुछ भी देखना चाहते हो, उसे मेरे इस शरीर में तुरंत देखो! तुम भविष्य में जो कुछ भी देखना चाहो, देख सकते हो। सब कुछ—चल और अचल—यहाँ पूरी तरह से, एक ही स्थान पर है।', emotion: 'सर्व-व्यापी' },
-                    { speaker: 'अर्जुन', text: 'हे प्रभु, आपका रूप देखना कठिन है क्योंकि इसकी चमकदार प्रभा, चारों ओर फैल रही है, जैसे धधकती आग या सूर्य की अथाह चमक। फिर भी मैं इस चमकते हुए रूप को हर जगह देख रहा हूँ।', emotion: 'चकाचौंध' },
-                    { speaker: 'कृष्ण', text: 'मैं मूल स्रोत हूँ, अविनाशी, सबसे पुराना; मैं शाश्वत धर्म का पालक, भगवान का व्यक्तित्व हूँ।', emotion: 'आधारभूत' },
-                    { speaker: 'अर्जुन', text: 'मैं धृतराष्ट्र के सभी पुत्रों को, उनके मित्र राजाओं के साथ, और भीष्म, द्रोण, कर्ण—और हमारे मुख्य सैनिकों को भी—आपके भयानक मुँह में तेजी से प्रवेश करते हुए देख रहा हूँ। और कुछ को मैं आपके दाँतों के बीच सिर कुचले हुए फँसे हुए देख रहा हूँ।', emotion: 'भयभीत' },
-                    { speaker: 'कृष्ण', text: 'इसलिए उठो। लड़ने की तैयारी करो और गौरव जीतो। अपने शत्रुओं को जीतो और एक समृद्ध राज्य का आनंद लो। वे पहले से ही मेरी व्यवस्था द्वारा मारे जा चुके हैं, और तुम, हे सव्यसाची, लड़ाई में केवल एक साधन हो सकते हो।', emotion: 'आदेशात्मक' },
-                    { speaker: 'अर्जुन', text: 'हे प्रभुओं के प्रभु, इतने भयंकर रूप वाले, कृपया मुझे बताएं कि आप कौन हैं।', emotion: 'भयभीत' },
-                    { speaker: 'कृष्ण', text: 'मैं भगवान का सर्वोच्च व्यक्तित्व हूँ, परम सत्य, समस्त सृष्टि का स्रोत। मैं शाश्वत हूँ, अविनाशी, सभी प्राणियों की शुरुआत और अंत। मैं काल हूँ, दुनिया का महान संहारक, और मैं यहाँ सभी लोगों को नष्ट करने आया हूँ। तुम्हारे [पांडवों] अलावा, यहाँ दोनों तरफ के सभी सैनिक मारे जाएँगे।', emotion: 'प्रकट करते हुए' },
-                    { speaker: 'अर्जुन', text: 'हे सभी प्राणियों के स्वामी, मुझे क्षमा करें। आपको अपना मित्र समझकर, मैंने आपकी महिमा को न जानते हुए, जल्दबाजी में आपको "हे कृष्ण," "हे यादव," "हे मेरे मित्र" कहकर संबोधित किया है। कृपया मैंने जो कुछ भी पागलपन में या प्रेम में किया हो, उसे क्षमा करें।', emotion: 'क्षमाप्रार्थी' },
-                    { speaker: 'कृष्ण', text: 'मेरा यह रूप जिसे तुम देख रहे हो, देखना बहुत कठिन है। देवता भी इस रूप को देखने का अवसर हमेशा खोजते रहते हैं।', emotion: 'प्रकट करते हुए' },
-                    { speaker: 'अर्जुन', text: 'इस सार्वभौमिक रूप को देखने के बाद, जिसे मैंने पहले कभी नहीं देखा, मैं प्रसन्न हूँ, लेकिन साथ ही मेरा मन भय से व्याकुल है। कृपया मुझ पर अपनी कृपा करें और फिर से भगवान के व्यक्तित्व के रूप में अपना रूप प्रकट करें।', emotion: 'याचना' },
-                    { speaker: 'कृष्ण', text: 'केवल अनन्य भक्ति सेवा से ही मुझे समझा जा सकता है जैसा मैं हूँ, तुम्हारे सामने खड़ा हूँ, और सीधे देखा जा सकता है।', emotion: 'शिक्षाप्रद' },
-                    { speaker: 'अर्जुन', text: 'हे कृष्ण, आपके इस सुंदर मानव-जैसे रूप को देखकर, मैं अब शांत हो गया हूँ और अपने सामान्य मन की स्थिति में लौट आया हूँ।', emotion: 'राहत' },
-                    { speaker: 'कृष्ण', text: 'मेरे प्रिय अर्जुन, जो मेरी शुद्ध भक्ति सेवा में संलग्न है, सकाम कर्मों और मानसिक अटकलों के प्रदूषण से मुक्त है, जो मेरे लिए काम करता है, जो मुझे अपने जीवन का सर्वोच्च लक्ष्य बनाता है, और जो प्रत्येक जीवित प्राणी का मित्र है—वह निश्चित रूप से मेरे पास आता है।', emotion: 'निर्णायक' },
-                    { speaker: 'अर्जुन', text: 'मेरा भ्रम दूर हो गया है। मैं अब दृढ़ और संदेह से मुक्त हूँ। मैं आपके निर्देशों के अनुसार कार्य करने के लिए तैयार हूँ।', emotion: 'संकल्पित' },
-                    { speaker: 'कृष्ण', text: 'जहाँ कृष्ण हैं, सभी योगियों के स्वामी, और जहाँ अर्जुन हैं, सर्वोच्च धनुर्धर, वहाँ निश्चित रूप से ऐश्वर्य, विजय, असाधारण शक्ति और नैतिकता होगी।', emotion: 'वचन देते हुए' }
+                    { speaker: 'अर्जुन', text: 'हे प्रभु! मुझ पर अनुग्रह करने के लिए आपने जो परम गोपनीय अध्यात्म ज्ञान कहा, उससे मेरा यह अज्ञान-जनित मोह सर्वथा नष्ट हो गया है। मैंने आपसे जीवों की उत्पत्ति और प्रलय तथा आपकी अविनाशी महिमा के विषय में विस्तार से सुना है।', emotion: 'कृतज्ञ' },
+                    { speaker: 'अर्जुन', text: 'हे पुरुषोत्तम! यद्यपि आप अपने जिस स्वरूप का वर्णन कर रहे हैं वह पूर्णतः सत्य है, तथापि हे योगेश्वर! यदि आप मुझे उस रूप को देखने के योग्य समझते हैं, तो कृपया मुझे अपना वह अविनाशी ऐश्वर्यमय विश्वरूप प्रत्यक्ष दिखाइए।', emotion: 'प्रार्थना' },
+                    { speaker: 'कृष्ण', text: 'हे पार्थ! अब तुम मेरे सैकड़ों-हजारों भाँति-भाँति के दिव्य, अलौकिक तथा नाना वर्ण और आकृतियों वाले रूपों को देखो। समस्त आदित्यों, रुद्रों, वसुओं, अश्विनीकुमारों और मरुद्गणों को तथा अनेकानेक पहले कभी न देखे गए आश्चर्यों को देखो!', emotion: 'दिव्य' },
+                    { speaker: 'कृष्ण', text: 'हे गुडाकेश! इस मेरे शरीर में एक ही जगह स्थित समस्त चराचर जगत को और जो कुछ भी तुम भविष्य में देखना चाहते हो, वह सब यहीं देखो! परंतु तुम अपनी इन भौतिक आँखों से मुझे नहीं देख सकते, इसलिए मैं तुम्हें दिव्य चक्षु (दिव्य दृष्टि) प्रदान करता हूँ। अब मेरे अलौकिक योगबल को देखो!', emotion: 'प्रदान करते हुए' },
+                    { speaker: 'संजय', text: 'हे राजन् धृतराष्ट्र! महायोगेश्वर हरि (श्रीकृष्ण) ने ऐसा कहकर पार्थ को अपना परम ऐश्वर्ययुक्त विराट रूप दिखाया। अनेक मुख और नेत्रों से युक्त, अनेक अद्भुत दृश्यों वाला, दिव्य आभूषणों और दिव्यास्त्रों को धारण किए हुए, दिव्य गंध और मालों से सुशोभित वह विश्वतोमुख देव अत्यंत आश्चर्यमय था। यदि आकाश में एक साथ सहस्र सूर्यों का तेज प्रकट हो जाए, तो वह भी उस महात्मा के तेज के सदृश शायद ही हो सके।', emotion: 'गंभीर' },
+                    { speaker: 'अर्जुन', text: 'हे देव! मैं आपके शरीर में समस्त देवताओं, ब्रह्मा जी को कमल पर विराजमान, शिव जी को, सभी ऋषियों तथा दिव्य सर्पों को देख रहा हूँ। अनेक भुजाओं, उदरों, मुखों और नेत्रों वाले आपके अनंत रूप को मैं सब ओर देख रहा हूँ। हे विश्वेश्वर! मुझे आपका न कोई आदि दिखता है, न मध्य और न अंत!', emotion: 'विस्मय' },
+                    { speaker: 'अर्जुन', text: 'किरीट, गदा और चक्र धारण किए हुए, सब ओर प्रज्वलित अग्नि और सूर्य के समान अथाह दीप्ति वाले आपके इस रूप को देखना अत्यंत कठिन है। आप ही परम अक्षर, जानने योग्य परम तत्व, विश्व के परम आश्रय, शाश्वत धर्म के रक्षक और सनातन पुरुष हैं!', emotion: 'स्तब्ध' },
+                    { speaker: 'अर्जुन', text: 'धृतराष्ट्र के समस्त पुत्र, उनके साथ के राजागण, भीष्म, द्रोण, कर्ण और हमारी सेना के प्रधान योद्धा भी आपके भयानक दाढ़ों वाले विकराल मुखों में बड़ी तेजी से समाते जा रहे हैं! जैसे नदियों के जलवेग समुद्र की ओर दौड़ते हैं, वैसे ही ये सब वीर आपके प्रज्वलित मुखों में प्रवेश कर रहे हैं। हे उग्ररूप भगवन! मुझे बताइए कि आप कौन हैं? मैं आपको प्रणाम करता हूँ, मुझ पर प्रसन्न होइए!', emotion: 'भयभीत' },
+                    { speaker: 'कृष्ण', text: 'कालोऽस्मि लोकक्षयकृत्प्रवृद्धो लोकान्समाहर्तुमिह प्रवृत्तः—मैं लोकों का नाश करने वाला महाकाल हूँ, और इस समय इन सब लोगों का संहार करने के लिए प्रवृत्त हुआ हूँ। तुम्हारे युद्ध न करने पर भी इन दोनों पक्षों की सेनाओं में खड़े कोई भी योद्धा जीवित नहीं बचेंगे!', emotion: 'गंभीर' },
+                    { speaker: 'कृष्ण', text: 'तस्मात्त्वमुत्तिष्ठ यशो लभस्व—इसलिए उठो, यश प्राप्त करो! शत्रुओं को जीतकर धन-धान्य संपन्न राज्य का उपभोग करो। ये सब योद्धा मेरे द्वारा पहले ही मारे जा चुके हैं; हे सव्यसाची अर्जुन! तुम तो केवल निमित्त मात्र (साधन) बन जाओ!', emotion: 'आदेशात्मक' },
+                    { speaker: 'संजय', text: 'केशव के इस वचन को सुनकर किरीटी अर्जुन काँपते हुए हाथ जोड़कर नमस्कार करते हुए, गद्गद कंठ से भयभीत होकर भगवान कृष्ण से बोले।', emotion: 'वर्णनात्मक' },
+                    { speaker: 'अर्जुन', text: 'हे ऋषीकेश! आपके सुयश और कीर्तन से सारा जगत हर्षित व अनुरक्त हो रहा है; राक्षस भयभीत होकर दसों दिशाओं में भाग रहे हैं और सभी सिद्धगण आपको नमन कर रहे हैं, यह सर्वथा उचित ही है। आप अनंत हैं, देवेश हैं, जगन्निवास हैं, सत् और असत् तथा उनसे परे जो अक्षर ब्रह्म है वह भी आप ही हैं!', emotion: 'प्रार्थना' },
+                    { speaker: 'अर्जुन', text: 'आपको अपना सखा मानकर अनजाने में या प्रमादवश अथवा स्नेहवश मैंने हे कृष्ण, हे यादव, हे सखे कहकर जो कुछ भी अनुचित कहा हो, और खेलते, सोते अथवा भोजन करते समय जो भी अनादर किया हो, हे अप्रमेय प्रभु! उस सबके लिए मैं आपसे क्षमा याचना करता हूँ। जैसे पिता पुत्र के, सखा सखा के और प्रियजन अपने प्रिय के अपराध सह लेता है, वैसे ही आप मेरे अपराधों को क्षमा करने की कृपा करें।', emotion: 'क्षमाप्रार्थी' },
+                    { speaker: 'अर्जुन', text: 'पहले कभी न देखे गए आपके इस विराट रूप को देखकर मेरा हृदय हर्षित भी है और भय से व्याकुल भी हो रहा है। हे देवेश! मुझ पर प्रसन्न होइए और मुझे अपना वही चतुर्भुज रूप दिखाइए। मैं आपको किरीट, गदा और चक्र धारण किए हुए पहले की भाँति ही देखना चाहता हूँ!', emotion: 'याचना' },
+                    { speaker: 'कृष्ण', text: 'हे अर्जुन! मुझ पर प्रसन्न होकर मैंने अपनी योगमाया के प्रभाव से तुम्हें यह परम तेजोमय, अनंत और आदि विराट रूप दिखाया है, जिसे तुम्हारे अतिरिक्त पहले किसी ने नहीं देखा था। न वेदों के अध्ययन से, न यज्ञों से, न दान से और न उग्र तपस्या से इस रूप को कोई देख सकता है।', emotion: 'स्नेही' },
+                    { speaker: 'कृष्ण', text: 'मेरे इस भयानक रूप को देखकर अब तुम भयभीत और विमूढ़ मत होओ। भयरहित और प्रसन्नचित्त होकर मेरे उसी परिचित चतुर्भुज और सौम्य रूप को पुनः देखो।', emotion: 'आश्वस्त' },
+                    { speaker: 'संजय', text: 'अर्जुन से ऐसा कहकर वासुदेव भगवान ने पुनः अपना सौम्य मानवीय रूप प्रकट किया और उस भयभीत अर्जुन को सांत्वना दी।', emotion: 'वर्णनात्मक' },
+                    { speaker: 'अर्जुन', text: 'हे जनार्दन! आपके इस शांत और अत्यंत सुंदर मानवीय रूप को देखकर अब मेरा चित्त स्थिर हो गया है और मैं अपनी स्वाभाविक अवस्था में लौट आया हूँ।', emotion: 'शांत' },
+                    { speaker: 'कृष्ण', text: 'मेरे जिस चतुर्भुज रूप को तुमने अभी देखा है, उसका दर्शन पाना अत्यंत दुर्लभ है। देवता भी सदा इस रूप के दर्शन की अभिलाषा रखते हैं। न वेदों से, न तप से, न दान से और न यज्ञ से मुझे इस प्रकार देखा जा सकता है जैसा तुमने देखा है।', emotion: 'रहस्य' },
+                    { speaker: 'कृष्ण', text: 'भक्त्या त्वनन्यया शक्य अहमेवंविधोऽर्जुन—परंतु हे परंतप अर्जुन! केवल अनन्य भक्ति द्वारा ही मैं इस प्रकार तत्वतः जाना जा सकता हूँ, प्रत्यक्ष देखा जा सकता हूँ और मुझमें प्रवेश किया जा सकता है। जो केवल मेरे ही लिए कर्म करता है, मुझे ही परम लक्ष्य मानता है, मेरा भक्त है, आसक्ति रहित है और सब प्राणियों से वैरभाव रहित है, वही मुझे प्राप्त होता है।', emotion: 'निर्णायक' }
                 ],
-                summary: 'अर्जुन कृष्ण के सार्वभौमिक रूप को देखने के लिए कहते हैं। कृष्ण उसे दिव्य दृष्टि प्रदान करते हैं और एक भयानक, सर्व-व्यापी ब्रह्मांडीय रूप प्रकट करते हैं। यह दृष्टि कृष्ण को काल, सभी का संहारक के रूप में दिखाती है, यह पुष्टि करते हुए कि युद्ध का परिणाम पहले से ही दैवीय इच्छा द्वारा निर्धारित है।',
-                teachings: 'सार्वभौमिक रूप परमात्मा की पूर्ण शक्ति और सर्व-व्यापी प्रकृति को प्रकट करता है। यह सिखाता है कि हम सभी एक बड़े ब्रह्मांडीय योजना में साधन हैं। ईश्वर की सच्ची समझ बौद्धिक अध्ययन से नहीं बल्कि शुद्ध भक्ति से आती है।',
-                moralLesson: 'कभी-कभी, वास्तविकता की कच्ची शक्ति का सामना करना भयानक हो सकता है, लेकिन यह हमें ब्रह्मांड में अपनी जगह समझने में मदद करता है। सच्ची ताकत एक उच्च उद्देश्य के प्रति समर्पण और अच्छे के लिए एक साधन के रूप में कार्य करने से आती है।',
-                kidsVersion: 'अर्जुन ने कृष्ण से अपना सुपर-डुपर, सर्व-शक्तिशाली रूप दिखाने के लिए कहा। कृष्ण ने उसे एक विशाल दृष्टि दिखाई जिसमें ब्रह्मांड में सब कुछ था! यह थोड़ा डरावना था, जैसे एक बड़ा तूफान, लेकिन इसने अर्जुन को दिखाया कि कृष्ण सब कुछ के प्रभारी थे और उसे सही काम करने से डरना नहीं चाहिए।'
+                summary: 'अर्जुन की प्रार्थना पर श्रीकृष्ण उन्हें दिव्य दृष्टि प्रदान करके अपना सर्वव्यापी, अनंत और अद्भुत विराट रूप (विश्वरूप) दिखाते हैं, जिसमें संपूर्ण ब्रह्मांड, देवता, चराचर प्राणी और काल-प्रवाह प्रत्यक्ष समाया हुआ है। भगवान काल के रूप में यह उद्घाटित करते हैं कि अधर्मी योद्धा पहले ही उनकी नियति द्वारा मारे जा चुके हैं, और अर्जुन को केवल धर्म-स्थापना का "निमित्त मात्र" बनना है। अर्जुन के भयभीत होकर स्तुति करने पर भगवान पुनः अपना शांत सौम्य रूप धारण करते हैं और स्पष्ट करते हैं कि ईश्वर का साक्षात्कार केवल अनन्य प्रेम और निष्काम भक्ति से ही संभव है।',
+                teachings: '• संपूर्ण चराचर ब्रह्मांड और काल की नियति परमात्मा के नियंत्रण में है (कालोऽस्मि लोकक्षयकृत्प्रवृद्धः)।\n• जीवन की बड़ी योजनाओं में मनुष्य को अहंकार त्यागकर ईश्वर की धर्म-व्यवस्था का केवल एक पवित्र माध्यम (निमित्तमात्रं भव सव्यसाचिन्) बनना चाहिए।\n• भय और अहंकार से परे होकर केवल अनन्य भक्ति, निष्काम कर्म और प्राणिमात्र के प्रति निर्वैर भाव से ही परमात्मा का सच्चा साक्षात्कार होता है।\n• भगवान केवल महाकाल रूप में संहारक ही नहीं, बल्कि शरणागत भक्त के लिए परम करुणामय, सखा और रक्षक भी हैं।',
+                moralLesson: 'जीवन में कभी भी यह अहंकार न करें कि "मैं ही सब कुछ करने वाला हूँ।" कर्तापन का भाव छोड़कर स्वयं को एक उच्च और धर्ममय उद्देश्य का साधन बनाएं। जब हम परमात्मा पर पूर्ण विश्वास करके अपना कर्तव्य करते हैं, तो भय मिट जाता है और विजय सुनिश्चित होती है।',
+                kidsVersion: 'अर्जुन ने श्रीकृष्ण से उनका असली, विशाल रूप दिखाने की प्रार्थना की। तब भगवान ने अर्जुन को एक विशेष दिव्य चश्मा (दिव्य आँखें) दिया, जिससे अर्जुन ने देखा कि पूरी दुनिया, सारे तारे, ग्रह और देवता श्रीकृष्ण के अंदर ही समाए हुए हैं! भगवान ने अर्जुन को समझाया कि अच्छाई की जीत पहले से तय है, बस तुम्हें बिना डरे एक सच्चे और वीर बच्चे की तरह अपना काम करना है।'
             },
             12: {
                 title: 'भक्ति योग',
-                subtitle: 'प्रेम का मार्ग',
-                description: 'कृष्ण भक्ति सेवा के सर्वोच्च मार्ग और अपने भक्तों के गुणों की व्याख्या करते हैं',
+                subtitle: 'प्रेम और समर्पण का मार्ग',
+                description: 'कृष्ण सगुण-साकार भक्ति की श्रेष्ठता और अपने प्रिय भक्त के दिव्य लक्षणों का वर्णन करते हैं',
                 dialogue: [
-                    { speaker: 'अर्जुन', text: 'कौन अधिक पूर्ण माने जाते हैं, जो हमेशा आपकी भक्ति सेवा में ठीक से लगे रहते हैं या जो निर्गुण ब्रह्म, अव्यक्त की पूजा करते हैं?', emotion: 'प्रश्नवाचक' },
-                    { speaker: 'कृष्ण', text: 'जो अपने मन को मेरे व्यक्तिगत रूप पर स्थिर करते हैं और हमेशा बड़ी और दिव्य श्रद्धा के साथ मेरी पूजा करने में लगे रहते हैं, वे मेरे द्वारा सबसे पूर्ण माने जाते हैं।', emotion: 'पुष्टि करते हुए' },
-                    { speaker: 'अर्जुन', text: 'अव्यक्त की पूजा करने वालों के बारे में क्या?', emotion: 'उत्सुक' },
-                    { speaker: 'कृष्ण', text: 'जिनके मन परमात्मा के अव्यक्त, निर्गुण स्वरूप से जुड़े हुए हैं, उनके लिए उन्नति बहुत कष्टदायक है। उस अनुशासन में प्रगति करना उन लोगों के लिए हमेशा कठिन होता है जो देहधारी हैं।', emotion: 'स्पष्ट करते हुए' },
-                    { speaker: 'अर्जुन', text: 'तो आपके व्यक्तिगत रूप की भक्ति आसान मार्ग है?', emotion: 'समझ' },
-                    { speaker: 'कृष्ण', text: 'बस अपने मन को मुझ पर स्थिर करो, और अपनी सारी बुद्धि को मुझमें लगाओ। इस प्रकार तुम हमेशा मुझमें रहोगे, इसमें कोई संदेह नहीं।', emotion: 'शिक्षाप्रद' },
-                    { speaker: 'अर्जुन', text: 'यदि मैं अपने मन को बिना विचलित हुए आप पर स्थिर नहीं कर सकता तो क्या होगा?', emotion: 'अन्वेषी' },
-                    { speaker: 'कृष्ण', text: 'यदि तुम नहीं कर सकते, तो भक्ति-योग के नियामक सिद्धांतों का पालन करो। इस तरह मुझे प्राप्त करने की इच्छा विकसित करो।', emotion: 'मार्गदर्शक' },
-                    { speaker: 'अर्जुन', text: 'और यदि मैं नियामक सिद्धांतों का पालन नहीं कर सकता?', emotion: 'आशावान' },
-                    { speaker: 'कृष्ण', text: 'यदि तुम नहीं कर सकते, तो मेरे लिए काम करने का प्रयास करो; क्योंकि मेरे लिए काम करके तुम पूर्ण अवस्था में आ जाओगे।', emotion: 'समायोजित' },
-                    { speaker: 'अर्जुन', text: 'और यदि वह भी संभव नहीं है?', emotion: 'हताश' },
-                    { speaker: 'कृष्ण', text: 'यदि, तथापि, तुम मेरी इस चेतना में काम करने में असमर्थ हो, तो अपने काम के सभी परिणामों को त्यागने का प्रयास करो और आत्म-स्थित होने का प्रयास करो।', emotion: 'दयालु' },
-                    { speaker: 'अर्जुन', text: 'आपको प्रिय एक भक्त के गुण क्या हैं?', emotion: 'भक्तिमय' },
-                    { speaker: 'कृष्ण', text: 'जो ईर्ष्यालु नहीं है, बल्कि सभी जीवित प्राणियों का दयालु मित्र है, जो अपने को स्वामी नहीं समझता और मिथ्या अहंकार से मुक्त है, जो सुख और दुख दोनों में समान है, सहिष्णु है, और हमेशा संतुष्ट है।', emotion: 'वर्णनात्मक' },
-                    { speaker: 'अर्जुन', text: 'कृपया मुझे और गुण बताएं।', emotion: 'उत्सुक' },
-                    { speaker: 'कृष्ण', text: 'एक भक्त जो आत्म-नियंत्रित है, दृढ़ संकल्प के साथ भक्ति सेवा में लगा हुआ है, उसका मन और बुद्धि मुझ पर स्थिर है—मेरा ऐसा भक्त मुझे बहुत प्रिय है।', emotion: 'प्रशंसा करते हुए' },
-                    { speaker: 'अर्जुन', text: 'वे दुनिया के साथ कैसे बातचीत करते हैं?', emotion: 'जिज्ञासु' },
-                    { speaker: 'कृष्ण', text: 'जिससे किसी को कोई कठिनाई नहीं होती और जो किसी से परेशान नहीं होता, जो सुख और दुख, भय और चिंता में समभाव रखता है, वह मुझे बहुत प्रिय है।', emotion: 'शांत' },
-                    { speaker: 'अर्जुन', text: 'सांसारिक चीजों के प्रति उनका दृष्टिकोण क्या है?', emotion: 'उत्सुक' },
-                    { speaker: 'कृष्ण', text: 'मेरा भक्त जो सामान्य गतिविधियों पर निर्भर नहीं है, जो शुद्ध, विशेषज्ञ, चिंताओं के बिना, सभी पीड़ाओं से मुक्त है, और किसी परिणाम के लिए प्रयास नहीं कर रहा है, वह मुझे बहुत प्रिय है।', emotion: 'अनासक्त' },
-                    { speaker: 'अर्जुन', text: 'वे प्रशंसा और निंदा को कैसे संभालते हैं?', emotion: 'विश्लेषणात्मक' },
-                    { speaker: 'कृष्ण', text: 'जो मित्रों और शत्रुओं के प्रति समान है, जो सम्मान और अपमान, गर्मी और सर्दी, सुख और दुख, प्रसिद्धि और बदनामी में समभाव रखता है, जो दूषित संगति से मुक्त है, हमेशा चुप रहता है और किसी भी चीज से संतुष्ट रहता है, वह मुझे बहुत प्रिय है।', emotion: 'समभाव' },
-                    { speaker: 'अर्जुन', text: 'यह प्राप्त करने के लिए एक उच्च मानक है।', emotion: 'विनम्र' },
-                    { speaker: 'कृष्ण', text: 'जो भक्ति सेवा के इस अविनाशी मार्ग का पालन करते हैं और जो पूरी तरह से श्रद्धा के साथ खुद को संलग्न करते हैं, मुझे सर्वोच्च लक्ष्य बनाते हुए, वे मुझे बहुत, बहुत प्रिय हैं।', emotion: 'निर्णायक' }
+                    { speaker: 'अर्जुन', text: 'जो भक्त निरंतर आपके सगुण-साकार स्वरूप के भजन-ध्यान में लगे रहते हैं, और जो अविनाशी अव्यक्त (निराकार ब्रह्म) की उपासना करते हैं—इन दोनों प्रकार के योगियों में कौन अधिक उत्तम योगवेत्ता माने गए हैं?', emotion: 'प्रश्नवाचक' },
+                    { speaker: 'कृष्ण', text: 'मुझमें अपने मन को एकाग्र करके, निरंतर मुझमें लगे रहकर, जो परम श्रद्धा से युक्त भक्त मेरे साकार रूप की उपासना करते हैं, वे मेरे मत में सर्वश्रेष्ठ योगी हैं।', emotion: 'पुष्टि करते हुए' },
+                    { speaker: 'कृष्ण', text: 'परंतु जो इंद्रियों को वश में करके, सर्वत्र समभाव रखते हुए और समस्त प्राणियों के कल्याण में लगे रहकर उस अनिर्देश्य, अव्यक्त, सर्वव्यापी, अचिंत्य, कूटस्थ, अचल और ध्रुव निराकार की उपासना करते हैं, वे भी मुझे ही प्राप्त होते हैं।', emotion: 'समभाव' },
+                    { speaker: 'कृष्ण', text: 'क्लेशोऽधिकतरस्तेषामव्यक्तासक्तचेतसाम्—तथापि उस अव्यक्त निराकार में आसक्त चित्त वाले मनुष्यों के मार्ग में साधन का क्लेश बहुत अधिक है, क्योंकि देहाभिमानी जीवों के लिए अव्यक्त गति अत्यंत कठिनता से प्राप्त होती है।', emotion: 'स्पष्ट करते हुए' },
+                    { speaker: 'कृष्ण', text: 'परंतु जो अपने समस्त कर्मों को मुझमें अर्पण करके, मेरे परायण होकर, अनन्य ध्यानयोग से मेरा ही चिंतन और भजन करते हैं, उन मुझमें चित्त लगाने वाले भक्तों का मैं मृत्युयुक्त संसार-सागर से शीघ्र ही उद्धार करने वाला बन जाता हूँ।', emotion: 'आश्वस्त' },
+                    { speaker: 'कृष्ण', text: 'मय्येव मन आधत्स्व मयि बुद्धिं निवेशय—मुझमें ही अपना मन लगाओ और मुझमें ही अपनी बुद्धि को स्थापित करो। इसके बाद तुम निसंदेह मुझमें ही निवास करोगे।', emotion: 'शिक्षाप्रद' },
+                    { speaker: 'कृष्ण', text: 'यदि तुम अपने चित्त को मुझमें अचल रूप से स्थिर करने में समर्थ नहीं हो, तो हे धनंजय! अभ्यासयोग (निरंतर ध्यान के अभ्यास) द्वारा मुझे प्राप्त करने का यत्न करो।', emotion: 'मार्गदर्शक' },
+                    { speaker: 'कृष्ण', text: 'यदि अभ्यास में भी असमर्थ हो, तो केवल मेरे निमित्त कर्म करने के परायण हो जाओ; मेरे लिए कर्म करते हुए भी तुम परम सिद्धि को प्राप्त कर लोगे।', emotion: 'दयालु' },
+                    { speaker: 'कृष्ण', text: 'और यदि मेरे आश्रित होकर यह भी करने में असमर्थ हो, तो अपने मन को वश में रखकर समस्त कर्मों के फलों का त्याग (कर्मफलत्याग) करो। अभ्यास से ज्ञान श्रेष्ठ है, ज्ञान से ध्यान श्रेष्ठ है, और ध्यान से कर्मफल का त्याग श्रेष्ठ है; क्योंकि त्याग से तुरंत परम शांति प्राप्त होती है।', emotion: 'समावेशी' },
+                    { speaker: 'अर्जुन', text: 'हे भगवन! आपके वे भक्त कैसे होते हैं जो आपको अत्यंत प्रिय हैं? कृपया उनके लक्षण बताइए।', emotion: 'भक्तिमय' },
+                    { speaker: 'कृष्ण', text: 'अद्वेष्टा सर्वभूतानां मैत्रः करुण एव च—जो किसी भी प्राणी से द्वेष नहीं करता, सबका मित्र और करुणामयी है; जो ममता और अहंकार से रहित है, सुख-दुख में सम और क्षमाशील है।', emotion: 'वर्णनात्मक' },
+                    { speaker: 'कृष्ण', text: 'जो निरंतर संतुष्ट है, मन-इंद्रियों को वश में किए हुए दृढ़ निश्चयी है, और जिसका मन-बुद्धि मुझमें ही अर्पित हैं—वह मेरा भक्त मुझे अत्यंत प्रिय है।', emotion: 'प्रशंसा' },
+                    { speaker: 'कृष्ण', text: 'जिससे किसी जीव को उद्वेग (कष्ट या क्षोभ) नहीं होता और जो स्वयं भी किसी से उद्विग्न नहीं होता; जो हर्ष, अमर्ष, भय और उद्वेग से मुक्त है, वह मुझे प्रिय है।', emotion: 'शांत' },
+                    { speaker: 'कृष्ण', text: 'जो आकांक्षा रहित, पवित्र, दक्ष, पक्षपातरहित और सब दुखों से छूटा हुआ है, जिसने समस्त सकाम कर्मों के आरंभ का त्याग कर दिया है—वह मेरा भक्त मुझे प्रिय है। जो न कभी हर्षित होता है, न द्वेष करता है, न शोक करता है और न कामना करता है; शुभ और अशुभ दोनों फलों का त्यागी वह भक्तियुक्त मनुष्य मुझे प्रिय है।', emotion: 'अनासक्त' },
+                    { speaker: 'कृष्ण', text: 'समः शत्रौ च मित्रे च—जो शत्रु और मित्र में, मान और अपमान में समान है; सर्दी-गर्मी तथा सुख-दुख में सम और आसक्ति रहित है; जो निंदा और स्तुति को समान समझता है, मननशील है, जो कुछ भी मिल जाए उसी में संतुष्ट रहता है, स्थिर बुद्धि वाला वह भक्तिमान पुरुष मुझे परम प्रिय है।', emotion: 'समभाव' },
+                    { speaker: 'कृष्ण', text: 'और जो भक्त पूर्ण श्रद्धा से युक्त होकर, मुझे ही अपना परम लक्ष्य मानकर, मेरे कहे हुए इस अमृतमय धर्म का आचरण करते हैं, वे मुझे अत्यंत प्रिय हैं!', emotion: 'निर्णायक' }
                 ],
-                summary: 'अर्जुन पूछते हैं कि क्या ईश्वर को व्यक्तिगत रूप में पूजना बेहतर है या निराकार ब्रह्म के रूप में। कृष्ण घोषित करते हैं कि यद्यपि दोनों मार्ग उन तक ले जाते हैं, उनके व्यक्तिगत रूप के प्रति प्रेमपूर्ण भक्ति (भक्ति योग) का मार्ग अधिकांश लोगों के लिए सबसे सीधा और उपयुक्त है। फिर वे एक सच्चे भक्त के अद्भुत गुणों का वर्णन करते हैं।',
-                teachings: 'ईश्वर के व्यक्तिगत रूप की भक्ति आध्यात्मिक प्राप्ति के लिए सबसे आसान और सबसे प्रभावी मार्ग है। ईश्वर सभी के लिए सुलभ है, और हम जहाँ भी हैं वहाँ से अपनी यात्रा शुरू कर सकते हैं। दया, सहिष्णुता और समभाव जैसे गुणों का विकास करना आध्यात्मिक जीवन का एक महत्वपूर्ण हिस्सा है।',
-                moralLesson: 'एक विचार से प्रेम करने की तुलना में एक व्यक्ति से प्रेम करना आसान है। व्यक्तिगत संबंध, प्रेम और सेवा से भरे ईश्वर से जुड़ना, आध्यात्मिक यात्रा को आनंदमय और पूर्ण बना सकता है। लक्ष्य केवल ईश्वर के बारे में जानना नहीं है, बल्कि ईश्वर से प्रेम करना है।',
-                kidsVersion: 'अर्जुन ने पूछा, "ईश्वर से प्रेम करने का सबसे अच्छा तरीका क्या है?" कृष्ण ने कहा, "कल्पना करो कि ईश्वर तुम्हारा सबसे अच्छा दोस्त है। जिस दोस्त को तुम चित्रित कर सकते हो और बात कर सकते हो, उससे प्रेम करना आसान है, है ना?" उन्होंने यह भी कहा कि सबसे अच्छे भक्त सभी के प्रति दयालु होते हैं, आसानी से परेशान नहीं होते, और साझा करने में खुश रहते हैं।'
+                summary: 'इस अध्याय में श्रीकृष्ण साकार और निराकार उपासना का अंतर स्पष्ट करते हुए साकार भक्ति योग को मानव के लिए अधिक सुलभ और कल्याणकारी बताते हैं। वे मन को ईश्वर में लगाने के क्रमिक साधन (ध्यानाभ्यास, भागवत-कर्म, कर्मफलत्याग) बताते हैं और अंत में अपने प्रिय भक्त के 35 से अधिक दिव्य गुणों (अद्वेष, करुणा, निरहंकार, समता, संतुष्टि और अनन्य शरणागति) का अमृतमय वर्णन करते हैं।',
+                teachings: '• ईश्वर के सगुण-साकार स्वरूप की अनन्य प्रेममयी भक्ति मानव चित्त के लिए सबसे स्वाभाविक और सीधा मार्ग है।\n• यदि एक बार में मन स्थिर न हो, तो अभ्यासयोग, भागवत-कर्म या निष्काम कर्मफलत्याग द्वारा शांति और सिद्धि प्राप्त की जा सकती है।\n• सच्चा भक्त समस्त जीवों से द्वेषरहित, करुणामय, अहंकारशून्य और सुख-दुख तथा मान-अपमान में समभाव रखता है।\n• ईश्वर को बाहरी आडंबर नहीं, बल्कि हृदय की निर्मल श्रद्धा, त्याग और प्राणिमात्र के प्रति प्रेम प्रिय है।',
+                moralLesson: 'सच्ची भक्ति केवल पूजा-पाठ तक सीमित नहीं है, बल्कि हमारे आचरण में झलकनी चाहिए। दूसरों के प्रति दयावान बनें, किसी को कष्ट न दें, स्वयं परिस्थितियों से विचलित न हों और जो कुछ भी प्राप्त हो उसमें संतुष्ट रहकर अपना कर्म ईश्वर को समर्पित करें।',
+                kidsVersion: 'अर्जुन ने पूछा, "भगवान को सबसे प्यारे बच्चे कौन से होते हैं?" श्रीकृष्ण ने मुस्कुराकर कहा, "वे बच्चे जो कभी किसी से नफरत नहीं करते, सबके सच्चे दोस्त बनते हैं, किसी को परेशान नहीं करते, और सुख-दुख में हमेशा शांत और खुश रहते हैं। जो बच्चे अच्छे काम करके भगवान को अपना सच्चा दोस्त मानते हैं, वे भगवान को सबसे ज्यादा प्यारे लगते हैं!"'
             },
             13: {
                 title: 'क्षेत्र-क्षेत्रज्ञ विभाग योग',
-                subtitle: 'पदार्थ और आत्मा',
-                description: 'क्षेत्र (शरीर) और क्षेत्र के ज्ञाता (आत्मा) के बीच के अंतर को समझना',
+                subtitle: 'प्रकृति, पुरुष और चेतना का विवेक',
+                description: 'क्षेत्र (शरीर) और क्षेत्रज्ञ (आत्मा व परमात्मा) के भेद तथा सच्चे ज्ञान का स्वरूप',
                 dialogue: [
-                    { speaker: 'अर्जुन', text: 'हे मेरे प्रिय कृष्ण, मैं प्रकृति [प्रकृति], भोक्ता [पुरुष], और क्षेत्र और क्षेत्र के ज्ञाता, और ज्ञान और ज्ञान के अंत के बारे में जानना चाहता हूँ।', emotion: 'जिज्ञासु' },
-                    { speaker: 'कृष्ण', text: 'यह शरीर, हे कुंतीपुत्र, क्षेत्र कहलाता है, और जो इस शरीर को जानता है उसे क्षेत्र का ज्ञाता कहा जाता है।', emotion: 'परिभाषित करते हुए' },
-                    { speaker: 'अर्जुन', text: 'सभी शरीरों में क्षेत्र का ज्ञाता कौन है?', emotion: 'प्रश्नवाचक' },
-                    { speaker: 'कृष्ण', text: 'हे भरतवंशी, तुम्हें समझना चाहिए कि मैं भी सभी शरीरों में ज्ञाता हूँ, और इस शरीर और इसके ज्ञाता को समझना ज्ञान कहलाता है।', emotion: 'प्रकट करते हुए' },
-                    { speaker: 'अर्जुन', text: 'गतिविधियों का यह क्षेत्र क्या है?', emotion: 'विश्लेषणात्मक' },
-                    { speaker: 'कृष्ण', text: 'पाँच महाभूत, मिथ्या अहंकार, बुद्धि, अव्यक्त, दस इंद्रियाँ और मन, पाँच इंद्रिय विषय, इच्छा, घृणा, सुख, दुख, समुच्चय, जीवन के लक्षण, और दृढ़ विश्वास—इन सभी को, संक्षेप में, गतिविधियों का क्षेत्र और उसकी अंतःक्रिया माना जाता है।', emotion: 'वर्णनात्मक' },
-                    { speaker: 'अर्जुन', text: 'ज्ञान प्राप्त करने की प्रक्रिया क्या है?', emotion: 'अन्वेषी' },
-                    { speaker: 'कृष्ण', text: 'विनम्रता; अभिमानहीनता; अहिंसा; सहिष्णुता; सरलता; एक प्रामाणिक आध्यात्मिक गुरु के पास जाना; स्वच्छता; स्थिरता; आत्म-नियंत्रण; इन्हें मैं ज्ञान घोषित करता हूँ।', emotion: 'शिक्षाप्रद' },
-                    { speaker: 'अर्जुन', text: 'और ज्ञान का उद्देश्य क्या है?', emotion: 'उत्सुक' },
-                    { speaker: 'कृष्ण', text: 'मैं अब ज्ञेय की व्याख्या करूँगा, जिसे जानकर तुम शाश्वत का स्वाद चखोगे। ब्रह्म, आत्मा, जो अनादि और मेरे अधीन है, इस भौतिक संसार के कारण और प्रभाव से परे है।', emotion: 'गहन' },
-                    { speaker: 'अर्जुन', text: 'आत्मा भौतिक प्रकृति के साथ कैसे अंतःक्रिया करती है?', emotion: 'दार्शनिक' },
-                    { speaker: 'कृष्ण', text: 'भौतिक प्रकृति और जीवों को अनादि समझना चाहिए। उनके परिवर्तन और पदार्थ के गुण भौतिक प्रकृति के उत्पाद हैं। प्रकृति को सभी भौतिक कारणों और प्रभावों का कारण कहा जाता है, जबकि जीव इस संसार में विभिन्न कष्टों और भोगों का कारण है।', emotion: 'स्पष्ट करते हुए' },
-                    { speaker: 'अर्जुन', text: 'तो आत्मा प्रकृति के संपर्क के कारण जीवन का अनुभव करती है?', emotion: 'समझ' },
-                    { speaker: 'कृष्ण', text: 'भौतिक प्रकृति में जीव इस प्रकार जीवन के तरीकों का पालन करता है, प्रकृति के तीन गुणों का आनंद लेता है। यह उस भौतिक प्रकृति के साथ उसके जुड़ाव के कारण है। इस प्रकार वह विभिन्न प्रजातियों के बीच अच्छे और बुरे से मिलता है।', emotion: 'व्याख्यात्मक' },
-                    { speaker: 'अर्जुन', text: 'क्या इस सब का कोई साक्षी है?', emotion: 'अनुमान' },
-                    { speaker: 'कृष्ण', text: 'फिर भी इस शरीर में एक और है, एक दिव्य भोक्ता, जो भगवान है, सर्वोच्च स्वामी है, जो पर्यवेक्षक और अनुमति देने वाले के रूप में मौजूद है, और जिसे परमात्मा के रूप में जाना जाता है।', emotion: 'प्रकट करते हुए' },
-                    { speaker: 'अर्जुन', text: 'इस सत्य का साक्षात्कार कैसे किया जा सकता है?', emotion: 'व्यावहारिक' },
-                    { speaker: 'कृष्ण', text: 'कुछ लोग ध्यान के माध्यम से अपने भीतर परमात्मा को देखते हैं, अन्य ज्ञान की खेती के माध्यम से, और फिर भी अन्य फल की इच्छा के बिना काम करके।', emotion: 'मार्गदर्शक' },
-                    { speaker: 'अर्जुन', text: 'और जो इतने उन्नत नहीं हैं, उनके बारे में क्या?', emotion: 'चिंतित' },
-                    { speaker: 'कृष्ण', text: 'फिर से वे भी हैं जो, यद्यपि आध्यात्मिक ज्ञान में पारंगत नहीं हैं, दूसरों से उनके बारे में सुनकर परम पुरुष की पूजा करना शुरू कर देते हैं। अधिकारियों से सुनने की उनकी प्रवृत्ति के कारण, वे भी जन्म और मृत्यु के मार्ग को पार कर जाते हैं।', emotion: 'समावेशी' },
-                    { speaker: 'अर्जुन', text: 'जो वास्तव में देखता है उसकी दृष्टि क्या है?', emotion: 'दूरदर्शी' },
-                    { speaker: 'कृष्ण', text: 'जो सभी शरीरों में व्यक्तिगत आत्मा के साथ परमात्मा को देखता है, और जो समझता है कि न तो आत्मा और न ही नश्वर शरीर के भीतर का परमात्मा कभी नष्ट होता है, वह वास्तव में देखता है।', emotion: 'प्रबुद्ध' },
-                    { speaker: 'अर्जुन', text: 'तो आत्मा स्वयं कार्य नहीं करती?', emotion: 'समझ रहा है' },
-                    { speaker: 'कृष्ण', text: 'जो देख सकता है कि सभी गतिविधियाँ शरीर द्वारा की जाती हैं, जो भौतिक प्रकृति से बना है, और देखता है कि आत्मा कुछ भी नहीं करती, वह वास्तव में देखता है।', emotion: 'पुष्टि करते हुए' },
-                    { speaker: 'अर्जुन', text: 'यह ज्ञान स्वतंत्रता की कुंजी लगता है।', emotion: 'संकल्पित' },
-                    { speaker: 'कृष्ण', text: 'जो ज्ञान की आँखों से शरीर और शरीर के ज्ञाता के बीच का अंतर देखते हैं, और भौतिक प्रकृति में बंधन से मुक्ति की प्रक्रिया को भी समझ सकते हैं, वे परम लक्ष्य को प्राप्त करते हैं।', emotion: 'निर्णायक' }
+                    { speaker: 'अर्जुन', text: 'हे केशव! मैं प्रकृति और पुरुष, क्षेत्र और क्षेत्रज्ञ, तथा ज्ञान और ज्ञेय (जानने योग्य तत्व) के विषय में तत्व से जानना चाहता हूँ।', emotion: 'जिज्ञासु' },
+                    { speaker: 'कृष्ण', text: 'इदं शरीरं कौन्तेय क्षेत्रमित्यभिधीयते—हे कौन्तेय! यह शरीर "क्षेत्र" (कर्मों का खेत) कहलाता है, और जो इस शरीर को भीतर से जानता है, उस जीवात्मा को तत्वदर्शी महापुरुष "क्षेत्रज्ञ" कहते हैं।', emotion: 'परिभाषित करते हुए' },
+                    { speaker: 'कृष्ण', text: 'क्षेत्रज्ञं चापि मां विद्धि सर्वक्षेत्रेषु भारत—और हे भारत! समस्त शरीरों (क्षेत्रों) में वास करने वाला क्षेत्रज्ञ (परमात्मा) भी तुम मुझे ही जानो। क्षेत्र और क्षेत्रज्ञ के भेद को यथार्थ रूप से जानना ही सच्चा ज्ञान है।', emotion: 'प्रकट करते हुए' },
+                    { speaker: 'अर्जुन', text: 'हे प्रभु! यह क्षेत्र (शरीर) किन तत्वों से बना है और इसके विकार क्या हैं?', emotion: 'विश्लेषणात्मक' },
+                    { speaker: 'कृष्ण', text: 'पाँच महाभूत (पृथ्वी, जल, अग्नि, वायु, आकाश), अहंकार, बुद्धि, मूल प्रकृति (अव्यक्त), दस इंद्रियाँ, मन, पाँच इंद्रिय-विषय; तथा इच्छा, द्वेष, सुख, दुख, देह का संघात, चेतना और धृति—यह संक्षेप में विकारों सहित क्षेत्र कहा गया है।', emotion: 'वर्णनात्मक' },
+                    { speaker: 'अर्जुन', text: 'सच्चा ज्ञान और उसके साधन क्या हैं?', emotion: 'अन्वेषी' },
+                    { speaker: 'कृष्ण', text: 'अमानित्वमदम्भित्वमहिंसा क्षान्तिरार्जवम्—मान पाने की इच्छा का अभाव (विनम्रता), दंभहीनता, अहिंसा, क्षमाभाव, सरलता, सद्गुरु की निष्कपट सेवा, आंतरिक व बाह्य शुद्धि, अंतःकरण की स्थिरता और मन-इंद्रियों का निग्रह।', emotion: 'शिक्षाप्रद' },
+                    { speaker: 'कृष्ण', text: 'इंद्रियों के भोगों में आसक्ति का अभाव, अहंकार का न होना, जन्म-मृत्यु-जरा-व्याधि में दुखों और दोषों का निरंतर दर्शन, पुत्र-स्त्री-घर आदि में ममता का अभाव, इष्ट और अनिष्ट की प्राप्ति में सदा चित्त का सम रहना, और मुझमें अनन्य योग द्वारा अव्यभिचारिणी भक्ति—इसे ज्ञानीजन ज्ञान कहते हैं, और इसके विपरीत जो कुछ है वह अज्ञान है।', emotion: 'गहन' },
+                    { speaker: 'अर्जुन', text: 'हे भगवन! ज्ञेय (जानने योग्य परम तत्व) क्या है?', emotion: 'उत्सुक' },
+                    { speaker: 'कृष्ण', text: 'अब मैं ज्ञेय का वर्णन करूँगा जिसे जानकर मनुष्य अमृतत्व को प्राप्त होता है। वह अनादि परम ब्रह्म है, जो न सत् कहा जा सकता है और न असत्। उसके हाथ, पैर, नेत्र, सिर और मुख सब ओर हैं; वह संसार में सबको आवृत्त करके स्थित है।', emotion: 'दिव्य' },
+                    { speaker: 'कृष्ण', text: 'वह समस्त इंद्रियों के विषयों को जानने वाला है, किंतु स्वयं इंद्रियों से रहित है; सब का पोषण करने वाला होकर भी आसक्ति रहित है, और गुणों का भोक्ता होकर भी निर्गुण है। वह समस्त भूतों के बाहर और भीतर स्थित है, चर और अचर भी वही है, और सूक्ष्म होने के कारण अविज्ञेय है।', emotion: 'रहस्य' },
+                    { speaker: 'कृष्ण', text: 'ज्योतिषामपि तज्ज्योतिस्तमसः परमुच्यते—वह ज्योतियों की भी परम ज्योति है और अज्ञान-अंधकार से सर्वथा परे कहा जाता है। वह ज्ञानस्वरूप, जानने योग्य और ज्ञान द्वारा प्राप्त होने वाला तत्व सबके हृदय में विशेष रूप से स्थित है।', emotion: 'तेजोमय' },
+                    { speaker: 'अर्जुन', text: 'इस देह में आत्मा और परमात्मा का क्या संबंध है?', emotion: 'दार्शनिक' },
+                    { speaker: 'कृष्ण', text: 'उपद्रष्टानुमन्ता च भर्ता भोक्ता महेश्वरः—इस शरीर में स्थित यह जीवात्मा वास्तव में साक्षी (उपद्रष्टा), अनुमति देने वाला (अनुमन्ता), धारण करने वाला (भर्ता), भोक्ता और महेश्वर होने से "परमात्मा" भी कहा जाता है।', emotion: 'प्रकट करते हुए' },
+                    { speaker: 'कृष्ण', text: 'समं सर्वेषु भूतेषु तिष्ठन्तं परमेश्वरम्—जो पुरुष समस्त विनाशी प्राणियों में अविनाशी परमेश्वर को समभाव से स्थित देखता है, वही वास्तव में सही देखता है। जो यह देखता है कि सारे कर्म प्रकृति द्वारा ही किए जा रहे हैं और आत्मा अकर्ता है, वही यथार्थ सत्य को देखता है।', emotion: 'समभाव' },
+                    { speaker: 'कृष्ण', text: 'जैसे एक ही सूर्य संपूर्ण लोक को प्रकाशित करता है, वैसे ही एक ही आत्मा (क्षेत्रज्ञ) संपूर्ण क्षेत्र (शरीर) को चेतनता प्रदान करता है। जो ज्ञानरूपी चक्षुओं द्वारा क्षेत्र और क्षेत्रज्ञ के भेद को तथा प्रकृति से मुक्त होने के उपाय को जान लेते हैं, वे परम पद को प्राप्त होते हैं।', emotion: 'निर्णायक' }
                 ],
-                summary: 'कृष्ण पदार्थ और आत्मा, गतिविधियों के क्षेत्र और उसके ज्ञाता के बीच के अंतर की व्याख्या करते हैं, और कैसे ज्ञान मुक्ति की ओर ले जाता है।',
-                teachings: 'शरीर गतिविधियों का क्षेत्र है, और आत्मा ज्ञाता है। परमात्मा हर हृदय में मौजूद है। इस ज्ञान को समझकर और परमात्मा की सेवा करके, व्यक्ति भौतिक कंडीशनिंग को पार कर जाता है।',
-                moralLesson: 'हम अपने शरीर नहीं बल्कि शाश्वत आत्माएं हैं। इसे समझने से हमें सभी के साथ समान व्यवहार करने और अस्थायी चीजों से बहुत अधिक लगाव न रखने में मदद मिलती है।',
-                kidsVersion: 'कृष्ण ने सिखाया कि हम अपना शरीर नहीं बल्कि अंदर की आत्मा हैं। जैसे हम अपने कपड़े नहीं हैं, वैसे ही हम अपना शरीर नहीं हैं। भगवान एक मित्र के रूप में सभी के हृदय में रहते हैं।'
+                summary: 'श्रीकृष्ण शरीर को "क्षेत्र" (कर्मों की भूमि) और जीवात्मा व परमात्मा को "क्षेत्रज्ञ" (क्षेत्र का ज्ञाता) बताते हैं। वे प्रकृति के 24 तत्वों, सच्चे ज्ञान के 20 सद्गुणों (विनम्रता, अहिंसा, शुद्धि, अनन्य भक्ति), ज्ञेय ब्रह्म के सर्वव्यापी स्वरूप और देह के भीतर साक्षी रूप से स्थित परमात्मा का निरूपण करते हैं। जो साधक शरीर की नश्वरता और आत्मा के अमरत्व का विवेक पा लेता है, वह माया के बंधनों से मुक्त हो जाता है।',
+                teachings: '• यह शरीर नश्वर क्षेत्र है, जबकि इसके भीतर की आत्मा और परमात्मा अविनाशी क्षेत्रज्ञ हैं।\n• सच्चा ज्ञान पुस्तकों की केवल जानकारी नहीं, बल्कि विनम्रता, अहिंसा, सादगी, पवित्रता और ईश्वर में अनन्य भक्ति का आचरण है।\n• परमात्मा समस्त प्राणियों के हृदय में साक्षी (उपद्रष्टा) और परम चेतना के रूप में समभाव से स्थित हैं।\n• समस्त शारीरिक और मानसिक कर्म प्रकृति के गुणों द्वारा होते हैं; विशुद्ध आत्मा नित्य, अकर्ता और निर्लेप है।',
+                moralLesson: 'स्वयं को केवल हाड़-मांस का नश्वर शरीर न समझें। शरीर केवल एक वस्त्र या साधन है, आपकी वास्तविक पहचान भीतर की अमर और विशुद्ध आत्मा है। सभी प्राणियों में एक ही ईश्वर की ज्योति को देखकर किसी से घृणा न करें और समता का जीवन जिएं।',
+                kidsVersion: 'श्रीकृष्ण ने समझाया कि हमारा शरीर एक सुंदर बगीचे या खेत की तरह है, और हमारी आत्मा उस बगीचे की रखवाली करने वाले माली की तरह है। जैसे हम अपनी शर्ट के फटने पर खुद को फटा हुआ नहीं मानते, वैसे ही शरीर के बदलने पर भी अंदर की आत्मा हमेशा अमर और खुश रहती है। और परमात्मा सबसे प्यारे दोस्त बनकर हमेशा हमारे दिल में रहते हैं।'
             },
             14: {
                 title: 'गुणत्रय विभाग योग',
                 subtitle: 'प्रकृति के तीन गुण',
-                description: 'भौतिक प्रकृति के तीन गुणों के बारे में एक बातचीत: अच्छाई, जुनून, और अज्ञान।',
+                description: 'सत्त्व, रज और तम गुणों का स्वरूप, उनका बंधन और गुणातीत होने का परम मार्ग',
                 dialogue: [
-                    { speaker: 'कृष्ण', text: 'मैं तुम्हें फिर से इस सर्वोच्च ज्ञान, सभी ज्ञानों में सर्वश्रेष्ठ, की घोषणा करूँगा, जिसे जानकर सभी संतों ने परम सिद्धि प्राप्त की है।', emotion: 'वचन देते हुए' },
-                    { speaker: 'अर्जुन', text: 'कृपया भौतिक प्रकृति के तीन गुणों की व्याख्या करें। वे जीव को कैसे बांधते हैं?', emotion: 'जिज्ञासु' },
-                    { speaker: 'कृष्ण', text: 'भौतिक प्रकृति में तीन गुण होते हैं—सत्त्व, रज और तम। जब शाश्वत जीव प्रकृति के संपर्क में आता है, हे महाबाहु अर्जुन, तो वह इन गुणों से बंध जाता है।', emotion: 'आधारभूत' },
-                    { speaker: 'अर्जुन', text: 'सत्त्व गुण की प्रकृति क्या है?', emotion: 'उत्सुक' },
-                    { speaker: 'कृष्ण', text: 'हे पापरहित, सत्त्व गुण, दूसरों से अधिक शुद्ध होने के कारण, प्रकाशमान है, और यह सभी पापपूर्ण प्रतिक्रियाओं से मुक्त करता है। उस गुण में स्थित लोग सुख और ज्ञान की भावना से बंध जाते हैं।', emotion: 'वर्णनात्मक' },
-                    { speaker: 'अर्जुन', text: 'और रज गुण?', emotion: 'प्रश्नवाचक' },
-                    { speaker: 'कृष्ण', text: 'रज गुण असीमित इच्छाओं और लालसाओं से उत्पन्न होता है, हे कुंतीपुत्र, और इस कारण देहधारी जीव भौतिक सकाम कर्मों से बंधा होता है।', emotion: 'विश्लेषणात्मक' },
-                    { speaker: 'अर्जुन', text: 'तम गुण के बारे में क्या?', emotion: 'चिंतित' },
-                    { speaker: 'कृष्ण', text: 'हे भरतपुत्र, जान लो कि अज्ञान से उत्पन्न तम गुण, सभी देहधारी जीवों का मोह है। इस गुण के परिणाम पागलपन, आलस्य और नींद हैं, जो बद्ध आत्मा को बांधते हैं।', emotion: 'चेतावनी' },
-                    { speaker: 'अर्जुन', text: 'ये गुण एक दूसरे के साथ कैसे प्रतिस्पर्धा करते हैं?', emotion: 'अवलोकनशील' },
-                    { speaker: 'कृष्ण', text: 'कभी-कभी सत्त्व गुण प्रमुख हो जाता है, रज और तम गुणों को पराजित करता है। कभी-कभी रज गुण सत्त्व और तम को पराजित करता है। और अन्य समयों में तम गुण सत्त्व और रज को पराजित करता है।', emotion: 'व्याख्यात्मक' },
-                    { speaker: 'अर्जुन', text: 'इनमें से प्रत्येक गुण में मरने वाले का क्या होता है?', emotion: 'परिणामी' },
-                    { speaker: 'कृष्ण', text: 'जब कोई सत्त्व गुण में मरता है, तो वह महान संतों के शुद्ध उच्च लोकों को प्राप्त करता है। जब कोई रज गुण में मरता है, तो वह सकाम कर्मों में लगे लोगों के बीच जन्म लेता है; और जब कोई तम गुण में मरता है, तो वह पशु योनि में जन्म लेता है।', emotion: 'शिक्षाप्रद' },
-                    { speaker: 'अर्जुन', text: 'इन गुणों को कैसे पार किया जा सकता है?', emotion: 'अन्वेषी' },
-                    { speaker: 'कृष्ण', text: 'जब कोई इन तीन गुणों को पार करने में सक्षम होता है, तो वह जन्म, मृत्यु, वृद्धावस्था और उनके कष्टों से मुक्त हो सकता है और इस जीवन में भी अमृत का आनंद ले सकता है।', emotion: 'मुक्तिदायक' },
-                    { speaker: 'अर्जुन', text: 'गुणों को पार कर चुके व्यक्ति के लक्षण क्या हैं?', emotion: 'विवेकी' },
-                    { speaker: 'कृष्ण', text: 'जो प्रकाश, आसक्ति और मोह के उपस्थित होने पर घृणा नहीं करता या उनके गायब होने पर उनकी लालसा नहीं करता; जो भौतिक गुणों की इन सभी प्रतिक्रियाओं के माध्यम से अटूट और अविचलित रहता है, तटस्थ और दिव्य बना रहता है।', emotion: 'वर्णन करते हुए' },
-                    { speaker: 'अर्जुन', text: 'ऐसा व्यक्ति कैसा व्यवहार करता है?', emotion: 'व्यवहारिक' },
-                    { speaker: 'कृष्ण', text: 'जो आत्मा में स्थित है और सुख-दुख को समान मानता है; जो मिट्टी के ढेले, पत्थर और सोने के टुकड़े को समान दृष्टि से देखता है; जो वांछनीय और अवांछनीय के प्रति समान है; जो स्थिर है, प्रशंसा और निंदा में समान रूप से स्थित है।', emotion: 'समभाव' },
-                    { speaker: 'अर्जुन', text: 'इस दिव्य अवस्था को प्राप्त करने का साधन क्या है?', emotion: 'व्यावहारिक' },
-                    { speaker: 'कृष्ण', text: 'जो सभी परिस्थितियों में अटूट, पूर्ण भक्ति सेवा में संलग्न होता है, वह तुरंत भौतिक प्रकृति के गुणों को पार कर जाता है और इस प्रकार ब्रह्म के स्तर पर आ जाता है।', emotion: 'निर्णायक' }
+                    { speaker: 'कृष्ण', text: 'अब मैं तुम्हें समस्त ज्ञानों में उत्तम परम ज्ञान पुनः कहूँगा, जिसे जानकर सभी मुनिगण इस संसार से मुक्त होकर परम सिद्धि को प्राप्त हो चुके हैं।', emotion: 'गंभीर' },
+                    { speaker: 'कृष्ण', text: 'सत्त्वं रजस्तम इति गुणाः प्रकृतिसंभवाः—हे महाबाहु अर्जुन! प्रकृति से उत्पन्न सत्त्व, रज और तम—ये तीनों गुण अविनाशी जीवात्मा को इस शरीर में बांधते हैं।', emotion: 'आधारभूत' },
+                    { speaker: 'अर्जुन', text: 'हे माधव! इन तीनों गुणों के क्या लक्षण हैं और वे आत्मा को कैसे बांधते हैं?', emotion: 'जिज्ञासु' },
+                    { speaker: 'कृष्ण', text: 'हे निष्पाप! इनमें सत्त्वगुण निर्मल होने के कारण प्रकाशक और विकाररहित है; यह जीवात्मा को सुख की आसक्ति और ज्ञान के अभिमान से बांधता है।', emotion: 'वर्णनात्मक' },
+                    { speaker: 'कृष्ण', text: 'रजोगुण को तृष्णा और कामनाओं से उत्पन्न जानो; यह कर्मों की आसक्ति से देहधारी को बांधता है। और तमोगुण को अज्ञान से उत्पन्न समस्त देहाभिमानियों को मोहित करने वाला जानो; यह प्रमाद, आलस्य और निद्रा द्वारा आत्मा को बांधता है।', emotion: 'विश्लेषणात्मक' },
+                    { speaker: 'कृष्ण', text: 'सत्त्व सुख में लगाता है, रज कर्मों में लगाता है, और तम ज्ञान को ढँककर प्रमाद में लगाता है। कभी सत्त्व रज और तम को दबाकर बढ़ता है, कभी रज सत्त्व और तम को, तथा कभी तम सत्त्व और रज को दबाकर बढ़ता है।', emotion: 'व्याख्यात्मक' },
+                    { speaker: 'अर्जुन', text: 'मनुष्य के शरीर छोड़ने पर इन गुणों का क्या परिणाम होता है?', emotion: 'उत्सुक' },
+                    { speaker: 'कृष्ण', text: 'जब मनुष्य सत्त्वगुण की वृद्धि में मृत्यु को प्राप्त होता है, तब वह उत्तम कर्म करने वालों के निर्मल दिव्य लोकों को प्राप्त होता है। रजोगुण के बढ़ने पर मरने वाला कर्मों में आसक्त मनुष्यों में जन्म लेता है, और तमोगुण में मरने वाला मूढ़ योनियों (पशु-पक्षियों आदि) में जन्म पाता है।', emotion: 'शिक्षाप्रद' },
+                    { speaker: 'कृष्ण', text: 'सात्त्विक कर्म का फल निर्मल सुख और ज्ञान है, राजसिक कर्म का फल दुख है, और तामसिक कर्म का फल अज्ञान और मूढ़ता है।', emotion: 'निर्णायक' },
+                    { speaker: 'अर्जुन', text: 'हे प्रभु! जो पुरुष इन तीनों गुणों से अतीत (गुणातीत) हो गया है, उसके क्या लक्षण हैं? उसका आचरण कैसा होता है और वह इन तीनों गुणों से कैसे पार पाता है?', emotion: 'अन्वेषी' },
+                    { speaker: 'कृष्ण', text: 'हे पांडव! जो प्रकाश (सत्त्व), प्रवृत्ति (रज) और मोह (तम) के प्रवृत्त होने पर उनसे द्वेष नहीं करता और निवृत्त होने पर उनकी इच्छा नहीं करता;', emotion: 'वर्णनात्मक' },
+                    { speaker: 'कृष्ण', text: 'जो साक्षी की भाँति स्थित रहकर गुणों द्वारा विचलित नहीं किया जा सकता, और "गुण ही गुणों में बरत रहे हैं" ऐसा समझकर जो अविचल भाव से स्थित रहता है;', emotion: 'समभाव' },
+                    { speaker: 'कृष्ण', text: 'समदुःखसुखः स्वस्थः समलोष्टाश्मकाञ्चनः—जो सुख-दुख में सम और अपने आत्मस्वरूप में स्थित है; मिट्टी, पत्थर और सुवर्ण को समान समझने वाला है; प्रिय और अप्रिय में धीर है; अपनी निंदा और स्तुति में सम है;', emotion: 'गंभीर' },
+                    { speaker: 'कृष्ण', text: 'जो मान और अपमान में सम है, मित्र और शत्रु के पक्षों में समभाव रखता है और जिसने समस्त सकाम कर्तापन के आरंभ का परित्याग कर दिया है—वह पुरुष "गुणातीत" कहलाता है।', emotion: 'प्रशंसा' },
+                    { speaker: 'कृष्ण', text: 'मां च योऽव्यभिचारेण भक्तियोगेन सेवते—और जो पुरुष अव्यभिचारिणी (अनन्य) भक्तियोग द्वारा निरंतर मेरी सेवा करता है, वह इन तीनों गुणों को भलीभाँति पार करके ब्रह्मभाव (परमानंद) को प्राप्त होने का अधिकारी बन जाता है। क्योंकि उस अविनाशी ब्रह्म, अमृत, शाश्वत धर्म और एकांतिक सुख का परम आश्रय मैं ही हूँ!', emotion: 'निर्णायक' }
                 ],
-                summary: 'कृष्ण भौतिक प्रकृति के तीन गुणों—सत्त्व, रज, और तम—की व्याख्या करते हैं जो सभी जीवों को प्रभावित करते हैं। वे वर्णन करते हैं कि ये गुण आत्मा को कैसे बांधते हैं और कैसे कोई भक्ति सेवा के माध्यम से उन्हें पार कर सकता है।',
-                teachings: 'प्रकृति के तीन गुण हमारे अस्तित्व को प्रभावित करते हैं। सत्त्व सुख और ज्ञान की ओर ले जाता है, रज तीव्र गतिविधि और इच्छा की ओर, और तम मोह की ओर। भक्ति सेवा में संलग्न होकर, हम इन गुणों से ऊपर उठ सकते हैं और आध्यात्मिक प्राप्ति कर सकते हैं।',
-                moralLesson: 'हमारे कार्य और दृष्टिकोण प्रकृति के गुणों से प्रभावित होते हैं। अच्छाई के लिए प्रयास करके और आध्यात्मिक प्रथाओं में संलग्न होकर, हम निचले गुणों को दूर कर सकते हैं और उद्देश्य और स्पष्टता के जीवन की ओर बढ़ सकते हैं।',
-                kidsVersion: 'कल्पना कीजिए कि आपके पास तीन तरह के चश्मे हैं। एक से सब कुछ खुश और उज्ज्वल दिखता है (सत्त्व), एक आपको दौड़ने और लाखों काम करने के लिए प्रेरित करता है (रज), और एक आपको नींद और भ्रमित महसूस कराता है (तम)। कृष्ण हमें सिखाते हैं कि कैसे इन सभी चश्मों को उतारकर चीजों को वैसे ही देखें जैसे वे वास्तव में हैं।'
+                summary: 'श्रीकृष्ण प्रकृति के तीन गुणों—सत्त्व (पवित्रता, प्रकाश, सुख), रज (कामना, लोभ, अशांति) और तम (अज्ञान, आलस्य, प्रमाद)—का विश्लेषण करते हैं। वे समझाते हैं कि ये तीनों गुण मनुष्य के अंतःकरण को किस प्रकार संचालित और कर्मफल से आबद्ध करते हैं। अंत में भगवान गुणातीत पुरुष के परम शांत लक्षणों का निरूपण करते हुए घोषणा करते हैं कि अनन्य प्रेममयी भक्ति ही तीनों गुणों की माया को पार करने का सबसे अचूक और दिव्य उपाय है।',
+                teachings: '• मानव का प्रत्येक विचार और कार्य प्रकृति के तीन गुणों (सत्त्व, रज, तम) के प्रभाव से संचालित होता है।\n• सत्त्वगुण से ज्ञान और सुख, रजोगुण से लोभ व अशांति, और तमोगुण से आलस्य, अज्ञान व पतन उत्पन्न होता है।\n• जीवन का परम लक्ष्य केवल सात्त्विक बनना ही नहीं, बल्कि तीनों गुणों के प्रभाव से परे होकर "गुणातीत" बनना है।\n• भगवान श्रीकृष्ण की अनन्य निष्काम भक्ति ही मनुष्य को गुणों के बंधन से छुड़ाकर ब्रह्मपद प्रदान करती है।',
+                moralLesson: 'अपने स्वभाव का निरंतर निरीक्षण करें। आलस्य और प्रमाद (तम) को कर्मण्यता और उत्साह (रज) से जीतें, और स्वार्थी इच्छाओं (रज) को ज्ञान, दया और पवित्रता (सत्त्व) से शुद्ध करें। अंततः ईश्वर-भक्ति में समर्पित होकर अहंकार त्यागें ताकि सुख-दुख और मान-अपमान आपको कभी विचलित न कर सकें।',
+                kidsVersion: 'श्रीकृष्ण ने सिखाया कि हमारे मन में तीन तरह की भावनाएँ होती हैं: एक अच्छी और शांत भावना जो हमें पढ़ाई और मदद करने की प्रेरणा देती है (सत्त्व), एक चंचल भावना जो बहुत सारी चीजें माँगती है और दौड़ाती है (रज), और एक सुस्त भावना जो सिर्फ सोने और बहाने बनाने को कहती है (तम)। हमें सुस्ती छोड़कर अच्छे काम करने चाहिए और हमेशा भगवान को याद रखकर खुश रहना चाहिए।'
             },
 
             15: {
                 title: 'पुरुषोत्तम योग',
                 subtitle: 'परम पुरुष का योग',
-                description: 'कृष्ण भौतिक संसार को एक उल्टे बरगद के पेड़ के रूप में वर्णित करते हैं और अपनी पहचान परम पुरुष के रूप में प्रकट करते हैं।',
+                description: 'उल्टे अश्वत्थ वृक्ष का रूपक, जीवात्मा की यात्रा और क्षर-अक्षर से परे पुरुषोत्तम का स्वरूप',
                 dialogue: [
-                    { speaker: 'कृष्ण', text: 'कहा जाता है कि एक अविनाशी बरगद का पेड़ है जिसकी जड़ें ऊपर और शाखाएँ नीचे हैं और जिसके पत्ते वैदिक भजन हैं। जो इस पेड़ को जानता है वह वेदों का ज्ञाता है।', emotion: 'रूपक' },
-                    { speaker: 'अर्जुन', text: 'एक उल्टा पेड़? यह क्या दर्शाता है?', emotion: 'उलझन में' },
-                    { speaker: 'कृष्ण', text: 'यह पेड़ भौतिक संसार का प्रतिनिधित्व करता है। इसकी शाखाएँ नीचे और ऊपर फैली हुई हैं, जो भौतिक प्रकृति के तीन गुणों से पोषित होती हैं। इसकी जड़ें, जो मानव समाज के सकाम कर्म हैं, इस संसार से बंधी हुई हैं।', emotion: 'व्याख्यात्मक' },
-                    { speaker: 'अर्जुन', text: 'इस उलझन से कैसे मुक्त हुआ जा सकता है?', emotion: 'अन्वेषी' },
-                    { speaker: 'कृष्ण', text: 'इस पेड़ का वास्तविक रूप इस संसार में नहीं देखा जा सकता। वैराग्य के हथियार से इस दृढ़ता से जमे हुए पेड़ को काटना होगा। उसके बाद, एक ऐसे स्थान की तलाश करनी चाहिए जहाँ से जाने के बाद, कोई कभी वापस नहीं लौटता।', emotion: 'शिक्षाप्रद' },
-                    { speaker: 'अर्जुन', text: 'इस भौतिक संसार के भीतर आत्मा की प्रकृति क्या है?', emotion: 'जिज्ञासु' },
-                    { speaker: 'कृष्ण', text: 'इस बद्ध संसार में जीव मेरे शाश्वत आंशिक अंश हैं। बद्ध जीवन के कारण, वे मन सहित छह इंद्रियों के साथ बहुत कठिन संघर्ष कर रहे हैं।', emotion: 'प्रकट करते हुए' },
-                    { speaker: 'अर्जुन', text: 'आत्मा एक शरीर से दूसरे शरीर में कैसे यात्रा करती है?', emotion: 'उत्सुक' },
-                    { speaker: 'कृष्ण', text: 'भौतिक संसार में जीव अपनी विभिन्न जीवन conceptions को एक शरीर से दूसरे शरीर में ले जाता है जैसे हवा सुगंध ले जाती है। इस प्रकार वह एक प्रकार का शरीर लेता है और फिर उसे छोड़कर दूसरा ले लेता है।', emotion: 'वर्णनात्मक' },
-                    { speaker: 'अर्जुन', text: 'अधिकांश लोग इसे क्यों नहीं देख सकते?', emotion: 'प्रश्नवाचक' },
-                    { speaker: 'कृष्ण', text: 'मूर्ख यह नहीं समझ सकते कि एक जीव अपना शरीर कैसे छोड़ सकता है, न ही वे यह समझ सकते हैं कि वह प्रकृति के गुणों के प्रभाव में किस प्रकार का शरीर भोगता है। लेकिन जिसकी आँखें ज्ञान में प्रशिक्षित हैं वह यह सब देख सकता है।', emotion: 'विवेकी' },
-                    { speaker: 'अर्जुन', text: 'सूर्य और चंद्रमा का प्रकाश कहाँ से आता है?', emotion: 'ब्रह्मांडीय' },
-                    { speaker: 'कृष्ण', text: 'सूर्य की जो चमक पूरे संसार को रोशन करती है, चंद्रमा की चमक और अग्नि की चमक सब मुझसे ही हैं।', emotion: 'स्रोत' },
-                    { speaker: 'अर्जुन', text: 'आप सभी जीवन को कैसे बनाए रखते हैं?', emotion: 'आश्चर्य' },
-                    { speaker: 'कृष्ण', text: 'मैं प्रत्येक ग्रह में प्रवेश करता हूँ, और मेरी ऊर्जा से वे कक्षा में रहते हैं। मैं चंद्रमा बनता हूँ और इस प्रकार सभी सब्जियों को जीवन का रस प्रदान करता हूँ। मैं सभी जीवों के शरीरों में पाचन की अग्नि हूँ।', emotion: 'बनाए रखने वाला' },
-                    { speaker: 'अर्जुन', text: 'ज्ञान और विस्मृति कहाँ से आते हैं?', emotion: 'दार्शनिक' },
-                    { speaker: 'कृष्ण', text: 'मैं सभी के हृदय में बैठा हूँ, और मुझसे ही स्मृति, ज्ञान और विस्मृति आती है। सभी वेदों द्वारा, मैं ही जानने योग्य हूँ। वास्तव में, मैं वेदांत का संकलक हूँ, और मैं वेदों का ज्ञाता हूँ।', emotion: 'सर्वज्ञ' },
-                    { speaker: 'अर्जुन', text: 'आप जिस परम पुरुष की बात करते हैं वह कौन है?', emotion: 'अन्वेषी' },
-                    { speaker: 'कृष्ण', text: 'दो प्रकार के प्राणी हैं, नश्वर और अविनाशी। भौतिक संसार में प्रत्येक जीव नश्वर है, और आध्यात्मिक संसार में प्रत्येक जीव अविनाशी कहलाता है। इन दोनों के अलावा, सबसे बड़ा जीवित व्यक्तित्व, परम आत्मा, अविनाशी भगवान स्वयं हैं।', emotion: 'परिभाषित करते हुए' },
-                    { speaker: 'अर्जुन', text: 'और वह परम पुरुष आप हैं?', emotion: 'समझ रहा है' },
-                    { speaker: 'कृष्ण', text: 'क्योंकि मैं दिव्य हूँ, नश्वर और अविनाशी दोनों से परे, और क्योंकि मैं सबसे महान हूँ, मैं संसार और वेदों दोनों में उस परम पुरुष के रूप में प्रसिद्ध हूँ।', emotion: 'निर्णायक' }
+                    { speaker: 'कृष्ण', text: 'ऊर्ध्वमूलमधःशाखमश्वत्थं प्राहुरव्ययम्—हे अर्जुन! यह संसार रूपी वृक्ष एक उल्टे अश्वत्थ (पीपल) के वृक्ष के समान है, जिसकी मूल (जड़) ऊपर परमात्मा में है और शाखाएँ नीचे संसार में फैली हैं; वेद जिसके पत्ते हैं। जो इस संसार-वृक्ष के रहस्य को तत्व से जानता है, वही वेदों का सच्चा ज्ञाता है।', emotion: 'रूपक' },
+                    { speaker: 'कृष्ण', text: 'इस वृक्ष की शाखाएँ तीनों गुणों द्वारा पोषित होकर नीचे और ऊपर सर्वत्र फैली हुई हैं, और विषय-भोग ही इसकी कोपलें हैं। मनुष्य लोक में कर्मों के अनुसार बांधने वाली इसकी वासना रूपी जड़ें नीचे भी फैली हुई हैं।', emotion: 'व्याख्यात्मक' },
+                    { speaker: 'कृष्ण', text: 'इस संसार-वृक्ष का वास्तविक स्वरूप यहाँ देखने में नहीं आता—न इसका आदि है, न अंत और न ही कोई सुदृढ़ स्थिति। इसलिए इस अति सुदृढ़ मूल वाले अश्वत्थ वृक्ष को वैराग्य रूपी दृढ़ शस्त्र से काटकर, उस परम पद की खोज करनी चाहिए जहाँ पहुँचकर मनुष्य फिर कभी लौटकर संसार में नहीं आता। "मैं उसी आदि पुरुष की शरण हूँ जिससे यह पुरातन संसार-प्रवृत्ति विस्तृत हुई है"—ऐसा निश्चय करना चाहिए।', emotion: 'शिक्षाप्रद' },
+                    { speaker: 'कृष्ण', text: 'जो मान और मोह से रहित हैं, आसक्ति के दोष को जीत चुके हैं, निरंतर परमात्मा के स्वरूप में स्थित हैं, जिनकी कामनाएँ सर्वथा नष्ट हो चुकी हैं, और जो सुख-दुख नामक द्वंद्वों से मुक्त हैं—वे ज्ञानीजन उस अविनाशी परम पद को प्राप्त होते हैं।', emotion: 'गंभीर' },
+                    { speaker: 'कृष्ण', text: 'न तद्भासयते सूर्यो न शशाङ्को न पावकः—जिस परम धाम को न सूर्य प्रकाशित कर सकता है, न चंद्रमा और न अग्नि; और जहाँ जाकर कोई पुनः लौटकर नहीं आता, वही मेरा परम धाम है।', emotion: 'दिव्य' },
+                    { speaker: 'कृष्ण', text: 'ममैवांशो जीवलोके जीवभूतः सनातनः—इस देह में यह सनातन जीवात्मा मेरा ही अंश है; वही प्रकृति में स्थित मन और पाँचों इंद्रियों को आकर्षित करता है।', emotion: 'प्रकट करते हुए' },
+                    { speaker: 'कृष्ण', text: 'जैसे वायु गंध के स्थान से सुगंध को ग्रहण करके ले जाती है, वैसे ही देह का स्वामी जीवात्मा भी जब एक शरीर को त्यागता है, तो इन मन और इंद्रियों को अपने साथ लेकर दूसरे शरीर में चला जाता है।', emotion: 'वर्णनात्मक' },
+                    { speaker: 'कृष्ण', text: 'शरीर छोड़ते हुए, शरीर में स्थित रहते हुए अथवा गुणों से युक्त होकर विषयों को भोगते हुए इस जीवात्मा को अज्ञानीजन नहीं देख पाते; केवल ज्ञानरूपी नेत्रों वाले विवेकशील पुरुष ही इसे तत्व से देख पाते हैं।', emotion: 'विवेकी' },
+                    { speaker: 'कृष्ण', text: 'यदादित्यगतं तेजो जगद्भासयतेऽखिलम्—सूर्य में स्थित जो तेज संपूर्ण जगत को प्रकाशित करता है, और जो तेज चंद्रमा तथा अग्नि में है, उसे तुम मेरा ही तेज जानो।', emotion: 'तेजोमय' },
+                    { speaker: 'कृष्ण', text: 'मैं ही पृथ्वी में प्रवेश करके अपनी शक्ति से समस्त प्राणियों को धारण करता हूँ, और रसस्वरूप चंद्रमा बनकर समस्त औषधियों व वनस्पतियों को पुष्ट करता हूँ। मैं ही समस्त जीवों के शरीर में स्थित वैश्वानर (जठराग्नि) होकर चार प्रकार के अन्नों को पचाता हूँ।', emotion: 'पोषक' },
+                    { speaker: 'कृष्ण', text: 'सर्वस्य चाहं हृदि संनिविष्टो मत्तः स्मृतिर्ज्ञानमपोहनं च—मैं ही समस्त प्राणियों के हृदय में अंतर्यामी रूप से स्थित हूँ; और मुझसे ही स्मृति, ज्ञान और उनका लोप होता है। समस्त वेदों द्वारा जानने योग्य केवल मैं ही हूँ; वेदांत का कर्ता और वेदों का ज्ञाता भी मैं ही हूँ।', emotion: 'सर्वज्ञ' },
+                    { speaker: 'कृष्ण', text: 'द्वाविमौ पुरुषौ लोके क्षरश्चाक्षर एव च—इस संसार में दो प्रकार के पुरुष (चेतन सत्ताएँ) हैं: क्षर (समस्त विनाशी प्राणियों के शरीर) और अक्षर (कूटस्थ अविनाशी जीवात्मा)।', emotion: 'परिभाषित करते हुए' },
+                    { speaker: 'कृष्ण', text: 'उत्तमः पुरुषस्त्वन्यः परमात्मेत्युदाहृतः—परंतु इन दोनों से भिन्न उत्तम पुरुष तो अन्य ही है, जिसे "परमात्मा" कहा गया है; जो तीनों लोकों में प्रवेश करके सबका भरण-पोषण करता है, वही अविनाशी ईश्वर है।', emotion: 'सर्वोच्च' },
+                    { speaker: 'कृष्ण', text: 'यस्मात्क्षरमतीतोऽहमक्षरादपि चोत्तमः—क्योंकि मैं क्षर (विनाशी जड़ प्रकृति) से सर्वथा परे हूँ और अक्षर (जीवात्मा) से भी उत्तम हूँ, इसलिए लोक में और वेद में मैं "पुरुषोत्तम" के नाम से प्रसिद्ध हूँ। जो मोह-रहित होकर मुझे इस प्रकार पुरुषोत्तम जानता है, वह सर्वज्ञ होकर अनन्य भाव से मेरा ही भजन करता है।', emotion: 'निर्णायक' }
                 ],
-                summary: 'कृष्ण भौतिक संसार का वर्णन एक उल्टे बरगद के पेड़ के रूप में करते हैं और बताते हैं कि वे ही परम पुरुष, पुरुषोत्तम हैं, जो नश्वर और अविनाशी दोनों से परे हैं।',
-                teachings: 'भौतिक संसार एक अस्थायी और भ्रामक वास्तविकता है। वैराग्य विकसित करके और परम पुरुष के प्रति समर्पण करके, व्यक्ति मुक्ति प्राप्त कर सकता है। कृष्ण ही अंतिम वास्तविकता, हर चीज के स्रोत और पालक हैं।',
-                moralLesson: 'हमें इस संसार की चीजों से बहुत अधिक लगाव नहीं रखना चाहिए, क्योंकि वे अस्थायी हैं। अपने आध्यात्मिक विकास और परम से संबंध पर ध्यान केंद्रित करके, हम सच्चा और स्थायी सुख पा सकते हैं।',
-                kidsVersion: 'कृष्ण कहते हैं कि दुनिया एक विशाल, उल्टे पेड़ की तरह है। हम इसकी शाखाओं में उलझ सकते हैं, लेकिन अगर हमारे पास एक नक्शा (आध्यात्मिक ज्ञान) और एक तेज कुल्हाड़ी (वैराग्य) है, तो हम बाहर का रास्ता खोज सकते हैं और उनके साथ प्रकाश और खुशी की असली दुनिया में वापस आ सकते हैं।'
+                summary: 'श्रीकृष्ण संसार की तुलना एक उल्टे अश्वत्थ (पीपल) वृक्ष से करते हैं, जिसका मूल (परमात्मा) ऊपर है और शाखाएँ नीचे संसार में फैली हैं। वे इसे दृढ़ वैराग्य के शस्त्र से काटकर परम धाम को खोजने का उपदेश देते हैं। भगवान बताते हैं कि जीवात्मा उन्हीं का सनातन अंश है जो वायु द्वारा गंध की भाँति मन-इंद्रियों को एक देह से दूसरी देह में ले जाता है। अंत में वे क्षर (विनाशी शरीर), अक्षर (अविनाशी जीवात्मा) और इन दोनों से उत्तम "पुरुषोत्तम" (परमात्मा) के दिव्य स्वरूप का रहस्य प्रकट करते हैं।',
+                teachings: '• संसार एक अस्थायी और भ्रामक अश्वत्थ वृक्ष की तरह है; अनासक्ति और वैराग्य रूपी कुल्हाड़ी से ही इसके बंधनों को काटा जा सकता है।\n• प्रत्येक जीवात्मा भगवान का ही सनातन अंश है (ममैवांशो जीवलोके जीवभूतः सनातनः)।\n• सूर्य, चंद्रमा, अग्नि, जीवन-शक्ति और जठराग्नि का मूल तेज परमात्मा ही हैं।\n• परमात्मा क्षर (जड़ जगत) और अक्षर (जीवात्मा) दोनों से परे और सर्वोच्च हैं, इसलिए वेदों में उन्हें "पुरुषोत्तम" कहा गया है।',
+                moralLesson: 'संसार की नश्वर वस्तुओं और भौतिक सुखों में उलझने के बजाय अपने मूल स्रोत परमात्मा को पहचानें। जब आप यह समझ लेते हैं कि आप ईश्वर के अंश हैं और वे आपके हृदय में अंतर्यामी बनकर विराजमान हैं, तो भय और भटकाव समाप्त होकर चित्त में असीम शांति और आत्मबल का संचार होता है।',
+                kidsVersion: 'श्रीकृष्ण ने बताया कि दुनिया एक जादुई उल्टे पेड़ की तरह है, जिसमें हम उलझ सकते हैं। पर हमारे अंदर जो प्यारी आत्मा है, वह वास्तव में भगवान की ही एक छोटी सी ज्योति है। जैसे हवा फूलों की खुशबू को एक जगह से दूसरी जगह ले जाती है, वैसे ही आत्मा भी हमेशा अमर रहती है। श्रीकृष्ण ही सबसे बड़े और प्यारे "पुरुषोत्तम" (सुपरहीरो) हैं जो हमेशा हमारे दिल में रहकर हमें अच्छी समझ देते हैं।'
             },
             16: {
                 title: 'दैवासुर संपद् विभाग योग',
-                subtitle: 'दिव्य और आसुरी स्वभाव',
-                description: 'कृष्ण दिव्य और आसुरी गुणों और उनके परिणामों का वर्णन करते हैं',
+                subtitle: 'दैवी और आसुरी संपदा का विवेक',
+                description: 'दिव्य सद्गुणों और आसुरी दुर्गुणों का अंतर, पतन के तीन द्वार तथा शास्त्र-विधि का महत्व',
                 dialogue: [
-                    { speaker: 'कृष्ण', text: 'निर्भयता, अपने अस्तित्व की शुद्धि, आध्यात्मिक ज्ञान की साधना, दान, आत्म-नियंत्रण, यज्ञ का अनुष्ठान—ये दिव्य गुण दिव्य प्रकृति से संपन्न ईश्वरीय पुरुषों के हैं।', emotion: 'गुणों की सूची' },
-                    { speaker: 'अर्जुन', text: 'अन्य दिव्य गुण क्या हैं?', emotion: 'उत्सुक' },
-                    { speaker: 'कृष्ण', text: 'अहिंसा, सत्यता, क्रोध से मुक्ति, त्याग, शांति, दोषारोपण से विरक्ति, सभी जीवों के प्रति दया, लोभ से मुक्ति, सौम्यता, विनय, स्थिर संकल्प।', emotion: 'वर्णनात्मक' },
-                    { speaker: 'अर्जुन', text: 'और आसुरी गुण क्या हैं, हे कृष्ण?', emotion: 'विपरीत' },
-                    { speaker: 'कृष्ण', text: 'अभिमान, दंभ, अहंकार, क्रोध, कठोरता और अज्ञान—ये गुण आसुरी प्रकृति वालों के हैं।', emotion: 'चेतावनी' },
-                    { speaker: 'अर्जुन', text: 'ये दोनों स्वभाव कहाँ ले जाते हैं?', emotion: 'परिणामी' },
-                    { speaker: 'कृष्ण', text: 'दिव्य गुण मुक्ति के लिए अनुकूल हैं, जबकि आसुरी गुण बंधन के लिए हैं। चिंता मत करो, हे पांडुपुत्र, क्योंकि तुम दिव्य गुणों के साथ पैदा हुए हो।', emotion: 'आश्वस्त' },
-                    { speaker: 'अर्जुन', text: 'आसुरी प्रकृति वाले संसार को कैसे देखते हैं?', emotion: 'जिज्ञासु' },
-                    { speaker: 'कृष्ण', text: 'वे कहते हैं कि यह संसार असत्य है, बिना किसी आधार के, बिना किसी ईश्वर के नियंत्रण के। वे कहते हैं कि यह यौन इच्छा से उत्पन्न होता है और इसका कारण काम के अलावा कुछ नहीं है।', emotion: 'व्याख्यात्मक' },
-                    { speaker: 'अर्जुन', text: 'जीवन के प्रति उनका दृष्टिकोण क्या है?', emotion: 'विश्लेषणात्मक' },
-                    { speaker: 'कृष्ण', text: 'वे मानते हैं कि इंद्रियों को संतुष्ट करना मानव सभ्यता की प्रमुख आवश्यकता है। इस प्रकार जीवन के अंत तक उनकी चिंता अथाह है। सैकड़ों-हजारों इच्छाओं के जाल में बंधे और काम और क्रोध में डूबे हुए, वे इंद्रिय भोग के लिए अवैध तरीकों से धन सुरक्षित करते हैं।', emotion: 'आलोचनात्मक' },
-                    { speaker: 'अर्जुन', text: 'यह एक दयनीय अस्तित्व लगता है।', emotion: 'अवलोकनशील' },
-                    { speaker: 'कृष्ण', text: 'इन सभी चिंताओं से भ्रमित और भ्रम के जाल में बंधे हुए, वे इंद्रिय भोग से बहुत अधिक जुड़ जाते हैं और नरक में गिर जाते हैं।', emotion: 'पुष्टि करते हुए' },
-                    { speaker: 'अर्जुन', text: 'क्या ऐसे लोग कभी आपको प्राप्त करते हैं?', emotion: 'अन्वेषी' },
-                    { speaker: 'कृष्ण', text: 'जो ईर्ष्यालु और शरारती हैं, जो मनुष्यों में सबसे नीचे हैं, मैं उन्हें लगातार भौतिक अस्तित्व के सागर में, विभिन्न आसुरी प्रजातियों में डालता हूँ।', emotion: 'न्याय' },
-                    { speaker: 'अर्जुन', text: 'इस नारकीय जीवन के द्वार क्या हैं?', emotion: 'सावधान' },
-                    { speaker: 'कृष्ण', text: 'इस नरक के तीन द्वार हैं—काम, क्रोध, और लोभ। हर समझदार व्यक्ति को इन्हें छोड़ देना चाहिए, क्योंकि वे आत्मा के पतन की ओर ले जाते हैं।', emotion: 'गंभीर चेतावनी' },
-                    { speaker: 'अर्जुन', text: 'और जो इन तीन द्वारों से बचता है?', emotion: 'आशावान' },
-                    { speaker: 'कृष्ण', text: 'जो नरक के इन तीन द्वारों से बच गया है, हे कुंतीपुत्र, वह आत्म-साक्षात्कार के लिए अनुकूल कार्य करता है और इस प्रकार धीरे-धीरे परम गंतव्य को प्राप्त करता है।', emotion: 'वचन देते हुए' },
-                    { speaker: 'अर्जुन', text: 'किसी को क्या करना चाहिए और क्या नहीं करना चाहिए, यह कैसे जानना चाहिए?', emotion: 'व्यावहारिक' },
-                    { speaker: 'कृष्ण', text: 'जो शास्त्रीय आदेशों को त्याग देता है और अपनी मनमर्जी के अनुसार कार्य करता है, वह न तो सिद्धि, न सुख, और न ही परम गंतव्य को प्राप्त करता है। इसलिए व्यक्ति को शास्त्रों के नियमों द्वारा समझना चाहिए कि कर्तव्य क्या है और क्या नहीं।', emotion: 'मार्गदर्शक' },
-                    { speaker: 'अर्जुन', text: 'तो शास्त्र ही सभी कार्यों में मेरे मार्गदर्शक होने चाहिए?', emotion: 'समझ' },
-                    { speaker: 'कृष्ण', text: 'हाँ, शास्त्रीय नियमों को जानकर, तुम्हें इस तरह से कार्य करना चाहिए कि तुम धीरे-धीरे उन्नत हो सको।', emotion: 'निर्णायक' },
-                    { speaker: 'अर्जुन', text: 'आपके शब्दों ने मुझे धर्म के मार्ग पर स्पष्टता दी है।', emotion: 'प्रबुद्ध' },
-                    { speaker: 'कृष्ण', text: 'दिव्य मार्ग का अनुसरण करो, अर्जुन, क्योंकि यह मुझ तक ले जाता है। आसुरी को त्यागो, क्योंकि यह केवल बंधन और दुख की ओर ले जाता है।', emotion: 'आशीर्वाद' }
+                    { speaker: 'कृष्ण', text: 'अभयं सत्त्वसंशुद्धिर्ज्ञानयोगव्यवस्थितिः—भय का सर्वथा अभाव, अंतःकरण की पूर्ण शुद्धि, ज्ञान और योग में दृढ़ स्थिति, दान, इंद्रिय-संयम, यज्ञ, स्वाध्याय, तप और सरलता;', emotion: 'सद्गुण' },
+                    { speaker: 'कृष्ण', text: 'अहिंसा, सत्य, क्रोध न करना, त्याग, शांति, चुगली न करना, सब प्राणियों पर दया, लोलुपता का अभाव, कोमलता, लज्जा, चपलता का अभाव, तेज, क्षमा, धैर्य, शुद्धि, द्रोह न होना और मान की चाह न होना—हे भारत! ये सब दैवी संपदा (दिव्य गुणों) को लेकर उत्पन्न हुए पुरुष के लक्षण हैं।', emotion: 'वर्णनात्मक' },
+                    { speaker: 'अर्जुन', text: 'और हे प्रभु! आसुरी संपदा वालों के क्या लक्षण हैं?', emotion: 'जिज्ञासु' },
+                    { speaker: 'कृष्ण', text: 'दम्भो दर्पोऽभिमानश्च क्रोधः पारुष्यमेव च—दंभ (दिखावा), घमंड, मिथ्या अभिमान, क्रोध, कठोरता और अज्ञान—ये सब आसुरी संपदा को लेकर उत्पन्न हुए पुरुष के लक्षण हैं।', emotion: 'चेतावनी' },
+                    { speaker: 'कृष्ण', text: 'दैवी संपदा मुक्ति के लिए मानी गई है और आसुरी संपदा बंधन के लिए। हे पांडव! तुम शोक मत करो, क्योंकि तुम दैवी संपदा को लेकर ही जन्मे हो।', emotion: 'आश्वस्त' },
+                    { speaker: 'अर्जुन', text: 'आसुरी स्वभाव वाले लोग इस जगत को किस दृष्टि से देखते हैं और उनका आचरण कैसा होता है?', emotion: 'विश्लेषणात्मक' },
+                    { speaker: 'कृष्ण', text: 'वे कहते हैं कि संसार असत्य है, इसका कोई आधार नहीं है और कोई ईश्वर नहीं है; यह केवल स्त्री-पुरुष के काम-संयोग से उत्पन्न हुआ है, काम के सिवा इसका अन्य कोई कारण नहीं।', emotion: 'आलोचनात्मक' },
+                    { speaker: 'कृष्ण', text: 'ऐसी नास्तिक और भ्रष्ट दृष्टि का आश्रय लेकर, मंदबुद्धि और क्रूर कर्म करने वाले वे विनाशकारी लोग जगत के नाश के लिए ही समर्थ होते हैं। वे कभी न बुझने वाली काम-वासनाओं का आश्रय लेकर, दंभ, मान और मद से चूर होकर मिथ्या धारणाओं को पकड़ते हैं।', emotion: 'गंभीर' },
+                    { speaker: 'कृष्ण', text: 'वे मृत्युपर्यंत रहने वाली अपार चिंताओं में डूबे रहते हैं और विषय-भोगों को ही जीवन का परम ध्येय मानते हैं। सैकड़ों आशाओं के पाश में बंधे हुए वे काम और क्रोध के वशीभूत होकर भोगों के लिए अन्यायपूर्वक धन बटोरने का यत्न करते हैं।', emotion: 'चेतावनी' },
+                    { speaker: 'कृष्ण', text: 'वे सोचते हैं: "आज मैंने यह पा लिया, अब यह मनोरथ भी पूरा करूँगा; यह धन मेरे पास है और भविष्य में वह भी मेरा हो जाएगा। उस शत्रु को मैंने मार डाला, दूसरों को भी मार दूँगा। मैं ही ईश्वर हूँ, मैं ही भोक्ता हूँ, मैं सिद्ध, बलवान और सुखी हूँ!"', emotion: 'उद्घाटित करते हुए' },
+                    { speaker: 'कृष्ण', text: 'ऐसे अनेक प्रकार से भ्रमित चित्त वाले, मोह के जाल में फँसे और भोगों में अत्यधिक आसक्त अज्ञानीजन घोर अपवित्र नरक में गिरते हैं।', emotion: 'न्याय' },
+                    { speaker: 'कृष्ण', text: 'त्रिविधं नरकस्येदं द्वारं नाशनमात्मनः। कामः क्रोधस्तथा लोभस्तस्मादेतत्त्रयं त्यजेत्—काम, क्रोध और लोभ—ये तीन आत्मा का नाश करने वाले नरक के मुख्य द्वार हैं; इसलिए इन तीनों का सर्वथा त्याग कर देना चाहिए!', emotion: 'गंभीर चेतावनी' },
+                    { speaker: 'कृष्ण', text: 'नरक के इन तीनों द्वारों से मुक्त हुआ मनुष्य अपने परम कल्याण का आचरण करता है और उससे परम गति (मुक्ति) को प्राप्त होता है।', emotion: 'मार्गदर्शक' },
+                    { speaker: 'कृष्ण', text: 'यः शास्त्रविधिमुत्सृज्य वर्तते कामकारतः। न स सिद्धिमवाप्नोति न सुखं न परां गतिम्—जो मनुष्य शास्त्र की विधि को त्यागकर अपनी मनमानी इच्छा और वासना के अनुसार आचरण करता है, वह न तो सिद्धि को पाता है, न सुख को और न परम गति को।', emotion: 'स्पष्ट' },
+                    { speaker: 'कृष्ण', text: 'तस्माच्छास्त्रं प्रमाणं ते कार्याकार्यव्यवस्थितौ—इसलिए कर्तव्य और अकर्तव्य की व्यवस्था में तुम्हारे लिए शास्त्र ही प्रमाण है। शास्त्र-विधान द्वारा निर्धारित कर्म को जानकर तुम्हें इस संसार में अपना कर्तव्य कर्म करना चाहिए।', emotion: 'निर्णायक' }
                 ],
-                summary: 'कृष्ण दिव्य और आसुरी गुणों, उनके परिणामों का वर्णन करते हैं, और आध्यात्मिक विकास के लिए शास्त्रीय मार्गदर्शन का पालन करने पर जोर देते हैं।',
-                teachings: 'निर्भयता, पवित्रता, और ईमानदारी जैसे दिव्य गुण मुक्ति की ओर ले जाते हैं। अभिमान, क्रोध, और लोभ जैसे आसुरी गुण बंधन की ओर ले जाते हैं। शास्त्र उचित आचरण के लिए मार्गदर्शन प्रदान करते हैं।',
-                moralLesson: 'हमें दया, ईमानदारी और आत्म-नियंत्रण जैसे अच्छे गुण विकसित करने चाहिए, और क्रोध, लोभ और अभिमान जैसे बुरे गुणों से बचना चाहिए।',
-                kidsVersion: 'कृष्ण ने अच्छे और बुरे गुणों के बारे में सिखाया। अच्छे लोग दयालु, ईमानदार और मददगार होते हैं। बुरे लोग गुस्सैल, लालची और मतलबी होते हैं। हमें हमेशा अच्छा बनने की कोशिश करनी चाहिए।'
+                summary: 'श्रीकृष्ण मानव स्वभाव के दो स्पष्ट पक्षों—दैवी संपदा (अभय, शुद्धि, सत्य, अहिंसा, दया, क्षमा आदि 26 दिव्य सद्गुण) और आसुरी संपदा (दंभ, घमंड, क्रोध, नास्तिकता और अनियंत्रित वासना)—का सजीव विवेचन करते हैं। वे काम, क्रोध और लोभ को आत्मा का नाश करने वाले नरक के तीन प्रत्यक्ष द्वार बताते हुए उनसे बचने की दृढ़ चेतावनी देते हैं। अंत में भगवान स्पष्ट करते हैं कि स्वेच्छाचार और मनमाने आचरण के बजाय शास्त्र-मर्यादा के अनुसार कर्तव्य पालन करना ही परम कल्याण का एकमात्र मार्ग है।',
+                teachings: '• दैवी गुण मनुष्य को मुक्ति और शांति की ओर ले जाते हैं, जबकि आसुरी दुर्गुण मनुष्य को पतन और घोर बंधन में डालते हैं।\n• काम, क्रोध और लोभ नरक के तीन विनाशकारी द्वार हैं (कामः क्रोधस्तथा लोभस्तस्मादेतत्त्रयं त्यजेत्); इन पर नियंत्रण पाना ही आध्यात्मिक विजय है।\n• नास्तिकता, अहंकार और भोगवादी दृष्टि मनुष्य के पतन का मूल कारण बनती है।\n• क्या करना चाहिए और क्या नहीं (कार्याकार्य), इसके निर्णय के लिए शास्त्र और सद्गुरु के वचनों को प्रमाण मानना चाहिए।',
+                moralLesson: 'अपने भीतर के दिव्य गुणों—सत्य, दया, क्षमा और विनम्रता—का निरंतर विकास करें। काम-वासना, क्रोध और लोभ के आवेगों को पहचानकर उन्हें तुरंत त्याग दें। मनमानी और स्वार्थ के बजाय सदा धर्म, मर्यादा और शास्त्र-सम्मत कर्तव्य का पालन करें।',
+                kidsVersion: 'श्रीकृष्ण ने बताया कि हर इंसान के अंदर दो तरह की ताकतें होती हैं: एक अच्छी (देवताओं जैसी) और एक बुरी (राक्षसों जैसी)। जो बच्चे सच बोलते हैं, कभी गुस्सा नहीं करते, दूसरों की मदद करते हैं और बड़ों की बात मानते हैं, वे दैवी बच्चे होते हैं। पर जो बच्चे घमंड करते हैं, झूठ बोलते हैं, गुस्सा करते हैं और लालच करते हैं, वे परेशान रहते हैं। हमें हमेशा गुस्सा और लालच छोड़कर एक अच्छा और प्यारा इंसान बनना चाहिए!'
             },
             17: {
                 title: 'श्रद्धात्रय विभाग योग',
-                subtitle: 'श्रद्धा के तीन विभाग',
-                description: 'श्रद्धा के तीन प्रकारों—सत्त्व, रज, और तम—और वे पूजा, भोजन, और दान में कैसे प्रकट होते हैं, इसका अन्वेषण।',
+                subtitle: 'श्रद्धा, आहार, यज्ञ और तप के तीन प्रकार',
+                description: 'सत्त्व, रज और तम के अनुसार श्रद्धा, भोजन, यज्ञ, तप और दान का भेद तथा "ॐ तत् सत्" का परम रहस्य',
                 dialogue: [
-                    { speaker: 'अर्जुन', text: 'हे कृष्ण, उन लोगों की स्थिति क्या है जो शास्त्र के सिद्धांतों का पालन नहीं करते लेकिन अपनी कल्पना के अनुसार पूजा करते हैं? क्या वे सत्त्व में हैं, रज में या तम में?', emotion: 'प्रश्नवाचक' },
-                    { speaker: 'कृष्ण', text: 'देहधारी आत्मा द्वारा अर्जित प्रकृति के गुणों के अनुसार, किसी की श्रद्धा तीन प्रकार की हो सकती है—सत्त्व में, रज में या तम में। अब इसके बारे में सुनो।', emotion: 'वर्गीकृत करते हुए' },
-                    { speaker: 'अर्जुन', text: 'श्रद्धा किसी के चरित्र को कैसे निर्धारित करती है?', emotion: 'उत्सुक' },
-                    { speaker: 'कृष्ण', text: 'हे भरतपुत्र, प्रकृति के विभिन्न गुणों के तहत किसी के अस्तित्व के अनुसार, व्यक्ति एक विशेष प्रकार की श्रद्धा विकसित करता है। जीव को उसके द्वारा अर्जित गुणों के अनुसार एक विशेष श्रद्धा का कहा जाता है।', emotion: 'व्याख्यात्मक' },
-                    { speaker: 'अर्जुन', text: 'ये विभिन्न प्रकार की श्रद्धा पूजा में कैसे प्रकट होती हैं?', emotion: 'पूछताछ' },
-                    { speaker: 'कृष्ण', text: 'सत्त्व गुण वाले लोग देवताओं की पूजा करते हैं; रज गुण वाले राक्षसों की पूजा करते हैं; और तम गुण वाले भूत-प्रेतों की पूजा करते हैं।', emotion: 'अंतर' },
-                    { speaker: 'अर्जुन', text: 'और यह हमारे द्वारा खाए जाने वाले भोजन पर कैसे लागू होता है?', emotion: 'व्यावहारिक' },
-                    { speaker: 'कृष्ण', text: 'सत्त्व गुण वालों को प्रिय भोजन जीवन की अवधि बढ़ाते हैं, किसी के अस्तित्व को शुद्ध करते हैं और शक्ति, स्वास्थ्य, सुख और संतोष देते हैं। ऐसे भोजन रसदार, वसायुक्त, पौष्टिक और हृदय को प्रिय होते हैं।', emotion: 'वर्णनात्मक' },
-                    { speaker: 'अर्जुन', text: 'रज और तम में भोजन के बारे में क्या?', emotion: 'विपरीत' },
-                    { speaker: 'कृष्ण', text: 'जो भोजन बहुत कड़वे, बहुत खट्टे, नमकीन, गर्म, तीखे, सूखे और जलने वाले होते हैं, वे रज गुण वालों को प्रिय होते हैं। ऐसे भोजन दुख, कष्ट और बीमारी का कारण बनते हैं। खाने से तीन घंटे से अधिक पहले तैयार किया गया भोजन, जो बेस्वाद, सड़ा हुआ और दुर्गंधयुक्त हो, और अवशेषों और अछूत चीजों से युक्त भोजन तम गुण वालों को प्रिय होता है।', emotion: 'चेतावनी' },
-                    { speaker: 'अर्जुन', text: 'गुण यज्ञ को कैसे प्रभावित करते हैं?', emotion: 'विश्लेषणात्मक' },
-                    { speaker: 'कृष्ण', text: 'शास्त्र के निर्देशों के अनुसार, कर्तव्य के रूप में, जो कोई फल की इच्छा नहीं रखते, उनके द्वारा किया गया यज्ञ सत्त्व गुण का होता है।', emotion: 'मूल्यांकन' },
-                    { speaker: 'अर्जुन', text: 'और तपस्या?', emotion: 'अन्वेषी' },
-                    { speaker: 'कृष्ण', text: 'शरीर की तपस्या में परम भगवान, ब्राह्मणों, आध्यात्मिक गुरु, और पिता और माता जैसे वरिष्ठों की पूजा, और स्वच्छता, सरलता, ब्रह्मचर्य और अहिंसा शामिल हैं।', emotion: 'शिक्षाप्रद' },
-                    { speaker: 'अर्जुन', text: 'विभिन्न गुणों में दान के बारे में क्या?', emotion: 'विवेकी' },
-                    { speaker: 'कृष्ण', text: 'कर्तव्य के रूप में, वापसी की उम्मीद के बिना, उचित समय और स्थान पर, और एक योग्य व्यक्ति को दिया गया दान सत्त्व गुण में माना जाता है।', emotion: 'परिभाषित करते हुए' },
-                    { speaker: 'अर्जुन', text: '"ॐ तत् सत्" का क्या महत्व है?', emotion: 'पवित्र' },
-                    { speaker: 'कृष्ण', text: 'सृष्टि की शुरुआत से, तीन शब्द ॐ, तत् और सत् का उपयोग परम सत्य को इंगित करने के लिए किया गया था। इसलिए, श्रद्धा के साथ किए गए यज्ञ, दान और तपस्या के कार्य हमेशा "ॐ" के साथ शुरू होते हैं ताकि परम को प्राप्त किया जा सके।', emotion: 'गहन' },
-                    { speaker: 'अर्जुन', text: 'यदि ये कार्य बिना श्रद्धा के किए जाएं तो क्या होगा?', emotion: 'चिंतित' },
-                    { speaker: 'कृष्ण', text: 'परम में श्रद्धा के बिना यज्ञ, दान या तपस्या के रूप में किया गया कुछ भी अस्थायी है। इसे "असत्" कहा जाता है और यह इस जीवन और अगले दोनों में बेकार है।', emotion: 'निश्चित' },
-                    { speaker: 'अर्जुन', text: 'तो श्रद्धा सबसे आवश्यक घटक है?', emotion: 'समझ' },
-                    { speaker: 'कृष्ण', text: 'हाँ, अर्जुन। श्रद्धा, जब सत्त्व गुण में स्थित हो और शास्त्र द्वारा निर्देशित हो, तो व्यक्ति को उच्चतम पूर्णता तक पहुँचाती है।', emotion: 'निर्णायक' }
+                    { speaker: 'अर्जुन', text: 'हे कृष्ण! जो मनुष्य शास्त्र-विधि को छोड़कर केवल श्रद्धा से युक्त होकर पूजा-यज्ञादि करते हैं, उनकी स्थिति कौन सी होती है—सात्त्विकी, राजसी अथवा तामसी?', emotion: 'प्रश्नवाचक' },
+                    { speaker: 'कृष्ण', text: 'त्रिविधा भवति श्रद्धा देहिनां सा स्वभावजा। सात्त्विकी राजसी चैव तामसी चेति तां शृणु—मनुष्यों के पूर्वसंस्कारों से उत्पन्न स्वभावजनित श्रद्धा तीन प्रकार की होती है: सात्त्विकी, राजसी और तामसी। इसे तुम मुझसे सुनो।', emotion: 'वर्गीकृत करते हुए' },
+                    { speaker: 'कृष्ण', text: 'सत्त्वानुरूपा सर्वस्य श्रद्धा भवति भारत। श्रद्धामयोऽयं पुरुषो यो यच्छ्रद्धः स एव सः—हे भारत! सभी मनुष्यों की श्रद्धा उनके अंतःकरण के अनुरूप होती है। यह मनुष्य वास्तव में श्रद्धामय ही है; जिसकी जैसी श्रद्धा होती है, वह स्वयं भी वैसा ही बन जाता है।', emotion: 'गंभीर' },
+                    { speaker: 'कृष्ण', text: 'सात्त्विक पुरुष देवताओं की पूजा करते हैं; राजसिक पुरुष यक्ष और राक्षसों की पूजा करते हैं; और अन्य जो तामसिक मनुष्य हैं, वे प्रेतों और भूतगणों की पूजा करते हैं।', emotion: 'अंतर' },
+                    { speaker: 'कृष्ण', text: 'जो मनुष्य शास्त्र-विधि से हीन, घोर मनमानी तपस्या करते हैं तथा दंभ और अहंकार से युक्त होकर काम, आसक्ति और बल के अभिमान से प्रेरित हैं; जो शरीर में स्थित पंचभूतों को और उनके भीतर रहने वाले मुझ अंतर्यामी को भी कष्ट देते हैं, उन अज्ञानियों को तुम निश्चित ही आसुरी स्वभाव वाला जानो।', emotion: 'चेतावनी' },
+                    { speaker: 'अर्जुन', text: 'हे भगवन! मनुष्यों के भोजन (आहार) में भी क्या इन तीनों गुणों का भेद होता है?', emotion: 'जिज्ञासु' },
+                    { speaker: 'कृष्ण', text: 'आयुःसत्त्वबलारोग्यसुखप्रीतिविवर्धनाः—आयु, बुद्धि, बल, आरोग्य, सुख और प्रसन्नता को बढ़ाने वाले, रसयुक्त, चिकने, स्थिर रहने वाले तथा मन को प्रिय लगने वाले भोजन सात्त्विक पुरुषों को प्रिय होते हैं।', emotion: 'वर्णनात्मक' },
+                    { speaker: 'कृष्ण', text: 'अति कड़वे, अति खट्टे, अति खारे, अत्यंत गर्म, तीखे, रूखे और दाहकारक भोजन राजसिक पुरुषों को प्रिय होते हैं, जो दुख, शोक और रोग उत्पन्न करते हैं।', emotion: 'सावधान' },
+                    { speaker: 'कृष्ण', text: 'जो भोजन अधपका (या बासी), रसहीन, दुर्गंधयुक्त, रात का रखा हुआ, जूठा और अपवित्र हो, वह तामसिक पुरुषों को प्रिय होता है।', emotion: 'वर्णन' },
+                    { speaker: 'अर्जुन', text: 'यज्ञ, तप और दान में इन तीनों गुणों का क्या स्वरूप है?', emotion: 'विश्लेषणात्मक' },
+                    { speaker: 'कृष्ण', text: 'जो यज्ञ शास्त्र-विधि द्वारा नियत है और फल की इच्छा न रखने वाले पुरुषों द्वारा केवल "कर्तव्य" मानकर मन को समाहित करके किया जाता है, वह सात्त्विक यज्ञ है। दंभ के लिए अथवा फल की अभिलाषा रखकर किया गया यज्ञ राजसिक है; और शास्त्रविधिहीन, अन्नदानरहित, बिना मंत्रों और श्रद्धा के किया गया यज्ञ तामसिक कहलाता है।', emotion: 'शिक्षाप्रद' },
+                    { speaker: 'कृष्ण', text: 'देवताओं, ब्राह्मणों, गुरुजनों और ज्ञानी महापुरुषों का पूजन, पवित्रता, सरलता, ब्रह्मचर्य और अहिंसा—यह शरीर का तप कहलाता है। अनुद्वेगकरं वाक्यं सत्यं प्रियहितं च यत्—जो वाणी किसी को उद्वेग न पहुँचाने वाली, सत्य, प्रिय, हितकारी और स्वाध्याय का अभ्यास करने वाली हो—वह वाणी का तप कहा जाता है। मन की प्रसन्नता, सौम्यता, मौन, आत्म-संयम और भावों की शुद्धि—यह मन का तप कहा जाता है।', emotion: 'तप का स्वरूप' },
+                    { speaker: 'कृष्ण', text: 'दातव्यमिति यद्दानं दीयतेऽनुपकारिणे—"दान देना कर्तव्य है"—ऐसा मानकर जो दान देश, काल और सुपात्र को बिना किसी उपकार की आशा के दिया जाता है, वह सात्त्विक दान है। जो दान प्रत्युपकार (बदले की चाह) या फल की इच्छा से क्लेशपूर्वक दिया जाता है, वह राजसिक है; और जो दान सत्कार के बिना, तिरस्कारपूर्वक, अयोग्य स्थान और कुपात्र को दिया जाता है, वह तामसिक है।', emotion: 'दान का विवेक' },
+                    { speaker: 'अर्जुन', text: 'हे माधव! परमात्मा के पावन नाम "ॐ तत् सत्" का क्या रहस्य है?', emotion: 'उत्सुक' },
+                    { speaker: 'कृष्ण', text: 'ॐ तत्सदिति निर्देशो ब्रह्मणस्त्रिविधः स्मृतः—"ॐ", "तत्" और "सत्"—यह तीन प्रकार का नाम सच्चिदानंदघन ब्रह्म का निर्देश करने वाला माना गया है। इसलिए ब्रह्मवादियों के यज्ञ, दान और तपरूपी शुभ कर्म सदा "ॐ" का उच्चारण करके प्रारंभ होते हैं। मोक्ष की इच्छा रखने वाले पुरुषों द्वारा फल की इच्छा किए बिना समस्त क्रियाएँ "तत्" कहकर की जाती हैं। और परम सत्य तथा श्रेष्ठ भाव में "सत्" शब्द का प्रयोग होता है।', emotion: 'दिव्य' },
+                    { speaker: 'कृष्ण', text: 'अश्रद्धया हुतं दत्तं तपस्तप्तं कृतं च यत्। असदित्युच्यते पार्थ न च तत्प्रेत्य नो इह—हे पार्थ! बिना श्रद्धा के किया गया हवन, दिया गया दान, तपा गया तप अथवा जो कुछ भी कर्म किया जाता है, वह सब "असत्" कहा जाता है। वह न इस लोक में फलदायी होता है और न परलोक में!', emotion: 'निर्णायक' }
                 ],
-                summary: 'कृष्ण बताते हैं कि श्रद्धा तीन गुणों में से एक हो सकती है: सत्त्व, रज, या तम। यह किसी की पूजा, भोजन, तपस्या, और दान को प्रभावित करता है। वे इस बात पर जोर देते हैं कि बिना श्रद्धा के किया गया कोई भी आध्यात्मिक अभ्यास अंततः बेकार है।',
-                teachings: 'पौष्टिक भोजन चुनकर, सम्मानपूर्वक पूजा करके, और बिना किसी अपेक्षा के दान देकर अपनी श्रद्धा को सत्त्व गुण के साथ संरेखित करें। वाक्यांश "ॐ तत् सत्" परम सत्य को दर्शाता है। श्रद्धा सभी आध्यात्मिक प्रथाओं में आवश्यक घटक है।',
-                moralLesson: 'आपकी श्रद्धा की गुणवत्ता आपके जीवन की गुणवत्ता को निर्धारित करती है। शुद्ध इरादों और बिना स्वार्थी इच्छाओं के सत्त्व में कार्य करने का प्रयास करें। यह आध्यात्मिक विकास और खुशी की ओर ले जाएगा।',
-                kidsVersion: 'कल्पना कीजिए कि आपके पास तीन तरह के चश्मे हैं: साफ, लाल, और ग्रे। जब आप साफ चश्मा (सत्त्व) पहनते हैं, तो आप सब कुछ अच्छी तरह से देखते हैं। जब आप लाल चश्मा (रज) पहनते हैं, तो सब कुछ उग्र दिखता है और आप और अधिक चाहते हैं। जब आप ग्रे चश्मा (तम) पहनते हैं, तो सब कुछ अंधेरा और भ्रमित करने वाला होता है। कृष्ण हमें हमेशा अच्छी चीजों में विश्वास करके, स्वस्थ भोजन खाकर, और दूसरों के प्रति दयालु होकर साफ चश्मे का उपयोग करना सिखाते हैं।'
+                summary: 'श्रीकृष्ण स्पष्ट करते हैं कि मनुष्य का संपूर्ण जीवन और स्वभाव उसकी अंतर्निहित श्रद्धा (सात्त्विकी, राजसी, तामसी) से ही निर्मित होता है (यो यच्छ्रद्धः स एव सः)। वे सात्त्विक, राजसिक और तामसिक आहार, यज्ञ, तप (शारीरिक, वाचिक, मानसिक) तथा दान के सूक्ष्म भेद समझाते हैं। अंत में वे ब्रह्म के परम पावन नाम "ॐ तत् सत्" की महिमा और यह परम सत्य उद्घाटित करते हैं कि बिना विशुद्ध श्रद्धा के किया गया कोई भी कर्म "असत्" (व्यर्थ) है।',
+                teachings: '• मनुष्य अपनी श्रद्धा के अनुरूप ही बनता है (श्रद्धामयोऽयं पुरुषो यो यच्छ्रद्धः स एव सः)।\n• सात्त्विक आहार स्वास्थ्य, आयु और मन की पवित्रता बढ़ाता है; राजसिक व तामसिक आहार दुख, रोग और प्रमाद लाते हैं।\n• सच्चा तप वाणी की मिठास और सत्यता (अनुद्वेगकरं वाक्यं सत्यं प्रियहितं च यत्), मन की प्रसन्नता और शरीर की पवित्रता में है।\n• निस्वार्थ भाव से सत्पात्र को दिया गया सात्त्विक दान ही कल्याणकारी है; और समस्त शुभ कर्मों को "ॐ तत् सत्" कहकर ईश्वरार्पण करना चाहिए।',
+                moralLesson: 'अपने खान-पान, वाणी, विचारों और कर्मों को सात्त्विक बनाएं। किसी को कष्ट न पहुँचाने वाली, प्रिय और सत्य वाणी बोलें। बदले की आशा किए बिना सुपात्र की सहायता करें और जीवन के हर कार्य को सच्ची श्रद्धा और ईश्वर-भाव से संपन्न करें।',
+                kidsVersion: 'श्रीकृष्ण ने सिखाया कि हम जैसा खाना खाते हैं और जैसी सोच रखते हैं, हम वैसे ही बन जाते हैं! ताजा और पौष्टिक खाना खाने से हमारा शरीर और दिमाग तेज होता है। जब भी हम बोलें, हमेशा मीठा और सच बोलें जिससे किसी का दिल न दुखे। बिना किसी लालच के दूसरों की मदद करना और हमेशा भगवान पर सच्चा भरोसा रखना ही सबसे अच्छी श्रद्धा है।'
             },
             18: {
                 title: 'मोक्ष संन्यास योग',
-                subtitle: 'त्याग की पूर्णता',
-                description: 'कृष्ण त्याग, निःस्वार्थ कर्म, और पूर्ण समर्पण के माध्यम से मुक्ति के मार्ग पर अपने अंतिम उपदेश प्रदान करते हैं।',
+                subtitle: 'सर्वोच्च त्याग, कर्मयोग की पूर्णता और परम शरणागति',
+                description: 'त्याग और संन्यास का रहस्य, अठारह अध्यायों का संपूर्ण सार, तथा भगवान की परम शरणागति का महामंत्र',
                 dialogue: [
-                    { speaker: 'अर्जुन', text: 'हे महाबाहु, मैं त्याग [त्याग] और संन्यास [संन्यास] के उद्देश्य को समझना चाहता हूँ।', emotion: 'अन्वेषी' },
-                    { speaker: 'कृष्ण', text: 'भौतिक इच्छा पर आधारित गतिविधियों का त्याग करना ही महान विद्वान पुरुष संन्यास कहते हैं। और सभी गतिविधियों के परिणामों का त्याग करना ही बुद्धिमान त्याग कहते हैं।', emotion: 'परिभाषित करते हुए' },
-                    { speaker: 'अर्जुन', text: 'क्या सभी कर्मों का त्याग कर देना चाहिए?', emotion: 'प्रश्नवाचक' },
-                    { speaker: 'कृष्ण', text: 'यज्ञ, दान और तपस्या के कार्य नहीं छोड़ने चाहिए; उन्हें करना ही चाहिए। वास्तव में, यज्ञ, दान और तपस्या महान आत्माओं को भी शुद्ध करते हैं।', emotion: 'स्पष्ट करते हुए' },
-                    { speaker: 'अर्जुन', text: 'सभी कर्मों की सिद्धि के लिए पाँच कारण क्या हैं?', emotion: 'जिज्ञासु' },
-                    { speaker: 'कृष्ण', text: 'कर्म का स्थान [शरीर], कर्ता, विभिन्न इंद्रियाँ, कई अलग-अलग प्रकार के प्रयास, और अंततः परमात्मा—ये कर्म के पाँच कारक हैं।', emotion: 'विश्लेषणात्मक' },
-                    { speaker: 'अर्जुन', text: 'प्रकृति के गुण विभिन्न प्रकार के कार्यों से कैसे संबंधित हैं?', emotion: 'उत्सुक' },
-                    { speaker: 'कृष्ण', text: 'एक ब्राह्मण, क्षत्रिय, वैश्य, और शूद्र का कार्य अलग-अलग होता है, जैसे उनके काम के गुण भी, हे शत्रु का दमन करने वाले।', emotion: 'वर्णनात्मक' },
-                    { speaker: 'अर्जुन', text: 'कोई अपना काम करके पूर्णता कैसे प्राप्त कर सकता है?', emotion: 'व्यावहारिक' },
-                    { speaker: 'कृष्ण', text: 'अपने काम के गुणों का पालन करके, प्रत्येक व्यक्ति पूर्ण हो सकता है। भगवान की पूजा करके, जो सभी प्राणियों का स्रोत है और जो सर्वव्यापी है, एक व्यक्ति अपना काम करके पूर्णता प्राप्त कर सकता है।', emotion: 'मार्गदर्शक' },
-                    { speaker: 'अर्जुन', text: 'तो अपना कर्तव्य करना बेहतर है, भले ही अपूर्ण रूप से?', emotion: 'समझ' },
-                    { speaker: 'कृष्ण', text: 'दूसरे के व्यवसाय को स्वीकार करने और उसे पूरी तरह से करने की तुलना में अपने व्यवसाय में संलग्न होना बेहतर है, भले ही कोई उसे अपूर्ण रूप से करे। किसी की प्रकृति के अनुसार निर्धारित कर्तव्य कभी भी पापपूर्ण प्रतिक्रियाओं से प्रभावित नहीं होते हैं।', emotion: 'पुष्टि करते हुए' },
-                    { speaker: 'अर्जुन', text: 'जिसने यह पूर्णता प्राप्त कर ली है वह कैसे कार्य करता है?', emotion: 'अवलोकनशील' },
-                    { speaker: 'कृष्ण', text: 'जो आत्म-नियंत्रित और अनासक्त है और जो सभी भौतिक भोगों की उपेक्षा करता है, वह त्याग के अभ्यास से, प्रतिक्रिया से मुक्ति की उच्चतम पूर्ण अवस्था प्राप्त कर सकता है।', emotion: 'वर्णन करते हुए' },
-                    { speaker: 'अर्जुन', text: 'सभी ज्ञानों में सबसे गोपनीय क्या है?', emotion: 'उत्सुक' },
-                    { speaker: 'कृष्ण', text: 'क्योंकि तुम मेरे बहुत प्रिय मित्र हो, मैं तुमसे अपना सर्वोच्च निर्देश, सभी का सबसे गोपनीय ज्ञान कह रहा हूँ। इसे मुझसे सुनो, क्योंकि यह तुम्हारे लाभ के लिए है।', emotion: 'प्रेममय' },
-                    { speaker: 'अर्जुन', text: 'मैं सुनने के लिए तैयार हूँ, कृष्ण।', emotion: 'ध्यान से' },
-                    { speaker: 'कृष्ण', text: 'हमेशा मेरे बारे में सोचो, मेरे भक्त बनो, मेरी पूजा करो और मुझे अपना प्रणाम अर्पित करो। इस प्रकार तुम बिना चूके मेरे पास आओगे। मैं तुम्हें यह वचन देता हूँ क्योंकि तुम मेरे बहुत प्रिय मित्र हो।', emotion: 'वचन देते हुए' },
-                    { speaker: 'अर्जुन', text: 'और अंतिम निर्देश?', emotion: 'प्रतीक्षारत' },
-                    { speaker: 'कृष्ण', text: 'सभी प्रकार के धर्मों को त्याग दो और केवल मेरी शरण में आओ। मैं तुम्हें सभी पापपूर्ण प्रतिक्रियाओं से मुक्त कर दूँगा। डरो मत।', emotion: 'परम' },
-                    { speaker: 'अर्जुन', text: 'मेरे प्रिय कृष्ण, हे अच्युत, मेरा भ्रम अब दूर हो गया है। आपकी कृपा से मैंने अपनी स्मृति पुनः प्राप्त कर ली है। मैं अब दृढ़ और संदेह से मुक्त हूँ और आपके निर्देशों के अनुसार कार्य करने के लिए तैयार हूँ।', emotion: 'संकल्पित' }
+                    { speaker: 'अर्जुन', text: 'हे महाबाहो! हे ऋषीकेश! हे केशिप्रसूदन! मैं संन्यास (कर्म-संन्यास) और त्याग (कर्मफल-त्याग) के वास्तविक तत्व को पृथक-पृथक जानना चाहता हूँ।', emotion: 'जिज्ञासु' },
+                    { speaker: 'कृष्ण', text: 'काम्यानां कर्मणां न्यासं संन्यासं कवयो विदुः—काम्य कर्मों (सकाम कर्मों) के स्वरूपतः त्याग को विद्वानजन "संन्यास" कहते हैं, और समस्त कर्मों के फल की आसक्ति के परित्याग को विचारशील पुरुष "त्याग" कहते हैं।', emotion: 'परिभाषित करते हुए' },
+                    { speaker: 'कृष्ण', text: 'यज्ञदानतपःकर्म न त्याज्यं कार्यमेव तत्—यज्ञ, दान और तप रूपी कर्म किसी भी स्थिति में त्यागने योग्य नहीं हैं, उन्हें अवश्य करना चाहिए; क्योंकि ये कर्म बुद्धिमान पुरुषों के अंतःकरण को भी पवित्र करने वाले हैं। परंतु इन कर्मों को भी आसक्ति और फलों की कामना का त्याग करके ही करना चाहिए—यह मेरा निश्चित और उत्तम मत है।', emotion: 'स्पष्ट' },
+                    { speaker: 'कृष्ण', text: 'जो नियत कर्तव्य कर्म को केवल "कर्तव्य" समझकर, संग और फल की इच्छा त्यागकर करता है, वही सात्त्विक त्यागी है। देहधारी जीव द्वारा समस्त कर्मों का सर्वथा त्याग करना संभव नहीं है, परंतु जो कर्मफल का त्यागी है, वही वास्तव में सच्चा "त्यागी" कहलाता है।', emotion: 'शिक्षाप्रद' },
+                    { speaker: 'कृष्ण', text: 'पंचैतानि महाबाहो कारणानि निबोध मे—किसी भी कर्म की सिद्धि में पाँच हेतु होते हैं: अधिष्ठान (शरीर), कर्ता (जीवात्मा), विविध करण (इंद्रियाँ), विविध चेष्टाएँ और पाँचवाँ दैव (परमात्मा या प्रारब्ध)। ऐसा होने पर भी जो अशुद्ध बुद्धि के कारण केवल अपने-आपको ही कर्ता मानता है, वह मंदबुद्धि सत्य को नहीं देखता।', emotion: 'विश्लेषणात्मक' },
+                    { speaker: 'कृष्ण', text: 'श्रेयान्स्वधर्मो विगुणः परधर्मात्स्वनुष्ठितात्—अच्छी प्रकार आचरण किए हुए दूसरे के धर्म की अपेक्षा गुणरहित भी अपना सहज स्वधर्म (कर्तव्य) अधिक कल्याणकारी है। स्वभाव से नियत किए हुए अपने कर्तव्य कर्म को करता हुआ मनुष्य कभी पाप को प्राप्त नहीं होता।', emotion: 'मार्गदर्शक' },
+                    { speaker: 'कृष्ण', text: 'ईश्वरः सर्वभूतानां हृद्देशेऽर्जुन तिष्ठति। भ्रामयन्सर्वभूतानि यन्त्रारूढानि मायया—हे अर्जुन! सर्वशक्तिमान परमेश्वर समस्त प्राणियों के हृदय-देश में स्थित हैं, और अपनी माया से संपूर्ण जीवों को शरीररूपी यंत्र पर आरूढ़ किए हुए घुमा रहे हैं।', emotion: 'रहस्य' },
+                    { speaker: 'कृष्ण', text: 'तमेव शरणं गच्छ सर्वभावेन भारत—हे भारत! तुम सब भाव से केवल उसी परमेश्वर की शरण में जाओ। उनकी कृपा से ही तुम परम शांति और शाश्वत परम पद को प्राप्त करोगे।', emotion: 'अनन्य' },
+                    { speaker: 'कृष्ण', text: 'इति ते ज्ञानमाख्यातं गुह्याद्गुह्यतरं मया। विमृश्यैतदशेषेण यथेच्छसि तथा कुरु—इस प्रकार मैंने तुम्हें यह अत्यंत गोपनीय ज्ञान कह दिया। अब इस पर भलीभाँति संपूर्ण विचार करके, जैसा तुम उचित समझो, वैसा करो!', emotion: 'स्वतंत्रता देते हुए' },
+                    { speaker: 'कृष्ण', text: 'सर्वगुह्यतमं भूयः शृणु मे परमं वचः—परंतु तुम मेरे अत्यंत प्रिय सखा हो, इसलिए तुम्हारे परम हित के लिए मैं पुनः सबसे परम गोपनीय वचन कहता हूँ:', emotion: 'स्नेही' },
+                    { speaker: 'कृष्ण', text: 'मन्मना भव मद्भक्तो मद्याजी मां नमस्कुरु। मामेवैष्यसि सत्यं ते प्रतिजाने प्रियोऽसि मे—मुझमें ही अपना मन लगाओ, मेरे अनन्य भक्त बनो, मेरा ही पूजन करो और मुझे ही नमन करो। ऐसा करने पर तुम निश्चित ही मुझे प्राप्त होओगे; यह मैं तुमसे सत्य प्रतिज्ञा करता हूँ, क्योंकि तुम मेरे परम प्रिय हो!', emotion: 'परम वचन' },
+                    { speaker: 'कृष्ण', text: 'सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज। अहं त्वां सर्वपापेभ्यो मोक्षयिष्यामि मा शुचः—समस्त धर्मों (उपाधियों और औपचारिक नियमों) का आश्रय त्यागकर केवल एक मुझ सर्वसमर्थ परमात्मा की शरण में आ जाओ! मैं तुम्हें समस्त पापों और बंधनों से मुक्त कर दूँगा; तुम शोक मत करो!', emotion: 'परम शरणागति' },
+                    { speaker: 'कृष्ण', text: 'कच्चिदेतच्छ्रुतं पार्थ त्वयैकाग्रेण चेतसा। कच्चिदज्ञानसंमोहः प्रनष्टस्ते धनंजय—हे पार्थ! क्या तुमने इस परम ज्ञान को एकाग्र चित्त से सुना? और हे धनंजय! क्या तुम्हारा अज्ञानजनित मोह पूरी तरह नष्ट हो गया?', emotion: 'स्नेहपूर्ण' },
+                    { speaker: 'अर्जुन', text: 'नष्टो मोहः स्मृतिर्लब्धा त्वत्प्रसादान्मयाच्युत। स्थितोऽस्मि गतसन्देहः करिष्ये वचनं तव—हे अच्युत! आपकी अपार कृपा से मेरा मोह सर्वथा नष्ट हो गया है और मुझे अपने वास्तविक स्वरूप की स्मृति पुनः प्राप्त हो गई है। अब मैं संशयरहित होकर स्थित हूँ और आपके आदेश का पूर्ण पालन करूँगा!', emotion: 'संकल्पित' },
+                    { speaker: 'संजय', text: 'इत्यहं वासुदेवस्य पार्थस्य च महात्मनः। संवादमिममश्रौषमद्भुतं रोमहर्षणम्—हे राजन्! इस प्रकार मैंने महात्मा वासुदेव और अर्जुन के इस अत्यंत अद्भुत और रोमांचकारी संवाद को सुना। व्यासदेव के अनुग्रह से दिव्य दृष्टि पाकर मैंने योगेश्वर कृष्ण के मुख से साक्षात् इस परम गोपनीय योग को सुना।', emotion: 'विस्मय' },
+                    { speaker: 'संजय', text: 'यत्र योगेश्वरः कृष्णो यत्र पार्थो धनुर्धरः। तत्र श्रीर्विजयो भूतिर्ध्रुवा नीतिर्मतिर्मम—जहाँ योगेश्वर भगवान श्रीकृष्ण हैं और जहाँ गांडीव धनुर्धारी अर्जुन हैं, वहीं श्री (ऐश्वर्य), विजय, विभूति और अचल नीति है—यह मेरा पक्का और अटल विश्वास है!', emotion: 'परम सत्य' }
                 ],
-                summary: 'इस अंतिम अध्याय में, कृष्ण सिखाते हैं कि सच्चा त्याग परिणामों के प्रति आसक्ति के बिना अपने कर्तव्यों का पालन करना है। मुक्ति का अंतिम मार्ग पूरी तरह से ईश्वर के प्रति समर्पण करना है, जो अपने भक्तों को सभी पापों और भयों से मुक्त करने का वचन देते हैं।',
-                teachings: 'अपने कर्तव्यों का पालन बिना आसक्ति के करें। उच्चतम आध्यात्मिक अभ्यास हमेशा ईश्वर के बारे में सोचना, उनका भक्त बनना, और उनके प्रति समर्पण करना है। यह मार्ग अंतिम स्वतंत्रता और शांति की ओर ले जाता है।',
-                moralLesson: 'सबसे बड़ा साहस और ज्ञान का कार्य एक उच्च शक्ति में विश्वास करना और अपना जीवन उसे समर्पित करना है। जब आप नियंत्रण छोड़ देते हैं, तो आप सच्ची स्वतंत्रता और उद्देश्य पाते हैं।',
-                kidsVersion: 'कल्पना कीजिए कि आप एक बड़े जहाज पर हैं, और कप्तान ईश्वर है। सबसे अच्छी बात यह है कि कप्तान पर भरोसा करें और उसके निर्देशों का पालन करें। कृष्ण ने अर्जुन से कहा कि वह उन पर पूरी तरह से भरोसा करे, और वह सब कुछ संभाल लेंगे। जब हम ईश्वर पर भरोसा करते हैं, तो हमें किसी भी चीज के बारे में चिंता करने की ज़रूरत नहीं है।'
+                summary: 'अठारहवें अध्याय में संपूर्ण गीता का महासार समाहित है। श्रीकृष्ण संन्यास और त्याग का अंतर समझाते हुए स्पष्ट करते हैं कि कर्मों से भागना संन्यास नहीं, बल्कि कर्तापन और फल की आसक्ति को त्यागकर निष्काम भाव से स्वधर्म का पालन करना ही सच्चा त्याग है। भगवान कर्म के पाँच कारणों, तीनों गुणों के अनुसार ज्ञान, कर्म, कर्ता, बुद्धि, धृति व सुख का सूक्ष्म विश्लेषण करते हैं। अंत में वे सर्वगुह्यतम महामंत्र प्रदान करते हैं: "सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज"—सब कुछ त्यागकर केवल मेरी शरण में आ जाओ, मैं तुम्हें सब पापों से मुक्त कर दूँगा। अर्जुन का मोह नष्ट हो जाता है और संजय इस सार्वभौमिक सत्य के साथ ग्रंथ का समापन करते हैं कि जहाँ योगेश्वर कृष्ण और समर्पित धनुर्धर अर्जुन हैं, वहीं श्री, विजय और धर्म की शाश्वत प्रतिष्ठा है।',
+                teachings: '• सच्चा संन्यास संसार से भागना नहीं, बल्कि अहंकार और कर्मफल की आसक्ति का त्याग करके अपने कर्तव्य का निष्काम पालन करना है।\n• अपने स्वभावानुकूल नियत कर्तव्य (स्वधर्म) का निष्ठा से पालन करना दूसरों के धर्म का अंधानुकरण करने से कहीं श्रेष्ठ है।\n• ईश्वर सर्वप्राणियों के हृदय में विराजमान हैं; उन पर पूर्ण विश्वास करके समर्पित होना ही शांति का मार्ग है।\n• गीता का चरम संदेश परम शरणागति (सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज) है—ईश्वर के प्रति पूर्ण समर्पण से समस्त पाप और भय भस्म हो जाते हैं।\n• जहाँ ईश्वर का मार्गदर्शन (योगेश्वर कृष्ण) और मानव का निष्ठावान पुरुषार्थ (गांडीवधारी अर्जुन) एक साथ मिल जाते हैं, वहाँ विजय, ऐश्वर्य और धर्म सुनिश्चित है।',
+                moralLesson: 'अपने कर्तव्यों से कभी मुँह न मोड़ें। परिणाम की चिंता और स्वार्थ छोड़कर अपने कार्य को प्रभु का कार्य समझकर पूरी निष्ठा से करें। जब परिस्थितियाँ कठिन लगें, तो अपने संशय और अहंकार को परमात्मा के चरणों में समर्पित कर दें। जो ईश्वर पर भरोसा करके धर्म के पथ पर अडिग रहता है, विजय और शांति सदा उसी के साथ रहती है।',
+                kidsVersion: 'श्रीकृष्ण ने अर्जुन को जीवन का सबसे बड़ा रहस्य सिखाया: "कभी भी अपने काम से मत भागो। अच्छे काम करो, फल की चिंता मत करो, और हमेशा मुझ पर पूरा भरोसा रखो। जब तुम मुझ पर विश्वास करोगे, तो मैं तुम्हारी हर मुश्किल आसान कर दूँगा।" अर्जुन की सारी उदासी और डर खत्म हो गया और वह हिम्मत से खड़ा हो गया। जहाँ भगवान का साथ और मेहनत की हिम्मत होती है, वहाँ जीत हमेशा पक्की होती है!'
             }
         }
     },
     // Telugu translations
     te: {
-        ui: {
-            dialogueTitle: 'పవిత్ర సంభాషణ',
-            krishnaName: 'శ్రీకృష్ణుడు',
-            arjunaName: 'అర్జునుడు',
-            askQuestionBtn: 'ప్రశ్న అడగండి',
-            answerBtn: 'దివ్య జవాబు',
-            summaryTitle: 'అధ్యాయ సారాంశం',
-            teachingsTitle: 'ముఖ్య బోధనలు',
-            progressText: 'మీ యాత్రను ప్రారంభించడానికి ఒక అధ్యాయాన్ని ఎంచుకోండి!',
-            welcomeMessage: {
-                title: '🙏 పవిత్ర సంభాషణకు స్వాగతం 🙏',
-                subtitle: 'కృష్ణ మరియు అర్జునుడి మధ్య దివ్య సంభాషణను ప్రారంభించడానికి పైన నుండి ఒక అధ్యాయాన్ని ఎంచుకోండి'
-            }
-        },
-        chapters: {
-            1: {
-                title: 'అర్జున విషాద యోగం',
-                subtitle: 'సైన్యాలను గమనించడం',
-                description: 'కురుక్షేత్ర యుద్ధభూమిలో నిలబడిన అర్జునుడు, ఎదుటి సైన్యంలో తన బంధువులను, గురువులను చూసి నిరాశకు లోనై, అతని నైతిక సంక్షోభానికి దారితీసే ప్రారంభ అధ్యాయం.',
-                dialogue: [
-                    { speaker: 'అర్జునుడు', text: 'ఓ కృష్ణా, దయచేసి నా రథాన్ని రెండు సైన్యాల మధ్యకు నడుపు, తద్వారా ఇక్కడ యుద్ధానికి ఆసక్తిగా నిలబడిన వారిని నేను చూడగలను.', emotion: 'నిశ్చయం' },
-                    { speaker: 'కృష్ణుడు', text: 'చూడు, ఓ పార్థా, ఇక్కడ సమావేశమైన కురులందరినీ.', emotion: 'శాంతం' },
-                    { speaker: 'అర్జునుడు', text: 'నా సొంత బంధువులను, గురువులను, మామలను, సోదరులను చూస్తున్నాను. నా అవయవాలు బలహీనపడుతున్నాయి, నోరు పొడిబారిపోతోంది, నా శరీరం వణుకుతోంది.', emotion: 'విషాదంలో' },
-                    { speaker: 'కృష్ణుడు', text: 'వారిని గమనించు, అర్జునా, ఎందుకంటే నువ్వు ఎవరిని ఎదుర్కొంటున్నావో అర్థం చేసుకోవాలి.', emotion: 'గమనిస్తున్న' },
-                    { speaker: 'అర్జునుడు', text: 'ఓ కృష్ణా! నాకు విజయం, రాజ్యం, లేదా సంతోషం వద్దు! రాజ్యం, లేదా జీవితం కూడా ఏమి ప్రయోజనం, ఎవరి కోసం మనం వాటిని కోరుకుంటున్నామో వారే ఇక్కడ యుద్ధానికి గుమిగూడినప్పుడు?', emotion: 'వేదన' },
-                    { speaker: 'కృష్ణుడు', text: 'హృదయపు ఈ బలహీనత నీలాంటి గొప్ప యోధునికి తగదు, అర్జునా.', emotion: 'గద్దిస్తున్న' },
-                    { speaker: 'అర్జునుడు', text: 'నాకు పూజనీయులైన భీష్ముడు, ద్రోణుడులకు వ్యతిరేకంగా నేను ఎలా పోరాడగలను? ఈ గొప్ప ఆత్మలను చంపడం కన్నా భిక్షాటనతో జీవించడం మేలు.', emotion: 'సంఘర్షణ' },
-                    { speaker: 'కృష్ణుడు', text: '(నిశ్శబ్దంగా వింటూ, అర్జునుడు తన గందరగోళాన్ని వ్యక్తం చేయడానికి అనుమతిస్తున్నాడు)', emotion: 'ఓపిక' },
-                    { speaker: 'అర్జునుడు', text: 'మనం మన సొంత బంధువులను చంపితే, పాపం మనల్ని ఆవరిస్తుంది. కుటుంబ నాశనంతో, ప్రాచీన సంప్రదాయాలు నశించిపోతాయి, మరియు అరాచకం ప్రబలుతుంది.', emotion: 'భయంతో' },
-                    { speaker: 'కృష్ణుడు', text: '(అతని ముఖభావం ప్రశాంతంగా ఉంది, అర్జునుడి దుఃఖపు తుఫానులో నిశ్శబ్ద లంగరు)', emotion: 'ప్రశాంతం' },
-                    { speaker: 'అర్జునుడు', text: 'అరాచకం ప్రబలంగా ఉన్నప్పుడు, కుటుంబంలోని స్త్రీలు భ్రష్టుపట్టిపోతారు, దీనివల్ల అవాంఛిత సంతానం పుడుతుంది, ఇది కుటుంబాన్ని, దాని నాశకులను నరకానికి దారి తీస్తుంది.', emotion: 'వ్యాకులం' },
-                    { speaker: 'కృష్ణుడు', text: 'తక్షణ పరిణామాలకు అతీతంగా ఆలోచించు, అర్జునా. ధర్మం యొక్క శాశ్వత నియమాన్ని పరిగణనలోకి తీసుకో.', emotion: 'మార్గదర్శనం' },
-                    { speaker: 'అర్జునుడు', text: 'అయ్యో, ఎంత విచిత్రం, మనం రాజభోగాల కోరికతో ప్రేరేపించబడి ఒక గొప్ప పాపం చేయడానికి సిద్ధమవుతున్నాము.', emotion: 'విలపిస్తున్న' },
-                    { speaker: 'కృష్ణుడు', text: '(ఒక కారుణ్య దృక్కు, అర్జునుడి దుఃఖం యొక్క లోతును అర్థం చేసుకుంటున్నాడు)', emotion: 'కరుణ' },
-                    { speaker: 'అర్జునుడు', text: 'నాకు ఇది మేలు, ధృతరాష్ట్రుని కుమారులు, ఆయుధాలతో, నన్ను నిరాయుధుడిగా, ప్రతిఘటించకుండా యుద్ధభూమిలో చంపితే.', emotion: 'శరణాగతి' },
-                    { speaker: 'కృష్ణుడు', text: 'నీ దుఃఖం నీ వివేకాన్ని కప్పివేస్తోంది. ఇది యోధుని మార్గం కాదు.', emotion: 'దృఢంగా' },
-                    { speaker: 'అర్జునుడు', text: 'యుద్ధంలో నా సొంత బంధువులను చంపడంలో నాకు ఏ మంచీ కనిపించడం లేదు. నేను పోరాడను.', emotion: 'నిర్ణయించుకున్న' },
-                    { speaker: 'కృష్ణుడు', text: 'స్పష్టత వస్తుంది. మొదట, నీవు నీ గందరగోళం యొక్క లోతును చూడాలి.', emotion: 'జ్ఞాని' },
-                    { speaker: 'అర్జునుడు', text: '(తన ధనుర్భాణాలను పక్కన పెట్టి, అర్జునుడు రథం మీద కూర్చుంటాడు, అతని మనస్సు దుఃఖంతో నిండిపోయింది)', emotion: 'నిండిపోయిన' },
-                    { speaker: 'కృష్ణుడు', text: 'హృదయం యొక్క ఈ చిన్న బలహీనతను విడిచిపెట్టి లేచి నిలబడు, ఓ శత్రువులను జయించేవాడా!', emotion: 'ఆదేశిస్తున్న' }
-                ],
-                summary: 'అర్జునుడు తన బంధువులను మరియు గురువులను యుద్ధానికి సిద్ధంగా చూసి నైతిక గందరగోళంలో పడతాడు.',
-                teachings: 'కృష్ణుడు ధర్మం యొక్క భావనను మరియు ఆత్మ యొక్క అమరత్వాన్ని పరిచయం చేస్తాడు.',
-                moralLesson: 'కొన్నిసార్లు జీవితంలో కఠినమైన నిర్ణయాలు తీసుకోవలసి ఉంటుంది. గందరగోళంలో ఉన్నప్పుడు, మనం తెలివైన గురువుల నుండి మార్గదర్శకత్వం కోరాలి.',
-                kidsVersion: 'అర్జునుడు తన కుటుంబాన్ని యుద్ధంలో చూసి బాధపడ్డాడు. కృష్ణుడు చెప్పాడు, కొన్నిసార్లు సరైన పని చేయడం కష్టంగా ఉంటుంది.'
-            },
-            2: {
-                title: 'సాంఖ్య యోగం',
-                subtitle: 'జ్ఞాన యోగం',
-                description: 'అర్జునుడి శరణాగతి మరియు కృష్ణుడు అమర ఆత్మపై ఉపదేశం',
-                dialogue: [
-                    { speaker: 'కృష్ణుడు', text: 'ఈ క్లిష్ట సమయంలో నీకు ఈ నిరాశ ఎందుకు కలిగింది? ఇది ఒక గొప్ప వ్యక్తికి తగినది కాదు. ఇది స్వర్గానికి దారితీయదు, అపకీర్తికి దారితీస్తుంది.', emotion: 'గద్దిస్తున్న' },
-                    { speaker: 'అర్జునుడు', text: 'కానీ నేను యుద్ధంలో భీష్ముడు మరియు ద్రోణుడిపై బాణాలతో ఎలా దాడి చేయగలను? వారు నా పూజకు అర్హులు!', emotion: 'సంఘర్షణ' },
-                    { speaker: 'కృష్ణుడు', text: 'నీవు శోకానికి అర్హులు కాని వారి కోసం శోకిస్తున్నావు, అయినప్పటికీ జ్ఞానం యొక్క మాటలు మాట్లాడుతున్నావు. జ్ఞానులు జీవించి ఉన్నవారి కోసం లేదా మరణించిన వారి కోసం విలపించరు.', emotion: 'జ్ఞాని' },
-                    { speaker: 'అర్జునుడు', text: 'నా కర్తవ్యం గురించి నేను గందరగోళంలో ఉన్నాను. నేను నీ శిష్యుడిగా శరణు వేడుతున్నాను. దయచేసి నాకు ఏది ఉత్తమమో బోధించు.', emotion: 'శరణాగతి' },
-                    { speaker: 'కృష్ణుడు', text: 'నేను లేని సమయం ఎప్పుడూ లేదు, నీవు, లేదా ఈ రాజులందరూ; భవిష్యత్తులో కూడా మనలో ఎవరూ ఉనికిలో లేకుండా పోరు.', emotion: 'ప్రకాశిస్తున్న' },
-                    { speaker: 'అర్జునుడు', text: 'అది ఎలా సాధ్యం? శరీరాలు పుడతాయి మరియు చనిపోతాయి.', emotion: 'ఆసక్తిగల' },
-                    { speaker: 'కృష్ణుడు', text: 'దేహధారి ఆత్మ ఈ శరీరంలో బాల్యం నుండి యవ్వనానికి మరియు వృద్ధాప్యానికి నిరంతరం వెళుతున్నట్లే, మరణం వద్ద ఆత్మ మరొక శరీరంలోకి వెళుతుంది. గంభీరమైన వ్యక్తి అటువంటి మార్పుతో కలవరపడడు.', emotion: 'బోధనాత్మక' },
-                    { speaker: 'అర్జునుడు', text: 'కానీ ఆనందం మరియు దుఃఖం యొక్క అనుభూతులు చాలా నిజమైనవి, కృష్ణా.', emotion: 'బాధతో' },
-                    { speaker: 'కృష్ణుడు', text: 'ఇవి తాత్కాలికమైనవి, ఇంద్రియ జ్ఞానం నుండి ఉత్పన్నమవుతాయి. కలవరపడకుండా వాటిని సహించడం నేర్చుకోవాలి.', emotion: 'మార్గదర్శనం' },
-                    { speaker: 'అర్జునుడు', text: 'అంటే, ఆత్మకు ఎప్పుడూ హాని జరగదా?', emotion: 'అన్వేషిస్తున్న' },
-                    { speaker: 'కృష్ణుడు', text: 'ఆత్మ ఎప్పుడూ పుట్టదు లేదా చనిపోదు. అది పుట్టనిది, శాశ్వతమైనది, ఎల్లప్పుడూ ఉనికిలో ఉన్నది మరియు ఆదిమమైనది. శరీరం చంపబడినప్పుడు అది చంపబడదు.', emotion: 'భరోసా' },
-                    { speaker: 'అర్జునుడు', text: 'దీనిని మరింత వివరించగలరా? నేను ఈ సత్యాన్ని ఎలా గ్రహించగలను?', emotion: 'జిజ్ఞాస' },
-                    { speaker: 'కృష్ణుడు', text: 'ఒక వ్యక్తి పాత బట్టలను విడిచిపెట్టి కొత్తవి ధరించినట్లే, ఆత్మ పాత మరియు పనికిరాని శరీరాలను విడిచిపెట్టి కొత్త భౌతిక శరీరాలను స్వీకరిస్తుంది.', emotion: 'ఉదాహరణ' },
-                    { speaker: 'అర్జునుడు', text: 'ఆత్మ శాశ్వతమైనది అయితే, నేను ఎందుకు పోరాడాలి? ఈ చర్య యొక్క ప్రయోజనం ఏమిటి?', emotion: 'ప్రశ్నిస్తున్న' },
-                    { speaker: 'కృష్ణుడు', text: 'క్షత్రియుడిగా నీ నిర్దిష్ట కర్తవ్యాన్ని పరిగణనలోకి తీసుకుంటే, ధార్మిక సూత్రాలపై పోరాడటం కంటే నీకు మంచి పని మరొకటి లేదని తెలుసుకోవాలి. నీవు పోరాడే నీ ధార్మిక కర్తవ్యాన్ని నిర్వర్తించకపోతే, నీవు ఖచ్చితంగా నీ విధులను నిర్లక్ష్యం చేసిన పాపానికి గురవుతావు మరియు తద్వారా యోధుడిగా నీ కీర్తిని కోల్పోతావు.', emotion: 'ఆదేశిస్తున్న' },
-                    { speaker: 'అర్జునుడు', text: 'కానీ ఫలితం సంగతేంటి? చంపిన పాపం?', emotion: 'ఆందోళన' },
-                    { speaker: 'కృష్ణుడు', text: 'నీకు నీ నిర్దేశిత కర్తవ్యాన్ని నిర్వర్తించే హక్కు ఉంది, కానీ కర్మ ఫలాలకు నీవు అర్హుడు కాదు. నీ కార్యకలాపాల ఫలితాలకు నిన్ను ఎప్పుడూ కారణంగా భావించకు, మరియు నీ కర్తవ్యాన్ని చేయకుండా ఉండటానికి ఎప్పుడూ ఆసక్తి చూపకు.', emotion: 'గంభీరమైన' },
-                    { speaker: 'అర్జునుడు', text: 'ఎవరి చైతన్యం ఇలా దివ్యత్వంలో లీనమై ఉంటుందో ఆ వ్యక్తి స్వభావం ఏమిటి? అతను ఎలా మాట్లాడతాడు, అతని భాష ఏమిటి? అతను ఎలా కూర్చుంటాడు, మరియు ఎలా నడుస్తాడు?', emotion: 'ఆసక్తిగల' },
-                    { speaker: 'కృష్ణుడు', text: 'అతను ఇంద్రియ సుఖాల కోసం అన్ని కోరికలను విడిచిపెట్టినవాడు, ఆసక్తి, భయం మరియు కోపం నుండి విముక్తుడైనవాడు. అతని మనస్సు స్థిరంగా ఉంటుంది మరియు త్రివిధ దుఃఖాలచే కలవరపడదు.', emotion: 'వివరణ' },
-                    { speaker: 'అర్జునుడు', text: 'ఈ స్థితి చాలా శాంతియుతంగా అనిపిస్తుంది. శక్తివంతమైన ఇంద్రియాలను ఎలా నియంత్రించాలి?', emotion: 'ప్రేరణ' },
-                    { speaker: 'కృష్ణుడు', text: 'ఎవరైతే తన ఇంద్రియాలను నిగ్రహించి, వాటిని పూర్తి నియంత్రణలో ఉంచుకుని, తన చైతన్యాన్ని నాపై స్థిరపరుస్తారో, అతను స్థిరమైన ప్రజ్ఞ కలవాడిగా పిలువబడతాడు.', emotion: 'నిర్ణయాత్మక' }
-                ],
-                summary: 'కృష్ణుడు ఆత్మ యొక్క అమరత్వం మరియు నిష్కామ కర్మ గురించి బోధిస్తాడు.',
-                teachings: 'ఆత్మ అమరమైనది. నిష్కామ కర్మను ఆచరించడమే నిజమైన జ్ఞానం.',
-                moralLesson: 'మనం కేవలం శరీరం కాదు, అమర ఆత్మలం.',
-                kidsVersion: 'కృష్ణుడు మన ఆత్మ ఎప్పటికీ చనిపోదని, మనం పాత బట్టలు మార్చినట్లుగా ఉంటుందని బోధించాడు.'
-            },
-            3: {
-                title: 'కర్మ యోగం',
-                subtitle: 'నిస్వార్థ సేవ',
-                description: 'కృష్ణుడు నిస్వార్థ కర్మ మరియు కోరికను నియంత్రించడం గురించి బోధిస్తాడు',
-                dialogue: [
-                    { speaker: 'అర్జునుడు', text: 'ఓ కృష్ణా, ఫలవంతమైన కర్మ కంటే జ్ఞానం ఉత్తమమని మీరు భావిస్తే, నన్ను ఈ ఘోరమైన యుద్ధంలోకి ఎందుకు నెట్టివేస్తున్నారు?', emotion: 'గందరగోళం' },
-                    { speaker: 'కృష్ణుడు', text: 'నేను ఇప్పటికే రెండు మార్గాలను వివరించాను, అర్జునా: ధ్యానపరులకు జ్ఞాన మార్గం, మరియు క్రియాశీలురకు కర్మ మార్గం.', emotion: 'వివరిస్తున్న' },
-                    { speaker: 'అర్జునుడు', text: 'మీ మాటలు పరస్పర విరుద్ధంగా ఉన్నాయి. నేను గందరగోళంలో ఉన్నాను. దయచేసి ఏ మార్గం ఎక్కువ ప్రయోజనకరమో ఖచ్చితంగా చెప్పండి.', emotion: 'అన్వేషిస్తున్న' },
-                    { speaker: 'కృష్ణుడు', text: 'కేవలం పని నుండి విరమించుకోవడం ద్వారా ప్రతిచర్య నుండి విముక్తి పొందలేరు, లేదా కేవలం త్యాగంతో పరిపూర్ణతను సాధించలేరు.', emotion: 'బోధనాత్మక' },
-                    { speaker: 'అర్జునుడు', text: 'పూర్తిగా నిష్క్రియంగా ఉండటం సాధ్యమేనా?', emotion: 'ప్రశ్నిస్తున్న' },
-                    { speaker: 'కృష్ణుడు', text: 'ప్రతి ఒక్కరూ భౌతిక ప్రకృతి గుణాల ప్రకారం నిస్సహాయంగా పనిచేయవలసి వస్తుంది; కాబట్టి ఎవరూ ఒక్క క్షణం కూడా ఏమీ చేయకుండా ఉండలేరు.', emotion: 'జ్ఞాని' },
-                    { speaker: 'అర్జునుడు', text: 'అంటే, పని చేయాలి. కానీ చిక్కుకోకుండా ఎలా పని చేయాలి?', emotion: 'ఆచరణాత్మక' },
-                    { speaker: 'కృష్ణుడు', text: 'నీ పనిని పరమాత్మకు యజ్ఞంగా చెయ్యి. లేకపోతే, ఈ భౌతిక ప్రపంచంలో కర్మ బంధానికి కారణమవుతుంది. కాబట్టి, అతని సంతృప్తి కోసం నీ నిర్దేశిత విధులను నిర్వర్తించు, ఆ విధంగా నీవు ఎల్లప్పుడూ బంధం నుండి విముక్తుడవై ఉంటావు.', emotion: 'మార్గదర్శనం' },
-                    { speaker: 'అర్జునుడు', text: 'మీరు చెప్పే యజ్ఞ చక్రం ఏమిటి?', emotion: 'ఆసక్తిగల' },
-                    { speaker: 'కృష్ణుడు', text: 'అన్ని జీవులు ఆహార ధాన్యాలపై ఆధారపడి ఉంటాయి, అవి వర్షాల నుండి ఉత్పత్తి అవుతాయి. వర్షాలు యజ్ఞం చేయడం ద్వారా ఉత్పత్తి అవుతాయి, మరియు యజ్ఞం నిర్దేశిత విధుల నుండి పుడుతుంది.', emotion: 'వివరణ' },
-                    { speaker: 'అర్జునుడు', text: 'జ్ఞానులు కూడా పని చేయాలా? నేను వారు అన్ని విధులకు అతీతులు అని అనుకున్నాను.', emotion: 'జిజ్ఞాస' },
-                    { speaker: 'కృష్ణుడు', text: 'ఆత్మ-సాక్షాత్కారం పొందిన వ్యక్తి కూడా, వ్యక్తిగత లాభం ఏమీ లేనప్పటికీ, ప్రపంచానికి ఒక ఉదాహరణగా నిలవడానికి మరియు సామాజిక క్రమాన్ని నిర్వహించడానికి తన విధులను కొనసాగిస్తాడు.', emotion: 'ఉదాహరణ' },
-                    { speaker: 'అర్జునుడు', text: 'ఇది అర్థవంతంగా ఉంది. కానీ ఒక వ్యక్తిని ఇష్టం లేకపోయినా, బలవంతంగా పాప కార్యాలకు ప్రేరేపించేది ఏమిటి?', emotion: 'ఆందోళన' },
-                    { speaker: 'కృష్ణుడు', text: 'అది కేవలం కామమే, అర్జునా, భౌతిక రజో గుణంతో సంబంధం వల్ల పుట్టి, తరువాత క్రోధంగా మారుతుంది, మరియు ఈ ప్రపంచానికి సర్వ-భక్షక పాప శత్రువు అదే.', emotion: 'హెచ్చరిక' },
-                    { speaker: 'అర్జునుడు', text: 'ఈ శత్రువు ఎక్కడ నివసిస్తాడు? మనం దానిని ఎలా జయించగలం?', emotion: 'నిశ్చయం' },
-                    { speaker: 'కృష్ణుడు', text: 'ఇంద్రియాలు, మనస్సు మరియు బుద్ధి దాని నివాస స్థానాలు. మొదట ఇంద్రియాలను నియంత్రించడం ద్వారా, నీవు ఈ గొప్ప పాప చిహ్నాన్ని అరికట్టగలవు.', emotion: 'వ్యూహాత్మక' },
-                    { speaker: 'అర్జునుడు', text: 'అంటే, నేను నా ఇంద్రియాలను, ఆపై నా మనస్సును నియంత్రించాలా?', emotion: 'అర్థం చేసుకున్న' },
-                    { speaker: 'కృష్ణుడు', text: 'అవును. ఇంద్రియాలు జడ పదార్థం కంటే ఉన్నతమైనవి; మనస్సు ఇంద్రియాల కంటే ఉన్నతమైనది; బుద్ధి మనస్సు కంటే ఉన్నతమైనది; మరియు అతను [ఆత్మ] బుద్ధి కంటే కూడా ఉన్నతమైనవాడు.', emotion: 'ప్రాధాన్యత' },
-                    { speaker: 'అర్జునుడు', text: 'నాకు అర్థమైంది. నా మనస్సును, ఇంద్రియాలను నియంత్రించడానికి నా బుద్ధిని ఉపయోగించాలి.', emotion: 'జ్ఞానోదయం' },
-                    { speaker: 'కృష్ణుడు', text: 'అందుకే, ఓ మహాబాహు అర్జునా, తనను తాను భౌతిక ఇంద్రియాలు, మనస్సు మరియు బుద్ధికి అతీతుడని తెలుసుకుని, ఆధ్యాత్మిక బుద్ధితో మనస్సును స్థిరపరచుకుని, ఆధ్యాత్మిక బలంతో కామమనే ఈ అతృప్త శత్రువును జయించాలి.', emotion: 'నిర్ణయాత్మక' }
-                ],
-                summary: 'కృష్ణుడు కర్మ యోగాన్ని వివరిస్తాడు.',
-                teachings: 'నిస్వార్థ కర్మ మనస్సును శుద్ధి చేస్తుంది.',
-                moralLesson: 'ఫలితం ఆశించకుండా మంచి పనులు చేయాలి.',
-                kidsVersion: 'కృష్ణుడు చెప్పాడు, అత్యాశ లేకుండా మంచి పనులు చేయడం వల్ల మనస్సు సంతోషంగా ఉంటుంది.'
-            },
-            4: {
-                title: 'జ్ఞాన కర్మ సన్యాస యోగం',
-                subtitle: 'దివ్య జ్ఞానం',
-                description: 'కృష్ణుడు తన దివ్య స్వభావాన్ని మరియు ప్రాచీన జ్ఞాన సంప్రదాయాన్ని వెల్లడిస్తాడు',
-                dialogue: [
-                    { speaker: 'కృష్ణుడు', text: 'నేను ఈ శాశ్వతమైన యోగ విజ్ఞానాన్ని సూర్యదేవుడైన వివస్వంతునికి ఉపదేశించాను, వివస్వంతుడు దానిని మనువుకు బోధించాడు, మరియు మనువు దానిని ఇక్ష్వాకునికి బోధించాడు.', emotion: 'వెల్లడిస్తున్న' },
-                    { speaker: 'అర్జునుడు', text: 'సూర్యదేవుడు వివస్వంతుడు పుట్టుకతో నీకంటే పెద్దవాడు. మొదట నీవు అతనికి ఈ విజ్ఞానాన్ని బోధించావని నేను ఎలా అర్థం చేసుకోవాలి?', emotion: 'గందరగోళం' },
-                    { speaker: 'కృష్ణుడు', text: 'నీవు మరియు నేను ఎన్నో జన్మలు గడిపాము. నాకు అవన్నీ గుర్తున్నాయి, కానీ నీకు గుర్తులేవు, ఓ శత్రువులను జయించేవాడా!', emotion: 'జ్ఞాని' },
-                    { speaker: 'అర్జునుడు', text: 'ఓ ప్రభూ, మీరు ఈ ప్రపంచంలో ఎందుకు అవతరిస్తారు?', emotion: 'జిజ్ఞాస' },
-                    { speaker: 'కృష్ణుడు', text: 'సాధువులను రక్షించడానికి, దుష్టులను నాశనం చేయడానికి, అలాగే ధర్మ సూత్రాలను పునఃస్థాపించడానికి, నేను యుగయుగాలుగా స్వయంగా అవతరిస్తాను.', emotion: 'అధికారిక' },
-                    { speaker: 'అర్జునుడు', text: 'మీ అవతార సత్యాన్ని తెలుసుకోవడం ఒకరికి ఎలా సహాయపడుతుంది?', emotion: 'అన్వేషిస్తున్న' },
-                    { speaker: 'కృష్ణుడు', text: 'నా అవతారం మరియు కార్యకలాపాల దివ్య స్వభావాన్ని తెలిసినవాడు, శరీరాన్ని విడిచిపెట్టిన తర్వాత ఈ భౌతిక ప్రపంచంలో మళ్ళీ జన్మించడు, కానీ నా శాశ్వత ధామాన్ని పొందుతాడు, ఓ అర్జునా.', emotion: 'వాగ్దానం' },
-                    { speaker: 'అర్జునుడు', text: 'ప్రజలు మిమ్మల్ని వివిధ మార్గాలలో పూజిస్తారు. మీరు వారికి ఎలా ప్రతిస్పందిస్తారు?', emotion: 'ఆసక్తిగల' },
-                    { speaker: 'కృష్ణుడు', text: 'అందరూ నాకు ఎలా శరణుజొచ్చితే, నేను వారిని అలాగే అనుగ్రహిస్తాను. ఓ పృథా పుత్రుడా, ప్రతి ఒక్కరూ అన్ని విధాలా నా మార్గాన్నే అనుసరిస్తారు.', emotion: 'సర్వవ్యాపి' },
-                    { speaker: 'అర్జునుడు', text: 'మీరు సమాజంలోని నాలుగు వర్ణాలను సృష్టించారు. ఇది పుట్టుకపై ఆధారపడి ఉందా?', emotion: 'ప్రశ్నిస్తున్న' },
-                    { speaker: 'కృష్ణుడు', text: 'మానవ సమాజంలోని నాలుగు వర్ణాలు భౌతిక ప్రకృతి యొక్క మూడు గుణాలు మరియు వాటితో సంబంధం ఉన్న పనుల ప్రకారం నాచే సృష్టించబడ్డాయి. నేను ఈ వ్యవస్థకు సృష్టికర్తనైనప్పటికీ, నేను అకర్తను, మార్పులేనివాడినని నీవు తెలుసుకోవాలి.', emotion: 'వివరిస్తున్న' },
-                    { speaker: 'అర్జునుడు', text: 'కర్మలో చిక్కుకోకుండా ఎలా పని చేయగలరు?', emotion: 'ఆచరణాత్మక' },
-                    { speaker: 'కృష్ణుడు', text: 'కర్మలో అకర్మను, అకర్మలో కర్మను చూసేవాడు మనుషులలో తెలివైనవాడు, మరియు అతను అన్ని రకాల కార్యకలాపాలలో నిమగ్నమైనప్పటికీ దివ్య స్థితిలో ఉంటాడు.', emotion: 'గంభీరమైన' },
-                    { speaker: 'అర్జునుడు', text: 'అంటే, నిజమైన కర్మ దాని ఫలాలపై ఆసక్తి లేకుండా చేసేదా?', emotion: 'అర్థం చేసుకున్న' },
-                    { speaker: 'కృష్ణుడు', text: 'అవును. తన కార్యకలాపాల ఫలితాలపై అన్ని ఆసక్తులను విడిచిపెట్టి, ఎల్లప్పుడూ సంతృప్తిగా మరియు స్వతంత్రంగా ఉండి, అతను అన్ని రకాల పనులలో నిమగ్నమైనప్పటికీ ఏ ఫలవంతమైన చర్య చేయడు.', emotion: 'జ్ఞానోదయం' },
-                    { speaker: 'అర్జునుడు', text: 'ఈ దివ్య జ్ఞానాన్ని ఎలా పొందగలరు?', emotion: 'అన్వేషిస్తున్న' },
-                    { speaker: 'కృష్ణుడు', text: 'ఆధ్యాత్మిక గురువును ఆశ్రయించి సత్యాన్ని తెలుసుకోవడానికి ప్రయత్నించు. వారిని వినయంగా అడుగు మరియు వారికి సేవ చెయ్యి. ఆత్మ-సాక్షాత్కారం పొందిన ఆత్మలు నీకు జ్ఞానాన్ని అందించగలరు ఎందుకంటే వారు సత్యాన్ని చూశారు.', emotion: 'మార్గదర్శనం' },
-                    { speaker: 'అర్జునుడు', text: 'ఈ జ్ఞానం యొక్క శక్తి ఏమిటి?', emotion: 'ఆశ్చర్యం' },
-                    { speaker: 'కృష్ణుడు', text: 'మండుతున్న అగ్ని కట్టెలను బూడిద చేసినట్లే, ఓ అర్జునా, జ్ఞానమనే అగ్ని భౌతిక కార్యకలాపాలకు సంబంధించిన అన్ని ప్రతిచర్యలను బూడిద చేస్తుంది.', emotion: 'శక్తివంతమైన' },
-                    { speaker: 'అర్జునుడు', text: 'అంటే, నేను ఈ జ్ఞానంతో నా సందేహాలను ఛేదించాలా?', emotion: 'నిశ్చయం' },
-                    { speaker: 'కృష్ణుడు', text: 'అందువల్ల అజ్ఞానం వల్ల నీ హృదయంలో తలెత్తిన సందేహాలను జ్ఞానమనే ఆయుధంతో ఛేదించాలి. యోగంతో సాయుధుడవై, ఓ భారతా, నిలబడి పోరాడు.', emotion: 'ఆదేశిస్తున్న' }
-                ],
-                summary: 'కృష్ణుడు ధర్మాన్ని పునఃస్థాపించడానికి తన దివ్య అవతారాల రహస్యాన్ని వివరిస్తాడు మరియు జ్ఞానమనే అగ్నితో కర్మ బంధాలను ఎలా ఛేదించాలో మార్గాన్ని చూపిస్తాడు.',
-                teachings: 'నిజమైన జ్ఞానం ఆధ్యాత్మిక గురువు సేవ మరియు వినయపూర్వకమైన ప్రశ్నల ద్వారా లభిస్తుంది. జ్ఞానం అన్ని కర్మ ఫలాలను దహించివేస్తుంది.',
-                moralLesson: 'నిజమైన జ్ఞానాన్ని అన్వేషించడం జీవితంలో అత్యున్నత లక్ష్యం. వినయం మరియు సేవా భావంతో మాత్రమే దానిని సాధించగలం.',
-                kidsVersion: 'కృష్ణుడు తాను ధర్మాన్ని రక్షించడానికి వచ్చే ఒక సూపర్‌హీరోలాంటి వాడినని చెప్పాడు. నిజమైన జ్ఞానం ఒక మాయా అగ్నిలాంటిదని, అది మన తప్పులన్నింటినీ కాల్చివేస్తుందని ఆయన అన్నాడు.'
-            },
-            5: {
-                title: 'కర్మ సన్యాస యోగం',
-                subtitle: 'కర్మలో త్యాగం',
-                description: 'కర్మ మరియు త్యాగం మధ్య సమతుల్యతను అర్థం చేసుకోవడం',
-                dialogue: [
-                    { speaker: 'అర్జునుడు', text: 'ఓ కృష్ణా, మొదట నన్ను కర్మను త్యజించమంటారు, ఆపై భక్తితో కర్మ చేయాలని సిఫార్సు చేస్తారు. ఇప్పుడు దయచేసి ఈ రెండింటిలో ఏది ఎక్కువ ప్రయోజనకరమో ఖచ్చితంగా చెప్పండి?', emotion: 'గందరగోళం' },
-                    { speaker: 'కృష్ణుడు', text: 'కర్మ త్యాగం మరియు భక్తిలో కర్మ రెండూ ముక్తికి మంచివే. కానీ ఈ రెండింటిలో, కేవలం కర్మ త్యాగం కంటే భక్తి సేవలో కర్మ ఉత్తమం.', emotion: 'వివరిస్తున్న' },
-                    { speaker: 'అర్జునుడు', text: 'అది ఎలా సాధ్యం? అన్ని కర్మలను త్యజించడం శాంతిని తెస్తుందని అనిపిస్తుంది.', emotion: 'ప్రశ్నిస్తున్న' },
-                    { speaker: 'కృష్ణుడు', text: 'కేవలం అన్ని కార్యకలాపాలను త్యజించి, భగవంతుని భక్తి సేవలో నిమగ్నం కాకపోవడం ఒకరిని సంతోషపెట్టదు. కానీ భక్తి సేవలో నిమగ్నమైన ఆలోచనాపరుడు ఆలస్యం లేకుండా పరమాత్మను సాధించగలడు.', emotion: 'బోధనాత్మక' },
-                    { speaker: 'అర్జునుడు', text: 'అంటే, ముఖ్యం ఆసక్తి లేకుండా పని చేయడమా?', emotion: 'అర్థం చేసుకున్న' },
-                    { speaker: 'కృష్ణుడు', text: 'ఫలితాలను పరమాత్మకు అర్పించి, ఆసక్తి లేకుండా తన కర్తవ్యాన్ని నిర్వర్తించేవాడు, తామరాకు నీటితో తడవనట్లుగా పాప కర్మలచే ప్రభావితం కాడు.', emotion: 'ఉదాహరణ' },
-                    { speaker: 'అర్జునుడు', text: 'అలాంటి వ్యక్తి ప్రపంచాన్ని ఎలా చూస్తాడు?', emotion: 'ఆసక్తిగల' },
-                    { speaker: 'కృష్ణుడు', text: 'వినయశీలురైన ఋషులు, నిజమైన జ్ఞానం ద్వారా, విద్యావంతుడు మరియు సౌమ్యుడైన బ్రాహ్మణుడిని, ఆవును, ఏనుగును, కుక్కను మరియు చండాలుడిని సమాన దృష్టితో చూస్తారు.', emotion: 'జ్ఞానోదయం' },
-                    { speaker: 'అర్జునుడు', text: 'వారు అందరిలో దైవత్వాన్ని చూస్తారా?', emotion: 'ఆశ్చర్యం' },
-                    { speaker: 'కృష్ణుడు', text: 'ఎవరి మనస్సులు సమానత్వంలో మరియు సమచిత్తతలో స్థిరపడి ఉన్నాయో, వారు ఇప్పటికే జనన మరణ పరిస్థితులను జయించారు. వారు బ్రహ్మం వలె దోషరహితులు, మరియు అందువల్ల వారు ఇప్పటికే బ్రహ్మంలో స్థిరపడి ఉన్నారు.', emotion: 'ధృవీకరిస్తున్న' },
-                    { speaker: 'అర్జునుడు', text: 'వారు ఆనందాన్ని ఎలా అనుభవిస్తారు?', emotion: 'జిజ్ఞాస' },
-                    { speaker: 'కృష్ణుడు', text: 'అలాంటి విముక్తుడైన వ్యక్తి భౌతిక ఇంద్రియ సుఖాలకు ఆకర్షితుడు కాడు, కానీ ఎల్లప్పుడూ సమాధిలో ఉండి, లోపలి ఆనందాన్ని అనుభవిస్తాడు. ఈ విధంగా ఆత్మ-సాక్షాత్కారం పొందిన వ్యక్తి అపరిమితమైన ఆనందాన్ని అనుభవిస్తాడు, ఎందుకంటే అతను పరమాత్మపై దృష్టి కేంద్రీకరిస్తాడు.', emotion: 'వివరణ' },
-                    { speaker: 'అర్జునుడు', text: 'అంటే బాహ్య సుఖాలు చివరికి దుఃఖానికి దారితీస్తాయా?', emotion: 'గ్రహిస్తున్న' },
-                    { speaker: 'కృష్ణుడు', text: 'తెలివైన వ్యక్తి దుఃఖానికి కారణాలైన భౌతిక ఇంద్రియాలతో సంబంధం వల్ల కలిగే వాటిలో పాల్గొనడు. ఓ కుంతీ పుత్రుడా, అటువంటి సుఖాలకు ఒక ప్రారంభం మరియు ముగింపు ఉంటుంది, కాబట్టి జ్ఞాని వాటిలో ఆనందించడు.', emotion: 'జ్ఞాని' },
-                    { speaker: 'అర్జునుడు', text: 'వారు పొందే శాంతి స్వభావం ఏమిటి?', emotion: 'అన్వేషిస్తున్న' },
-                    { speaker: 'కృష్ణుడు', text: 'నా పూర్తి చైతన్యంలో ఉండి, నన్ను అన్ని యజ్ఞాలు మరియు తపస్సుల అంతిమ లబ్ధిదారుడిగా, అన్ని గ్రహాలు మరియు దేవతల పరమ ప్రభువుగా, మరియు అన్ని జీవుల శ్రేయోభిలాషిగా మరియు శ్రేయోభిలాషిగా తెలిసిన వ్యక్తి, భౌతిక దుఃఖాల బాధల నుండి శాంతిని పొందుతాడు.', emotion: 'నిర్ణయాత్మక' },
-                    { speaker: 'అర్జునుడు', text: 'నిజంగా పని చేసేది మనస్సా లేక ఆత్మా?', emotion: 'తాత్విక' },
-                    { speaker: 'కృష్ణుడు', text: 'దేహధారి జీవి తన స్వభావాన్ని నియంత్రించి, మానసికంగా అన్ని కర్మలను త్యజించినప్పుడు, అతను తొమ్మిది ద్వారాల నగరంలో [భౌతిక శరీరం] సంతోషంగా నివసిస్తాడు, పని చేయకుండా లేదా పని చేయించకుండా.', emotion: 'గంభీరమైన' },
-                    { speaker: 'అర్జునుడు', text: 'అంటే నిజమైన త్యాగం అనేది కేవలం బాహ్య ప్రదర్శన కాకుండా అంతర్గత స్థితా?', emotion: 'అర్థం చేసుకున్న' },
-                    { speaker: 'కృష్ణుడు', text: 'ఖచ్చితంగా. జ్ఞాని అయినవాడు ఆత్మ ఇంద్రియాల కార్యకలాపాలకు అతీతమని అర్థం చేసుకుంటాడు. అతను తన కర్మలను దైవానికి అంకితం చేసి శాంతిని పొందుతాడు.', emotion: 'ధృవీకరిస్తున్న' },
-                    { speaker: 'అర్జునుడు', text: 'ఈ నిస్వార్థ కర్మ మార్గం ఉన్నతమైనది మరియు మరింత ఆచరణాత్మకమైనదిగా అనిపిస్తుంది.', emotion: 'నిశ్చయం' },
-                    { speaker: 'కృష్ణుడు', text: 'నిజానికి, అది అంతే. కర్మలో నిమగ్నమవ్వు, అర్జునా, కానీ నీ మనస్సును పరమాత్మపై నిలిపి. ఇదే నిజమైన త్యాగం మరియు శాశ్వత శాంతి యొక్క రహస్యం.', emotion: 'ప్రోత్సాహిస్తున్న' }
-                ],
-                summary: 'కృష్ణుడు కర్మయోగం (నిస్వార్థ కర్మ) కర్మ సన్యాసం (కర్మల త్యాగం) కంటే శ్రేష్ఠమైనదని వివరిస్తాడు. నిజమైన త్యాగి కర్మ ఫలాన్ని త్యజించేవాడే కానీ కర్మను కాదు.',
-                teachings: 'ఫలితంపై ఆసక్తి లేకుండా తన విధులను నిర్వర్తించడమే నిజమైన త్యాగం. జ్ఞాని అయిన వ్యక్తి అన్ని జీవులలో ఒకే దివ్యత్వాన్ని చూస్తాడు.',
-                moralLesson: 'నిజమైన శాంతి బాధ్యతల నుండి పారిపోవడంలో లేదు, కానీ వాటిని నిస్వార్థ భావంతో నిర్వర్తించడంలో ఉంది.',
-                kidsVersion: 'కృష్ణుడు నిజమైన హీరో పనిని వదిలిపెట్టేవాడు కాదని, మంచి హృదయంతో పని చేసేవాడని బోధించాడు. మనం ప్రతిఫలం ఆశించకుండా సహాయం చేసినప్పుడు, మనకు నిజమైన ఆనందం లభిస్తుంది.'
-            },
-            6: {
-                title: 'ధ్యాన యోగం',
-                subtitle: 'ఆత్మ-సంయమ యోగం',
-                description: 'ధ్యాన ప్రక్రియ మరియు మనస్సు యొక్క క్రమశిక్షణ',
-                dialogue: [
-                    { speaker: 'కృష్ణుడు', text: 'తన కర్మ ఫలాలకు అంటిపెట్టుకోనివాడు మరియు తన కర్తవ్యాన్ని నిర్వర్తించేవాడు సన్యాసి మరియు నిజమైన యోగి.', emotion: 'నిర్వచిస్తున్న' },
-                    { speaker: 'అర్జునుడు', text: 'మనస్సు ద్వారా తనను తాను ఎలా ఉన్నత స్థితికి తీసుకువెళ్ళగలరు?', emotion: 'ఆసక్తిగల' },
-                    { speaker: 'కృష్ణుడు', text: 'తన మనస్సు సహాయంతో తనను తాను ఉద్ధరించుకోవాలి, మరియు తనను తాను కించపరచుకోకూడదు. మనస్సే బంధిత ఆత్మకు మిత్రుడు, మరియు శత్రువు కూడా.', emotion: 'బోధనాత్మక' },
-                    { speaker: 'అర్జునుడు', text: 'ఎవరికి మనస్సు మిత్రుడు, మరియు ఎవరికి శత్రువు?', emotion: 'ప్రశ్నిస్తున్న' },
-                    { speaker: 'కృష్ణుడు', text: 'మనస్సును జయించిన వానికి, మనస్సు ఉత్తమ మిత్రుడు; కానీ అలా చేయడంలో విఫలమైన వానికి, అతని మనస్సు గొప్ప శత్రువుగా మిగిలిపోతుంది.', emotion: 'వివరిస్తున్న' },
-                    { speaker: 'అర్జునుడు', text: 'యోగ ధ్యానాన్ని ఎలా అభ్యసించాలి?', emotion: 'ఆచరణాత్మక' },
-                    { speaker: 'కృష్ణుడు', text: 'యోగం అభ్యసించడానికి, ఏకాంత ప్రదేశానికి వెళ్ళి, కుశ గడ్డి, జింక చర్మం మరియు మెత్తని వస్త్రంతో ఆసనం వేసుకుని, అప్పుడు, ప్రశాంతమైన మనస్సుతో, హృదయాన్ని శుద్ధి చేయడానికి యోగాన్ని అభ్యసించాలి.', emotion: 'మార్గదర్శనం' },
-                    { speaker: 'అర్జునుడు', text: 'ఇది చాలా కష్టంగా అనిపిస్తుంది. తినడం మరియు నిద్రపోవడం గురించి ఏమిటి?', emotion: 'ఆందోళన' },
-                    { speaker: 'కృష్ణుడు', text: 'తినడం, నిద్రించడం, వినోదం మరియు పని అలవాట్లలో నియంత్రణ ఉన్నవాడు యోగ విధానాన్ని అభ్యసించడం ద్వారా అన్ని భౌతిక బాధలను తగ్గించుకోగలడు.', emotion: 'సమతుల్యం' },
-                    { speaker: 'అర్జునుడు', text: 'ఓ కృష్ణా, మనస్సు చంచలమైనది, కల్లోలమైనది, మొండిది మరియు చాలా బలమైనది. దానిని అణచివేయడం, గాలిని నియంత్రించడం కంటే కష్టమని నేను భావిస్తున్నాను.', emotion: 'నిరాశ' },
-                    { speaker: 'కృష్ణుడు', text: 'ఓ మహాబాహు కుంతీ పుత్రుడా, చంచలమైన మనస్సును అరికట్టడం నిస్సందేహంగా చాలా కష్టం, కానీ తగిన అభ్యాసం మరియు వైరాగ్యం ద్వారా ఇది సాధ్యమే.', emotion: 'ప్రోత్సాహిస్తున్న' },
-                    { speaker: 'అర్జునుడు', text: 'విశ్వాసంతో ప్రారంభించి, ఆపై ప్రాపంచిక ಮನಸ್ಥಿತಿ కారణంగా విరమించుకునే విఫల యోగి గమ్యం ఏమిటి?', emotion: 'ఆందోళన' },
-                    { speaker: 'కృష్ణుడు', text: 'శుభ కార్యాలలో నిమగ్నమైన యోగి ఈ ప్రపంచంలో లేదా ఆధ్యాత్మిక ప్రపంచంలో నాశనాన్ని ఎదుర్కోడు; మంచి చేసేవాడు, నా మిత్రుడా, ఎప్పుడూ చెడు చేత ఓడిపోడు.', emotion: 'భరోసా' },
-                    { speaker: 'అర్జునుడు', text: 'మరణం తర్వాత అతను ఎక్కడికి వెళతాడు?', emotion: 'జిజ్ఞాస' },
-                    { speaker: 'కృష్ణుడు', text: 'విఫల యోగి, పుణ్యాత్ముల గ్రహాలపై చాలా సంవత్సరాల ఆనందం తర్వాత, ధర్మపరుల కుటుంబంలో లేదా ధనిక కులీనుల కుటుంబంలో జన్మిస్తాడు. తన మునుపటి జీవితపు దైవిక చైతన్యం వల్ల, అతను మళ్ళీ తన గత జీవితపు చైతన్యాన్ని పునరుజ్జీవింపజేసుకుని, మరింత పురోగతి సాధించడానికి ప్రయత్నిస్తాడు.', emotion: 'వివరణ' },
-                    { speaker: 'అర్జునుడు', text: 'అంటే, ఏ ఆధ్యాత్మిక ప్రయత్నం ఎప్పుడూ వృధా కాదా?', emotion: 'ఆశావాది' },
-                    { speaker: 'కృష్ణుడు', text: 'నిజానికి. మరియు యోగి మరింత పురోగతి సాధించడంలో చిత్తశుద్ధితో నిమగ్నమైనప్పుడు, అన్ని కల్మషాల నుండి కడిగివేయబడినప్పుడు, చివరికి, చాలా జన్మల అభ్యాసం తర్వాత పరిపూర్ణతను సాధించి, అతను పరమ గమ్యాన్ని పొందుతాడు.', emotion: 'వాగ్దానం' },
-                    { speaker: 'అర్జునుడు', text: 'యోగులందరిలో అత్యున్నతుడు ఎవరు?', emotion: 'అన్వేషిస్తున్న' },
-                    { speaker: 'కృష్ణుడు', text: 'మరియు యోగులందరిలో, గొప్ప విశ్వాసంతో ఎల్లప్పుడూ నాలో నివసించేవాడు, తనలో నన్ను తలచుకునేవాడు, మరియు నాకు దివ్య ప్రేమ సేవను అందించేవాడు—అతను యోగంలో నాతో అత్యంత సన్నిహితంగా ఐక్యమై ఉన్నాడు మరియు అందరిలో అత్యున్నతుడు. ఇది నా అభిప్రాయం.', emotion: 'నిర్ణయాత్మక' },
-                    { speaker: 'అర్జునుడు', text: 'నాకు అర్థమైంది. మార్గం కష్టమైనది, కానీ అభ్యాసం, వైరాగ్యం మరియు భక్తితో ఇది సాధ్యమే.', emotion: 'నిశ్చయం' },
-                    { speaker: 'కృష్ణుడు', text: 'అవును, అర్జునా. నిజమైన యోగి నన్ను అన్ని జీవులలో మరియు అన్ని జీవులను నాలో చూస్తాడు. అలాంటి వ్యక్తికి, నేను ఎప్పుడూ దూరం కాను, వారు ఎప్పుడూ నాకు దూరం కారు.', emotion: 'ఐక్యత' }
-                ],
-                summary: 'కృష్ణుడు ధ్యాన అభ్యాసం మరియు మనస్సును నియంత్రించే పద్ధతిని వివరిస్తాడు. ఆధ్యాత్మిక మార్గంలో చేసిన ఏ ప్రయత్నమైనా వృధా కాదని ఆయన హామీ ఇస్తాడు.',
-                teachings: 'మానవుని మనస్సే అతనికి మిత్రుడు మరియు శత్రువు. అభ్యాసం మరియు వైరాగ్యంతో మనస్సును వశం చేసుకోవచ్చు. యోగులందరిలో, భక్తి యోగి శ్రేష్ఠుడు.',
-                moralLesson: 'ఆత్మ-నియంత్రణ మరియు నిరంతర అభ్యాసంతో ఏ లక్ష్యాన్నైనా సాధించవచ్చు. ఆధ్యాత్మిక ప్రయత్నాలు ఎప్పుడూ విఫలం కావు.',
-                kidsVersion: 'కృష్ణుడు మన మనస్సును నియంత్రించడం ఒక అల్లరి కోతికి శిక్షణ ఇవ్వడం లాంటిదని చెప్పాడు. ఇది కష్టమే, కానీ అభ్యాసంతో మనం దానిని మన ఉత్తమ స్నేహితుడిగా చేసుకోవచ్చు.'
-            },
-            7: {
-                title: 'జ్ఞాన విజ్ఞాన యోగం',
-                subtitle: 'పరమ సత్య జ్ఞానం',
-                description: 'కృష్ణుడు తన పరమ స్వభావాన్ని మరియు వివిధ రకాల భక్తులను వెల్లడిస్తాడు',
-                dialogue: [
-                    { speaker: 'కృష్ణుడు', text: 'ఇప్పుడు విను, ఓ పృథా పుత్రుడా, నాపై మనస్సు నిలిపి, నా పూర్తి చైతన్యంలో యోగాన్ని అభ్యసించడం ద్వారా నన్ను పూర్తిగా, సందేహం లేకుండా ఎలా తెలుసుకోగలవో.', emotion: 'వాగ్దానం' },
-                    { speaker: 'అర్జునుడు', text: 'దయచేసి ఈ జ్ఞానాన్ని పూర్తిగా చెప్పండి. ఇది తెలిసిన తర్వాత, ఇంకేమి తెలుసుకోవలసింది ఉంటుంది?', emotion: 'ఆత్రుత' },
-                    { speaker: 'కృష్ణుడు', text: 'వేలమందిలో ఒకడు పరిపూర్ణత కోసం ప్రయత్నించవచ్చు, మరియు పరిపూర్ణతను సాధించిన వారిలో, అరుదుగా ఒకడు నన్ను నిజంగా తెలుసుకుంటాడు.', emotion: 'వెల్లడిస్తున్న' },
-                    { speaker: 'అర్జునుడు', text: 'మీ శక్తుల స్వభావం ఏమిటి?', emotion: 'జిజ్ఞాస' },
-                    { speaker: 'కృష్ణుడు', text: 'భూమి, నీరు, అగ్ని, గాలి, ఆకాశం, మనస్సు, బుద్ధి మరియు మిథ్యా అహంకారం—ఈ ఎనిమిది కలిసి నా వేరుపడిన భౌతిక శక్తులు. ఇది కాకుండా, జీవులను కలిగి ఉన్న నా మరొక, ఉన్నతమైన శక్తి ఉంది.', emotion: 'వివరణ' },
-                    { speaker: 'అర్జునుడు', text: 'అంటే ఉన్నదంతా మీ నుండే ఉద్భవించిందా?', emotion: 'అర్థం చేసుకున్న' },
-                    { speaker: 'కృష్ణుడు', text: 'ఈ ప్రపంచంలో భౌతికమైన మరియు ఆధ్యాత్మికమైనదంతా, నేను పుట్టుక మరియు వినాశనం రెండూ అని ఖచ్చితంగా తెలుసుకో. నాకంటే గొప్ప సత్యం లేదు. ముత్యాలు దారంలో గుచ్చబడినట్లుగా, అంతా నాపై ఆధారపడి ఉంది.', emotion: 'పునాది' },
-                    { speaker: 'అర్జునుడు', text: 'నా రోజువారీ జీవితంలో మిమ్మల్ని ఎలా గ్రహించగలను?', emotion: 'ఆచరణాత్మక' },
-                    { speaker: 'కృష్ణుడు', text: 'నేను నీటి రుచిని, సూర్యచంద్రుల కాంతిని, ఆకాశంలో శబ్దాన్ని మరియు మనిషిలో సామర్థ్యాన్ని.', emotion: 'సర్వవ్యాపి' },
-                    { speaker: 'అర్జునుడు', text: 'మరి చాలా మంది మిమ్మల్ని ఎందుకు చూడలేరు?', emotion: 'ప్రశ్నిస్తున్న' },
-                    { speaker: 'కృష్ణుడు', text: 'ప్రకృతి యొక్క మూడు గుణాలచే మోహితులై, ప్రపంచమంతా నన్ను తెలుసుకోలేదు. మూడు గుణాలతో కూడిన నా ఈ దైవిక శక్తిని అధిగమించడం కష్టం. కానీ నాకు శరణుజొచ్చిన వారు దానిని సులభంగా దాటగలరు.', emotion: 'జ్ఞాని' },
-                    { speaker: 'అర్జునుడు', text: 'మిమ్మల్ని పూజించే పుణ్యాత్ములు ఎవరు?', emotion: 'ఆసక్తిగల' },
-                    { speaker: 'కృష్ణుడు', text: 'నాలుగు రకాల పుణ్యాత్ములు నాకు భక్తి సేవ చేయడం ప్రారంభిస్తారు—దుఃఖితులు, సంపద కోరుకునేవారు, జిజ్ఞాసువులు, మరియు పరమ సత్య జ్ఞానం కోసం వెతుకుతున్నవారు.', emotion: 'వర్గీకరిస్తున్న' },
-                    { speaker: 'అర్జునుడు', text: 'వారిలో ఉత్తముడు ఎవరు?', emotion: 'అన్వేషిస్తున్న' },
-                    { speaker: 'కృష్ణుడు', text: 'వీరిలో, పూర్తి జ్ఞానంలో ఉండి, ఎల్లప్పుడూ స్వచ్ఛమైన భక్తి సేవలో నిమగ్నమైనవాడు ఉత్తముడు. ఎందుకంటే నేను అతనికి చాలా ప్రియుడిని, మరియు అతను నాకు ప్రియుడు.', emotion: 'ప్రేమ' },
-                    { speaker: 'అర్జునుడు', text: 'దేవతలను పూజించే వారి గురించి ఏమిటి?', emotion: 'విచారిస్తున్న' },
-                    { speaker: 'కృష్ణుడు', text: 'చిన్న బుద్ధి గలవారు దేవతలను పూజిస్తారు, మరియు వారి ఫలాలు పరిమితమైనవి మరియు తాత్కాలికమైనవి. కానీ నా భక్తులు చివరికి నా పరమ లోకాన్ని చేరతారు.', emotion: 'వివేచన' },
-                    { speaker: 'అర్జునుడు', text: 'తెలివి తక్కువ వారు మీ పరమ స్వభావాన్ని ఎందుకు అర్థం చేసుకోలేరు?', emotion: 'గందరగోళం' },
-                    { speaker: 'కృష్ణుడు', text: 'నేను మూర్ఖులకు మరియు తెలివి తక్కువ వారికి ఎప్పుడూ కనిపించను. వారికి నేను నా అంతర్గత శక్తిచే కప్పబడి ఉంటాను, కాబట్టి నేను పుట్టనివాడినని మరియు దోషరహితుడినని వారు తెలుసుకోలేరు.', emotion: 'రహస్యమైన' },
-                    { speaker: 'అర్జునుడు', text: 'ఈ భ్రమ నుండి ఎలా విముక్తి పొందగలరు?', emotion: 'ఆశావాది' },
-                    { speaker: 'కృష్ణుడు', text: 'మునుపటి జన్మలలో మరియు ఈ జీవితంలో పుణ్య కార్యాలు చేసి, పాప కర్మలు పూర్తిగా నిర్మూలించబడిన వ్యక్తులు భ్రమ ద్వంద్వాల నుండి విముక్తులై, దృఢ సంకల్పంతో నా సేవలో నిమగ్నమవుతారు.', emotion: 'నిర్ణయాత్మక' }
-                ],
-                summary: 'కృష్ణుడు తనను తాను అన్ని భౌతిక మరియు ఆధ్యాత్మిక ప్రపంచాలకు మూలం అని వివరిస్తాడు. తన మాయను దాటడం కష్టమని, కానీ తనను శరణు పొందిన వారు దానిని దాటగలరని వివరిస్తాడు.',
-                teachings: 'భగవంతుడే అన్నింటికీ మూలం. స్వచ్ఛమైన భక్తితో మాత్రమే ఆయనను తెలుసుకోగలం. నాలుగు రకాల ప్రజలు ఆయనను పూజిస్తారు.',
-                moralLesson: 'ప్రతిదానిలో దైవత్వాన్ని చూడటానికి ప్రయత్నించండి. నిజమైన జ్ఞానం భగవంతుని పట్ల శరణాగతితో వస్తుంది.',
-                kidsVersion: 'కృష్ణుడు తాను ప్రతిదానిలో ఉన్నానని చెప్పాడు - నీటి రుచిలో, సూర్యకాంతిలో. ఎవరైతే ఆయనను నిజమైన హృదయంతో స్మరిస్తారో, వారు ఆయనకు ఉత్తమ స్నేహితులు అవుతారు.'
-            },
-            8: {
-                title: 'అక్షర బ్రహ్మ యోగం',
-                subtitle: 'పరమాత్మను పొందడం',
-                description: 'కృష్ణుడు అర్జునుడి పరమ వాస్తవికత మరియు మరణం గురించిన ప్రశ్నలకు సమాధానమిస్తాడు',
-                dialogue: [
-                    { speaker: 'అర్జునుడు', text: 'ఓ నా ప్రభూ, బ్రహ్మం అంటే ఏమిటి? ఆత్మ అంటే ఏమిటి? ఫలవంతమైన కార్యకలాపాలు ఏమిటి? ఈ భౌతిక స్వరూపం ఏమిటి? మరియు మరణ సమయంలో మిమ్మల్ని ఎలా తెలుసుకోగలను?', emotion: 'జిజ్ఞాస' },
-                    { speaker: 'కృష్ణుడు', text: 'అవినాశి, అతీంద్రియ జీవిని బ్రహ్మం అంటారు. భౌతిక శరీరాల అభివృద్ధికి సంబంధించిన చర్యను కర్మ అంటారు.', emotion: 'నిర్వచిస్తున్న' },
-                    { speaker: 'అర్జునుడు', text: 'మరణ సమయంలో మిమ్మల్ని గుర్తుంచుకోవడం ఎలా సాధ్యం?', emotion: 'ఆందోళన' },
-                    { speaker: 'కృష్ణుడు', text: 'ఎవరైతే, తన జీవితం చివరలో, నన్ను మాత్రమే స్మరిస్తూ తన శరీరాన్ని విడిచిపెడతారో, వారు వెంటనే నా స్వభావాన్ని పొందుతారు. ఇందులో సందేహం లేదు.', emotion: 'భరోసా' },
-                    { speaker: 'అర్జునుడు', text: 'మరణ సమయంలో మన స్థితిని ఏది నిర్ణయిస్తుంది?', emotion: 'ప్రశ్నిస్తున్న' },
-                    { speaker: 'కృష్ణుడు', text: 'ఓ కుంతీ పుత్రుడా, తన శరీరాన్ని విడిచిపెట్టేటప్పుడు ఏ స్థితిని స్మరించుకుంటాడో, ఆ స్థితిని అతను తప్పకుండా పొందుతాడు.', emotion: 'బోధనాత్మక' },
-                    { speaker: 'అర్జునుడు', text: 'అంటే నేను ఎల్లప్పుడూ మీ గురించే ఆలోచించాలా?', emotion: 'అర్థం చేసుకున్న' },
-                    { speaker: 'కృష్ణుడు', text: 'అందువల్ల, అర్జునా, నీవు ఎల్లప్పుడూ నా గురించి ఆలోచించాలి మరియు అదే సమయంలో పోరాడాలనే నీ నిర్దేశిత కర్తవ్యాన్ని నిర్వర్తించాలి. నీ కార్యకలాపాలను నాకు అంకితం చేయడంతో, నీవు నన్ను నిస్సందేహంగా పొందుతావు.', emotion: 'మార్గదర్శనం' },
-                    { speaker: 'అర్జునుడు', text: 'మిమ్మల్ని చేరడానికి ఎలా ధ్యానం చేయాలి?', emotion: 'ఆచరణాత్మక' },
-                    { speaker: 'కృష్ణుడు', text: 'పరమ పురుషుడిగా నన్ను ధ్యానించేవాడు, అతని మనస్సు నిరంతరం నన్ను స్మరించడంలో నిమగ్నమై, మార్గం నుండి తప్పకుండా, అతను నన్ను ఖచ్చితంగా చేరతాడు.', emotion: 'వాగ్దానం' },
-                    { speaker: 'అర్జునుడు', text: 'మీ పరమ నివాసం యొక్క స్వభావం ఏమిటి?', emotion: 'ఆసక్తిగల' },
-                    { speaker: 'కృష్ణుడు', text: 'భౌతిక ప్రపంచంలోని అత్యున్నత గ్రహం నుండి అత్యల్ప గ్రహం వరకు, అన్నీ పునరావృత జనన మరణాలు జరిగే దుఃఖ స్థలాలే. కానీ నా నివాసాన్ని పొందినవాడు మళ్ళీ జన్మించడు.', emotion: 'విముక్తి' },
-                    { speaker: 'అర్జునుడు', text: 'ఈ భౌతిక ప్రపంచానికి అతీతంగా ఒక ప్రపంచం ఉందా?', emotion: 'ఆశ్చర్యం' },
-                    { speaker: 'కృష్ణుడు', text: 'అయినప్పటికీ, మరొక అవ్యక్త స్వభావం ఉంది, అది శాశ్వతమైనది మరియు ఈ వ్యక్త మరియు అవ్యక్త పదార్థానికి అతీతమైనది. అది సర్వోన్నతమైనది మరియు ఎప్పటికీ నాశనం కాదు. అదే నా పరమ నివాసం.', emotion: 'వెల్లడిస్తున్న' },
-                    { speaker: 'అర్జునుడు', text: 'ఆ నివాసాన్ని ఎలా చేరగలరు?', emotion: 'అన్వేషిస్తున్న' },
-                    { speaker: 'కృష్ణుడు', text: 'అందరికంటే గొప్పవాడైన పరమ పురుషోత్తముడిని స్వచ్ఛమైన భక్తి ద్వారా పొందవచ్చు. అతను తన నివాసంలో ఉన్నప్పటికీ, అతను సర్వవ్యాపి, మరియు అంతా అతనిలోనే ఉంది.', emotion: 'భక్తి' },
-                    { speaker: 'అర్జునుడు', text: 'శరీరాన్ని విడిచిపెట్టడానికి శుభ సమయాలు ఉన్నాయా?', emotion: 'విశ్లేషణాత్మక' },
-                    { speaker: 'కృష్ణుడు', text: 'పరమ బ్రహ్మాన్ని తెలిసినవారు, అగ్నిదేవుని ప్రభావంలో, వెలుగులో, పగటి శుభ సమయంలో, శుక్లపక్షంలో, లేదా సూర్యుడు ఉత్తరాయణంలో ప్రయాణించే ఆరు నెలల కాలంలో ప్రపంచం నుండి నిష్క్రమించడం ద్వారా ఆ పరమాత్మను పొందుతారు.', emotion: 'వివరణ' },
-                    { speaker: 'అర్జునుడు', text: 'మరి అశుభ సమయాలు?', emotion: 'వ్యతిరేకం' },
-                    { speaker: 'కృష్ణుడు', text: 'పొగ, రాత్రి, కృష్ణపక్షంలో, లేదా సూర్యుడు దక్షిణాయణంలో ప్రయాణించే ఆరు నెలల కాలంలో ఈ ప్రపంచం నుండి నిష్క్రమించే యోగి, చంద్రలోకాన్ని చేరతాడు కానీ మళ్ళీ తిరిగి వస్తాడు.', emotion: 'హెచ్చరిక' },
-                    { speaker: 'అర్జునుడు', text: 'భక్తుడు ఈ లెక్కల గురించి ఆందోళన చెందాలా?', emotion: 'ఆందోళన' },
-                    { speaker: 'కృష్ణుడు', text: 'భక్తులు ఈ రెండు మార్గాలను తెలిసినప్పటికీ, వారు ఎప్పుడూ గందరగోళపడరు. అందువల్ల ఎల్లప్పుడూ భక్తిలో స్థిరంగా ఉండు.', emotion: 'భరోసా' },
-                    { speaker: 'అర్జునుడు', text: 'అంటే, భక్తే అన్ని తలుపులను తెరిచే తాళం చెవియా?', emotion: 'జ్ఞానోదయం' },
-                    { speaker: 'కృష్ణుడు', text: 'భక్తి సేవ మార్గాన్ని అంగీకరించిన వ్యక్తి ఏ ఫలాలనూ కోల్పోడు. కేవలం భక్తి సేవ చేయడం ద్వారా, అతను ఇవన్నీ పొందుతాడు, మరియు చివరికి అతను పరమ శాశ్వత నివాసాన్ని చేరతాడు.', emotion: 'నిర్ణయాత్మక' }
-                ],
-                summary: 'కృష్ణుడు వివరిస్తాడు, మరణ సమయంలో ఒక వ్యక్తి యొక్క చేతన అతని తదుపరి గమ్యాన్ని నిర్ధారిస్తుంది. జీవితాంతం దేవుణ్ణి స్మరించడం వల్ల చివరి క్షణంలో కూడా ఆయన జ్ఞాపకం ఉంటుంది.',
-                teachings: 'మరణ సమయంలో చేతన చాలా ముఖ్యం. జీవితాంతం భక్తి సాధన చేయడం వల్ల చివరి క్షణంలో దేవుణ్ణి పొందవచ్చు.',
-                moralLesson: 'ఈ రోజు మనం మన మనస్సును దేనితో నింపుతామో, అదే మన భవిష్యత్తును మరియు చివరి గమ్యాన్ని నిర్ధారిస్తుంది.',
-                kidsVersion: 'కృష్ణుడు ఒక రహస్యం చెప్పాడు: మనం దేని గురించి ఎక్కువగా ఆలోచిస్తామో, అదే మనకు తదుపరి జీవితానికి వెళ్ళేటప్పుడు గుర్తుంటుంది. కాబట్టి, మనం దేవుడి గురించి ఆలోచిస్తే, మనం దేవుడి సంతోషకరమైన ఇంటికి వెళ్తాము!'
-            },
-            9: {
-                title: 'రాజ విద్యా రాజ గుహ్య యోగం',
-                subtitle: 'అత్యంత రహస్య జ్ఞానం',
-                description: 'కృష్ణుడు భక్తి సేవ యొక్క అత్యంత రహస్య జ్ఞానాన్ని వెల్లడిస్తాడు',
-                dialogue: [
-                    { speaker: 'కృష్ణుడు', text: 'నా ప్రియమైన అర్జునా, నీవు నా పట్ల ఎప్పుడూ అసూయపడవు కాబట్టి, నేను నీకు ఈ అత్యంత రహస్య జ్ఞానాన్ని మరియు అనుభూతిని అందిస్తాను, దీనిని తెలుసుకుంటే నీవు భౌతిక అస్తిత్వపు దుఃఖాల నుండి విముక్తుడవుతావు.', emotion: 'దయ' },
-                    { speaker: 'అర్జునుడు', text: 'ఓ ప్రభూ, ఈ పరమ జ్ఞానాన్ని వినడానికి నేను ఆసక్తిగా ఉన్నాను.', emotion: 'స్వీకారం' },
-                    { speaker: 'కృష్ణుడు', text: 'ఈ జ్ఞానం విద్యలకు రాజు, అన్ని రహస్యాలలోకెల్లా అత్యంత రహస్యమైనది. ఇది అత్యంత స్వచ్ఛమైన జ్ఞానం, మరియు ఇది అనుభూతి ద్వారా ఆత్మ యొక్క ప్రత్యక్ష దర్శనాన్ని ఇస్తుంది కాబట్టి, ఇది ధర్మం యొక్క పరిపూర్ణత.', emotion: 'నొక్కిచెప్పడం' },
-                    { speaker: 'అర్జునుడు', text: 'విశ్వాసం లేనివారు మిమ్మల్ని ఎందుకు పొందలేరు?', emotion: 'ప్రశ్నిస్తున్న' },
-                    { speaker: 'కృష్ణుడు', text: 'ఈ భక్తి సేవలో విశ్వాసం లేనివారు నన్ను పొందలేరు, ఓ శత్రువులను జయించేవాడా. కాబట్టి వారు ఈ భౌతిక ప్రపంచంలో జనన మరణాల మార్గానికి తిరిగి వస్తారు.', emotion: 'వివరిస్తున్న' },
-                    { speaker: 'అర్జునుడు', text: 'మీరు ఈ విశ్వంలో ఎలా వ్యాపించి ఉన్నారు?', emotion: 'జిజ్ఞాస' },
-                    { speaker: 'కృష్ణుడు', text: 'నా అవ్యక్త రూపంలో, ఈ విశ్వమంతా నాచే వ్యాపించబడి ఉంది. అన్ని జీవులు నాలో ఉన్నాయి, కానీ నేను వాటిలో లేను.', emotion: 'రహస్యమైన' },
-                    { speaker: 'అర్జునుడు', text: 'అది ఒక విరోధాభాసం. అంతా మీలో ఎలా ఉంటుంది, కానీ మీరు వాటిలో లేరు?', emotion: 'గందరగోళం' },
-                    { speaker: 'కృష్ణుడు', text: 'అయినప్పటికీ సృష్టించబడినదంతా నాలో నిలవదు. నా దివ్య ఐశ్వర్యాన్ని చూడు! నేను అన్ని జీవులను పోషించేవాడినైనా మరియు నేను సర్వత్రా ఉన్నా, నేను ఈ విశ్వ సృష్టిలో భాగం కాను, ఎందుకంటే నా ఆత్మయే సృష్టికి మూలం.', emotion: 'గంభీరమైన' },
-                    { speaker: 'అర్జునుడు', text: 'మీ దివ్య స్వభావాన్ని గుర్తించేవారు ఎవరు?', emotion: 'ఆసక్తిగల' },
-                    { speaker: 'కృష్ణుడు', text: 'గొప్ప ఆత్మలు, మహాత్ములు, భ్రమపడరు. వారు దైవిక ప్రకృతి రక్షణలో ఉంటారు మరియు పూర్తిగా భక్తి సేవలో నిమగ్నమై ఉంటారు ఎందుకంటే వారు నన్ను పరమ పురుషుడిగా, ఆది మరియు అక్షయుడిగా తెలుసుకుంటారు.', emotion: 'ప్రశంసిస్తున్న' },
-                    { speaker: 'అర్జునుడు', text: 'ఈ స్థితిని పొందడానికి నేను మిమ్మల్ని ఎలా పూజించాలి?', emotion: 'అన్వేషిస్తున్న' },
-                    { speaker: 'కృష్ణుడు', text: 'ఎవరైనా నాకు ప్రేమ మరియు భక్తితో ఒక ఆకు, ఒక పువ్వు, పండు లేదా నీరు సమర్పిస్తే, నేను దానిని స్వీకరిస్తాను.', emotion: 'స్వీకరిస్తున్న' },
-                    { speaker: 'అర్జునుడు', text: 'సమర్పణ ముఖ్యమా, లేక దాని వెనుక ఉన్న భక్తి ముఖ్యమా?', emotion: 'అర్థం చేసుకున్న' },
-                    { speaker: 'కృష్ణుడు', text: 'భక్తియే ముఖ్యం. నీవు ఏది చేసినా, ఏది తిన్నా, ఏది సమర్పించినా లేదా దానం చేసినా, మరియు ఏ తపస్సు చేసినా—అది నాకు సమర్పణగా చెయ్యి.', emotion: 'మార్గదర్శనం' },
-                    { speaker: 'అర్జునుడు', text: 'అటువంటి సమర్పణ ఫలితం ఏమిటి?', emotion: 'ఆశావాది' },
-                    { speaker: 'కృష్ణుడు', text: 'ఈ విధంగా నీవు కర్మ బంధం మరియు దాని శుభ మరియు అశుభ ఫలితాల నుండి విముక్తుడవుతావు. ఈ త్యాగ సూత్రంలో నీ మనస్సును నాపై నిలిపితే, నీవు విముక్తుడవై నా వద్దకు వస్తావు.', emotion: 'వాగ్దానం' },
-                    { speaker: 'అర్జునుడు', text: 'మీరు కొందరు భక్తుల పట్ల పక్షపాతం చూపుతారా?', emotion: 'విచారిస్తున్న' },
-                    { speaker: 'కృష్ణుడు', text: 'నేను ఎవరి పట్ల అసూయపడను, లేదా ఎవరి పట్ల పక్షపాతం చూపను. నేను అందరికీ సమానుడిని. కానీ ఎవరైతే భక్తితో నాకు సేవ చేస్తారో వారు నా మిత్రులు, నాలో ఉన్నారు, మరియు నేను కూడా వారికి మిత్రుడిని.', emotion: 'నిష్పక్షపాతం' },
-                    { speaker: 'అర్జునుడు', text: 'ఈ అత్యంత రహస్య జ్ఞానంలో మీ చివరి ఉపదేశం ఏమిటి?', emotion: 'శ్రద్ధగా' },
-                    { speaker: 'కృష్ణుడు', text: 'ఎల్లప్పుడూ నన్నే తలచుకో, నా భక్తుడవు కమ్ము, నన్ను పూజించు మరియు నాకు నమస్కరించు. అప్పుడు నీవు తప్పకుండా నా వద్దకు వస్తావు. నేను నీకు ఈ వాగ్దానం చేస్తున్నాను ఎందుకంటే నీవు నా అత్యంత ప్రియమైన మిత్రుడివి.', emotion: 'ప్రేమ' }
-                ],
-                summary: 'కృష్ణుడు భక్తి యొక్క రహస్య జ్ఞానాన్ని వెల్లడిస్తాడు. ప్రేమ మరియు శ్రద్ధతో చేసిన చిన్న కానుక కూడా తనకు ఆమోదయోగ్యమని ఆయన వివరిస్తాడు.',
-                teachings: 'స్వచ్ఛమైన భక్తియే అత్యున్నత జ్ఞానం. భగవంతుని పట్ల పూర్తి శరణాగతితో మాత్రమే ఆయనను పొందవచ్చు.',
-                moralLesson: 'మనం ఏమి ఇస్తామనేది ముఖ్యం కాదు, ఏ భావంతో ఇస్తామనేదే ముఖ్యం. ప్రేమతో చేసే సేవే నిజమైన భక్తి.',
-                kidsVersion: 'కృష్ణుడు తన ఉత్తమ స్నేహితుడిగా ఎలా ఉండాలో చెప్పాడు. దీనికి ఖరీదైన బహుమతులు అవసరం లేదు, నిజమైన ప్రేమ కావాలి. నీవు ఆయనకు ప్రేమతో ఒక పువ్వు ఇచ్చినా, ఆయన చాలా సంతోషిస్తాడు.'
-            },
-            10: {
-        title: 'విభూతి యోగం',
-        subtitle: 'భగవంతుని ఐశ్వర్యం',
-        description: 'కృష్ణుడు భౌతిక మరియు ఆధ్యాత్మిక ప్రపంచాలలో తన దివ్య స్వరూపాలను వెల్లడిస్తాడు',
-        dialogue: [{
-          speaker: 'కృష్ణుడు',
-          text: 'మరల వినుము, ఓ మహాబాహు అర్జునా. నీవు నా ప్రియ మిత్రుడవు కాబట్టి, నీ మేలు కొరకు నేను ఇంకనూ మాట్లాడెదను, నేను ఇదివరకే వివరించిన దానికంటే శ్రేష్ఠమైన జ్ఞానమును ఇచ్చెదను.',
-          emotion: 'ఆప్యాయత'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'నీవే పరమేశ్వరుడవు, సకలమునకు మూలము. దేవతల సమూహములు గానీ, మహర్షులు గానీ నీ పుట్టుకను ఎరుగరు. దయచేసి ఈ లోకాలన్నిటిలో నీవు వ్యాపించియున్న నీ దివ్య ఐశ్వర్యములను వివరముగా వర్ణించుము.',
-          emotion: 'భక్తి'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'సమస్త ఆధ్యాత్మిక, భౌతిక జగత్తులకు నేనే మూలము. అంతయూ నా నుండియే వెలువడుచున్నది. ఈ విషయమును సంపూర్ణముగా తెలిసిన జ్ఞానులు నా భక్తి సేవలో నిమగ్నులై, తమ పూర్ణ హృదయముతో నన్ను పూజింతురు.',
-          emotion: 'పునాది'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'నిన్ను నేను నిరంతరము ఎలా స్మరించాలి మరియు ఎలా తెలుసుకోవాలి? ఓ పరమ పురుషా, నిన్ను ఏయే వివిధ రూపాలలో స్మరించుకోవాలి?',
-          emotion: 'జిజ్ఞాస'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'నా ప్రకాశవంతమైన అభివ్యక్తులను నీకు చెప్పెదను, కానీ వాటిలో ముఖ్యమైనవి మాత్రమే, ఓ అర్జునా, ఎందుకంటే నా ఐశ్వర్యము అపరిమితమైనది.',
-          emotion: 'వెల్లడిస్తున్న'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'శ్రద్ధగా వింటున్నాను.',
-          emotion: 'శ్రద్ధ'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'నేనే ఆత్మను, ఓ గుడాకేశా, సర్వ ప్రాణుల హృదయాలలో ఆసీనుడనై ఉన్నాను. నేనే సర్వ జీవులకు ఆది, మధ్యము మరియు అంతము.',
-          emotion: 'అంతర్లీనం'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'మరియు దైవిక జీవులలో?',
-          emotion: 'ఆసక్తి'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'ఆదిత్యులలో నేను విష్ణువును, కాంతులలో నేను ప్రకాశవంతమైన సూర్యుడిని, మరుత్తులలో నేను మరీచిని, మరియు నక్షత్రాలలో నేను చంద్రుడిని.',
-          emotion: 'ప్రసిద్ధం'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'వేదాలలో మరియు ఇంద్రియాలలో?',
-          emotion: 'అన్వేషిస్తున్న'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'వేదాలలో నేను సామవేదాన్ని; దేవతలలో నేను స్వర్గాధిపతియైన ఇంద్రుడిని; ఇంద్రియాలలో నేను మనస్సును; మరియు జీవులలో నేను జీవశక్తిని [చైతన్యం].',
-          emotion: 'అవసరం'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'గొప్ప శక్తులు మరియు జీవులలో?',
-          emotion: 'ఆశ్చర్యం'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'రుద్రులలో నేను శివుడిని, యక్షులు మరియు రాక్షసులలో నేను సంపదకు ప్రభువును [కుబేరుడు], వసువులలో నేను అగ్నిని, మరియు పర్వతాలలో నేను మేరువును.',
-          emotion: 'గంభీరం'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'పురోహితులు మరియు సేనాపతులలో?',
-          emotion: 'విశ్లేషణాత్మక'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'పురోహితులలో, ఓ అర్జునా, నన్ను ముఖ్యుడైన బృహస్పతిగా తెలుసుకో. సేనాపతులలో నేను కార్తికేయుడిని, మరియు జలాశయాలలో నేను సముద్రుడిని.',
-          emotion: 'అగ్రగామి'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'మీ అభివ్యక్తులు నిజంగా అన్నింటిలోనూ ఉత్తమమైనవి.',
-          emotion: 'అర్థం చేసుకున్న'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'మహర్షులలో నేను భృగువును; శబ్దములలో నేను దివ్యమైన ఓంకారమును. యజ్ఞములలో నేను పవిత్ర నామ జపమును [జపము], మరియు స్థిరమైన వస్తువులలో నేను హిమాలయములను.',
-          emotion: 'సర్వోన్నతం'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'అన్ని వృక్షాలు మరియు దివ్య జీవులలో?',
-          emotion: 'ఆశ్చర్యపోతున్న'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'అన్ని వృక్షాలలో నేను మర్రి చెట్టును, మరియు దేవతలలోని ఋషులలో నేను నారదుడిని. గంధర్వులలో నేను చిత్రరథుడిని, మరియు సిద్ధ పురుషులలో నేను కపిల మునిని.',
-          emotion: 'సర్వవ్యాపి'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'మీ ఐశ్వర్యములన్నిటినీ గ్రహించటం అసాధ్యం.',
-          emotion: 'అభిభూతం'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'సమస్త ఐశ్వర్యవంతమైన, అందమైన మరియు మహిమాన్వితమైన సృష్టులు నా తేజస్సు యొక్క ఒక చిన్న మెరుపు నుండి ఉద్భవించాయని తెలుసుకో. కానీ ఈ వివరణాత్మక జ్ఞానంతో పనేమి, అర్జునా? నా యొక్క ఒక్క అంశతో నేను ఈ సమస్త విశ్వాన్ని వ్యాపించి, పోషిస్తున్నాను.',
-          emotion: 'నిర్ణయాత్మక'
-        }],
-        summary: 'ఈ అధ్యాయంలో, కృష్ణుడు తానే సమస్త సృష్టికి మూలం అని మరియు ఐశ్వర్యవంతమైన, అందమైన, మరియు మహిమాన్వితమైనవన్నీ తన దివ్య తేజస్సు యొక్క ఒక మెరుపు మాత్రమేనని వివరిస్తాడు. తనను ప్రతిచోటా చూడమని అర్జునుడిని ప్రోత్సహిస్తాడు.',
-        teachings: 'ఈ విశ్వమంతా దైవ స్వరూపమే. మన చుట్టూ ఉన్న ప్రపంచంలోని శ్రేష్ఠతలో భగవంతుని ఉనికిని గుర్తించడం ద్వారా మనం ఆయనతో అనుసంధానం కావచ్చు. దైవం యొక్క ఒకే ఒక్క అంశం సమస్త అస్తిత్వాన్ని వ్యాపించి పోషిస్తుందని అర్థం చేసుకోవడమే నిజమైన జ్ఞానం.',
-        moralLesson: 'ప్రతి దానిలో మరియు ప్రతి ఒక్కరిలో శ్రేష్ఠమైన దానిని చూడండి, అప్పుడు మీరు దైవ ప్రతిబింబాన్ని చూస్తారు. ప్రపంచంలో భగవంతుని ఉనికిని గురించిన అవగాహనను పెంపొందించుకోవడం మన అవగాహనను మార్చి, మన జీవితాలను భక్తి మరియు అద్భుతంతో నింపుతుంది.',
-        kidsVersion: 'ప్రతిదానిలో ఉత్తమమైనదాన్ని ఊహించుకోండి: బలమైన సింహం, ప్రకాశవంతమైన నక్షత్రం, ఎత్తైన పర్వతం. కృష్ణుడు ప్రతి సమూహంలో తానే "శ్రేష్ఠుడను" అని వివరిస్తాడు. కాబట్టి, మీరు అద్భుతమైనది చూసినప్పుడల్లా, మీరు భగవంతుని మాయ యొక్క ఒక చిన్న భాగాన్ని చూస్తున్నారు!'
-      },
-      11: {
-        title: 'విశ్వరూప సందర్శన యోగం',
-        subtitle: 'బ్రహ్మాండ దర్శనం',
-        description: 'కృష్ణుడు అర్జునునికి దివ్య దృష్టిని ప్రసాదించి తన అద్భుతమైన, భయంకరమైన విశ్వరూపాన్ని వెల్లడిస్తాడు',
-        dialogue: [{
-          speaker: 'అర్జునుడు',
-          text: 'నా భ్రమ ఇప్పుడు తొలగిపోయింది. ప్రతి జీవి యొక్క ఆవిర్భావం మరియు తిరోభావం గురించి మీ నుండి వివరంగా విన్నాను. ఓ మహోన్నత వ్యక్తిత్వమా, ఓ పరమ రూపా, మీరు వర్ణించుకున్నట్లుగా మీ వాస్తవ రూపంలో మిమ్మల్ని ఇక్కడ నా ముందు చూస్తున్నప్పటికీ, మీరు ఈ బ్రహ్మాండ సృష్టిలోకి ఎలా ప్రవేశించారో నేను చూడాలనుకుంటున్నాను. మీ ఆ రూపాన్ని నేను చూడాలనుకుంటున్నాను.',
-          emotion: 'భక్తి'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'నా ప్రియమైన అర్జునా, నీవు నన్ను నీ ప్రస్తుత కళ్లతో చూడలేవు. అందువల్ల నేను నీకు దివ్య చక్షువులను ఇస్తున్నాను. నా దివ్య ఐశ్వర్యాన్ని చూడు!',
-          emotion: 'ప్రసాదిస్తున్న'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'ఓ విశ్వ ప్రభువా, ఓ విశ్వరూపా, మీ శరీరంలో ఎన్నో, ఎన్నెన్నో చేతులు, కడుపులు, నోళ్ళు మరియు కళ్ళు, అంతటా అపరిమితంగా విస్తరించి ఉండటం నేను చూస్తున్నాను. మీలో నాకు అంతం, మధ్యం, మరియు ప్రారంభం కనిపించడం లేదు.',
-          emotion: 'ఆశ్చర్యం'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'నా వందల వేల వైవిధ్యమైన, దివ్యమైన మరియు బహుళ వర్ణ రూపాలను చూడు.',
-          emotion: 'అద్భుతం'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'దేవతలందరినీ మరియు ఇతర వివిధ జీవులను మీ శరీరంలో సమావేశమై ఉండటం నేను చూస్తున్నాను. పద్మంపై కూర్చున్న బ్రహ్మదేవుడిని, అలాగే శివుడిని మరియు ఋషులందరినీ, దివ్య సర్పాలను చూస్తున్నాను.',
-          emotion: 'అభిభూతం'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'నీవు ఏది చూడాలనుకున్నా, నా ఈ శరీరంలో తక్షణమే చూడు! భవిష్యత్తులో నీవు ఏది చూడాలనుకున్నా చూడవచ్చు. అంతా—చరాచరములు—ఇక్కడ పూర్తిగా, ఒకే చోట ఉన్నాయి.',
-          emotion: 'సర్వవ్యాపి'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'ఓ ప్రభూ, మీ రూపం దాని మిరుమిట్లు గొలిపే తేజస్సు వల్ల చూడటానికి కష్టంగా ఉంది, అది నలుదిక్కులా వ్యాపిస్తోంది, మండుతున్న అగ్నిలా లేదా సూర్యుని అపారమైన ప్రకాశంలా. అయినప్పటికీ నేను ఈ ప్రకాశవంతమైన రూపాన్ని ప్రతిచోటా చూస్తున్నాను.',
-          emotion: 'చకితుడైన'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'నేను ఆది మూలాన్ని, అక్షయుడను, పురాతనుడను; నేను శాశ్వత ధర్మాన్ని పరిరక్షించేవాడిని, పరమ పురుషుడిని.',
-          emotion: 'పునాది'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'ధృతరాష్ట్రుని కుమారులందరినీ, వారి మిత్ర రాజులతో పాటు, మరియు భీష్ముడు, ద్రోణుడు, కర్ణుడు—మరియు మన ముఖ్య సైనికులను కూడా—మీ భయంకరమైన నోళ్లలోకి దూసుకుపోవడం నేను చూస్తున్నాను. మరియు కొందరిని మీ పళ్ల మధ్య తలలు నలిగిపోయి చిక్కుకుపోవడం చూస్తున్నాను.',
-          emotion: 'భయంతో'
-        },{
-          speaker: 'కృష్ణుడు',
-          text: 'అందువల్ల లేచి పోరాడడానికి సిద్ధం అవ్వండి మరియు గౌరవాన్ని గెలుచుకోండి. మీ శత్రువులను ఓడించండి మరియు సమృద్ధిగా ఉన్న రాజ్యాన్ని ఆస్వాదించండి. వారు ఇప్పటికే నా ఏర్పాటు ద్వారా చంపబడ్డారు, మరియు మీరు, ఓ సవ్యసాచి, యుద్ధంలో కేవలం ఒక సాధనమే కాగలరు.',
-          emotion: 'ఆదేశిస్తున్న'
+        ui: {
+            dialogueTitle: 'పవిత్ర సంభాషణ',
+            krishnaName: 'శ్రీకృష్ణుడు',
+            arjunaName: 'అర్జునుడు',
+            askQuestionBtn: 'ప్రశ్న అడగండి',
+            answerBtn: 'దివ్య జవాబు',
+            summaryTitle: 'అధ్యాయ సారాంశం',
+            teachingsTitle: 'ముఖ్య బోధనలు',
+            progressText: 'మీ యాత్రను ప్రారంభించడానికి ఒక అధ్యాయాన్ని ఎంచుకోండి!',
+            welcomeMessage: {
+                title: '🙏 పవిత్ర సంభాషణకు స్వాగతం 🙏',
+                subtitle: 'కృష్ణ మరియు అర్జునుడి మధ్య దివ్య సంభాషణను ప్రారంభించడానికి పైన నుండి ఒక అధ్యాయాన్ని ఎంచుకోండి'
+            }
         },
-        {
-          speaker: 'అర్జునుడు',
-          text: 'ఓ దేవదేవా, ఇంత భయంకర రూపం గలవాడా, దయచేసి నీవు ఎవరో చెప్పు.',
-          emotion: 'భయభీతుడైన'
-        },
-        {
-          speaker: 'కృష్ణుడు',
-          text: 'నేను భగవంతుని పరమ వ్యక్తిత్వం, పరమ సత్యం, సమస్త సృష్టికి మూలం. నేను శాశ్వతుడను, అవినాశి, అన్ని ప్రాణుల ప్రారంభం మరియు అంత్యం. నేను కాలం, లోకాలను నాశనం చేసే మహానుబావుడను మరియు నేను ఇక్కడికి ప్రజలందరినీ నాశనం చేయడానికి వచ్చాను. నీవు [పాండవులు] తప్ప, ఇరువైపులా ఉన్న సైనికులందరూ వధించబడతారు.',
-          emotion: 'వెల్లడిస్తున్న'
-        },
-        {
-          speaker: 'అర్జునుడు',
-          text: 'ఓ సర్వ జీవుల స్వామీ, నన్ను క్షమించు. మిమ్మల్ని నా స్నేహితుడిగా భావించి, మీ మహిమలను అరియక, నేను మిమ్మల్ని "ఓ కృష్ణా," "ఓ యాదవా," "ఓ నా మిత్రమా," అని తొందరపడి సంబోధించాను. దయచేసి నేను ఉన్మాదంలో కానీ, ప్రేమలో కానీ చేసినదానిని క్షమించండి.',
-          emotion: 'క్షమాపణ'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'నీవు చూస్తున్న నా ఈ రూపం దర్శించడం చాలా కష్టం. దేవతలు కూడా ఈ రూపాన్ని చూడటానికి నిరంతరం అవకాశం కోసం చూస్తుంటారు.',
-          emotion: 'వెల్లడిస్తున్న'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'నేను ఇంతకు ముందు ఎన్నడూ చూడని ఈ విశ్వరూపాన్ని చూసిన తర్వాత, నేను సంతోషంగా ఉన్నాను, కానీ అదే సమయంలో నా మనస్సు భయంతో కలత చెందింది. దయచేసి మీ దయను నాపై కురిపించి, మీ పురుషోత్తమ రూపాన్ని మళ్ళీ వెల్లడించండి.',
-          emotion: 'ప్రార్థన'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'నిష్కల్మషమైన భక్తి సేవ ద్వారా మాత్రమే నేను ఉన్నట్లుగా, నీ ముందు నిలబడి ఉన్నట్లుగా అర్థం చేసుకోబడతాను, మరియు నేరుగా చూడబడతాను.',
-          emotion: 'బోధనాత్మక'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'ఓ కృష్ణా, మీ ఈ అందమైన మానవ రూపం చూసి, నేను ఇప్పుడు శాంతించాను మరియు నా సాధారణ మనస్థితికి తిరిగి వచ్చాను.',
-          emotion: 'ఉపశమనం'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'నా ప్రియమైన అర్జునా, ఎవరైతే నా స్వచ్ఛమైన భక్తి సేవలో నిమగ్నమై, ఫలవంతమైన కార్యకలాపాలు మరియు మానసిక ఊహాగానాల కల్మషాల నుండి విముక్తుడై, నా కోసం పనిచేస్తాడో, నన్ను తన జీవిత పరమ లక్ష్యంగా చేసుకుంటాడో, మరియు ప్రతి జీవికి మిత్రుడిగా ఉంటాడో—అతను నిశ్చయంగా నా వద్దకు వస్తాడు.',
-          emotion: 'నిర్ణయాత్మక'
-        },],
-        summary: 'అర్జునుడు కృష్ణుని విశ్వరూపాన్ని చూడాలని కోరతాడు. కృష్ణుడు అతనికి దివ్య దృష్టిని ప్రసాదించి, భయంకరమైన, సర్వవ్యాప్తమైన బ్రహ్మాండ రూపాన్ని వెల్లడిస్తాడు. ఈ దర్శనం కృష్ణుడిని కాలంగా, సర్వనాశకుడిగా చూపుతుంది, యుద్ధ ఫలితం దైవిక సంకల్పం ద్వారా ముందే నిర్ణయించబడిందని నిర్ధారిస్తుంది.',
-        teachings: 'విశ్వరూపం దైవం యొక్క సంపూర్ణ శక్తిని మరియు సర్వవ్యాప్త స్వభావాన్ని వెల్లడిస్తుంది. మనమందరం ఒక పెద్ద బ్రహ్మాండ ప్రణాళికలో సాధనాలమని ఇది బోధిస్తుంది. భగవంతుని గురించిన నిజమైన అవగాహన మేధోపరమైన అధ్యయనం నుండి కాకుండా స్వచ్ఛమైన భక్తి నుండి వస్తుంది.',
-        moralLesson: 'కొన్నిసార్లు, వాస్తవికత యొక్క పచ్చి శక్తిని ఎదుర్కోవడం భయానకంగా ఉంటుంది, కానీ అది విశ్వంలో మన స్థానాన్ని అర్థం చేసుకోవడానికి సహాయపడుతుంది. నిజమైన బలం ఉన్నత ప్రయోజనానికి శరణాగతి పొందడం మరియు మంచి కోసం ఒక సాధనంగా పనిచేయడం నుండి వస్తుంది.',
-        kidsVersion: 'అర్జునుడు కృష్ణుడిని తన అద్భుతమైన, సర్వశక్తివంతమైన రూపాన్ని చూపించమని అడిగాడు. కృష్ణుడు అతనికి విశ్వంలోని ప్రతిదీ ఉన్న ఒక భారీ దర్శనాన్ని చూపించాడు! అది ఒక పెద్ద ఉరుములా కొంచెం భయానకంగా ఉంది, కానీ అది కృష్ణుడే అన్నింటికీ అధిపతి అని మరియు సరైన పని చేయడానికి అతను భయపడకూడదని అర్జునుడికి చూపించింది.'
-      },
-      12: {
-        title: 'భక్తి యోగం',
-        subtitle: 'ప్రేమ మార్గం',
-        description: 'కృష్ణుడు భక్తి సేవ యొక్క సర్వోన్నత మార్గాన్ని మరియు తన భక్తుల లక్షణాలను వివరిస్తాడు',
-        dialogue: [{
-          speaker: 'అర్జునుడు',
-          text: 'ఎవరు మరింత పరిపూర్ణులుగా పరిగణించబడతారు, ఎల్లప్పుడూ మీ భక్తి సేవలో సరిగ్గా నిమగ్నమై ఉన్నవారా లేక నిరాకార బ్రహ్మాన్ని, అవ్యక్తాన్ని పూజించేవారా?',
-          emotion: 'ప్రశ్నిస్తున్న'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'ఎవరైతే తమ మనస్సులను నా వ్యక్తిగత రూపంపై నిలిపి, గొప్ప మరియు అతీంద్రియ విశ్వాసంతో నన్ను ఎల్లప్పుడూ పూజించడంలో నిమగ్నమై ఉంటారో, వారు నాచే అత్యంత పరిపూర్ణులుగా పరిగణించబడతారు.',
-          emotion: 'ధృవీకరిస్తున్న'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'మరి అవ్యక్తాన్ని పూజించేవారి గురించి?',
-          emotion: 'ఆసక్తి'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'ఎవరి మనస్సులు పరమాత్మ యొక్క అవ్యక్త, నిరాకార లక్షణానికి అంటిపెట్టుకుని ఉంటాయో, వారికి పురోగతి చాలా కష్టతరం. దేహధారులైన వారికి ఆ క్రమశిక్షణలో పురోగతి సాధించడం ఎల్లప్పుడూ కష్టం.',
-          emotion: 'వివరిస్తున్న'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'అంటే మీ వ్యక్తిగత రూపంపై భక్తి సులభమైన మార్గమా?',
-          emotion: 'అర్థం చేసుకున్న'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'నీ మనస్సును నాపై నిలుపు, మరియు నీ బుద్ధిని అంతా నాలో నియోగించు. అప్పుడు నీవు ఎల్లప్పుడూ నాలోనే జీవిస్తావు, సందేహం లేదు.',
-          emotion: 'బోధనాత్మక'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'ఒకవేళ నేను నా మనస్సును చలించకుండా మీపై నిలపలేకపోతే?',
-          emotion: 'అన్వేషిస్తున్న'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'నీవు అలా చేయలేకపోతే, భక్తి-యోగం యొక్క నియమాలను అనుసరించు. ఈ విధంగా నన్ను పొందే కోరికను పెంపొందించుకో.',
-          emotion: 'మార్గదర్శనం'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'ఒకవేళ నేను నియమాలను కూడా పాటించలేకపోతే?',
-          emotion: 'ఆశావాది'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'నీవు అలా చేయలేకపోతే, నా కోసం పనిచేయడానికి ప్రయత్నించు; ఎందుకంటే నా కోసం పనిచేయడం ద్వారా నీవు పరిపూర్ణ దశకు చేరుకుంటావు.',
-          emotion: 'అనుకూలం'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'అది కూడా సాధ్యం కాకపోతే?',
-          emotion: 'నిరాశ'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'అయితే, నీవు నా ఈ చైతన్యంలో పనిచేయలేకపోతే, నీ పని యొక్క అన్ని ఫలితాలను వదిలివేసి, ఆత్మ-స్థితుడవు కావడానికి ప్రయత్నించు.',
-          emotion: 'కరుణ'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'మీకు ప్రియమైన భక్తుని లక్షణాలు ఏమిటి?',
-          emotion: 'భక్తి'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'ఎవరైతే అసూయపడకుండా, సర్వ జీవులకు దయగల మిత్రుడిగా ఉంటాడో, తనను తాను యజమానిగా భావించడో మరియు మిథ్యా అహంకారం నుండి విముక్తుడై ఉంటాడో, సుఖ దుఃఖాలలో సమానంగా ఉంటాడో, సహనశీలి మరియు ఎల్లప్పుడూ సంతృప్తిగా ఉంటాడో.',
-          emotion: 'వివరణ'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'దయచేసి మరిన్ని లక్షణాలను చెప్పండి.',
-          emotion: 'ఆత్రుత'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'ఆత్మ-నియంత్రణ కలిగిన, దృఢ సంకల్పంతో భక్తి సేవలో నిమగ్నమైన, మనస్సు మరియు బుద్ధిని నాపై నిలిపిన భక్తుడు—అటువంటి నా భక్తుడు నాకు చాలా ప్రియమైనవాడు.',
-          emotion: 'ప్రశంసిస్తున్న'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'వారు ప్రపంచంతో ఎలా ప్రవర్తిస్తారు?',
-          emotion: 'జిజ్ఞాస'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'ఎవరి వల్ల ఎవరికీ ఇబ్బంది కలగదో మరియు ఎవరి చేత కలత చెందడో, సుఖ దుఃఖాలలో, భయాందోళనలలో సమచిత్తంతో ఉంటాడో, అతడు నాకు చాలా ప్రియమైనవాడు.',
-          emotion: 'ప్రశాంతం'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'ప్రాపంచిక విషయాల పట్ల వారి వైఖరి ఏమిటి?',
-          emotion: 'ఆసక్తి'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'సాధారణ కార్యకలాపాలపై ఆధారపడని, స్వచ్ఛమైన, నిపుణుడైన, చింతలు లేని, అన్ని బాధల నుండి విముక్తుడైన, మరియు ఏ ఫలితం కోసం ప్రయత్నించని నా భక్తుడు నాకు చాలా ప్రియమైనవాడు.',
-          emotion: 'అనాసక్తి'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'వారు ప్రశంసలు మరియు నిందలను ఎలా నిర్వహిస్తారు?',
-          emotion: 'విశ్లేషణాత్మక'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'మిత్రులు మరియు శత్రువుల పట్ల సమానంగా ఉండేవాడు, గౌరవావమానాలలో, శీతోష్ణాలలో, సుఖ దుఃఖాలలో, కీర్తి అపకీర్తులలో సమచిత్తంతో ఉండేవాడు, కలుషిత సాంగత్యం నుండి విముక్తుడై, ఎల్లప్పుడూ మౌనంగా మరియు దేనితోనైనా సంతృప్తి చెందేవాడు, నాకు చాలా ప్రియమైనవాడు.',
-          emotion: 'సమచిత్తం'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'ఇది సాధించడానికి ఒక ఉన్నత ప్రమాణం.',
-          emotion: 'వినయం'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'ఈ అక్షయమైన భక్తి సేవా మార్గాన్ని అనుసరించి, నన్ను పరమ లక్ష్యంగా చేసుకుని, విశ్వాసంతో పూర్తిగా నిమగ్నమయ్యేవారు, నాకు చాలా చాలా ప్రియమైనవారు.',
-          emotion: 'నిర్ణయాత్మక'
-        }],
-        summary: 'భగవంతుడిని వ్యక్తిగత రూపంలో పూజించడం మంచిదా లేదా నిరాకార పరబ్రహ్మంగా పూజించడం మంచిదా అని అర్జునుడు అడుగుతాడు. రెండు మార్గాలూ తన వద్దకే దారితీస్తాయని కృష్ణుడు ప్రకటించినప్పటికీ, తన వ్యక్తిగత రూపం పట్ల ప్రేమపూర్వక భక్తి (భక్తి యోగం) మార్గం చాలా మందికి అత్యంత ప్రత్యక్షమైనది మరియు అనువైనది అని చెబుతాడు. ఆ తర్వాత అతను నిజమైన భక్తుడి అద్భుతమైన లక్షణాలను వివరిస్తాడు.',
-        teachings: 'భగవంతుని వ్యక్తిగత రూపం పట్ల భక్తి ఆధ్యాత్మిక సాక్షాత్కారానికి సులభమైన మరియు అత్యంత ప్రభావవంతమైన మార్గం. భగవంతుడు అందరికీ అందుబాటులో ఉంటాడు, మరియు మనం ఎక్కడ ఉన్నా మన ప్రయాణాన్ని ప్రారంభించవచ్చు. దయ, సహనం మరియు సమచిత్తం వంటి లక్షణాలను పెంపొందించుకోవడం ఆధ్యాత్మిక జీవితంలో కీలక భాగం.',
-        moralLesson: 'ఒక ఆలోచనను ప్రేమించడం కంటే ఒక వ్యక్తిని ప్రేమించడం సులభం. ప్రేమ మరియు సేవతో నిండిన వ్యక్తిగత సంబంధం ద్వారా భగవంతునితో అనుసంధానం కావడం ఆధ్యాత్మిక ప్రయాణాన్ని ఆనందదాయకంగా మరియు సంతృప్తికరంగా చేస్తుంది. లక్ష్యం కేవలం భగవంతుడి గురించి తెలుసుకోవడం కాదు, భగవంతుడిని ప్రేమించడం.',
-        kidsVersion: 'అర్జునుడు అడిగాడు, "భగవంతుడిని ప్రేమించడానికి ఉత్తమ మార్గం ఏది?" కృష్ణుడు అన్నాడు, "భగవంతుడు నీ ఉత్తమ స్నేహితుడని ఊహించుకో. నీవు చిత్రించుకోగల మరియు మాట్లాడగల స్నేహితుడిని ప్రేమించడం సులభం, కదా?" ఉత్తమ భక్తులు అందరి పట్ల దయతో ఉంటారని, సులభంగా కలత చెందరు మరియు పంచుకోవడానికి సంతోషిస్తారని కూడా ఆయన అన్నాడు.'
-      },
-      13: {
-        title: 'క్షేత్ర క్షేత్రజ్ఞ విభాగ యోగం',
-        subtitle: 'ప్రకృతి మరియు పురుషుడు',
-        description: 'క్షేత్రం (శరీరం) మరియు క్షేత్రజ్ఞుడు (ఆత్మ) మధ్య వ్యత్యాసాన్ని అర్థం చేసుకోవడం',
-        dialogue: [{
-          speaker: 'అర్జునుడు',
-          text: 'ఓ నా ప్రియమైన కృష్ణా, నేను ప్రకృతి, పురుషుడు, మరియు క్షేత్రం మరియు క్షేత్రజ్ఞుడు, మరియు జ్ఞానం మరియు జ్ఞానం యొక్క అంతం గురించి తెలుసుకోవాలనుకుంటున్నాను.',
-          emotion: 'జిజ్ఞాస'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'ఈ శరీరం, ఓ కుంతీ పుత్రుడా, క్షేత్రం అని పిలువబడుతుంది, మరియు ఈ శరీరాన్ని తెలిసినవాడు క్షేత్రజ్ఞుడు అని పిలువబడతాడు.',
-          emotion: 'నిర్వచిస్తున్న'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'అన్ని శరీరాలలో క్షేత్రజ్ఞుడు ఎవరు?',
-          emotion: 'ప్రశ్నిస్తున్న'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'ఓ భరతవంశీయుడా, నేను కూడా అన్ని శరీరాలలో క్షేత్రజ్ఞుడనని నీవు అర్థం చేసుకోవాలి, మరియు ఈ శరీరాన్ని, దాని క్షేత్రజ్ఞుడిని అర్థం చేసుకోవడమే జ్ఞానం అని పిలువబడుతుంది.',
-          emotion: 'వెల్లడిస్తున్న'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'ఈ కార్యకలాపాల క్షేత్రం దేనితో కూడి ఉంటుంది?',
-          emotion: 'విశ్లేషణాత్మక'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'పంచ మహాభూతాలు, మిథ్యా అహంకారం, బుద్ధి, అవ్యక్తం, పది ఇంద్రియాలు మరియు మనస్సు, ఐదు ఇంద్రియార్థాలు, కోరిక, ద్వేషం, సుఖం, దుఃఖం, సమూహం, జీవ లక్షణాలు, మరియు నమ్మకాలు—ఇవన్నీ, సంగ్రహంగా, కార్యకలాపాల క్షేత్రం మరియు దాని పరస్పర చర్యలుగా పరిగణించబడతాయి.',
-          emotion: 'వివరణ'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'జ్ఞానం పొందే ప్రక్రియ ఏమిటి?',
-          emotion: 'అన్వేషిస్తున్న'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'వినయం; గర్వరాహిత్యం; అహింస; సహనం; సరళత; ప్రామాణిక ఆధ్యాత్మిక గురువును ఆశ్రయించడం; శుభ్రత; స్థిరత్వం; ఆత్మ-నియంత్రణ; వీటిని నేను జ్ఞానంగా ప్రకటిస్తున్నాను.',
-          emotion: 'బోధనాత్మక'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'మరియు జ్ఞానం యొక్క వస్తువు ఏమిటి?',
-          emotion: 'ఆసక్తి'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'నేను ఇప్పుడు జ్ఞేయాన్ని వివరిస్తాను, దానిని తెలుసుకోవడం ద్వారా నీవు శాశ్వతాన్ని రుచి చూస్తావు. బ్రహ్మం, ఆత్మ, అనాది మరియు నాకు అధీనమైనది, ఈ భౌతిక ప్రపంచం యొక్క కారణం మరియు ప్రభావానికి అతీతంగా ఉంటుంది.',
-          emotion: 'గంభీరమైన'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'ఆత్మ భౌతిక ప్రకృతితో ఎలా సంకర్షణ చెందుతుంది?',
-          emotion: 'తాత్విక'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'భౌతిక ప్రకృతి మరియు జీవులు అనాది అని అర్థం చేసుకోవాలి. వాటి పరివర్తనలు మరియు పదార్థ గుణాలు భౌతిక ప్రకృతి యొక్క ఉత్పత్తులు. ప్రకృతి అన్ని భౌతిక కారణాలు మరియు ప్రభావాలకు కారణమని చెప్పబడింది, అయితే జీవి ఈ ప్రపంచంలోని వివిధ బాధలు మరియు ఆనందాలకు కారణం.',
-          emotion: 'వివరిస్తున్న'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'అంటే ఆత్మ ప్రకృతితో సంబంధం కారణంగా జీవితాన్ని అనుభవిస్తుందా?',
-          emotion: 'అర్థం చేసుకున్న'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'భౌతిక ప్రకృతిలో ఉన్న జీవి ఈ విధంగా జీవిత మార్గాలను అనుసరిస్తుంది, ప్రకృతి యొక్క మూడు గుణాలను అనుభవిస్తుంది. ఇది ఆ భౌతిక ప్రకృతితో దాని అనుబంధం కారణంగా జరుగుతుంది. ఈ విధంగా అది వివిధ జాతుల మధ్య మంచి మరియు చెడులను ఎదుర్కొంటుంది.',
-          emotion: 'వివరణాత్మక'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'వీటన్నింటికీ సాక్షి ఎవరైనా ఉన్నారా?',
-          emotion: 'ఊహాజనితం'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'అయినప్పటికీ ఈ శరీరంలో మరొకరు ఉన్నారు, ఒక అతీంద్రియ భోక్త, ఆయనే ప్రభువు, పరమ యజమాని, పర్యవేక్షకుడిగా మరియు అనుమతించేవాడిగా ఉంటాడు, మరియు ఆయనను పరమాత్మ అని పిలుస్తారు.',
-          emotion: 'వెల్లడిస్తున్న'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'ఈ సత్యాన్ని ఎలా గ్రహించగలరు?',
-          emotion: 'ఆచరణాత్మక'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'కొందరు ధ్యానం ద్వారా తమలో పరమాత్మను గ్రహిస్తారు, మరికొందరు జ్ఞాన సాగు ద్వారా, ఇంకొందరు ఫలరహితంగా పనిచేయడం ద్వారా గ్రహిస్తారు.',
-          emotion: 'మార్గదర్శనం'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'మరి అంతగా పురోగమించని వారి సంగతేమిటి?',
-          emotion: 'ఆందోళన'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'మళ్ళీ, ఆధ్యాత్మిక జ్ఞానంలో ప్రావీణ్యం లేనప్పటికీ, ఇతరుల నుండి ఆయన గురించి విని పరమ పురుషుడిని పూజించడం ప్రారంభించేవారు ఉన్నారు. అధికారులు నుండి వినే వారి ప్రవృత్తి కారణంగా, వారు కూడా జనన మరణాల మార్గాన్ని దాటుతారు.',
-          emotion: 'సమగ్ర'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'నిజంగా చూసేవాడి దృష్టి ఎలా ఉంటుంది?',
-          emotion: 'దార్శనిక'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'అన్ని శరీరాలలో వ్యక్తిగత ఆత్మతో పాటు పరమాత్మను చూసేవాడు, మరియు నశించే శరీరంలోని ఆత్మ గానీ, పరమాత్మ గానీ ఎప్పటికీ నాశనం కాదని అర్థం చేసుకున్నవాడు, నిజంగా చూస్తాడు.',
-          emotion: 'జ్ఞానోదయం'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'అంటే ఆత్మ స్వయంగా పనిచేయదా?',
-          emotion: 'గ్రహిస్తున్న'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'భౌతిక ప్రకృతితో సృష్టించబడిన శరీరం చేత అన్ని కార్యకలాపాలు నిర్వహించబడుతున్నాయని, మరియు ఆత్మ ఏమీ చేయదని చూడగలవాడు, నిజంగా చూస్తాడు.',
-          emotion: 'ధృవీకరిస్తున్న'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'ఈ జ్ఞానం స్వేచ్ఛకు తాళం చెవిలా అనిపిస్తుంది.',
-          emotion: 'నిశ్చయం'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'జ్ఞాన చక్షువులతో శరీరం మరియు శరీర జ్ఞానికి మధ్య వ్యత్యాసాన్ని చూసేవారు, మరియు భౌతిక ప్రకృతి బంధం నుండి విముక్తి పొందే ప్రక్రియను కూడా అర్థం చేసుకోగలవారు, పరమ గమ్యాన్ని పొందుతారు.',
-          emotion: 'నిర్ణయాత్మక'
-        }],
-        summary: 'కృష్ణుడు పదార్థం మరియు ఆత్మ, కార్యకలాపాల క్షేత్రం మరియు దానిని తెలిసినవాడు మధ్య వ్యత్యాసాన్ని మరియు జ్ఞానం ఎలా విముక్తికి దారితీస్తుందో వివరిస్తాడు.',
-        teachings: 'శరీరం కార్యకలాపాల క్షేత్రం, మరియు ఆత్మ తెలిసినవాడు. పరమాత్మ ప్రతి హృదయంలోనూ ఉన్నాడు. ఈ జ్ఞానాన్ని అర్థం చేసుకుని, భగవంతునికి సేవ చేయడం ద్వారా, భౌతిక బంధాలను అధిగమించవచ్చు.',
-        moralLesson: 'మనం మన శరీరాలు కాదు, శాశ్వతమైన ఆత్మలం. ఇది అర్థం చేసుకోవడం మనకు అందరినీ సమానంగా చూడటానికి మరియు తాత్కాలిక విషయాలపై ఎక్కువగా ఆసక్తి చూపకుండా ఉండటానికి సహాయపడుతుంది.',
-        kidsVersion: 'కృష్ణుడు మనం మన శరీరం కాదు, లోపల ఉన్న ఆత్మ అని బోధించాడు. మనం మన బట్టలు కానట్లే, మనం మన శరీరం కాదు. భగవంతుడు ప్రతిఒక్కరి హృదయంలో స్నేహితుడిగా నివసిస్తాడు.'
-      },
-      14: {
-        title: 'గుణత్రయ విభాగ యోగం',
-        subtitle: 'ప్రకృతి యొక్క మూడు గుణాలు',
-        description: 'భౌతిక ప్రకృతి యొక్క మూడు గుణాల గురించి ఒక సంభాషణ: సత్త్వ, రజో, మరియు తమో గుణాలు.',
-        dialogue: [{
-          speaker: 'కృష్ణుడు',
-          text: 'నేను నీకు మరల ఈ పరమ జ్ఞానాన్ని, సర్వ జ్ఞానాలలో ఉత్తమమైనదానిని ప్రకటించెదను, దీనిని తెలుసుకుని ఋషులందరూ పరమ సిద్ధిని పొందారు.',
-          emotion: 'వాగ్దానం'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'దయచేసి భౌతిక ప్రకృతి యొక్క మూడు గుణాలను వివరించండి. అవి జీవిని ఎలా బంధిస్తాయి?',
-          emotion: 'జిజ్ఞాస'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'భౌతిక ప్రకృతి సత్త్వ, రజో మరియు తమో గుణాలతో కూడి ఉంటుంది. శాశ్వత జీవి ప్రకృతితో సంబంధంలోకి వచ్చినప్పుడు, ఓ మహాబాహు అర్జునా, అతను ఈ గుణాలచే బంధించబడతాడు.',
-          emotion: 'పునాది'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'సత్త్వ గుణం యొక్క స్వభావం ఏమిటి?',
-          emotion: 'ఆసక్తి'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'ఓ పాపరహితుడా, సత్త్వ గుణం, ఇతరుల కంటే స్వచ్ఛమైనది, ప్రకాశవంతమైనది, మరియు అది అన్ని పాప కర్మల నుండి విముక్తినిస్తుంది. ఆ గుణంలో ఉన్నవారు సుఖం మరియు జ్ఞానం యొక్క భావనతో బంధించబడతారు.',
-          emotion: 'వివరణ'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'మరియు రజో గుణం?',
-          emotion: 'ప్రశ్నిస్తున్న'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'రజో గుణం అపరిమితమైన కోరికలు మరియు ఆకాంక్షల నుండి పుడుతుంది, ఓ కుంతీ పుత్రుడా, మరియు దీని కారణంగా దేహధారి జీవి భౌతిక ఫలవంతమైన కార్యకలాపాలకు బంధించబడతాడు.',
-          emotion: 'విశ్లేషణాత్మక'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'తమో గుణం గురించి ఏమిటి?',
-          emotion: 'ఆందోళన'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'ఓ భరత పుత్రుడా, అజ్ఞానం నుండి పుట్టిన తమో గుణం, సర్వ దేహధారి జీవుల భ్రమ అని తెలుసుకో. ఈ గుణం యొక్క ఫలితాలు ఉన్మాదం, సోమరితనం మరియు నిద్ర, ఇవి బంధిత ఆత్మను బంధిస్తాయి.',
-          emotion: 'హెచ్చరిక'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'ఈ గుణాలు ఒకదానితో ఒకటి ఎలా పోటీపడతాయి?',
-          emotion: 'గమనిస్తున్న'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'కొన్నిసార్లు సత్త్వ గుణం ప్రబలంగా ఉండి, రజో మరియు తమో గుణాలను ఓడిస్తుంది. కొన్నిసార్లు రజో గుణం సత్త్వ మరియు తమో గుణాలను ఓడిస్తుంది. మరియు ఇతర సమయాల్లో తమో గుణం సత్త్వ మరియు రజో గుణాలను ఓడిస్తుంది.',
-          emotion: 'వివరణాత్మక'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'ఈ ప్రతి గుణంలో మరణించినవారికి ఏమి జరుగుతుంది?',
-          emotion: 'పర్యవసానం'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'సత్త్వ గుణంలో మరణించినప్పుడు, అతను మహర్షుల స్వచ్ఛమైన ఉన్నత లోకాలను పొందుతాడు. రజో గుణంలో మరణించినప్పుడు, అతను ఫలవంతమైన కార్యకలాపాలలో నిమగ్నమైన వారి మధ్య జన్మిస్తాడు; మరియు తమో గుణంలో మరణించినప్పుడు, అతను జంతు రాజ్యంలో జన్మిస్తాడు.',
-          emotion: 'బోధనాత్మక'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'ఈ గుణాలను ఎలా అధిగమించవచ్చు?',
-          emotion: 'అన్వేషిస్తున్న'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'ఒకరు ఈ మూడు గుణాలను అధిగమించగలిగినప్పుడు, అతను జనన, మరణ, వృద్ధాప్యం మరియు వాటి బాధల నుండి విముక్తుడై, ఈ జీవితంలో కూడా అమృతాన్ని ఆస్వాదించగలడు.',
-          emotion: 'విముక్తి'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'గుణాలను అధిగమించిన వ్యక్తి యొక్క లక్షణాలు ఏమిటి?',
-          emotion: 'వివేచన'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'ప్రకాశం, ఆసక్తి మరియు భ్రమ ఉన్నప్పుడు ద్వేషించనివాడు లేదా అవి అదృశ్యమైనప్పుడు వాటి కోసం ఆరాటపడనివాడు; ఈ భౌతిక గుణాల అన్ని ప్రతిచర్యల ద్వారా అచంచలంగా మరియు కలత చెందకుండా, తటస్థంగా మరియు అతీతంగా ఉండేవాడు.',
-          emotion: 'వర్ణిస్తున్న'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'అటువంటి వ్యక్తి ఎలా ప్రవర్తిస్తాడు?',
-          emotion: 'ప్రవర్తనా'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'ఆత్మలో స్థితుడై, సుఖ దుఃఖాలను సమానంగా పరిగణించేవాడు; మట్టి గడ్డ, రాయి మరియు బంగారు ముక్కను సమాన దృష్టితో చూసేవాడు; ఇష్టమైన మరియు అయిష్టమైన వాటి పట్ల సమానంగా ఉండేవాడు; స్థిరమైనవాడు, ప్రశంసలు మరియు నిందలలో సమానంగా స్థితుడై ఉండేవాడు.',
-          emotion: 'సమచిత్తం'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'ఈ అతీంద్రియ స్థితిని సాధించే సాధనం ఏమిటి?',
-          emotion: 'ఆచరణాత్మక'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'అన్ని పరిస్థితులలోనూ తప్పకుండా, పూర్తి భక్తి సేవలో నిమగ్నమైనవాడు, వెంటనే భౌతిక ప్రకృతి గుణాలను అధిగమించి, బ్రహ్మ స్థాయికి చేరుకుంటాడు.',
-          emotion: 'నిర్ణయాత్మక'
-        }],
-        summary: 'కృష్ణుడు సమస్త జీవులను ప్రభావితం చేసే సత్త్వ, రజో, తమో గుణాలనే భౌతిక ప్రకృతి యొక్క మూడు గుణాలను వివరిస్తాడు. ఈ గుణాలు ఆత్మను ఎలా బంధిస్తాయో మరియు భక్తి సేవ ద్వారా వాటిని ఎలా అధిగమించవచ్చో వివరిస్తాడు.',
-        teachings: 'ప్రకృతి యొక్క మూడు గుణాలు మన అస్తిత్వాన్ని నిర్దేశిస్తాయి. సత్త్వగుణం సుఖానికి మరియు జ్ఞానానికి, రజోగుణం తీవ్రమైన కార్యకలాపాలకు మరియు కోరికలకు, మరియు తమోగుణం భ్రమకు దారితీస్తుంది. భక్తి సేవలో నిమగ్నం కావడం ద్వారా, మనం ఈ గుణాలను అధిగమించి ఆధ్యాత్మిక సాక్షాత్కారాన్ని సాధించవచ్చు.',
-        moralLesson: 'మన చర్యలు మరియు వైఖరులు ప్రకృతి గుణాలచే ప్రభావితమవుతాయి. సత్త్వగుణం కోసం ప్రయత్నించి, ఆధ్యాత్మిక అభ్యాసాలలో నిమగ్నం కావడం ద్వారా, మనం తక్కువ గుణాలను అధిగమించి, ఉద్దేశ్యం మరియు స్పష్టత గల జీవితం వైపు పయనించవచ్చు.',
-        kidsVersion: 'మీ దగ్గర మూడు రకాల కళ్ళద్దాలు ఉన్నాయని ఊహించుకోండి. ఒకటి ప్రతిదీ సంతోషంగా మరియు ప్రకాశవంతంగా కనిపించేలా చేస్తుంది (సత్త్వం), ఒకటి మిమ్మల్ని చుట్టూ పరుగెత్తి లక్ష పనులు చేయాలనిపిస్తుంది (రజస్సు), మరియు ఒకటి మీకు నిద్ర మరియు గందరగోళాన్ని కలిగిస్తుంది (తమస్సు). కృష్ణుడు ఈ కళ్ళద్దాలన్నింటినీ తీసివేసి, వస్తువులను యథాతథంగా ఎలా చూడాలో మనకు బోధిస్తాడు.'
-      },
-      15: {
-        title: 'పురుషోత్తమ యోగం',
-        subtitle: 'పరమ పురుషుని యోగం',
-        description: 'కృష్ణుడు భౌతిక ప్రపంచాన్ని ఒక తలక్రిందులుగా ఉన్న మర్రి చెట్టుగా వర్ణించి, తనను తాను పరమ పురుషుడిగా వెల్లడిస్తాడు.',
-        dialogue: [{
-          speaker: 'కృష్ణుడు',
-          text: 'ఒక శాశ్వతమైన మర్రి చెట్టు ఉందని చెప్పబడింది, దాని వేర్లు పైకి మరియు కొమ్మలు కిందికి ఉంటాయి మరియు దాని ఆకులు వేద మంత్రాలు. ఈ చెట్టును తెలిసినవాడు వేదాలను తెలిసినవాడు.',
-          emotion: 'రూపకం'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'తలక్రిందులుగా ఉన్న చెట్టా? ఇది దేనికి ప్రతీక?',
-          emotion: 'గందరగోళం'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'ఈ చెట్టు భౌతిక ప్రపంచాన్ని సూచిస్తుంది. దాని కొమ్మలు కిందికి మరియు పైకి విస్తరించి, భౌతిక ప్రకృతి యొక్క మూడు గుణాలచే పోషించబడతాయి. దాని వేర్లు, మానవ సమాజం యొక్క ఫలవంతమైన చర్యలు, ఈ ప్రపంచానికి బంధించబడి ఉంటాయి.',
-          emotion: 'వివరణాత్మక'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'ఈ చిక్కు నుండి ఎలా విముక్తి పొందగలరు?',
-          emotion: 'అన్వేషిస్తున్న'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'ఈ చెట్టు యొక్క నిజమైన రూపం ఈ ప్రపంచంలో గ్రహించబడదు. వైరాగ్యమనే ఆయుధంతో ఈ గట్టిగా పాతుకుపోయిన చెట్టును నరికివేయాలి. ఆ తర్వాత, ఒకసారి వెళ్ళిన తర్వాత తిరిగి రాని స్థలాన్ని వెతకాలి.',
-          emotion: 'బోధనాత్మక'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'ఈ భౌతిక ప్రపంచంలోని ఆత్మ యొక్క స్వభావం ఏమిటి?',
-          emotion: 'జిజ్ఞాస'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'ఈ బంధిత ప్రపంచంలోని జీవులు నా శాశ్వతమైన అంశాలు. బంధిత జీవితం కారణంగా, వారు మనస్సుతో సహా ఆరు ఇంద్రియాలతో చాలా కష్టపడి పోరాడుతున్నారు.',
-          emotion: 'వెల్లడిస్తున్న'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'ఆత్మ ఒక శరీరం నుండి మరొక శరీరానికి ఎలా ప్రయాణిస్తుంది?',
-          emotion: 'ఆసక్తి'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'భౌతిక ప్రపంచంలోని జీవి, గాలి సువాసనలను మోసుకెళ్ళినట్లుగా, తన వివిధ జీవిత భావనలను ఒక శరీరం నుండి మరొక శరీరానికి మోసుకెళ్తాడు. ఈ విధంగా అతను ఒక రకమైన శరీరాన్ని తీసుకుని, మళ్ళీ దానిని విడిచిపెట్టి మరొకటి తీసుకుంటాడు.',
-          emotion: 'వివరణ'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'చాలా మంది దీనిని ఎందుకు గ్రహించలేరు?',
-          emotion: 'ప్రశ్నిస్తున్న'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'ఒక జీవి తన శరీరాన్ని ఎలా విడిచిపెట్టగలడో మూర్ఖులు అర్థం చేసుకోలేరు, లేదా ప్రకృతి గుణాల మాయలో అతను ఏ రకమైన శరీరాన్ని అనుభవిస్తాడో కూడా వారు అర్థం చేసుకోలేరు. కానీ జ్ఞానంలో శిక్షణ పొందిన కళ్ళు ఉన్నవాడు ఇదంతా చూడగలడు.',
-          emotion: 'వివేచన'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'సూర్యచంద్రుల కాంతి ఎక్కడ నుండి వస్తుంది?',
-          emotion: 'బ్రహ్మాండ'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'ప్రపంచమంతటినీ ప్రకాశింపజేసే సూర్యుని తేజస్సు, చంద్రుని తేజస్సు మరియు అగ్ని తేజస్సు అన్నీ నా నుండే వస్తాయి.',
-          emotion: 'మూలం'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'మీరు సమస్త జీవనాన్ని ఎలా పోషిస్తారు?',
-          emotion: 'ఆశ్చర్యపోతున్న'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'నేను ప్రతి గ్రహంలోకి ప్రవేశిస్తాను, మరియు నా శక్తితో అవి కక్ష్యలో ఉంటాయి. నేను చంద్రుడినై, తద్వారా అన్ని కూరగాయలకు జీవ రసాన్ని సరఫరా చేస్తాను. నేను సర్వ జీవుల శరీరాలలో జీర్ణశక్తి అనే అగ్నిని.',
-          emotion: 'పోషించేవాడు'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'జ్ఞానం మరియు విస్మృతి ఎక్కడ నుండి వస్తాయి?',
-          emotion: 'తాత్విక'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'నేను ప్రతిఒక్కరి హృదయంలో ఆసీనుడనై ఉన్నాను, మరియు నా నుండే స్మృతి, జ్ఞానం మరియు విస్మృతి వస్తాయి. వేదాలన్నిటి ద్వారా, నేను తెలుసుకోదగినవాడిని. నిజానికి, నేను వేదాంతాన్ని సంకలనం చేసినవాడిని, మరియు నేను వేదాలను తెలిసినవాడిని.',
-          emotion: 'సర్వజ్ఞుడు'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'మీరు చెప్పే పరమ పురుషుడు ఎవరు?',
-          emotion: 'అన్వేషిస్తున్న'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'రెండు రకాల జీవులు ఉన్నారు, నశించేవారు మరియు నశించనివారు. భౌతిక ప్రపంచంలో ప్రతి జీవి నశించేది, మరియు ఆధ్యాత్మిక ప్రపంచంలో ప్రతి జీవి నశించనిది అని పిలువబడుతుంది. ఈ రెండింటితో పాటు, గొప్ప జీవ వ్యక్తిత్వం, పరమాత్మ, అవినాశి అయిన ప్రభువు స్వయంగా ఉన్నాడు.',
-          emotion: 'నిర్వచిస్తున్న'
-        }, {
-          speaker: 'అర్జునుడు',
-          text: 'మరియు ఆ పరమ పురుషుడు మీరేనా?',
-          emotion: 'గ్రహిస్తున్న'
-        }, {
-          speaker: 'కృష్ణుడు',
-          text: 'నేను అతీతుడను కాబట్టి, నశించే మరియు నశించని రెండింటికీ అతీతుడను కాబట్టి, మరియు నేను గొప్పవాడిని కాబట్టి, నేను ప్రపంచంలో మరియు వేదాలలో ఆ పరమ పురుషుడిగా కీర్తించబడతాను.',
-          emotion: 'నిర్ణయాత్మక'
-        }],
-        summary: 'కృష్ణుడు భౌతిక ప్రపంచాన్ని ఒక తలక్రిందులుగా ఉన్న మర్రి చెట్టు యొక్క రూపకాలం ద్వారా వివరిస్తాడు మరియు తాను నశించే మరియు నశించని వారికి అతీతుడైన పరమ పురుషుడు, పురుషోత్తముడని వివరిస్తాడు.',
-        teachings: 'భౌతిక ప్రపంచం ఒక తాత్కాలిక మరియు భ్రాంతికరమైన వాస్తవికత. వైరాగ్యాన్ని పెంపొందించుకుని, పరమ పురుషుడికి శరణాగతి పొందడం ద్వారా, విముక్తిని పొందవచ్చు. కృష్ణుడు అంతిమ వాస్తవికత, అన్నింటికీ మూలం మరియు పోషకుడు.',
-        moralLesson: 'మనం ఈ ప్రపంచంలోని వస్తువులకు ఎక్కువగా అంటిపెట్టుకోకూడదు, ఎందుకంటే అవి తాత్కాలికమైనవి. మన ఆధ్యాత్మిక అభివృద్ధి మరియు పరమాత్మతో అనుబంధంపై దృష్టి పెట్టడం ద్వారా, మనం నిజమైన మరియు శాశ్వతమైన ఆనందాన్ని పొందవచ్చు.',
-        kidsVersion: 'కృష్ణుడు ప్రపంచం ఒక పెద్ద, తలక్రిందులుగా ఉన్న చెట్టు లాంటిదని చెబుతాడు. మనం దాని కొమ్మలలో చిక్కుకుపోవచ్చు, కానీ మన దగ్గర ఒక పటం (ఆధ్యాత్మిక జ్ఞానం) మరియు పదునైన గొడ్డలి (వైరాగ్యం) ఉంటే, మనం బయటపడి ఆయనతో పాటు కాంతి మరియు ఆనందం యొక్క నిజమైన ప్రపంచానికి తిరిగి రావచ్చు.'
-      },
-      16: {
-                title: 'దైవాసుర సంపద్విభాగ యోగం',
-                subtitle: 'దైవ మరియు అసుర స్వభావాలు',
-                description: 'కృష్ణుడు దైవ మరియు అసుర గుణాలను మరియు వాటి పరిణామాలను వివరిస్తాడు',
-                dialogue: [
-                    { speaker: 'కృష్ణుడు', text: 'నిర్భయత్వం, తన అస్తిత్వాన్ని శుద్ధి చేసుకోవడం, ఆధ్యాత్మిక జ్ఞానాన్ని పెంపొందించుకోవడం, దానం, ఆత్మ-నియంత్రణ, యజ్ఞం చేయడం—ఈ అతీంద్రియ లక్షణాలు దైవిక స్వభావం గల దైవ పురుషులకు చెందినవి.', emotion: 'సద్గుణాల జాబితా' },
-                    { speaker: 'అర్జునుడు', text: 'ఇతర దైవిక లక్షణాలు ఏమిటి?', emotion: 'ఆసక్తి' },
-                    { speaker: 'కృష్ణుడు', text: 'అహింస, సత్యం, క్రోధం నుండి విముక్తి, త్యాగం, శాంతి, దోషారోపణల పట్ల విరక్తి, సర్వ జీవుల పట్ల దయ, లోభం నుండి విముక్తి, సౌమ్యత, వినయం, స్థిరమైన సంకల్పం.', emotion: 'వివరణ' },
-                    { speaker: 'అర్జునుడు', text: 'మరియు అసుర లక్షణాలు ఏమిటి, ఓ కృష్ణా?', emotion: 'వ్యతిరేకం' },
-                    { speaker: 'కృష్ణుడు', text: 'గర్వం, అహంకారం, పొగరు, క్రోధం, కఠినత్వం మరియు అజ్ఞానం—ఈ లక్షణాలు అసుర స్వభావం కలవారికి చెందినవి.', emotion: 'హెచ్చరిక' },
-                    { speaker: 'అర్జునుడు', text: 'ఈ రెండు స్వభావాలు దేనికి దారితీస్తాయి?', emotion: 'పర్యవసానం' },
-                    { speaker: 'కృష్ణుడు', text: 'దైవ గుణాలు ముక్తికి దోహదం చేస్తాయి, అయితే అసుర గుణాలు బంధానికి కారణమవుతాయి. చింతించకు, ఓ పాండుపుత్రుడా, నీవు దైవ గుణాలతో జన్మించావు.', emotion: 'భరోసా' },
-                    { speaker: 'అర్జునుడు', text: 'అసుర స్వభావం కలవారు ప్రపంచాన్ని ఎలా చూస్తారు?', emotion: 'జిజ్ఞాస' },
-                    { speaker: 'కృష్ణుడు', text: 'ఈ ప్రపంచం అవాస్తవమని, ఆధారరహితమని, దేవుని నియంత్రణలో లేదని వారు అంటారు. ఇది కామవాంఛ నుండి పుట్టిందని, కామం తప్ప మరే కారణం లేదని వారు అంటారు.', emotion: 'వివరణాత్మక' },
-                    { speaker: 'అర్జునుడు', text: 'జీవితం పట్ల వారి దృక్పథం ఏమిటి?', emotion: 'విశ్లేషణాత్మక' },
-                    { speaker: 'కృష్ణుడు', text: 'ఇంద్రియాలను తృప్తిపరచడమే మానవ నాగరికత యొక్క ప్రధాన అవసరమని వారు నమ్ముతారు. జీవితాంతం వరకు వారి ఆందోళన అపరిమితంగా ఉంటుంది. వందల వేల కోరికల వలలో చిక్కుకుని, కామక్రోధాలలో మునిగి, ఇంద్రియ సుఖాల కోసం అక్రమ మార్గాల్లో డబ్బు సంపాదిస్తారు.', emotion: 'విమర్శనాత్మక' },
-                    { speaker: 'అర్జునుడు', text: 'ఇది ఒక దయనీయమైన జీవితంలా అనిపిస్తుంది.', emotion: 'గమనిస్తున్న' },
-                    { speaker: 'కృష్ణుడు', text: 'ఈ ఆందోళనలన్నిటితో కలవరపడి, భ్రమల వలలో చిక్కుకుని, వారు ఇంద్రియ భోగాలకు చాలా బలంగా అంటుకుపోయి నరకంలో పడతారు.', emotion: 'ధృవీకరిస్తున్న' },
-                    { speaker: 'అర్జునుడు', text: 'అలాంటి వారు మిమ్మల్ని ఎప్పుడైనా పొందుతారా?', emotion: 'అన్వేషిస్తున్న' },
-                    { speaker: 'కృష్ణుడు', text: 'అసూయపరులు మరియు దుష్టులు, మనుషులలో అధములు అయిన వారిని నేను నిరంతరం భౌతిక అస్తిత్వపు సముద్రంలో, వివిధ అసుర జాతుల జీవితంలోకి పడవేస్తాను.', emotion: 'న్యాయం' },
-                    { speaker: 'అర్జునుడు', text: 'ఈ నరక జీవితానికి ద్వారాలు ఏవి?', emotion: 'జాగ్రత్త' },
-                    { speaker: 'కృష్ణుడు', text: 'ఈ నరకానికి మూడు ద్వారాలు ఉన్నాయి—కామం, క్రోధం మరియు లోభం. ప్రతి వివేకవంతుడు వీటిని విడిచిపెట్టాలి, ఎందుకంటే అవి ఆత్మ పతనానికి దారితీస్తాయి.', emotion: 'తీవ్ర హెచ్చరిక' },
-                    { speaker: 'అర్జునుడు', text: 'మరియు ఈ మూడు ద్వారాల నుండి తప్పించుకున్నవాడు?', emotion: 'ఆశావాది' },
-                    { speaker: 'కృష్ణుడు', text: 'నరకం యొక్క ఈ మూడు ద్వారాల నుండి తప్పించుకున్నవాడు, ఓ కుంతీ పుత్రుడా, ఆత్మ-సాక్షాత్కారానికి అనుకూలమైన కార్యాలు చేసి, క్రమంగా పరమ గమ్యాన్ని పొందుతాడు.', emotion: 'వాగ్దానం' },
-                    { speaker: 'అర్జునుడు', text: 'ఏది చేయాలో, ఏది చేయకూడదో ఎలా తెలుసుకోవాలి?', emotion: 'ఆచరణాత్మక' },
-                    { speaker: 'కృష్ణుడు', text: 'శాస్త్ర విధులను విస్మరించి, తన ఇష్టానుసారం ప్రవర్తించేవాడు పరిపూర్ణతను, సుఖాన్ని, లేదా పరమ గమ్యాన్ని పొందడు. అందువల్ల శాస్త్ర నిబంధనల ద్వారా ఏది కర్తవ్యమో, ఏది కాదో అర్థం చేసుకోవాలి.', emotion: 'మార్గదర్శనం' },
-                    { speaker: 'అర్జునుడు', text: 'అంటే అన్ని పనులలో శాస్త్రాలే నాకు మార్గదర్శకమా?', emotion: 'అర్థం చేసుకున్న' },
-                    { speaker: 'కృష్ణుడు', text: 'అవును, శాస్త్ర నియమాలను తెలుసుకుని, నీవు క్రమంగా ఉన్నతి పొందేలా ప్రవర్తించాలి.', emotion: 'నిర్ణయాత్మక' }
-                ],
-                summary: 'కృష్ణుడు దైవ మరియు అసుర గుణాలను, వాటి పరిణామాలను వివరిస్తాడు మరియు ఆధ్యాత్మిక అభివృద్ధికి శాస్త్ర మార్గదర్శకాలను అనుసరించడంపై నొక్కి చెబుతాడు.',
-                teachings: 'నిర్భయత్వం, పవిత్రత మరియు నిజాయితీ వంటి దైవ గుణాలు ముక్తికి దారితీస్తాయి. గర్వం, క్రోధం మరియు లోభం వంటి అసుర గుణాలు బంధానికి దారితీస్తాయి. సరైన ప్రవర్తనకు శాస్త్రాలు మార్గనిర్దేశం చేస్తాయి.',
-                moralLesson: 'మనం దయ, నిజాయితీ మరియు ఆత్మ-నియంత్రణ వంటి మంచి లక్షణాలను పెంపొందించుకోవాలి మరియు క్రోధం, లోభం మరియు గర్వం వంటి చెడు లక్షణాలకు దూరంగా ఉండాలి.',
-                kidsVersion: 'కృష్ణుడు మంచి మరియు చెడు గుణాల గురించి బోధించాడు. మంచి వాళ్ళు దయ, నిజాయితీ మరియు సహాయం చేసే గుణం కలిగి ఉంటారు. చెడ్డవాళ్ళు కోపిష్ఠులుగా, అత్యాశపరులుగా మరియు క్రూరంగా ఉంటారు. మనం ఎప్పుడూ మంచిగా ఉండటానికి ప్రయత్నించాలి.'
-            },
-            17: {
-                title: 'శ్రద్ధాత్రయ విభాగ యోగం',
-                subtitle: 'శ్రద్ధ యొక్క మూడు రకాలు',
-                description: 'శ్రద్ధ యొక్క మూడు రకాలు—సత్త్వ, రజో, మరియు తమో—మరియు అవి ఆరాధన, ఆహారం మరియు దానంలో ఎలా వ్యక్తమవుతాయో అన్వేషణ.',
-                dialogue: [
-                    { speaker: 'అర్జునుడు', text: 'ఓ కృష్ణా, శాస్త్ర సూత్రాలను పాటించకుండా తమ స్వంత కల్పన ప్రకారం పూజలు చేసేవారి పరిస్థితి ఏమిటి? వారు సత్త్వంలో ఉన్నారా, రజస్సులోనా లేక తమస్సులోనా?', emotion: 'ప్రశ్నిస్తున్న' },
-                    { speaker: 'కృష్ణుడు', text: 'దేహధారి ఆత్మ పొందిన ప్రకృతి గుణాల ప్రకారం, వారి శ్రద్ధ మూడు రకాలుగా ఉంటుంది—సత్త్వంలో, రజస్సులో లేదా తమస్సులో. ఇప్పుడు దాని గురించి విను.', emotion: 'వర్గీకరిస్తున్న' },
-                    { speaker: 'అర్జునుడు', text: 'శ్రద్ధ ఒకరి స్వభావాన్ని ఎలా నిర్ధారిస్తుంది?', emotion: 'ఆసక్తి' },
-                    { speaker: 'కృష్ణుడు', text: 'ఓ భరతపుత్రుడా, ప్రకృతి యొక్క వివిధ గుణాల క్రింద వారి ఉనికి ప్రకారం, ఒకరు ఒక ప్రత్యేక రకమైన శ్రద్ధను పెంపొందించుకుంటారు. జీవి తాను పొందిన గుణాల ప్రకారం ఒక ప్రత్యేక శ్రద్ధ కలవాడని చెప్పబడింది.', emotion: 'వివరణాత్మక' },
-                    { speaker: 'అర్జునుడు', text: 'ఈ వివిధ రకాల శ్రద్ధ పూజలో ఎలా వ్యక్తమవుతుంది?', emotion: 'విచారిస్తున్న' },
-                    { speaker: 'కృష్ణుడు', text: 'సత్త్వ గుణంలో ఉన్నవారు దేవతలను పూజిస్తారు; రజో గుణంలో ఉన్నవారు యక్షరాక్షసులను పూజిస్తారు; మరియు తమో గుణంలో ఉన్నవారు భూతప్రేతాలను పూజిస్తారు.', emotion: 'భేదం చూపుతున్న' },
-                    { speaker: 'అర్జునుడు', text: 'మరియు ఇది మనం తినే ఆహారానికి ఎలా వర్తిస్తుంది?', emotion: 'ఆచరణాత్మక' },
-                    { speaker: 'కృష్ణుడు', text: 'సత్త్వ గుణంలో ఉన్నవారికి ప్రియమైన ఆహారాలు ఆయుష్షును పెంచుతాయి, ఉనికిని శుద్ధి చేస్తాయి మరియు బలం, ఆరోగ్యం, ఆనందం మరియు సంతృప్తిని ఇస్తాయి. అటువంటి ఆహారాలు రసవంతమైనవి, కొవ్వు పదార్థాలు కలిగినవి, ఆరోగ్యకరమైనవి మరియు హృదయానికి ఆహ్లాదకరమైనవి.', emotion: 'వివరణ' },
-                    { speaker: 'అర్జునుడు', text: 'రజో మరియు తమో గుణాలలోని ఆహారాల గురించి ఏమిటి?', emotion: 'వ్యతిరేకం' },
-                    { speaker: 'కృష్ణుడు', text: 'అత్యంత చేదుగా, పుల్లగా, ఉప్పగా, వేడిగా, ఘాటుగా, పొడిగా మరియు మండే స్వభావం గల ఆహారాలు రజో గుణంలో ఉన్నవారికి ప్రియమైనవి. అటువంటి ఆహారాలు దుఃఖం, కష్టం మరియు వ్యాధిని కలిగిస్తాయి. వండిన మూడు గంటల తర్వాత తినే ఆహారం, రుచిలేని, కుళ్ళిన మరియు దుర్గంధమైన ఆహారం, మరియు మిగిలిపోయిన మరియు అంటరాని వస్తువులతో కూడిన ఆహారం తమో గుణంలో ఉన్నవారికి ప్రియమైనది.', emotion: 'హెచ్చరిక' },
-                    { speaker: 'అర్జునుడు', text: 'గుణాలు యజ్ఞాన్ని ఎలా ప్రభావితం చేస్తాయి?', emotion: 'విశ్లేషణాత్మక' },
-                    { speaker: 'కృష్ణుడు', text: 'శాస్త్ర నిర్దేశాల ప్రకారం, కర్తవ్యంగా, ప్రతిఫలం కోరని వారిచే చేయబడిన యజ్ఞం సత్త్వ గుణ స్వభావం కలది.', emotion: 'మూల్యాంకనం' },
-                    { speaker: 'అర్జునుడు', text: 'మరియు తపస్సు?', emotion: 'అన్వేషిస్తున్న' },
-                    { speaker: 'కృష్ణుడు', text: 'శరీర తపస్సు అంటే పరమాత్మ, బ్రాహ్మణులు, ఆధ్యాత్మిక గురువు మరియు తల్లిదండ్రుల వంటి పెద్దలను పూజించడం, మరియు శుభ్రత, సరళత, బ్రహ్మచర్యం మరియు అహింస పాటించడం.', emotion: 'బోధనాత్మక' },
-                    { speaker: 'అర్జునుడు', text: 'వివిధ గుణాలలో దానం గురించి ఏమిటి?', emotion: 'వివేచన' },
-                    { speaker: 'కృష్ణుడు', text: 'కర్తవ్యంగా, ప్రతిఫలం ఆశించకుండా, సరైన సమయంలో మరియు ప్రదేశంలో, మరియు యోగ్యుడైన వ్యక్తికి ఇవ్వబడిన దానం సత్త్వ గుణంలో ఉన్నట్లుగా పరిగణించబడుతుంది.', emotion: 'నిర్వచిస్తున్న' },
-                    { speaker: 'అర్జునుడు', text: '"ఓం తత్ సత్" యొక్క ప్రాముఖ్యత ఏమిటి?', emotion: 'పవిత్రమైన' },
-                    { speaker: 'కృష్ణుడు', text: 'సృష్టి ప్రారంభం నుండి, ఓం, తత్ మరియు సత్ అనే మూడు పదాలు పరమ సత్యాన్ని సూచించడానికి ఉపయోగించబడ్డాయి. అందువల్ల, శ్రద్ధతో చేయబడిన యజ్ఞ, దాన మరియు తపస్సు కర్మలు ఎల్లప్పుడూ పరమాత్మను పొందడానికి "ఓం" తో ప్రారంభించబడతాయి.', emotion: 'గంభీరమైన' },
-                    { speaker: 'అర్జునుడు', text: 'ఈ కర్మలు శ్రద్ధ లేకుండా చేస్తే ఏమిటి?', emotion: 'ఆందోళన' },
-                    { speaker: 'కృష్ణుడు', text: 'పరమాత్మపై శ్రద్ధ లేకుండా యజ్ఞం, దానం లేదా తపస్సుగా చేయబడిన ఏదైనా అశాశ్వతమైనది. దానిని "అసత్" అని పిలుస్తారు మరియు అది ఈ జీవితంలో మరియు తదుపరి జీవితంలో నిరుపయోగం.', emotion: 'నిశ్చయాత్మక' },
-                    { speaker: 'అర్జునుడు', text: 'అంటే శ్రద్ధ అత్యంత ఆవశ్యకమైన అంశమా?', emotion: 'అర్థం చేసుకున్న' },
-                    { speaker: 'కృష్ణుడు', text: 'అవును, అర్జునా. శ్రద్ధ, సత్త్వ గుణంలో ఉండి, శాస్త్రాలచే మార్గనిర్దేశం చేయబడినప్పుడు, ఒకరిని అత్యున్నత పరిపూర్ణతకు తీసుకువెళుతుంది.', emotion: 'నిర్ణయాత్మక' }
-                ],
-                summary: 'శ్రద్ధ మూడు గుణాలలో ఒకటిగా ఉండవచ్చని కృష్ణుడు వివరిస్తాడు: సత్త్వం, రజస్సు, లేదా తమస్సు. ఇది ఒకరి పూజ, ఆహారం, తపస్సు మరియు దానాన్ని ప్రభావితం చేస్తుంది. శ్రద్ధ లేకుండా చేసే ఏ ఆధ్యాత్మిక అభ్యాసమైనా చివరికి నిరుపయోగమని ఆయన నొక్కి చెబుతాడు.',
-                teachings: 'ఆరోగ్యకరమైన ఆహారాన్ని ఎంచుకోవడం, గౌరవప్రదంగా పూజించడం మరియు అపేక్ష లేకుండా దానం చేయడం ద్వారా మీ శ్రద్ధను సత్త్వ గుణంతో సమలేఖనం చేసుకోండి. "ఓం తత్ సత్" అనే పదబంధం పరమ సత్యాన్ని సూచిస్తుంది. అన్ని ఆధ్యాత్మిక అభ్యాసాలలో శ్రద్ధ అత్యంత అవసరమైన అంశం.',
-                moralLesson: 'మీ శ్రద్ధ యొక్క నాణ్యత మీ జీవితం యొక్క నాణ్యతను నిర్ధారిస్తుంది. స్వచ్ఛమైన ఉద్దేశ్యాలతో మరియు స్వార్థపూరిత కోరికలు లేకుండా సత్త్వంలో పనిచేయడానికి ప్రయత్నించండి. ఇది ఆధ్యాత్మిక అభివృద్ధికి మరియు ఆనందానికి దారితీస్తుంది.',
-                kidsVersion: 'మీకు మూడు రకాల కళ్ళద్దాలు ఉన్నాయని ఊహించుకోండి: స్పష్టమైనవి, ఎర్రటివి మరియు బూడిద రంగువి. మీరు స్పష్టమైన కళ్ళద్దాలు (సత్త్వం) ధరించినప్పుడు, మీరు ప్రతిదీ చక్కగా చూస్తారు. మీరు ఎర్రటి కళ్ళద్దాలు (రజస్సు) ధరించినప్పుడు, ప్రతిదీ ఉద్రేకంగా కనిపిస్తుంది మరియు మీరు ఇంకా ఎక్కువ కోరుకుంటారు. మీరు బూడిద రంగు కళ్ళద్దాలు (తమస్సు) ధరించినప్పుడు, ప్రతిదీ చీకటిగా మరియు గందరగోళంగా ఉంటుంది. మంచి విషయాలపై విశ్వాసం ఉంచడం, ఆరోగ్యకరమైన ఆహారం తినడం మరియు ఇతరుల పట్ల దయగా ఉండటం ద్వారా ఎల్లప్పుడూ స్పష్టమైన కళ్ళద్దాలను ఉపయోగించాలని కృష్ణుడు మనకు బోధిస్తాడు.'
-            },
-            18: {
-                title: 'మోక్ష సన్యాస యోగం',
-                subtitle: 'శరణాగతి ద్వారా విముక్తి',
-                description: 'కృష్ణుడు త్యాగం, నిస్వార్థ కర్మ మరియు సంపూర్ణ శరణాగతి ద్వారా విముక్తి మార్గంపై తన అంతిమ బోధనలను అందిస్తాడు.',
-                dialogue: [
-                    { speaker: 'అర్జునుడు', text: 'ఓ మహాబాహు, నేను త్యాగం [త్యాగ] మరియు సన్యాసం [సన్న్యాస] యొక్క ఉద్దేశ్యాన్ని అర్థం చేసుకోవాలనుకుంటున్నాను.', emotion: 'అన్వేషిస్తున్న' },
-                    { speaker: 'కృష్ణుడు', text: 'భౌతిక కోరికపై ఆధారపడిన కార్యకలాపాలను విడిచిపెట్టడాన్ని గొప్ప పండితులు సన్యాసం అని పిలుస్తారు. మరియు అన్ని కార్యకలాపాల ఫలితాలను విడిచిపెట్టడాన్ని జ్ఞానులు త్యాగం అని పిలుస్తారు.', emotion: 'నిర్వచిస్తున్న' },
-                    { speaker: 'అర్జునుడు', text: 'అన్ని పనులను విడిచిపెట్టాలా?', emotion: 'ప్రశ్నిస్తున్న' },
-                    { speaker: 'కృష్ణుడు', text: 'యజ్ఞ, దాన మరియు తపస్సు కార్యాలను విడిచిపెట్టకూడదు; వాటిని తప్పక చేయాలి. నిజానికి, యజ్ఞం, దానం మరియు తపస్సు గొప్ప ఆత్మలను కూడా శుద్ధి చేస్తాయి.', emotion: 'వివరిస్తున్న' },
-                    { speaker: 'అర్జునుడు', text: 'అన్ని కర్మల సాధనకు ఐదు కారణాలు ఏమిటి?', emotion: 'జిజ్ఞాస' },
-                    { speaker: 'కృష్ణుడు', text: 'కర్మ స్థానం [శరీరం], కర్త, వివిధ ఇంద్రియాలు, అనేక రకాల ప్రయత్నాలు, మరియు చివరికి పరమాత్మ—ఇవి కర్మ యొక్క ఐదు కారకాలు.', emotion: 'విశ్లేషణాత్మక' },
-                    { speaker: 'అర్జునుడు', text: 'ప్రకృతి గుణాలు వివిధ రకాల పనులకు ఎలా సంబంధం కలిగి ఉంటాయి?', emotion: 'ఆసక్తి' },
-                    { speaker: 'కృష్ణుడు', text: 'బ్రాహ్మణ, క్షత్రియ, వైశ్య మరియు శూద్రుల పనులు విభిన్నంగా ఉంటాయి, అలాగే వారి పని యొక్క గుణాలు కూడా, ఓ శత్రువులను శిక్షించేవాడా.', emotion: 'వివరణ' },
-                    { speaker: 'అర్జునుడు', text: 'ఒకరు తమ స్వంత పనిని చేయడం ద్వారా పరిపూర్ణతను ఎలా సాధించగలరు?', emotion: 'ఆచరణాత్మక' },
-                    { speaker: 'కృష్ణుడు', text: 'తన పని యొక్క గుణాలను అనుసరించడం ద్వారా, ప్రతి వ్యక్తి పరిపూర్ణుడు కాగలడు. సర్వ జీవుల మూలమైన మరియు సర్వవ్యాపి అయిన భగవంతుని ఆరాధన ద్వారా, ఒక వ్యక్తి తన స్వంత పనిని చేయడం ద్వారా పరిపూర్ణతను సాధించగలడు.', emotion: 'మార్గదర్శనం' },
-                    { speaker: 'అర్జునుడు', text: 'అంటే నా స్వంత కర్తవ్యాన్ని చేయడం, అసంపూర్ణంగా చేసినా, మేలైనదా?', emotion: 'అర్థం చేసుకున్న' },
-                    { speaker: 'కృష్ణుడు', text: 'ఒకరి స్వంత వృత్తిలో నిమగ్నమవడం, దానిని అసంపూర్ణంగా చేసినప్పటికీ, మరొకరి వృత్తిని స్వీకరించి దానిని పరిపూర్ణంగా చేయడం కంటే మేలు. ఒకరి స్వభావం ప్రకారం నిర్దేశించబడిన విధులు ఎప్పుడూ పాపపు ప్రతిచర్యలచే ప్రభావితం కావు.', emotion: 'ధృవీకరిస్తున్న' },
-                    { speaker: 'అర్జునుడు', text: 'ఈ పరిపూర్ణతను సాధించినవాడు ఎలా ప్రవర్తిస్తాడు?', emotion: 'గమనిస్తున్న' },
-                    { speaker: 'కృష్ణుడు', text: 'ఆత్మ-నియంత్రణ మరియు అనాసక్తి కలిగి, అన్ని భౌతిక సుఖాలను విస్మరించేవాడు, త్యాగ అభ్యాసం ద్వారా, ప్రతిచర్య నుండి విముక్తి యొక్క అత్యున్నత పరిపూర్ణ దశను పొందగలడు.', emotion: 'వర్ణిస్తున్న' },
-                    { speaker: 'అర్జునుడు', text: 'అన్ని జ్ఞానాలలో అత్యంత రహస్యమైనది ఏమిటి?', emotion: 'ఆత్రుత' },
-                    { speaker: 'కృష్ణుడు', text: 'నీవు నా అత్యంత ప్రియమైన మిత్రుడివి కాబట్టి, నేను నీకు నా పరమ ఉపదేశం, అన్నిటికంటే అత్యంత రహస్య జ్ఞానం చెబుతున్నాను. ఇది నీ మేలు కోసమే, నా నుండి విను.', emotion: 'ప్రేమ' },
-                    { speaker: 'అర్జునుడు', text: 'నేను వినడానికి సిద్ధంగా ఉన్నాను, కృష్ణా.', emotion: 'శ్రద్ధగా' },
-                    { speaker: 'కృష్ణుడు', text: 'ఎల్లప్పుడూ నన్నే తలచుకో, నా భక్తుడవు కమ్ము, నన్ను పూజించు మరియు నాకు నమస్కరించు. అప్పుడు నీవు తప్పకుండా నా వద్దకు వస్తావు. నేను నీకు ఈ వాగ్దానం చేస్తున్నాను ఎందుకంటే నీవు నా అత్యంత ప్రియమైన మిత్రుడివి.', emotion: 'వాగ్దానం' },
-                    { speaker: 'అర్జునుడు', text: 'మరియు అంతిమ ఉపదేశం?', emotion: 'నిరీక్షిస్తున్న' },
-                    { speaker: 'కృష్ణుడు', text: 'అన్ని రకాల ధర్మాలను విడిచిపెట్టి, కేవలం నన్నే శరణు పొందు. నేను నిన్ను అన్ని పాపపు ప్రతిచర్యల నుండి విముక్తుడిని చేస్తాను. భయపడకు.', emotion: 'అంతిమ' },
-                    { speaker: 'అర్జునుడు', text: 'నా ప్రియమైన కృష్ణా, ఓ అచ్యుతా, నా భ్రమ ఇప్పుడు తొలగిపోయింది. మీ దయవల్ల నా స్మృతిని తిరిగి పొందాను. నేను ఇప్పుడు స్థిరంగా, సందేహ రహితుడనై మీ ఆదేశాల ప్రకారం నడుచుకోవడానికి సిద్ధంగా ఉన్నాను.', emotion: 'నిశ్చయం' }
-                ],
-                summary: 'ఈ చివరి అధ్యాయంలో, కృష్ణుడు నిజమైన త్యాగం అంటే ఫలితాలపై ఆసక్తి లేకుండా తన విధులను నిర్వర్తించడమని బోధిస్తాడు. విముక్తికి అంతిమ మార్గం పూర్తిగా భగవంతునికి శరణాగతి పొందడం, ఆయన తన భక్తులను అన్ని పాపాలు మరియు భయాల నుండి విముక్తులను చేస్తానని వాగ్దానం చేస్తాడు.',
-                teachings: 'ఫలితాలపై ఆసక్తి లేకుండా మీ విధులను నిర్వర్తించండి. అత్యున్నత ఆధ్యాత్మిక అభ్యాసం ఎల్లప్పుడూ భగవంతుని గురించి ఆలోచించడం, ఆయన భక్తుడు కావడం మరియు ఆయనకు శరణాగతి పొందడం. ఈ మార్గం అంతిమ స్వేచ్ఛ మరియు శాంతికి దారితీస్తుంది.',
-                moralLesson: 'గొప్ప శక్తిపై విశ్వాసం ఉంచి, మీ జీవితాన్ని దానికి అర్పించడమే గొప్ప ధైర్యం మరియు జ్ఞానం యొక్క చర్య. మీరు నియంత్రణను వదిలివేసినప్పుడు, మీరు నిజమైన స్వేచ్ఛ మరియు ఉద్దేశ్యాన్ని కనుగొంటారు.',
-                kidsVersion: 'మీరు ఒక పెద్ద ఓడలో ఉన్నారని ఊహించుకోండి, మరియు కెప్టెన్ భగవంతుడు. ఉత్తమమైన పని కెప్టెన్‌ను నమ్మి, అతని సూచనలను పాటించడం. కృష్ణుడు అర్జునుడిని పూర్తిగా తనను నమ్మమని చెప్పాడు, మరియు ఆయన అన్నీ చూసుకుంటాడు. మనం భగవంతునిపై విశ్వాసం ఉంచినప్పుడు, మనం దేని గురించి చింతించాల్సిన అవసరం లేదు.'
-            }
-            
+                chapters: {
+            1: {
+                title: "అర్జున విషాద యోగం",
+                subtitle: "కురుక్షేత్ర రణరంగంలో సైన్యాల పరిశీలన మరియు అర్జునుడి విషాదం",
+                description: "కురుక్షేత్ర యుద్ధభూమిలో నిలబడిన అర్జునుడు, ఎదుటి సైన్యంలో తన బంధువులను, గురువులను చూసి తీవ్ర నిరాశ మరియు శోకానికి లోనవుతాడు.",
+                dialogue: [
+                    { speaker: "ధృతరాష్ట్రుడు", text: "ధర్మక్షేత్రే కురుక్షేత్రే సమవేతా యుయుత్సవః। మామకాః పాండవాశ్చైవ కిమకుర్వత సంజయ—ఓ సంజయా! ధర్మక్షేత్రమైన కురుక్షేత్రంలో యుద్ధం చేయాలనే ఆకాంక్షతో సమకూడిన నా కుమారులు (కౌరవులు), పాండుపుత్రులు (పాండవులు) ఏమి చేశారు?", emotion: "ఆందోళన" },
+                    { speaker: "సంజయుడు", text: "రాజా ధృతరాష్ట్రా! వ్యూహాకారంలో నిలిచిన పాండవ సైన్యాన్ని చూసి, దుర్యోధనుడు తన గురువు ద్రోణాచార్యుని సమీపించి ఇలా పలికాడు.", emotion: "వివరణ" },
+                    { speaker: "దుర్యోధనుడు", text: "ఆచార్యా! మీ ప్రజ్ఞావంతుడైన శిష్యుడు, ద్రుపదపుత్రుడైన ధృష్టద్యుమ్నుడిచే వ్యూహాత్మకంగా నిలపబడిన ఈ మహత్తర పాండవ సైన్యాన్ని చూడండి! ఇందులో భీమార్జునులతో సమానమైన ఎందరో మహావీరులున్నారు. భీష్మపితామహునిచే రక్షించబడుతున్న మన సైన్యం అపరిమితం; భీమునిచే రక్షించబడుతున్న వారి సైన్యం పరిమితమైనది. కాబట్టి మీరందరూ తమ తమ వ్యూహ స్థానాలలో దృఢంగా నిలిచి భీష్ముడిని సర్వవిధాలా రక్షించండి!", emotion: "ఉత్సాహం" },
+                    { speaker: "సంజయుడు", text: "అప్పుడు కౌరవ వృద్ధుడైన భీష్ముడు దుర్యోధనునికి ఉత్సాహం కలిగించడానికి సింహనాదం చేస్తూ శంఖాన్ని గంభీరంగా పూరించాడు. అనంతరం శంఖాలు, భేరీలు, బాకాలు ఒక్కసారిగా మోగాయి. ఆ శబ్దం భూమ్యాకాశాలను దద్దరిల్లజేసింది!", emotion: "గంభీరమైన" },
+                    { speaker: "సంజయుడు", text: "అప్పుడు శ్వేతాశ్వాలు పూన్చిన దివ్య రథంలో ఉన్న శ్రీకృష్ణుడు మరియు అర్జునుడు తమ దివ్య శంఖాలను పూరించారు. శ్రీకృష్ణుడు పాంచజన్యాన్ని, అర్జునుడు దేవదత్తాన్ని పూరించారు. ఆ భయంకర ధ్వని ధార్తరాష్ట్రుల గుండెలను చీల్చివేసింది.", emotion: "దివ్య" },
+                    { speaker: "సంజయుడు", text: "కపిధ్వజుడైన అర్జునుడు శస్త్ర ప్రయోగం ప్రారంభం కానున్న సమయంలో, గాండీవాన్ని ఎత్తి పట్టుకుని, శ్రీకృష్ణుడితో ఇలా అన్నాడు.", emotion: "గమనిస్తున్న" },
+                    { speaker: "అర్జునుడు", text: "సేనయోరుభయోర్మధ్యే రథం స్థాపయ మేऽచ్యుత—ఓ అచ్యుతా! యుద్ధరంగంలో పోరాడటానికి సిద్ధంగా ఉన్న ఈ యోధులను, దుర్యోధనునికి ప్రియం చేయగోరి వచ్చిన వారిని నేను స్పష్టంగా చూసేంతవరకు నా రథాన్ని ఇరు సైన్యాల మధ్య నిలుపుము.", emotion: "నిశ్చయం" },
+                    { speaker: "సంజయుడు", text: "అర్జునుడు అలా పలుకగా, శ్రీకృష్ణుడు ఆ దివ్య రథాన్ని భీష్మ, ద్రోణుల మరియు సమస్త రాజుల ఎదుట రెండు సైన్యాల మధ్య నిలిపి, \"ఓ పార్థా! ఇక్కడ సమావేశమైన ఈ కురువంశీయులను చూడుము\" అని పలికాడు.", emotion: "శాంతం" },
+                    { speaker: "కృష్ణుడు", text: "పార్థా! యుద్ధం కోసం ఇక్కడ సమకూడిన కురువంశీయులను చూడుము.", emotion: "ప్రశాంతం" },
+                    { speaker: "సంజయుడు", text: "అప్పుడు అర్జునుడు ఇరు సైన్యాలలోనూ తన తాతలను, గురువులను, మేనమామలను, సోదరులను, కుమారులను, మిత్రులను చూశాడు. ఆ బంధువులనందరినీ చూసిన అర్జునుడు పరమ కరుణతో, తీవ్ర శోకంతో వ్యాకులచిత్తుడై ఇలా పలికాడు.", emotion: "విషాదం" },
+                    { speaker: "అర్జునుడు", text: "కృష్ణా! యుద్ధం చేయాలనే కోరికతో నా ఎదుట నిలిచిన నా స్వజనులను చూస్తుంటే నా అవయవాలు బలం కోల్పోతున్నాయి, నోరు ఎండిపోతోంది, నా శరీరం వణుకుతోంది, రోమాలు నిక్కబొడుచుకుంటున్నాయి!", emotion: "విషాదంలో" },
+                    { speaker: "అర్జునుడు", text: "నా చేతినుండి గాండీవ ధనుస్సు జారిపోతోంది, చర్మం మంటెత్తుతోంది! నేను నిలబడలేకపోతున్నాను, నా మనస్సు భ్రమిస్తున్నట్లుంది. కేశవా! నాకు అంతా అపశకునాలే కనిపిస్తున్నాయి. యుద్ధంలో స్వజనులను చంపడం వల్ల ఎటువంటి శ్రేయస్సునూ నేను చూడటం లేదు!", emotion: "వేదన" },
+                    { speaker: "అర్జునుడు", text: "న కాంక్షే విజయం కృష్ణ న చ రాజ్యం సుఖాని చ—ఓ కృష్ణా! నాకు విజయమూ వద్దు, రాజ్యమూ వద్దు, సుఖాలూ వద్దు! ఎవరి సుఖం కోసం మనం రాజ్యాన్ని ఆశిస్తున్నామో, ఆ ఆచార్యులు, తండ్రులు, కుమారులు, తాతలే ప్రాణాలను త్యజించడానికి సిద్ధపడి యుద్ధంలో నిలబడ్డారు! వారు నన్ను చంపినా సరే, త్రిలోకాధిపత్యం లభించినా సరే, నేను వీరిని చంపడానికి ఇష్టపడను.", emotion: "నిరాశ" },
+                    { speaker: "అర్జునుడు", text: "కులనాశనం వల్ల శాశ్వత కులధర్మాలు నశిస్తాయి. ధర్మం నశించగా మిగిలిన కులమంతటా అధర్మం వ్యాపిస్తుంది. అధర్మం పెరగడం వల్ల కులస్త్రీలు కలుషితులవుతారు, దానివల్ల వర్ణసంకరం ఏర్పడుతుంది. వర్ణసంకరం వల్ల పితృదేవతలకు పిండ తర్పణాలు లోపించి వారు అధోగతి పాలవుతారు. అయ్యో! రాజ్య సుఖభోగాల ఆశతో స్వజనులను చంపడానికి ఉద్యుక్తులమై మనం ఎంతటి మహాపాపానికి ఒడిగడుతున్నాము!", emotion: "భయంతో" },
+                    { speaker: "అర్జునుడు", text: "ఆయుధాలు ధరించిన ధృతరాష్ట్రుని పుత్రులు నన్ను నిరాయుధుడిని, ప్రతిఘటించని వాడిని యుద్ధరంగంలో చంపేసినా, అది నాకు అత్యంత శ్రేయస్కరము!", emotion: "విలపిస్తున్న" },
+                    { speaker: "సంజయుడు", text: "రణరంగంలో అర్జునుడు ఈ విధంగా పలికి, శోకంతో నిండిన హృదయంతో, బాణాలతో కూడిన తన గాండీవ ధనుస్సును విడిచిపెట్టి, రథంపై చతికిలబడి కూర్చుండిపోయాడు.", emotion: "శోకమగ్నం" }
+                ],
+                summary: "మొదటి అధ్యాయంలో కురుక్షేత్ర మహాసంగ్రామానికి ఇరు సైన్యాలు మోహరించిన దృశ్యం ఆవిష్కృతమవుతుంది. అర్జునుడు శ్రీకృష్ణుడిని రథాన్ని ఉభయ సైన్యాల మధ్య నిలపమని కోరతాడు. అక్కడ తన తాతలు, గురువులు, సోదరులు, బంధువులను చూసిన అర్జునుడు తీవ్ర భావోద్వేగానికి, విషాదానికి లోనవుతాడు. స్వజనులను చంపి పొందే రాజ్యభోగాలు నిష్ప్రయోజనమని, కులక్షయం వల్ల ధర్మహాని, వర్ణసంకరం మరియు పాపం కలుగుతాయని వాదిస్తూ, గాండీవాన్ని విడిచి రథంపై కుప్పకూలిపోతాడు. ఇది భగవద్గీత ఉపదేశానికి నేపథ్యమైన మానవ కర్తవ్య సంక్షోభాన్ని ఆవిష్కరిస్తుంది.",
+                teachings: "• కర్తవ్య నిర్వహణ సమయంలో అంధమైన వ్యామోహం మరియు భావోద్వేగ బలహీనత మనిషి వివేకాన్ని కప్పివేస్తాయి.\n• అధర్మానికి పాల్పడిన వారు ఆత్మీయులైనప్పటికీ, ధర్మరక్షణ కోసం వ్యక్తిగత అనుబంధాలను అధిగమించవలసి ఉంటుంది.\n• గందరగోళం మరియు తీవ్ర సంక్షోభం ఎదురైనప్పుడు నిజమైన మార్గదర్శకత్వం కోసం సద్గురువును ఆశ్రయించడం తప్పనిసరి.\n• అర్జునుడి ఈ విషాదం ప్రాపంచిక నిరాశ మాత్రమే కాదు, అది ఆత్మజ్ఞాన అన్వేషణకు దారితీసే పవిత్రమైన మలుపు.",
+                moralLesson: "జీవితంలో కర్తవ్యానికి మరియు భావోద్వేగాలకు మధ్య సంఘర్షణ వచ్చినప్పుడు భావోద్వేగాలకు లొంగి బాధ్యతల నుండి పారిపోకూడదు. కష్టమైన పరిస్థితులను ధైర్యంగా ఎదుర్కొని, ధర్మం వైపు నిలబడటమే వివేకం.",
+                kidsVersion: "అర్జునుడు ఒక గొప్ప విలుకాడు. యుద్ధరంగంలో తన కుటుంబ సభ్యులను, స్నేహితులను చూసినప్పుడు అతనికి చాలా బాధ వేసింది. \"నేను నా వాళ్ళతో పోరాడలేను\" అని తన విల్లును కింద పడేసి ఏడవడం మొదలుపెట్టాడు. కానీ శ్రీకృష్ణుడు అతనికి ధైర్యం చెప్పి, తప్పును ఎదిరించడం మరియు మంచి కోసం మన కర్తవ్యాన్ని నిర్వహించడం ఎంత ముఖ్యమో గుర్తుచేశాడు."
+            },
+            2: {
+                title: "సాంఖ్య యోగం",
+                subtitle: "ఆత్మ యొక్క అమరత్వం, క్షత్రియ ధర్మం మరియు స్థితప్రజ్ఞుని లక్షణాలు",
+                description: "శ్రీకృష్ణుడు అర్జునుని మోహాన్ని పటాపంచలు చేస్తూ ఆత్మ యొక్క నిత్యత్వము, స్వధర్మం, నిష్కామ కర్మయోగం మరియు స్థితప్రజ్ఞుని లక్షణాలను బోధిస్తాడు.",
+                dialogue: [
+                    { speaker: "సంజయుడు", text: "కరుణతో నిండి, కన్నీళ్లు నిండిన కళ్లతో శోకిస్తున్న అర్జునుడిని చూసి శ్రీకృష్ణుడు ఇలా పలికాడు.", emotion: "గమనిస్తున్న" },
+                    { speaker: "కృష్ణుడు", text: "కుతస్త్వా కశ్మలమిదం విషమే సముపస్థితమ్—ఈ విషమ సమయంలో నీకు ఈ పిరికితనం, మోహం ఎక్కడి నుండి వచ్చాయి అర్జునా? ఇది ఆర్య సమ్మతం కాదు, స్వర్గాన్ని ఇచ్చేది కాదు, అపకీర్తిని తెచ్చిపెట్టేది! క్లైబ్యం మా స్మ గమః పార్థ—ఈ నపుంసకత్వాన్ని పొందవద్దు! హృదయ దౌర్బల్యాన్ని వీడి యుద్ధానికి లెమ్ము!", emotion: "గద్దిస్తున్న" },
+                    { speaker: "అర్జునుడు", text: "కృష్ణా! పూజార్హులైన భీష్మ, ద్రోణులపై నేను బాణాలు ఎలా వేయగలను? వీరిని చంపి రక్తసిక్తమైన భోగాలను అనుభవించడం కంటే భిక్షమెత్తుకుని జీవించడం ఎంతో శ్రేయస్కరం! మనం వారిని జయించడం మంచిదో, వారు మనల్ని జయించడం మంచిదో కూడా నాకు తెలియడం లేదు.", emotion: "సంఘర్షణ" },
+                    { speaker: "అర్జునుడు", text: "కార్పణ్యదోషోపహతస్వభావః పృచ్ఛామి త్వాం ధర్మసంమూఢచేతాః। యచ్ఛ్రేయః స్యాన్నిశ్చితం బ్రూహి తన్మే శిష్యస్తేऽహం శాధి మాం త్వాం ప్రపన్నమ్—నా స్వభావం పిరికితనమనే దోషంతో బలహీనపడింది. నా ధర్మమేమిటో తెలియక నా మనస్సు గందరగోళంలో ఉంది. ఏది ఖచ్చితమైన శ్రేయస్సో నాకు చెప్పుము. నేను నీ శిష్యుడను, నిన్ను శరణువేడుతున్నాను, నన్ను ఉపదేశించుము!", emotion: "శరణాగతి" },
+                    { speaker: "సంజయుడు", text: "గుడాకేశుడైన అర్జునుడు గోవిందునితో \"న యోత్స్యే—నేను యుద్ధం చేయను\" అని స్పష్టంగా చెప్పి మౌనము వహించాడు. అప్పుడు శ్రీకృష్ణుడు ఉభయ సైన్యాల మధ్య శోకిస్తున్న అర్జునుని చూసి చిరునవ్వు నవ్వుతూ ఇలా పలికాడు.", emotion: "వర్ణన" },
+                    { speaker: "కృష్ణుడు", text: "అశోచ్యానన్వశోచస్త్వం ప్రజ్ఞావాదాంశ్చ భాషసే—శోకింపదగని వారి కొరకు శోకిస్తూనే, జ్ఞానుల వలె మాట్లాడుతున్నావు! ప్రాణం ఉన్నవారి కొరకు గానీ, ప్రాణం పోయినవారి కొరకు గానీ జ్ఞానులైన వారు ఎన్నడూ శోకించరు.", emotion: "బోధన" },
+                    { speaker: "కృష్ణుడు", text: "నేను గానీ, నీవు గానీ, ఈ రాజులు గానీ లేని కాలమంటూ ఎన్నడూ లేదు; భవిష్యత్తులో మనమందరం ఉండబోని కాలమూ ఉండదు. దేహంలో జీవునికి బాల్యం, యవ్వనం, వార్ధక్యం ఎలా వస్తాయో, మరణానంతరం మరొక దేహం పొందడమూ అలాగే జరుగుతుంది. ధీరుడైన వాడు దీనికి కలత చెందడు.", emotion: "దివ్య జ్ఞానం" },
+                    { speaker: "కృష్ణుడు", text: "మాత్రాస్పర్శాస్తు కౌన్తేయ శీతోష్ణసుఖదుఃఖదాః—ఇంద్రియాలకు విషయాలతో కలిగే సంపర్కం వల్ల శీతోష్ణాలు, సుఖదుఃఖాలు కలుగుతాయి. అవి అనిత్యమైనవి, వచ్చిపోయేవి. ఓ భారతా! వాటిని సహించడం నేర్చుకో. సుఖదుఃఖాలలో సమభావం కలిగి ఉండే ధీరుడే మోక్షానికి అర్హుడు.", emotion: "స్పష్టత" },
+                    { speaker: "కృష్ణుడు", text: "న జాయతే మ్రియతే వా కదాచిత్—ఆత్మ ఎన్నడూ పుట్టదు, చావదు! ఆత్మ శాశ్వతమైనది, సనాతనమైనది. శరీరం నశించినా ఆత్మ నశించదు. మనుష్యుడు పాత వస్త్రాలను విడిచి కొత్త వస్త్రాలను ధరించినట్లే, ఆత్మ పాత శరీరాలను విడిచి కొత్త శరీరాలను స్వీకరిస్తుంది.", emotion: "అమరత్వం" },
+                    { speaker: "కృష్ణుడు", text: "నైనం ఛిందంతి శస్త్రాణి నైనం దహతి పావకః—ఈ ఆత్మను శస్త్రాలు ఛేదించలేవు, అగ్ని దహించలేదు, నీరు తడపలేదు, వాయువు ఆర్పలేదు! ఆత్మ సర్వవ్యాపకము, అచలము, నిత్యము.", emotion: "దివ్య సత్యం" },
+                    { speaker: "కృష్ణుడు", text: "స్వధర్మమపి చావేక్ష్య న వికమ్పితుమర్హసి—క్షత్రియునికి ధర్మయుద్ధం కంటే శ్రేయస్కరమైనది మరొకటి లేదు. ఈ ధర్మయుద్ధాన్ని చేయకపోతే నీ స్వధర్మాన్ని, కీర్తిని కోల్పోయి పాపాన్ని మూటగట్టుకుంటావు. యుద్ధంలో మరణిస్తే వీరస్వర్గం పొందుతావు, గెలిస్తే రాజ్యభోగాలు అనుభవిస్తావు. కాబట్టి అర్జునా, కృతనిశ్చయుడవై యుద్ధానికి లెమ్ము!", emotion: "కర్తవ్య బోధన" },
+                    { speaker: "కృష్ణుడు", text: "కర్మణ్యేవాధికారస్తే మా ఫలేషు కదాచన। మా కర్మఫలహేతుర్భూర్మా తే సంగోऽస్త్వకర్మణి—కర్మను ఆచరించడంలోనే నీకు అధికారం ఉంది, ఫలితాల మీద ఎన్నడూ లేదు! కర్మఫలానికి నీవు కారణం కావద్దు, అలాగని కర్మలను చేయడం మానవద్దు. సమత్వమే యోగము అని పిలువబడుతుంది.", emotion: "నిష్కామ కర్మ" },
+                    { speaker: "అర్జునుడు", text: "స్థితప్రజ్ఞస్య కా భాషా సమాధిస్థస్య కేశవ। స్థితధీః కిం ప్రభాషేత కిమాసీత వ్రజేత కిమ్—కేశవా! సమాధిలో స్థిరమైన ప్రజ్ఞ కలవాని (స్థితప్రజ్ఞుని) లక్షణాలేమిటి? అతను ఎలా మాట్లాడతాడు? ఎలా కూర్చుంటాడు? ఎలా నడుస్తాడు?", emotion: "జిజ్ఞాస" },
+                    { speaker: "కృష్ణుడు", text: "ప్రజహాతి యదా కామాన్సర్వాన్పార్థ మనోగతాన్। ఆత్మన్యేవాత్మనా తుష్టః స్థితప్రజ్ఞస్తదోచ్యతే—ఎప్పుడు మనస్సులోని సమస్త కామాలను త్యజించి, తన ఆత్మయందే తాను సంతృప్తి చెందుతాడో, అతడు స్థితప్రజ్ఞుడని చెప్పబడును. దుఃఖాలలో కలత చెందనివాడు, సుఖాలలో స్పృహ లేనివాడు, రాగ-భయ-క్రోధాలు వీడినవాడే స్థితప్రజ్ఞుడు.", emotion: "స్థితప్రజ్ఞత" },
+                    { speaker: "కృష్ణుడు", text: "తాబేలు తన అవయవాలను లోపలికి ముడుచుకున్నట్లు, ఎవరైతే ఇంద్రియాలను విషయాల నుండి ఉపసంహరించుకుంటారో అతని ప్రజ్ఞ స్థిరమవుతుంది. విషయాలను ధ్యానించే వానికి వాటిపై సంగం కలుగుతుంది; సంగం వల్ల కామం, కామం వల్ల క్రోధం, క్రోధం వల్ల సమ్మోహం, సమ్మోహం వల్ల స్మృతిభ్రంశం, స్మృతిభ్రంశం వల్ల బుద్ధినాశనం, బుద్ధినాశనం వల్ల మనిషి పూర్తిగా సర్వనాశనమవుతాడు!", emotion: "హెచ్చరిక" },
+                    { speaker: "కృష్ణుడు", text: "రాగద్వేషాలు లేని ఇంద్రియాలతో విషయాలలో సంచరిస్తూ, ఆత్మవశుడై ఉండే సాధకుడు పరమ ప్రశాంతతను పొందుతాడు. ఈ బ్రాహ్మీ స్థితిని పొందిన మానవుడు ఎన్నడూ మోహానికి లోనుకాక, అంత్యకాలంలో బ్రహ్మనిర్వాణాన్ని (శాశ్వత మోక్షాన్ని) పొందుతాడు.", emotion: "నిర్ణయాత్మక" }
+                ],
+                summary: "రెండవ అధ్యాయంలో భగవద్గీత యొక్క సమగ్ర సారం ప్రతిబింబిస్తుంది. అర్జునుడు శ్రీకృష్ణునికి శిష్యుడిగా శరణాగతి చేయడంతో బోధన ఆరంభమవుతుంది. శ్రీకృష్ణుడు ఆత్మ నిత్యత్వము మరియు దేహ నైమిత్తికతను వివరిస్తూ ఆత్మ శస్త్రాలకు ఛేదింపబడదని, అగ్నికి దహించబడదని చాటుతాడు. క్షత్రియ స్వధర్మాన్ని గుర్తుచేసి, నిష్కామ కర్మయోగాన్ని (కర్మణ్యేవాధికారస్తే) ఉపదేశిస్తాడు. చివరగా రాగద్వేషాలను జయించి, పరమాత్మయందు నిశ్చల బుద్ధితో స్థిరపడిన స్థితప్రజ్ఞుని దివ్య లక్షణాలను విశదీకరిస్తాడు.",
+                teachings: "• ఆత్మ అమరమైనది, సనాతనమైనది; దేహం మాత్రమే నశించే వస్త్రం వంటిది.\n• కర్మను ఆచరించడమే మన కర్తవ్యం; ఫలితంపై ఆశక్తి లేదా స్వార్థపు ఆశ ఉండకూడదు (కర్మణ్యేవాధికారస్తే).\n• సుఖదుఃఖాలను, జయాపజయాలను సమానంగా స్వీకరించే సమత్వమే నిజమైన యోగం.\n• కామ, క్రోధాలు మనిషి వివేకాన్ని నాశనం చేసి పతనానికి దారితీస్తాయి; ఇంద్రియ నిగ్రహం మరియు ఆత్మతృప్తి ద్వారానే శాశ్వత శాంతి లభిస్తుంది.",
+                moralLesson: "ఫలితాల గురించి అనవసర చింత మాని, మన కర్తవ్యాన్ని నిష్ఠతో, నిస్వార్థంగా నిర్వర్తించాలి. లాభనష్టాలు, సుఖదుఃఖాలు ఎదురైనప్పుడు చలించకుండా స్థితప్రజ్ఞతతో జీవించడమే ఉన్నతమైన జీవిత విధానం.",
+                kidsVersion: "శ్రీకృష్ణుడు అర్జునుడికి చెప్పాడు: \"మనం పాత బట్టలు తీసేసి కొత్త బట్టలు వేసుకున్నట్లే, ఆత్మ ఒక శరీరం వదిలి ఇంకో శరీరం తీసుకుంటుంది. కాబట్టి మంచి పనులు చేయడానికి ఎప్పుడూ భయపడకూడదు. ఫలితం గురించి అతిగా ఆలోచించకుండా, మన పనిని మనం శ్రద్ధగా చేయాలి. అప్పుడు మన మనస్సు ఎప్పుడూ ప్రశాంతంగా ఉంటుంది.\""
+            },
+            3: {
+                title: "కర్మ యోగం",
+                subtitle: "నిష్కామ కర్మ, యజ్ఞ చక్రం మరియు కామ నిగ్రహం",
+                description: "కర్మలను విడిచిపెట్టడం కంటే నిష్కామ భావంతో స్వధర్మాన్ని ఆచరించడమే శ్రేయస్కరమని కృష్ణుడు నిరూపిస్తాడు.",
+                dialogue: [
+                    { speaker: "అర్జునుడు", text: "జ్యాయసీ చేత్కర్మణస్తే మతా బుద్ధిర్జనార్దన—ఓ జనార్దనా! కర్మ కంటే జ్ఞానమే శ్రేష్ఠమని మీరు భావిస్తే, నన్ను ఈ ఘోరమైన యుద్ధ కర్మలో ఎందుకు నియోగిస్తున్నారు? పరస్పర విరుద్ధంగా ఉన్నట్లున్న మీ మాటలతో నా బుద్ధి కలత చెందుతోంది. నాకు ఏది నిశ్చితమైన శ్రేయస్సో స్పష్టంగా చెప్పండి.", emotion: "సందేహం" },
+                    { speaker: "కృష్ణుడు", text: "లోకేऽస్మిన్ద్వివిధా నిష్ఠా పురా ప్రోక్తా మయానఘ। జ్ఞానయోగేన సాంఖ్యానాం కర్మయోగేన యోగినామ్—ఓ అనఘా! ఈ లోకంలో మోక్షానికి రెండు మార్గాలు చెప్పబడ్డాయి: సాంఖ్యులకు జ్ఞానయోగం, కర్మయోగులకు నిష్కామ కర్మయోగం. కేవలం పనులను ప్రారంభించకపోవడం వల్ల నైష్కర్మ్య సిద్ధి లభించదు, అలాగే పనులను వదిలేసినంత మాత్రాన సన్యాస సిద్ధి కలుగదు.", emotion: "బోధన" },
+                    { speaker: "కృష్ణుడు", text: "న హి కశ్చిత్క్షణమపి జాతు తిష్ఠత్యకర్మకృత్—ఎవరూ కూడా ఒక్క క్షణం కూడా ఏ కర్మ చేయకుండా ఉండలేరు; ప్రకృతి గుణాలు అందరినీ కర్మల వైపు నడిపిస్తాయి. కర్మేంద్రియాలను నిగ్రహించి, మనస్సులో విషయ భోగాలను తలచేవాడు మిథ్యాచారుడు (కపట వేషధారి) అని పిలువబడుతాడు. మనస్సుతో ఇంద్రియాలను నియంత్రించి, నిష్కామంగా కర్మయోగం ఆచరించేవాడే శ్రేష్ఠుడు.", emotion: "స్పష్టత" },
+                    { speaker: "కృష్ణుడు", text: "నియతం కురు కర్మ త్వం కర్మ జ్యాయో హ్యకర్మణః—నీవు శాస్త్రవిహితమైన కర్తవ్య కర్మలను ఆచరించుము; కర్మ చేయకపోవడం కంటే కర్మ చేయడమే శ్రేష్ఠము. కర్మ చేయకపోతే నీ శరీర యాత్ర కూడా సాగదు. భగవదర్పణ భావంతో (యజ్ఞార్థంగా) చేసే కర్మలు బంధాన్ని కలిగించవు.", emotion: "కర్తవ్య బోధన" },
+                    { speaker: "కృష్ణుడు", text: "యజ్ఞాద్భవతి పర్జన్యో యజ్ఞః కర్మసముద్భవః—అన్నం వల్ల ప్రాణులు జీవిస్తాయి, వర్షం వల్ల అన్నం పండుతుంది, యజ్ఞం వల్ల వర్షం కురుస్తుంది, యజ్ఞం కర్మ వల్ల పుడుతుంది. ఈ విధంగా నడిచే సృష్టి చక్రాన్ని అనుసరించనివాడు ఇంద్రియ లోలుడై వ్యర్థమైన జీవితాన్ని గడుపుతాడు.", emotion: "సృష్టి చక్రం" },
+                    { speaker: "కృష్ణుడు", text: "యద్యదాచరతి శ్రేష్ఠస్తత్తదేవేతరో జనః—శ్రేష్ఠులైన వారు ఏది ఆచరిస్తారో ఇతరులు కూడా దాన్నే అనుసరిస్తారు; వారు దేనిని ప్రమాణంగా స్వీకరిస్తారో లోకమంతా దాన్నే పాటిస్తుంది. కాబట్టి లోక సంగ్రహం కోసం (సమాజ శ్రేయస్సు కోసం) జ్ఞాని అయినవాడు కూడా కర్తవ్య కర్మలను ఆచరించాలి.", emotion: "ఉదాహరణ" },
+                    { speaker: "కృష్ణుడు", text: "శ్రేయాన్స్వధర్మో విగుణః పరధర్మాత్స్వనుష్ఠితాత్—చక్కగా ఆచరించబడిన పరధర్మం కంటే లోపభూయిష్టమైనదైనా తన స్వధర్మమే ఎంతో మేలైనది. స్వధర్మం కోసం మరణించినా శ్రేయస్కరమే, పరధర్మం భయంకరమైనది!", emotion: "స్వధర్మ నిష్ఠ" },
+                    { speaker: "అర్జునుడు", text: "అథ కేన ప్రయుక్తోऽయం పాపం చరతి పూరుషః—కృష్ణా! ఇష్టం లేకపోయినా బలాత్కారంగా నెట్టివేయబడినట్లు మనిషి దేనిచే ప్రేరేపించబడి పాపాన్ని ఆచరిస్తున్నాడు?", emotion: "జిజ్ఞాస" },
+                    { speaker: "కృష్ణుడు", text: "కామ ఏష క్రోధ ఏష రజోగుణసముద్భవః। మహాశనో మహాపాప్మా విద్ధ్యేనమిహ వైరిణమ్—రజోగుణం నుండి పుట్టిన కామము (తీవ్ర కోరిక), క్రోధమే దీనికి కారణం! ఇది ఎన్నటికీ తృప్తి తీరనిది, మహాపాప హేతువైనది. దీనినే మానవుని బద్ధశత్రువుగా తెలుసుకో.", emotion: "హెచ్చరిక" },
+                    { speaker: "కృష్ణుడు", text: "పొగచేత అగ్ని, మురికిచేత అద్దం, మాయాజాలంచేత గర్భస్థ శిశువు కప్పబడినట్లు, ఈ కామంచేత జ్ఞానం ఆవరించబడి ఉంటుంది. ఇంద్రియాలు, మనస్సు, బుద్ధి ఈ కామానికి నివాస స్థానాలు. కాబట్టి మొదట ఇంద్రియాలను నిగ్రహించి ఈ పాపపు శత్రువును సంహరించు.", emotion: "వివేకం" },
+                    { speaker: "కృష్ణుడు", text: "ఇంద్రియాణి పరాణ్యాహురింద్రియేభ్యః పరం మనః। మనసస్తు పరా బుద్ధిర్యో బుద్ధేః పరతస్తు సః—జడ శరీరం కంటే ఇంద్రియాలు గొప్పవి; ఇంద్రియాల కంటే మనస్సు గొప్పది; మనస్సు కంటే బుద్ధి గొప్పది; బుద్ధి కంటే అతీతమైనది ఆత్మ! ఆత్మజ్ఞానంతో మనస్సును స్థిరపరచి, దుర్జయమైన కామమనే శత్రువును జయించుము!", emotion: "నిర్ణయాత్మక" }
+                ],
+                summary: "మూడవ అధ్యాయంలో శ్రీకృష్ణుడు నిష్కామ కర్మయోగ రహస్యాన్ని విశదీకరిస్తాడు. ఏ ప్రాణీ ఒక్క క్షణం కూడా కర్మ చేయకుండా ఉండలేడని, కర్మలను త్యజించి మనస్సులో భోగాలను తలచేవాడు కపట సన్యాసి అని నిరూపిస్తాడు. యజ్ఞ భావనతో సమాజ శ్రేయస్సు కోసం స్వధర్మాన్ని ఆచరించాలని ఉద్బోధిస్తాడు. మనిషిని పాపానికి పురికొల్పే అసలైన శత్రువు కామ-క్రోధాలని హెచ్చరిస్తూ, బుద్ధి ద్వారా ఇంద్రియాలను జయించి ఆత్మస్థితిని పొందాలని ఆదేశిస్తాడు.",
+                teachings: "• బాధ్యతల నుండి పారిపోవడం సన్యాసం కాదు; కర్తవ్యాలను నిస్వార్థంగా భగవదర్పణంగా చేయడమే నిజమైన కర్మయోగం.\n• సమాజానికి ఆదర్శంగా నిలవడం కోసం ప్రతి ఒక్కరూ తమ విధులను సక్రమంగా నిర్వహించాలి (లోకసంగ్రహం).\n• పరధర్మం ఆకర్షణీయంగా కనిపించినా స్వధర్మాన్ని నిష్ఠతో ఆచరించడమే మోక్షదాయకం.\n• కామ, క్రోధాలు ఆత్మజ్ఞానాన్ని కప్పివేసే శత్రువులు; బుద్ధిని ఆశ్రయించి వాటిని నిర్మూలించాలి.",
+                moralLesson: "సోమరితనాన్ని, స్వార్థాన్ని వీడి సమాజ హితం కోసం మన పనులను నిజాయితీగా చేయాలి. మనస్సును ఇంద్రియాల వెంట పరుగెత్తనివ్వకుండా, ఆత్మబలంతో కోరికలను నియంత్రించుకోవాలి.",
+                kidsVersion: "శ్రీకృష్ణుడు చెప్పాడు: \"మనం మన హోంవర్క్, పనులను ఎప్పుడూ తప్పించుకోకూడదు. ఇతరులను చూసి మన దారిని మార్చుకోకూడదు. కోపం, అతిగా చాక్లెట్లు కావాలనే పేరాశ మన బుద్ధిని పాడుచేస్తాయి. కాబట్టి ఎప్పుడూ మంచి పనులు చేస్తూ అందరికీ ఆదర్శంగా ఉండాలి.\""
+            },
+            4: {
+                title: "జ్ఞాన కర్మ సన్యాస యోగం",
+                subtitle: "దివ్య జ్ఞానము, భగవదవతార రహస్యము మరియు జ్ఞాన యజ్ఞము",
+                description: "భగవంతుడు తన దివ్య అవతార తత్వాన్ని, కర్మ-అకర్మ వివేకాన్ని మరియు కర్మలను బూడిద చేసే దివ్య జ్ఞానాన్ని బోధిస్తాడు.",
+                dialogue: [
+                    { speaker: "కృష్ణుడు", text: "ఇమం వివస్వతే యోగం ప్రోక్తవానహమవ్యయమ్—ఈ శాశ్వతమైన యోగ జ్ఞానాన్ని నేను మొదట సూర్యునికి ఉపదేశించాను; సూర్యుడు మనువుకు, మనువు ఇక్ష్వాకు మహారాజుకు ఉపదేశించారు. ఈ విధంగా పరంపరాగతంగా వచ్చిన ఈ రాజర్షి యోగం కాలక్రమంలో లోపించింది. నీవు నా భక్తుడవు, ప్రియసఖుడవు కాబట్టి ఆ ఉత్తమోత్తమ పురాతన రహస్య యోగాన్ని నీకు మరల ఉపదేశిస్తున్నాను.", emotion: "దివ్య బోధన" },
+                    { speaker: "అర్జునుడు", text: "అపరం భవతో జన్మ పరం జన్మ వివస్వతః—సూర్యుడు జన్మరీత్యా మీకంటే ప్రాచీనుడు కదా! మీరు సూర్యునికి ఆదిలో ఈ జ్ఞానాన్ని బోధించారని నేను ఎలా అర్థం చేసుకోవాలి కృష్ణా?", emotion: "సందేహం" },
+                    { speaker: "కృష్ణుడు", text: "బహూని మే వ్యతీతాని జన్మాని తవ చార్జున। తాన్యహం వేద సర్వాణి న త్వం వేత్థ పరంతప—నాకూ నీకూ ఎన్నో జన్మలు గడిచాయి; నాకు అవన్నీ గుర్తున్నాయి, కానీ నీకు గుర్తులేవు! నేను పుట్టుక లేనివాడిని, అవ్యయుడను, సర్వప్రాణులకు ఈశ్వరుడనైనా, నా మాయాశక్తితో నన్ను నేను సృష్టించుకుంటూ అవతరిస్తుంటాను.", emotion: "అవతార రహస్యం" },
+                    { speaker: "కృష్ణుడు", text: "యదా యదా హి ధర్మస్య గ్లానిర్భవతి భారత। అభ్యుత్థానమధర్మస్య తదాత్మానం సృజామ్యహమ్—ఎప్పుడెప్పుడు ధర్మానికి హాని కలుగుతుందో, అధర్మం విజృంభిస్తుందో, అప్పుడు నన్ను నేను సృష్టించుకుని భూమిపై అవతరిస్తాను!", emotion: "ధర్మ రక్షణ" },
+                    { speaker: "కృష్ణుడు", text: "పరిత్రాణాయ సాధూనాం వినాశాయ చ దుష్కృతామ్। ధర్మసంస్థాపనార్థాయ సంభవామి యుగే యుగే—సత్పురుషులను రక్షించడానికి, దుర్మార్గులను సంహరించడానికి, ధర్మాన్ని సుస్థిరంగా పునరుద్ధరించడానికి నేను యుగయుగాలలో అవతరిస్తున్నాను!", emotion: "దివ్య ప్రతిజ్ఞ" },
+                    { speaker: "కృష్ణుడు", text: "జన్మ కర్మ చ మే దివ్యమేవం యో వేత్తి తత్త్వతః—నా దివ్య జన్మను, కర్మలను తత్త్వరీత్యా తెలుసుకున్నవాడు శరీరం విడిచిన తర్వాత మరల జన్మను పొందక నేరుగా నన్నే చేరుకుంటాడు. రాగ, భయ, క్రోధాలను వీడి, నాపైనే ఆశ్రయం పొందిన ఎందరో భక్తులు జ్ఞానతపస్సుతో శుద్ధులై నన్ను పొందారు.", emotion: "ముక్తి మార్గం" },
+                    { speaker: "కృష్ణుడు", text: "యే యథా మాం ప్రపద్యన్తే తాంస్తథైవ భజామ్యహమ్—నన్ను ఎవరు ఏ భావంతో శరణు వేడుతారో వారిని నేను ఆ భావంతోనే అనుగ్రహిస్తాను. సమస్త మానవులూ అన్ని విధాలా నా మార్గాన్నే అనుసరిస్తున్నారు.", emotion: "సమభావం" },
+                    { speaker: "కృష్ణుడు", text: "చాతుర్వర్ణ్యం మయా సృష్టం గుణకర్మవిభాగశః—ప్రకృతి యొక్క గుణాలు, కర్మల విభాగాన్ని బట్టి నాలుగు వర్ణాలు నాచే సృష్టించబడ్డాయి. నేను వీటికి కర్తనైనప్పటికీ నన్ను శాశ్వత అకర్తగా తెలుసుకో. కర్మలు నన్ను అంటవు, కర్మఫలాలపై నాకు ఆశక్తి లేదు.", emotion: "వివేకం" },
+                    { speaker: "కృష్ణుడు", text: "కర్మణ్యకర్మ యః పశ్యేదకర్మణి చ కర్మ యః—కర్మలో అకర్మను (నిష్కామ కర్మను), అకర్మలో కర్మను (సోమరితనంలోని బంధాన్ని) చూసేవాడే మనుష్యులలో బుద్ధిమంతుడు. సమస్త కర్మఫల సంగమును త్యజించి, నిత్య తృప్తుడైన వాడు కర్మలు చేస్తున్నా బంధింపబడడు.", emotion: "కర్మ రహస్యం" },
+                    { speaker: "కృష్ణుడు", text: "బ్రహ్మార్పణం బ్రహ్మ హవిర్బ్రహ్మాగ్నౌ బ్రహ్మణా హుతమ్—అర్పించే సాధనం బ్రహ్మమే, హవిస్సు బ్రహ్మమే, బ్రహ్మమనే అగ్నిలో బ్రహ్మంచేత హోమం చేయబడేది బ్రహ్మమే; సమస్త కర్మలయందు బ్రహ్మమునే చూసేవాడు బ్రహ్మమునే పొందుతాడు. ద్రవ్య యజ్ఞాల కంటే జ్ఞాన యజ్ఞమే ఎంతో శ్రేష్ఠమైనది!", emotion: "జ్ఞాన యజ్ఞం" },
+                    { speaker: "కృష్ణుడు", text: "తద్విద్ధి ప్రణిపాతేన పరిప్రశ్నేన సేవయా। ఉపదేక్ష్యంతి తే జ్ఞానం జ్ఞానినస్తత్త్వదర్శినః—ఆ తత్త్వజ్ఞానాన్ని వినయపూర్వక నమస్కారాల చేత, జిజ్ఞాసతో కూడిన ప్రశ్నల చేత, నిష్కపట సేవ చేత సద్గురువుల నుండి తెలుసుకో! తత్త్వదర్శులైన జ్ఞానులు నీకు ఆ జ్ఞానాన్ని ఉపదేశిస్తారు.", emotion: "గురు సేవ" },
+                    { speaker: "కృష్ణుడు", text: "యథైధాంసి సమిద్ధోऽగ్నిర్భస్మసాత్కురుతేऽర్జున। జ్ఞానాగ్నిః సర్వకర్మాణి భస్మసాత్కురుతే తథా—మండుతున్న అగ్ని కట్టెలను బూడిద చేసినట్లే, జ్ఞానమనే దివ్య అగ్ని సమస్త కర్మ బంధాలను భస్మం చేస్తుంది! ఈ లోకంలో జ్ఞానంతో సమానమైన పవిత్రమైనది మరొకటి లేదు.", emotion: "దివ్య శక్తి" },
+                    { speaker: "కృష్ణుడు", text: "శ్రద్ధావాంల్లభతే జ్ఞానం తత్పరః సంయతేంద్రియః—శ్రద్ధ గలవాడు, ఇంద్రియ నిగ్రహం కలవాడు జ్ఞానాన్ని పొంది శీఘ్రంగా పరమ శాంతిని పొందుతాడు. సంశయాత్మా వినశ్యతి—అజ్ఞాని, శ్రద్ధ లేనివాడు, సంశయ చిత్తుడు సర్వనాశనమవుతాడు! కాబట్టి జ్ఞానమనే ఖడ్గంతో నీ హృదయ సంశయాన్ని ఛేదించి, యోగంలో స్థిరుడవై యుద్ధానికి లెమ్ము!", emotion: "నిర్ణయాత్మక" }
+                ],
+                summary: "నాల్గవ అధ్యాయంలో భగవంతుని దివ్య జన్మ-కర్మల రహస్యము (యదా యదా హి ధర్మస్య), సాధు సంరక్షణ మరియు దుష్ట శిక్షణ ప్రతిజ్ఞలు ఆవిష్కృతమవుతాయి. కర్మలో అకర్మను చూసే వివేకాన్ని, గురుసేవ మరియు పరిప్రశ్న ద్వారా తత్త్వజ్ఞానాన్ని పొందే విధానాన్ని శ్రీకృష్ణుడు బోధిస్తాడు. జ్ఞానాగ్ని సమస్త పాపాలను, కర్మ బంధాలను బూడిద చేస్తుందని, సంశయాత్ముడు నాశనమవుతాడని హెచ్చరిస్తూ అర్జునుడిని కర్తవ్యోన్ముఖుడిని చేస్తాడు.",
+                teachings: "• భగవంతుడు ధర్మ రక్షణ కోసం ప్రతి యుగంలోనూ అవతరిస్తాడు.\n• తత్త్వజ్ఞానం వినయపూర్వకమైన ప్రణిపాతము, ప్రశ్న మరియు సద్గురు సేవ ద్వారానే లభిస్తుంది.\n• జ్ఞానమనే దివ్య అగ్ని సమస్త కర్మ బంధాలను భస్మం చేస్తుంది (జ్ఞానాగ్నిః సర్వకర్మాణి భస్మసాత్కురుతే).\n• శ్రద్ధ మరియు ఇంద్రియ నిగ్రహం ఉన్నవారికే జ్ఞానం మరియు పరమ శాంతి దక్కుతాయి; సంశయం కలవాడు నశిస్తాడు.",
+                moralLesson: "ధర్మం ఎన్నడూ ఓడిపోదు, అధర్మం ఎంత ప్రబలినా అంతిమంగా ధర్మమే గెలుస్తుంది. మనలోని సంశయాలను జ్ఞానంతో తొలగించుకుని, నిస్వార్థ కర్మలతో జీవితాన్ని భగవదర్పణం చేయాలి.",
+                kidsVersion: "శ్రీకృష్ణుడు చెప్పాడు: \"ప్రపంచంలో మంచివాళ్లను కాపాడటానికి, చెడ్డవాళ్లను ఓడించడానికి నేను ఎప్పుడూ ఉంటాను. చక్కగా చదువుకుని, గురువులను గౌరవించి, మంచి పనులు చేస్తే మన తప్పులన్నీ తొలగిపోయి మనం నిజమైన తెలివైనవాళ్లం అవుతాము.\""
+            },
+            5: {
+                title: "కర్మ సన్యాస యోగం",
+                subtitle: "నిష్కామ కర్మ మరియు అంతర్గత సన్యాస సమన్వయం",
+                description: "కర్మల బాహ్య త్యాగం కంటే మనస్సుతో ఫలితాలను త్యజించి సమాధిని పొందడమే నిజమైన సన్యాసమని కృష్ణుడు నిరూపిస్తాడు.",
+                dialogue: [
+                    { speaker: "అర్జునుడు", text: "సన్యాసం కర్మణాం కృష్ణ పునర్యోగం చ శంససి। యచ్ఛ్రేయ ఏతయోరేకం తన్మే బ్రూహి సునిశ్చితమ్—ఓ కృష్ణా! ఒకసారి కర్మల త్యాగాన్ని (సన్యాసాన్ని) ప్రశంసిస్తున్నారు, మరొకసారి కర్మయోగాన్ని శ్లాఘిస్తున్నారు. ఈ రెండింటిలో ఖచ్చితంగా ఏది శ్రేయస్కరమో నాకు నిశ్చయించి చెప్పండి.", emotion: "గందరగోళం" },
+                    { speaker: "కృష్ణుడు", text: "సన్యాసః కర్మయోగశ్చ నిఃశ్రేయసకరావుభౌ। తయోస్తు కర్మసన్యాసాత్కర్మయోగో విశిష్యతే—కర్మ సన్యాసము, కర్మయోగము రెండూ మోక్షాన్ని ఇచ్చేవే; అయితే కర్మ సన్యాసం కంటే నిష్కామ కర్మయోగమే ఎంతో శ్రేష్ఠమైనది!", emotion: "నిర్ణయం" },
+                    { speaker: "కృష్ణుడు", text: "ఎవరూ దేనినీ ద్వేషించక, దేనినీ ఆశించక ఉంటారో వారే నిత్య సన్యాసులు. ద్వంద్వాలకు అతీతులైన వారు సులభంగా సంసార బంధాల నుండి విముక్తులవుతారు. జ్ఞానులు సాంఖ్యమును, కర్మయోగమును వేర్వేరుగా చూడరు; రెండింటి లక్ష్యం ఒక్కటే.", emotion: "స్పష్టత" },
+                    { speaker: "కృష్ణుడు", text: "సన్యాసస్తు మహాబాహో దుఃఖమాప్తుమయోగతః—కర్మయోగం లేకుండా కేవలం సన్యాసాన్ని పొందడం అత్యంత దుఃఖదాయకము! నిష్కామ కర్మయోగంలో నిమగ్నమైన ముని శీఘ్రంగా బ్రహ్మమును పొందుతాడు.", emotion: "బోధన" },
+                    { speaker: "కృష్ణుడు", text: "బ్రహ్మణ్యాధాయ కర్మాణి సంగం త్యక్త్వా కరోతి యః। లిప్యతే న స పాపేన పద్మపత్రమివాంభసా—ఫలితాలను పరమాత్మకు అర్పించి, ఆసక్తి లేకుండా కర్మలను ఆచరించేవాడు, తామరాకు నీటి బిందువులచే అంటబడనట్లే పాపములచే ఎన్నడూ అంటబడడు!", emotion: "తామరాకు ఉపమానం" },
+                    { speaker: "కృష్ణుడు", text: "యోగీశ్వరులు ఆత్మశుద్ధి కొరకు మాత్రమే ఫలాసక్తిని విడిచి శరీరం, మనస్సు, బుద్ధి, ఇంద్రియాలతో కర్మలు చేస్తారు. కర్మఫలాన్ని త్యజించినవాడు పరమ శాంతిని పొందుతాడు; కామంతో ఫలాలను ఆశించేవాడు బంధింపబడతాడు.", emotion: "శాంతి" },
+                    { speaker: "కృష్ణుడు", text: "నవద్వారే పురే దేహీ నైవ కుర్వన్న కారయన్—ఇంద్రియాలను జయించిన దేహి ఈ తొమ్మిది ద్వారాల శరీరమనే నగరంలో తాను ఏ కర్మ చేయక, ఇతరులతో చేయించక ఆనందంగా నివసిస్తాడు.", emotion: "అకర్తృత్వ భావం" },
+                    { speaker: "కృష్ణుడు", text: "విద్యావినయసంపన్నే బ్రాహ్మణే గవి హస్తిని। శుని చైవ శ్వపాకే చ పండితాః సమదర్శినః—జ్ఞానులైన పండితులు విద్యావినయ సంపన్నుడైన బ్రాహ్మణుడిని, ఆవును, ఏనుగును, కుక్కను, చండాలుడిని అందరినీ సమదృష్టితో చూస్తారు!", emotion: "సమదర్శనం" },
+                    { speaker: "కృష్ణుడు", text: "యే హి సంస్పర్శజా భోగా దుఃఖయోనయ ఏవ తే। ఆద్యంతవంతః కౌన్తేయ న తేషు రమతే బుధః—ఇంద్రియ భోగాల నుండి పుట్టే సుఖాలు ప్రారంభం మరియు ముగింపు కలవి, అవి కేవలం దుఃఖాలకే మూలకారణాలు! కాబట్టి బుద్ధిమంతుడైన వాడు ప్రాపంచిక భోగాలలో రమించడు.", emotion: "హెచ్చరిక" },
+                    { speaker: "కృష్ణుడు", text: "శక్నోతీహైవ యః సోఢుం ప్రాక్శరీరవిమోక్షణాత్। కామక్రోధోద్భవం వేగం స యుక్తః స సుఖీ నరః—ఈ శరీరాన్ని విడిచిపెట్టేలోపే ఎవరైతే కామక్రోధాల వేగాన్ని తట్టుకోగలరో, వారే నిజమైన యోగులు, వారే ఈ లోకంలో నిజమైన సుఖవంతులు!", emotion: "ఆత్మనిగ్రహం" },
+                    { speaker: "కృష్ణుడు", text: "భోక్తారం యజ్ఞతపసాం సర్వలోకమహేశ్వరమ్। సుహృదం సర్వభూతానాం జ్ఞాత్వా మాం శాంతిమృచ్ఛతి—నన్ను సమస్త యజ్ఞ తపస్సుల భోక్తగా, సర్వలోకాలకు పరమేశ్వరుడిగా, సమస్త ప్రాణులకు ప్రియమైన ఆత్మబంధువుగా (సుహృత్) తెలుసుకున్నవాడు పరమ శాంతిని పొందుతాడు!", emotion: "నిర్ణయాత్మక" }
+                ],
+                summary: "ఐదవ అధ్యాయంలో కర్మ సన్యాసము మరియు కర్మయోగముల సమన్వయం ప్రతిపాదించబడింది. బాహ్యంగా పనులను వదిలేయడం కంటే తామరాకుపై నీటిబొట్టు వలె అనాసక్తంగా పనులను భగవదర్పణంగా చేయడమే నిజమైన సన్యాసమని కృష్ణుడు విశదీకరిస్తాడు. పండితుడు సమస్త ప్రాణులను సమదృష్టితో చూస్తాడని, భగవంతుడే సమస్త యజ్ఞ భోక్త మరియు సర్వభూత సుహృదయమని తెలుసుకోవడం ద్వారానే నిజమైన శాంతి లభిస్తుందని ముగిస్తాడు.",
+                teachings: "• బాహ్య కర్మలను విడిచిపెట్టడం కంటే అంతర్గతంగా ఫలాసక్తిని త్యజించడమే నిజమైన సన్యాసం.\n• తామరాకుపై నీటిబొట్టు వలె ప్రాపంచిక విషయాలలో నిర్లిప్తంగా ఉంటూ విధులు నిర్వర్తించాలి.\n• విద్యావంతుడు, పశువు, సామాన్యుడు అందరిలోనూ ఒకే పరమాత్మను చూసే సమదర్శనమే నిజమైన జ్ఞానం.\n• కామక్రోధాల తీవ్ర వేగాన్ని అదుపులో ఉంచుకున్నవాడే నిజమైన యోగి, పరమ సుఖవంతుడు.",
+                moralLesson: "పనులను వదిలేసి పారిపోవడం గొప్పతనం కాదు, పనులను స్వార్థం లేకుండా నిర్వర్తించడమే ఉత్తమం. ఇంద్రియ సుఖాల వ్యామోహంలో పడకుండా, అందరినీ సమానంగా ప్రేమించాలి.",
+                kidsVersion: "శ్రీకృష్ణుడు చెప్పాడు: \"మంచి పిల్లలు తామరాకు మీద నీటిబొట్టు లాగా ఉంటారు—చెడు విషయాలు వాళ్లను అంటవు. అందరినీ సమానంగా చూస్తూ, జంతువులను ప్రేమిస్తూ, కోపం తెచ్చుకోకుండా ఉండేవారంటే దేవుడికి చాలా ఇష్టం!\""
+            },
+            6: {
+                title: "ఆత్మసంయమ యోగం",
+                subtitle: "ధ్యాన యోగము, మనోనిగ్రహము మరియు యోగభ్రష్టునికి సద్గతి",
+                description: "మనస్సును మిత్రుడిగా ఎలా మార్చుకోవాలో, ధ్యాన స్థితిని ఎలా సాధించాలో మరియు భక్తియుతుడైన ధ్యాని ఎలా అత్యున్నతుడో కృష్ణుడు బోధిస్తాడు.",
+                dialogue: [
+                    { speaker: "కృష్ణుడు", text: "అనాశ్రితః కర్మఫలం కార్యం కర్మ కరోతి యః। స సంన్యాసీ చ యోగీ చ న నిరగ్నిర్న చాక్రియః—కర్మఫలాన్ని ఆశించకుండా కర్తవ్య కర్మలను ఆచరించేవాడే నిజమైన సన్యాసి మరియు యోగి; కేవలం అగ్నిహోత్రాది కర్మలను, పనులను విడిచిపెట్టినంత మాత్రాన ఎవరూ సన్యాసి కాలేరు.", emotion: "బోధన" },
+                    { speaker: "కృష్ణుడు", text: "ఉద్ధరేదాత్మనాత్మానం నాత్మానమవసాదయేత్। ఆత్మైవ హ్యాత్మనో బంధురాత్మైవ రిపురాత్మనః—తనను తాను ఉద్ధరించుకోవాలి గానీ తనను అధఃపాతాళానికి నెట్టివేయకూడదు; ఎందుకంటే మనస్సే తనకు నిజమైన బంధువు, మనస్సే తనకు బద్ధశత్రువు!", emotion: "ఆత్మబోధ" },
+                    { speaker: "కృష్ణుడు", text: "ఎవరైతే తన మనస్సును జయించారో, వారికి మనస్సు అత్యుత్తమ మిత్రుడు; మనస్సును జయించని వారికి ఆ మనస్సే శత్రువు వలె అపకారం చేస్తుంది. శీతోష్ణాలు, సుఖదుఃఖాలు, మానావమానాలలో సమబుద్ధి కలవాడే జితాత్ముడైన యోగి.", emotion: "స్పష్టత" },
+                    { speaker: "కృష్ణుడు", text: "శుచౌ దేశే ప్రతిష్ఠాప్య స్థిరమాసనమాత్మనః—పవిత్రమైన స్థలంలో దర్భలు, జింకచర్మం, వస్త్రం పరచి నిశ్చలమైన ఆసనంపై కూర్చుని, శరీరం, మెడ, తలలను నిటారుగా ఉంచి, దిక్కులు చూడకుండా నాసికాగ్రాన్ని దృష్టిసారించి, మనస్సును నాపైనే నిలిపి ధ్యానం చేయాలి.", emotion: "ధ్యాన పద్ధతి" },
+                    { speaker: "కృష్ణుడు", text: "నాత్యశ్నతస్తు యోగోऽస్తి న చైకాంతమనశ్నతః—అతిగా తినేవాడికి, అసలే తిననివాడికి, అతిగా నిద్రపోయేవాడికి, ఎప్పుడూ మేల్కొని ఉండేవాడికి యోగం సిద్ధించదు! ఆహార విహారాలలో, పనులలో, నిద్రలో సమతుల్యత (యుక్తాహార విహారస్య) పాటించేవానికే యోగం దుఃఖాన్ని నాశనం చేస్తుంది.", emotion: "సమతుల్యత" },
+                    { speaker: "కృష్ణుడు", text: "యథా దీపో నివాతస్థో నేంగతే సోపమా స్మృతా—గాలి లేని చోట ఉంచిన దీపపు జ్యోతి కదలకుండా నిలకడగా వెలుగుతున్నట్లు, మనస్సును పరమాత్మపై లగ్నం చేసిన యోగి చిత్తం నిశ్చలంగా ఉంటుంది.", emotion: "దీపపు ఉపమానం" },
+                    { speaker: "కృష్ణుడు", text: "యో మాం పశ్యతి సర్వత్ర సర్వం చ మయి పశ్యతి। తస్యాహం న ప్రణశ్యామి స చ మే న ప్రణశ్యతి—నన్ను సమస్త ప్రాణులలోను, సమస్త చరాచర సృష్టిని నాయందును ఎవరు దర్శిస్తారో, వారికి నేను ఎన్నడూ దూరం కాను, వారు నాకు ఎన్నడూ దూరం కారు!", emotion: "సర్వవ్యాపకత్వం" },
+                    { speaker: "అర్జునుడు", text: "చంచలం హి మనః కృష్ణ ప్రమాథి బలవద్దృఢమ్। తస్యాహం నిగ్రహం మన్యే వాయోరివ సుదుష్కరమ్—కృష్ణా! ఈ మనస్సు అత్యంత చంచలమైనది, ప్రమాదకరమైనది, బలమైనది, మొండి పట్టుదల కలది! గాలిని చేతులతో బంధించడం ఎంత కష్టమో, మనస్సును నిగ్రహించడం అంతకంటే కష్టమని నేను భావిస్తున్నాను.", emotion: "నివేదన" },
+                    { speaker: "కృష్ణుడు", text: "అసంశయం మహాబాహో మనో దుర్నిగ్రహం చలమ్। అభ్యాసేన తు కౌన్తేయ వైరాగ్యేణ చ గృహ్యతే—ఓ మహాబాహు అర్జునా! నీవు చెప్పినది నిస్సందేహంగా నిజమే; మనస్సు చంచలమైనదే, నిగ్రహించడం కష్టమే. అయినప్పటికీ నిరంతర అభ్యాసము మరియు వైరాగ్యము ద్వారా దానిని తప్పక వశపరచుకోవచ్చును!", emotion: "ఆశావాదం" },
+                    { speaker: "అర్జునుడు", text: "శ్రద్ధ ఉండి కూడా మనస్సు నిలకడ లేక యోగభ్రష్టుడైన సాధకుని గతి ఏమిటి కృష్ణా? అతను ఇటు భోగాలనూ, అటు మోక్షాన్నీ కోల్పోయి విచ్ఛిన్నమైన మేఘం వలె నశించిపోతాడా?", emotion: "ఆందోళన" },
+                    { speaker: "కృష్ణుడు", text: "పార్థ నైవేహ నాముత్ర వినాశస్తస్య విద్యతే। న హి కల్యాణకృత్కశ్చిద్దుర్గతిం తాత గచ్ఛతి—ఓ పార్థా! కల్యాణకరమైన మంచి మార్గంలో నడిచేవాడు ఈ లోకంలో గానీ, పరలోకంలో గానీ ఎన్నడూ నాశనం కాడు! యోగభ్రష్టుడు పుణ్యాత్ముల లోకాలను అనుభవించి, పవిత్రులైన శ్రీమంతుల ఇంటనో లేదా జ్ఞానులైన యోగుల వంశంలోనో జన్మిస్తాడు. పూర్వజన్మ సాధనా సంస్కారాల బలంతో అతడు తిరిగి మోక్షం వైపు నడుస్తాడు.", emotion: "భరోసా" },
+                    { speaker: "కృష్ణుడు", text: "యోగినాం సర్వేషాం మద్గతేనాంతరాత్మనా। శ్రద్ధావాన్భజతే యో మాం స మే యుక్తతమో మతః—సమస్త యోగులలో కూడా తన అంతరాత్మను నాలో నిలిపి, పరమ శ్రద్ధతో నన్ను సేవించే భక్తుడే నా దృష్టిలో సర్వోత్తమ యోగి!", emotion: "నిర్ణయాత్మక" }
+                ],
+                summary: "ఆరవ అధ్యాయం ధ్యాన యోగ శాస్త్రము. \"మనస్సే మిత్రుడు, మనస్సే శత్రువు\" అని చాటుతూ ఆత్మసంయమన మార్గాన్ని కృష్ణుడు వివరిస్తాడు. ధ్యానానికి అనువైన ఆసనం, యుక్తాహార విహారాల ప్రాధాన్యత, మరియు గాలి లేని చోట నిశ్చల దీపం వలె చిత్తాన్ని పరమాత్మపై లగ్నం చేసే విధానాన్ని బోధిస్తాడు. మనస్సు చంచలమైనదైనా అభ్యాస-వైరాగ్యాల చేత వశమవుతుందని, సన్మార్గంలో నడిచే సాధకుడు ఎన్నడూ నాశనం కాడని, భక్తితో భగవంతుని ధ్యానించేవాడే అత్యుత్తమ యోగి అని ప్రకటిస్తాడు.",
+                teachings: "• మనస్సును అదుపులో ఉంచుకుంటే అది పరమ మిత్రుడు, విచ్చలవిడిగా వదిలేస్తే పరమ శత్రువు.\n• అతిగా తినడం, పస్తులుండటం, అతి నిద్ర లేదా నిద్రలేమి యోగానికి శత్రువులు; జీవన సమతుల్యతే మూలస్తంభం.\n• చంచలమైన మనస్సును అభ్యాసము (నిరంతర సాధన) మరియు వైరాగ్యము (అనాసక్తి) ద్వారానే వశపరచుకోవచ్చు.\n• మంచి పనులు చేసి ఆధ్యాత్మిక మార్గంలో నడిచేవాడు ఎన్నడూ చెడిపోడు; ఒక జన్మలో కాకపోయినా వచ్చే జన్మలో మోక్షం పొందుతాడు.",
+                moralLesson: "మనస్సు మన మాట వినేలా శిక్షణ ఇవ్వాలి తప్ప, మనస్సు చెప్పినట్లు మనం ప్రవర్తించకూడదు. రోజూ కాసేపు ప్రశాంతంగా ధ్యానం చేయడం, క్రమశిక్షణతో కూడిన జీవనాన్ని అలవర్చుకోవడం శాంతికి అసలైన మార్గం.",
+                kidsVersion: "శ్రీకృష్ణుడు చెప్పాడు: \"మన మనస్సు ఒక అల్లరి కోతి లాంటిది. దానికి మంచి అలవాట్లు నేర్పితే అది మన బెస్ట్ ఫ్రెండ్ అవుతుంది. ఎక్కువ జంక్ ఫుడ్ తినకుండా, టైంకి నిద్రపోతూ, శ్రద్ధగా మన పనులు చేస్తే మనం ఎందులోనైనా విజయం సాధించవచ్చు.\""
+            },
+            7: {
+                title: "జ్ఞాన విజ్ఞాన యోగం",
+                subtitle: "పరా-అపరా ప్రకృతులు, మాయాతత్వము మరియు నాలుగు విధాల భక్తులు",
+                description: "సృష్టికి మూలమైన దైవీ శక్తులు, భ్రాంతి కలిగించే మాయ, మరియు నాలుగు రకాల భక్తులలో జ్ఞాని యొక్క శ్రేష్ఠతను కృష్ణుడు వివరిస్తాడు.",
+                dialogue: [
+                    { speaker: "కృష్ణుడు", text: "మయ్యాసక్తమనాః పార్థ యోగం యుంజన్మదాశ్రయః। అసంశయం సమగ్రం మాం యథా జ్ఞాస్యసి తచ్ఛృణు—ఓ పార్థా! నాయందే మనస్సు లగ్నం చేసి, నన్నే ఆశ్రయించి యోగ సాధన చేస్తూ నన్ను సమగ్రంగా, నిస్సంశయంగా ఎలా తెలుసుకోగలవో ఆ జ్ఞానాన్ని మరియు విజ్ఞానాన్ని నీకు ఉపదేశిస్తాను.", emotion: "బోధన" },
+                    { speaker: "కృష్ణుడు", text: "మనుష్యాణాం సహస్రేషు కశ్చిద్యతతి సిద్ధయే। యతతామపి సిద్ధానాం కశ్చిన్మాం వేత్తి తత్త్వతః—వేలాది మంది మనుష్యులలో ఏ ఒక్కడో ఆత్మశుద్ధి కొరకు ప్రయత్నిస్తాడు; అలా ప్రయత్నించిన సాధకులలో కూడా ఏ ఒక్కడో నన్ను తత్త్వరీత్యా యథార్థంగా తెలుసుకోగలుగుతున్నాడు!", emotion: "గహన సత్యం" },
+                    { speaker: "కృష్ణుడు", text: "భూమిరాపోऽనలో వాయుః ఖం మనో బుద్ధిరేవ చ। అహంకార ఇతీయం మే భిన్నా ప్రకృతిరష్టధా—భూమి, నీరు, అగ్ని, వాయువు, ఆకాశం, మనస్సు, బుద్ధి, అహంకారము అనే ఈ ఎనిమిది నా అపరా ప్రకృతి (జడ ప్రకృతి). దీనికంటే భిన్నమైనది, సమస్త జగత్తును ధరించి ఉంచే జీవభూతమైనది నా \"పరా ప్రకృతి\" (చేతన ప్రకృతి).", emotion: "సృష్టి తత్త్వం" },
+                    { speaker: "కృష్ణుడు", text: "మత్తః పరతరం నాన్యత్కించిదస్తి ధనంజయ। మయి సర్వమిదం ప్రోతం సూత్రే మణిగణా ఇవ—ఓ ధనంజయా! నాకంటే పరమైనది ఈ సృష్టిలో ఏదీ లేదు! దారంలో మణులు గ్రుచ్చబడినట్లు సమస్త జగత్తు నాలోనే ఓతప్రోతమై ఉన్నది.", emotion: "దివ్య సత్యం" },
+                    { speaker: "కృష్ణుడు", text: "రసోऽహమప్సు కౌన్తేయ ప్రభాస్మి శశిసూర్యయోః। ప్రణవః సర్వవేదేషు శబ్దః ఖే పౌరుషం నృషు—నీటిలో రసము నేను, సూర్యచంద్రులలో కాంతిని నేను, సమస్త వేదాలలో ఓంకారమును నేను, ఆకాశంలో శబ్దమును నేను, మానవులలోని పౌరుషము (సామర్థ్యము) నేనే!", emotion: "విభూతి దర్శనం" },
+                    { speaker: "కృష్ణుడు", text: "దైవీ హ్యేషా గుణమయీ మమ మాయా దురత్యయా। మామేవ యే ప్రపద్యన్తే మాయామేతాం తరంతి తే—సత్త్వ-రజస్-తమో గుణాలతో కూడిన నా ఈ దివ్య మాయ దాటరానిది! ఎవరైతే నన్ను మాత్రమే అనన్య భావంతో శరణు వేడుతారో, వారు మాత్రమే ఈ దుస్తరమైన మాయను సులభంగా దాటగలరు!", emotion: "మాయాతరణం" },
+                    { speaker: "కృష్ణుడు", text: "చతుర్విధా భజంతే మాం జనాః సుకృతినోऽర్జున। ఆర్తో జిజ్ఞాసురర్థార్థీ జ్ఞానీ చ భరతర్షభ—ఓ భరతశ్రేష్ఠా! పుణ్యకర్మలు చేసే నాలుగు విధాల భక్తులు నన్ను సేవిస్తారు: ఆపదలలో ఉన్న ఆర్తుడు, భగవత్తత్వాన్ని తెలుసుకోగోరే జిజ్ఞాసువు, ఐశ్వర్యాన్ని కోరే అర్థార్థి, మరియు నిత్యతృప్తుడైన జ్ఞాని.", emotion: "భక్తుల వర్గీకరణ" },
+                    { speaker: "కృష్ణుడు", text: "తేషాం జ్ఞానీ నిత్యయుక్త ఏకభక్తిర్విశిష్యతే। ప్రియో హి జ్ఞానినోऽత్యర్థమహం స చ మమ ప్రియః—ఈ నలుగురిలో నాయందే నిత్యము నిలిచి, అనన్య భక్తి కలిగిన జ్ఞానియే సర్వశ్రేష్ఠుడు! జ్ఞానికి నేను అత్యంత ప్రియమైనవాడను, ఆ జ్ఞాని నాకు అత్యంత ప్రియమైనవాడు. నన్ను చేరిన జ్ఞాని సాక్షాత్తూ నా ఆత్మయే అని నా నిశ్చితాభిప్రాయం!", emotion: "జ్ఞాని శ్రేష్ఠత" },
+                    { speaker: "కృష్ణుడు", text: "బహూనాం జన్మనామంతే జ్ఞానవాన్మాం ప్రపద్యతే। వాసుదేవః సర్వమితి స మహాత్మా సుదుర్లభః—అనేక జన్మల సాధనా పరిపాకం తర్వాత, \"సర్వమూ వాసుదేవమయమే\" అని తెలుసుకుని నన్ను శరణు వేడే జ్ఞానియైన మహాత్ముడు అత్యంత దుర్లభుడు!", emotion: "వాసుదేవః సర్వమ్" },
+                    { speaker: "కృష్ణుడు", text: "కోరికలచేత జ్ఞానం నశించిన కొందరు ఇతర దేవతలను పూజిస్తారు; వారి శ్రద్ధను బట్టి నేను ఆయా ఫలాలను అనుగ్రహిస్తాను. కానీ అల్పబుద్ధి గల వారి ఫలాలు నశించేవి. నన్ను భజించే నా భక్తులు శాశ్వతంగా నన్నే చేరుకుంటారు.", emotion: "స్పష్టత" },
+                    { speaker: "కృష్ణుడు", text: "అవ్యక్తం వ్యక్తిమాపన్నం మన్యంతే మామబుద్ధయః—అజ్ఞానులు నా అవ్యయమైన, సర్వోత్తమ పరమ భావాన్ని తెలుసుకోలేక, నన్ను కేవలం సామాన్య మానవ దేహం ధరించిన వ్యక్తిగా భావిస్తారు. నా యోగమాయచేత కప్పబడిన నేను అందరికీ ప్రత్యక్షం కాను.", emotion: "నిర్ణయాత్మక" }
+                ],
+                summary: "ఏడవ అధ్యాయంలో శ్రీకృష్ణుడు తన అష్టవిధ అపరా ప్రకృతిని (పంచభూతాలు, మనస్సు, బుద్ధి, అహంకారం) మరియు సృష్టిని నిలిపే పరా ప్రకృతిని (చేతన) వెల్లడిస్తాడు. దారంలో మణుల వలె సృష్టి అంతా భగవంతునిలోనే గ్రుచ్చబడి ఉన్నదని చాటుతాడు. త్రిగుణాత్మకమైన మాయను భగవచ్ఛరణాగతి ద్వారానే దాటగలరని స్పష్టం చేస్తాడు. ఆర్తుడు, జిజ్ఞాసువు, అర్థార్థి, జ్ఞాని అనే నాలుగు రకాల భక్తులలో \"సర్వమూ వాసుదేవమయమే\" అని గ్రహించిన జ్ఞానియే తనకు ఆత్మస్వరూపుడని ప్రకటిస్తాడు.",
+                teachings: "• దృశ్య జగత్తు మరియు అంతర్గత చేతన రెండూ భగవంతుని అపరా-పరా శక్తుల స్వరూపాలే.\n• సూత్రంలో పూసల వలె విశ్వమంతా పరమాత్మయందే నిలిచి ఉన్నది (మయి సర్వమిదం ప్రోతం).\n• భగవంతుని త్రిగుణమయ మాయ అత్యంత బలమైనది; ఆయనను శరణు వేడినవారే దానిని దాటగలరు.\n• సర్వ ప్రాణులలో భగవంతుడిని దర్శించే జ్ఞానియే భగవంతునికి పరమ ప్రియమైనవాడు.",
+                moralLesson: "ప్రాపంచిక తాత్కాలిక లాభాల కోసం కాకుండా, భగవత్తత్వాన్ని అర్థం చేసుకోవడానికి నిష్కామ భక్తితో జీవించాలి. కంటికి కనిపించే జగత్తంతా ఒకే పరమాత్మ దివ్య చైతన్యమని గ్రహించి వినయంతో మెలగాలి.",
+                kidsVersion: "శ్రీకృష్ణుడు చెప్పాడు: \"మనం దారంలో పూలదండ గుచ్చినట్లు, ఈ ప్రపంచంలో ఉన్న చెట్లు, నక్షత్రాలు, మనుషులు అందరూ నాతోనే కలిసి ఉన్నారు. నీటిలో రుచి, సూర్యుడిలో వెలుగు నేనే! ఎవరైతే దేవుడిని నిజమైన ప్రేమతో ప్రార్థిస్తారో, వాళ్లను దేవుడు ఎప్పుడూ కాపాడుతాడు.\""
+            },
+            8: {
+                title: "అక్షర పరబ్రహ్మ యోగం",
+                subtitle: "అంత్యకాల స్మరణ, ఓంకార ధ్యానము మరియు మోక్ష ప్రయాణము",
+                description: "బ్రహ్మ, కర్మ, అధ్యాత్మ తత్వాలు, మరణ సమయంలో చిత్తం నిలపడం మరియు పునర్జన్మ లేని పరమ పదాన్ని చేరే మార్గాన్ని కృష్ణుడు బోధిస్తాడు.",
+                dialogue: [
+                    { speaker: "అర్జునుడు", text: "కిం తద్బ్రహ్మ కిమధ్యాత్మం కిం కర్మ పురుషోత్తమ। అధిభూతం చ కిం ప్రోక్తమధిదైవం కిముచ్యతే—ఓ పురుషోత్తమా! ఆ పరబ్రహ్మ అంటే ఏమిటి? అధ్యాత్మ అంటే ఏమిటి? కర్మ అంటే ఏమిటి? అధిభూతము, అధిదైవము అంటే ఏమిటి? ఈ శరీరంలో అధియజ్ఞుడు ఎవరు? మరణ సమయంలో మిమ్మల్ని నియతాత్ములు ఎలా తెలుసుకోగలరు?", emotion: "సందేహాలు" },
+                    { speaker: "కృష్ణుడు", text: "అక్షరం పరమం బ్రహ్మ స్వభావోऽధ్యాత్మముచ్యతే—నాశనం లేని పరమ తత్త్వమే \"పరబ్రహ్మ\"; ప్రాణులలోని జీవభావమే \"అధ్యాత్మము\"; ప్రాణుల సృష్టి, ఎదుగుదలకు కారణమయ్యే త్యాగమే \"కర్మ\". నశించే భౌతిక వస్తువులన్నీ \"అధిభూతము\"; హిరణ్యగర్భుడైన విరాట్ పురుషుడు \"అధిదైవము\"; ఈ శరీరంలో అంతర్యామిగా ఉండే నేనే \"అధియజ్ఞుడను\"!", emotion: "నిర్వచనాలు" },
+                    { speaker: "కృష్ణుడు", text: "అంతకాలే చ మామేవ స్మరన్ముక్త్వా కలేవరమ్। యః ప్రయాతి స మద్భావం యాతి నాస్త్యత్ర సంశయః—మరణ సమయంలో నన్ను మాత్రమే స్మరిస్తూ శరీరాన్ని విడిచిపెట్టేవాడు నిస్సందేహంగా నా దివ్య భావాన్ని (నన్ను) పొందుతాడు!", emotion: "అంత్యకాల స్మరణ" },
+                    { speaker: "కృష్ణుడు", text: "యం యం వాపి స్మరన్భావం త్యజత్యంతే కలేవరమ్। తం తమేవైతి కౌన్తేయ సదా తద్భావభావితః—మానవుడు మరణ సమయంలో ఏ భావాన్ని తీవ్రంగా స్మరిస్తూ దేహాన్ని త్యజిస్తాడో, జీవితాంతం ఆ భావనలోనే మునిగి ఉన్నందున అతడు ఆ రూపాలనే పొందుతాడు.", emotion: "కర్మ నియమం" },
+                    { speaker: "కృష్ణుడు", text: "తస్మాత్సర్వేషు కాలేషు మామనుస్మర యుధ్య చ। మయ్యర్పితమనోబుద్ధిర్మామేవైష్యస్యసంశయః—అందుచేత అర్జునా! సర్వ కాలములయందునూ నన్నే స్మరించుము, అదే సమయంలో నీ స్వధర్మమైన యుద్ధాన్ని చేయుము! నాయందు అర్పించిన మనోబుద్ధులతో నీవు నిశ్చయంగా నన్నే చేరుకుంటావు.", emotion: "కర్తవ్య సందేశం" },
+                    { speaker: "కృష్ణుడు", text: "ఓం ఇత్యేకాక్షరం బ్రహ్మ వ్యాహరన్మామనుస్మరన్। యః ప్రయాతి త్యజందేహం స యాతి పరమాం గతిమ్—సమస్త ఇంద్రియ ద్వారాలను నియంత్రించి, మనస్సును హృదయంలో బంధించి, ప్రాణాన్ని శిరస్సున నిలిపి, \"ఓం\" అనే ఏకాక్షర బ్రహ్మను ఉచ్ఛరిస్తూ నన్ను స్మరించేవాడు పరమ గతిని పొందుతాడు.", emotion: "ఓంకార సాధన" },
+                    { speaker: "కృష్ణుడు", text: "అనన్యచేతాః సతతం యో మాం స్మరతి నిత్యశః। తస్యాహం సులభః పార్థ నిత్యయుక్తస్య యోగినః—ఇతర ఆలోచనలు ఏవీ లేకుండా నిరంతరం నన్నే స్మరించే నిత్యయుక్తుడైన యోగికి నేను అత్యంత సులభంగా లభిస్తాను!", emotion: "సులభ మార్గం" },
+                    { speaker: "కృష్ణుడు", text: "ఆబ్రహ్మభువనాల్లోకాః పునరావర్తినోऽర్జున। మాముపేత్య తు కౌన్తేయ పునర్జన్మ న విద్యతే—బ్రహ్మలోకం మొదలుకుని సమస్త లోకాలూ తిరిగి పునర్జన్మను ఇచ్చేవే; కానీ నన్ను చేరుకున్న భక్తునికి మరల జన్మ అనేది ఉండదు!", emotion: "శాశ్వత మోక్షం" },
+                    { speaker: "కృష్ణుడు", text: "పరస్తస్మాత్తు భావోऽన్యోऽవ్యక్తోऽవ్యక్తాత్సనాతనః। యః స సర్వేషు భూతేషు నశ్యత్సు న వినశ్యతి—సమస్త ప్రాణులు నశించినా ఎన్నడూ నశించని శాశ్వతమైన అవ్యక్త పరమ ధామం నాది; దానిని పొందినవారు తిరిగి సంసార చక్రంలోకి రారు. భక్తి చేత మాత్రమే ఆ పరమ పురుషుని పొందగలరు.", emotion: "పరమ ధామం" }
+                ],
+                summary: "ఎనిమిదవ అధ్యాయంలో అర్జునుని ఏడు తాత్విక ప్రశ్నలకు (బ్రహ్మ, అధ్యాత్మ, కర్మ, అధిభూత, అధిదైవ, అధియజ్ఞ, అంత్యకాల స్మరణ) శ్రీకృష్ణుడు సమాధానమిస్తాడు. అంత్యకాలంలో మనిషి ఏ భావనతో శరీరాన్ని విడుస్తాడో ఆ గతియే పొందుతాడు కాబట్టి \"నన్ను స్మరిస్తూనే నీ కర్తవ్య యుద్ధం చేయి\" (మామనుస్మర యుధ్య చ) అని ఆదేశిస్తాడు. ఇంద్రియ నిగ్రహం, ఓంకార సాధన, నిరంతర భక్తి స్మరణ ద్వారా పునర్జన్మ లేని పరమ ధామాన్ని చేరుకోవచ్చని స్పష్టం చేస్తాడు.",
+                teachings: "• మరణ క్షణంలో అంతఃకరణ స్థితి తదుపరి జన్మను నిర్ణయిస్తుంది.\n• అంత్యకాలంలో భగవత్స్మరణ కలగాలంటే జీవితాంతం ప్రతి క్షణం భగవంతుని స్మరిస్తూనే కర్తవ్యాలు నిర్వర్తించాలి.\n• ఇతర ఆలోచనలు లేకుండా నిత్యం భగవంతుని స్మరించే భక్తునికి ఆయన సులభంగా లభ్యమవుతాడు.\n• బ్రహ్మలోకంతో సహా భౌతిక లోకాలన్నీ పునర్జన్మను ఇచ్చేవే; పరమాత్మను పొందినవారికే శాశ్వత మోక్షం లభిస్తుంది.",
+                moralLesson: "జీవితం ఎప్పుడు ముగుస్తుందో ఎవరికీ తెలియదు. కాబట్టి ఆధ్యాత్మిక సాధనను వృద్ధాప్యానికి వాయిదా వేయకుండా, ఇప్పటి నుంచే పనులను చేస్తూనే మనస్సును దైవచింతనతో నింపుకోవాలి.",
+                kidsVersion: "శ్రీకృష్ణుడు చెప్పాడు: \"మనం మన పరీక్ష రాస్తూ కూడా భగవంతుడిని తలచుకోవచ్చు. రోజూ మంచి పనులు చేస్తూ దేవుడిని తలచుకుంటే, చివర్లో కూడా మనకు దేవుడే గుర్తుకొస్తాడు. అలా దేవుడిని నమ్మినవాళ్లు ఎప్పుడూ భయపడాల్సిన అవసరం ఉండదు.\""
+            },
+            9: {
+                title: "రాజవిద్య రాజగుహ్య యోగం",
+                subtitle: "పరమ రహస్య దివ్య జ్ఞానము, భగవద్రక్షణ మరియు పత్రం పుష్పం ఫలం తోయం",
+                description: "సకల విద్యలలో రాజైన పరమ పవిత్ర జ్ఞానాన్ని, అనన్య భక్తులను భగవంతుడు స్వయంగా యోగక్షేమాలు వహించే అభయాన్ని కృష్ణుడు అనుగ్రహిస్తాడు.",
+                dialogue: [
+                    { speaker: "కృష్ణుడు", text: "ఇదం తు తే గుహ్యతమం ప్రవక్ష్యామ్యనసూయవే—అసూయ లేనివాడవు కాబట్టి నీకు అత్యంత రహస్యమైన, ప్రత్యక్ష అనుభవజ్ఞానాన్ని బోధిస్తున్నాను. ఇది రాజవిద్య, సమస్త రహస్యాలలో శ్రేష్ఠమైనది, పరమ పవిత్రమైనది, ధర్మయుక్తమైనది, ఆచరించడానికి సులభమైనది మరియు నాశనం లేనిది.", emotion: "పరమ రహస్యం" },
+                    { speaker: "కృష్ణుడు", text: "మయా తతమిదం సర్వం జగదవ్యక్తమూర్తినా। మత్స్థాని సర్వభూతాని న చాహం తేష్వవస్థితః—ఈ సమస్త విశ్వమూ నా అవ్యక్త రూపంచేత వ్యాపించి ఉన్నది; సర్వ ప్రాణులూ నాయందే నివసిస్తున్నాయి, కానీ నేను వాటియందు బంధింపబడి లేను. ఆకాశంలో నిత్యం సంచరించే మహావాయువు ఆకాశంలోనే ఉన్నట్లు, సమస్త భూతాలూ నాలోనే ఉన్నాయని తెలుసుకో.", emotion: "దివ్య వ్యాపకత్వం" },
+                    { speaker: "కృష్ణుడు", text: "మయాధ్యక్షేణ ప్రకృతిః సూయతే సచరాచరమ్—నా అధ్యక్షతన ప్రకృతి ఈ చరాచర జగత్తును సృష్టిస్తోంది. ఈ కారణం చేతనే జగత్తు నిరంతరం చక్రం వలె తిరుగుతోంది.", emotion: "అధ్యక్షత" },
+                    { speaker: "కృష్ణుడు", text: "అవజానంతి మాం మూఢా మానుషీం తనుమాశ్రితామ్—నేను మానవ దేహాన్ని ఆశ్రయించి ఉన్నందున, నా పరమ మహేశ్వర తత్త్వాన్ని తెలియని మూఢులు నన్ను సామాన్య మానవుడిగా భావించి తిరస్కరిస్తారు.", emotion: "హెచ్చరిక" },
+                    { speaker: "కృష్ణుడు", text: "సతతం కీర్తయంతో మాం యతంతశ్చ దృఢవ్రతాః। నమస్యంతశ్చ మాం భక్త్యా నిత్యయుక్తా ఉపాసతే—మహాత్ములు నన్ను సర్వభూతాలకు ఆది కారణమైన అవ్యయుడిగా తెలుసుకుని, నిరంతరం నా నామాన్ని కీర్తిస్తూ, దృఢ సంకల్పంతో ప్రయత్నిస్తూ, భక్తితో నమస్కరిస్తూ నన్ను ఉపాసిస్తారు.", emotion: "మహాత్ముల భక్తి" },
+                    { speaker: "కృష్ణుడు", text: "అహం క్రతురహం యజ్ఞః స్వధాహమహమౌషధమ్। మంత్రోऽహమహమేవాజ్యం అహమగ్నిరహం హుతమ్—క్రతువు నేను, యజ్ఞం నేను, పితృదేవతల శ్రద్ధ నేను, ఔషధం నేను, మంత్రం నేను, ఆజ్యం నేను, అగ్ని నేను, హోమం చేయబడే హవిస్సు కూడా నేనే! తండ్రిని, తల్లిని, సృష్టికర్తను, తెలుసుకోదగిన ఓంకారాన్ని నేనే!", emotion: "సర్వస్వం" },
+                    { speaker: "కృష్ణుడు", text: "అనన్యాశ్చింతయంతో మాం యే జనాః పర్యుపాసతే। తేషాం నిత్యాభియుక్తానాం యోగక్షేమం వహామి యహమ్—ఇతర ఆలోచనలు ఏవీ లేకుండా అనన్య భావంతో నన్నే చింతిస్తూ ఉపాసించే నిత్యయుక్తులైన భక్తుల యోగక్షేమాలను (లభించని వాటిని ప్రసాదించడం, లభించిన వాటిని కాపాడటం) నేనే స్వయంగా వహిస్తాను!", emotion: "యోగక్షేమ ప్రతిజ్ఞ" },
+                    { speaker: "కృష్ణుడు", text: "పత్రం పుష్పం ఫలం తోయం యో మే భక్త్యా ప్రయచ్ఛతి। తదహం భక్త్యుపహృతమశ్నామి ప్రయతాత్మనః—భక్తితో ఎవరైతే నాకు ఒక ఆకును గానీ, ఒక పువ్వును గానీ, ఒక పండును గానీ, దోసెడు నీటిని గానీ సమర్పిస్తారో, ఆ శుద్ధాంతఃకరణుడైన భక్తుడు సమర్పించిన దానిని నేను పరమ ప్రీతితో స్వీకరిస్తాను!", emotion: "పత్రం పుష్పం" },
+                    { speaker: "కృష్ణుడు", text: "యత్కరోషి యదశ్నాసి యజ్జుహోషి దదాసి యత్। యత్తపస్యసి కౌన్తేయ తత్కురుష్వ మదర్పణమ్—నీవు ఏది చేసినా, ఏది తిన్నా, ఏది హోమం చేసినా, ఏది దానం ఇచ్చినా, ఏ తపస్సు చేసినా—ఓ కౌంతేయా! వాటన్నింటినీ నాకే సమర్పణగా (భగవదర్పణంగా) చేయుము!", emotion: "పూర్ణ సమర్పణ" },
+                    { speaker: "కృష్ణుడు", text: "సమోऽహం సర్వభూతేషు న మే ద్వేష్యోऽస్తి న ప్రియః। యే భజంతి తు మాం భక్త్యా మయి తే తేషు చాప్యహమ్—నాకు సమస్త ప్రాణులయందు సమభావమే ఉంది; నాకు ద్వేషింపదగినవాడు గానీ, ప్రత్యేకంగా ప్రియమైనవాడు గానీ లేడు. అయితే ఎవరైతే నన్ను భక్తితో భజిస్తారో, వారు నాయందు ఉంటారు, నేను వారియందు ఉంటాను.", emotion: "దివ్య సమత్వం" },
+                    { speaker: "కృష్ణుడు", text: "అపి చేత్సుదురాచారో భజతే మామనన్యభాక్। సాధురేవ స మంతవ్యః సమ్యగ్వ్యవసితో హి సః—ఎంతటి దుర్మార్గుడైనా అనన్య భక్తితో నన్ను ఆశ్రయిస్తే అతడు సాధువుగానే పరిగణింపబడతాడు. అతడు శీఘ్రంగా ధర్మాత్ముడై శాశ్వత శాంతిని పొందుతాడు. కౌంతేయా! ప్రతిజ్ఞ చేయి: \"న మే భక్తః ప్రణశ్యతి\"—నా భక్తుడు ఎన్నడూ నశించడు!", emotion: "అభయ ప్రదానం" },
+                    { speaker: "కృష్ణుడు", text: "మన్మనా భవ మద్భక్తో మద్యాజీ మాం నమస్కురు। మామేవైష్యసి యుక్త్వైవమాత్మానం మత్పరాయణః—నీ మనస్సును నాయందే నిలుపుము, నా భక్తుడవు కమ్ము, నన్నే పూజించుము, నాకు నమస్కరించుము. నన్నే పరమ గతిగా నమ్ముకున్న నీవు తప్పక నన్నే పొందుతావు!", emotion: "నిర్ణయాత్మక" }
+                ],
+                summary: "తొమ్మిదవ అధ్యాయం \"రాజవిద్య రాజగుహ్య యోగం\"—సకల రహస్యాలలో రారాజు వంటిది. భగవంతుడు సమస్త జగత్తును వ్యాపించి ఉన్నా ఆయన నిర్లిప్తుడు. భగవంతునికి ఆడంబరమైన కానుకలు అవసరం లేదు; ప్రేమతో సమర్పించే ఒక ఆకు, పువ్వు, పండు లేదా నీటి చుక్కను కూడా ఆయన స్వీకరిస్తాడు. \"అనన్యాశ్చింతయంతో మాం\" అని భక్తుల యోగక్షేమాలను తానే వహిస్తానని, \"న మే భక్తః ప్రణశ్యతి\" అని తన భక్తుడు ఎన్నడూ నశించడని అభయమిస్తూ సమస్త కర్మలను భగవదర్పణం చేయమని ముగిస్తాడు.",
+                teachings: "• భగవద్భక్తి రాజవిద్య; ఆచరించడానికి సులభమైనది, పరమ పవిత్రమైనది.\n• అనన్య భక్తితో శరణువేడిన భక్తుల సమస్త యోగక్షేమాలను భగవంతుడే స్వయంగా వహిస్తాడు.\n• దేవునికి కావలసింది సంపద కాదు, హృదయపూర్వకమైన నిష్కల్మష భక్తి (పత్రం, పుష్పం, ఫలం, తోయం).\n• మనం చేసే ప్రతి పనిని, తినే ప్రతి ఆహారాన్ని భగవదర్పణ బుద్ధితో చేయాలి.\n• ఎంతటి పాపియైనా పశ్చాత్తాపంతో అనన్య భక్తిని ఆశ్రయిస్తే భగవదనుగ్రహంతో ధర్మాత్ముడవుతాడు; భగవద్భక్తుడు ఎన్నడూ నశించడు.",
+                moralLesson: "జీవితంలో అహంకారాన్ని వీడి మనం చేసే ప్రతి మంచి పనినీ భగవంతునికి సమర్పించాలి. ఆడంబరాల కంటే స్వచ్ఛమైన ప్రేమ, నిజాయితీతో కూడిన సమర్పణ భావమే దేవునికి ప్రియమైనవి.",
+                kidsVersion: "శ్రీకృష్ణుడు చెప్పాడు: \"దేవుడిని పూజించడానికి ఖరీదైన వస్తువులు అక్కర్లేదు. ప్రేమతో ఇచ్చే ఒక చిన్న ఆకు, పువ్వు లేదా కొద్దిగా మంచినీళ్లు ఇచ్చినా దేవుడు ఎంతో సంతోషంగా తీసుకుంటాడు. ఎవరైతే దేవుడిని మనసారా నమ్ముతారో, వాళ్లను దేవుడు ఎప్పుడూ ఒక కంటికి రెప్పలా కాపాడుతాడు!\""
+            },
+            10: {
+                title: "విభూతి యోగం",
+                subtitle: "భగవంతుని దివ్య ఐశ్వర్యములు మరియు చతుఃశ్లోకి గీత",
+                description: "సమస్త భౌతిక మరియు ఆధ్యాత్మిక ప్రపంచాలలో భగవంతుని అపరిమితమైన దివ్య విభూతుల ప్రత్యక్ష ఆవిష్కరణ.",
+                dialogue: [
+                    { speaker: "కృష్ణుడు", text: "భూయ ఏవ మహాబాహో శృణు మే పరమం వచః—ఓ మహాబాహు అర్జునా! నా యందు అత్యంత ప్రేమ గలవాడవు కాబట్టి నీ పరమ హితం కొరకు నేను పూర్వం చెప్పిన దానికంటే శ్రేష్ఠమైన పరమ వచనాన్ని మరల చెబుతున్నాను, వినుము!", emotion: "వాత్సల్యం" },
+                    { speaker: "కృష్ణుడు", text: "న మే విదుః సురగణాః ప్రభవం న మహర్షయః—దేవతలు గానీ, మహర్షులు గానీ నా మూల ప్రభవాన్ని తెలుసుకోలేరు; ఎందుకంటే సమస్త దేవతలకు, మహర్షులకు కూడా ఆది కారణం నేనే! నన్ను పుట్టుక లేనివాడిగా, అనాదిగా, సర్వలోక మహేశ్వరుడిగా తెలుసుకున్నవాడు మానవులలో మోహరహితుడై సమస్త పాపాల నుండి విముక్తుడవుతాడు.", emotion: "దివ్య సత్యం" },
+                    { speaker: "కృష్ణుడు", text: "అహం సర్వస్య ప్రభవో మత్తః సర్వం ప్రవర్తతే। ఇతి మత్వా భజంతే మాం బుధా భావసమన్వితాః—సమస్త ఆధ్యాత్మిక, భౌతిక జగత్తులకు మూలకారణం నేనే! సర్వమూ నా నుండే ప్రవర్తిల్లుతున్నది. ఇలా తెలుసుకున్న జ్ఞానులైన భక్తులు పరమ భక్తిభావంతో నన్నే సేవిస్తారు!", emotion: "చతుఃశ్లోకి 1" },
+                    { speaker: "కృష్ణుడు", text: "మచ్చిత్తా మద్గతప్రాణా బోధయంతః పరస్పరమ్। కథయంతశ్చ మాం నిత్యం తుష్యంతి చ రమంతి చ—నా యందే చిత్తమును ఉంచి, నాకే ప్రాణాలను అర్పించి, భక్తులు పరస్పరం నా మహిమలను బోధించుకుంటూ, నా దివ్య లీలలను నిత్యం గానం చేసుకుంటూ పరమ సంతోషాన్ని, ఆనందాన్ని అనుభవిస్తారు.", emotion: "చతుఃశ్లోకి 2" },
+                    { speaker: "కృష్ణుడు", text: "తేషాం సతతయుక్తానాం భజతాం ప్రీతిపూర్వకమ్। దదామి బుద్ధియోగం తం యేన మాముపయాంతి తే—నిరంతరం నా యందే నిమగ్నులై, ప్రేమపూర్వకంగా నన్ను భజించే ఆ భక్తులకు, వారు నన్ను చేరుకోవడానికి అవసరమైన \"బుద్ధియోగాన్ని\" (దివ్య జ్ఞానాన్ని) నేనే స్వయంగా ప్రసాదిస్తాను!", emotion: "చతుఃశ్లోకి 3" },
+                    { speaker: "కృష్ణుడు", text: "తేషామేవానుకంపార్థమహమజ్ఞానజం తమః। నాశయామ్యాత్మభావస్థో జ్ఞానదీపేన భాస్వతా—ఆ భక్తులను అనుగ్రహించడం కొరకు, వారి హృదయాలలో అంతర్యామిగా ప్రవేశించి, ప్రకాశవంతమైన జ్ఞానదీపంతో వారి అజ్ఞానాంధకారాన్ని నేనే పటాపంచలు చేస్తాను!", emotion: "చతుఃశ్లోకి 4" },
+                    { speaker: "అర్జునుడు", text: "పరం బ్రహ్మ పరం ధామ పవిత్రం పరమం భవాన్—మీరు పరబ్రహ్మము, పరమ ధామము, పరమ పవిత్రులు! దేవతలు, నారదుడు, అసితుడు, దేవలుడు, వ్యాసుడు మిమ్మల్ని శాశ్వతుడైన దివ్య పురుషుడిగా కీర్తించారు; ఇప్పుడు మీరు స్వయంగా కూడా అదే చెబుతున్నారు. కేశవా! మీరు చెప్పినదంతా సత్యమని నేను సంపూర్ణంగా విశ్వసిస్తున్నాను!", emotion: "భక్తి పరవశం" },
+                    { speaker: "అర్జునుడు", text: "కథం విద్యామహం యోగింస్త్వాం సదా పరిచింతయన్—ఓ యోగీశ్వరా! నిరంతరం ధ్యానిస్తూ నేను మిమ్మల్ని ఎలా తెలుసుకోగలను? ఏయే భావాలలో నేను మిమ్మల్ని ఉపాసించాలి? మీ దివ్య విభూతులను, యోగశక్తిని నాకు మరల విస్తారంగా వివరించండి; మీ అమృత వాక్కులను వింటూ నాకు తృప్తి తీరడం లేదు!", emotion: "జిజ్ఞాస" },
+                    { speaker: "కృష్ణుడు", text: "హంత తే కథయిష్యామి దివ్యా హ్యాత్మవిభూతయః—సరే అర్జునా! నా దివ్య విభూతులలో ముఖ్యమైన వాటిని నీకు వివరిస్తాను; ఎందుకంటే నా విభూతుల విస్తారానికి అంతమంటూ లేదు!", emotion: "అనుగ్రహం" },
+                    { speaker: "కృష్ణుడు", text: "అహమాత్మా గుడాకేశ సర్వభూతాశయస్థితః। అహమాదిశ్చ మధ్యం చ భూతానామంత ఏవ చ—ఓ గుడాకేశా! సమస్త ప్రాణుల హృదయాలలో నివసించే అంతరాత్మను నేనే! ప్రాణుల ఆది, మధ్య, అంతములు కూడా నేనే!", emotion: "అంతర్యామి" },
+                    { speaker: "కృష్ణుడు", text: "ఆదిత్యులలో నేను విష్ణువును; కాంతులలో తేజోమయమైన సూర్యుడను; మరుత్తులలో మరీచిని; నక్షత్రాలలో చంద్రుడను. వేదాలలో సామవేదాన్ని; దేవతలలో ఇంద్రుడను; ఇంద్రియాలలో మనస్సును; ప్రాణులలోని చేతనను నేనే!", emotion: "దివ్య విభూతులు" },
+                    { speaker: "కృష్ణుడు", text: "రుద్రులలో శంకరుడను; యక్షరక్షస్సులలో కుబేరుడను; వసువులలో అగ్నిని; పర్వతాలలో మేరుపర్వతాన్ని. పురోహితులలో బృహస్పతిని; సేనానులలో కుమారస్వామిని; జలాశయాలలో సముద్రాన్ని నేనే!", emotion: "విభూతి దర్శనం" },
+                    { speaker: "కృష్ణుడు", text: "మహర్షులలో భృగువును; శబ్దాలలో ఏకాక్షర ఓంకారాన్ని; యజ్ఞాలలో జపయజ్ఞాన్ని; స్థిరమైన వాటిలో హిమాలయాన్ని. సమస్త వృక్షాలలో అశ్వత్థ వృక్షాన్ని (రావి చెట్టు); దేవర్షులలో నారదుడను; గంధర్వులలో చిత్రరథుడను; సిద్ధులలో కపిల మహర్షిని నేనే!", emotion: "శ్రేష్ఠత" },
+                    { speaker: "కృష్ణుడు", text: "శస్త్రధారులలో పరశురాముడను; నదులలో గంగను; విద్యలలో ఆధ్యాత్మిక విద్యను; అక్షరాలలో అకారమును; సమాసాలలో ద్వంద్వ సమాసాన్ని నేనే. అక్షయమైన కాలము నేనే, సర్వతోముఖుడైన విధాతను నేనే!", emotion: "కాల స్వరూపం" },
+                    { speaker: "కృష్ణుడు", text: "వృష్ణి వంశీయులలో వాసుదేవుడను (కృష్ణుడను); పాండవులలో ధనంజయుడవు (నీవు); మునులలో వ్యాసుడను; కవులలో శుక్రాచార్యుడను నేనే!", emotion: "విభూతులు" },
+                    { speaker: "కృష్ణుడు", text: "యద్యద్విభూతిమత్సత్త్వం శ్రీమదూర్జితమేవ వా। తత్తదేవావగచ్ఛ త్వం మమ తేజోంశసంభవమ్—లోకంలో ఐశ్వర్యవంతమైనది, కాంతిమంతమైనది, పరాక్రమవంతమైనది ఏది ఉన్నా, అది నా దివ్య తేజస్సులోని ఒక చిన్న అంశ నుండి పుట్టినదని తెలుసుకో! లేదా అర్జునా, ఈ వివరాలన్నీ నీకెందుకు? నా ఒక్క చిన్న అంశ చేతనే ఈ సమస్త బ్రహ్మాండాన్ని ధరించి నేను నిలిచి ఉన్నాను!", emotion: "నిర్ణయాత్మక" }
+                ],
+                summary: "పదవ అధ్యాయంలో శ్రీకృష్ణుడు తన అపరిమితమైన దివ్య విభూతులను ప్రదర్శిస్తాడు. చతుఃశ్లోకి గీత (10.8-11) ద్వారా తానే సమస్త సృష్టికి మూలమని, తనను భజించే భక్తులకు తానే బుద్ధియోగాన్ని, జ్ఞానదీపాన్ని ఇచ్చి ఉద్ధరిస్తానని ప్రకటిస్తాడు. రావిచెట్టు, హిమాలయాలు, సూర్యుడు, సామవేదం, ఓంకారం, గంగానది మొదలైన సమస్త శ్రేష్ఠ వస్తువులలో తానే కొలువై ఉన్నానని, విశ్వమంతా తన ఒక్క అంశచేతనే ధరింపబడి ఉన్నదని స్పష్టం చేస్తాడు.",
+                teachings: "• భగవంతుడే సమస్త భౌతిక, ఆధ్యాత్మిక లోకాలకు మూల కారణం (అహం సర్వస్య ప్రభవః).\n• భగవద్భక్తులు పరస్పరం భగవత్కథలను పంచుకుంటూ నిత్య సంతోషాన్ని, ఆనందాన్ని పొందుతారు.\n• ప్రేమతో భజించే భక్తుల హృదయాలలో భగవంతుడే స్వయంగా జ్ఞానదీపాన్ని వెలిగించి అజ్ఞానాన్ని నాశనం చేస్తాడు.\n• సృష్టిలో కనిపించే సమస్త సౌందర్యం, శక్తి, ఐశ్వర్యం భగవంతుని దివ్య తేజస్సు యొక్క చిన్న అంశ మాత్రమే.",
+                moralLesson: "సృష్టిలోని ప్రతి విశేషంలో, ప్రకృతి సౌందర్యంలో భగవంతుని దివ్యత్వాన్ని దర్శించాలి. మనలోని ప్రతిభ, జ్ఞానం దైవదత్తమని గుర్తించి నిగర్వంగా జీవించాలి.",
+                kidsVersion: "శ్రీకృష్ణుడు అర్జునుడికి చెప్పాడు: \"ఈ లోకంలో అత్యంత గొప్పవి, అందమైనవి ఏవి చూసినా—అది ప్రకాశించే సూర్యుడైనా, ఎత్తైన హిమాలయమైనా, పవిత్రమైన రావి చెట్టైనా—అవన్నీ నా శక్తే! మంచి ఆలోచనలతో దేవుడిని నమ్మే పిల్లల మనస్సులో దేవుడే చక్కటి జ్ఞానమనే దీపాన్ని వెలిగిస్తాడు.\""
+            },
+            11: {
+                title: "విశ్వరూప దర్శన యోగం",
+                subtitle: "దివ్య చక్షువులు, కాలస్వరూపం మరియు నిమిత్తమాత్రం భవ సవ్యసాచిన్",
+                description: "అర్జునునికి శ్రీకృష్ణుడు దివ్య దృష్టిని ప్రసాదించి తన అనంత, భయంకర, అద్భుత విశ్వరూపాన్ని సాక్షాత్కరింపజేస్తాడు.",
+                dialogue: [
+                    { speaker: "అర్జునుడు", text: "మదనుగ్రహాయ పరమం గుహ్యమధ్యాత్మసంజ్ఞితమ్—నన్ను అనుగ్రహించడం కొరకు మీరు ఉపదేశించిన పరమ రహస్య ఆధ్యాత్మిక జ్ఞానం వల్ల నా అజ్ఞాన మోహం సర్వథా నశించింది! సమస్త ప్రాణుల సృష్టి లయాలను, మీ అక్షయ మహిమను మీ నుండి విన్నాను.", emotion: "కృతజ్ఞత" },
+                    { speaker: "అర్జునుడు", text: "ఏవమేతద్యథాత్థ త్వమాత్మానం పరమేశ్వర। ద్రష్టుమిచ్ఛామి తే రూపమైశ్వరం పురుషోత్తమ—ఓ పరమేశ్వరా! మీరు మీ గురించి చెప్పినదంతా పరమ సత్యమే. అయినప్పటికీ పురుషోత్తమా! మీ ఆ ఐశ్వర విశ్వరూపాన్ని నేను ప్రత్యక్షంగా చూడాలని కోరుకుంటున్నాను. ఆ రూపాన్ని చూసే యోగ్యత నాకు ఉందని భావిస్తే, ఓ యోగేశ్వరా! మీ ఆ అవ్యయ రూపాన్ని నాకు దర్శింపజేయండి!", emotion: "ప్రార్థన" },
+                    { speaker: "కృష్ణుడు", text: "పశ్య మే పార్థ రూపాణి శతశోऽథ సహస్రశః—పార్థా! వందలాది, వేలాదిగా ఉన్న నానా విధాలైన, దివ్యమైన, రంగురంగుల నా స్వరూపాలను చూడుము! ఆదిత్యులను, రుద్రులను, వసువులను, అశ్వినీదేవతలను, ఇంతకు ముందెన్నడూ చూడని అనేకానేక ఆశ్చర్యాలను చూడుము!", emotion: "దివ్య ఆహ్వానం" },
+                    { speaker: "కృష్ణుడు", text: "ఇహైకస్థం జగత్కృత్స్నం పశ్యాద్య సచరాచరమ్—ఈ నా శరీరంలో ఒకే చోట నిలిచి ఉన్న సమస్త చరాచర జగత్తును, నీవు చూడగోరే భవిష్యత్తును అంతటినీ ఇక్కడే చూడుము! కానీ నీ భౌతిక చర్మచక్షువులతో నన్ను చూడలేవు; కాబట్టి నీకు \"దివ్య చక్షువులను\" (దివ్య దృష్టిని) ప్రసాదిస్తున్నాను. నా దివ్య ఐశ్వర యోగశక్తిని చూడుము!", emotion: "దివ్య దృష్టి ప్రదానం" },
+                    { speaker: "సంజయుడు", text: "రాజా ధృతరాష్ట్రా! మహా యోగేశ్వరుడైన శ్రీహరి ఈ విధంగా పలికి అర్జునునికి తన పరమ ఐశ్వర విశ్వరూపాన్ని చూపించాడు. అనేక ముఖములు, నేత్రములు కలిగి, దివ్యాభరణాలు, దివ్యాయుధాలు ధరించి, దివ్య గంధ మాల్యాంబరాలతో ప్రకాశిస్తున్న ఆ విశ్వతోముఖుడైన దేవుడు అత్యంత ఆశ్చర్యకరంగా ఉన్నాడు! ఆకాశంలో ఒకేసారి వేయి సూర్యులు ఉదయించినా ఆ మహాత్ముని తేజస్సుతో సమానం కాదు!", emotion: "రోమాంచిత వర్ణన" },
+                    { speaker: "అర్జునుడు", text: "పశ్యామి దేవాంస్తవ దేవ దేహే సర్వాంస్తథా భూతవిశేషసంఘాన్—ఓ దేవా! మీ శరీరంలో సమస్త దేవతలను, బ్రహ్మదేవుడిని కమలాసనుడిగా, శివుడిని, సమస్త ఋషులను, దివ్య సర్పాలను చూస్తున్నాను! అనేక చేతులు, ఉదరాలు, ముఖాలు, నేత్రాలు కలిగిన మీ అనంత రూపాన్ని సర్వత్ర చూస్తున్నాను. విశ్వేశ్వరా! మీ రూపానికి ఆద్యంతాలు, మధ్య ఏదీ నాకు కనిపించడం లేదు!", emotion: "విస్మయం" },
+                    { speaker: "అర్జునుడు", text: "కిరీటం, గద, చక్రం ధరించి, మండే అగ్ని వలె, సూర్యుని వలె అపరిమిత తేజస్సుతో దేదీప్యమానంగా వెలుగుతున్న మిమ్మల్ని చూడటం అత్యంత కష్టంగా ఉంది! మీరే తెలుసుకోదగిన పరమాక్షర బ్రహ్మము, విశ్వానికి పరమ ఆశ్రయం, శాశ్వత ధర్మ రక్షకులు, సనాతన పురుషులు!", emotion: "స్తంభించిపోవుట" },
+                    { speaker: "అర్జునుడు", text: "ధృతరాష్ట్రుని పుత్రులందరూ, సమస్త రాకుమారులు, భీష్మ, ద్రోణ, కర్ణులు, మన సైన్యంలోని వీరులు కూడా మీ భయంకర కోరలు గల దహించే ముఖాలలోకి వేగంగా దూసుకుపోతున్నారు! నదులు సముద్రం వైపు ఉరికినట్లు, మిడతలు అగ్నిలోకి దూకినట్లు ఈ సమస్త వీరులు మీ దంతాల మధ్య నలిగిపోతూ మీ నోళ్లలోకి ప్రవేశిస్తున్నారు! ఉగ్రరూపుడవైన ఓ దేవా! అసలు మీరు ఎవరో నాకు చెప్పండి, మీకు నమస్కరిస్తున్నాను, నాపై ప్రసన్నులు కండి!", emotion: "భీతి" },
+                    { speaker: "కృష్ణుడు", text: "కాలోऽస్మి లోకక్షయకృత్ప్రవృద్ధో లోకాన్సమాహర్తుమిహ ప్రవర్తః—నేను సమస్త లోకాలను సంహరించే ప్రవృద్ధుడైన \"మహాకాలుడను\"! ఈ యోధులందరినీ సంహరించడానికే ఇక్కడ ప్రవర్తించాను. నీవు యుద్ధం చేయకపోయినా ఇరుపక్షాలలోని ఏ యోధుడూ ప్రాణాలతో మిగలడు!", emotion: "కాల స్వరూపం" },
+                    { speaker: "కృష్ణుడు", text: "తస్మాత్త్వముత్తిష్ఠ యశో లభస్వ జిత్వా శత్రూన్భుంక్ష్వ రాజ్యం సమృద్ధమ్। మయైవైతే నిహతాః పూర్వమేవ నిమిత్తమాత్రం భవ సవ్యసాచిన్—కాబట్టి లెమ్ము! శత్రువులను జయించి యశస్సును పొందుము, సమృద్ధియైన రాజ్యాన్ని అనుభవించుము! వీరందరూ నా చేత పూర్వమే సంహరింపబడ్డారు; ఓ సవ్యసాచీ అర్జునా! నీవు కేవలం \"నిమిత్తమాత్రుడవు\" (ఒక సాధనంగా) మాత్రమే కమ్ము!", emotion: "ఆదేశం" },
+                    { speaker: "సంజయుడు", text: "కృష్ణుని మాటలు విని అర్జునుడు వణుకుతూ, దోసిలి ఒగ్గి నమస్కరిస్తూ, గద్గద స్వరంతో భయకంపితుడై శ్రీకృష్ణుడితో ఇలా ప్రార్థించాడు.", emotion: "వర్ణన" },
+                    { speaker: "అర్జునుడు", text: "కృష్ణా! మీ కీర్తిచే జగత్తు హర్షిస్తోంది, రాక్షసులు భయంతో పారిపోతున్నారు, సిద్ధులందరూ నమస్కరిస్తున్నారు, ఇది యుక్తమే! మిమ్మల్ని నా మిత్రుడిగా భావించి, మీ మహిమ తెలియక అజాగ్రత్తతో గానీ, ప్రేమతో గానీ \"ఓ కృష్ణా, ఓ యాదవా, ఓ సఖా\" అని పలికిన అపరాధాలను, ఆడుతూ పాడుతూ భోజన సమయంలో చేసిన సమస్త అవమానాలను క్షమించండి! తండ్రి కొడుకును, స్నేహితుడు స్నేహితుడిని, ప్రియుడు ప్రియురాలిని క్షమించినట్లు ఓ దేవదేవా! నా అపరాధాలను క్షమించండి!", emotion: "క్షమాపణ" },
+                    { speaker: "అర్జునుడు", text: "పూర్వమెన్నడూ చూడని మీ విశ్వరూపాన్ని చూసి సంతోషంగా ఉన్నప్పటికీ నా మనస్సు భయంతో కంపించిపోతోంది. దేవేశా! ప్రసన్నులై కిరీట, గదా, చక్రధారియైన మీ చతుర్భుజ సౌమ్య రూపాన్ని నాకు మరల దర్శింపజేయండి!", emotion: "వేడుకోలు" },
+                    { speaker: "కృష్ణుడు", text: "అర్జునా! నా యోగశక్తితో ప్రసన్నుడనై నీకు నా ఈ పరమ తేజోమయ విశ్వరూపాన్ని చూపాను; నీకు తప్ప మరెవరికీ ఇది లభించలేదు. వేదాధ్యయనం వల్ల గానీ, యజ్ఞాల వల్ల గానీ, తపస్సుల వల్ల గానీ ఈ రూపాన్ని ఎవరూ చూడలేరు. నా భయంకర రూపాన్ని చూసి భయపడవద్దు, ఇక నిర్భయుడవై నా పూర్వ సౌమ్య రూపాన్ని చూడుము.", emotion: "అనుగ్రహం" },
+                    { speaker: "సంజయుడు", text: "శ్రీకృష్ణుడు అర్జునుడితో అలా పలికి మరల తన పూర్వపు సౌమ్య చతుర్భుజ, ద్విభుజ మనోహర రూపాన్ని ధరించి, భయపడుతున్న అర్జునునికి సాంత్వన చేకూర్చాడు.", emotion: "శాంతి" },
+                    { speaker: "అర్జునుడు", text: "జనార్దనా! మీ ఈ ప్రశాంతమైన, అతి సుందర మానవ రూపాన్ని చూసి నా మనస్సు తేలికపడింది, నేను నా స్వస్థతను తిరిగి పొందాను.", emotion: "స్వస్థత" },
+                    { speaker: "కృష్ణుడు", text: "భక్త్యా త్వనన్యయా శక్య అహమేవంవిధోऽర్జున—కానీ అర్జునా! నన్ను యథార్థంగా తెలుసుకోవడానికి, సాక్షాత్కరించుకోవడానికి, నాయందు ప్రవేశించడానికి ఏకైక మార్గం \"అనన్య భక్తి\" మాత్రమే! నా కోసమే కర్మలు చేస్తూ, నన్నే పరమ లక్ష్యంగా భావించి, సమస్త ప్రాణులయందు వైరభావం లేని నా భక్తుడు నిశ్చయంగా నన్నే చేరుకుంటాడు!", emotion: "నిర్ణయాత్మక" }
+                ],
+                summary: "పదకొండవ అధ్యాయం భగవద్గీత యొక్క శిఖరాగ్ర ఘట్టమైన \"విశ్వరూప దర్శనం\". అర్జునుని ప్రార్థనపై కృష్ణుడు దివ్య దృష్టిని ఇచ్చి సర్వదేవతలు, గ్రహతారలు, సృష్టి-లయాలు కొలువైన తన అనంత రూపాన్ని చూపిస్తాడు. \"కాలోऽస్మి లోకక్షయకృత్\"—నేనే కాలస్వరూపుడనని, అధర్మపరులు ఇప్పటికే సంహరింపబడ్డారని చాటుతూ \"నిమిత్తమాత్రం భవ సవ్యసాచిన్\" అని అర్జునుడిని ధర్మ సాధనంగా నిలబడమని ఉద్బోధిస్తాడు. భయపడిన అర్జునుని ప్రార్థనతో సౌమ్య రూపాన్ని ధరించి, అనన్య భక్తి చేత మాత్రమే భగవంతుని సాక్షాత్కారం సాధ్యమని స్పష్టం చేస్తాడు.",
+                teachings: "• కాలం మరియు సమస్త విశ్వం పరమాత్మ దివ్య సంకల్పం మేరకే నడుస్తాయి.\n• దైవకార్యంలో మనం అహంకారం వీడి కేవలం ఒక పవిత్ర సాధనంగా (నిమిత్తమాత్రంగా) మారాలి.\n• భగవంతుడు విశ్వరూపంలో ఎంతటి మహాకాలుడో, శరణన్న భక్తునికి అంతటి కరుణామయ రక్షకుడు.\n• కేవలం వేదాధ్యయనం, దానధర్మాలు లేదా తీవ్ర తపస్సుల కంటే నిష్కల్మషమైన అనన్య భక్తియే పరమాత్మను పొందే రాజమార్గం.",
+                moralLesson: "\"నేనే చేస్తున్నాను\" అనే కర్తృత్వ అహంకారాన్ని విడిచిపెట్టాలి. మనం ఎంత ఉన్నత స్థితిలో ఉన్నా అంతిమంగా అంతా నడిపించేది ఆ దైవశక్తేనని గుర్తించి, దైవ సంకల్పానికి అనుగుణంగా మన బాధ్యతలను నిర్భయంగా నిర్వర్తించాలి.",
+                kidsVersion: "శ్రీకృష్ణుడు అర్జునుడికి ఒక స్పెషల్ దివ్య కళ్లద్దాలు ఇచ్చాడు. దాంతో అర్జునుడు మొత్తం విశ్వం, సూర్యచంద్రులు, దేవతలందరూ శ్రీకృష్ణుడి లోపలే ఉండటం చూశాడు! భగవంతుడు చెప్పాడు: \"మంచి వాళ్లను గెలిపించడం ముందే ఖాయమైపోయింది, నువ్వు ధైర్యంగా నీ వంతు మంచి పని చెయ్యి చాలు!\""
+            },
+            12: {
+                title: "భక్తి యోగం",
+                subtitle: "సాకార-నిరాకార ఉపాసన మరియు భగవంతునికి పరమ ప్రియమైన భక్తుని లక్షణాలు",
+                description: "సాకార భక్తి యొక్క సులభత, సాధనా సోపానాలు మరియు సమభావం గల ఉత్తమ భక్తుని దివ్య గుణాలను కృష్ణుడు వివరిస్తాడు.",
+                dialogue: [
+                    { speaker: "అర్జునుడు", text: "ఏవం సతతయుక్తా యే భక్తాస్త్వాం పర్యుపాసతే। యే చాప్యక్షరమవ్యక్తం తేషాం కే యోగవిత్తమాః—ఓ కృష్ణా! నిరంతరం మీ సగుణ-సాకార రూపాన్ని భక్తితో ఉపాసించేవారూ, నాశనం లేని నిర్గుణ-నిరాకార పరబ్రహ్మను ఉపాసించేవారూ—వీరిద్దరిలో ఎవరు శ్రేష్ఠమైన యోగవేత్తలు?", emotion: "సందేహం" },
+                    { speaker: "కృష్ణుడు", text: "మయ్యవేశ్య మనో యే మాం నిత్యయుక్తా ఉపాసతే। శ్రద్ధయా పరయోపేతాస్తే మే యుక్తతమా మతాః—నాయందు మనస్సును స్థిరంగా లగ్నం చేసి, పరమ శ్రద్ధతో నా సగుణ రూపాన్ని నిత్యం ఉపాసించేవారే నా దృష్టిలో సర్వోత్తమ యోగులు!", emotion: "నిర్ణయం" },
+                    { speaker: "కృష్ణుడు", text: "సర్వ ఇంద్రియాలను నియంత్రించి, సర్వత్ర సమబుద్ధి కలిగి, సమస్త ప్రాణుల హితాన్ని కోరేవారు నిరాకార అవ్యక్త బ్రహ్మను ఉపాసించినా నన్నే పొందుతారు. కానీ దేహాభిమానం గల మానవులకు అవ్యక్త నిరాకార మార్గంలో క్లేశం చాలా ఎక్కువ! ఆ మార్గంలో పురోగమించడం కష్టసాధ్యము.", emotion: "సమగ్ర విశ్లేషణ" },
+                    { speaker: "కృష్ణుడు", text: "సమస్త కర్మలను నాకు సమర్పించి, నన్నే పరమ గతిగా నమ్మి, అనన్య ధ్యానంతో నన్ను ఉపాసించే భక్తులను సంసారమనే మృత్యు సాగరం నుండి నేనే స్వయంగా శీఘ్రంగా ఉద్ధరిస్తాను!", emotion: "అభయం" },
+                    { speaker: "కృష్ణుడు", text: "మయ్యేవ మన ఆధత్స్వ మయి బుద్ధిం నివేశయ—నాయందే మనస్సును ఉంచుము, నాయందే బుద్ధిని నిలుపుము; ఆపై నీవు నిస్సందేహంగా నాలోనే నివసిస్తావు. ఒకవేళ చిత్తాన్ని నాపై నిశ్చలంగా నిలపలేకపోతే, అభ్యాస యోగం (నిరంతర సాధన) ద్వారా నన్ను పొందడానికి ప్రయత్నించుము.", emotion: "సాధనా మార్గాలు" },
+                    { speaker: "కృష్ణుడు", text: "అభ్యాసంలో కూడా అసమర్థుడవైతే నా కోసం కర్మలు చేయి; నా ప్రీతి కొరకు పనులు చేస్తూ కూడా నీవు పరిపూర్ణతను పొందుతావు. అది కూడా చేయలేకపోతే, మనస్సును జయించి సమస్త కర్మల ఫలాలను త్యజించుము (కర్మఫల త్యాగం). అభ్యాసం కంటే జ్ఞానం శ్రేష్ఠం, జ్ఞానం కంటే ధ్యానం శ్రేష్ఠం, ధ్యానం కంటే కర్మఫల త్యాగం శ్రేష్ఠం; ఎందుకంటే త్యాగం వల్ల తక్షణమే పరమ శాంతి లభిస్తుంది!", emotion: "క్రమ సాధన" },
+                    { speaker: "అర్జునుడు", text: "కృష్ణా! మీకు అత్యంత ప్రియమైన భక్తుని గుణాలు ఎలాంటివో దయచేసి వివరించండి.", emotion: "జిజ్ఞాస" },
+                    { speaker: "కృష్ణుడు", text: "అద్వేష్టా సర్వభూతానాం మైత్రః కరుణ ఏవ చ। నిర్మమో నిరహంకారః సమదుఃఖసుఖః క్షమీ—సమస్త ప్రాణుల పట్ల ద్వేషం లేనివాడు, అందరితో మైత్రి, కరుణ కలవాడు, నాది అనే మమకారం మరియు అహంకారం లేనివాడు, సుఖదుఃఖాలలో సమభావం గలవాడు, క్షమాశీలుడు;", emotion: "భక్తుని గుణాలు 1" },
+                    { speaker: "కృష్ణుడు", text: "సదా సంతుష్టుడు, దృఢ నిశ్చయంతో కూడిన మనోనిగ్రహం కలవాడు, మనోబుద్ధులను నాకే సమర్పించినవాడైన నా భక్తుడు నాకు అత్యంత ప్రియమైనవాడు!", emotion: "భక్తుని గుణాలు 2" },
+                    { speaker: "కృష్ణుడు", text: "ఎవరి వల్ల లోకానికి ఎటువంటి ఉద్వేగము (బాధ) కలగదో, లోకం వల్ల ఎవరూ ఉద్వేగం చెందరో; హర్షము, అసూయ, భయము, ఆందోళనల నుండి విముక్తుడైనవాడు నాకు ప్రియుడు. ఏ కోరికా లేనివాడు, పవిత్రుడు, సమర్థుడు, పక్షపాతం లేనివాడు, సమస్త స్వార్థపూరిత కర్మలను త్యజించినవాడు నాకు ప్రియుడు.", emotion: "భక్తుని గుణాలు 3" },
+                    { speaker: "కృష్ణుడు", text: "సమః శత్రౌ చ మిత్రే చ తథా మానాపమానయోః—శత్రుమిత్రులయందు, మానావమానాల యందు సమబుద్ధి కలవాడు; శీతోష్ణాలలో, సుఖదుఃఖాలలో సమభావం కలవాడు; నిందాస్తుతులను సమానంగా స్వీకరిస్తూ లభించిన దానితో సంతృప్తి చెందే స్థిరబుద్ధి గల భక్తుడు నాకు పరమ ప్రియమైనవాడు!", emotion: "సమదర్శనం" },
+                    { speaker: "కృష్ణుడు", text: "శ్రద్ధతో కూడి, నన్నే పరమ ధ్యేయంగా భావించి, నేను చెప్పిన ఈ ధర్మమనే అమృతాన్ని ఆచరించే భక్తులు నాకు అత్యంత ప్రియమైనవారు!", emotion: "నిర్ణయాత్మక" }
+                ],
+                summary: "పన్నెండవ అధ్యాయం \"భక్తి యోగం\". సగుణ-సాకార భక్తి మానవునికి సులభమైనదని, నిరాకార సాధన దేహాభిమానులకు ఎంతో కష్టతరమైనదని కృష్ణుడు వివరిస్తాడు. ధ్యానం, కర్మఫల త్యాగాల క్రమాన్ని సూచిస్తూ, భగవంతునికి పరమ ప్రియమైన భక్తుని దివ్య గుణాలను (సర్వభూత దయ, అద్వేషం, నిరహంకారం, మానావమాన సమత్వం, నిత్య సంతోషం) అమృతధారగా ప్రసాదిస్తాడు.",
+                teachings: "• సగుణ-సాకార భగవద్భక్తి హృదయానికి సహజమైనది, శీఘ్ర ఫలితాన్ని ఇచ్చేది.\n• చిత్తం ఒకేసారి నిలవకపోతే అభ్యాసము, భగవత్కర్మలు లేదా కర్మఫల త్యాగం ద్వారా శాంతిని పొందవచ్చు.\n• ఏ ప్రాణినీ ద్వేషించక, అందరికీ ఆత్మబంధువై, కరుణతో మెలగడమే భక్తి యొక్క నిజమైన లక్షణం.\n• సుఖదుఃఖాలు, మానావమానాలు, నిందాస్తుతులలో సమభావం కలిగి ఉండే భక్తుడు భగవంతునికి అత్యంత ప్రియమైనవాడు.",
+                moralLesson: "పూజలు మాత్రమే భక్తి కాదు; మన నడవడికలో కరుణ, ఓర్పు, అహంకార రాహిత్యం, క్షమాగుణం కనిపించాలి. ఎవరినీ నొప్పించక, పరిస్థితులకు కుంగిపోక స్థిరమైన ప్రశాంతతతో జీవించాలి.",
+                kidsVersion: "శ్రీకృష్ణుడు చెప్పాడు: \"ఎవరితోనూ గొడవపడని, అందరికీ సహాయం చేసే, ఎవరైనా తిట్టినా బాధపడకుండా ఎప్పుడూ నవ్వుతూ ఉండే పిల్లలంటే దేవుడికి చాలా చాలా ఇష్టం! మంచి మనస్సుతో దేవుడిని తలచుకుంటే దేవుడు మనకు తోడుగా ఉంటాడు.\""
+            },
+            13: {
+                title: "క్షేత్ర క్షేత్రజ్ఞ విభాగ యోగం",
+                subtitle: "శరీరము (క్షేత్రము), ఆత్మ (క్షేత్రజ్ఞుడు) మరియు సత్య జ్ఞానము",
+                description: "నశించే దేహం మరియు అమరమైన ఆత్మల భేదాన్ని, అంతర్యామియైన పరమాత్మ తత్వాన్ని మరియు ముక్తి మార్గాన్ని కృష్ణుడు బోధిస్తాడు.",
+                dialogue: [
+                    { speaker: "అర్జునుడు", text: "ప్రకృతిం పురుషం చైవ క్షేత్రం క్షేత్రజ్ఞమేవ చ। ఏతద్వేదితుమిచ్ఛామి జ్ఞానం జ్ఞేయం చ కేశవ—కేశవా! ప్రకృతి-పురుషులు, క్షేత్ర-క్షేత్రజ్ఞులు, జ్ఞానము మరియు జ్ఞేయముల తత్వాన్ని నేను వివరంగా తెలుసుకోవాలనుకుంటున్నాను.", emotion: "జిజ్ఞాస" },
+                    { speaker: "కృష్ణుడు", text: "ఇదం శరీరం కౌన్తేయ క్షేత్రమిత్యభిధీయతే। ఏతద్యో వేత్తి తం ప్రాహుః క్షేత్రజ్ఞ ఇతి తద్విదః—ఓ కౌంతేయా! ఈ శరీరము \"క్షేత్రము\" (పనులు పండించే చేను) అని పిలువబడుతుంది; ఈ శరీరాన్ని అంతర్గతంగా ఎవరు తెలుసుకుంటున్నారో ఆ జీవుడిని తత్త్వవేత్తలు \"క్షేత్రజ్ఞుడు\" అంటారు.", emotion: "నిర్వచనం" },
+                    { speaker: "కృష్ణుడు", text: "క్షేత్రజ్ఞం చాపి మాం విద్ధి సర్వక్షేత్రేషు భారత—సమస్త శరీరాలలోని క్షేత్రజ్ఞుడనైన పరమాత్మను కూడా నేనే అని తెలుసుకో! క్షేత్రము మరియు క్షేత్రజ్ఞుల భేదాన్ని యథార్థంగా తెలుసుకోవడమే నిజమైన జ్ఞానము.", emotion: "అంతర్యామి" },
+                    { speaker: "కృష్ణుడు", text: "పంచ మహాభూతాలు, అహంకారం, బుద్ధి, అవ్యక్త మూల ప్రకృతి, పది ఇంద్రియాలు, మనస్సు, ఐదు ఇంద్రియ విషయాలు, ఇచ్ఛ, ద్వేషం, సుఖం, దుఃఖం, దేహ సముదాయం, చేతన, ధైర్యం—వీటన్నింటితో కూడినదే వికార సహితమైన క్షేత్రము.", emotion: "క్షేత్ర స్వరూపం" },
+                    { speaker: "కృష్ణుడు", text: "అమానిత్వమదంభిత్వమహింసా క్షాంతిరార్జవమ్—గర్వము లేకపోవడం, డాంబికం లేకపోవడం, అహింస, క్షమాగుణం, సరళత, సద్గురువును సేవించడం, బాహ్యాభ్యంతర శుద్ధి, స్థిరత్వం, మనోనిగ్రహం, ఇంద్రియ భోగాలపై వైరాగ్యం, అహంకార రాహిత్యం, జన్మ-మృత్యు-జరా-వ్యాధులలోని దోషాలను గుర్తించడం, నాయందు అనన్య భక్తి కలిగి ఉండడం—ఇదే నిజమైన జ్ఞానము; దీనికి విరుద్ధమైనదంతా అజ్ఞానము!", emotion: "జ్ఞాన సాధనాలు" },
+                    { speaker: "కృష్ణుడు", text: "జ్ఞేయం యత్తత్ప్రవక్ష్యామి యజ్జ్ఞాత్వామృతమశ్నుతే—దేనిని తెలుసుకుంటే అమృతత్వం లభిస్తుందో ఆ జ్ఞేయ బ్రహ్మ తత్వాన్ని చెబుతున్నాను: అది అనాదియైన పరబ్రహ్మము. సర్వత్రా చేతులు, కాళ్లు, కళ్లు, తలలు, ముఖాలు కలదై, అంతటా వ్యాపించి ఉన్నది.", emotion: "పరబ్రహ్మ తత్త్వం" },
+                    { speaker: "కృష్ణుడు", text: "జ్యోతిషామపి తజ్జ్యోతిస్తమసః పరముచ్యతే—ఆ పరమాత్మ సమస్త జ్యోతులకు దివ్య జ్యోతి, అజ్ఞానాంధకారానికి అతీతుడు! ఆ జ్ఞానస్వరూప పరమాత్మ సమస్త ప్రాణుల హృదయాలలో అంతర్యామిగా నివసిస్తున్నాడు.", emotion: "దివ్య జ్యోతి" },
+                    { speaker: "కృష్ణుడు", text: "ఉపద్రష్టానుమంతా చ భర్తా భోక్తా మహేశ్వరః—ఈ శరీరంలో ఉన్న జీవాత్మ కేవలం సాక్షి (ఉపద్రష్ట), అనుమతించేవాడు, భరించేవాడు, పరమ భోక్త మరియు మహేశ్వరుడైన పరమాత్మయే!", emotion: "పరమాత్మ సాక్షిత్వం" },
+                    { speaker: "కృష్ణుడు", text: "సమం సర్వేషు భూతేషు తిష్ఠంతం పరమేశ్వరమ్—సమస్త నశించే ప్రాణులలో నాశనం లేని పరమేశ్వరుడిని సమభావంతో ఎవరు దర్శిస్తారో, వారే నిజంగా సత్యాన్ని చూసినవారు. శరీరమే పనులు చేస్తుందని, ఆత్మ అకర్త అని గ్రహించినవాడు బంధాల నుండి విముక్తుడవుతాడు.", emotion: "సమదర్శనం" },
+                    { speaker: "కృష్ణుడు", text: "ఒకే సూర్యుడు సమస్త లోకాన్ని ప్రకాశింపజేసినట్లు, ఒక్కడే క్షేత్రజ్ఞుడైన పరమాత్మ సమస్త దేహాలను చేతనతో ప్రకాశింపజేస్తున్నాడు. జ్ఞాననేత్రాలతో ఈ క్షేత్ర-క్షేత్రజ్ఞుల భేదాన్ని తెలుసుకున్నవారు పరమ పదాన్ని చేరుకుంటారు.", emotion: "నిర్ణయాత్మక" }
+                ],
+                summary: "పదమూడవ అధ్యాయంలో శరీరము (క్షేత్రము) మరియు ఆత్మ (క్షేత్రజ్ఞుడు) ల వివేచన చేయబడింది. శరీరం 24 తత్వాల జడ క్షేత్రమని, దానిని నడిపించే అంతరాత్మ క్షేత్రజ్ఞుడని, సర్వక్షేత్రాలలో సాక్షిగా ఉండేది పరమాత్మయేనని కృష్ణుడు స్పష్టం చేస్తాడు. వినయము, అహింస, గురుసేవ, అనన్య భక్తి వంటి 20 జ్ఞాన గుణాలను, సర్వత్ర సమంగా ఉండే పరమేశ్వరుని దర్శించే సమదర్శనాన్ని బోధిస్తాడు.",
+                teachings: "• ఈ శరీరం నశించే క్షేత్రం, లోపల ఉన్న ఆత్మ నశించని క్షేత్రజ్ఞుడు.\n• నిజమైన జ్ఞానం అంటే గ్రంథాల పాండిత్యం మాత్రమే కాదు; వినయం, అహింస, శుద్ధి, నిగర్వము మరియు భగవద్భక్తిని ఆచరించడం.\n• పరమాత్మ సమస్త ప్రాణుల హృదయాలలో అంతర్యామిగా, సాక్షిగా కొలువై ఉన్నాడు.\n• సర్వ ప్రాణులలోని సమ పరమేశ్వరుని దర్శించడమే మోక్షానికి అసలైన తాళంచెవి.",
+                moralLesson: "మనల్ని మనం కేవలం శరీరంగా భావించి ప్రాపంచిక విషయాలకు కుంగిపోకూడదు. శరీర మార్పులను సాక్షిగా గమనిస్తూ, అందరిలో ఒకే దైవ చైతన్యాన్ని చూస్తూ ప్రేమతో జీవించాలి.",
+                kidsVersion: "శ్రీకృష్ణుడు చెప్పాడు: \"మన శరీరం ఒక తోట లాంటిది, మన ఆత్మ ఆ తోటను చూసుకునే తోటమాలి లాంటిది. మన చొక్కా పాతబడితే మనం మారిపోము కదా! అలాగే శరీరం మారినా లోపల ఉండే ఆత్మ ఎప్పుడూ మంచిగా, అమరంగా ఉంటుంది. దేవుడు మన హృదయంలోనే మంచి మిత్రుడిగా ఉంటాడు.\""
+            },
+            14: {
+                title: "గుణత్రయ విభాగ యోగం",
+                subtitle: "సత్త్వ, రజస్, తమో గుణములు మరియు గుణాతీత స్థితి",
+                description: "ప్రకృతి యొక్క మూడు గుణాలు ఆత్మను ఎలా బంధిస్తాయో, గుణాతీతుని లక్షణాలు మరియు భక్తి ద్వారా గుణాలను దాటే మార్గాన్ని కృష్ణుడు బోధిస్తాడు.",
+                dialogue: [
+                    { speaker: "కృష్ణుడు", text: "పరం భూయః ప్రవక్ష్యామి జ్ఞానానాం జ్ఞానముత్తమమ్—సమస్త జ్ఞానాలలో ఉత్తమోత్తమమైన పరమ జ్ఞానాన్ని మరల చెబుతున్నాను, దీనిని తెలుసుకుని మునులందరూ పరమ సిద్ధిని పొందారు.", emotion: "దివ్య బోధన" },
+                    { speaker: "కృష్ణుడు", text: "సత్త్వం రజస్తమ ఇతి గుణాః ప్రకృతిసంభవాః। నిబధ్నంతి మహాబాహో దేహే దేహినమవ్యయమ్—ఓ మహాబాహు అర్జునా! ప్రకృతి నుండి పుట్టిన సత్త్వము, రజస్సు, తమస్సు అనే మూడు గుణాలు అవ్యయుడైన జీవాత్మను దేహంలో బంధిస్తున్నాయి.", emotion: "మూడు గుణాలు" },
+                    { speaker: "కృష్ణుడు", text: "తత్ర సత్త్వం నిర్మలత్వాత్ప్రకాశకమనామయమ్। సుఖసంగేన బధ్నాతి జ్ఞానసంగేన చానఘ—ఓ అనఘా! సత్త్వగుణం నిర్మలమైనది కావడం వల్ల ప్రకాశాన్ని, రోగరహితమైన శాంతిని ఇస్తుంది; అది జీవుడిని సుఖము మరియు జ్ఞానమనే బంధాలతో కట్టివేస్తుంది.", emotion: "సత్త్వ గుణం" },
+                    { speaker: "కృష్ణుడు", text: "రజో రాగాత్మకం విద్ధి తృష్ణాసంగసముద్భవమ్—రజోగుణం కోరికల నుండి, ఆశల నుండి పుడుతుంది; అది జీవుడిని నిరంతర కర్మల బంధంలో కట్టివేస్తుంది.", emotion: "రజో గుణం" },
+                    { speaker: "కృష్ణుడు", text: "తమస్త్వజ్ఞానజం విద్ధి మోహనం సర్వదేహినామ్। ప్రమాదాలస్యనిద్రాభిస్తన్నిబధ్నాతి భారత—ఓ భారతా! అజ్ఞానం నుండి పుట్టిన తమోగుణం సమస్త దేహధారులను మోహింపజేస్తుంది; అది మరుపు (ప్రమాదం), సోమరితనం మరియు నిద్రల ద్వారా జీవుడిని బంధిస్తుంది!", emotion: "తమో గుణం" },
+                    { speaker: "కృష్ణుడు", text: "సత్త్వగుణం ప్రబలినప్పుడు మరణిస్తే పుణ్యాత్ముల నిర్మల దివ్య లోకాలు లభిస్తాయి; రజోగుణంలో మరణిస్తే కర్మలయందు ఆసక్తులైన మానవులలో జన్మిస్తారు; తమోగుణంలో మరణిస్తే పశుపక్ష్యాది మూఢ యోనులలో జన్మిస్తారు.", emotion: "గుణాల ఫలితం" },
+                    { speaker: "అర్జునుడు", text: "కైర్లింగైస్త్రీంగుణానీతానతీతో భవతి ప్రభో। కిమాచారః కథం చైతాంస్త్రీంగుణానతివర్తతే—ప్రభూ! ఈ మూడు గుణాలను దాటిన గుణాతీతుని లక్షణాలు ఏమిటి? అతని ఆచరణ ఎలా ఉంటుంది? అతడు ఈ మూడు గుణాలను ఎలా దాటగలడు?", emotion: "జిజ్ఞాస" },
+                    { speaker: "కృష్ణుడు", text: "ప్రకాశం చ ప్రవృత్తిం చ మోహమేవ చ పాండవ। న ద్వేష్టి సంప్రవృత్తాని న నివృత్తాని కాంక్షతి—ఓ పాండవా! ప్రకాశం (సత్త్వం), ప్రవృత్తి (రజస్సు), మోహం (తమస్సు) కలిగినప్పుడు వాటిని ద్వేషించనివాడు, అవి తొలగిపోయినప్పుడు వాటిని ఆశించనివాడు;", emotion: "గుణాతీతుని లక్షణాలు 1" },
+                    { speaker: "కృష్ణుడు", text: "ఉదాసీనుని వలె ఉంటూ గుణాలచే చలింపబడనివాడు; \"గుణాలే తమ పనులను చేసుకుంటున్నాయి\" అని తెలుసుకుని నిశ్చలంగా ఉండేవాడు;", emotion: "గుణాతీతుని లక్షణాలు 2" },
+                    { speaker: "కృష్ణుడు", text: "సమదుఃఖసుఖః స్వస్థః సమలోష్టాశ్మకాంచనః—సుఖదుఃఖాలలో సమముగా, ఆత్మయందే స్థిరముగా ఉండేవాడు; మట్టిముద్దను, రాయిని, బంగారాన్ని సమానంగా చూసేవాడు; ప్రియాప్రియాలలో ధీరుడు; నిందాస్తుతులను సమానంగా స్వీకరించేవాడు;", emotion: "గుణాతీతుని లక్షణాలు 3" },
+                    { speaker: "కృష్ణుడు", text: "మానావమానాలలో సమబుద్ధి కలవాడు, శత్రుమిత్ర పక్షాలలో సమభావం కలవాడు, కర్తృత్వ అహంకారాన్ని త్యజించినవాడే \"గుణాతీతుడు\" అని పిలువబడతాడు.", emotion: "గుణాతీతుడు" },
+                    { speaker: "కృష్ణుడు", text: "మాం చ యోऽవ్యభిచారేణ భక్తియోగేన సేవతే। స గుణాన్సమతీత్యైతాన్బ్రహ్మభూయాయ కల్పతే—నన్ను అనన్య భక్తియోగంతో సేవించే భక్తుడు ఈ మూడు గుణాలను అవలీలగా దాటి పరమానంద బ్రహ్మభావాన్ని పొందడానికి అర్హుడవుతాడు! ఎందుకంటే ఆ అవ్యయ బ్రహ్మమునకు, అమృతత్వమునకు, సనాతన ధర్మమునకు, ఏకాంత సుఖమునకు పరమ ఆశ్రయము నేనే!", emotion: "నిర్ణయాత్మక" }
+                ],
+                summary: "పద్నాలుగవ అధ్యాయంలో ప్రకృతి త్రిగుణాలు—సత్త్వము (జ్ఞానము, సుఖము), రజస్సు (కోరిక, కర్మతృష్ణ), తమస్సు (సోమరితనం, ప్రమాదం, నిద్ర)—జీవుడిని ఎలా బంధిస్తాయో విశ్లేషించబడింది. ఈ గుణాల ప్రభావాన్ని అధిగమించి సుఖదుఃఖాలలో, బంగారము-మట్టిలలో సమబుద్ధి గల గుణాతీతుని దివ్య లక్షణాలను కృష్ణుడు చాటుతాడు. అనన్య భక్తియోగమే గుణాలను దాటడానికి అత్యుత్తమ రాజమార్గమని ప్రకటిస్తాడు.",
+                teachings: "• మానవుని ప్రతి ఆలోచన, ప్రవర్తన సత్త్వ, రజస్, తమో గుణాల ప్రభావం వల్లనే జరుగుతాయి.\n• సత్త్వగుణం జ్ఞానాన్ని, రజోగుణం తీవ్ర ఆశలను, తమోగుణం సోమరితనాన్ని కలిగిస్తాయి.\n• జీవిత పరమ లక్ష్యం కేవలం మంచిగా ఉండటం మాత్రమే కాదు, మూడు గుణాలకు అతీతమైన \"గుణాతీత\" స్థితిని పొందడం.\n• శ్రీకృష్ణుని అనన్య భక్తి ద్వారానే మాయా గుణాలను దాటి బ్రహ్మపదాన్ని పొందడం సాధ్యమవుతుంది.",
+                moralLesson: "సోమరితనం, నిర్లక్ష్యాలను (తమస్సు) ఉత్సాహంతో (రజస్సు) జయించాలి; స్వార్థాన్ని నిష్కామ సేవతో, దైవచింతనతో (సత్త్వము) పవిత్రం చేసుకోవాలి. చివరకు భగవదర్పణంతో గుణాలకు అతీతంగా స్థిరమైన ప్రశాంతతను అలవర్చుకోవాలి.",
+                kidsVersion: "శ్రీకృష్ణుడు చెప్పాడు: \"మనలో మూడు రకాల ఆలోచనలు ఉంటాయి: ఒకటి బాగా చదువుకుని మంచిగా ఉండే బుద్ధి (సత్త్వం), రెండోది ఎప్పుడూ ఏవో వస్తువులు కావాలని అల్లరి చేసే బుద్ధి (రజస్సు), మూడోది పడుకుని బద్ధకించే బుద్ధి (తమస్సు). మనం బద్ధకాన్ని వదిలి, మంచి పనులు చేస్తూ ఎప్పుడూ హ్యాపీగా ఉండాలి.\""
+            },
+            15: {
+                title: "పురుషోత్తమ యోగం",
+                subtitle: "ఊర్ధ్వమూల అశ్వత్థ వృక్షం, జీవయాత్ర మరియు క్షరాక్షరాతీత పురుషోత్తముడు",
+                description: "సంసార వృక్షాన్ని వైరాగ్య ఖడ్గంతో ఛేదించడం, జీవాత్మ దేహయాత్ర మరియు క్షర-అక్షరుల కంటే అతీతుడైన పరమ పురుషోత్తమ తత్వము.",
+                dialogue: [
+                    { speaker: "కృష్ణుడు", text: "ఊర్ధ్వమూలమధఃశాఖమశ్వత్థం ప్రాహురవ్యయమ్। ఛందాంసి యస్య పర్ణాని యస్తం వేద స వేదవిత్—ఈ సంసారము వేళ్లు పైనున్న పరమాత్మయందును, కొమ్మలు క్రింది లోకాలయందును వ్యాపించిన ఒక తలక్రిందుల అశ్వత్థ (రావి) వృక్షం వంటిది; వేదాలే దీని ఆకులు. ఈ సంసార వృక్ష రహస్యాన్ని తెలుసుకున్నవాడే నిజమైన వేదవేత్త!", emotion: "రూపకం" },
+                    { speaker: "కృష్ణుడు", text: "త్రిగుణాలచే పోషింపబడి, విషయభోగాలనే చిగుళ్లతో ఈ వృక్షపు కొమ్మలు కిందా పైనా వ్యాపించి ఉన్నాయి. కర్మలనే వేళ్లు క్రింద మానవ లోకంలో బంధిస్తున్నాయి. ఈ సంసార వృక్షానికి ఆది, అంతము, స్థిరత్వం ఇక్కడ కనిపించవు. కాబట్టి ఈ దృఢమైన రావి చెట్టును దృఢమైన \"వైరాగ్యమనే గొడ్డలితో\" ఛేదించాలి!", emotion: "వైరాగ్య ఖడ్గం" },
+                    { speaker: "కృష్ణుడు", text: "అనంతరం ఏ పరమ పదాన్ని చేరినవారు తిరిగి సంసారంలోకి రారో ఆ ఆదిపురుషుని శరణువేడి అన్వేషించాలి. మానమోహాలు లేనివారు, సంగదోషాన్ని జయించినవారు, కామరహితులు, సుఖదుఃఖాల ద్వంద్వాలను వీడిన జ్ఞానులు ఆ అవ్యయ పరమ పదాన్ని చేరుకుంటారు.", emotion: "పరమ పదం" },
+                    { speaker: "కృష్ణుడు", text: "న తద్భాసయతే సూర్యో న శశాంకో న పావకః। యద్గత్వా న నివర్తంతే తద్ధామ పరమం మమ—ఏ పరమ ధామాన్ని సూర్యుడు గానీ, చంద్రుడు గానీ, అగ్ని గానీ ప్రకాశింపజేయలేవో, ఎక్కడికి వెళ్లినవారు మరల తిరిగి రారో, అదే నా పరమ దివ్య ధామము!", emotion: "దివ్య ధామం" },
+                    { speaker: "కృష్ణుడు", text: "మమైవాంశో జీవలోకే జీవభూతః సనాతనః। మనఃషష్ఠానీంద్రియాణి ప్రకృతిస్థాని కర్షతి—ఈ శరీరంలో ఉన్న సనాతన జీవాత్మ నా యొక్క శాశ్వత అంశయే! అది ప్రకృతిలోని మనస్సును, ఐదు ఇంద్రియాలను ఆకర్షిస్తూ ఉంటుంది.", emotion: "జీవాత్మ తత్త్వం" },
+                    { speaker: "కృష్ణుడు", text: "వాయువు పువ్వుల నుండి సువాసనను తీసుకొని వెళ్లినట్లే, దేహానికి ప్రభువైన జీవాత్మ కూడా ఒక శరీరాన్ని విడిచి మరొక శరీరాన్ని స్వీకరించేటప్పుడు ఈ మనో-ఇంద్రియాలను తనతో పాటు తీసుకువెళుతుంది.", emotion: "సువాసన ఉపమానం" },
+                    { speaker: "కృష్ణుడు", text: "యదాదిత్యగతం తేజో జగద్భాసయతేऽఖిలమ్। యచ్చంద్రమసి యచ్చాగ్నౌ తత్తేజో విద్ధి మామకమ్—సమస్త జగత్తును ప్రకాశింపజేసే సూర్యునిలోని తేజస్సు, చంద్రునిలోని కాంతి, అగ్నిలోని ప్రకాశం అన్నీ నా దివ్య తేజస్సేనని తెలుసుకో!", emotion: "దివ్య తేజస్సు" },
+                    { speaker: "కృష్ణుడు", text: "నేనే భూమిలో ప్రవేశించి నా శక్తితో సమస్త ప్రాణులను ధరిస్తున్నాను; రసాత్మక చంద్రుడనై సమస్త వృక్షాలను, ఔషధులను పోషిస్తున్నాను. నేనే సమస్త ప్రాణుల శరీరాలలో \"వైశ్వానరుడనే\" జఠరాగ్నినై నాలుగు విధాల ఆహారాన్ని జీర్ణం చేస్తున్నాను!", emotion: "పోషణ శక్తి" },
+                    { speaker: "కృష్ణుడు", text: "సర్వస్య చాహం హృది సంనివిష్టో మత్తః స్మృతిర్జ్ఞానమపోహనం చ—నేను సమస్త ప్రాణుల హృదయాలలో అంతర్యామిగా నివసిస్తున్నాను; నా నుండే స్మృతి, జ్ఞానము మరియు వాటి విస్మృతి కలుగుతున్నాయి. సమస్త వేదాలచేత తెలుసుకోదగినవాడను నేనే; వేదాంతకర్తను, వేదవేత్తను నేనే!", emotion: "అంతర్యామి" },
+                    { speaker: "కృష్ణుడు", text: "ద్వావిమౌ పురుషౌ లోకే క్షరశ్చాక్షర ఏవ చ। క్షరః సర్వాణి భూతాని కూటస్థోऽక్షర ఉచ్యతే—ఈ లోకంలో ఇద్దరు పురుషులున్నారు: సమస్త నశించే భౌతిక దేహాలు \"క్షరుడు\"; నాశనం లేని శాశ్వత జీవాత్మ \"అక్షరుడు\".", emotion: "క్షర-అక్షరులు" },
+                    { speaker: "కృష్ణుడు", text: "ఉత్తమః పురుషస్త్వన్యః పరమాత్మేత్యుదాహృతః। యో లోకత్రయమావిశ్య బిభర్త్యవ్యయ ఈశ్వరః—కానీ వీరిద్దరికంటే భిన్నమైన ఉత్తమ పురుషుడు మరొకడున్నాడు, ఆయనే \"పరమాత్మ\"! ఆయన ముల్లోకాలలో ప్రవేశించి అందరినీ భరించి పోషిస్తున్న అవ్యయ ఈశ్వరుడు.", emotion: "ఉత్తమ పురుషుడు" },
+                    { speaker: "కృష్ణుడు", text: "యస్మాత్క్షరమతీతోऽహమక్షరాదపి చోత్తమః। అతోऽస్మి లోకే వేదే చ ప్రథితః పురుషోత్తమః—నేను క్షరుని కంటే అతీతుడనై, అక్షరుని కంటే ఉత్తముడనై ఉన్నందువల్ల, లోకంలోనూ వేదాలలోనూ నేను \"పురుషోత్తముడు\" అనే పరమ పవిత్ర నామంతో ప్రసిద్ధి చెందాను! నన్ను ఈ విధంగా పురుషోత్తముడిగా తెలుసుకున్నవాడు సర్వజ్ఞుడై నన్ను అనన్య భావంతో సేవిస్తాడు.", emotion: "నిర్ణయాత్మక" }
+                ],
+                summary: "పదిహేనవ అధ్యాయం \"పురుషోత్తమ యోగం\" గీతా శాస్త్రానికే కిరీటం వంటిది. సంసారాన్ని తలక్రిందుల రావి చెట్టుగా అభివర్ణిస్తూ, దానిని దృఢమైన వైరాగ్య ఖడ్గంతో ఛేదించి పరమ పదాన్ని చేరాలని కృష్ణుడు ఉపదేశిస్తాడు. జీవాత్మ భగవంతుని సనాతన అంశయని, వాయువు సువాసనను మోసినట్లు మనో-ఇంద్రియాలను దేహాంతరానికి మోస్తుందని వివరిస్తాడు. సూర్యచంద్రుల తేజస్సు, జఠరాగ్ని, సర్వహృదయాల అంతర్యామి తానేనని చాటుతూ, క్షర-అక్షర తత్వాల కంటే పరమైన \"పురుషోత్తముడను\" నేనేనని పరమ సత్యాన్ని ఆవిష్కరిస్తాడు.",
+                teachings: "• సంసార బంధాలను దృఢమైన వైరాగ్య ఖడ్గంతో మాత్రమే ఛేదించగలం.\n• ప్రతి జీవాత్మ భగవంతుని నిత్య దివ్య అంశ (మమైవాంశో జీవలోకే జీవభూతః సనాతనః).\n• ప్రకృతిలో కనిపించే సకల వెలుగు, జీవశక్తి, జీర్ణశక్తి పరమాత్మ యొక్క దివ్య శక్తులే.\n• నశించే శరీరం (క్షర), అమరమైన ఆత్మ (అక్షర) రెండింటికంటే సర్వోన్నతుడైన దైవం పరమాత్మ—ఆయనే \"పురుషోత్తముడు\".",
+                moralLesson: "తాత్కాలిక ప్రాపంచిక ఆకర్షణలలో చిక్కుకోకుండా మన మూలమైన భగవంతుని గుర్తించాలి. మనలోనే కొలువైన పరమాత్మను స్మరిస్తూ, వినయంతో సకల జీవులను గౌరవించాలి.",
+                kidsVersion: "శ్రీకృష్ణుడు చెప్పాడు: \"మనలో ఉండే ఆత్మ నిజానికి భగవంతుని చిన్న కాంతి రేఖ! పువ్వుల సువాసనను గాలి మోసుకెళ్లినట్లే, ఆత్మ ఎప్పుడూ అమరంగా ప్రయాణిస్తుంది. సూర్యుడిలో వెలుగు, కడుపులో అన్నాన్ని అరిగించే శక్తి దేవుడే ఇస్తాడు. ఆయనే మనందరినీ కాపాడే అసలైన సూపర్‌హీరో పురుషోత్తముడు!\""
+            },
+            16: {
+                title: "దైవాసుర సంపద్విభాగ యోగం",
+                subtitle: "దైవీ మరియు ఆసురీ గుణములు, నరకానికి మూడు ద్వారాలు",
+                description: "మోక్షాన్నిచ్చే దైవీ సద్గుణాలు, బంధాన్నిచ్చే ఆసురీ దుర్గుణాలు, కామ-క్రోధ-లోభాల ప్రమాదం మరియు శాస్త్ర ప్రమాణము.",
+                dialogue: [
+                    { speaker: "కృష్ణుడు", text: "అభయం సత్త్వసంశుద్ధిర్జ్ఞానయోగవ్యవస్థితిః। దానం దమశ్చ యజ్ఞశ్చ స్వాధ్యాయస్తప ఆర్జవమ్—భయం లేకుండుట (నిర్భయత్వము), అంతఃకరణ పవిత్రత, జ్ఞానయోగంలో స్థిరత్వం, దానము, ఇంద్రియ నిగ్రహము, యజ్ఞము, వేదాధ్యయనము, తపస్సు, సరళత;", emotion: "దైవీ గుణాలు 1" },
+                    { speaker: "కృష్ణుడు", text: "అహింసా సత్యమక్రోధస్త్యాగః శాంతిరపైశునమ్। దయా భూతేష్వలౌలుప్త్వం మార్దవం హ్రీరచాపలమ్—అహింస, సత్యము, క్రోధం లేకపోవడం, త్యాగము, శాంతి, ఇతరులపై చాడీలు చెప్పకపోవడం, సర్వభూతాల పట్ల దయ, లోభం లేకపోవడం, మృదుత్వము, లజ్జ, చంచలత్వం లేకపోవడం, క్షమ, ధైర్యము, పవిత్రత, ద్రోహం లేకపోవడం, అతిగా గౌరవం కోరకపోవడం—ఇవన్నీ దైవీ సంపదతో జన్మించిన వారి దివ్య లక్షణాలు!", emotion: "దైవీ గుణాలు 2" },
+                    { speaker: "అర్జునుడు", text: "కృష్ణా! మరి ఆసురీ సంపద గలవారి లక్షణాలు ఏమిటి?", emotion: "జిజ్ఞాస" },
+                    { speaker: "కృష్ణుడు", text: "దంభో దర్పోऽభిమానశ్చ క్రోధః పారుష్యమేవ చ। అజ్ఞానం చాభిజాతస్య పార్థ సంపదమాసురీమ్—డంబము (కపట ప్రదర్శన), గర్వము, అహంకారము, క్రోధము, కఠినత్వము, అజ్ఞానము—ఇవి ఆసురీ సంపదతో జన్మించిన వారి దుర్లక్షణాలు.", emotion: "ఆసురీ గుణాలు" },
+                    { speaker: "కృష్ణుడు", text: "దైవీ సంపద మోక్షానికి దారితీస్తుంది, ఆసురీ సంపద సంసార బంధానికి కారణమవుతుంది. పార్థా! నీవు శోకించకు, ఎందుకంటే నీవు దైవీ సంపదతోనే జన్మించావు!", emotion: "అభయం" },
+                    { speaker: "కృష్ణుడు", text: "ఆసురీ స్వభావం గలవారు: \"ఈ జగత్తు అసత్యమైనది, దీనికి ఏ ఆధారమూ లేదు, భగవంతుడంటూ ఎవరూ లేరు; కేవలం స్త్రీ పురుషుల కామ సంయోగం వల్లనే జగత్తు పుట్టింది\" అని వాదిస్తారు.", emotion: "ఆసురీ దృష్టి" },
+                    { speaker: "కృష్ణుడు", text: "అటువంటి నాస్తిక, నష్టబుద్ధి గలవారు లోక వినాశనం కొరకే క్రూర కర్మలను ఆచరిస్తారు. తీరని కామవాంఛలను ఆశ్రయించి, డంబ, మాన, మదాలతో నిండి, అజ్ఞానంతో నడుస్తారు.", emotion: "హెచ్చరిక" },
+                    { speaker: "కృష్ణుడు", text: "వారు మరణించే వరకు తీరని అనంత చింతలలో మునిగి, ఇంద్రియ భోగాలే జీవిత పరమావధి అని నమ్ముతారు. వందలాది ఆశాపాశాలతో బంధింపబడి, కామక్రోధాల వశులై, భోగాల కొరకు అన్యాయంగా ధనాన్ని పోగుచేయడానికి ప్రయత్నిస్తారు.", emotion: "భోగవాదం" },
+                    { speaker: "కృష్ణుడు", text: "వారు ఇలా ఆలోచిస్తారు: \"నేడు ఈ సంపదను సాధించాను, రేపు ఆ కోరికను తీర్చుకుంటాను; ఆ శత్రువును చంపాను, ఇతరులను కూడా చంపుతాను. నేనే ఈశ్వరుడను, నేనే భోక్తను, నేనే బలవంతుడను, సుఖవంతుడను!\" ఇలా అహంకారంతో విర్రవీగే అజ్ఞానులు అపవిత్రమైన ఘోర నరకంలో కూలిపోతారు.", emotion: "అహంకార విశ్లేషణ" },
+                    { speaker: "కృష్ణుడు", text: "త్రివిధం నరకస్యేదం ద్వారం నాశనమాత్మనః। కామః క్రోధస్తథా లోభస్తస్మాదేతత్త్రయం త్యజేత్—కామము, క్రోధము, లోభము అనే ఈ మూడు ఆత్మను సర్వనాశనం చేసే \"నరకానికి ప్రత్యక్ష ద్వారాలు\"! కాబట్టి ప్రతి మానవుడు ఈ మూడింటిని సర్వథా విడిచిపెట్టాలి!", emotion: "తీవ్ర హెచ్చరిక" },
+                    { speaker: "కృష్ణుడు", text: "నరకానికి ద్వారాలైన ఈ కామ-క్రోధ-లోభాల నుండి విముక్తుడైన మానవుడు తన ఆత్మకల్యాణాన్ని ఆచరించి పరమ గతిని పొందుతాడు.", emotion: "ముక్తి మార్గం" },
+                    { speaker: "కృష్ణుడు", text: "యః శాస్త్రవిధిముత్సృజ్య వర్తతే కామకారతః। న స సిద్ధిమవాప్నోతి న సుఖం న పరాం గతిమ్—శాస్త్ర విధిని విడిచిపెట్టి, తన ఇష్టానుసారం కామవాంఛలతో ప్రవర్తించేవాడు సిద్ధిని గానీ, సుఖాన్ని గానీ, పరమ గతిని గానీ ఎన్నడూ పొందలేడు!", emotion: "శాస్త్ర ప్రమాణం 1" },
+                    { speaker: "కృష్ణుడు", text: "తస్మాచ్ఛాస్త్రం ప్రమాణం తే కార్యాకార్యవ్యవస్థితౌ—కాబట్టి నీవు ఏది చేయాలి (కార్యము), ఏది చేయకూడదు (అకార్యము) అని నిర్ణయించుకోవడానికి శాస్త్రమే నీకు ప్రమాణము! శాస్త్రోక్త కర్తవ్యాన్ని తెలుసుకుని ఈ లోకంలో నీ కర్తవ్య కర్మలను ఆచరించుము.", emotion: "నిర్ణయాత్మక" }
+                ],
+                summary: "పదహారవ అధ్యాయంలో మానవ స్వభావం దైవీ సంపద (నిర్భయత్వం, సత్యం, అహింస, దయ, క్షమ మొదలైన 26 సద్గుణాలు) మరియు ఆసురీ సంపద (దంభం, గర్వం, అహంకారం, క్రోధం, నాస్తికత్వం) గా వర్గీకరించబడింది. కామము, క్రోధము, లోభము ఆత్మను అధోగతి పాలుచేసే నరకానికి మూడు ద్వారాలని కృష్ణుడు తీవ్రంగా హెచ్చరిస్తాడు. స్వేచ్ఛాచారానికి బదులుగా శాస్త్ర నియమాలను ప్రమాణంగా స్వీకరించి కర్తవ్యాన్ని ఆచరించాలని ఉద్బోధిస్తాడు.",
+                teachings: "• దైవీ సద్గుణాలు మనిషిని మోక్షం వైపు నడిపిస్తాయి; ఆసురీ దుర్గుణాలు బంధించి పతనం చేస్తాయి.\n• కామము, క్రోధము, లోభము ఆత్మనాశనానికి కారణమైన నరక ద్వారాలు (కామః క్రోధస్తథా లోభస్తస్మాదేతత్త్రయం త్యజేత్).\n• నాస్తికత్వం, విచ్చలవిడి భోగవాదం మరియు కర్తృత్వ అహంకారం సర్వనాశనానికి హేతువులు.\n• జీవితంలో ఏది మంచి, ఏది చెడు అని నిర్ణయించడానికి ధర్మశాస్త్రాలు మరియు సద్గురువుల మార్గదర్శకత్వమే ప్రమాణం.",
+                moralLesson: "సత్యం, దయ, క్షమ, నిర్భయత్వం వంటి దైవిక లక్షణాలను అలవర్చుకోవాలి. కోపం, దురాశ, స్వార్థాలను వెంటనే విడిచిపెట్టాలి. మన ఇష్టారాజ్యంగా కాకుండా ధర్మబద్ధమైన క్రమశిక్షణతో జీవించాలి.",
+                kidsVersion: "శ్రీకృష్ణుడు చెప్పాడు: \"మనలో దేవుడి లక్షణాలు, రాక్షసుడి లక్షణాలు రెండూ ఉంటాయి. నిజం మాట్లాడే, ఎవరి మీదా కోప్పడని, అందరికీ సహాయం చేసే పిల్లలు దైవాంశ సంభూతులు. అబద్ధాలు ఆడే, పేరాశ పడే, గర్వపడే అలవాట్లను మనం వెంటనే వదిలేసి ఎప్పుడూ మంచి పిల్లలుగా ఉండాలి.\""
+            },
+            17: {
+                title: "శ్రద్ధాత్రయ విభాగ యోగం",
+                subtitle: "సత్త్వ-రజస్-తమో గుణాల శ్రద్ధ, ఆహారము, యజ్ఞము, తపస్సు మరియు ఓం తత్సత్ రహస్యము",
+                description: "మానవుని శ్రద్ధ, ఆహారం, యజ్ఞం, తపస్సు (శారీరక, వాచిక, మానసిక) మరియు దానాలలోని త్రిగుణ భేదాలు, ఓం తత్సత్ మహత్యం.",
+                dialogue: [
+                    { speaker: "అర్జునుడు", text: "యే శాస్త్రవిధిముత్సృజ్య యజన్తే శ్రద్ధయాన్వితాః। తేషాం నిష్ఠా తు కా కృష్ణ సత్త్వమాహో రజస్తమః—కృష్ణా! శాస్త్ర విధులను పాటించకుండా కేవలం శ్రద్ధతో పూజించేవారి నిష్ఠ ఎలాంటిది—సాత్త్వికమా, రాజసమా లేక తామసమా?", emotion: "సందేహం" },
+                    { speaker: "కృష్ణుడు", text: "త్రివిధా భవతి శ్రద్ధా దేహినాం సా స్వభావజా। సాత్త్వికీ రాజసీ చైవ తామసీ చేతి తాం శృణు—మానవులలో వారి పూర్వ సంస్కారాల స్వభావం వల్ల శ్రద్ధ మూడు రకాలుగా ఉంటుంది: సాత్త్వికము, రాజసము, తామసము. శ్రద్ధామయోऽయం పురుషో యో యచ్ఛ్రద్ధః స ఏవ సః—మానవుడు శ్రద్ధామయుడు; ఎవరి శ్రద్ధ ఎటువంటిదో వారు అటువంటి వారే అవుతారు!", emotion: "శ్రద్ధా తత్త్వం" },
+                    { speaker: "కృష్ణుడు", text: "సాత్త్వికులు దేవతలను పూజిస్తారు; రాజసికులు యక్ష రాక్షసులను పూజిస్తారు; తామసికులు ప్రేతాలను, భూతగణాలను పూజిస్తారు. శాస్త్ర విరుద్ధంగా దంభ, అహంకారాలతో శరీరాన్ని, లోపలి నన్ను బాధించే తీవ్ర తపస్సులు చేసేవారిని ఆసురీ స్వభావులుగా తెలుసుకో.", emotion: "పూజా భేదాలు" },
+                    { speaker: "కృష్ణుడు", text: "ఆయుఃసత్త్వబలారోగ్యసుఖప్రీతివివర్ధనాః—ఆయువు, బుద్ధి, బలము, ఆరోగ్యము, సుఖము, సంతోషాన్ని పెంచే రసవంతమైన, స్నిగ్ధమైన, పుష్టినిచ్చే ఆహారాలు సాత్త్వికులకు ప్రియమైనవి. అతి చేదు, అతి పులుపు, అతి ఉప్పు, అతి వేడి, కారము, దప్పి కలిగించే ఆహారాలు రాజసికులకు ప్రియమైనవి, ఇవి రోగాలను కలిగిస్తాయి. చల్లారిన, రుచిలేని, దుర్వాసన గల, నిల్వ ఉంచిన, ఉచ్ఛిష్ట ఆహారాలు తామసికులకు ప్రియమైనవి.", emotion: "ఆహార విభాగం" },
+                    { speaker: "కృష్ణుడు", text: "ఫలాపేక్ష లేకుండా కర్తవ్య భావంతో శాస్త్రోక్తంగా చేసే యజ్ఞం సాత్త్వికము; డాంబికం కొరకు, ఫలాన్ని ఆశించి చేసేది రాజసము; శాస్త్రవిధి లేని, అన్నదానం లేని, శ్రద్ధా మంత్రాలు లేని యజ్ఞం తామసము.", emotion: "యజ్ఞ విభాగం" },
+                    { speaker: "కృష్ణుడు", text: "దేవతలు, బ్రాహ్మణులు, గురువులు, జ్ఞానులను పూజించుట, పవిత్రత, సరళత, బ్రహ్మచర్యం, అహింస—ఇది \"శరీర తపస్సు\". అనుద్వేగకరం వాక్యం సత్యం ప్రియహితం చ యత్—ఎవరినీ నొప్పించనిది, సత్యమైనది, ప్రియమైనది, హితకరమైనది మాట్లాడటం మరియు వేదాధ్యయనం చేయడం—ఇది \"వాక్కు తపస్సు\". మనస్సు ప్రసన్నత, సౌమ్యత, మౌనం, ఆత్మనిగ్రహం, భావశుద్ధి—ఇది \"మానసిక తపస్సు\"!", emotion: "త్రివిధ తపస్సులు" },
+                    { speaker: "కృష్ణుడు", text: "దాతవ్యమితి యద్దానం దీయతేऽనుపకారిణే—ప్రత్యుపకారం ఆశించకుండా దేశము, కాలము, సత్పాత్రుని చూసి కర్తవ్యంగా ఇచ్చే దానం సాత్త్వికము; బాధపడుతూ ఫలాపేక్షతో ఇచ్చేది రాజసము; తిరస్కారభావంతో అపాత్రునికి ఇచ్చే దానం తామసము.", emotion: "దాన విభాగం" },
+                    { speaker: "కృష్ణుడు", text: "ఓం తత్సదితి నిర్దేశో బ్రహ్మణస్త్రివిధః స్మృతః—\"ఓం\", \"తత్\", \"సత్\" అనేవి పరబ్రహ్మను సూచించే త్రివిధ నామాలు. అందువల్లనే బ్రహ్మవాదుల సమస్త యజ్ఞ, దాన, తపస్సులు \"ఓం\"తో ఆరంభమవుతాయి; ఫలాపేక్ష లేని మోక్షార్థుల కర్మలు \"తత్\"తో జరుగుతాయి; పరమ సత్య భావనలో \"సత్\" శబ్దం ప్రయోగింపబడుతుంది.", emotion: "ఓం తత్సత్" },
+                    { speaker: "కృష్ణుడు", text: "అశ్రద్ధయా హుతం దత్తం తపస్తప్తం కృతం చ యత్। అసదిత్యుచ్యతే పార్థ న చ తత్ప్రేత్య నో ఇహ—శ్రద్ధ లేకుండా చేసిన హోమమైనా, దానమైనా, తపస్సైనా, ఏ కర్మయైనా \"అసత్\" (వ్యర్థము) అని పిలువబడుతుంది! అది ఈ లోకంలో గానీ, పరలోకంలో గానీ ఎటువంటి శ్రేయస్సునూ ఇవ్వదు!", emotion: "నిర్ణయాత్మక" }
+                ],
+                summary: "పదిహేడవ అధ్యాయంలో \"మనిషి తన శ్రద్ధను బట్టే రూపుదిద్దుకుంటాడు\" (యో యచ్ఛ్రద్ధః స ఏవ సః) అనే పరమ సత్యం ప్రతిపాదించబడింది. సత్త్వ, రజస్, తమో గుణాల ప్రభావం వల్ల శ్రద్ధ, ఆహారం, యజ్ఞం, దానాలలో కలిగే తేడాలు వివరించబడ్డాయి. శరీర, వాఙ్మయ, మానసిక తపస్సుల విశిష్టతను, పరబ్రహ్మ త్రివిధ నామమైన \"ఓం తత్ సత్\" మహత్యాన్ని చాటుతూ, శ్రద్ధ లేని కర్మలన్నీ వ్యర్థమని కృష్ణుడు ముగిస్తాడు.",
+                teachings: "• మానవుని వ్యక్తిత్వం అతని అంతర్గత శ్రద్ధను బట్టే నిర్ణయించబడుతుంది.\n• సాత్త్విక ఆహారం ఆయురారోగ్యాలను, మనశ్శాంతిని ఇస్తుంది; రాజస, తామస ఆహారాలు రోగాలను, బద్ధకాన్ని పెంచుతాయి.\n• సత్యమైన, ఇతరులను నొప్పించని, ప్రియమైన మాటలు మాట్లాడటమే వాక్కు తపస్సు (అనుద్వేగకరం వాక్యం సత్యం ప్రియహితం చ యత్).\n• నిస్వార్థంగా యోగ్యునికి ఇచ్చే సాత్త్విక దానమే పుణ్యప్రదం.\n• సమస్త సత్కర్మలను \"ఓం తత్ సత్\" భావనతో భగవదర్పణంగా చేయాలి; శ్రద్ధ లేని కర్మ నిష్ప్రయోజనం.",
+                moralLesson: "మనం తినే ఆహారం, మాట్లాడే తీరు, చేసే దానాలు పవిత్రంగా, సాత్త్వికంగా ఉండాలి. ఎవరినీ కించపరచకుండా సత్యమైన, మధురమైన మాటలు మాట్లాడటం గొప్ప తపస్సు. ప్రతి పనినీ పరిపూర్ణ శ్రద్ధతో చేయాలి.",
+                kidsVersion: "శ్రీకృష్ణుడు చెప్పాడు: \"మనం ఎలాంటి ఫుడ్ తింటే మన బుద్ధి అలా తయారవుతుంది! తాజా పండ్లు, మంచి ఆహారం తింటే బలం, తెలివితేటలు వస్తాయి. ఎవరి మనస్సునూ నొప్పించకుండా ఎప్పుడూ నిజం, తియ్యనైన మాటలు మాట్లాడాలి. ప్రతిఫలం ఆశించకుండా పేదవారికి సహాయం చేయాలి.\""
+            },
+            18: {
+                title: "మోక్ష సన్యాస యోగం",
+                subtitle: "సన్యాస-త్యాగ వివేకము, గీతా మహాసారము మరియు సర్వధర్మాన్ పరిత్యజ్య",
+                description: "సన్యాస మరియు త్యాగముల యథార్థ తత్వము, కర్మ పంచ హేతువులు, పరమ గుహ్యమైన శరణాగతి మరియు శ్రీకృష్ణార్జునుల శాశ్వత విజయ ఘోష.",
+                dialogue: [
+                    { speaker: "అర్జునుడు", text: "సన్యాసస్య మహాబాహో తత్త్వమిచ్ఛామి వేదితుమ్। త్యాగస్య చ హృషీకేశ పృథక్కేశినిషూదన—ఓ మహాబాహు హృషీకేశా! సన్యాసము (కర్మ సన్యాసము) మరియు త్యాగము (కర్మఫల త్యాగము) ల యథార్థ తత్వాన్ని వేర్వేరుగా తెలుసుకోవాలనుకుంటున్నాను.", emotion: "జిజ్ఞాస" },
+                    { speaker: "కృష్ణుడు", text: "కామ్యానాం కర్మణాం న్యాసం సన్యాసం కవయో విదుః। సర్వకర్మఫలత్యాగం ప్రాహుస్త్యాగం విచక్షణాః—కామ్య కర్మలను (స్వార్థ కోరికలతో కూడిన కర్మలను) పూర్తిగా విడిచిపెట్టడమే \"సన్యాసము\" అని పండితులు అంటారు; సమస్త కర్మల ఫలాసక్తిని త్యజించడమే \"త్యాగము\" అని విచక్షణాపరులు చెబుతారు.", emotion: "నిర్వచనం" },
+                    { speaker: "కృష్ణుడు", text: "యజ్ఞదానతపఃకర్మ న త్యాజ్యం కార్యమేవ తత్—యజ్ఞము, దానము, తపస్సు అనే కర్మలు ఎన్నడూ విడువదగినవి కావు, వాటిని తప్పక ఆచరించాలి; ఎందుకంటే అవి ప్రాజ్ఞులను సైతం పవిత్రం చేస్తాయి! అయితే వీటిని కూడా ఆసక్తిని, ఫలాపేక్షను వీడి కర్తవ్యంగానే ఆచరించాలి.", emotion: "స్పష్టత" },
+                    { speaker: "కృష్ణుడు", text: "దేహధారియైన ఏ మానవుడూ సమస్త కర్మలను పూర్తిగా వదిలిపెట్టడం అసాధ్యం; కాబట్టి కర్మఫలాలను త్యజించినవాడే నిజమైన \"త్యాగి\" అని పిలువబడతాడు.", emotion: "త్యాగ తత్త్వం" },
+                    { speaker: "కృష్ణుడు", text: "పంచైతాని మహాబాహో కారణాని నిబోధ మే—ఏ కర్మ సిద్ధించడానికైనా ఐదు కారణాలుంటాయి: శరీరము (అధిష్ఠానము), కర్త (జీవుడు), ఇంద్రియాలు (కరణములు), వివిధ ప్రయత్నాలు (చేష్టలు), మరియు దైవము (పరమాత్మ/ప్రారబ్ధం). ఇలా ఉండగా అజ్ఞానం వల్ల తనను తానే ఏకైక కర్తగా భావించేవాడు సత్యాన్ని చూడలేడు.", emotion: "కర్మ పంచ హేతువులు" },
+                    { speaker: "కృష్ణుడు", text: "శ్రేయాన్స్వధర్మో విగుణః పరధర్మాత్స్వనుష్ఠితాత్। స్వభావనియతం కర్మ కుర్వన్నాప్నోతి కిల్బిషమ్—చక్కగా ఆచరించిన పరధర్మం కంటే లోపాలున్నదైనా తన స్వధర్మమే శ్రేష్ఠమైనది! స్వభావ నియతమైన తన కర్తవ్యాన్ని ఆచరించేవాడు ఎన్నడూ పాపాన్ని పొందడు.", emotion: "స్వధర్మం" },
+                    { speaker: "కృష్ణుడు", text: "ఈశ్వరః సర్వభూతానాం హృద్దేశేऽర్జున తిష్ఠతి। భ్రామయన్సర్వభూతాని యంత్రారూఢాని మాయయా—ఓ అర్జునా! సర్వేశ్వరుడు సమస్త ప్రాణుల హృదయాలలో కొలువై ఉండి, యంత్రంపై ఎక్కించిన బొమ్మల వలె తన మాయతో సమస్త జీవులను తిప్పుతున్నాడు!", emotion: "హృదయస్థ ఈశ్వరుడు" },
+                    { speaker: "కృష్ణుడు", text: "తమేవ శరణం గచ్ఛ సర్వభావేన భారత। తత్ప్రసాదాత్పరాం శాంతిం స్థానం ప్రాప్స్యసి శాశ్వతమ్—ఓ భారతా! సర్వభావాలతో ఆ పరమేశ్వరుడినే శరణు వేడుము! ఆయన అనుగ్రహం చేతనే నీవు పరమ శాంతిని, శాశ్వతమైన పరమ పదాన్ని పొందుతావు.", emotion: "శరణాగతి" },
+                    { speaker: "కృష్ణుడు", text: "ఇతి తే జ్ఞానమాఖ్యాతం గుహ్యాద్గుహ్యతరం మయా। విమృశ్యైతదశేషేణ యథేచ్ఛసి తథా కురు—ఈ విధంగా పరమ రహస్యమైన జ్ఞానాన్ని నీకు ఉపదేశించాను. దీనిని సంపూర్ణంగా విచారించి, నీకు ఎలా యుక్తమనిపిస్తే అలా చేయుము!", emotion: "స్వేచ్ఛ" },
+                    { speaker: "కృష్ణుడు", text: "సర్వగుహ్యతమం భూయః శృణు మే పరమం వచః। ఇష్టోऽసి మే దృఢమితి తతో వక్ష్యామి తే హితమ్—కానీ నీవు నా ప్రియ సఖుడవు కాబట్టి నీ పరమ హితం కొరకు సర్వ రహస్యాలలో పరమోత్కృష్టమైన నా అంతిమ పరమ వచనాన్ని మరల చెబుతున్నాను, వినుము:", emotion: "వాత్సల్యం" },
+                    { speaker: "కృష్ణుడు", text: "మన్మనా భవ మద్భక్తో మద్యాజీ మాం నమస్కురు। మామేవైష్యసి సత్యం తే ప్రతిజానే ప్రియోऽసి మే—నీ మనస్సును నా యందే నిలుపుము, నా భక్తుడవు కమ్ము, నన్నే పూజించుము, నాకు నమస్కరించుము! నీవు నిశ్చయంగా నన్నే పొందుతావు; నీవు నాకు అత్యంత ప్రియుడవు కాబట్టి నీకు సత్యప్రతిజ్ఞ చేస్తున్నాను!", emotion: "దివ్య ప్రతిజ్ఞ" },
+                    { speaker: "కృష్ణుడు", text: "సర్వధర్మాన్పరిత్యజ్య మామేకం శరణం వ్రజ। అహం త్వాం సర్వపాపేభ్యో మోక్షయిష్యామి మా శుచః—సమస్త ధర్మాలను (ఉపాధులను, బాహ్య విధులను) నా యందు సమర్పించి, కేవలం నన్ను మాత్రమే శరణు వేడుము! నేను నిన్ను సమస్త పాపాల నుండి విముక్తుడిని చేస్తాను, నీవు శోకించకు!", emotion: "చరమ శ్లోకం" },
+                    { speaker: "కృష్ణుడు", text: "కచ్చిదేతచ్ఛ్రుతం పార్థ త్వయైకాగ్రేణ చేతసా। కచ్చిదజ్ఞానసంమోహః ప్రణష్టస్తే ధనంజయ—పార్థా! ఏకాగ్ర చిత్తంతో దీనిని విన్నావా? ధనంజయా! నీ అజ్ఞాన మోహం సంపూర్ణంగా నశించిందా?", emotion: "ప్రశ్న" },
+                    { speaker: "అర్జునుడు", text: "నష్టో మోహః స్మృతిర్లబ్ధా త్వత్ప్రసాదాన్మయాచ్యుత। స్థితోऽస్మి గతసందేహః కరిష్యే వచనం తవ—అచ్యుతా! మీ అపార కృప చేత నా అజ్ఞాన మోహం పూర్తిగా నశించింది! నాకు నా ఆత్మస్మృతి లభించింది. సంశయాలన్నీ తీరి స్థిరంగా నిలిచాను. ఇక మీ ఆజ్ఞను శిరసావహించి యుద్ధం చేస్తాను!", emotion: "కృతనిశ్చయం" },
+                    { speaker: "సంజయుడు", text: "ఇత్యహం వాసుదేవస్య పార్థస్య చ మహాత్మనః। సంవాదమిమమశ్రౌషమద్భుతం రోమహర్షణమ్—రాజా ధృతరాష్ట్రా! ఈ విధంగా మహాత్ముడైన వాసుదేవుడు మరియు అర్జునుల మధ్య జరిగిన పరమాద్భుతమైన, రోమాంచితమైన ఈ దివ్య సంవాదాన్ని నేను విన్నాను!", emotion: "రోమాంచం" },
+                    { speaker: "సంజయుడు", text: "యత్ర యోగేశ్వరః కృష్ణో యత్ర పార్థో ధనుర్ధరః। తత్ర శ్రీర్విజయో భూతిర్ధ్రువా నీతిర్మతిర్మమ—ఎక్కడ యోగేశ్వరుడైన శ్రీకృష్ణుడు ఉంటాడో, ఎక్కడ గాండీవ ధనుర్ధారియైన అర్జునుడు ఉంటాడో—అక్కడ సంపద (శ్రీ), విజయము, విభూతి, అచంచలమైన ధర్మనీతి నిశ్చయంగా ఉంటాయి; ఇది నా అచంచల విశ్వాసం!", emotion: "శాశ్వత సత్యం" }
+                ],
+                summary: "పద్దెనిమిదవ అధ్యాయం భగవద్గీత యొక్క మహాసార సంగ్రహం. కర్మలను విడిచిపెట్టడం సన్యాసం కాదని, కర్తృత్వ అహంకారాన్ని మరియు ఫలితాసక్తిని విడిచి స్వధర్మాన్ని ఆచరించడమే నిజమైన త్యాగమని కృష్ణుడు స్పష్టం చేస్తాడు. కర్మకు ఐదు హేతువులున్నాయని తెలుపుతూ జ్ఞాన, కర్మ, కర్తలలోని త్రిగుణ భేదాలను విశ్లేషిస్తాడు. చివరగా గీతా చరమ శ్లోకమైన \"సర్వధర్మాన్పరిత్యజ్య మామేకం శరణం వ్రజ\" ద్వారా సంపూర్ణ శరణాగతిని ప్రసాదిస్తాడు. అర్జునుని మోహం నశించి కర్తవ్యోన్ముఖుడవుతాడు. \"ఎక్కడ యోగేశ్వరుడైన కృష్ణుడు, ధనుర్ధారియైన అర్జునుడు ఉంటారో అక్కడ విజయము, సంపద నిశ్చయం\" అనే సంజయుని దివ్య విజయ ఘోషతో భగవద్గీత సంపూర్ణమవుతుంది.",
+                teachings: "• బాధ్యతల నుండి పారిపోవడం సన్యాసం కాదు; అహంకారాన్ని, కర్మఫలాసక్తిని త్యజించడమే నిజమైన త్యాగం.\n• లోపభూయిష్టమైనదైనా తన స్వధర్మాన్ని ఆచరించడమే పరధర్మం కంటే శ్రేయస్కరం.\n• భగవంతుడు సర్వప్రాణుల హృదయాలలో కొలువై ఉన్నాడు; సర్వభావాలతో ఆయనను శరణువేడడమే శాంతికి మార్గం.\n• గీత పరమ సందేశం శరణాగతి: \"సర్వధర్మాన్పరిత్యజ్య మామేకం శరణం వ్రజ\"—సమస్త భారాలను భగవంతునికి సమర్పిస్తే ఆయన సమస్త పాపాలను పోగొట్టి రక్షిస్తాడు.\n• దైవానుగ్రహం (యోగేశ్వర కృష్ణుడు) మరియు మానవ ధర్మ ప్రయత్నం (ధనుర్ధారి పార్థుడు) ఎక్కడ ఏకమవుతాయో అక్కడ విజయం, ధర్మం సుస్థిరం.",
+                moralLesson: "కర్తవ్యం నుండి ఎన్నడూ వెనుకంజ వేయకూడదు. ఫలితాల ఆందోళనను, అహంకారాన్ని భగవంతుని పాదాల వద్ద సమర్పించి మన కర్తవ్యాన్ని నిష్ఠతో చేయాలి. దైవాన్ని నమ్మి ధర్మమార్గంలో నడిచేవారికి విజయం ఎల్లప్పుడూ తథ్యం.",
+                kidsVersion: "శ్రీకృష్ణుడు అర్జునుడికి చెప్పిన అతిపెద్ద రహస్యం: \"ఏ పనినీ భయపడి వదిలేయకు. ఫలితం గురించి చింతించకుండా మంచి పనులు చెయ్యి, నన్ను మనసారా నమ్ముకో. నువ్వు నన్ను నమ్మితే నీకు ఎలాంటి కష్టమూ రానివ్వకుండా నేనే చూసుకుంటాను!\" దాంతో అర్జునుడి భయమంతా పోయి సంతోషంగా నిలబడ్డాడు. దేవుడి తోడు, మన కష్టం కలిస్తే విజయం ఎప్పుడూ మనదే!"
+            }
         }
     }
 };
@@ -2242,7 +1603,7 @@ const bhagavadGitaData = {
 // Export for use in app.js
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = bhagavadGitaData;
-} else {
+} else if (typeof window !== 'undefined') {
     window.bhagavadGitaData = bhagavadGitaData;
 }
 

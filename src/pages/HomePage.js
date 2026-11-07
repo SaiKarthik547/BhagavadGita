@@ -161,107 +161,177 @@ const HomePage = () => {
         </div>
       </div>
 
-      {/* Ekashloki Bhagavadgita Popup */}
-      {showPopup === 'ekashloki' && (
-        <div className="popup-overlay" onClick={closePopup}>
-          <div className="popup-content" onClick={(e) => e.stopPropagation()}>
-            <button className="popup-close" onClick={closePopup}>×</button>
-            <h2>Ekashloki Bhagavadgita</h2>
-            <div className="ekashloki-section">
-              <div className="ekashloki-card">
-                <h3>{ekashlokiData.name}</h3>
-                <div className="ekashloki-text">
-                  <p style={{ whiteSpace: 'pre-line', fontSize: '1.1rem', lineHeight: '1.6' }}>
-                    {ekashlokiData.text}
-                  </p>
-                </div>
-                <p className="ekashloki-meaning">
-                  {ekashlokiData.meaning}
-                </p>
+      {/* Royal Talapatra Grandha / King's Decree Popup Scroll */}
+      {showPopup && (
+        <div className="popup-overlay royal-home-modal-overlay" onClick={closePopup}>
+          <div className="royal-home-scroll" onClick={(e) => e.stopPropagation()}>
+            {/* Top Cylindrical Royal Scroll Roller */}
+            <div className="royal-scroll-top-roller" aria-hidden="true">
+              <span className="royal-roller-cap cap-left"></span>
+              <div className="royal-roller-rod">
+                <span className="royal-roller-ring ring-left"></span>
+                <span className="royal-roller-crest">❖</span>
+                <span className="royal-roller-ring ring-right"></span>
+              </div>
+              <span className="royal-roller-cap cap-right"></span>
+            </div>
+
+            {/* Scroll Parchment Body */}
+            <div className="royal-scroll-body home-scroll-body">
+              <div className="royal-scroll-header">
+                <span className="royal-scroll-invocation">॥ श्री परमात्मने नमः ॥</span>
+                <h2>
+                  {showPopup === 'ekashloki' && (ekashlokiData.name || 'Ekashloki Bhagavadgita')}
+                  {showPopup === 'meditation' && t('meditationFeature')}
+                  {showPopup === 'kids' && t('kidsVersion')}
+                  {showPopup === 'history' && t('historyOfBhagavadGita')}
+                  {showPopup === 'features' && t('exploreTeachings')}
+                </h2>
+                <button
+                  type="button"
+                  className="royal-scroll-close-btn"
+                  onClick={closePopup}
+                  aria-label="Close"
+                >
+                  ×
+                </button>
+                <div className="chants-ancient-divider" aria-hidden="true">─── ❖ ❈ ❖ ───</div>
+              </div>
+
+              <div className="home-scroll-content">
+                {/* 1. Ekashloki Bhagavadgita */}
+                {showPopup === 'ekashloki' && (
+                  <>
+                    <div className="home-scroll-section">
+                      <h3 className="home-section-heading">
+                        <span className="heading-ornament">✦</span>
+                        {language === 'en' ? 'Sacred Verse' : language === 'hi' ? 'पवित्र श्लोक' : 'పవిత్ర శ్లోకం'}
+                        <span className="heading-ornament">✦</span>
+                      </h3>
+                      <div className="chants-ancient-divider section-mini-divider" aria-hidden="true">─── ❖ ───</div>
+                      <p className="home-shloka-text">
+                        {ekashlokiData.text}
+                      </p>
+                    </div>
+
+                    <div className="chants-ancient-divider section-break-divider" aria-hidden="true">─── ❖ ❈ ❖ ───</div>
+
+                    <div className="home-scroll-section">
+                      <h3 className="home-section-heading">
+                        <span className="heading-ornament">✦</span>
+                        {language === 'en' ? 'Divine Meaning' : language === 'hi' ? 'दिव्य भावार्थ' : 'దివ్య భావార్థం'}
+                        <span className="heading-ornament">✦</span>
+                      </h3>
+                      <div className="chants-ancient-divider section-mini-divider" aria-hidden="true">─── ❖ ───</div>
+                      <p className="home-section-para">
+                        {ekashlokiData.meaning}
+                      </p>
+                    </div>
+                  </>
+                )}
+
+                {/* 2. Sacred Meditation */}
+                {showPopup === 'meditation' && (
+                  <div className="home-scroll-section">
+                    <div className="home-feature-icon-badge" aria-hidden="true">🧘‍♀️</div>
+                    <h3 className="home-section-heading">
+                      <span className="heading-ornament">✦</span>
+                      {t('meditationFeature')}
+                      <span className="heading-ornament">✦</span>
+                    </h3>
+                    <div className="chants-ancient-divider section-mini-divider" aria-hidden="true">─── ❖ ───</div>
+                    <p className="home-section-para">
+                      {t('meditationFeatureDesc')}
+                    </p>
+                  </div>
+                )}
+
+                {/* 3. Kids Version */}
+                {showPopup === 'kids' && (
+                  <div className="home-scroll-section">
+                    <div className="home-feature-icon-badge" aria-hidden="true">👶</div>
+                    <h3 className="home-section-heading">
+                      <span className="heading-ornament">✦</span>
+                      {t('kidsVersion')}
+                      <span className="heading-ornament">✦</span>
+                    </h3>
+                    <div className="chants-ancient-divider section-mini-divider" aria-hidden="true">─── ❖ ───</div>
+                    <p className="home-section-para">
+                      {t('kidsVersionDesc')}
+                    </p>
+                  </div>
+                )}
+
+                {/* 4. History of Bhagavad Gita */}
+                {showPopup === 'history' && (
+                  <div className="home-scroll-section">
+                    <div className="home-feature-icon-badge" aria-hidden="true">📜</div>
+                    <h3 className="home-section-heading">
+                      <span className="heading-ornament">✦</span>
+                      {t('historyOfBhagavadGita')}
+                      <span className="heading-ornament">✦</span>
+                    </h3>
+                    <div className="chants-ancient-divider section-mini-divider" aria-hidden="true">─── ❖ ───</div>
+                    <p className="home-section-para">
+                      {t('historyOfBhagavadGitaText')}
+                    </p>
+                  </div>
+                )}
+
+                {/* 5. Features Grid */}
+                {showPopup === 'features' && (
+                  <div className="home-features-scroll-list">
+                    {[
+                      {
+                        icon: '📖',
+                        title: t('completeChapters'),
+                        description: t('completeChaptersDesc')
+                      },
+                      {
+                        icon: '🧘‍♀️',
+                        title: t('meditationFeature'),
+                        description: t('meditationFeatureDesc')
+                      },
+                      {
+                        icon: '🌍',
+                        title: t('spiritualWisdom'),
+                        description: t('spiritualWisdomDesc')
+                      },
+                      {
+                        icon: '👶',
+                        title: t('kidsVersion'),
+                        description: t('kidsVersionDesc')
+                      }
+                    ].map((feature, index) => (
+                      <React.Fragment key={index}>
+                        <div className="home-scroll-section">
+                          <div className="home-feature-icon-badge" aria-hidden="true">{feature.icon}</div>
+                          <h3 className="home-section-heading">
+                            <span className="heading-ornament">✦</span>
+                            {feature.title}
+                            <span className="heading-ornament">✦</span>
+                          </h3>
+                          <div className="chants-ancient-divider section-mini-divider" aria-hidden="true">─── ❖ ───</div>
+                          <p className="home-section-para">{feature.description}</p>
+                        </div>
+                        {index < 3 && <div className="chants-ancient-divider section-break-divider" aria-hidden="true">─── ❖ ❈ ❖ ───</div>}
+                      </React.Fragment>
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
-          </div>
-        </div>
-      )}
 
-      {/* Features Popup */}
-      {showPopup === 'features' && (
-        <div className="popup-overlay" onClick={closePopup}>
-          <div className="popup-content" onClick={(e) => e.stopPropagation()}>
-            <button className="popup-close" onClick={closePopup}>×</button>
-            <h2>{t('exploreTeachings')}</h2>
-            <div className="features-grid">
-              {[
-                {
-                  icon: '📖',
-                  title: t('completeChapters'),
-                  description: t('completeChaptersDesc')
-                },
-                {
-                  icon: '🧘‍♀️',
-                  title: t('meditationFeature'),
-                  description: t('meditationFeatureDesc')
-                },
-                {
-                  icon: '🌍',
-                  title: t('spiritualWisdom'),
-                  description: t('spiritualWisdomDesc')
-                },
-                {
-                  icon: '👶',
-                  title: t('kidsVersion'),
-                  description: t('kidsVersionDesc')
-                }
-              ].map((feature, index) => (
-                <div key={index} className="feature-card">
-                  <div className="feature-icon">{feature.icon}</div>
-                  <h3 className="feature-title">{feature.title}</h3>
-                  <p className="feature-description">{feature.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* History Popup */}
-      {showPopup === 'history' && (
-        <div className="popup-overlay" onClick={closePopup}>
-          <div className="popup-content" onClick={(e) => e.stopPropagation()}>
-            <button className="popup-close" onClick={closePopup}>×</button>
-            <h2>{t('historyOfBhagavadGita')}</h2>
-            <p className="history-text">
-              {t('historyOfBhagavadGitaText')}
-            </p>
-          </div>
-        </div>
-      )}
-
-      {/* Meditation Popup */}
-      {showPopup === 'meditation' && (
-        <div className="popup-overlay" onClick={closePopup}>
-          <div className="popup-content" onClick={(e) => e.stopPropagation()}>
-            <button className="popup-close" onClick={closePopup}>×</button>
-            <h2>{t('meditationFeature')}</h2>
-            <div className="feature-card">
-              <div className="feature-icon">🧘‍♀️</div>
-              <h3 className="feature-title">{t('meditationFeature')}</h3>
-              <p className="feature-description">{t('meditationFeatureDesc')}</p>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* Kids Popup */}
-      {showPopup === 'kids' && (
-        <div className="popup-overlay" onClick={closePopup}>
-          <div className="popup-content" onClick={(e) => e.stopPropagation()}>
-            <button className="popup-close" onClick={closePopup}>×</button>
-            <h2>{t('kidsVersion')}</h2>
-            <div className="feature-card">
-              <div className="feature-icon">👶</div>
-              <h3 className="feature-title">{t('kidsVersion')}</h3>
-              <p className="feature-description">{t('kidsVersionDesc')}</p>
+            {/* Bottom Pennant with Triangular Kings Decor & Tassel */}
+            <div className="royal-scroll-triangular-bottom" aria-hidden="true">
+              <div className="royal-triangular-pennant">
+                <div className="royal-triangular-inner-trim"></div>
+                <span className="royal-triangular-motif">❖</span>
+              </div>
+              <div className="royal-pennant-tassel">
+                <span className="tassel-knot"></span>
+                <span className="tassel-fringe"></span>
+              </div>
             </div>
           </div>
         </div>

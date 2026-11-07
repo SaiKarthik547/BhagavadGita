@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useLanguage } from '../contexts/LanguageContext';
 import arjunaImage from '../assets/images/arjuna.png';
 import krishnaImage from '../assets/images/krishna.png';
-import hostImage from '../assets/images/host.png';
+import sanjayaImage from '../assets/images/sanjaya.png';
+import dritarashtraImage from '../assets/images/dritharastra.png';
+import duryodhanaImage from '../assets/images/duryodhana.png';
 import vishwaroopamImage from '../assets/images/vishwaroopam.png';
 import sharadaMataImage from '../assets/images/sharada mata.png';
 
@@ -16,7 +18,6 @@ const ChapterDetailsPage = () => {
     t,
     language
   } = useLanguage();
-  
   
   // Emotion mapping for Telugu emotions to English equivalents
   const teluguToEnglishEmotionMap = {
@@ -60,83 +61,72 @@ const ChapterDetailsPage = () => {
     'ఉత్సుక': 'curious',
     'బాధతో': 'pained',
     'ఉదాహరణ': 'exemplary',
-    'విచారిస్తున్న': 'inquiring',
+    'ప్రశ్నిస్తున్నట్లుగా': 'questioning',
     'ఆందోళన': 'worried',
-    'గంభీరం': 'profound',
-    'వివరణాత్మక': 'descriptive',
-    'సమచిత్తం': 'equanimous',
-    'నిర్ణాయక': 'conclusive',
-    'జ్ఞానోదయం': 'enlightened',
-    'స్వీకారం': 'accepting',
-    'స్పష్టీకరిస్తున్న': 'clarifying',
-    'భ్రమిస్తున్న': 'confused',
-    'ప్రకాశిస్తున్న': 'enlightening',
-    'వచనం ఇస్తున్న': 'promising',
-    'సర్వవ్యాపి': 'all-encompassing',
+    'తీవ్రమైన': 'profound',
+    'అన్వేషణ': 'inquisitive',
+    'వర్ణనాత్మక': 'descriptive',
+    'సమభావం': 'equanimous',
+    'నిర్ణయించే': 'conclusive',
+    'జ్ఞానోదయమైన': 'enlightened',
+    'భరోసాతో': 'reassured',
+    'దృష్టాంతర': 'exemplary',
+    'ఆచరణీయ': 'practical',
+    'స్పష్టీకరణ': 'clarifying',
+    'వ్యతిరేక': 'contrasting',
+    'ఫలిత': 'consequential',
+    'ఆశావాద': 'hopeful',
+    'అవగాహన': 'understanding',
+    'ప్రేరేపిత': 'inspired',
+    'శ్రేణి': 'hierarchical',
+    'వ్యూహాత్మక': 'strategic',
+    'గందరగోళం': 'confused',
+    'దిగ్భ్రాంతి': 'puzzled',
+    'అధికారిక': 'authoritative',
+    'హామీ ఇచ్చే': 'promising',
+    'సర్వవ్యాప్త': 'all-encompassing',
     'శక్తివంతమైన': 'powerful',
-    'చకితుడైన': 'amazed',
-    'పర్యవసానం': 'final',
+    'ఆశ్చర్యపడిన': 'amazed',
+    'ఎదురుచూస్తున్న': 'anticipating',
     'పరమ': 'ultimate',
-    'శ్రద్ధ': 'attentive',
-    'నిశ్చితం': 'definitive',
+    'శ్రద్ధతో': 'attentively',
+    'ప్రేమపూర్వక': 'loving',
+    'ఖచ్చితమైన': 'definitive',
     'ఆశీర్వాదం': 'blessing',
     'విశ్లేషణాత్మక': 'analytical',
     'విమర్శనాత్మక': 'critical',
-    'న్యాయం': 'just',
-    'జాగ్రత్త': 'cautious',
+    'నిర్ధారించే': 'confirming',
+    'న్యాయమైన': 'just',
+    'జాగరూకత': 'cautious',
     'తీవ్ర హెచ్చరిక': 'warning_seriously',
     'మూల్యాంకనం': 'evaluative',
     'బోధనాత్మక': 'instructive',
     'పవిత్రమైన': 'sacred',
     'హెచ్చరిక': 'warning',
-    'భేదం చూపుతున్న': 'differential',
-    'వివరిస్తున్న': 'defining',
+    'తేడా': 'differential',
+    'నిర్వచించే': 'defining',
     'భయంతో': 'fearful',
-    'స్థిరం': 'stable',
-    'అస్థిరం': 'unstable',
-    'సంతృప్తి': 'content',
-    'అసంతృప్తి': 'dissatisfied',
+    'స్పష్టత': 'clarity',
+    'అస్థిరమైన': 'unstable',
+    'సంతోషకరమైన': 'joyful',
+    'ఉత్సాహకరమైన': 'excited',
+    'ఆందోళనకరమైన': 'agitated',
+    'స్పష్టమైన': 'clear',
+    'లోతైన': 'profound',
+    'ధైర్యమైన': 'courageous',
+    'భయం': 'fearful',
+    'ఆశ': 'hopeful',
+    'నిరాశ': 'disappointed',
+    'ప్రేమగల': 'loving',
+    'కోపం': 'anger',
+    'శాంతి': 'calm',
     'సంతోషం': 'happy',
     'దుఃఖం': 'sad',
-    'ఉదాసీనత': 'indifferent',
-    'ప్రేరణ': 'inspired',
-    'అలసిపోవడం': 'exhausted',
-    'ఉత్సాహం': 'enthusiastic',
-    'అవమానం': 'humiliated',
-    'గర్వం': 'proud',
-    'లజ్జ': 'shameful',
-    'క్షమాపణ': 'forgiving',
-    'క్షమాప్రార్థన': 'apologetic',
-    'సహనం': 'tolerant',
-    'అసహనం': 'intolerant',
-    'స్వచ్ఛందం': 'voluntary',
-    'అనివార్యం': 'inevitable',
-    'సందేహం': 'doubtful',
-    'అనిశ్చయం': 'undecided',
-    'సమర్పణ': 'dedication',
-    'విశ్వాసం': 'confident',
-    'అవిశ్వాసం': 'distrustful',
-    'సమాధానం': 'satisfied',
-    'అసమాధానం': 'unsatisfied',
-    'సమాధానకరం': 'satisfactory',
-    'అసమాధానకరం': 'unsatisfactory',
-    'నిండిపోయిన': 'overwhelmed',
-    'ఓపిక': 'patient',
-    'విజేత': 'victorious',
-    // Additional Telugu emotions found in data but missing from mappings
-    'నిశ్చయాత్మక': 'determined',
-    'సంతోషంగా': 'happy',
-    'సంభ్రమం': 'proud',
-    'సంఘర్షణలో': 'conflicted',
-    'సమాధానంగా': 'satisfied',
-    'అసమాధానంగా': 'unsatisfied',
-    'సందేహంగా': 'doubtful',
-    'అనిశ్చయంగా': 'undecided',
-    'ప్రేరణగా': 'inspired',
+    'ఉదాసీన': 'indifferent',
     'అలసిపోయిన': 'exhausted',
-    'ఉత్సాహంగా': 'enthusiastic',
-    'అవమానితుడైన': 'humiliated',
-    'గర్వించిన': 'proud',
+    'ఉత్సాహం': 'enthusiastic',
+    'అవమానకరమైన': 'humiliated',
+    'గర్వకరమైన': 'proud',
     'లజ్జించిన': 'shameful',
     'క్షమాపణగా': 'forgiving',
     'క్షమాప్రార్థనగా': 'apologetic',
@@ -221,7 +211,6 @@ const ChapterDetailsPage = () => {
     'भयभीत': 'fearful',
     'स्पष्टता': 'clarity',
     'अस्थिर': 'unstable',
-
     'आनंदित': 'joyful',
     'उत्तेजित': 'excited',
     'विचलित': 'agitated',
@@ -246,74 +235,33 @@ const ChapterDetailsPage = () => {
     'क्षमा प्रार्थना': 'apologetic',
     'सहिष्णु': 'tolerant',
     'असहिष्णु': 'intolerant',
-
     'अनिवार्य': 'inevitable',
-    'संदेह': 'doubtful',
-    'निश्चय': 'determined',
-    'अनिश्चय': 'undecided',
-    'समर्पण': 'dedication',
-    'विश्वास': 'confident',
-
-    'समाधान': 'satisfied',
-    'असमाधान': 'unsatisfied',
-    'समाधानजनक': 'satisfactory',
-    'असमाधानजनक': 'unsatisfactory',
-    'गुणों की सूची': 'listing_virtues',
-    'विवेकी': 'discerning',
-    'आश्चर्यपोतुन्न': 'amazed',
-    'ब्रह्मांड': 'cosmic',
-    'पोषक': 'sustaining',
-    'सर्वज्ञ': 'omniscient',
-    'गमनिस्तुन्न': 'observant',
-    'धृवीकरिस्तुन्न': 'confirming',
-    'सद्गुणाल जाबिता': 'listing_virtues',
-    'व्यतिरेक': 'contrasting',
-    'पर्यवसान': 'consequential',
-    'वर्गीकृत करते हुए': 'categorizing',
-    'आशावादी': 'hopeful',
-    'ग्रहण करते हुए': 'understanding',
-    'निर्वचित करते हुए': 'defining',
-    'मार्गदर्शन': 'guiding',
-    'भरोसा देते हुए': 'reassuring_seriously',
-    'जागरूक': 'cautious',
-    'विजेता': 'victorious',
-    // Additional Hindi emotions found in data but missing from mappings
-
     'समाधानकारक': 'satisfactory',
     'असमाधानकरक': 'unsatisfactory'
   };
   
-  // Function to get the correct emotion class name for CSS styling (maps to English equivalents)
+  // Function to get the correct emotion class name for CSS styling
   const getEmotionClassNameForStyling = (emotion) => {
-    // If language is Telugu and emotion is in Telugu, map to English equivalent for CSS class
     if (language === 'te' && teluguToEnglishEmotionMap[emotion]) {
       return teluguToEnglishEmotionMap[emotion];
     }
-    // If language is Hindi and emotion is in Hindi, map to English equivalent for CSS class
     if (language === 'hi' && hindiToEnglishEmotionMap[emotion]) {
       return hindiToEnglishEmotionMap[emotion];
     }
-    // For English and other languages, use the emotion as is
     return emotion || 'neutral';
   };
   
   // Function to get the display emotion name in the original language
   const getDisplayEmotionName = (emotion) => {
-    // For all languages, display the original emotion name
     return emotion || 'neutral';
   };
-  
-
 
   const [showSummary, setShowSummary] = useState(false);
   const [currentConversationIndex, setCurrentConversationIndex] = useState(0);
   const [showCharacter, setShowCharacter] = useState(false);
   const [showText, setShowText] = useState(false);
-  const [characterType, setCharacterType] = useState(''); // 'arjuna', 'krishna', 'host', or 'vishwaroopam'
+  const [characterType, setCharacterType] = useState(''); 
   const [currentText, setCurrentText] = useState('');
-  const [isChapterCompleted, setIsChapterCompleted] = useState(false);
-  const [lastAction, setLastAction] = useState(''); // Track last action ('ask' or 'answer')
-  const [showPopup, setShowPopup] = useState(false); // For popup message
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [flipDirection, setFlipDirection] = useState(''); // 'next' (bottom-to-top) or 'prev' (top-to-bottom)
   const [isPageFlipping, setIsPageFlipping] = useState(false);
@@ -353,7 +301,7 @@ const ChapterDetailsPage = () => {
 
   // Preload character images for seamless transitions
   useEffect(() => {
-    [arjunaImage, krishnaImage, hostImage, vishwaroopamImage, sharadaMataImage].forEach((src) => {
+    [arjunaImage, krishnaImage, sanjayaImage, dritarashtraImage, duryodhanaImage, vishwaroopamImage, sharadaMataImage].forEach((src) => {
       const img = new Image();
       img.src = src;
     });
@@ -370,8 +318,59 @@ const ChapterDetailsPage = () => {
   // Get current chapter
   const languageKey = language === 'hi' ? 'hi' : language === 'te' ? 'te' : 'en';
   const chapter = bhagavadGitaData[languageKey]?.chapters[chapterId];
-  
+  const conversations = chapter?.dialogue || [];
 
+  // Helper functions to check speakers
+  const isArjunaSpeaker = (speaker) => {
+    return speaker === 'Arjuna' || speaker === 'अर्जुन' || speaker === 'అర్జునుడు' || speaker === 'అర్జున';
+  };
+
+  const isKrishnaSpeaker = (speaker) => {
+    return speaker === 'Krishna' || speaker === 'Lord Krishna' || speaker === 'कृष्ण' || speaker === 'श्री कृष्ण' || speaker === 'శ్రీకృష్ణుడు' || speaker === 'కృష్ణుడు' || speaker === 'కృష్ణ';
+  };
+
+  const isSanjayaSpeaker = (speaker) => {
+    return speaker === 'Sanjaya' || speaker === 'Sañjaya' || speaker === 'संजय' || speaker === 'सञ्जय' || speaker === 'సంజయుడు' || speaker === 'సంజయ';
+  };
+
+  const isDhritarashtraSpeaker = (speaker) => {
+    return speaker === 'Dhritarashtra' || speaker === 'Dhṛtarāṣṭra' || speaker === 'धृतराष्ट्र' || speaker === 'ధృతరాష్ట్రుడు' || speaker === 'ధృతరాష్ట్ర';
+  };
+
+  const isDuryodhanaSpeaker = (speaker) => {
+    return speaker === 'Duryodhana' || speaker === 'दुर्योधन' || speaker === 'దుర్యోధనుడు' || speaker === 'దుర్యోధన';
+  };
+
+  const updateCharacterType = useCallback((speaker, index) => {
+    if (isArjunaSpeaker(speaker)) {
+      setCharacterType('arjuna');
+    } else if (isKrishnaSpeaker(speaker)) {
+      if (chapterId === '11') {
+        // In chapter 11, show vishwaroopam for Krishna during the cosmic vision
+        const totalKrishnaDialogues = conversations.filter(conv => isKrishnaSpeaker(conv.speaker)).length;
+        const currentKrishnaDialogueIndex = conversations
+          .slice(0, index + 1)
+          .filter(conv => isKrishnaSpeaker(conv.speaker)).length;
+        
+        // Use normal Krishna for the concluding dialogues
+        if (currentKrishnaDialogueIndex > totalKrishnaDialogues - 2) {
+          setCharacterType('krishna');
+        } else {
+          setCharacterType('vishwaroopam');
+        }
+      } else {
+        setCharacterType('krishna');
+      }
+    } else if (isSanjayaSpeaker(speaker)) {
+      setCharacterType('sanjaya');
+    } else if (isDhritarashtraSpeaker(speaker)) {
+      setCharacterType('dhritarashtra');
+    } else if (isDuryodhanaSpeaker(speaker)) {
+      setCharacterType('duryodhana');
+    } else {
+      setCharacterType('krishna');
+    }
+  }, [chapterId, conversations]);
 
   // Function to get the correct image based on character type
   const getCharacterImage = () => {
@@ -380,8 +379,12 @@ const ChapterDetailsPage = () => {
         return arjunaImage;
       case 'krishna':
         return krishnaImage;
-      case 'host':
-        return hostImage;
+      case 'sanjaya':
+        return sanjayaImage;
+      case 'dhritarashtra':
+        return dritarashtraImage;
+      case 'duryodhana':
+        return duryodhanaImage;
       case 'vishwaroopam':
         return vishwaroopamImage;
       case 'sharadaMata':
@@ -398,8 +401,12 @@ const ChapterDetailsPage = () => {
         return 'Arjuna';
       case 'krishna':
         return 'Krishna';
-      case 'host':
-        return 'Host';
+      case 'sanjaya':
+        return 'Sanjaya';
+      case 'dhritarashtra':
+        return 'Dhritarashtra';
+      case 'duryodhana':
+        return 'Duryodhana';
       case 'vishwaroopam':
         return 'Vishwaroopam';
       case 'sharadaMata':
@@ -409,71 +416,15 @@ const ChapterDetailsPage = () => {
     }
   };
 
-  // If chapter not found, show error - moved after all hooks
-  if (!chapter) {
-    return (
-      <div className="chapter-details-minimal">
-        <div className="error-message">
-          <h2>{t('chapterNotFound')}</h2>
-          <p>Chapter ID: {chapterId} not found for language: {languageKey}</p>
-          <Link to="/chapters" className="back-link">{t('backToChapters')}</Link>
-        </div>
-      </div>
-    );
-  }
-
-  // Get conversations
-  const conversations = chapter.dialogue || [];
-  
-  // Audio functions for conversations - DISABLED as per user request
-  const handlePlayAudio = (text, speaker) => {
-    // Text-to-speech completely removed as per user request
-    console.log("Text-to-speech is disabled");
-  };
-  
   const handleStartChapter = () => {
     if (conversations.length > 0) {
       const firstConversation = conversations[0];
       setCurrentText(firstConversation.text);
-      
-      // Determine character type based on speaker
-      const speaker = firstConversation.speaker;
-      if (speaker === 'Arjuna' || speaker === 'अर्जुन' || speaker === 'అర్జునుడు' || speaker === 'అర్జున') {
-        setCharacterType('arjuna');
-      } else if (speaker === 'Krishna' || speaker === 'कृष्ण' || speaker === 'కృష్ణుడు' || speaker === 'కృష్ణ') {
-        // Special case for Chapter 11 - show Vishwaroopam for Krishna except for the last two conversations
-        if (chapterId === '11') {
-          // For the first conversation, we show Vishwaroopam (not normal Krishna)
-          setCharacterType('vishwaroopam');
-        } else {
-          setCharacterType('krishna');
-        }
-      } else {
-        // For any other speaker (including Host, होस्ट, Podcast Host, etc.), use host
-        setCharacterType('host');
-      }
-      
+      updateCharacterType(firstConversation.speaker, 0);
       setShowCharacter(true);
       setShowText(true);
-      setLastAction(speaker === 'Arjuna' || speaker === 'अर्जुन' || speaker === 'అర్జునుడు' || speaker === 'అర్జున' ? 'ask' : 'answer');
       setCurrentConversationIndex(0);
-      handlePlayAudio(firstConversation.text, firstConversation.speaker);
     }
-  };
-
-  // Helper function to check if speaker is Arjuna
-  const isArjunaSpeaker = (speaker) => {
-    return speaker === 'Arjuna' || speaker === 'अर्जुन' || speaker === 'అర్జునుడు' || speaker === 'అర్జున';
-  };
-
-  // Helper function to check if speaker is Krishna
-  const isKrishnaSpeaker = (speaker) => {
-    return speaker === 'Krishna' || speaker === 'कृष्ण' || speaker === 'కృష్ణుడు' || speaker === 'కృష్ణ';
-  };
-
-  // Helper function to check if speaker is Host
-  const isHostSpeaker = (speaker) => {
-    return speaker === 'Host' || speaker === 'होस्ट' || speaker === 'Podcast Host' || speaker.includes('Host');
   };
 
   const triggerGrandhaPageFlip = (direction) => {
@@ -490,133 +441,31 @@ const ChapterDetailsPage = () => {
     }, 920);
   };
 
-  const handleAskQuestion = () => {
+  // Sequential Next: advances exactly by 1 dialogue without skipping any speaker
+  const handleNextDialogue = () => {
     if (isTransitioning || isPageFlipping) return;
-    // Check if last action was also 'ask'
-    if (lastAction === 'ask') {
-      setShowPopup(true);
-      setTimeout(() => setShowPopup(false), 3000); // Hide popup after 3 seconds
-      return;
-    }
     
-    // Find the next Arjuna question or Host conversation
-    let nextQuestionIndex = -1;
-    for (let i = currentConversationIndex + 1; i < conversations.length; i++) {
-      const speaker = conversations[i].speaker;
-      // Check for all variations of Arjuna and Host speakers
-      if (isArjunaSpeaker(speaker) || isHostSpeaker(speaker)) {
-        nextQuestionIndex = i;
-        break;
-      }
-    }
-    
-    // If no Arjuna question or Host conversation found, check if chapter is completed
-    if (nextQuestionIndex === -1) {
-      // Chapter completed - only show summary at the very end
-      if (currentConversationIndex === conversations.length - 1) {
-        setIsChapterCompleted(true);
-        setShowSummary(true);
-      }
-      return;
-    }
-    
-    if (nextQuestionIndex !== -1) {
+    if (currentConversationIndex < conversations.length - 1) {
+      const nextIndex = currentConversationIndex + 1;
+      const nextConversation = conversations[nextIndex];
       triggerGrandhaPageFlip('next');
       setIsTransitioning(true);
-      const conversation = conversations[nextQuestionIndex];
-      setCurrentConversationIndex(nextQuestionIndex);
-      setCurrentText(conversation.text);
+      setCurrentText(nextConversation.text);
+      setCurrentConversationIndex(nextIndex);
       setShowText(true);
-      setLastAction('ask'); // Set last action to 'ask'
 
       setTimeout(() => {
-        // Determine character type based on speaker
-        const speaker = conversation.speaker;
-        if (isArjunaSpeaker(speaker)) {
-          setCharacterType('arjuna');
-        } else if (isHostSpeaker(speaker)) {
-          setCharacterType('host');
-        } else {
-          // Default to host for any other speaker that's not recognized
-          setCharacterType('host');
-        }
-        
+        updateCharacterType(nextConversation.speaker, nextIndex);
         setShowCharacter(true);
         finishTransitionSmoothly();
-        
-        // Play character's question audio
-        handlePlayAudio(conversation.text, conversation.speaker);
       }, 280);
+    } else {
+      // Completed chapter - show Chapter Summary
+      setShowSummary(true);
     }
   };
 
-  const handleDivineAnswer = () => {
-    if (isTransitioning || isPageFlipping) return;
-    // Check if last action was also 'answer'
-    if (lastAction === 'answer') {
-      setShowPopup(true);
-      setTimeout(() => setShowPopup(false), 3000); // Hide popup after 3 seconds
-      return;
-    }
-    
-    // Find the next Krishna response after current index
-    let nextAnswerIndex = -1;
-    for (let i = currentConversationIndex + 1; i < conversations.length; i++) {
-      const speaker = conversations[i].speaker;
-      // Check for all variations of Krishna speakers
-      if (isKrishnaSpeaker(speaker)) {
-        nextAnswerIndex = i;
-        break;
-      }
-    }
-    
-    // If no Krishna response found, check if chapter is completed
-    if (nextAnswerIndex === -1) {
-      // Chapter completed - only show summary at the very end
-      if (currentConversationIndex === conversations.length - 1) {
-        setIsChapterCompleted(true);
-        setShowSummary(true);
-      }
-      return;
-    }
-    
-    if (nextAnswerIndex !== -1) {
-      triggerGrandhaPageFlip('next');
-      setIsTransitioning(true);
-      const krishnaResponse = conversations[nextAnswerIndex];
-      setCurrentConversationIndex(nextAnswerIndex);
-      setCurrentText(krishnaResponse.text);
-      setShowText(true);
-      setLastAction('answer'); // Set last action to 'answer'
-
-      setTimeout(() => {
-        // Special case for Chapter 11 - show Vishwaroopam for Krishna except for the last two conversations
-        if (chapterId === '11') {
-          // Check if this is one of the last two conversations
-          // For the last two dialogues of Krishna in Chapter 11, use krishna.svg only
-          const totalKrishnaDialogues = conversations.filter(conv => isKrishnaSpeaker(conv.speaker)).length;
-          const currentKrishnaDialogueIndex = conversations
-            .slice(0, nextAnswerIndex + 1)
-            .filter(conv => isKrishnaSpeaker(conv.speaker)).length;
-          
-          // If this is one of the last two Krishna dialogues, use krishna.svg
-          if (currentKrishnaDialogueIndex > totalKrishnaDialogues - 2) {
-            setCharacterType('krishna'); // Show normal Krishna for last two dialogues
-          } else {
-            setCharacterType('vishwaroopam'); // Show Vishwaroopam for other dialogues
-          }
-        } else {
-          setCharacterType('krishna');
-        }
-        setShowCharacter(true);
-        finishTransitionSmoothly();
-        
-        // Play Krishna's response audio
-        handlePlayAudio(krishnaResponse.text, krishnaResponse.speaker);
-      }, 280); // Smooth fade out/in transition
-    }
-  };
-
+  // Sequential Previous: steps backward exactly by 1 dialogue
   const handlePreviousDialogue = () => {
     if (isTransitioning || isPageFlipping || !showCharacter || currentConversationIndex <= 0) return;
     const prevIndex = currentConversationIndex - 1;
@@ -629,55 +478,31 @@ const ChapterDetailsPage = () => {
     setCurrentText(prevConversation.text);
     setShowText(true);
 
-    const speaker = prevConversation.speaker;
-    if (isArjunaSpeaker(speaker)) {
-      setLastAction('ask');
-    } else if (isKrishnaSpeaker(speaker)) {
-      setLastAction('answer');
-    } else {
-      setLastAction('ask');
-    }
-
     setTimeout(() => {
-      if (isArjunaSpeaker(speaker)) {
-        setCharacterType('arjuna');
-      } else if (isKrishnaSpeaker(speaker)) {
-        if (chapterId === '11') {
-          const totalKrishnaDialogues = conversations.filter(conv => isKrishnaSpeaker(conv.speaker)).length;
-          const currentKrishnaDialogueIndex = conversations
-            .slice(0, prevIndex + 1)
-            .filter(conv => isKrishnaSpeaker(conv.speaker)).length;
-          if (currentKrishnaDialogueIndex > totalKrishnaDialogues - 2) {
-            setCharacterType('krishna');
-          } else {
-            setCharacterType('vishwaroopam');
-          }
-        } else {
-          setCharacterType('krishna');
-        }
-      } else {
-        setCharacterType('host');
-      }
-
+      updateCharacterType(prevConversation.speaker, prevIndex);
       setShowCharacter(true);
       finishTransitionSmoothly();
-      handlePlayAudio(prevConversation.text, prevConversation.speaker);
     }, 280);
   };
 
+  // If chapter not found, show error
+  if (!chapter) {
+    return (
+      <div className="chapter-details-minimal">
+        <div className="error-message">
+          <h2>{t('chapterNotFound')}</h2>
+          <p>Chapter ID: {chapterId} not found for language: {languageKey}</p>
+          <Link to="/chapters" className="back-link">{t('backToChapters')}</Link>
+        </div>
+      </div>
+    );
+  }
+
   // Get current conversation for emotion display
   const currentConversation = conversations[currentConversationIndex] || {};
-  console.log('Current conversation:', currentConversation); // For debugging
 
   return (
     <div className="chapter-details">
-      {/* Popup message for repeated actions */}
-      {showPopup && (
-        <div className="action-popup">
-          Please select the opposite button or continue with current text
-        </div>
-      )}
-      
       {/* Sharada Mata image - display at top center when speaker is Krishna or Arjuna, except in Chapter 11 */}
       {chapterId !== '11' && (isKrishnaSpeaker(currentConversation.speaker) || isArjunaSpeaker(currentConversation.speaker)) && (
         <div className="sharada-mata-container">
@@ -690,13 +515,13 @@ const ChapterDetailsPage = () => {
       )}
       
       {/* Show start button at the beginning */}
-      {!showCharacter && !isChapterCompleted && (
+      {!showCharacter && (
         <div className="start-container">
           <button 
             className="start-btn"
             onClick={handleStartChapter}
           >
-            Start Chapter
+            {language === 'en' ? 'Start Chapter' : language === 'hi' ? 'अध्याय प्रारंभ करें' : 'అధ్యాయం ప్రారంభించండి'}
           </button>
         </div>
       )}
@@ -837,10 +662,10 @@ const ChapterDetailsPage = () => {
           </svg>
         </button>
         <button 
-          className={`interactive-btn ${lastAction === 'ask' ? 'answer-btn' : 'ask-btn'} circle-arrow-btn right-arrow-btn`}
-          onClick={!showCharacter ? handleStartChapter : (lastAction === 'ask' ? handleDivineAnswer : handleAskQuestion)}
-          aria-label={!showCharacter ? 'Start Chapter' : (lastAction === 'ask' ? t('divineAnswer') : t('askQuestion'))}
-          title={!showCharacter ? 'Start Chapter' : (lastAction === 'ask' ? t('divineAnswer') : t('askQuestion'))}
+          className="interactive-btn circle-arrow-btn right-arrow-btn"
+          onClick={!showCharacter ? handleStartChapter : handleNextDialogue}
+          aria-label={!showCharacter ? 'Start Chapter' : 'Next Dialogue'}
+          title={!showCharacter ? 'Start Chapter' : 'Next Dialogue'}
         >
           <svg className="arrow-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
             <line x1="5" y1="12" x2="19" y2="12" />
@@ -880,6 +705,24 @@ const ChapterDetailsPage = () => {
               </div>
 
               <div className="summary-scroll-content">
+                {/* Summary section */}
+                {chapter.summary && (
+                  <>
+                    <div className="summary-section">
+                      <h3 className="summary-section-heading">
+                        <span className="heading-ornament">✦</span>
+                        {language === 'en' ? 'Summary' : language === 'hi' ? 'सारांश' : 'సారాంశం'}
+                        <span className="heading-ornament">✦</span>
+                      </h3>
+                      <div className="chants-ancient-divider section-mini-divider" aria-hidden="true">─── ❖ ───</div>
+                      <p className="summary-section-para">{chapter.summary}</p>
+                    </div>
+
+                    <div className="chants-ancient-divider section-break-divider" aria-hidden="true">─── ❖ ❈ ❖ ───</div>
+                  </>
+                )}
+
+                {/* Key Teachings */}
                 <div className="summary-section">
                   <h3 className="summary-section-heading">
                     <span className="heading-ornament">✦</span>
@@ -899,6 +742,7 @@ const ChapterDetailsPage = () => {
 
                 <div className="chants-ancient-divider section-break-divider" aria-hidden="true">─── ❖ ❈ ❖ ───</div>
 
+                {/* Moral Lesson */}
                 <div className="summary-section">
                   <h3 className="summary-section-heading">
                     <span className="heading-ornament">✦</span>
@@ -911,6 +755,7 @@ const ChapterDetailsPage = () => {
 
                 <div className="chants-ancient-divider section-break-divider" aria-hidden="true">─── ❖ ❈ ❖ ───</div>
 
+                {/* Kid-Friendly Version */}
                 <div className="summary-section">
                   <h3 className="summary-section-heading">
                     <span className="heading-ornament">✦</span>

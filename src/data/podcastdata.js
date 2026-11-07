@@ -3196,7 +3196,7 @@ const podcastData = {
           },
           {
             speaker: "Lord Krishna",
-            text: "idamadya mayā labdhamimaṁ prāpsye manoratham |\nidamadya mayā labdhamimaṁ prāpsye manoratham || 13 ||",
+            text: "idamadya mayā labdhamimaṁ prāpsye manoratham |\n              idamastīdamapi me bhaviṣyati punardhanam || 13 ||",
             emotion: "Explanatory",
           },
           {
@@ -11450,7 +11450,7 @@ const podcastData = {
 // Export for use in app.js
 if (typeof module !== "undefined" && module.exports) {
   module.exports = podcastData;
-} else {
+} else if (typeof window !== "undefined") {
   window.podcastData = podcastData;
 }
 
