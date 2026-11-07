@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../contexts/LanguageContext';
 import { useAudio } from '../contexts/AudioContext';
@@ -9,9 +9,39 @@ const Navigation = () => {
   const { language, switchLanguage } = useLanguage();
   const { toggleBackgroundMusic, isBackgroundPlaying } = useAudio();
   const [isOpen, setIsOpen] = useState(false);
+  const transitionTimerRef = useRef(null);
+  const isFirstRender = useRef(true);
+
+  // Freeze heavy background animations during open/close scroll transitions for 60fps mobile GPU rendering
+  useEffect(() => {
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
+    }
+
+    if (isOpen) {
+      document.body.classList.add('nav-open', 'nav-transitioning');
+      if (transitionTimerRef.current) clearTimeout(transitionTimerRef.current);
+      transitionTimerRef.current = setTimeout(() => {
+        document.body.classList.remove('nav-transitioning');
+      }, 680);
+    } else {
+      document.body.classList.remove('nav-open');
+      document.body.classList.add('nav-transitioning');
+      if (transitionTimerRef.current) clearTimeout(transitionTimerRef.current);
+      transitionTimerRef.current = setTimeout(() => {
+        document.body.classList.remove('nav-transitioning');
+      }, 650);
+    }
+
+    return () => {
+      if (transitionTimerRef.current) clearTimeout(transitionTimerRef.current);
+      document.body.classList.remove('nav-open', 'nav-transitioning');
+    };
+  }, [isOpen]);
 
   const toggleNav = () => {
-    setIsOpen(!isOpen);
+    setIsOpen((prev) => !prev);
   };
 
   const closeNav = () => {

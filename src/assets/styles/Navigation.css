@@ -1,4 +1,22 @@
 /* Navigation Styles - Updated to remove full header */
+
+/* GPU & Battery Optimization: Pause all heavy background page animations while the navigation scroll transitions or is open */
+body.nav-transitioning *:not(.mobile-nav, .mobile-nav *, .mobile-overlay),
+body.nav-open *:not(.mobile-nav, .mobile-nav *, .mobile-overlay) {
+  animation-play-state: paused !important;
+}
+
+body.nav-open {
+  overflow: hidden;
+  touch-action: none;
+}
+
+body.nav-open .hamburger-menu-btn,
+body.nav-transitioning .hamburger-menu-btn {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
 /* Hamburger Menu Button - Sacred Golden Glass Medallion */
 .hamburger-menu-btn {
   position: fixed;
@@ -52,9 +70,13 @@
   visibility: hidden;
   pointer-events: none;
   will-change: opacity;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   transition:
-    opacity 0.95s cubic-bezier(0.22, 1, 0.36, 1) 0.25s,
-    visibility 0s linear 1.2s;
+    opacity 0.45s cubic-bezier(0.22, 1, 0.36, 1) 0.15s,
+    visibility 0s linear 0.65s;
 }
 
 .mobile-overlay.active {
@@ -62,7 +84,7 @@
   visibility: visible;
   pointer-events: auto;
   transition:
-    opacity 0.95s cubic-bezier(0.22, 1, 0.36, 1) 0s,
+    opacity 0.4s cubic-bezier(0.22, 1, 0.36, 1) 0s,
     visibility 0s linear 0s;
 }
 
@@ -76,16 +98,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  transform: translate3d(-50%, -50%, 0) scale(0.84);
+  transform: translate3d(-50%, -50%, 0) scale(0.92);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
   will-change: transform, opacity;
-  /* On close: let the scroll roll back up first (1.05s), then gently fade out the closed rollers */
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  contain: layout;
+  /* On close: let the scroll roll back up first (0.48s), then gently fade out closed rollers */
   transition:
-    transform 0.38s cubic-bezier(0.4, 0, 0.2, 1) 0.92s,
-    opacity 0.34s ease 0.92s,
-    visibility 0s linear 1.28s;
+    transform 0.28s cubic-bezier(0.4, 0, 0.2, 1) 0.36s,
+    opacity 0.24s ease 0.36s,
+    visibility 0s linear 0.65s;
 }
 
 .mobile-nav.open {
@@ -93,10 +118,10 @@
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  /* On open: summon the closed scroll in the center first, then unroll */
+  /* On open: summon closed rollers in center (0.28s), then unroll */
   transition:
-    transform 0.38s cubic-bezier(0.22, 1, 0.36, 1) 0s,
-    opacity 0.3s ease 0s,
+    transform 0.28s cubic-bezier(0.22, 1, 0.36, 1) 0s,
+    opacity 0.22s ease 0s,
     visibility 0s linear 0s;
 }
 
@@ -110,6 +135,9 @@
   justify-content: center;
   z-index: 4;
   flex-shrink: 0;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 .scroll-rod {
@@ -136,6 +164,9 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 .scroll-rod::before,
@@ -185,7 +216,7 @@
   margin-left: -3px;
 }
 
-/* Exact Physical Scroll Unrolling Between Top & Bottom Rollers */
+/* Exact Physical Scroll Unrolling Between Top & Bottom Rollers - GPU Accelerated */
 .scroll-parchment {
   width: 100%;
   max-height: 0;
@@ -194,6 +225,11 @@
   overflow-x: hidden;
   position: relative;
   z-index: 1;
+  contain: layout;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   /* Authentic aged Vedic palm-leaf / birch-bark manuscript texture & burnt-sienna patina */
   background:
     repeating-linear-gradient(
@@ -215,24 +251,23 @@
       #c28838 85%,
       #84450c 100%
     );
-  /* Aged burnt-umber inner edges + Glowing Golden Divine Aura around the scroll borders */
+  /* Aged burnt-umber inner edges + Glowing Golden Divine Aura (GPU-optimized blur radii) */
   box-shadow:
-    inset 22px 0 28px -10px rgba(52, 18, 2, 0.82),
-    inset -22px 0 28px -10px rgba(52, 18, 2, 0.82),
-    inset 0 18px 22px -8px rgba(46, 15, 1, 0.76),
-    inset 0 -18px 22px -8px rgba(46, 15, 1, 0.76),
-    0 0 22px 4px rgba(255, 200, 45, 0.68),
-    0 0 44px 10px rgba(255, 140, 0, 0.38),
-    0 16px 36px rgba(0, 0, 0, 0.82);
+    inset 18px 0 20px -8px rgba(52, 18, 2, 0.82),
+    inset -18px 0 20px -8px rgba(52, 18, 2, 0.82),
+    inset 0 14px 16px -6px rgba(46, 15, 1, 0.76),
+    inset 0 -14px 16px -6px rgba(46, 15, 1, 0.76),
+    0 0 18px 3px rgba(255, 200, 45, 0.65),
+    0 10px 24px rgba(0, 0, 0, 0.75);
   border-left: 2.5px solid #e6b437;
   border-right: 2.5px solid #e6b437;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   will-change: max-height, opacity;
-  /* On close: roll the scroll itself smoothly back up from 468px to 0px over 1.05s */
+  /* On close: roll the scroll itself smoothly back up from 468px to 0px over 0.48s */
   transition:
-    max-height 1.05s cubic-bezier(0.25, 1, 0.5, 1) 0s,
-    opacity 0.35s ease 0.7s;
+    max-height 0.48s cubic-bezier(0.25, 1, 0.5, 1) 0s,
+    opacity 0.22s ease 0.26s;
 }
 
 .scroll-parchment::-webkit-scrollbar {
@@ -243,10 +278,10 @@
   max-height: 468px;
   opacity: 1;
   overflow-y: auto;
-  /* On open: summon closed rollers first (0.14s), then physically unroll the scroll over 1.05s */
+  /* On open: summon closed rollers first (0.1s), then physically unroll the scroll over 0.54s */
   transition:
-    max-height 1.05s cubic-bezier(0.25, 1, 0.5, 1) 0.14s,
-    opacity 0.28s ease 0.12s;
+    max-height 0.54s cubic-bezier(0.25, 1, 0.5, 1) 0.1s,
+    opacity 0.22s ease 0.08s;
 }
 
 /* Sacred Double Temple Inner Frame with Golden Aura */
@@ -262,6 +297,7 @@
     0 0 14px rgba(255, 200, 50, 0.42),
     inset 0 0 20px rgba(86, 32, 2, 0.28);
   overflow: hidden;
+  contain: layout;
 }
 
 /* Corner Temple Flourishes */
@@ -279,7 +315,7 @@
 .corner-bl { bottom: 4px; left: 6px; transform: scaleY(-1); }
 .corner-br { bottom: 4px; right: 6px; transform: scale(-1, -1); }
 
-/* Subtle Rotating Sudarshana Chakra Watermark - Only spins when menu is open to save GPU */
+/* Subtle Rotating Sudarshana Chakra Watermark - Only spins when menu is settled open to save GPU */
 .scroll-chakra-watermark {
   position: absolute;
   top: 44%;
@@ -291,10 +327,12 @@
   pointer-events: none;
   animation: scrollChakraSpin 36s linear infinite;
   animation-play-state: paused;
+  will-change: transform;
 }
 
 .mobile-nav.open .scroll-chakra-watermark {
   animation-play-state: running;
+  animation-delay: 0.45s;
 }
 
 @keyframes scrollChakraSpin {
@@ -371,22 +409,25 @@
   width: 92%;
   margin: 0;
   opacity: 0;
-  transform: translate3d(0, 8px, 0);
-  transition: opacity 0.35s ease, transform 0.38s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translate3d(0, 6px, 0);
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transition: opacity 0.22s ease, transform 0.26s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-nav.open .mobile-nav-content li {
   opacity: 1;
   transform: translate3d(0, 0, 0);
-  transition: opacity 0.45s ease, transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  transition: opacity 0.3s ease, transform 0.36s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.mobile-nav.open .mobile-nav-content li:nth-child(1) { transition-delay: 0.22s; }
-.mobile-nav.open .mobile-nav-content li:nth-child(2) { transition-delay: 0.29s; }
-.mobile-nav.open .mobile-nav-content li:nth-child(3) { transition-delay: 0.36s; }
-.mobile-nav.open .mobile-nav-content li:nth-child(4) { transition-delay: 0.43s; }
-.mobile-nav.open .mobile-nav-content li:nth-child(5) { transition-delay: 0.50s; }
-.mobile-nav.open .mobile-nav-content li:nth-child(6) { transition-delay: 0.57s; }
+.mobile-nav.open .mobile-nav-content li:nth-child(1) { transition-delay: 0.15s; }
+.mobile-nav.open .mobile-nav-content li:nth-child(2) { transition-delay: 0.20s; }
+.mobile-nav.open .mobile-nav-content li:nth-child(3) { transition-delay: 0.25s; }
+.mobile-nav.open .mobile-nav-content li:nth-child(4) { transition-delay: 0.30s; }
+.mobile-nav.open .mobile-nav-content li:nth-child(5) { transition-delay: 0.35s; }
+.mobile-nav.open .mobile-nav-content li:nth-child(6) { transition-delay: 0.40s; }
 
 .mobile-nav-link {
   display: flex;

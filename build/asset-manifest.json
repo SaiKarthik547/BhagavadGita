@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2a1787f0.css",
-    "main.js": "/static/js/main.8f02f3e4.js",
+    "main.css": "/static/css/main.4d75f654.css",
+    "main.js": "/static/js/main.b8c8ee85.js",
     "static/media/home.jpeg": "/static/media/home.9ab9b75d2adad24b0bde.jpeg",
     "static/media/vishwaroopam.png": "/static/media/vishwaroopam.abf1145172a09a6f087f.png",
     "static/media/meditation.png": "/static/media/meditation.4489944adecca54c0971.png",
@@ -20,11 +20,11 @@
     "static/media/inter-latin-ext-wght-normal.woff2": "/static/media/inter-latin-ext-wght-normal.8bff79fbfaa8b8167a0b.woff2",
     "static/media/inter-latin-wght-normal.woff2": "/static/media/inter-latin-wght-normal.4f2981d82860061bca3e.woff2",
     "index.html": "/index.html",
-    "main.2a1787f0.css.map": "/static/css/main.2a1787f0.css.map",
-    "main.8f02f3e4.js.map": "/static/js/main.8f02f3e4.js.map"
+    "main.4d75f654.css.map": "/static/css/main.4d75f654.css.map",
+    "main.b8c8ee85.js.map": "/static/js/main.b8c8ee85.js.map"
   },
   "entrypoints": [
-    "static/css/main.2a1787f0.css",
-    "static/js/main.8f02f3e4.js"
+    "static/css/main.4d75f654.css",
+    "static/js/main.b8c8ee85.js"
   ]
 }

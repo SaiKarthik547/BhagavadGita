@@ -537,7 +537,7 @@ const translations = {
     aboutMission: "Mission",
     aboutMissionText: "To make the profound teachings of the Bhagavad Gita accessible to everyone through interactive technology, devotional audio, and 100% offline multilingual support.",
     developmentTeam: "About the Developer",
-    developmentTeamText: "This application is independently designed, developed, and crafted by a single developer (Sai Karthik) with devotion to bring the eternal wisdom, shlokas, meditation, and sacred chants of the Bhagavad Gita into an interactive, completely offline experience.",
+    developmentTeamText: "This application is independently designed, developed, and crafted by a single developer (YUKSHARA STUDIO) with devotion to bring the eternal wisdom, shlokas, meditation, and sacred chants of the Bhagavad Gita into an interactive, completely offline experience.",
     appFeatures: "App Features",
     appFeaturesList: [
       "Interactive dialogue and shlokas between Arjuna and Lord Krishna across all 18 chapters",
@@ -548,7 +548,7 @@ const translations = {
       "100% offline-ready spiritual design inspired by Indian heritage"
     ],
     contactUs: "Contact",
-    contactUsText: "For feedback, suggestions, or inquiries, please reach out directly at karthiksai5421@gmail.com",
+    contactUsText: "For feedback, suggestions, or inquiries, please reach out directly at yukshara.studio2026@gmail.com",
 
     
     // New AboutPage translations
@@ -691,7 +691,7 @@ const translations = {
     aboutMission: "उद्देश्य",
     aboutMissionText: "भगवद्गीता के गहरे उपदेशों को इंटरैक्टिव तकनीक, भक्ति ऑडियो और 100% ऑफ़लाइन बहुभाषी समर्थन के माध्यम से हर किसी के लिए सुलभ बनाना।",
     developmentTeam: "डेवलपर के बारे में",
-    developmentTeamText: "यह एप्लिकेशन एकल डेवलपर (साई कार्तिक) द्वारा भक्ति के साथ स्वतंत्र रूप से डिज़ाइन और विकसित किया गया है, ताकि भगवद्गीता के शाश्वत ज्ञान, श्लोकों, ध्यान और पवित्र मंत्रों को पूरी तरह से ऑफ़लाइन अनुभव के रूप में प्रस्तुत किया जा सके।",
+    developmentTeamText: "यह एप्लिकेशन एकल डेवलपर (YUKSHARA STUDIO) द्वारा भक्ति के साथ स्वतंत्र रूप से डिज़ाइन और विकसित किया गया है, ताकि भगवद्गीता के शाश्वत ज्ञान, श्लोकों, ध्यान और पवित्र मंत्रों को पूरी तरह से ऑफ़लाइन अनुभव के रूप में प्रस्तुत किया जा सके।",
     appFeatures: "ऐप की विशेषताएँ",
     appFeaturesList: [
       "सभी 18 अध्यायों में अर्जुन और भगवान कृष्ण के बीच इंटरैक्टिव संवाद और श्लोक",
@@ -702,7 +702,7 @@ const translations = {
       "भारतीय आध्यात्मिकता से प्रेरित 100% ऑफ़लाइन दृश्य डिज़ाइन"
     ],
     contactUs: "संपर्क",
-    contactUsText: "प्रतिक्रिया, सुझाव या किसी भी जानकारी के लिए कृपया सीधे karthiksai5421@gmail.com पर संपर्क करें",
+    contactUsText: "प्रतिक्रिया, सुझाव या किसी भी जानकारी के लिए कृपया सीधे yukshara.studio2026@gmail.com पर संपर्क करें",
     
     // New AboutPage translations
     additionalFunctions: "अतिरिक्त कार्य और उपयोग",
@@ -845,7 +845,7 @@ const translations = {
     aboutMission: "లక్ష్యం",
     aboutMissionText: "ఇంటరాక్టివ్ టెక్నాలజీ, భక్తి ఆడియో మరియు 100% ఆఫ్‌లైన్ బహుభాషా మద్దతు ద్వారా భగవద్గీత యొక్క లోతైన ఉపదేశాలను ప్రతి ఒక్కరికీ సులభంగా అందించడం.",
     developmentTeam: "డెవలపర్ గురించి",
-    developmentTeamText: "భగవద్గీత యొక్క శాశ్వత జ్ఞానం, శ్లోకాలు, ధ్యానం మరియు పవిత్ర స్తోత్రాలను పూర్తి ఆఫ్‌లైన్ అనుభవంగా అందించాలనే భక్తితో ఈ యాప్ ఒకే డెవలపర్ (సాయి కార్తీక్) చే స్వతంత్రంగా రూపొందించబడింది మరియు అభివృద్ధి చేయబడింది.",
+    developmentTeamText: "భగవద్గీత యొక్క శాశ్వత జ్ఞానం, శ్లోకాలు, ధ్యానం మరియు పవిత్ర స్తోత్రాలను పూర్తి ఆఫ్‌లైన్ అనుభవంగా అందించాలనే భక్తితో ఈ యాప్ ఒకే డెవలపర్ (YUKSHARA STUDIO) చే స్వతంత్రంగా రూపొందించబడింది మరియు అభివృద్ధి చేయబడింది.",
     appFeatures: "యాప్ లక్షణాలు",
     appFeaturesList: [
       "మొత్తం 18 అధ్యాయాలలో అర్జునుడు మరియు శ్రీకృష్ణుని మధ్య ఇంటరాక్టివ్ సంభాషణ మరియు శ్లోకాలు",
@@ -856,7 +856,7 @@ const translations = {
       "భారతీయ ఆధ్యాత్మికత నుండి ప్రేరణ పొందిన 100% ఆఫ్‌లైన్ దృశ్య డిజైన్"
     ],
     contactUs: "సంప్రదించండి",
-    contactUsText: "అభిప్రాయాలు, సూచనలు లేదా వివరాల కోసం దయచేసి నేరుగా karthiksai5421@gmail.com ద్వారా సంప్రదించండి",
+    contactUsText: "అభిప్రాయాలు, సూచనలు లేదా వివరాల కోసం దయచేసి నేరుగా yukshara.studio2026@gmail.com ద్వారా సంప్రదించండి",
     // New AboutPage translations
     additionalFunctions: "అదనపు ఫంక్షన్లు మరియు ఉపయోగాలు",
     interactiveLearning: "ఇంటరాక్టివ్ లర్నింగ్",
