@@ -167,78 +167,110 @@ const MeditationPage = () => {
   const renderMeditationUI = () => {
     console.log("renderMeditationUI: isMeditationPlaying:", isMeditationPlaying);
     return (
-      isMeditationPlaying ? (
-        <div className="meditation-session">
-          <div className="timer-display">
-            <AnimatedOmTimer />
+      <div className="meditation-grandha-leaf">
+        {/* Top Talapatra Grandha Iron Binding Rings & Cord */}
+        <div className="grandha-iron-rings-bar meditation-leaf-rings" aria-hidden="true">
+          <div className="grandha-iron-ring-assembly ring-left">
+            <span className="iron-ring-back-arc"></span>
+            <span className="iron-ring-front-arc"></span>
           </div>
-          
-          <div className="meditation-controls">
-            <button 
-              className="stop-meditation-btn"
-              onClick={handleStopMeditation}
-            >
-              <FaStop className="btn-icon" />
-              {t('stopMeditation') || 'Stop Meditation'}
-            </button>
+          <div className="grandha-binding-cord-bridge"></div>
+          <div className="grandha-iron-ring-assembly ring-right">
+            <span className="iron-ring-back-arc"></span>
+            <span className="iron-ring-front-arc"></span>
           </div>
         </div>
-      ) : (
-        <div className="meditation-setup">
-          <div className="control-group">
-            <h3>{t('selectDuration')}</h3>
-            <div className="duration-buttons">
-              {durationOptions.map((min) => (
-                <button
-                  key={min}
-                  className={`duration-btn ${duration === min ? 'active' : ''}`}
-                  onClick={() => setDuration(min)}
+
+        {/* Punched Binding Holes on the Palm Leaf */}
+        <div className="grandha-punched-holes" aria-hidden="true">
+          <span className="grandha-punch-hole hole-left"></span>
+          <span className="grandha-punch-hole hole-right"></span>
+        </div>
+
+        <div className="meditation-grandha-content">
+          <div className="meditation-grandha-header">
+            <span className="talapatra-corner-ornament left" aria-hidden="true">❈</span>
+            <span className="meditation-leaf-invocation">॥ ध्यानयोग साधना ॥</span>
+            <span className="talapatra-corner-ornament right" aria-hidden="true">❈</span>
+          </div>
+          <div className="chants-ancient-divider" aria-hidden="true">─── ❖ ❈ ❖ ───</div>
+
+          {isMeditationPlaying ? (
+            <div className="meditation-session-inner">
+              <div className="timer-display">
+                <AnimatedOmTimer />
+              </div>
+              
+              <div className="meditation-controls">
+                <button 
+                  className="stop-meditation-btn ancient-meditation-btn"
+                  onClick={handleStopMeditation}
                 >
-                  {min} {durationLabel}
-                </button>
-              ))}
-              <button
-                className={`duration-btn ${showCustomInput ? 'active' : ''}`}
-                onClick={() => setShowCustomInput(!showCustomInput)}
-              >
-                {t('custom') || 'Custom'}
-              </button>
-            </div>
-            
-            {showCustomInput && (
-              <div className="custom-duration-input">
-                <input
-                  type="text"
-                  value={customDuration}
-                  onChange={handleCustomDurationChange}
-                  placeholder={t('enterMinutes') || 'Enter minutes'}
-                  className="custom-duration-field"
-                />
-                <button
-                  className="set-custom-duration-btn"
-                  onClick={handleCustomDurationSubmit}
-                >
-                  {t('set') || 'Set'}
+                  <FaStop className="btn-icon" />
+                  {t('stopMeditation') || 'Stop Meditation'}
                 </button>
               </div>
-            )}
-            
-            <div className="selected-duration">
-              {t('selectedDuration') || 'Selected Duration'}: {duration} {durationLabel}
             </div>
-          </div>
-          
-          <div className="meditation-controls">
-            <button 
-              className="start-meditation-btn"
-              onClick={handleStartMeditation}
-            >
-              <FaPlay className="btn-icon" />
-              {t('beginMeditationBtn')}
-            </button>
-          </div>
+          ) : (
+            <div className="meditation-setup-inner">
+              <div className="control-group">
+                <h3 className="ancient-select-title">{t('selectDuration')}</h3>
+                <div className="duration-buttons">
+                  {durationOptions.map((min) => (
+                    <button
+                      key={min}
+                      className={`duration-btn ancient-duration-btn ${duration === min ? 'active' : ''}`}
+                      onClick={() => setDuration(min)}
+                    >
+                      {min} {durationLabel}
+                    </button>
+                  ))}
+                  <button
+                    className={`duration-btn ancient-duration-btn ${showCustomInput ? 'active' : ''}`}
+                    onClick={() => setShowCustomInput(!showCustomInput)}
+                  >
+                    {t('custom') || 'Custom'}
+                  </button>
+                </div>
+                
+                {showCustomInput && (
+                  <div className="custom-duration-input">
+                    <input
+                      type="text"
+                      value={customDuration}
+                      onChange={handleCustomDurationChange}
+                      placeholder={t('enterMinutes') || 'Enter minutes'}
+                      className="custom-duration-field ancient-field"
+                    />
+                    <button
+                      className="set-custom-duration-btn ancient-set-btn"
+                      onClick={handleCustomDurationSubmit}
+                    >
+                      {t('set') || 'Set'}
+                    </button>
+                  </div>
+                )}
+                
+                <div className="selected-duration ancient-selected-text">
+                  <span className="ancient-bullet">✦</span>
+                  {t('selectedDuration') || 'Selected Duration'}: <strong>{duration} {durationLabel}</strong>
+                  <span className="ancient-bullet">✦</span>
+                </div>
+              </div>
+              
+              <div className="meditation-controls">
+                <button 
+                  className="start-meditation-btn ancient-meditation-btn"
+                  onClick={handleStartMeditation}
+                >
+                  <FaPlay className="btn-icon" />
+                  {t('beginMeditationBtn')}
+                </button>
+              </div>
+            </div>
+          )}
         </div>
-      )
+      </div>
     );
   };
 
@@ -255,9 +287,30 @@ const MeditationPage = () => {
       </div>
       
       <div className="meditation-container">
-        <div className="meditation-header">
-          <h1 className="meditation-title">{t('sacredMeditation')}</h1>
-          <p className="meditation-subtitle">{t('meditationSubtitle')}</p>
+        {/* Minimal Authentic Royal Scroll Header for Title & Subtitle */}
+        <div className="meditation-header meditation-royal-header-scroll">
+          <div className="meditation-scroll-top-roller" aria-hidden="true">
+            <span className="meditation-roller-cap cap-left"></span>
+            <div className="meditation-roller-rod">
+              <span className="meditation-roller-ring"></span>
+              <span className="meditation-roller-crest">❖</span>
+              <span className="meditation-roller-ring"></span>
+            </div>
+            <span className="meditation-roller-cap cap-right"></span>
+          </div>
+
+          <div className="meditation-scroll-banner-body">
+            <h1 className="meditation-title">{t('sacredMeditation')}</h1>
+            <div className="meditation-banner-divider" aria-hidden="true">─── ❖ ───</div>
+            <p className="meditation-subtitle">{t('meditationSubtitle')}</p>
+          </div>
+
+          <div className="meditation-scroll-bottom-trim" aria-hidden="true">
+            <div className="meditation-bottom-pennant">
+              <div className="meditation-bottom-inner-trim"></div>
+              <span className="meditation-bottom-motif">❖</span>
+            </div>
+          </div>
         </div>
 
         <div className="bottom-aligned">

@@ -32,6 +32,41 @@ const PodcastDetailsPage = () => {
   const [currentText, setCurrentText] = useState('');
   const [showSummary, setShowSummary] = useState(false);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const [flipDirection, setFlipDirection] = useState(''); // 'next' (bottom-to-top) or 'prev' (top-to-bottom)
+  const [isPageFlipping, setIsPageFlipping] = useState(false);
+  const [outgoingPage, setOutgoingPage] = useState(null);
+  const [revealedCharCount, setRevealedCharCount] = useState(0);
+
+  // Live-writing scribe reveal animation for currentText on the Talapatra Grandha leaf
+  useEffect(() => {
+    if (!currentText) {
+      setRevealedCharCount(0);
+      return;
+    }
+
+    setRevealedCharCount(0);
+    const totalLength = currentText.length;
+    const step = Math.max(1, Math.ceil(totalLength / 68));
+    const startDelay = flipDirection === 'prev' ? 340 : 180;
+
+    let intervalId = null;
+    const delayTimer = setTimeout(() => {
+      intervalId = setInterval(() => {
+        setRevealedCharCount((prev) => {
+          if (prev + step >= totalLength) {
+            if (intervalId) clearInterval(intervalId);
+            return totalLength;
+          }
+          return prev + step;
+        });
+      }, 26);
+    }, startDelay);
+
+    return () => {
+      clearTimeout(delayTimer);
+      if (intervalId) clearInterval(intervalId);
+    };
+  }, [currentText, currentDialogueIndex, flipDirection]);
 
   // Preload character images for seamless transitions
   useEffect(() => {
@@ -201,23 +236,37 @@ const PodcastDetailsPage = () => {
     }
   };
 
+  const triggerGrandhaPageFlip = (direction) => {
+    const activeDlg = dialogues[currentDialogueIndex] || {};
+    setOutgoingPage({
+      speaker: activeDlg.speaker || '',
+      text: currentText || activeDlg.text || '',
+      emotion: activeDlg.emotion || 'neutral'
+    });
+    setFlipDirection(direction);
+    setIsPageFlipping(true);
+    setTimeout(() => {
+      setIsPageFlipping(false);
+    }, 920);
+  };
+
   // Handle next dialogue
   const handleNext = () => {
-    if (isTransitioning) return;
+    if (isTransitioning || isPageFlipping) return;
     if (currentDialogueIndex < dialogues.length - 1) {
       const nextIndex = currentDialogueIndex + 1;
       const nextDialogue = dialogues[nextIndex];
+      triggerGrandhaPageFlip('next');
       setIsTransitioning(true);
+      setCurrentText(nextDialogue.text);
+      setCurrentDialogueIndex(nextIndex);
+
       setTimeout(() => {
-        setCurrentText(nextDialogue.text);
-        
         // Determine character type based on speaker
         const speaker = nextDialogue.speaker;
         updateCharacterType(speaker, nextIndex);
-        
-        setCurrentDialogueIndex(nextIndex);
         finishTransitionSmoothly();
-      }, 320);
+      }, 280);
     } else {
       // Show summary when chapter is completed
       setShowSummary(true);
@@ -226,21 +275,21 @@ const PodcastDetailsPage = () => {
 
   // Handle previous dialogue
   const handlePrevious = () => {
-    if (isTransitioning) return;
+    if (isTransitioning || isPageFlipping) return;
     if (currentDialogueIndex > 0) {
       const prevIndex = currentDialogueIndex - 1;
       const prevDialogue = dialogues[prevIndex];
+      triggerGrandhaPageFlip('prev');
       setIsTransitioning(true);
+      setCurrentText(prevDialogue.text);
+      setCurrentDialogueIndex(prevIndex);
+
       setTimeout(() => {
-        setCurrentText(prevDialogue.text);
-        
         // Determine character type based on speaker
         const speaker = prevDialogue.speaker;
         updateCharacterType(speaker, prevIndex);
-        
-        setCurrentDialogueIndex(prevIndex);
         finishTransitionSmoothly();
-      }, 320);
+      }, 280);
     }
   };
 
@@ -249,10 +298,10 @@ const PodcastDetailsPage = () => {
     if (!text) return text;
     
     // Split text by newline characters and wrap each line in a span with a line break
-    return text.split('\n').map((line, index) => (
+    return text.split('\n').map((line, index, arr) => (
       <React.Fragment key={index}>
         {line}
-        <br />
+        {index < arr.length - 1 && <br />}
       </React.Fragment>
     ));
   };
@@ -281,19 +330,101 @@ const PodcastDetailsPage = () => {
         />
       </div>
       
-      {/* Cloud-shaped text container */}
-      <div className={`cloud-container ${characterType} ${isTransitioning ? 'dialogue-fade-out' : 'dialogue-fade-in'}`}>
-        <div className="cloud-bubble">
-          <div className="cloud-text">
-            {/* Display speaker name, text, and emotion in the requested format */}
-            <div className="dialogue-container">
-              <div className="speaker-name">{currentDialogue.speaker}</div>
-              <div className="dialogue-text">{formatTextWithLineBreaks(currentText)}</div>
-              <div className="emotion-display-inside">
-                {currentDialogue.emotion || 'neutral'}
+      {/* Ancient Talapatra Grandha Bound Book at Bottom */}
+      <div className={`cloud-container grandha-book-container ${characterType}`}>
+        <div className="grandha-bound-book">
+          {/* Top Iron Binding Rings & Cord passing through the Punched Holes */}
+          <div className="grandha-iron-rings-bar" aria-hidden="true">
+            <div className="grandha-iron-ring-assembly ring-left">
+              <span className="iron-ring-back-arc"></span>
+              <span className="iron-ring-front-arc"></span>
+            </div>
+            <div className="grandha-binding-cord-bridge"></div>
+            <div className="grandha-iron-ring-assembly ring-right">
+              <span className="iron-ring-back-arc"></span>
+              <span className="iron-ring-front-arc"></span>
+            </div>
+          </div>
+
+          {/* Stationary Under-Leaf visible during Previous (top-to-bottom) page pull-down */}
+          {isPageFlipping && flipDirection === 'prev' && outgoingPage && (
+            <div className="grandha-under-leaf" aria-hidden="true">
+              <div className="grandha-punched-holes">
+                <span className="grandha-punch-hole hole-left"></span>
+                <span className="grandha-punch-hole hole-right"></span>
+              </div>
+              <div className="cloud-text">
+                <div className="dialogue-container">
+                  <div className="speaker-name">{outgoingPage.speaker}</div>
+                  <div className="grandha-ancient-pattern-divider">─── ❖ ❈ ❖ ───</div>
+                  <div className="dialogue-text">{formatTextWithLineBreaks(outgoingPage.text)}</div>
+                  <div className="grandha-ancient-pattern-divider emotion-divider">─── ❖ ───</div>
+                  <div className="emotion-display-inside">{outgoingPage.emotion}</div>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Main Active Talapatra Grandha Leaf (swings top-to-bottom on Previous) */}
+          <div
+            className={`cloud-bubble grandha-active-leaf ${
+              isPageFlipping && flipDirection === 'prev' ? 'grandha-flip-down-prev' : ''
+            }`}
+            onClick={() => setRevealedCharCount(currentText ? currentText.length : 0)}
+          >
+            {/* Punched Binding Holes at Top of Leaf */}
+            <div className="grandha-punched-holes" aria-hidden="true">
+              <span className="grandha-punch-hole hole-left"></span>
+              <span className="grandha-punch-hole hole-right"></span>
+            </div>
+
+            <div className="cloud-text">
+              <div className="dialogue-container">
+                <div className="speaker-name">{currentDialogue.speaker}</div>
+                <div className="grandha-ancient-pattern-divider" aria-hidden="true">
+                  ─── ❖ ❈ ❖ ───
+                </div>
+                <div className="dialogue-text scribe-live-text">
+                  <span className="scribe-revealed-ink">
+                    {formatTextWithLineBreaks(currentText ? currentText.slice(0, revealedCharCount) : '')}
+                  </span>
+                  {currentText && revealedCharCount < currentText.length && (
+                    <span className="scribe-quill-nib" aria-hidden="true">✦</span>
+                  )}
+                  {currentText && revealedCharCount < currentText.length && (
+                    <span className="scribe-unrevealed-ghost" aria-hidden="true">
+                      {formatTextWithLineBreaks(currentText.slice(revealedCharCount))}
+                    </span>
+                  )}
+                </div>
+                <div className="grandha-ancient-pattern-divider emotion-divider" aria-hidden="true">
+                  ─── ❖ ───
+                </div>
+                <div className="emotion-display-inside">
+                  {currentDialogue.emotion || 'neutral'}
+                </div>
               </div>
             </div>
           </div>
+
+          {/* Outgoing Flipping Leaf that lifts Bottom-to-Top around the iron rings on Next */}
+          {isPageFlipping && flipDirection === 'next' && outgoingPage && (
+            <div className="grandha-flip-leaf grandha-flip-up-next" aria-hidden="true">
+              <div className="grandha-punched-holes">
+                <span className="grandha-punch-hole hole-left"></span>
+                <span className="grandha-punch-hole hole-right"></span>
+              </div>
+              <div className="cloud-text">
+                <div className="dialogue-container">
+                  <div className="speaker-name">{outgoingPage.speaker}</div>
+                  <div className="grandha-ancient-pattern-divider">─── ❖ ❈ ❖ ───</div>
+                  <div className="dialogue-text">{formatTextWithLineBreaks(outgoingPage.text)}</div>
+                  <div className="grandha-ancient-pattern-divider emotion-divider">─── ❖ ───</div>
+                  <div className="emotion-display-inside">{outgoingPage.emotion}</div>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </div>
       
@@ -333,27 +464,100 @@ const PodcastDetailsPage = () => {
       
       {/* Summary Modal */}
       {showSummary && (
-        <div className="summary-modal">
-          <div className="summary-content">
-            <div className="summary-header">
-              <h2>{uiTexts.summaryTitle || 'Chapter Summary'}</h2>
-              <button className="close-btn" onClick={closeSummary}>×</button>
+        <div className="summary-modal royal-summary-modal-overlay" onClick={closeSummary}>
+          <div className="royal-summary-scroll" onClick={(e) => e.stopPropagation()}>
+            {/* Top Cylindrical Royal Scroll Roller */}
+            <div className="royal-scroll-top-roller" aria-hidden="true">
+              <span className="royal-roller-cap cap-left"></span>
+              <div className="royal-roller-rod">
+                <span className="royal-roller-ring ring-left"></span>
+                <span className="royal-roller-crest">❖</span>
+                <span className="royal-roller-ring ring-right"></span>
+              </div>
+              <span className="royal-roller-cap cap-right"></span>
             </div>
-            <div className="summary-text">
-              <h3>{uiTexts.summarySection || 'Summary'}</h3>
-              <p>{chapter.summary}</p>
-              
-              <h3>{uiTexts.keyTeachingsSection || 'Key Teachings'}</h3>
-              <p>{chapter.teachings}</p>
-              
-              <h3>{uiTexts.moralLessonSection || 'Moral Lesson'}</h3>
-              <p>{chapter.moralLesson}</p>
-              
-              <h3>{uiTexts.kidsVersionSection || 'Kids Version'}</h3>
-              <p>{chapter.kidsVersion}</p>
+
+            {/* Scroll Parchment Body */}
+            <div className="royal-scroll-body summary-scroll-body">
+              <div className="royal-scroll-header">
+                <span className="royal-scroll-invocation">॥ श्री गीता सारम् ॥</span>
+                <h2>{uiTexts.summaryTitle || 'Chapter Summary'}</h2>
+                <button 
+                  type="button" 
+                  className="royal-scroll-close-btn" 
+                  onClick={closeSummary}
+                  aria-label="Close"
+                >
+                  ×
+                </button>
+                <div className="chants-ancient-divider" aria-hidden="true">─── ❖ ❈ ❖ ───</div>
+              </div>
+
+              <div className="summary-scroll-content">
+                <div className="summary-section">
+                  <h3 className="summary-section-heading">
+                    <span className="heading-ornament">✦</span>
+                    {uiTexts.summarySection || 'Summary'}
+                    <span className="heading-ornament">✦</span>
+                  </h3>
+                  <div className="chants-ancient-divider section-mini-divider" aria-hidden="true">─── ❖ ───</div>
+                  <p className="summary-section-para">{chapter.summary}</p>
+                </div>
+
+                <div className="chants-ancient-divider section-break-divider" aria-hidden="true">─── ❖ ❈ ❖ ───</div>
+
+                <div className="summary-section">
+                  <h3 className="summary-section-heading">
+                    <span className="heading-ornament">✦</span>
+                    {uiTexts.keyTeachingsSection || 'Key Teachings'}
+                    <span className="heading-ornament">✦</span>
+                  </h3>
+                  <div className="chants-ancient-divider section-mini-divider" aria-hidden="true">─── ❖ ───</div>
+                  <p className="summary-section-para">{chapter.teachings}</p>
+                </div>
+
+                <div className="chants-ancient-divider section-break-divider" aria-hidden="true">─── ❖ ❈ ❖ ───</div>
+
+                <div className="summary-section">
+                  <h3 className="summary-section-heading">
+                    <span className="heading-ornament">✦</span>
+                    {uiTexts.moralLessonSection || 'Moral Lesson'}
+                    <span className="heading-ornament">✦</span>
+                  </h3>
+                  <div className="chants-ancient-divider section-mini-divider" aria-hidden="true">─── ❖ ───</div>
+                  <p className="summary-section-para">{chapter.moralLesson}</p>
+                </div>
+
+                <div className="chants-ancient-divider section-break-divider" aria-hidden="true">─── ❖ ❈ ❖ ───</div>
+
+                <div className="summary-section">
+                  <h3 className="summary-section-heading">
+                    <span className="heading-ornament">✦</span>
+                    {uiTexts.kidsVersionSection || 'Kids Version'}
+                    <span className="heading-ornament">✦</span>
+                  </h3>
+                  <div className="chants-ancient-divider section-mini-divider" aria-hidden="true">─── ❖ ───</div>
+                  <p className="summary-section-para">{chapter.kidsVersion}</p>
+                </div>
+
+                <div className="chants-ancient-divider section-break-divider" aria-hidden="true">─── ❖ ❈ ❖ ───</div>
+
+                <div className="modal-actions">
+                  <Link to="/podcast" className="back-link royal-seal-btn">{uiTexts.backToPodcasts || 'Back to Shlokas'}</Link>
+                </div>
+              </div>
             </div>
-            <div className="modal-actions">
-              <Link to="/podcast" className="back-link">{uiTexts.backToPodcasts || 'Back to Shlokas'}</Link>
+
+            {/* Bottom Royal Triangular Pennant Border (King's Decree Style) */}
+            <div className="royal-scroll-triangular-bottom" aria-hidden="true">
+              <div className="royal-triangular-pennant">
+                <div className="royal-triangular-inner-trim"></div>
+                <span className="royal-triangular-motif">❖</span>
+              </div>
+              <div className="royal-pennant-tassel">
+                <span className="tassel-knot"></span>
+                <span className="tassel-fringe"></span>
+              </div>
             </div>
           </div>
         </div>

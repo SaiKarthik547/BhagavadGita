@@ -1,22 +1,28 @@
 .chapter-details {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  position: relative;
-  min-height: 100vh;
-  border-radius: 15px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  z-index: 0; /* Ensure background is behind other elements */
-  background: url('../images/background.png') center/cover no-repeat fixed;
-  background-size: cover;
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  border: none;
+  z-index: 0;
+  background: url('../images/background.png') center center / cover no-repeat;
+  overflow: hidden;
 }
 
 .chapter-details-minimal {
   position: relative;
-  min-height: 100vh;
+  height: 100%;
   width: 100%;
-  overflow: visible; /* Allow scrolling */
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  border: none;
+  overflow: hidden;
 }
 
 /* Start Button */
@@ -1230,127 +1236,376 @@
   min-width: 200px;
 }
 
-/* Cloud-shaped Text Container - Dynamically sized for all mobile devices */
+/* Ancient Talapatra Grandha Bound Book Container - Dynamically sized for all mobile devices */
 .cloud-container {
   position: fixed;
-  bottom: clamp(18px, 3vh, 32px);
+  bottom: clamp(14px, 2.5vh, 26px);
   left: 50%;
   transform: translateX(-50%);
-  z-index: 20;
-  width: clamp(280px, 92vw, 560px);
-  max-width: 92vw;
+  z-index: 25;
+  width: clamp(285px, 94vw, 560px);
+  max-width: 94vw;
   box-sizing: border-box;
-  pointer-events: none; /* Prevent container from blocking interactions */
-  margin-top: 40px;
+  pointer-events: none;
+  perspective: 1200px;
 }
 
-.cloud-bubble {
+.grandha-bound-book {
   position: relative;
-  background: rgba(255, 255, 255, 0.45);
-  border-radius: clamp(18px, 4vw, 26px);
-  padding: clamp(14px, 3.5vw, 20px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  pointer-events: auto; /* Allow interactions within the bubble */
-  max-height: clamp(160px, 28vh, 250px);
+  width: 100%;
+  transform-style: preserve-3d;
+  perspective: 1200px;
+  pointer-events: auto;
+}
+
+/* Forged Antique Iron Binding Rings & Cord at the Top of the Talapatra Grandha Book */
+.grandha-iron-rings-bar {
+  position: absolute;
+  top: -15px;
+  left: 0;
+  right: 0;
+  height: 34px;
+  z-index: 35;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24%;
+}
+
+.grandha-binding-cord-bridge {
+  position: absolute;
+  top: 14px;
+  left: calc(24% + 12px);
+  right: calc(24% + 12px);
+  height: 3px;
+  background: repeating-linear-gradient(
+    90deg,
+    #3d2310 0px,
+    #6e411e 4px,
+    #261407 8px
+  );
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.65);
+  opacity: 0.85;
+}
+
+.grandha-iron-ring-assembly {
+  position: relative;
+  width: 24px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Iron ring loop passing through the punched hole */
+.iron-ring-back-arc {
+  position: absolute;
+  top: 0;
+  width: 22px;
+  height: 28px;
+  border-radius: 50%;
+  border: 4px solid #2b2623;
+  border-color: #4a433e #2b2623 #1c1815 #3d3630;
+  box-shadow:
+    0 3px 7px rgba(0, 0, 0, 0.8),
+    inset 0 1px 2px rgba(255, 230, 190, 0.35);
+  box-sizing: border-box;
+}
+
+.iron-ring-front-arc {
+  position: absolute;
+  top: 0;
+  width: 22px;
+  height: 28px;
+  border-radius: 50%;
+  border: 4px solid transparent;
+  border-top-color: #7c7067;
+  border-left-color: #5c524a;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.75));
+  box-sizing: border-box;
+}
+
+/* Punched Binding Holes near the Top Edge of Each Talapatra Leaf */
+.grandha-punched-holes {
+  position: relative;
+  width: 100%;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 24% 0;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.grandha-punch-hole {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 55%, #120802 55%, #2e1505 80%, #5c2e0e 100%);
+  border: 1.5px solid rgba(92, 46, 14, 0.85);
+  box-shadow:
+    inset 0 2px 4px rgba(0, 0, 0, 0.95),
+    0 0 0 2px rgba(212, 165, 89, 0.45);
+}
+
+/* Ancient Talapatra Grandha Leaf Surface (Active, Under, and Flipping Leaves) */
+.cloud-bubble,
+.grandha-under-leaf,
+.grandha-flip-leaf {
+  position: relative;
+  background-color: #d7b377;
+  background-image:
+    radial-gradient(ellipse at 12% 18%, rgba(78, 36, 6, 0.26) 0%, transparent 48%),
+    radial-gradient(ellipse at 88% 82%, rgba(72, 32, 5, 0.28) 0%, transparent 48%),
+    repeating-linear-gradient(
+      0deg,
+      rgba(94, 46, 10, 0.055) 0px,
+      rgba(94, 46, 10, 0.055) 1px,
+      transparent 1px,
+      transparent 4px
+    ),
+    linear-gradient(
+      180deg,
+      rgba(176, 128, 64, 0.96) 0%,
+      rgba(222, 190, 132, 0.96) 14%,
+      rgba(235, 208, 155, 0.96) 50%,
+      rgba(218, 184, 124, 0.96) 86%,
+      rgba(170, 122, 58, 0.97) 100%
+    );
+  border-radius: 8px 10px 8px 10px;
+  padding: clamp(8px, 2vw, 12px) clamp(12px, 3.5vw, 18px) clamp(10px, 2.5vw, 14px);
+  /* Stacked palm-leaf book deck effect underneath + ancient burnt-edge vignette */
+  box-shadow:
+    0 3px 0 #9e7339,
+    0 6px 0 #7a5524,
+    0 9px 0 #593b16,
+    0 14px 28px rgba(0, 0, 0, 0.65),
+    inset 0 0 18px rgba(68, 30, 4, 0.48),
+    inset 0 1px 0 rgba(255, 236, 190, 0.55);
+  border: 1px solid rgba(110, 62, 18, 0.72);
+  pointer-events: auto;
+  max-height: clamp(165px, 29vh, 255px);
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   box-sizing: border-box;
-  opacity: 1;
-  transform: translateY(0) scale(1);
-  transition: opacity 0.42s cubic-bezier(0.22, 1, 0.36, 1), transform 0.42s cubic-bezier(0.22, 1, 0.36, 1);
-  will-change: opacity, transform;
-}
-
-.cloud-container.dialogue-fade-out .cloud-bubble {
-  opacity: 0;
-  transform: translateY(6px) scale(0.98);
-}
-
-.cloud-container.dialogue-fade-in .cloud-bubble {
-  opacity: 1;
-  transform: translateY(0) scale(1);
+  transform-origin: 50% 10px; /* Pivots right around the top punched holes & iron rings */
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  will-change: transform, opacity;
 }
 
 .cloud-bubble::after {
-  content: '';
+  display: none;
+}
+
+/* Stationary Under-Leaf visible while Previous page swings down from Top to Bottom */
+.grandha-under-leaf {
   position: absolute;
-  bottom: -15px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 40px;
-  height: 20px;
-  background: rgba(255, 255, 255, 0);
-  border-radius: 50%;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.grandha-active-leaf {
+  z-index: 2;
+}
+
+/* NEXT Page Animation: Outgoing Leaf lifts from BOTTOM to TOP around the Top Iron Rings and vanishes behind */
+.grandha-flip-leaf.grandha-flip-up-next {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  pointer-events: none;
+  overflow: hidden;
+  transform-origin: 50% 10px;
+  animation: grandhaPageFlipBottomToTop 0.9s cubic-bezier(0.24, 1, 0.36, 1) forwards;
+}
+
+@keyframes grandhaPageFlipBottomToTop {
+  0% {
+    transform: perspective(1200px) rotateX(0deg) translateY(0);
+    opacity: 1;
+    filter: brightness(1);
+  }
+  45% {
+    transform: perspective(1200px) rotateX(82deg) translateY(-4px);
+    opacity: 0.96;
+    filter: brightness(0.88);
+    box-shadow:
+      0 -18px 28px rgba(0, 0, 0, 0.55),
+      inset 0 0 22px rgba(68, 30, 4, 0.65);
+  }
+  85% {
+    transform: perspective(1200px) rotateX(158deg) translateY(-10px);
+    opacity: 0.38;
+    filter: brightness(0.68);
+  }
+  100% {
+    transform: perspective(1200px) rotateX(176deg) translateY(-12px);
+    opacity: 0;
+    filter: brightness(0.55);
+  }
+}
+
+/* PREVIOUS Page Animation: Incoming Leaf pulls down from TOP to BOTTOM around the Top Iron Rings */
+.grandha-active-leaf.grandha-flip-down-prev {
+  transform-origin: 50% 10px;
+  animation: grandhaPageFlipTopToBottom 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes grandhaPageFlipTopToBottom {
+  0% {
+    transform: perspective(1200px) rotateX(172deg) translateY(-10px);
+    opacity: 0.25;
+    filter: brightness(0.65);
+  }
+  35% {
+    transform: perspective(1200px) rotateX(95deg) translateY(-5px);
+    opacity: 0.92;
+    filter: brightness(0.86);
+    box-shadow:
+      0 22px 32px rgba(0, 0, 0, 0.6),
+      inset 0 0 22px rgba(68, 30, 4, 0.6);
+  }
+  100% {
+    transform: perspective(1200px) rotateX(0deg) translateY(0);
+    opacity: 1;
+    filter: brightness(1);
+  }
 }
 
 .cloud-text {
-  padding: clamp(6px, 2vw, 14px);
+  padding: clamp(2px, 1vw, 6px) clamp(4px, 1.5vw, 10px);
   font-size: clamp(0.92rem, 3.4vw, 1.05rem);
   line-height: 1.5;
 }
 
-/* Dialogue container styles */
+/* Dialogue container styles on the Talapatra Grandha leaf */
 .dialogue-container {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 2px;
 }
 
 .speaker-name {
-  font-weight: bold;
+  font-weight: 800;
   font-size: clamp(1rem, 3.8vw, 1.15rem);
-  color: #0012af;
-  border-bottom: 1px solid #1E88E5;
-  padding-bottom: 4px;
-  margin-bottom: 4px;
-  padding-right: 28px;
+  color: #5a1002;
+  text-align: center;
+  padding: 0 26px;
+  margin: 0;
+  border: none;
+  text-shadow: 0 1px 0 rgba(255, 238, 195, 0.65);
+  letter-spacing: 0.02em;
+}
+
+/* Ancient Vedic Ornamental Pattern Separator (replaces plain line borders) */
+.grandha-ancient-pattern-divider {
+  text-align: center;
+  font-size: clamp(0.68rem, 2.4vw, 0.78rem);
+  line-height: 1.1;
+  color: #7a3306;
+  letter-spacing: 0.14em;
+  margin: 1px 0 3px;
+  user-select: none;
+  opacity: 0.88;
+  text-shadow: 0 1px 0 rgba(255, 236, 190, 0.5);
+}
+
+.grandha-ancient-pattern-divider.emotion-divider {
+  font-size: clamp(0.62rem, 2.1vw, 0.72rem);
+  margin: 3px 0 1px;
+  opacity: 0.75;
 }
 
 .dialogue-text {
-  font-size: clamp(0.92rem, 3.4vw, 1.05rem);
-  line-height: 1.45;
-  color: #000000;
+  font-size: clamp(0.93rem, 3.4vw, 1.06rem);
+  line-height: 1.48;
+  color: #240e02;
+  font-weight: 600;
   word-break: break-word;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255, 240, 200, 0.4);
 }
 
-/* Emotion Display inside text box */
+/* Live-Writing Scribe Ink Reveal Effect */
+.scribe-live-text {
+  position: relative;
+}
+
+.scribe-revealed-ink {
+  color: #240e02;
+}
+
+.scribe-quill-nib {
+  display: inline-block;
+  margin-left: 2px;
+  color: #8b2500;
+  font-size: 0.85em;
+  text-shadow: 0 0 6px rgba(255, 180, 0, 0.85);
+  animation: scribeNibPulse 0.45s ease-in-out infinite alternate;
+}
+
+.scribe-unrevealed-ghost {
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+@keyframes scribeNibPulse {
+  from {
+    opacity: 0.45;
+    transform: scale(0.88) translateY(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.14) translateY(-1px);
+  }
+}
+
+/* Emotion Display inside Talapatra Grandha leaf */
 .emotion-display-inside {
   font-style: italic;
-  color: #000000;
+  font-weight: 600;
+  color: #4a1c03;
   font-size: clamp(0.78rem, 2.8vw, 0.88rem);
   text-align: right;
-  margin-top: 6px;
-  padding-top: 4px;
-  border-top: 1px dashed #ccc;
+  margin-top: 0;
+  padding-top: 0;
+  border: none;
 }
 
 .cloud-close-btn {
   position: absolute;
-  top: 10px;
-  right: 12px;
-  background: transparent;
-  border: none;
-  font-size: 2rem;
+  top: 14px;
+  right: 8px;
+  background: rgba(74, 28, 3, 0.12);
+  border: 1px solid rgba(90, 38, 6, 0.35);
+  font-size: 1.35rem;
+  font-weight: 700;
   cursor: pointer;
-  color: #444;
-  width: 36px;
-  height: 36px;
+  color: #4a1c03;
+  width: 28px;
+  height: 28px;
+  min-width: 0;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  transition: all 0.3s ease;
+  transition: all 0.25s ease;
   touch-action: manipulation;
   -webkit-tap-highlight-color: transparent;
+  z-index: 5;
 }
 
 .cloud-close-btn:hover {
-  background: rgba(0, 0, 0, 0.1);
-  color: #111;
-  transform: rotate(90deg);
+  background: rgba(74, 28, 3, 0.24);
+  color: #240e02;
 }
 
 /* Interactive Controls - Middle Left & Right Circular Arrow Buttons Either Side of Image */
@@ -1472,119 +1727,414 @@
 
 
 
-/* Summary Modal */
-.summary-modal {
+/* Royal Scripture Scroll Summary Modal (NO Animation, Top Roller + Bottom Triangular King's Decree Border) */
+.summary-modal,
+.royal-summary-modal-overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  z-index: 2600;
+  background: rgba(10, 4, 0, 0.76);
   backdrop-filter: blur(5px);
-}
-
-.summary-content {
-  background: rgba(255, 243, 224, 0.95);
-  border-radius: 20px;
-  padding: 30px;
-  max-width: 800px;
-  max-height: 90vh;
-  overflow-y: auto;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-  position: relative;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-}
-
-.summary-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  padding-bottom: 15px;
-  border-bottom: 2px solid rgba(216, 27, 96, 0.2);
-}
-
-.summary-header h2 {
-  margin: 0;
-  color: #D81B60;
-  font-size: 2rem;
-}
-
-.close-btn {
-  background: transparent;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-  color: #777;
-  width: 40px;
-  height: 40px;
+  -webkit-backdrop-filter: blur(5px);
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  transition: all 0.3s ease;
-  touch-action: manipulation;
-  -webkit-tap-highlight-color: transparent;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
-.close-btn:hover {
-  background: rgba(0, 0, 0, 0.1);
-  color: #333;
+.royal-summary-scroll {
+  position: relative;
+  width: clamp(290px, 90vw, 540px);
+  max-width: 92vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 14px 28px rgba(0, 0, 0, 0.7));
 }
 
-.summary-text h3 {
-  color: #D81B60;
-  font-size: 1.5rem;
-  margin-top: 25px;
-  margin-bottom: 15px;
+/* TOP Cylindrical Royal Scroll Roller */
+.royal-summary-scroll .royal-scroll-top-roller {
+  position: relative;
+  width: 104%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: clamp(22px, 4.5vw, 28px);
+  z-index: 4;
 }
 
-.summary-text ul {
-  padding-left: 20px;
+.royal-summary-scroll .royal-roller-rod {
+  flex: 1;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    #ffe7a0 0%,
+    #e5b448 30%,
+    #b27c1d 68%,
+    #593803 100%
+  );
+  border-top: 1px solid #fff5c0;
+  border-bottom: 1.5px solid #2a1501;
+  box-shadow:
+    inset 0 2px 2px rgba(255, 255, 255, 0.6),
+    0 3px 6px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 14%;
+  box-sizing: border-box;
 }
 
-.summary-text li {
-  margin-bottom: 10px;
-  font-size: 1.1rem;
-  line-height: 1.6;
+.royal-summary-scroll .royal-roller-cap {
+  width: clamp(14px, 3.2vw, 20px);
+  height: clamp(28px, 5.5vw, 36px);
+  background: radial-gradient(circle at 35% 30%, #fff0a8, #d4941c 65%, #5c3104 100%);
+  border: 1px solid #3d1d02;
+  border-radius: 4px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+  flex-shrink: 0;
 }
 
-.summary-text p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  background: rgba(255, 255, 255, 0.5);
-  padding: 15px;
-  border-radius: 10px;
-  border-left: 4px solid #D81B60;
+.royal-summary-scroll .royal-roller-crest {
+  color: #4a1c02;
+  font-size: 0.95rem;
+  text-shadow: 0 1px 0 rgba(255, 240, 195, 0.8);
 }
 
-.modal-actions {
-  margin-top: 30px;
-  text-align: center;
-}
-
-.back-link {
+.royal-summary-scroll .royal-roller-ring {
+  width: 3px;
+  height: 80%;
+  background: #fff0a8;
+  border-left: 1px solid #4a1c02;
+  border-right: 1px solid #4a1c02;
   display: inline-block;
-  padding: 12px 30px;
-  background: linear-gradient(135deg, #4CAF50, #2E7D32);
-  color: white;
-  text-decoration: none;
-  border-radius: 50px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  touch-action: manipulation;
-  -webkit-tap-highlight-color: transparent;
 }
 
-.back-link:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+/* Ancient Royal Scripture Parchment Body */
+.summary-scroll-body {
+  position: relative;
+  width: 94%;
+  margin: 0 auto;
+  background-color: #f7e8c4;
+  background-image:
+    radial-gradient(ellipse at 15% 15%, rgba(120, 60, 10, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse at 85% 85%, rgba(120, 60, 10, 0.08) 0%, transparent 60%),
+    repeating-linear-gradient(
+      0deg,
+      rgba(90, 40, 5, 0.03) 0px,
+      rgba(90, 40, 5, 0.03) 1px,
+      transparent 1px,
+      transparent 3px
+    ),
+    linear-gradient(
+      90deg,
+      #8e5720 0%,
+      #caa264 4%,
+      #ecd39e 12%,
+      #f7e8c4 50%,
+      #ecd39e 88%,
+      #caa264 96%,
+      #8e5720 100%
+    );
+  border-left: 2.5px solid #754210;
+  border-right: 2.5px solid #754210;
+  box-shadow:
+    inset 6px 0 12px rgba(72, 32, 4, 0.28),
+    inset -6px 0 12px rgba(72, 32, 4, 0.28),
+    inset 0 6px 10px rgba(0, 0, 0, 0.25);
+  padding: clamp(12px, 3vw, 18px) clamp(14px, 3.6vw, 24px) clamp(10px, 2.4vw, 14px);
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+.summary-scroll-body .royal-scroll-header {
+  position: relative;
+  text-align: center;
+  margin-bottom: 8px;
+  padding: 0 24px;
+}
+
+.summary-scroll-body .royal-scroll-invocation {
+  display: block;
+  font-size: clamp(0.72rem, 2.4vw, 0.84rem);
+  font-weight: 700;
+  color: #7c2604;
+  letter-spacing: 0.06em;
+  margin-bottom: 2px;
+}
+
+.summary-scroll-body .royal-scroll-header h2 {
+  margin: 0;
+  font-size: clamp(1.15rem, 4vw, 1.45rem);
+  font-weight: 800;
+  color: #4a1202;
+  text-shadow: 0 1px 0 rgba(255, 242, 204, 0.7);
+}
+
+.summary-scroll-body .royal-scroll-close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 28px;
+  height: 28px;
+  min-width: 0;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid rgba(92, 42, 8, 0.55);
+  background: rgba(92, 42, 8, 0.14);
+  color: #3d0e00;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  touch-action: manipulation;
+}
+
+.summary-scroll-body .royal-scroll-close-btn:hover {
+  background: rgba(92, 42, 8, 0.28);
+  color: #240e02;
+}
+
+/* Scrollable Container inside Summary Scroll */
+.summary-scroll-content {
+  max-height: clamp(240px, 54dvh, 460px);
+  overflow-y: auto;
+  padding: 4px 6px;
+  touch-action: pan-y;
+  -webkit-overflow-scrolling: touch;
+}
+
+.summary-section {
+  background: rgba(255, 248, 230, 0.6);
+  border: 1px solid rgba(139, 74, 18, 0.35);
+  border-radius: 7px;
+  padding: clamp(8px, 2.2vw, 12px) clamp(10px, 2.6vw, 14px);
+  box-shadow: inset 0 1px 4px rgba(78, 36, 6, 0.1);
+  margin-bottom: 6px;
+}
+
+.summary-section-heading {
+  color: #5a1402;
+  font-size: clamp(0.96rem, 3.2vw, 1.12rem);
+  font-weight: 800;
+  margin: 0 0 2px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.heading-ornament {
+  color: #8c3206;
+  font-size: 0.85em;
+}
+
+.summary-teachings-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.summary-teachings-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: clamp(0.88rem, 2.8vw, 0.98rem);
+  line-height: 1.5;
+  color: #2e1003;
+  font-weight: 600;
+}
+
+.bullet-emblem {
+  color: #8c3206;
+  font-size: 0.75rem;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.summary-section-para {
+  font-size: clamp(0.88rem, 2.8vw, 0.98rem);
+  line-height: 1.55;
+  color: #2e1003;
+  font-weight: 600;
+  margin: 0;
+  text-align: justify;
+}
+
+.section-mini-divider {
+  font-size: 0.68rem;
+  color: #8c3a0a;
+  text-align: center;
+  margin: 1px 0 6px;
+  opacity: 0.85;
+}
+
+.section-break-divider {
+  font-size: 0.72rem;
+  color: #7a2b04;
+  text-align: center;
+  margin: 4px 0;
+  letter-spacing: 0.12em;
+  opacity: 0.8;
+}
+
+/* Royal Seal Button */
+.royal-seal-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(8px, 2.2vw, 10px) clamp(20px, 4.5vw, 32px);
+  background: linear-gradient(180deg, #7a2608 0%, #4f1002 100%);
+  color: #fff4d0 !important;
+  text-decoration: none;
+  border-radius: 6px 8px 6px 8px;
+  border: 1.5px solid #d49b27;
+  font-size: clamp(0.88rem, 2.8vw, 1rem);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  box-shadow:
+    0 3px 8px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 235, 175, 0.4);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  touch-action: manipulation;
+}
+
+.royal-seal-btn:hover {
+  background: linear-gradient(180deg, #96300a 0%, #631403 100%);
+  box-shadow:
+    0 5px 12px rgba(0, 0, 0, 0.6),
+    inset 0 1px 0 rgba(255, 235, 175, 0.55);
+}
+
+/* Bottom Triangular Pennant Border (King's Decree Style) */
+.royal-summary-scroll .royal-scroll-triangular-bottom {
+  position: relative;
+  width: 94%;
+  margin: -1px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.royal-summary-scroll .royal-triangular-pennant {
+  position: relative;
+  width: 100%;
+  height: clamp(48px, 11vw, 62px);
+  background: linear-gradient(
+    90deg,
+    #8e5720 0%,
+    #caa264 6%,
+    #e8cb92 20%,
+    #f2dca8 50%,
+    #e8cb92 80%,
+    #caa264 94%,
+    #8e5720 100%
+  );
+  clip-path: polygon(0 0, 100% 0, 100% 14%, 50% 100%, 0 14%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 14%, 50% 100%, 0 14%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 -10px 18px rgba(92, 34, 4, 0.45);
+}
+
+.royal-summary-scroll .royal-triangular-inner-trim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 0%, rgba(128, 28, 6, 0.85) 68%, #d49b27 92%, #5c1902 100%);
+  clip-path: polygon(
+    0 4%,
+    6% 4%,
+    50% 80%,
+    94% 4%,
+    100% 4%,
+    100% 14%,
+    50% 100%,
+    0 14%
+  );
+  -webkit-clip-path: polygon(
+    0 4%,
+    6% 4%,
+    50% 80%,
+    94% 4%,
+    100% 4%,
+    100% 14%,
+    50% 100%,
+    0 14%
+  );
+  pointer-events: none;
+}
+
+.royal-summary-scroll .royal-triangular-motif {
+  color: #6e1c02;
+  font-size: clamp(0.95rem, 3.2vw, 1.1rem);
+  transform: translateY(-6px);
+  text-shadow: 0 1px 0 rgba(255, 240, 195, 0.75);
+}
+
+.royal-summary-scroll .royal-pennant-tassel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -3px;
+}
+
+.royal-summary-scroll .tassel-knot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #fff0a8, #d4941c 65%, #5c3104 100%);
+  border: 1px solid #3d1d02;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.65);
+}
+
+.royal-summary-scroll .tassel-fringe {
+  width: 16px;
+  height: 18px;
+  background: repeating-linear-gradient(
+    90deg,
+    #d4941c 0px,
+    #ffe484 2px,
+    #7a3b06 4px
+  );
+  clip-path: polygon(22% 0, 78% 0, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(22% 0, 78% 0, 100% 100%, 0 100%);
+  margin-top: -2px;
+}
+
+.summary-scroll-content::-webkit-scrollbar {
+  width: 5px;
+}
+
+.summary-scroll-content::-webkit-scrollbar-track {
+  background: rgba(110, 62, 18, 0.14);
+  border-radius: 4px;
+}
+
+.summary-scroll-content::-webkit-scrollbar-thumb {
+  background: rgba(122, 58, 10, 0.65);
+  border-radius: 4px;
+}
+
+.summary-scroll-content::-webkit-scrollbar-thumb:hover {
+  background: #5a2304;
 }
 
 /* Error Message */
@@ -1633,14 +2183,16 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .cloud-container {
-    width: 92vw;
-    max-width: 92vw;
-    bottom: clamp(16px, 2.5vh, 26px);
+    width: 93vw;
+    max-width: 93vw;
+    bottom: clamp(14px, 2.2vh, 24px);
   }
   
-  .cloud-bubble {
-    padding: clamp(12px, 3.5vw, 16px);
-    border-radius: 20px;
+  .cloud-bubble,
+  .grandha-under-leaf,
+  .grandha-flip-leaf {
+    padding: clamp(8px, 2vw, 11px) clamp(11px, 3vw, 15px) clamp(9px, 2.2vw, 13px);
+    border-radius: 8px 10px 8px 10px;
   }
   
   .interactive-controls-minimal {
@@ -1684,12 +2236,14 @@
   .cloud-container {
     width: 94vw;
     max-width: 94vw;
-    bottom: clamp(14px, 2vh, 22px);
+    bottom: clamp(12px, 1.8vh, 20px);
   }
   
-  .cloud-bubble {
-    padding: clamp(10px, 3vw, 14px);
-    border-radius: 16px;
+  .cloud-bubble,
+  .grandha-under-leaf,
+  .grandha-flip-leaf {
+    padding: clamp(7px, 1.8vw, 10px) clamp(10px, 2.8vw, 14px) clamp(8px, 2vw, 12px);
+    border-radius: 7px 9px 7px 9px;
   }
   
   .interactive-controls-minimal {

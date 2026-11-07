@@ -1,9 +1,14 @@
 .meditation-page {
-  min-height: 100vh;
-  position: relative;
-  overflow-x: hidden;
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  touch-action: none;
   padding-top: 0;
   background: transparent;
+  z-index: 0;
 }
 
 /* Page-specific background image - full screen with proper sizing */
@@ -44,33 +49,208 @@
   position: relative;
   z-index: 2;
   width: 100%;
-  min-height: 100vh;
-  padding: 2rem 1rem;
+  height: 100%;
+  max-height: 100dvh;
+  box-sizing: border-box;
+  padding: clamp(0.4rem, 1.2vh, 1rem) clamp(0.6rem, 2.5vw, 1.2rem) clamp(0.5rem, 1.5vh, 1rem);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end; /* Align to bottom */
+  justify-content: space-between;
+  overflow: hidden;
+  touch-action: none;
 }
 
-.meditation-header {
+.meditation-header.meditation-royal-header-scroll {
+  position: relative;
+  width: clamp(250px, 84vw, 440px);
+  max-width: 86vw;
+  margin: clamp(4px, 1vh, 12px) auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  margin-bottom: 2rem;
-  width: 100%;
-  max-width: 800px;
+  filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.55));
+  z-index: 3;
+}
+
+.meditation-scroll-top-roller {
+  position: relative;
+  width: 104%;
+  height: clamp(14px, 3.2vw, 18px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  z-index: 4;
+}
+
+.meditation-roller-rod {
+  flex: 1;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    #ffe7a0 0%,
+    #e5b448 32%,
+    #b27c1d 70%,
+    #593803 100%
+  );
+  border-top: 1px solid #fff5c0;
+  border-bottom: 1px solid #2a1501;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15%;
+  box-sizing: border-box;
+}
+
+.meditation-roller-cap {
+  width: clamp(10px, 2.4vw, 14px);
+  height: clamp(18px, 4vw, 23px);
+  background: radial-gradient(circle at 35% 30%, #fff0a8, #d4941c 65%, #5c3104 100%);
+  border: 1px solid #3d1d02;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.55);
+  flex-shrink: 0;
+}
+
+.meditation-roller-crest {
+  color: #4a1c02;
+  font-size: 0.72rem;
+  line-height: 1;
+  text-shadow: 0 1px 0 rgba(255, 240, 195, 0.8);
+}
+
+.meditation-roller-ring {
+  width: 2px;
+  height: 80%;
+  background: #fff0a8;
+  border-left: 1px solid #4a1c02;
+  border-right: 1px solid #4a1c02;
+  display: inline-block;
+}
+
+.meditation-scroll-banner-body {
+  position: relative;
+  width: 94%;
+  margin: 0 auto;
+  background-color: rgba(244, 224, 180, 0.76);
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(142, 87, 32, 0.82) 0%,
+      rgba(202, 162, 100, 0.76) 5%,
+      rgba(236, 211, 158, 0.72) 15%,
+      rgba(247, 232, 196, 0.68) 50%,
+      rgba(236, 211, 158, 0.72) 85%,
+      rgba(202, 162, 100, 0.76) 95%,
+      rgba(142, 87, 32, 0.82) 100%
+    );
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border-left: 2px solid rgba(117, 66, 16, 0.85);
+  border-right: 2px solid rgba(117, 66, 16, 0.85);
+  box-shadow:
+    inset 4px 0 8px rgba(72, 32, 4, 0.22),
+    inset -4px 0 8px rgba(72, 32, 4, 0.22);
+  padding: clamp(5px, 1.4vw, 8px) clamp(10px, 2.6vw, 16px) clamp(4px, 1.2vw, 6px);
+  box-sizing: border-box;
+  z-index: 3;
 }
 
 .meditation-title {
-  font-size: 3rem;
-  color: #02fbfb;
-  margin-bottom: 1rem;
-  text-shadow: 0 2px 10px rgb(179, 1, 1);
+  font-size: clamp(1.08rem, 3.8vw, 1.42rem);
+  font-weight: 800;
+  color: #4a1002;
+  margin: 0;
+  line-height: 1.25;
+  text-shadow: 0 1px 0 rgba(255, 242, 204, 0.8);
+}
+
+.meditation-banner-divider {
+  font-size: clamp(0.58rem, 1.8vw, 0.68rem);
+  color: #8c3206;
+  line-height: 1;
+  margin: 2px 0 3px;
+  letter-spacing: 0.1em;
+  opacity: 0.85;
 }
 
 .meditation-subtitle {
-  font-size: 2rem;
-  color: #007bff;
-  opacity: 1;
-  text-shadow: 0 2px 4px rgb(223, 0, 0);
+  font-size: clamp(0.76rem, 2.5vw, 0.92rem);
+  font-weight: 600;
+  color: #2e0e02;
+  margin: 0;
+  line-height: 1.35;
+  opacity: 0.95;
+  text-shadow: 0 1px 0 rgba(255, 245, 215, 0.65);
+}
+
+.meditation-scroll-bottom-trim {
+  position: relative;
+  width: 94%;
+  margin: -1px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.meditation-bottom-pennant {
+  position: relative;
+  width: 100%;
+  height: clamp(20px, 4.8vw, 26px);
+  background: linear-gradient(
+    90deg,
+    rgba(142, 87, 32, 0.84) 0%,
+    rgba(202, 162, 100, 0.78) 6%,
+    rgba(232, 203, 146, 0.74) 20%,
+    rgba(242, 220, 168, 0.72) 50%,
+    rgba(232, 203, 146, 0.74) 80%,
+    rgba(202, 162, 100, 0.78) 94%,
+    rgba(142, 87, 32, 0.84) 100%
+  );
+  clip-path: polygon(0 0, 100% 0, 100% 18%, 50% 100%, 0 18%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 18%, 50% 100%, 0 18%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.meditation-bottom-inner-trim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 0%, rgba(128, 28, 6, 0.82) 65%, #d49b27 92%, #5c1902 100%);
+  clip-path: polygon(
+    0 6%,
+    6% 6%,
+    50% 78%,
+    94% 6%,
+    100% 6%,
+    100% 18%,
+    50% 100%,
+    0 18%
+  );
+  -webkit-clip-path: polygon(
+    0 6%,
+    6% 6%,
+    50% 78%,
+    94% 6%,
+    100% 6%,
+    100% 18%,
+    50% 100%,
+    0 18%
+  );
+  pointer-events: none;
+}
+
+.meditation-bottom-motif {
+  color: #6e1c02;
+  font-size: clamp(0.68rem, 2.2vw, 0.8rem);
+  transform: translateY(-3px);
+  text-shadow: 0 1px 0 rgba(255, 240, 195, 0.75);
 }
 
 /* Floating Orbs */
@@ -185,29 +365,243 @@
 /* Bottom aligned containers */
 .bottom-aligned {
   align-self: center;
-  margin-bottom: 2rem;
+  margin-bottom: clamp(0.5rem, 1.8vh, 1.2rem);
   width: 100%;
   max-width: 600px;
+  display: flex;
+  justify-content: center;
 }
 
-/* Meditation Setup */
-.meditation-setup {
-  text-align: center;
-  background: rgba(255, 243, 224, 0.21); /* 80% transparent */
-  border-radius: 15px;
-  padding: 2rem;
-  max-width: 600px;
-  width: 100%;
+/* Authentic Ancient Talapatra Grandha Scripture Leaf for Meditation */
+.meditation-grandha-leaf {
+  position: relative;
+  background-color: rgba(215, 179, 119, 0.94);
+  background-image:
+    radial-gradient(ellipse at 12% 18%, rgba(78, 36, 6, 0.25) 0%, transparent 48%),
+    radial-gradient(ellipse at 88% 82%, rgba(72, 32, 5, 0.26) 0%, transparent 48%),
+    repeating-linear-gradient(
+      0deg,
+      rgba(94, 46, 10, 0.05) 0px,
+      rgba(94, 46, 10, 0.05) 1px,
+      transparent 1px,
+      transparent 4px
+    ),
+    linear-gradient(
+      180deg,
+      rgba(176, 128, 64, 0.94) 0%,
+      rgba(222, 190, 132, 0.94) 16%,
+      rgba(235, 208, 155, 0.94) 50%,
+      rgba(218, 184, 124, 0.94) 84%,
+      rgba(170, 122, 58, 0.95) 100%
+    );
+  border-radius: 8px 10px 8px 10px;
+  padding: clamp(0.85rem, 2.5vw, 1.2rem) clamp(0.85rem, 3vw, 1.35rem) clamp(0.75rem, 2.2vw, 1.05rem);
+  width: clamp(280px, 94vw, 560px);
+  max-width: 94vw;
+  box-sizing: border-box;
   z-index: 2;
-  backdrop-filter: blur(5px); /* 20% blur */
-  box-shadow: 0 8px 32px rgba(30, 136, 229, 0.2);
-  border: 1px solid rgba(30, 136, 229, 0.3);
+  box-shadow:
+    0 3px 0 #9e7339,
+    0 6px 0 #714e20,
+    0 14px 28px rgba(0, 0, 0, 0.64),
+    inset 0 0 18px rgba(68, 30, 4, 0.45),
+    inset 0 1px 0 rgba(255, 236, 190, 0.55);
+  border: 1px solid rgba(110, 62, 18, 0.78);
+  margin: 0 auto;
 }
 
-.duration-selection h3 {
-  color: #1E88E5;
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem;
+/* Talapatra Iron Rings Bar atop the Leaf */
+.meditation-leaf-rings {
+  position: absolute;
+  top: -12px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 clamp(35px, 10vw, 75px);
+  pointer-events: none;
+  z-index: 6;
+}
+
+.meditation-leaf-rings .grandha-iron-ring-assembly {
+  position: relative;
+  width: 16px;
+  height: 24px;
+}
+
+.meditation-leaf-rings .iron-ring-back-arc {
+  position: absolute;
+  inset: 0;
+  border: 3px solid #3d2310;
+  border-bottom: 3px solid #6b3e1a;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.65);
+}
+
+.meditation-leaf-rings .iron-ring-front-arc {
+  position: absolute;
+  inset: 1px;
+  border: 1.5px solid #d49b27;
+  border-bottom: none;
+  border-radius: 50%;
+  opacity: 0.85;
+}
+
+.meditation-leaf-rings .grandha-binding-cord-bridge {
+  flex: 1;
+  height: 3px;
+  margin: 0 6px;
+  background: repeating-linear-gradient(
+    90deg,
+    #7a3806 0px,
+    #d4941c 3px,
+    #4a2003 6px
+  );
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  opacity: 0.8;
+}
+
+/* Punched Binding Holes on the Palm Leaf */
+.meditation-grandha-leaf .grandha-punched-holes {
+  position: absolute;
+  top: 7px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 clamp(38px, 10vw, 78px);
+  pointer-events: none;
+  z-index: 4;
+}
+
+.meditation-grandha-leaf .grandha-punch-hole {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #2b1104 35%, #5a2408 85%, #8c4212 100%);
+  box-shadow:
+    inset 0 2px 3px rgba(0, 0, 0, 0.85),
+    0 1px 0 rgba(255, 238, 195, 0.5);
+  border: 1px solid #1a0801;
+  display: inline-block;
+}
+
+.meditation-grandha-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 2px;
+}
+
+.meditation-leaf-invocation {
+  color: #4a1002;
+  font-size: clamp(1rem, 3.4vw, 1.22rem);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-shadow: 0 1px 0 rgba(255, 240, 195, 0.7);
+}
+
+.meditation-setup,
+.meditation-setup-inner,
+.meditation-session,
+.meditation-session-inner {
+  text-align: center;
+  width: 100%;
+}
+
+.ancient-select-title {
+  color: #3b1102;
+  font-size: clamp(0.95rem, 3vw, 1.12rem);
+  font-weight: 700;
+  margin: 0 0 clamp(6px, 1.4vh, 10px);
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255, 240, 195, 0.5);
+}
+
+.ancient-duration-btn {
+  background: linear-gradient(180deg, #f7e6c0 0%, #dfbf7f 100%);
+  border: 1.5px solid rgba(110, 58, 12, 0.7);
+  border-radius: 6px 8px 6px 8px;
+  color: #2b0e02;
+  font-weight: 700;
+  font-size: clamp(0.85rem, 2.7vw, 0.96rem);
+  padding: clamp(6px, 1.6vw, 8px) clamp(10px, 2.8vw, 14px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  touch-action: manipulation;
+}
+
+.ancient-duration-btn:hover,
+.ancient-duration-btn.active {
+  background: linear-gradient(180deg, #7a2608 0%, #4a1002 100%);
+  color: #ffe6a0;
+  border-color: #d49b27;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 215, 0, 0.4);
+}
+
+.ancient-field {
+  background: rgba(255, 248, 230, 0.85);
+  border: 1.5px solid rgba(110, 58, 12, 0.6);
+  border-radius: 6px;
+  color: #3b1102;
+  font-weight: 600;
+  padding: 6px 12px;
+}
+
+.ancient-set-btn {
+  background: linear-gradient(180deg, #7a2608 0%, #4a1002 100%);
+  color: #ffe6a0;
+  border: 1.5px solid #d49b27;
+  border-radius: 6px;
+  font-weight: 700;
+  padding: 6px 14px;
+  cursor: pointer;
+}
+
+.ancient-selected-text {
+  font-size: clamp(0.86rem, 2.8vw, 0.98rem);
+  color: #3d1404;
+  margin: clamp(4px, 1.2vh, 8px) 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.ancient-bullet {
+  color: #8c3206;
+  font-size: 0.85em;
+}
+
+.ancient-meditation-btn {
+  padding: clamp(8px, 2.2vw, 11px) clamp(22px, 5vw, 36px);
+  font-size: clamp(0.95rem, 3.2vw, 1.15rem);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  border-radius: 6px 9px 6px 9px;
+  border: 1.5px solid #d49b27;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 235, 175, 0.5);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  touch-action: manipulation;
+  margin-top: clamp(8px, 1.8vh, 14px);
+}
+
+.start-meditation-btn.ancient-meditation-btn {
+  background: linear-gradient(180deg, #8a300a 0%, #541402 100%);
+  color: #fff2cc;
+}
+
+.stop-meditation-btn.ancient-meditation-btn {
+  background: linear-gradient(180deg, #8b1008 0%, #4a0402 100%);
+  color: #fff0f0;
 }
 
 .duration-buttons {
@@ -776,16 +1170,16 @@
 /* Mobile Styles */
 @media (max-width: 768px) {
   .meditation-container {
-    padding: 1rem 0.75rem;
-    justify-content: flex-end;
+    padding: clamp(0.4rem, 1vh, 0.75rem) clamp(0.5rem, 2vw, 0.85rem) clamp(0.5rem, 1.4vh, 0.85rem);
+    justify-content: space-between;
   }
   
   .meditation-title {
-    font-size: 3rem;
+    font-size: clamp(1rem, 3.6vw, 1.28rem);
   }
   
   .meditation-subtitle {
-    font-size: 1.5rem;
+    font-size: clamp(0.72rem, 2.4vw, 0.86rem);
   }
   
   .meditation-setup,
@@ -898,7 +1292,11 @@
 
 @media (max-width: 480px) {
   .meditation-title {
-    font-size: 1.8rem;
+    font-size: clamp(0.96rem, 3.4vw, 1.18rem);
+  }
+  
+  .meditation-subtitle {
+    font-size: clamp(0.68rem, 2.3vw, 0.82rem);
   }
   
   .meditation-setup,

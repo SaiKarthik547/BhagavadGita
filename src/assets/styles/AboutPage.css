@@ -1,22 +1,26 @@
 .about-page {
-  min-height: 100vh;
-  position: relative;
-  overflow-x: hidden;
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
   padding-top: 0;
   background: transparent;
+  z-index: 0;
 }
 
 /* Page-specific background image - full screen with proper sizing */
 .about-page::before {
   content: '';
-  position: fixed; /* Changed from absolute to fixed */
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background: url('../images/about.jpg') center/cover no-repeat fixed;
   background-size: cover;
-  z-index: 1; /* Behind content */
+  z-index: 1;
   opacity: 1;
 }
 
@@ -38,122 +42,390 @@
   position: relative;
   z-index: 2;
   width: 100%;
-  min-height: 100vh;
-  padding: 2rem 1rem;
+  height: 100%;
+  max-height: 100dvh;
+  box-sizing: border-box;
+  padding: clamp(0.6rem, 1.8vh, 1.25rem) clamp(0.6rem, 2.2vw, 1.25rem);
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-.about-card {
-  background: rgba(252, 212, 147, 0.003); /* 80% transparent */
-  border-radius: 15px;
-  padding: 2rem;
-  max-width: 800px;
-  width: 100%;
-  z-index: 2;
-  backdrop-filter: blur(5px); /* 20% blur */
-  box-shadow: 0 8px 32px rgba(216, 27, 96, 0.2);
-  border: 1px solid rgba(216, 27, 96, 0.3);
+/* Royal Decree Scripture Scroll for About Page */
+.royal-about-scroll {
+  position: relative;
+  width: clamp(295px, 90vw, 740px);
+  max-width: 92vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 14px 30px rgba(0, 0, 0, 0.72));
+}
+
+/* TOP Cylindrical Royal Scroll Roller */
+.royal-about-scroll .royal-scroll-top-roller {
+  position: relative;
+  width: 104%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: clamp(22px, 4.5vw, 30px);
+  z-index: 4;
+}
+
+.royal-about-scroll .royal-roller-rod {
+  flex: 1;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    #ffe7a0 0%,
+    #e5b448 30%,
+    #b27c1d 68%,
+    #593803 100%
+  );
+  border-top: 1px solid #fff5c0;
+  border-bottom: 1.5px solid #2a1501;
+  box-shadow:
+    inset 0 2px 2px rgba(255, 255, 255, 0.6),
+    0 3px 6px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 14%;
+  box-sizing: border-box;
+}
+
+.royal-about-scroll .royal-roller-cap {
+  width: clamp(14px, 3.2vw, 22px);
+  height: clamp(28px, 5.5vw, 38px);
+  background: radial-gradient(circle at 35% 30%, #fff0a8, #d4941c 65%, #5c3104 100%);
+  border: 1px solid #3d1d02;
+  border-radius: 4px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+  flex-shrink: 0;
+}
+
+.royal-about-scroll .royal-roller-crest {
+  color: #4a1c02;
+  font-size: 1rem;
+  text-shadow: 0 1px 0 rgba(255, 240, 195, 0.8);
+}
+
+.royal-about-scroll .royal-roller-ring {
+  width: 3px;
+  height: 80%;
+  background: #fff0a8;
+  border-left: 1px solid #4a1c02;
+  border-right: 1px solid #4a1c02;
+  display: inline-block;
+}
+
+/* Semi-Transparent Ancient Royal Scripture Scroll Parchment Body */
+.about-scroll-body {
+  position: relative;
+  width: 94%;
+  margin: 0 auto;
+  background-color: rgba(244, 224, 180, 0.62);
+  background-image:
+    radial-gradient(ellipse at 15% 15%, rgba(120, 60, 10, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse at 85% 85%, rgba(120, 60, 10, 0.08) 0%, transparent 60%),
+    linear-gradient(
+      90deg,
+      rgba(142, 87, 32, 0.72) 0%,
+      rgba(202, 162, 100, 0.65) 4%,
+      rgba(236, 211, 158, 0.6) 12%,
+      rgba(247, 232, 196, 0.56) 50%,
+      rgba(236, 211, 158, 0.6) 88%,
+      rgba(202, 162, 100, 0.65) 96%,
+      rgba(142, 87, 32, 0.72) 100%
+    );
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border-left: 2.5px solid rgba(117, 66, 16, 0.85);
+  border-right: 2.5px solid rgba(117, 66, 16, 0.85);
+  box-shadow:
+    inset 6px 0 12px rgba(72, 32, 4, 0.25),
+    inset -6px 0 12px rgba(72, 32, 4, 0.25),
+    inset 0 6px 10px rgba(0, 0, 0, 0.22);
+  padding: clamp(12px, 3vw, 20px) clamp(14px, 3.5vw, 26px) clamp(10px, 2.4vw, 16px);
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+.about-scroll-header {
+  position: relative;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.royal-scroll-invocation {
+  display: block;
+  font-size: clamp(0.74rem, 2.4vw, 0.88rem);
+  font-weight: 700;
+  color: #6b1d02;
+  letter-spacing: 0.06em;
+  margin-bottom: 2px;
+  text-shadow: 0 1px 0 rgba(255, 244, 210, 0.75);
 }
 
 .about-title {
-  font-size: 3rem;
-  color: #D81B60;
-  margin-bottom: 2rem;
+  font-size: clamp(1.35rem, 4vw, 2.1rem);
+  color: #3f0c01;
+  margin: 0 0 4px;
   text-align: center;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  font-weight: 800;
+  text-shadow: 0 1px 1px rgba(255, 240, 200, 0.85);
 }
 
-.mission-section,
-.team-section,
-.features-section,
-.contact-section,
-.usage-section,
-.benefits-section {
-  margin-bottom: 2rem;
+.about-scroll-content {
+  max-height: clamp(320px, 58dvh, 520px);
+  overflow-y: auto;
+  touch-action: pan-y;
+  -webkit-overflow-scrolling: touch;
+  padding: 4px 6px;
 }
 
-.mission-section h2,
-.team-section h2,
-.features-section h2,
-.contact-section h2,
-.usage-section h2,
-.benefits-section h2 {
-  color: #D81B60;
-  margin-bottom: 1rem;
-  font-size: 1.8rem;
+.about-section-card {
+  background: rgba(255, 248, 232, 0.45);
+  border: 1px solid rgba(139, 74, 18, 0.35);
+  border-radius: 8px;
+  padding: clamp(10px, 2.5vw, 16px);
+  box-shadow: inset 0 1px 4px rgba(78, 36, 6, 0.08);
+  margin-bottom: 8px;
 }
 
-.mission-section p,
-.team-section p,
-.contact-section p {
-  color: #000000;
-  line-height: 1.7;
-  font-size: 1.1rem;
+.about-section-card h2 {
+  color: #4f1002;
+  font-size: clamp(1.05rem, 3.2vw, 1.32rem);
+  font-weight: 800;
+  margin: 0 0 2px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255, 242, 204, 0.75);
 }
 
-.features-section ul,
-.benefits-section ul {
-  padding-left: 1.5rem;
-  color: #000000;
-}
-
-.features-section li,
-.benefits-section li {
-  margin-bottom: 0.75rem;
+.about-section-card p {
+  color: #210a01;
   line-height: 1.6;
-  font-size: 1.1rem;
+  font-size: clamp(0.88rem, 2.6vw, 1rem);
+  margin: 0;
+  font-weight: 600;
+  text-shadow: 0 1px 0 rgba(255, 248, 225, 0.55);
 }
 
-.additional-features h3,
-.usage-section h3 {
-  color: #D81B60;
-  margin: 1.5rem 0 1rem 0;
-  font-size: 1.4rem;
+.ancient-feature-list,
+.ancient-benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.team-members h3 {
-  color: #D81B60;
-  margin: 1.5rem 0 0.5rem 0;
-  font-size: 1.4rem;
+.ancient-feature-list li,
+.ancient-benefits-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: clamp(0.88rem, 2.6vw, 0.98rem);
+  line-height: 1.5;
+  color: #210a01;
+  font-weight: 600;
+  text-shadow: 0 1px 0 rgba(255, 248, 225, 0.55);
 }
 
-.team-members ul {
-  padding-left: 1.5rem;
-  color: #000000;
+.feature-label {
+  color: #541402;
 }
 
-.team-members li {
-  margin-bottom: 0.5rem;
-  line-height: 1.6;
+.bullet-emblem {
+  color: #8c3206;
+  font-size: 0.75rem;
+  margin-top: 4px;
+  flex-shrink: 0;
 }
 
-/* Usage Steps */
+.additional-features {
+  margin-top: 14px;
+  border-top: 1px dashed rgba(139, 74, 18, 0.35);
+  padding-top: 10px;
+}
+
+.additional-features h3 {
+  color: #4f1002;
+  font-size: clamp(0.96rem, 2.8vw, 1.15rem);
+  font-weight: 700;
+  margin: 0 0 2px;
+  text-align: center;
+}
+
+/* Usage Steps within Scroll */
 .usage-steps {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  margin-top: 8px;
 }
 
 .usage-step {
-  background: rgba(255, 255, 255, 0.7);
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 243, 220, 0.5);
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid rgba(139, 74, 18, 0.3);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
 }
 
 .usage-step h3 {
-  color: #D81B60;
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
+  color: #5e1602;
+  margin: 0 0 4px;
+  font-size: clamp(0.9rem, 2.7vw, 1.05rem);
+  font-weight: 700;
 }
 
 .usage-step p {
-  color: #333;
-  line-height: 1.6;
-  font-size: 1rem;
+  color: #210a01;
+  line-height: 1.45;
+  font-size: clamp(0.82rem, 2.4vw, 0.92rem);
+  margin: 0;
+}
+
+/* Bottom Triangular Pennant Border (King's Decree Style) */
+.royal-about-scroll .royal-scroll-triangular-bottom {
+  position: relative;
+  width: 94%;
+  margin: -1px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.royal-about-scroll .royal-triangular-pennant {
+  position: relative;
+  width: 100%;
+  height: clamp(50px, 11.5vw, 66px);
+  background: linear-gradient(
+    90deg,
+    rgba(142, 87, 32, 0.78) 0%,
+    rgba(202, 162, 100, 0.72) 6%,
+    rgba(232, 203, 146, 0.66) 20%,
+    rgba(242, 220, 168, 0.64) 50%,
+    rgba(232, 203, 146, 0.66) 80%,
+    rgba(202, 162, 100, 0.72) 94%,
+    rgba(142, 87, 32, 0.78) 100%
+  );
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  clip-path: polygon(0 0, 100% 0, 100% 14%, 50% 100%, 0 14%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 14%, 50% 100%, 0 14%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 -10px 18px rgba(92, 34, 4, 0.4);
+}
+
+.royal-about-scroll .royal-triangular-inner-trim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 0%, rgba(128, 28, 6, 0.85) 68%, #d49b27 92%, #5c1902 100%);
+  clip-path: polygon(
+    0 4%,
+    6% 4%,
+    50% 80%,
+    94% 4%,
+    100% 4%,
+    100% 14%,
+    50% 100%,
+    0 14%
+  );
+  -webkit-clip-path: polygon(
+    0 4%,
+    6% 4%,
+    50% 80%,
+    94% 4%,
+    100% 4%,
+    100% 14%,
+    50% 100%,
+    0 14%
+  );
+  pointer-events: none;
+}
+
+.royal-about-scroll .royal-triangular-motif {
+  color: #6e1c02;
+  font-size: clamp(1rem, 3.4vw, 1.18rem);
+  transform: translateY(-6px);
+  text-shadow: 0 1px 0 rgba(255, 240, 195, 0.75);
+}
+
+.royal-about-scroll .royal-pennant-tassel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -3px;
+}
+
+.royal-about-scroll .tassel-knot {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #fff0a8, #d4941c 65%, #5c3104 100%);
+  border: 1px solid #3d1d02;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.65);
+}
+
+.royal-about-scroll .tassel-fringe {
+  width: 17px;
+  height: 20px;
+  background: repeating-linear-gradient(
+    90deg,
+    #d4941c 0px,
+    #ffe484 2px,
+    #7a3b06 4px
+  );
+  clip-path: polygon(22% 0, 78% 0, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(22% 0, 78% 0, 100% 100%, 0 100%);
+  margin-top: -2px;
+}
+
+.about-scroll-content::-webkit-scrollbar {
+  width: 5px;
+}
+
+.about-scroll-content::-webkit-scrollbar-track {
+  background: rgba(110, 62, 18, 0.14);
+  border-radius: 4px;
+}
+
+.about-scroll-content::-webkit-scrollbar-thumb {
+  background: rgba(122, 58, 10, 0.65);
+  border-radius: 4px;
+}
+
+.about-scroll-content::-webkit-scrollbar-thumb:hover {
+  background: #5a2304;
+}
+
+.section-mini-divider {
+  font-size: 0.68rem;
+  color: #8c3a0a;
+  text-align: center;
+  margin: 1px 0 6px;
+  opacity: 0.85;
+}
+
+.section-break-divider {
+  font-size: 0.72rem;
+  color: #7a2b04;
+  text-align: center;
+  margin: 4px 0;
+  letter-spacing: 0.12em;
+  opacity: 0.8;
 }
 
 /* Keyframe Animations */
@@ -175,75 +447,23 @@
 /* Mobile Styles */
 @media (max-width: 768px) {
   .about-container {
-    padding: 1rem 0.75rem;
+    padding: 0.75rem 0.6rem;
+    justify-content: center;
   }
-  
-  .about-title {
-    font-size: 2.2rem;
-  }
-  
-  .about-card {
-    padding: 1.5rem;
-    background: rgba(255, 243, 224, 0.175); /* 90% transparent on mobile */
-    backdrop-filter: blur(3px); /* Less blur on mobile */
-  }
-  
-  .mission-section h2,
-  .team-section h2,
-  .features-section h2,
-  .contact-section h2,
-  .usage-section h2,
-  .benefits-section h2 {
-    font-size: 1.5rem;
-  }
-  
-  .mission-section p,
-  .team-section p,
-  .contact-section p,
-  .features-section li,
-  .benefits-section li {
-    font-size: 1rem;
-  }
-  
+
   .about-page::before,
   .about-page::after {
     top: 0;
   }
-  
+
   .usage-steps {
     grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 480px) {
-  .about-title {
-    font-size: 1.8rem;
-  }
-  
-  .about-card {
-    padding: 1.25rem;
-  }
-  
-  .mission-section h2,
-  .team-section h2,
-  .features-section h2,
-  .contact-section h2,
-  .usage-section h2,
-  .benefits-section h2 {
-    font-size: 1.3rem;
-  }
-  
-  .mission-section p,
-  .team-section p,
-  .contact-section p,
-  .features-section li,
-  .benefits-section li {
-    font-size: 0.9rem;
-  }
-  
-  .additional-features h3,
-  .usage-section h3,
-  .team-members h3 {
-    font-size: 1.2rem;
+  .about-container {
+    padding: 0.5rem;
+    justify-content: center;
   }
 }
