@@ -28,3 +28,31 @@ yarn-error.log*
 # OS generated files
 .DS_Store
 Thumbs.db
+# Node
+node_modules/
+
+# React production build
+/build/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Android local configuration
+android/local.properties
+android/.gradle/
+android/**/build/
+
+# Signing credentials
+*.jks
+*.keystore
+keystore.properties
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
